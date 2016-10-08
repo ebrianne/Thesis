@@ -1,0 +1,140 @@
+%Outline draft Thesis
+
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{float}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{todonotes}
+\usepackage{fancyhdr}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\graphicspath{{./Images/}}
+
+\fancyhead{}
+\fancyhead[LE,RO]{Chapter \thechapter}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%opening
+\title{Influence of timing cuts in Testbeam data and Simulation.}
+\author{Eldwan Brianne}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\chapter{Particle Physics}
+\section{The Standard Model}
+\section{The International Linear Collider: a future $e^+e^-$ linear collider}
+\subsection{Damping rings}
+\subsection{Sources}
+\subsection{Linac}
+\subsection{The International Large Detector (ILD)}
+\section{ILC Physics}
+\subsection{Higgs Physics}
+\subsection{Electroweak Physics}
+\subsection{Top mass measurement}
+\subsection{Beyond the Standard Model}
+\section{Calorimetry and Particle Flow}
+\subsection{Particle interaction with matter}
+\subsection{Particle Flow Principle}
+\section{Simulation of particle showers}
+\subsection{Electromagnetic showers}
+\subsection{Hadronic showers}
+\subsection{Physics Lists}
+
+\chapter{Fast simulation of ILD}
+\subsection{SGV, a fast simulation of ILD}
+\subsection{Particle Flow emulation}
+\subsection{Comparison to Full simulation}
+
+\newpage
+
+\chapter{AHCAL Engineering prototype}
+\section{Silicon Photomultiplier (SiPM)}
+\section{The CALICE Analog Hadronic Calorimeter}
+\subsection{Physics Prototype and Validation}
+\subsection{The CALICE Engineering Analog Hadronic Calorimeter}
+\section{Commissioning of the CALICE AHCAL}
+\subsection{Commissioning Procedure}
+\subsection{Noise Measurement}
+
+\newpage
+
+\chapter{Testbeam Analysis of the CALICE AHCAL}
+\section{The CERN SPS beamline}
+\section{Testbeam Setup}
+\section{Simulation Setup}
+\subsection{Digitization effects}
+\subsection{Beam Profiles}
+\section{Event Selection}
+\subsection{MIP Selection}
+\subsection{Electron Selection}
+\subsection{Pion Selection}
+\section{Energy Calibration of the AHCAL}
+\subsection{Pedestal Calibration}
+\subsection{MIP Calibration}
+\section{Timing Calibration of the AHCAL}
+\subsection{Calibration using MIPs}
+\subsection{Electron Analysis and Validation}
+\subsection{Pion Analysis}
+
+\newpage
+
+\chapter{ILD Simulation and Timing}
+\section{Detector Simulation and framework}
+\subsection{Detector Simulation}
+\subsection{ILCSoft}
+\section{Reconstruction chain}
+\subsection{Tracking}
+\subsection{Calorimeter Digitization}
+\subsection{Pandora PFA}
+\section{Background Rejection}
+\subsection{$\gamma\gamma$ background}
+\subsection{Samples}
+\subsection{Timing Analysis}
+\section{Software compensation}
+\subsection{Principle}
+\subsection{Application to neutral particles}
+
+\newpage
+
+\chapter{Conclusion and Outlook}
+
+\newpage
+
+\chapter{Appendix}
+
+\newpage
+
+\chapter{Bibliography}
+
+\end{document}

@@ -1,0 +1,67 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Particle Physics}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Standard Model}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}The International Linear Collider: a future $e^+e^-$ linear collider}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Damping rings}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Sources}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Linac}{5}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}The International Large Detector (ILD)}{5}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}ILC Physics}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Higgs Physics}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Electroweak Physics}{5}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Top mass measurement}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Beyond the Standard Model}{5}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Calorimetry and Particle Flow}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Particle interaction with matter}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Particle Flow Principle}{5}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Simulation of particle showers}{5}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Electromagnetic showers}{5}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Hadronic showers}{5}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Physics Lists}{5}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Fast simulation of ILD}{6}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}SGV, a fast simulation of ILD}{6}{subsection.3.0.1}
+\contentsline {subsection}{\numberline {3.0.2}Particle Flow emulation}{6}{subsection.3.0.2}
+\contentsline {subsection}{\numberline {3.0.3}Comparison to Full simulation}{6}{subsection.3.0.3}
+\contentsline {chapter}{\numberline {4}AHCAL Engineering prototype}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Silicon Photomultiplier (SiPM)}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}The CALICE Analog Hadronic Calorimeter}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Physics Prototype and Validation}{7}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The CALICE Engineering Analog Hadronic Calorimeter}{7}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Commissioning of the CALICE AHCAL}{7}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Commissioning Procedure}{7}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Noise Measurement}{7}{subsection.4.3.2}
+\contentsline {chapter}{\numberline {5}Testbeam Analysis of the CALICE AHCAL}{8}{chapter.5}
+\contentsline {section}{\numberline {5.1}The CERN SPS beamline}{8}{section.5.1}
+\contentsline {section}{\numberline {5.2}Testbeam Setup}{8}{section.5.2}
+\contentsline {section}{\numberline {5.3}Simulation Setup}{8}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Digitization effects}{8}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Beam Profiles}{8}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Event Selection}{8}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}MIP Selection}{8}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Electron Selection}{8}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Pion Selection}{8}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Energy Calibration of the AHCAL}{8}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Pedestal Calibration}{8}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}MIP Calibration}{8}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Timing Calibration of the AHCAL}{8}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Calibration using MIPs}{8}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Electron Analysis and Validation}{8}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Pion Analysis}{8}{subsection.5.6.3}
+\contentsline {chapter}{\numberline {6}ILD Simulation and Timing}{9}{chapter.6}
+\contentsline {section}{\numberline {6.1}Detector Simulation and framework}{9}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detector Simulation}{9}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}ILCSoft}{9}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Reconstruction chain}{9}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Tracking}{9}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Calorimeter Digitization}{9}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Pandora PFA}{9}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Background Rejection}{9}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}$\gamma \gamma $ background}{9}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Samples}{9}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Timing Analysis}{9}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Software compensation}{9}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Principle}{9}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Application to neutral particles}{9}{subsection.6.4.2}
+\contentsline {chapter}{\numberline {7}Conclusion and Outlook}{10}{chapter.7}
+\contentsline {chapter}{\numberline {8}Appendix}{11}{chapter.8}
+\contentsline {chapter}{\numberline {9}Bibliography}{12}{chapter.9}
