@@ -1,0 +1,20 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Pandora Particle Flow Algorithm}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Key steps in the algorithm}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Cluster formation}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Track Matching}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Statistical Reclustering}{6}{subsection.2.4}
+\contentsline {section}{\numberline {3}Particle Flow in SGV}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Tracking in SGV}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Calorimeter Simulation}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}SGV Particle Flow parametrisation}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Check Tracking efficiency SGV/Full simulation}{10}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Track Multiplicity and Correlations}{13}{subsection.3.5}
+\contentsline {section}{\numberline {4}Particle Flow studies}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Double counted and lost energy}{15}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}At Cluster-Track level}{16}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}At Jet level}{18}{subsubsection.4.1.2}
+\contentsline {subsection}{\numberline {4.2}Energy fraction}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Occupancy and Energy density}{22}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{23}{section.5}
+\contentsline {section}{References}{24}{section*.34}
