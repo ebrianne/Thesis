@@ -55,13 +55,9 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Tracking}{section.6.2}% 55
 \BOOKMARK [2][-]{subsection.6.2.2}{Calorimeter Digitization}{section.6.2}% 56
 \BOOKMARK [2][-]{subsection.6.2.3}{Pandora PFA}{section.6.2}% 57
-\BOOKMARK [1][-]{section.6.3}{Background Rejection}{chapter.6}% 58
-\BOOKMARK [2][-]{subsection.6.3.1}{ background}{section.6.3}% 59
-\BOOKMARK [2][-]{subsection.6.3.2}{Samples}{section.6.3}% 60
-\BOOKMARK [2][-]{subsection.6.3.3}{Timing Analysis}{section.6.3}% 61
-\BOOKMARK [1][-]{section.6.4}{Software compensation}{chapter.6}% 62
-\BOOKMARK [2][-]{subsection.6.4.1}{Principle}{section.6.4}% 63
-\BOOKMARK [2][-]{subsection.6.4.2}{Application to neutral particles}{section.6.4}% 64
-\BOOKMARK [0][-]{chapter.7}{Conclusion and Outlook}{}% 65
-\BOOKMARK [0][-]{chapter.8}{Appendix}{}% 66
-\BOOKMARK [0][-]{chapter.9}{Bibliography}{}% 67
+\BOOKMARK [1][-]{section.6.3}{Influence of time cuts on cluster properties}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.3.1}{Procedure}{section.6.3}% 59
+\BOOKMARK [2][-]{subsection.6.3.2}{Impact on Cluster properties \(width, energy, resolution and linearity\)}{section.6.3}% 60
+\BOOKMARK [0][-]{chapter.7}{Conclusion and Outlook}{}% 61
+\BOOKMARK [0][-]{chapter.8}{Appendix}{}% 62
+\BOOKMARK [0][-]{chapter.9}{Bibliography}{}% 63

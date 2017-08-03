@@ -55,13 +55,9 @@
 \contentsline {subsection}{\numberline {6.2.1}Tracking}{9}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Calorimeter Digitization}{9}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Pandora PFA}{9}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Background Rejection}{9}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}$\gamma \gamma $ background}{9}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Samples}{9}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Timing Analysis}{9}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Software compensation}{9}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Principle}{9}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Application to neutral particles}{9}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.3}Influence of time cuts on cluster properties}{9}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Procedure}{9}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Impact on Cluster properties (width, energy, resolution and linearity)}{9}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}Conclusion and Outlook}{10}{chapter.7}
 \contentsline {chapter}{\numberline {8}Appendix}{11}{chapter.8}
 \contentsline {chapter}{\numberline {9}Bibliography}{12}{chapter.9}
