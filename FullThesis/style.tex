@@ -1,12 +1,61 @@
 \documentclass[a4paper,12pt,twoside]{report}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
 
+\usepackage{wrapfig}
 \usepackage{graphicx}
-\usepackage{verbatim}
-\usepackage{latexsym}
+\usepackage{graphics}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage[font=footnotesize, singlelinecheck=false, labelfont=bf]{caption}
+\usepackage{array}
+\usepackage{multirow}
 \usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{epstopdf}
+\usepackage{textcomp}
+\usepackage{nicefrac}
+\usepackage{xspace}
+\usepackage{lineno}
+\usepackage[footnotesize, bf, hang, raggedright]{subfigure}
+\usepackage{charter}
+\usepackage[expert]{mathdesign}
+\usepackage[bottom]{footmisc}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usetikzlibrary{arrows}
 
 \input{blocked.sty}
 \input{uhead.sty}
+
+\newcommand{\subfigureautorefname}{\figurename}
+\newcommand\geant{\textsc{Geant\,4}\xspace}
+\newcommand\mokka{\textsc{Mokka}\xspace}
+\newcommand\ddhep{\textsc{DD4hep}\xspace}
+
+\renewcommand{\arraystretch}{1.25}% Spread rows out...
+
+\usepackage{titlesec}
+\titleformat{\section}[hang]{
+\usefont{T1}{qhv}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - bold
+{}
+{0em}
+{\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}
+
+\usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
+\renewcommand{\cfttoctitlefont} % ToC title
+             {\usefont{T1}{qhv}{b}{n}\selectfont\huge}
+\renewcommand{\cftsecfont} % section titles
+             {\usefont{T1}{bch}{b}{n}\selectfont}
+\renewcommand{\cftsubsecfont} % subsection titles
+             {\usefont{T1}{bch}{m}{n}\selectfont}
+\renewcommand{\cftsecpagefont} % section page numbers
+             {\cftsecfont}
+\renewcommand{\cftsubsecpagefont} % subsection page numbers
+             {\cftsubsecfont}
 
 \author{Eldwan Brianne}
