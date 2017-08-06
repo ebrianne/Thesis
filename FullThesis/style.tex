@@ -1,61 +1,71 @@
-\documentclass[a4paper,12pt,twoside]{report}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\ifsetCustomMargin
+  \RequirePackage[left=37mm,right=30mm,top=35mm,bottom=30mm]{geometry}
+  \setFancyHdr % To apply fancy header after geometry package is loaded
+\fi
 
-\usepackage{wrapfig}
+% *************************** Bibliography  and References ********************
+
+% changes the default name `Bibliography` -> `References'
+\renewcommand{\bibname}{References}
+
+
+% ******************** Captions and Hyperreferencing / URL **********************
+
+% Captions: This makes captions of figures use a boldfaced small font.
+%\RequirePackage[small,bf]{caption}
+\usepackage{url} %% Added by myself @ 03/03/2015
+\urlstyle{same}
+
+\RequirePackage[labelsep=space,tableposition=top]{caption}
+\renewcommand{\figurename}{Fig.} %to support older versions of captions.sty
+
+% *************************** Graphics and figures *****************************
+
 \usepackage{graphicx}
-\usepackage{graphics}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage[T1]{fontenc}
-\usepackage{amssymb}
-\usepackage[font=footnotesize, singlelinecheck=false, labelfont=bf]{caption}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{setspace}
-\usepackage{hyperref}
-\usepackage{verbatim}
-\usepackage{epstopdf}
-\usepackage{textcomp}
-\usepackage{nicefrac}
-\usepackage{xspace}
-\usepackage{lineno}
-\usepackage[footnotesize, bf, hang, raggedright]{subfigure}
-\usepackage{charter}
-\usepackage[expert]{mathdesign}
-\usepackage[bottom]{footmisc}
-\usepackage[english]{babel}
-\usepackage{tikz}
+\usepackage{caption}
+
+% ********************************** Tables ************************************
+
+\usepackage{booktabs} % For professional looking tables
 \usepackage{multirow}
 \usepackage{tabularx}
-\usetikzlibrary{arrows}
 
-\input{blocked.sty}
-\input{uhead.sty}
+% ***************************** Math and SI Units ******************************
 
-\newcommand{\subfigureautorefname}{\figurename}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx} % use this package module for SI units
+
+% ******************************* Line Spacing *********************************
+
+% Choose linespacing as appropriate. Default is one-half line spacing as per the
+% University guidelines
+
+% \doublespacing
+\onehalfspacing
+% \singlespacing
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% ******************************* Custom *********************************
+
+\usepackage{soul} % use this for cross line(many fancier options)
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{enumitem} % for itermize
+\newcommand{\cmark}{\ding{51}}% for a tick
+\usepackage{indentfirst}
+\newlength\longest
+\usepackage{atlasphysics}
+
+\usepackage{xspace}
 \newcommand\geant{\textsc{Geant\,4}\xspace}
 \newcommand\mokka{\textsc{Mokka}\xspace}
 \newcommand\ddhep{\textsc{DD4hep}\xspace}
-
-\renewcommand{\arraystretch}{1.25}% Spread rows out...
-
-\usepackage{titlesec}
-\titleformat{\section}[hang]{
-\usefont{T1}{qhv}{b}{n}\selectfont} % "qhv" - TeX Gyre Heros, "b" - bold
-{}
-{0em}
-{\hspace{-0.4pt}\Large \thesection\hspace{0.6em}}
-
-\usepackage[subfigure]{tocloft} % subfigure option only if using subfigure package
-\renewcommand{\cfttoctitlefont} % ToC title
-             {\usefont{T1}{qhv}{b}{n}\selectfont\huge}
-\renewcommand{\cftsecfont} % section titles
-             {\usefont{T1}{bch}{b}{n}\selectfont}
-\renewcommand{\cftsubsecfont} % subsection titles
-             {\usefont{T1}{bch}{m}{n}\selectfont}
-\renewcommand{\cftsecpagefont} % section page numbers
-             {\cftsecfont}
-\renewcommand{\cftsubsecpagefont} % subsection page numbers
-             {\cftsubsecfont}
+\newcommand\ilcsoft{\textsc{ILCSoft}\xspace}
+\newcommand\cpp{\textsc{C++}\xspace}
+\newcommand\marlin{\textsc{Marlin}\xspace}
+\newcommand\lcio{\textsc{LCIO}\xspace}
 
 \author{Eldwan Brianne}
