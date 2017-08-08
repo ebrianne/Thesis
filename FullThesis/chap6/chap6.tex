@@ -1,14 +1,15 @@
 \chapter{ILD detector simulation studies}
 
-Simulation of detector response is an essential part in high energy physics experiment. In Early stage of a project, simulations are done in order to explore and understand the possibilities of a detector design as well as its limitations. Simulation can be use as a way to determine requirements of an experiment to reach certain goals. During data-taking and afterwards, simulations are used model physics processes to compare  the expected value from theory to a measured value for various processes.
-In this chapter, software tools will be briefly introduced. The \ilcsoft framework used for this analysis will be described in \ref{}. The chain starts by the simulation of single kaons $(K^{0}_{L})$ interaction with the ILD detector model based on \geant. Then simulated events undergoes the full chain reconstruction as explained in \ref{}. The procedure of the analysis (based on Marlin) and its conclusions will be presented in \ref{}.
+Simulation of detector response is an essential part in high energy physics experiment. In Early stage of a project, simulations are done in order to explore and understand the possibilities of a detector design as well as its limitations. Simulation can be use as a way to determine requirements of an experiment to reach certain goals. During data-taking and afterwards, simulations are used model physics processes to compare  the expected value from theory to a measured value for various processes.\\
+
+In this chapter, software tools will be briefly introduced. The \ilcsoft framework used for this analysis will be described in \ref{}. The chain starts by the simulation of single kaons (\kzeroL) interaction with the ILD detector model based on \geant. Then simulated events undergoes the full chain reconstruction as explained in \ref{}. The procedure of the analysis (based on Marlin) and its conclusions will be presented in \ref{}.
 Finally, a benchmark of a fast simulation software (SGV) against the ILD full simulation will be described in \ref{}, particularly focussing on particle-flow performance aspects.
 
 \section{Simulation and software framework}
 
 \subsection{\ilcsoft software framework}
 
-Various tools developed by the Linear Collider community is regrouped in a common software framework called \ilcsoft \cite{ILCSoftPortal}. It provides a complete framework that can be used for Monte-Carlo studies and experiments. As an example, physics studies, ILD detector optimisation and performance for the ILC are performed under the \ilcsoft framework.
+Various tools developed by the Linear Collider community is regrouped in a common software framework called \ilcsoft \cite{ILCSoftPortal}. It provides a complete framework that can be used for Monte-Carlo studies and experiments. As an example, physics studies, ILD detector optimisation and performance for the ILC are performed under the \ilcsoft framework.\\
 
 Most of the tools in the framework use an Event Data Model (EMD) named Linear Collider I/O (\lcio) which provides a reliable and performant solution for simulation and analysis studies \cite{Gaede:2003ip}. With this tool, various detector concepts and analysis can be shared.
 
@@ -19,7 +20,7 @@ The reconstruction and analysis tools used in this analysis are mostly part of \
 \subsection{ILD Detector Simulation}
 
 The following analysis is using one of the generic ILD detector model (ILD\_o1\_v05) as describe in \ref{} within the \mokka framework. Many other models are also considered for ILD as shown in Table \ref{ILDOptions}. \mokka is a front-end to \geant and provides a realistic geometry of the ILD detector. The \mokka version used is v08-05 and the \geant version is 10.01.
-The simulation is performed by simply using the particle gun provided in \geant to shoot particles ($\pi^{-}$ or $K^{0}_{L}$) in different regions of the detector by randomly variating the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT physics list was used. The output of the simulation provides a lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within \marlin.
+The simulation is performed by simply using the particle gun provided in \geant to shoot particles (\piminus or \kzeroL) in different regions of the detector by randomly variating the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT physics list was used. The output of the simulation provides a lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within \marlin.
 
 \begin{table}[t]
   \centering
@@ -63,34 +64,89 @@ In this section, a study of timing cuts on hadronic shower is performed. The goa
 
 \subsection{Modification of timing window in ILDCaloDigi}
 
-Timing of hits is registered in a very simplyfied way as explained in \ref{}. The modification of the time window (ranging from 1 ns to 100 ns) is performed during the reconstruction for different simulated $K^{0}_{L}$ energies (ranging from 5 to 90 GeV).
+Timing of hits is registered in a very simplyfied way as explained in \ref{}. The modification of the time window (ranging from 1 ns to 100 ns) is performed during the reconstruction for different simulated \kzeroL energies (ranging from 5 to 90 GeV).
 
 \subsection{Effects of calibration constants and Pandora constants}
 
-\begin{figure}
+Before studying the effect of timing on hadrons showers, a check was performed on the initial provided calibration constants of the ILD detector. Several constants are used for the digitisation and reconstruction (GeV to MIP, sampling, Pandora EM/Had constants...) in order to get the correct reconstructed energy. The plots below are selecting events with only one PFO and a cos $\theta$ cut on the reconstructed particle of 0.7.\\
+
+The figures \ref{fig:linhits} and \ref{fig:resohits} show the linearity and resolution curves for different sets of calibration constants at the cluster hit level i.e. looking at all the hits in a PFO cluster. Thus this enables to understand the effects of the digitisation constants in ILDDigiCalo though small clustering effects are present.
+
+One can see that the blue and black curves are very similar due to the fact that no constants were changed in theses sets. Moreover the linearity is not perfect and varies between -15\% and 5\% also the curve crosses the line $x=y$ which if corrected would degrade the energy resolution. The green and red lines are similar as they have the same constants (the non-linearity correction is only applied to PFOs). The linearity fluctuates between -15\% and -5\% but does not cross the line $x=y$.
+
+Concerning the energy resolution all the curves are very similar and are as expected. The green and red curves are slightly better due to the improvement of the calibration constants.\\
+
+\begin{figure}[t]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{chap6/fig_TimingILD/Comparison_linearity_Curves_Hits}
-    \caption{Linearity curve} \label{fig:linhits}
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_linearity_Curves_Hits}
+    \caption{Cluster hit linearity curve} \label{fig:linhits}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_Hits}
-    \caption{Resolution curve} \label{fig:resohits}
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_Hits}}
+    \caption{Cluster hit resolution curve} \label{fig:resohits}
   \end{subfigure}
-  \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV $K^{0}_{L}$ function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction. The bottom plot shows the relative difference of the different curve to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution $RMS_{90}/Mean_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
+  \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the cluster hit level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
 \end{figure}
 
-% \begin{figure}[!h]
-%   \centering
-%   \includegraphics[scale=0.5]{chap6/fig_TimingILD/Comparison_linearity_Curves_PFO}
-%   \includegraphics[scale=0.5]{chap6/fig_TimingILD/Comparison_resolution_Curves_PFO}
-%   \caption{title}
-% \end{figure}
+Another option is to look at the PFO level as shown in figures \ref{fig:linpfo} and \ref{fig:resopfo}. This permits to understand the effects of the calibration constants in PandoraPFA.
 
-\subsection{Timing cut Effects on hadronic showers}
+The plots show a different picture. For the linearity curve, the red and black line are quite similar and show a non-lineariy especially at high energies between -10\% and 2\%. The green line is nicely linear thanks to the non-linearity correction. Then the blue line is off by around 10\%, this is believed to be due to the weights of the software conpensation that are not optimal for this model.
+
+For the resolution curves, one can see a rise of the resolution at high energies for the red, green and black lines certainly due to the non-linearity. The blue curve present a bump after 50 GeV changing suddently the slope of the curve due to the over-correction of the energy.\\
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_linearity_Curves_PFO}
+    \caption{PFO linearity curve} \label{fig:linpfo}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_PFO}}
+    \caption{PFO resolution curve} \label{fig:resopfo}
+  \end{subfigure}
+  \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the PFO level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
+\end{figure}
+
+Through the linearity is not perfect over all energies, the most regarded observable is the jet energy resolution. As explained in \ref{}, jets are mostly composed of charged particles of around 60\%. In this case, the energy of the PFO is coming from the track. Moreover neutral particles are counting in general for around 30\% of the contribution in a jet.
+
+As shown in figure \ref{fig:momentumparticlejets}, for jets representative of heavy boson decay near production threshold, the momentum spectrum is dominant at around 10 \GeV as for heavy boosted jets with a more complex event topology, the momentum distribution is still dominant to low energies but present a tail to much higher energies. Thus the non-linearity has only little effect there. It is still relevant to understand the different effects of the reconstruction at single particle level.
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Momentum_spectra_to100GeV_final}
+    \caption{Momentum spectrum of charged hadrons.} \label{fig:momentumparticlejets}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat}
+    \caption{Minimal distance between a charged and neutral particle at the front face of the ECAL.} \label{fig:distancefrontfacejets}
+  \end{subfigure}
+  \caption{\subref{fig:momentumparticlejets}) Momentum distribution for charged particles in simulated \ee{}\ra{} \Zqq{} with $q = u,d,s$ at \rts{} = 91 \GeV and \ee{}\ra{} \WWqqqq{} where q is a quark at \rts{} = 500 \GeV. \subref{fig:distancefrontfacejets}) Distribution of distances to the closest charged track for neutral particles produced in \Zqq{} and \WWqqqq{} processes measured at the front face of the electromagnetic calorimeter in the ILD detector.}
+\end{figure}
+
+A complementary study was to look at the minimal distance between a charged and neutral particle for theses different physics processes. The figure \ref{fig:distancefrontfacejets} shows that for low energy jets the mean minimal distance (measured at the front face of the SiW-ECAL) between a charged and neutral hadron is around \SI{180}{\milli\meter} thus in this context, showers are well separated. But at higher energies where density is higher, typical distances of \SI{50}{\milli\meter} need to be resolved. This situation can become relevant in the contribution of confusion to the jet energy resolution. In this case, the use of timing information could help to separate nearby showers and improve the pattern recognition.
+
+\subsection{Timing cut effects on hadronic showers in ILD detector}
+
+In this section, the effect of timing cuts on hadronic showers is investigated. The study was performed using the \ilcsoft framework for reconstruction and a personal \marlin processor for analysis. In order to study the effect of timing on hadronic shower properties, the initial study was performed assuming a perfect timing resolution (i.e. the timing information is the Monte-Carlo truth). In a following step, several timing resolution were used to assess different scenarios. The smearing of the time was done by randomly sampling a normalised gaussian centered in \SI{0}{\nano\second} with a timing resolution denoted $\sigma_{t}$ = 0.4, 1 and \SI{8}{\nano\second}.
+
+\subsubsection{Without time smearing}
+
+The following section present results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed on the calorimeter hit level. Several shower observables were looked as function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL.
+
+
+
+\subsubsection{With time smearing}
 
 \section{Benchmarking of fast simulation}
 

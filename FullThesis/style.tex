@@ -19,7 +19,7 @@
 
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage{subcaption}
+\usepackage[position=b]{subcaption}
 
 % ********************************** Tables ************************************
 
@@ -39,10 +39,11 @@
 % Choose linespacing as appropriate. Default is one-half line spacing as per the
 % University guidelines
 
-% \doublespacing
-\onehalfspacing
+\doublespacing
+% \onehalfspacing
 % \singlespacing
 
+\renewcommand*\contentsname{Contents}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
@@ -55,6 +56,7 @@
 \usepackage{indentfirst}
 \newlength\longest
 \usepackage{atlasphysics}
+\usepackage{lipsum}
 
 \usepackage{xspace}
 \newcommand\geant{\textsc{Geant\,4}\xspace}

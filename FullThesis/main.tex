@@ -4,11 +4,64 @@
 
 \begin{document}
 
-\include{content}
-% \include{intro}
+\frontmatter
+%%% Title page %%%%%%%
+\include{title}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Abstract page %%%%%%%
+\include{abstract}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Table content/list figures page %%%%%%%
+
+\tochide
+\tableofcontents
+%\listoffigures
+%\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Introduction page %%%%%%%
+
+\include{intro}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Main matter page %%%%%%%
+\mainmatter
+
+% \include{chap1/chap1}
+% \include{chap2/chap2}
+% \include{chap3/chap3}
+% \include{chap4/chap4}
+% \include{chap5/chap5}
 \include{chap6/chap6}
-\include{conclusion}
-\include{appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Conclusion page %%%%%%%
+
+%\include{conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\backmatter
+
+%%% References page %%%%%%%
+
 \include{biblio}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Acknowledgments page %%%%%%%
+
+\include{acknowledgments}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{appendix}
+
+\printthesisindex
 
 \end{document}
