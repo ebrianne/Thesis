@@ -140,11 +140,56 @@ A complementary study was to look at the minimal distance between a charged and 
 
 In this section, the effect of timing cuts on hadronic showers is investigated. The study was performed using the \ilcsoft framework for reconstruction and a personal \marlin processor for analysis. In order to study the effect of timing on hadronic shower properties, the initial study was performed assuming a perfect timing resolution (i.e. the timing information is the Monte-Carlo truth). In a following step, several timing resolution were used to assess different scenarios. The smearing of the time was done by randomly sampling a normalised gaussian centered in \SI{0}{\nano\second} with a timing resolution denoted $\sigma_{t}$ = 0.4, 1 and \SI{8}{\nano\second}.
 
+The selection of events is fairly simple, only events in the barrel region ($cos\theta < 0.7$) are selected. All the calorimeter hits in the ECAL and HCAL are used.
+
 \subsubsection{Without time smearing}
 
-The following section present results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed on the calorimeter hit level. Several shower observables were looked as function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL.
+The following section present results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed at the calorimeter hit level. Several shower observables were looked at as a function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL. The different time cuts used are: 1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70 and \SI{100}{\nano\second}.
 
+The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the effect of timing cut on linearity and energy resolution. The tighter the timing cut gets, the linearity and resolution gets degraded. This effectively means that with a harder timing cut more hits of the shower are removed but mostly only outer hits carrying only a small fraction of the total shower energy, the core of the shower mostly does not get affected by timing cut up to few nanoseconds.
 
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/Linearity_TimeCuts_noSmearing}
+    \caption{Linearity curve with no time smearing.} \label{fig:linearityNoSmearing}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerResoAbsolute_TimeCuts_noSmearing}}
+    \caption{Resolution curve with no time smearing.} \label{fig:resoNoSmearing}
+  \end{subfigure}
+  \caption{\subref{fig:linearityNoSmearing}) The top plot represent the linearity curve in the ILD detector over a range of energy from 5 \GeV to 90 \GeV for different timing cuts assuming a perfect resolution. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts. \subref{fig:resoNoSmearing}) The plot illustrates the relative energy resolution ($\frac{\sigma_{E}}{E}$) at single particle level for different timing cuts. The green line is a fit performed at 100 ns of the form $\frac{\sigma_{E}}{E} = \frac{a}{\sqrt{E}} \bigoplus b$ where $a$ is the stochastic term ($44.01\% \pm 3.17$) and $b$ the constant term ($7.26 \pm 0.84$).}
+\end{figure}
+
+The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the energy resolution compared to the 100 ns cut as function of timing cuts for all energies. The energy resolution is mostly not affected over a cut of around 20 ns meaning that the removed hits are not carrying a lot of energy and are part of the shower halo. Then below 20 ns, the resolution starts to degrade slowly relatively in the same way for all energies. A hard cut of 1 ns will degrade greatly the energy resolution up to around 30\%.
+
+\begin{figure}[t]
+  \centering
+    \centering
+    \includegraphics[width=0.5\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerReso_TimeCuts_noSmearing}
+    \caption{Relative change of the energy resolution compared to 100 ns as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
+\end{figure}
+
+The figure \ref{RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadronic shower. The x-axis represents the radius of the shower (to the main axis) and the y-axis represents the energy density of the shower. The main part of the energy density is situated in the core within few centimeters. The influence of timing cuts is highly visible in the tail of the distribution (or halo of the shower) and as very little influence on the energy density deposited in core of the shower.
+
+\begin{figure}[t]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/RadialProfileOverlay_noSmearing}
+    \caption{Radial profile.} \label{fig:RadialProfNoSmearing}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/HitRadiusOverlayMCP_TimeCuts_noSmearing}}
+    \caption{Hit radius.} \label{fig:HitRadiusSmearing}
+  \end{subfigure}
+  \caption{\subref{fig:RadialProfNoSmearing}) The top plot shows the radial profile of a 50 \GeV hadronic shower overlayed for different timing cuts. The bottom plot shows the ratio of the histograms to 100 ns radial profile. \subref{fig:HitRadiusSmearing}) Hit radius histograms at 50 \GeV for different timing cuts.}
+\end{figure}
 
 \subsubsection{With time smearing}
 
