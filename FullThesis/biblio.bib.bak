@@ -77,39 +77,123 @@ SLACcitation   = "%%CITATION = ARXIV:0907.3577;%%"
 }
 
 @Article{Berggren2012,
-  author      = {Mikael Berggren},
-  title       = {SGV 3.0 - a fast detector simulation},
-  abstract    = {The need for fast simulation programs is emphasised, both in terms of the need for "rapid response" to new results - in particular from the LHC - and new theoretical ideas, and in terms of how to cope with multi-billion simulated event samples. The latter would arise both from the need to be able to simulate significantly more events than expected in the real data, also for high cross-section processes, and the need to scan multi-parameter theories. The {\it Simulation \`a Grande Vitesse}, SGV, is presented, and is shown to be able to address these issues. The tracking performance of SGV is shown to reproduce very closely that of the full simulation and reconstruction of the ILD concept. Preliminary results on how to also closely emulate the calorimetric performance from full simulation is presented. The procedure is parametric, with no the need to simulate the detailed shower development, and promises to be many orders of magnitude faster than such approaches. Contrary to what is often the case with fast simulation programs, the procedure gives a somewhat {\it pessimistic} result, compared to the full simulation and reconstruction.},
-  date        = {2012-03-01},
-  eprint      = {1203.0217v1},
-  eprintclass = {physics.ins-det},
-  eprinttype  = {arXiv},
-  file        = {online:http\://arxiv.org/pdf/1203.0217v1:PDF},
-  keywords    = {physics.ins-det, hep-ex},
+author      = {Mikael Berggren},
+title       = {SGV 3.0 - a fast detector simulation},
+abstract    = {The need for fast simulation programs is emphasised, both in terms of the need for "rapid response" to new results - in particular from the LHC - and new theoretical ideas, and in terms of how to cope with multi-billion simulated event samples. The latter would arise both from the need to be able to simulate significantly more events than expected in the real data, also for high cross-section processes, and the need to scan multi-parameter theories. The {\it Simulation \`a Grande Vitesse}, SGV, is presented, and is shown to be able to address these issues. The tracking performance of SGV is shown to reproduce very closely that of the full simulation and reconstruction of the ILD concept. Preliminary results on how to also closely emulate the calorimetric performance from full simulation is presented. The procedure is parametric, with no the need to simulate the detailed shower development, and promises to be many orders of magnitude faster than such approaches. Contrary to what is often the case with fast simulation programs, the procedure gives a somewhat {\it pessimistic} result, compared to the full simulation and reconstruction.},
+date        = {2012-03-01},
+eprint      = {1203.0217v1},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1203.0217v1:PDF},
+keywords    = {physics.ins-det, hep-ex},
 }
 
 @Article{Marshall2013,
-  author      = {J. S. Marshall and M. A. Thomson},
-  title       = {The Pandora Particle Flow Algorithm},
-  abstract    = {A high-energy e+e- collider, such as the ILC or CLIC, is arguably the best option to complement and extend the LHC physics programme. A lepton collider will allow for exploration of Standard Model Physics, such as precise measurements of the Higgs, top and gauge sectors, in addition to enabling a multitude of New Physics searches. However, physics analyses at such a collider will place unprecedented demands on calorimetry, with a required jet energy resolution of \sigma(E)/E < 3.5%. To meet these requirements will need a new approach to calorimetry. The particle flow approach to calorimetry requires both fine granularity detectors and sophisticated software algorithms. It promises to deliver unparalleled jet energy resolution by fully reconstructing the paths of individual particles through the detector. The energies of charged particles can then be extracted from precise inner detector tracker measurements, whilst photon energies will be measured in the ECAL, and only neutral hadron energies (10% of jet energies) will be measured in the HCAL, largely avoiding the typically poor HCAL resolution. This document introduces the Pandora particle flow algorithms, which offer the current state of the art in particle flow calorimetry for the ILC and CLIC. The performance of the algorithms is investigated by examining the reconstructed jet energy resolution and the ability to separate the hadronic decays of W and Z bosons.},
-  date        = {2013-08-21},
-  eprint      = {1308.4537v1},
-  eprintclass = {physics.ins-det},
-  eprinttype  = {arXiv},
-  file        = {online:http\://arxiv.org/pdf/1308.4537v1:PDF},
-  keywords    = {physics.ins-det, hep-ex},
+author      = {J. S. Marshall and M. A. Thomson},
+title       = {The Pandora Particle Flow Algorithm},
+abstract    = {A high-energy e+e- collider, such as the ILC or CLIC, is arguably the best option to complement and extend the LHC physics programme. A lepton collider will allow for exploration of Standard Model Physics, such as precise measurements of the Higgs, top and gauge sectors, in addition to enabling a multitude of New Physics searches. However, physics analyses at such a collider will place unprecedented demands on calorimetry, with a required jet energy resolution of \sigma(E)/E < 3.5%. To meet these requirements will need a new approach to calorimetry. The particle flow approach to calorimetry requires both fine granularity detectors and sophisticated software algorithms. It promises to deliver unparalleled jet energy resolution by fully reconstructing the paths of individual particles through the detector. The energies of charged particles can then be extracted from precise inner detector tracker measurements, whilst photon energies will be measured in the ECAL, and only neutral hadron energies (10% of jet energies) will be measured in the HCAL, largely avoiding the typically poor HCAL resolution. This document introduces the Pandora particle flow algorithms, which offer the current state of the art in particle flow calorimetry for the ILC and CLIC. The performance of the algorithms is investigated by examining the reconstructed jet energy resolution and the ability to separate the hadronic decays of W and Z bosons.},
+date        = {2013-08-21},
+eprint      = {1308.4537v1},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1308.4537v1:PDF},
+keywords    = {physics.ins-det, hep-ex},
 }
 
 @Conference{Chera2011,
-  author = {M. Chera},
-  title  = {Parametrising Particle Flow reconstruction for fast simulation of ILC detectors.},
-  year   = {2011},
+author = {M. Chera},
+title  = {Parametrising Particle Flow reconstruction for fast simulation of ILC detectors.},
+year   = {2011},
 }
 
-@Conference{,
-  author = {M. Chera},
-  title  = {Particle Flow in SGV: Implementation and Comparisons},
-  year   = {2014},
+@Conference{Chera2014,
+author = {M. Chera},
+title  = {Particle Flow in SGV: Implementation and Comparisons},
+year   = {2014},
+}
+
+@Article{Pohl2002,
+author      = {M. Pohl and H. J. Schreiber},
+title       = {SIMDET - Version 4 A Parametric Monte Carlo for a TESLA Detector},
+abstract    = {A new release of the parametric detector Monte Carlo program \verb+SIMDET+ (version 4.01) is now available. We describe the principles of operation and the usage of this program to simulate the response of a detector for the TESLA linear collider. The detector components are implemented according to the TESLA Technical Design Report. All detector component responses are treated in a realistic way using a parametrisation of results from the {\em ab initio} Monte Carlo program \verb+BRAHMS+. Pattern recognition is emulated using a complete cross reference between generated particles and detector response. Also, for charged particles, the covariance matrix and $dE/dx$ information are made available. An idealised energy flow algorithm defines the output of the program, consisting of particles generically classified as electrons, photons, muons, charged and neutral hadrons as well as unresolved clusters. The program parameters adjustable by the user are described in detail. User hooks inside the program and the output data structure are documented.},
+date        = {2002-06-05},
+eprint      = {hep-ex/0206009v1},
+eprintclass = {hep-ex},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/hep-ex/0206009v1:PDF},
+keywords    = {hep-ex},
+}
+
+@Article{Li2013,
+author      = {Bo Li and Keisuke Fujii and Yuanning Gao},
+title       = {Kalman-filter-based track fitting in non-uniform magnetic field with segment-wise helical track model},
+abstract    = {In the future International Linear Collider (ILC) experiment, high performance tracking is essential to its physics program including precision Higgs studies. One of major challenges for a detector such as the proposed International Large Detector (ILD) is to provide excellent momentum resolution in a magnetic filed with small (but non-negligible) non-uniformity. The non-uniform magnetic field implies deviation from a helical track and hence requires the extension of a helical track model used for track fitting in a uniform magnetic field. In this paper, a segment-wise helical track model is introduced as such an extension. The segment-wise helical track model approximates the magnetic field between two nearby measurement sites to be uniform and steps between the two sites along a helix. The helix frame is then transformed according to the new magnetic field direction for the next step, so as to take into account the non-uniformity of the magnetic field. Details of the algorithm and mathematical aspects of the segment-wise helical track model in a Kalman-filter-based track fitting in the non-uniform magnetic field are elaborated. The new track model is implemented and successfully tested in the framework of the Kalman filter tracking software package, KalTest, which was originally developed for tracking in a uniform magnetic field.},
+date        = {2013-05-31},
+doi         = {10.1016/j.cpc.2013.11.003},
+eprint      = {1305.7300v2},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1305.7300v2:PDF},
+keywords    = {physics.ins-det},
+}
+
+@Article{CATANI1991432,
+author  = {S. Catani and Yu.L. Dokshitzer and M. Olsson and G. Turnock and B.R. Webber},
+title   = {New clustering algorithm for multijet cross sections in e+e- annihilation},
+journal = {Physics Letters B},
+year    = {1991},
+volume  = {269},
+number  = {3},
+pages   = {432 - 438},
+issn    = {0370-2693},
+doi     = {http://dx.doi.org/10.1016/0370-2693(91)90196-W},
+url     = {http://www.sciencedirect.com/science/article/pii/037026939190196W},
+}
+
+@Article{Moretti1998,
+author       = {Stefano Moretti and Leif Lönnblad and Torbjörn Sjöstrand},
+title        = {New and Old Jet Clustering Algorithms for Electron-Positron Events},
+abstract     = {Over the years, many jet clustering algorithms have been proposed for the analysis of hadronic final states in $e^+e^-$ annihilations. These have somewhat different emphasis and are therefore more or less suited for various applications. We here review some of the most used and compare them from a theoretical and experimental point of view.},
+date         = {1998-04-15},
+doi          = {10.1088/1126-6708/1998/08/001},
+eprint       = {hep-ph/9804296v1},
+eprintclass  = {hep-ph},
+eprinttype   = {arXiv},
+file         = {online:http\://arxiv.org/pdf/hep-ph/9804296v1:PDF},
+journaltitle = {JHEP 9808:001,1998},
+keywords     = {hep-ph, hep-ex},
+}
+
+@PHDTHESIS{Mueller:301339,
+author       = {Mueller, Felix Johannes},
+othercontributors = {Behnke, Ties and Garutti, Erika},
+title        = {{D}evelopment of a {T}riple {GEM} {R}eadout {M}odule for a
+{T}ime {P}rojection {C}hamber $\&$ {M}easurement
+{A}ccuracies of {H}adronic {H}iggs {B}ranching {F}ractions
+in $\nu\nu${H} at a 350 {G}e{V} {ILC}},
+issn         = {1435-8085},
+school       = {UniversitÃ€t Hamburg},
+type         = {Dr.},
+address      = {Hamburg},
+publisher    = {Verlag Deutsches Elektronen-Synchrotron},
+reportid     = {PUBDB-2016-02659, DESY-THESIS-2016-018},
+series       = {DESY-THESIS},
+pages        = {245},
+year         = {2016},
+note         = {Universit\"at Hamburg, Diss., 2016},
+cin          = {FLC},
+cid          = {I:(DE-H253)FLC-20120731},
+pnm          = {632 - Detector technology and systems (POF3-632) / 611 -
+Fundamental Particles and Forces (POF3-611) / SFB 676-B01 -
+Optimising the ILC setup: Physics programme, running
+scenarios and design choices (DFG-SFB-676)},
+pid          = {G:(DE-HGF)POF3-632 / G:(DE-HGF)POF3-611 /
+G:(DE-H253)DFG-SFB-676-B01},
+experiment   = {EXP:(DE-H253)TestBeamline24-20150101 /
+EXP:(DE-MLZ)NOSPEC-20140101},
+typ          = {PUB:(DE-HGF)29 / PUB:(DE-HGF)11},
+doi          = {10.3204/PUBDB-2016-02659},
+url          = {http://bib-pubdb1.desy.de/record/301339},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
