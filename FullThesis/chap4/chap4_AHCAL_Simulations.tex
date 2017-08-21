@@ -1,0 +1,29 @@
+\chapter{Simulations}
+
+In High Energy Physics as well as in other reasearch area, simulations are a tool that has become indispensable. They are used to provide models predictions, a guideline for an analysis as well as for optimising cost and performance of detector designs. In this thesis, the simulations will be used as a guideline for the selection of specific events of the recorded data. An understanding of their functionning is useful and will be described in this chapter.
+
+\section{Simulation of particle showers}
+
+The \geant framework is a common toolkit in particle physics to simulate particle interactions with matter for a wide range of energies. Within this thesis, the simulations of CALICE calorimeter prototypes and the ILD detector concept are used in conjunction with the \mokka and \ddhep framework. These frameworks provide a variety of tools for the implementation of detector geometries. \geant offers various tools and models to simulate physics processes in particle showers.
+
+\subsection{Electromagnetic showers}
+\subsection{Hadronic showers}
+\subsection{\geant Physics Lists}
+
+\section{AHCAL Detector Geometry implementation and Digitisation}
+
+\subsection{Geometry implementation}
+
+The simulation of the testbeam prototype is based on the \mokka framework v08-05-01 and the new \ddhep framework v00-16, which both provide a full \geant v10.1 based simulation of the detector implementations with detailed geometry and material descriptions. The right handed coordinate is used such as the Z-axis points in the beam direction and that the Y-axis is directed upwards. No beamline instrumentation is simulated except scintillator triggers in front and back of the detector. An additional layer of 5.6 mm of lead is added in front of the calorimeter in order to account for missing upstream material. This analysis uses the sub-detector \mokka models \textit{TBecal4d} for the ScECAL (Scintillator strips with EBUs) and \textit{TBhcal4d} for the AHCAL. The distance between the sub-detectors is set to 0 mm. A check was performed between \mokka and \ddhep models with electrons and pions to ensure that the material description in both models are approximately the same.\\
+
+The beam gun is placed 1 m in front of the calorimeter face for the simulations in this analysis. It is configured to generate single beam particle with a 2\% momentum spread (according to the beamline) and the beam profile for electrons and pions is extracted from data and applied to simulation. For muon runs, a flat beam covering the full AHCAL is simulated as this is not expected to have an influence on the MIP and time response of the detector.
+All electron simulations are simulated with \geant 10.1 using the QGSP\_BERT\_HP physics list.\\
+
+Pion showers are simulated using QGSP\_BERT, QGSP\_BERT\_HP and FTFP\_BERT\_HP physics lists as theses physics lists are well validated for the simulation of high energy showers in steel-scintillator sandwich calorimeter \cite{AHCAL_Physics}. The package \textit{high precision} (\_HP) is used in order to understand the differences induced in timing with a precise treatment of the neutrons.
+For each energies, 100 000 simulated $\mu^-$, $e^-$ and 200000 $\pi^-$ single particle events are generated.
+
+\subsection{Digitisation}
+
+The digitisation of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{CAN-002, CAN-010, JINST-6}. Using, if available, individual calibration factors obtained from data to extract the light yield which is needed to model the statistical fluctuations of photons hitting a SiPM. Saturation effects are also included using the number of pixels available on each SiPM type. Most of the tiles used are wrapped with a reflective foil in order that crosstalk effect between channels can be neglected. For layers with no wrapping a default value of 15\% cross-talk is applied. The timing is modelled in the same way as in the SPIROC, the energy from sub-hits in a cell is integrated over a sliding time window of 15 ns, if the energy sum passes the threshold the time of the simulated sub-hit passing the threshold is registered as the time of the hit. In order to simulate detector resolution effects, the time of a hit is smeared with a double gaussian function with slightly different means and sigmas convoluted with a gaussian of fixed mean and variable sigma. More details are explained in appendix \ref{appendix:ped_shift}. Noise needs to be taken into account for with the engineering AHCAL prototype. Noise is added using muon runs by removing found tracks and keeping remaining hits. This is described in appendix \ref{appendix:noise}.\\
+
+After digitisation, simulated hits have the same format as raw data hits and are then reconstructed using the same software chain used for data. To suppress noise, only hits above 0.5 MIP are considered in this analysis in both simulation and data.
