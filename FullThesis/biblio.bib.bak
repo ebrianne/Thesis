@@ -167,7 +167,7 @@ SLACcitation   = "%%CITATION = ARXIV:0907.3577;%%"
 @PhdThesis{Mueller:301339,
   author            = {Mueller, Felix Johannes},
   title             = {{D}evelopment of a {T}riple {GEM} {R}eadout {M}odule for a {T}ime {P}rojection {C}hamber $\&$ {M}easurement {A}ccuracies of {H}adronic {H}iggs {B}ranching {F}ractions in $\nu\nu${H} at a 350 {G}e{V} {ILC}},
-  school            = {UniversitÃ€t Hamburg},
+  school            = {Universitat Hamburg},
   year              = {2016},
   type              = {Dr.},
   address           = {Hamburg},
@@ -315,6 +315,63 @@ SLACcitation   = "%%CITATION = ARXIV:0907.3577;%%"
   day      = {01},
   doi      = {10.1140/epja/i2003-10219-7},
   url      = {https://doi.org/10.1140/epja/i2003-10219-7},
+}
+
+@Article{Heikkinen2003,
+  author      = {Aatos Heikkinen and Nikita Stepanov and J. P. Wellisch},
+  title       = {Bertini intra-nuclear cascade implementation in Geant4},
+  abstract    = {We present here a intra-nuclear cascade model implemented in Geant4 5.0. The cascade model is based on re-engineering of INUCL code. Models included are Bertini intra-nuclear cascade model with exitons, pre-equilibrium model, nucleus explosion model, fission model, and evaporation model. Intermediate energy nuclear reactions from 100 MeV to 3 GeV energy are treated for proton, neutron, pions, photon and nuclear isotopes. We represent overview of the models, review results achieved from simulations and make comparisons with experimental data.},
+  date        = {2003-06-02},
+  eprint      = {nucl-th/0306008v1},
+  eprintclass = {nucl-th},
+  eprinttype  = {arXiv},
+  file        = {online:http\://arxiv.org/pdf/nucl-th/0306008v1:PDF},
+  keywords    = {nucl-th},
+}
+
+@Article{Adloff2013,
+  author       = {The CALICE Collaboration},
+  title        = {Validation of GEANT4 Monte Carlo Models with a Highly Granular Scintillator-Steel Hadron Calorimeter},
+  abstract     = {Calorimeters with a high granularity are a fundamental requirement of the Particle Flow paradigm. This paper focuses on the prototype of a hadron calorimeter with analog readout, consisting of thirty-eight scintillator layers alternating with steel absorber planes. The scintillator plates are finely segmented into tiles individually read out via Silicon Photomultipliers. The presented results are based on data collected with pion beams in the energy range from 8GeV to 100GeV. The fine segmentation of the sensitive layers and the high sampling frequency allow for an excellent reconstruction of the spatial development of hadronic showers. A comparison between data and Monte Carlo simulations is presented, concerning both the longitudinal and lateral development of hadronic showers and the global response of the calorimeter. The performance of several GEANT4 physics lists with respect to these observables is evaluated.},
+  date         = {2013-06-13},
+  doi          = {10.1088/1748-0221/8/07/P07005},
+  eprint       = {1306.3037v3},
+  eprintclass  = {physics.ins-det},
+  eprinttype   = {arXiv},
+  file         = {online:http\://arxiv.org/pdf/1306.3037v3:PDF},
+  journaltitle = {JINST 8 P07005 2013},
+  keywords     = {physics.ins-det, hep-ex},
+}
+
+@Article{Folger2003,
+  author      = {G. Folger and J. P. Wellisch},
+  title       = {String Parton Models in Geant4},
+  abstract    = {Dual parton and quark gluon string model are the by now almost standard theoretical techniques by which one can arrive at precision description of high energy, soft, inclusive reactions. These reactions make the part of jets at energies that contribute strongly to discovery channels such as H$\to$WWjj, or search for compositeness at the highest transverse momenta. The above modeling approach is available with Geant4 for nucleon induced reactions since the first release. Its object oriented design and parameter set was recently extended to allow for simulation of pion and kaon induced reactions, as well as heavy ion reactions. We will briefly describe the theory and algorithmic approaches that underly the modeling, show the object oriented designs and component structure of the string parton sub-systems of Geant4, present validation/verification results pertaining to these models, as well as results concerning their usage in calorimeter simulation.},
+  date        = {2003-06-02},
+  eprint      = {nucl-th/0306007v1},
+  eprintclass = {nucl-th},
+  eprinttype  = {arXiv},
+  file        = {online:http\://arxiv.org/pdf/nucl-th/0306007v1:PDF},
+  keywords    = {nucl-th},
+}
+
+@Article{2011_JINST_6_P04003,
+  author  = {The CALICE collaboration},
+  title   = {Electromagnetic response of a highly granular hadronic calorimeter},
+  journal = {Journal of Instrumentation},
+  year    = {2011},
+  volume  = {6},
+  number  = {04},
+  pages   = {P04003},
+  url     = {http://stacks.iop.org/1748-0221/6/i=04/a=P04003},
+}
+
+@PhdThesis{,
+  author  = {Nils Feege},
+  title   = {Low-Energetic Hadron Interactions in a Highly Granular Calorimeter},
+  school  = {Universitat Hamburg},
+  year    = {2011},
+  comment = {DESY-THESIS-2011-048},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
