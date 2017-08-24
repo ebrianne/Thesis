@@ -16,9 +16,11 @@
 %%% Table content/list figures page %%%%%%%
 
 \tochide
+\doublespacing
 \tableofcontents
 %\listoffigures
 %\listoftables
+\onehalfspacing
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -58,26 +60,25 @@
 %%%%%%%%%%%%%%%%%%%%%%
 
 %%% Conclusion page %%%%%%%
+\backmatter
 
 \include{conclusion}
 
-%%%%%%%%%%%%%%%%%%%%%%
-
-\backmatter
+%%% Acknowledgments page %%%%%%%
+\include{acknowledgments}
 
 %%% References page %%%%%%%
-
 \include{biblio}
 
 %%%%%%%%%%%%%%%%%%%%%%
-
-%%% Acknowledgments page %%%%%%%
-
-\include{acknowledgments}
-
-%%%%%%%%%%%%%%%%%%%%%%
-
-%\include{appendix}
+\begin{appendices}
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+  \include{Appendixes/appendix1}
+  \include{Appendixes/appendix2}
+  \include{Appendixes/appendix3}
+  \include{Appendixes/appendix4}
+  \include{Appendixes/appendix5}
+\end{appendices}
 
 \printthesisindex
 

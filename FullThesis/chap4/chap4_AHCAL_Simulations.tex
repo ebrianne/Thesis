@@ -22,7 +22,7 @@ The scale of the interaction in hadronic showers is generally considered by the 
 
 For particle energies above few hundreds MeV and below few GeV, the quark substructure of the nuclei is irrelevant. In this case, the interaction can be described by cascade models (see figure \ref{fig:cascademodel}). Several models are available in \geant and will be described in the following.\\
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.5\linewidth]{chap4/fig/CascadeModel.jpeg}
   \caption{Schematic of the cascade model. The incoming projectile and all secondaries inside the nuclei are tracked and their interaction is calculated until they are under a certain threshold or leave the nuclei. Taken from \cite{Feege2011}.} \label{fig:cascademodel}
@@ -38,7 +38,7 @@ The Binary cascade \cite{Folger2004} is another approach to modelise the interac
 
 \subsubsection{String-Parton Cascade Models}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \includegraphics[width=1.\linewidth]{chap4/fig/QGS_nucleus.jpeg}
@@ -61,7 +61,7 @@ The initial state consists of building the nuclei of individual protons and neut
 \geant provides several physics lists for simulation that combines different hadron physics models. In this thesis, the physics lists QGSP\_BERT and QBBC are used. The validity range of the physics list is shown in figure \ref{fig:physics_list}. The former is used in combinaison with the High-Precision neutron tracking (HP) package. The HP option delivers an increased accuracy in the treatment of neutrons interactions below 20 MeV. The latter possesses a comparable tracking for neutrons with less precision.
 In addition, the QGSP\_BERT physics list uses a parametrised LEP model (based on expirimental data) to fill the gap between the transition of cascade models and string-parton models.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1.\linewidth]{chap4/fig/PhysicsLists.jpeg}
   \caption{Schematic of the physics list used in \geant for this thesis. The validity range extends over 30 GeV.} \label{fig:physics_list}

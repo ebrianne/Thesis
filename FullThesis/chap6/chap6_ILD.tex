@@ -16,7 +16,7 @@ One can see that the blue and black curves are very similar due to the fact that
 
 Concerning the energy resolution all the curves are very similar and are as expected. The green and red curves are slightly better due to the improvement of the calibration constants.\\
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -38,7 +38,7 @@ The plots show a different picture. For the linearity curve, the red and black l
 
 For the resolution curves, one can see a rise of the resolution at high energies for the red, green and black lines certainly due to the non-linearity. The blue curve present a bump after 50 GeV changing suddently the slope of the curve due to the over-correction of the energy.\\
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -58,7 +58,7 @@ Through the linearity is not perfect over all energies, the most regarded observ
 
 As shown in figure \ref{fig:momentumparticlejets}, for jets representative of heavy boson decay near production threshold, the momentum spectrum is dominant at around 10 \GeV as for heavy boosted jets with a more complex event topology, the momentum distribution is still dominant to low energies but present a tail to much higher energies. Thus the non-linearity has only little effect there. It is still relevant to understand the different effects of the reconstruction at single particle level.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -88,7 +88,7 @@ The following section present results of timing cuts assuming a perfect time res
 
 The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the effect of timing cut on linearity and energy resolution. The tighter the timing cut gets, the linearity slope decreases and resolution gets degraded. This effectively means that with a harder timing cut, more hits of the shower are removed but mostly only outer hits carrying only a small fraction of the total shower energy, the core of the shower mostly does not get affected by timing cut up to few nanoseconds.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -106,7 +106,7 @@ The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the 
 
 The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the energy resolution compared to the \SI{100}{\nano\second} cut as function of timing cuts for all energies. The energy resolution is mostly not affected over a cut of around \SI{20}{\nano\second} meaning that the removed hits are not carrying a lot of energy and are part of the shower halo. Then below \SI{20}{\nano\second}, the resolution starts to degrade slowly relatively in the same way for all energies. A hard cut of 1 ns will degrade greatly the energy resolution up to around 30\%.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.5\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerReso_TimeCuts_noSmearing}
   \caption{Relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
@@ -123,7 +123,7 @@ The figure \ref{RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadr
 
 The main part of the energy density is situated in the core within few centimeters. The influence of timing cuts is highly visible in the tail of the distribution (or halo of the shower) and as very little influence on the energy density deposited in core of the shower. Though an effect of increase of energy density in the two first bins of the distribution is visible. This effect is related to a displacement of the center of gravity (CoG) as function of the timing cut as outer hits of the shower are removed. This has been checked by looking at the hit radius distribution relative to a fixed reference instead of the CoG (the Monte-Carlo particle endpoint) as shown in figure \ref{fig:HitRadiusSmearing}. One can observe that in this case, the timing cut removes only part of the tail and does not affect the core of the distribution.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -148,7 +148,7 @@ Another aspect looked at was the influence of timing cut on the shower width <R>
 
 The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmearing} show the shower width <R> for different particle energies as function of the timing cut. It shows that a tight timing cut at\SI{1}{\nano\second} can reduce the shower width up to around 70\%. One can observe also that the shower width at 5 and 10 \GeV are behaving differently than higher than 10 \GeV. This may come from the transition from the Bertini model (BERT) to the quark string gluon model (QGSP) in the physics list in this energy range. Looking at the shower width in absolute value, hadronic showers are wider at lower energies ($\sim$\SI{180}{\milli\meter} for 5 \GeV) certainly due to the magnetic field. Applying a timing cut removes more and more hits from the halo of the shower, thus reducing its size up to a point where it reaches the core of the shower at $\sim$\SI{20}{\nano\second} timing cut where the shower is around a couple of tiles in size. At this point, the shower width behaves similarly for all energies by reducing gradually the size of the core.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{minipage}{.45\textwidth}
     \begin{subfigure}[t]{0.7\textwidth}
@@ -182,7 +182,7 @@ This study shows that the use of timing cuts give a great advantage in order to 
 
 In this section, a similar study is performed as in section \ref{}. Instead it assumes realistic time resolutions based on the current electronic technology. The table \ref{table:TimeReso} sums up the investigated time resolutions. The same selection is applied as in the previous section.
 
-\begin{table}[t]
+\begin{table}[htb!]
   \centering
   \caption{Time resolution used for smearing.} \label{table:TimeReso}
   \begin{tabular}{|c|c|}
@@ -198,7 +198,7 @@ In this section, a similar study is performed as in section \ref{}. Instead it a
 
 The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as explained in section \ref{}. The ideal time resolution is in the order of the time scale of the development of hadronic showers. And finally, the ILC extrapolated is obtained by assuming a linear extrapolation from the tesbeam time resolution with a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (x20 faster) as explained in \ref{}.\\
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}
@@ -225,7 +225,7 @@ The testbeam resolution is the time resolution obtained with the current AHCAL t
 
 Looking at the impact on linearity and energy resolution, time resolution in the order of sub-nanosecond does not affect much the linearity and resolution as shown in figures \ref{fig:Lin0.4ns} and \ref{fig:Reso0.4ns}. For a time resolution in the nanosecond order, the figures \ref{fig:Lin1ns} and \ref{fig:Reso1ns} show that a tight timing cut of 1-2 \SI{}{\nano\second} will start to affect linearity and resolution. However, for timing resolution higher, the linearity and resolution, as shown in figures \ref{fig:Lin8ns} and \ref{fig:Reso8ns}, start to get heavily degraded for timing cuts below 10-20 \SI{}{\nano\second}. This tells that at least a time resolution of around \SI{1}{\nano\second} is needed in order to use time information without impacting calorimeter performance too much.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}
@@ -249,7 +249,7 @@ Looking at the impact on linearity and energy resolution, time resolution in the
 
 Looking back again at the resolution as function of the shower width, one can notice that in the case of (sub-)nanosecond scale time resolution, the loss of resolution is minimal compared to the shower width. A timing cut of around 1-2 ns would only degrade the energy resolution of around 8-10\% but would decrease the shower width by 60\% as shown in figures \ref{fig:WidthReso0.4ns} and \ref{fig:WidthReso1ns}. On the other side, a time resolution of 8 ns would yield only a reduction of 40\% of the shower width for the same loss in resolution corresponding to a timing cut of 10 ns as shown in figure \ref{fig:WidthReso8ns}.\\
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}

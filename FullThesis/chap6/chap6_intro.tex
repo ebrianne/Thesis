@@ -22,7 +22,7 @@ The reconstruction and analysis tools used in this analysis are mostly part of \
 The following analysis is using one of the generic ILD detector model (ILD\_o1\_v05) as describe in \ref{} within the \mokka framework. Many other models are also considered for ILD as shown in Table \ref{table:ILDOptions}. \mokka is a front-end to \geant and provides a realistic geometry of the ILD detector. The \mokka version used is v08-05 and the \geant version is 10.01.
 The simulation is performed by simply using the particle gun provided in \geant to shoot particles (\piminus or \kzeroL) in different regions of the detector by randomly variating the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT physics list was used. The output of the simulation provides a lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within \marlin.
 
-\begin{table}[t]
+\begin{table}[htb!]
   \centering
   \caption{Considered ILD detector options.} \label{table:ILDOptions}
   \begin{tabular}{|c|c|c|}

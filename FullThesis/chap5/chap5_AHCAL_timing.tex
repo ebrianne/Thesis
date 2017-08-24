@@ -1,4 +1,5 @@
 \chapter{Timing study of hadronic showers in the AHCAL technological prototype}
+\label{chap:TimingAHCAL}
 
 The International Large Detector (ILD) as mentionned in \ref{} considers a highly granular hadronic calorimeter using iron absorbers to achieve a compact detector with the best jet energy resolution around 3-4\% at 250 GeV satisfying the space constrain imposed by the solenoid magnet. Timing measurements in a calorimeter can be used to reject pile-up events like at the LHC or CLIC due to the bunch-to-bunch spacing of 25 and 0.5 ns respectively. Also the high level of $\gamma\gamma \rightarrow$ hadrons could be rejected by using timing information of the calorimeter in order to limit the impact of the background on physics measurements. Novel techniques of using time information to improve energy reconstruction could be used \cite{Benaglia2016}.\\
 
@@ -7,6 +8,7 @@ In the hadronic calorimeter, the timing precision is highly influenced by the ti
 The performance of the ILD relies on simulation studies based on \geant, it is important to study how well the simulation performs to reproduce the time structure of hadronic showers observed in data. The CALICE Analog Hadronic Calorimeter (AHCAL) technological prototype has been installed in the SPS CERN facilities in July and August 2015 in order to provide measurements using plastic scintillators. The goal of this study is to improve our knowledge about hadronic showers especially about its time evolution and time correlations of layers within the calorimeter. This note will describe the timing calibration procedure of the AHCAL first, the comparison with simulation for muons and electrons and finally a comparison with pion data.
 
 \section{Runs \& Event Selection}
+\label{sec:EvtSelection}
 
 \subsection{Trigger Signals}
 \label{subsec:trigger}
@@ -14,7 +16,7 @@ The performance of the ILD relies on simulation studies based on \geant, it is i
 For a muon beam, two scintillator plates of $50\times50$ cm$^2$ were placed in front and back of the calorimeter. For electron and pion beams, two small scintillator plates of $10\times10$ cm$^2$ were positioned in front of the calorimeter. The trigger scintillators were connected to a NIM-logic (discriminator and gate) in order to provide a validation of the data to the chip.
 In order to provide the time reference of the triggers, a SiPM-like pulse of around 4 $\mu$s length and with a fast rising edge around 1 ns was generated from the NIM-logic. This signal was injected directly via AC coupling to some channels in the setup as shown in the table \ref{table:trigger_signal_list}. No other external time reference than these channels is available. In the following analysis, only the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ were used.
 
-\begin{table}[t]
+\begin{table}[htb!]
 	\centering
 	\caption{List of channels with the injected trigger signal to be used as time reference.}
 	\label{table:trigger_signal_list}
@@ -34,12 +36,13 @@ In order to provide the time reference of the triggers, a SiPM-like pulse of aro
 
 \subsection{Dataset}
 \label{subsec:dataset}
+
 During the campaign at SPS in July 2015, $\mu^-$ runs were taken at 50 and 150 GeV beam energy for the calibration of the detector. Several e$^{-}$ runs were taken between 10 to 50 GeV beam energy to study the electromagnetic response of the calorimeter. The e$^{-}$ runs were quite pure as the beam was generated via a neutral beam directed on a converter target. Due to the significant amount of air and beam line instrumentation between the calorimeter and the final momentum selection magnet as well as few information of the beam parameters, the beam profile of electron runs is not well reproduced in simulation. Finally, $\pi^-$ runs were taken between 10 to 90 GeV beam energy. The table \ref{table:dataruns} sums up the dataset taken.
 
-\begin{table}[t]
+\begin{table}[htb!]
 	\centering
 	\caption{List of runs taken at SPS in July 2015.}
-	\label{table:dataruns}erie
+	\label{table:dataruns}
 	\resizebox{0.8\textwidth}{!}{%
 	\begin{tabular}{@{}l||p{2cm}p{8cm}@{}}
 		\hline
@@ -55,74 +58,122 @@ During the campaign at SPS in July 2015, $\mu^-$ runs were taken at 50 and 150 G
 	}
 \end{table}
 
-\subsection{Muon Selection}
-The $\mu$ runs were taken first at 50 GeV then another scan at the end of the campaign was performed at 150 GeV. The muon beam was produced by scrapping the halo of a secondary pion beam using collimators. The muon runs were contaminated by pions, a first estimation provided that around 30\% of the events were contaminated. The main goal of the muon selection was to efficiently select muons and reject pion showers. For this, a simple track finder has been developed. In order to select muons or punch-through pions, a straight track of at least 7 hits is required in the whole AHCAL without a hard interaction. In addition to reject late pion showers, not more than 2 hits are required per layer.
+\subsection{MIP Pre-selection}
+\label{subsec:Muon_presel}
 
-\begin{table}[t]
+A clean selection of MIP tracks is needed in order to obtain and cross-check the MIP calibration at a single cell level. A simple pre-selection was performed on the muon sample designed to select effectively MIP-like particles going through the AHCAL. In a second step, a track selection was performed to retain only MIP-like particle as explained in subsection \ref{subsec:Muon_sel}.
+
+The pre-selection is based on the center of gravity $cog_Z$ and the number of hits $n_{Hits}$. A MIP-like particle should, in principle, deposit the same energy in each layer of the calorimeter thus the center of gravity should be roughly centered in the calorimter in the z coordinate. As well, the number of hits should be around 1 per layer for a MIP-like particle plus accounting for some possible noise in the detector thus explaining the cut at $n_{Hits} = 20$.
+
+The AHCAL distribution of $cog_Z$ vs $n_{Hits}$ obtained from simulated 50 GeV muons, electrons and pions and the applied pre-selection is shown in figure \ref{fig:Muons_CoGZ_nHits}. The pre-selection efficiency is 99.4\% for muons, 0\% for electrons and 13.3\% for pions. Unfortunately, some contamination of late pion showers is still present but is further reduced in the MIP selection using a track-finder.
+
+\begin{figure}[htbp!]
 	\centering
-	\caption{Selection cuts for muon runs.}
-	\label{table:muon_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
-		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
-		\multirow{2}{*}{Preselection}& All & 0 mm < $cog_{z}$ < 800 mm\\& All & 0 < $n_{hits}$ < 20 \\
-		\hline
-		\multirow{2}{*}{Track Selection SSF}& All & $n_{hits}$ in tower > 7 \\& All & $n_{hits}$ in layer < 3 \\
-		\hline
-		\multirow{2}{*}{Track Selection BL}& All & $n_{hits}$ in tower > 2 \\& All & $n_{hits}$ in layer < 3 \\
-		\hline
-	\end{tabular}
-	}
-\end{table}
+	\includegraphics[width=0.5\linewidth]{chap5/fig_AHCAL_timing/Muons/SelectionCut_nHitsCoGZ_Muons}
+	\caption{Event distribution in $cog_Z:n_{Hits}$ plane. The black box represents the space-phase covered by the pre-selection.} \label{fig:Muons_CoGZ_nHits}
+\end{figure}
+
+\subsection{MIP Selection}
+\label{subsec:Muon_sel}
+
+The muon runs were taken first at 50 GeV then another scan at the end of the campaign was performed at 150 GeV. The muon beam was produced by scrapping the halo of a secondary pion beam using collimators. After investigation, muon runs were contaminated by pions showers especially late and passing though the pre-selection due to the small number of active layers in the back of the calorimeter. A simple estimation provided that around 30\% of the events were contaminated.
+
+The muon selection was designed to efficiently select muons and reject late pion showers. For this, a simple MIP track-finder has been developed based on pre-existing work \cite{Hartbrich:2016bbz}. The algorithm selects AHCAL towers of hits in the same $x:y$ plane and rejects towers under a certain number of hits. In order to select muons or punch-through pions, a straight track of at least 7 hits is required in the whole AHCAL without a hard interaction. This also assumes that the calorimeter was perfectly perpendicular to the beam, any angled tracks would be missed. In addition to reject late pion showers, not more than 2 hits are required per layer accounting for some flexibility with noise hits. The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 50 GeV muons, electrons and pions after pre-selection. The track-finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part of the big layers (BL) in order to catch the halo of muons.
+
+The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pions. The selection effectively reduces the contamination of late pion showers by over 50\% and the remaining pion efficiency is well compatible with the fraction of pions traversing the AHCAL without hard interaction. A detailled overview of the MIP selection is given in table \ref{table:muon_sel}.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsLayer_Muons}
+		\caption{Maximum number of hits per layer normalised to the number of AHCAL Towers.} \label{fig:Muons_Track_nHitsLayer}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsTrack_Muons}
+		\caption{Number of hits in a track normalised to the number of events.} \label{fig:Muons_Track_nHits}
+	\end{subfigure}
+	\caption{\subref{fig:Muons_Track_nHitsLayer}) Distribution of the maximum number of hits for simulated muons, electrons and pions at 50 GeV. The black line represents the cut of maximum 2 hits per layer applied for the MIP selection. This cut was done in order to reject late pion showers but avoiding to reject too much of the muons. \subref{fig:Muons_Track_nHits}) Distribution of the number of hits in a track for simulated muons, electrons and pions at 50 GeV. A Tower size of 7 for the inner detector and 2 for the outer big layers was chosen.}
+\end{figure}
 
 \subsection{Electron Selection}
 \label{subsec:elec_sel}
-To perform comparisons on electron, a sample of events is selected from the data runs. A simple selection is performed in order to have mostly contained showers in the AHCAL. The selection cuts are summed up in table \ref{table:electron_sel} for each energies.
 
-\begin{table}[t]
+The electron selection is done to simply extract single electron showers contained in the AHCAL. These events are needed in order to validate the timing behavior in simulation as well as the detector simulation model. For the selection, an \textit{Event Quality} pre-selection is done on the data using the beam instrumentation and layer information. Only events with a Cherenkov tag (only applied on data) are used and as well the energy in the three first layer of the AHCAL ($E_3+E_4+E_5$) must be over 10 MIP. Distributions of the energy in the three first layer of the AHCAL for simulated 10 and 50 GeV muons, electrons and pions can be seen on figures \ref{fig:e10GeV_E3} and \ref{fig:e50GeV_E3}.
+
+In a next step, the electron selection is performed. Due to the number of unusable layers especially the front ECAL layers and the fact that the detector is not fully equipped, an alternative selection needed to be performed to effectively select electrons. As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z < 250 mm$) can be done. This does not induce any bias for a timing analysis, just would only slightly reduce the event statistic.
+
+To ensure a complete containement of the shower and a rejection of possible pion showers, an additional cut on the energy deposited in the last two layers ($(E_{13}+E_{14})/\Sigma E$) is done and must be under 1\% of the energy sum of the event. Distributions of each selection cut are shown in figures \ref{fig:e10GeV_nHitsCoGZ}, \ref{fig:e50GeV_nHitsCoGZ}, \ref{fig:e10GeV_Elast} and \ref{fig:e50GeV_Elast} for simulated 10 GeV and 50 GeV muons, electrons and pions. Due to the restriction on the number of hits per event, the cuts are energy dependant. Additionally to reduce transverse leakage, the shower center of gravity in X and Y needs to be within $-90 mm$ and $90 mm$.
+
+The selection cuts are summed up in table \ref{table:electron_sel} for each energies. The selection efficiency between 10 and 50 GeV are shown in table \ref{table:eff_electron} obtained from simulated samples of muons, electrons and pions with QGSP\_BERT\_HP physics list.
+
+\begin{table}[htb!]
 	\centering
-	\caption{Selection cuts for each electron energies.}
-	\label{table:electron_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
+	\caption{Electron selection efficiency for between 10 and 50 GeV.}
+	\label{table:eff_electron}
+	\begin{tabular}{@{} llll @{}}
 		\hline
-		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
+		\textbf{Beam Energy} & \textbf{$\epsilon_{\mu}$} & \textbf{$\epsilon_{e}$} & \textbf{$\epsilon_{\pi}$}\\
 		\hline
-		\multirow{2}{*}{Event Quality}& All & Cherenkow ON\\& All & Energy in the first 3 layers of AHCAL > 10 MIP \\
-		\hline
-		\multirow{9}{*}{Electron Selection}& 10 GeV & 25 < $n_{hits}$ < 75 \\& 15 GeV & 30 < $n_{hits}$ < 90 \\& 20 GeV & 40 < $n_{hits}$ < 100 \\& 30 GeV & 50 < $n_{hits}$ < 110 \\& 40 GeV & 60 < $n_{hits}$ < 120 \\& 50 GeV & 70 < $n_{hits}$ < 140 \\& All & $cog_{z}$ < 250 mm\\& All & -90 mm < $cog_{x, y}$ < 90 mm \\& All & Energy in last two layers < 1\% $E_{sum}$ \\
+		10 GeV & 0\% & 87.2\% & 12.5\%\\
+		15 GeV & 0\% & 90.9\% & 8.4\%\\
+		20 GeV & 0\% & 92\% & 5.5\%\\
+		30 GeV & 0\% & 91.4\% & 2\%\\
+		40 GeV & 0\% & 91\% & 1.1\%\\
+		50 GeV & 0\% & 90.3\% & 0.9\%\\
 		\hline
 	\end{tabular}
-	}
 \end{table}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_10GeV}
+		\caption{10 GeV.} \label{fig:e10GeV_E3}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_50GeV}
+		\caption{50 GeV.} \label{fig:e50GeV_E3}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_10GeV}
+		\caption{10 GeV.} \label{fig:e10GeV_nHitsCoGZ}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_50GeV}
+		\caption{50 GeV.} \label{fig:e50GeV_nHitsCoGZ}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_10GeV}
+		\caption{10 GeV.} \label{fig:e10GeV_Elast}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_50GeV}
+		\caption{50 GeV.} \label{fig:e50GeV_Elast}
+	\end{subfigure}
+	\caption{\subref{fig:e10GeV_E3}) . \subref{fig:e50GeV_E3}) . \subref{fig:e10GeV_nHitsCoGZ}) . \subref{fig:e50GeV_nHitsCoGZ}) . \subref{fig:e10GeV_Elast}) . \subref{fig:e50GeV_Elast}) .}
+\end{figure}
 
 \subsection{Pion Selection}
-A simple selection is performed on pion events. The goal is to reject punch-through pions, muons and electron contamination. The selection cuts are shown in table \ref{table:pion_sel}.
 
-\begin{table}[t]
-	\centering
-	\caption{Selection cuts for pions.}
-	\label{table:pion_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
-		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
-		\multirow{1}{*}{Event Quality}& All & Cherenkow OFF\\
-		\hline
-		\multirow{3}{*}{Pion Selection}& All & $n_{hits}$ > 20 \\& All & $n_{hits}$ in the first 2 AHCAL layers < 5 \\& All & Energy in last two layers > 1\% $E_{sum}$ \\
-		\hline
-	\end{tabular}
-	}
-\end{table}
+A simple selection is performed on pion events. The goal is to reject punch-through pions, muons and electron contamination. The selection cuts are shown in table \ref{table:pion_sel}.
 
 \section{Timing Calibration}
 
 To perform the timing calibration of the AHCAL, the complete muon dataset is used. The electron dataset is used in a next step to validate the calibration procedure as described in subsection \ref{subsec:validation}. Table \ref{table:mu_elec_runs} summarises the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Selected events are counted after the selection on the error of the time reference as explained in \ref{subsection:time_ref}.
 
-\begin{table}[t]
+\begin{table}[htb!]
 	\centering
 	\caption{Table with the statistic before and after selection used for timing calibration.}
 	\label{table:mu_elec_runs}
@@ -157,7 +208,7 @@ The data analysis is performed in several steps. The first step is the calibrati
 
 The determination of the parameter $\text{slope}_{chip, BXID}$ is assuming that the TDC ramp is linear. The parameters Max$_{chip, BXID}$ and Pedestal$_{chip, BXID}$ in eq.\ref{eq:slope} are extracted from the TDC spectrum from a specific chip and BXID using only the first memory cell as illustrated in figure \ref{fig:TDC_Spectrum}. At the same time, the parameter Pedestal$_{mem=1}$ in eq.\ref{eq:time_chn} is extracted from the spectrum for each channel and the first memory cell of a chip without taking into account the BXID of the ramp as the difference between both pedestal can be corrected for at a later stage. This is accounting for a total of 208 slopes and 3744 pedestals to be extracted for the testbeam setup.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/ExampleTDCSpectra}
@@ -180,7 +231,7 @@ The technique of extraction is based on an edge detection method. For each chip 
 \label{subsection:time_ref}
 To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of the reference trigger. The trigger signals described in subsection \ref{subsec:trigger} are calibrated using the same method as explained above. After time calibration of the hit, events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range to reject noise hits from theses channels. In addition, as these channels receive exactly the same signal from the NIM-logic at the same time, a quadratic correction is applied to ensure that they match in time. The correction is performed by correcting the time of T$_{12}$ and T$_{13}$ compared to the time of T$_{14}$. The figure \ref{fig:T0_Correction} shows that the correction reduces the spread of the trigger channels w.r.t to each other. The resulting resolution for the reference trigger signal is around 4-5 ns, this resolution from the electronics contributes to the final timing resolution obtained.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/T0_Resolution_5.pdf}
 	\caption{Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$. The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns}
@@ -198,7 +249,7 @@ In a next step, to reduce the uncertainty made on the time of the trigger, the t
 
 Since the absolute time between the passage of a muon and the trigger of a channel is not known due to cabling and the trigger electronics, the time offset relative to the trigger is determined from data. Muons are quasi-instantaneous particles thus the time of the first hit distribution for each channel, memory cells and BXID has to be shifted to \textit{t=0}. This shifting procedure takes into account the delay time of the trigger due to cabling and the NIM-logic as well as mis-calibrations in pedestals. Only memory-cells containing more than 100 events are considered. This offset is determined by iteration requiring at least 4 prompt hits i.e hits in the range from -20 to 20 ns of the event. In this way, 18338 individual offsets are extracted from data. A distribution of the extracted offsets using muon data can be seen in figure \ref{fig:offset_trigger_distribution}. The figure \ref{fig:BXID_offset} shows that individual offsets have to be extracted for each BXID as the correlation is chip-dependent and not the same for odd and even BXIDs.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ExtractedOffsets.pdf}
@@ -216,7 +267,7 @@ Since the absolute time between the passage of a muon and the trigger of a chann
 \subsubsection{Time of the first hit distribution}
 After the selection, the time of the first hit (T$_{fH}$) can be obtained by plotting the distribution of T$_{chn}$ - T$_{ref}$ as shown in figure \ref{fig:timing_nocorrection}. The combined time resolution (RMS) shown in figure \ref{fig:reso_nocorrection} obtained by combining all layers is around 5.65 ns by just applying the time calibration on the data. Some improvements are possible as described in the subsections \ref{subsec:lin_corr} and \ref{subsec:timewalk}. The discrepancy observed for the layer 11 is most likely due to an electronic problem in the TDC voltage ramp of the chips on that layer.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_noCorrections.pdf}
@@ -237,7 +288,7 @@ After the selection, the time of the first hit (T$_{fH}$) can be obtained by plo
 
 The calibration relies on the linearity of the TDC voltage ramp in the SPIROC2b by measuring the minimum and maximum of the ramp and interpolating assuming a linear ramp. This assumption is not entirely reliable as described in \cite{OskarSSP, EldwanSSP}. For this, a correction of the non-linearity has to be applied. By simply looking at the time of the first hit (T$_{fH}$) for each chip and BXID versus the TDC value of the hit, the shape of the graph would indicate how reliable is the assumption. Indeed if the ramp would be perfectly linear, one would obtain a flat graph. A quadratic fit is performed for each chip and BXID in order to correct for the non-linearity of the ramp as shown in figure \ref{fig:LinCorr}. A check has been performed on the quality of the correction, seen in figure \ref{fig:LinCorr_2}. The non-linearity correction results in an improvement on the timing resolution (RMS) of the AHCAL of $\sim$5.1\% (5.36 ns) as shown in figure \ref{fig:timing_lincorrection}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/LinearityCorrection_Module09_Chip146_BXID0.pdf}
@@ -252,7 +303,7 @@ The calibration relies on the linearity of the TDC voltage ramp in the SPIROC2b 
 	\caption{\subref{fig:LinCorr} The $\chi^2$ of the fit is 1.29. \subref{fig:LinCorr_2} The correction parameter are applied then on the data to cross-check the quality of the correction. One can see that the curve flattens with the correction applied.}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_LinCorrection.pdf}
@@ -272,7 +323,7 @@ The calibration relies on the linearity of the TDC voltage ramp in the SPIROC2b 
 
 The time-walk effect is due to the presence of a threshold that induces a time shift between a small amplitude signal and a high amplitude signal. Small amplitude signals will systematically trigger at a later time than high amplitude signals. A correction can be applied on the data by looking at the time of the first hit versus the amplitude of the hit. This might be particularly important for late neutrons signals that generally deposit very little energy in the calorimeter. The correction is assumed to be the same for all the chips, independent of the position of the threshold of each chip, as hits are cut at 0.5 MIP and most of the chips were having the threshold set-up well below 0.5 MIP. An exponential fit of the form $\text{A} \times e^{-\lambda{}x} + \text{B}$ is performed on the data to extract the parameters needed to correct the time walk effect as shown on figure \ref{fig:time_walk}. The residuals after correction are in the order of few hundreds of picoseconds as seen in figure \ref{fig:time_walk_corr}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/TimeWalkProfile.pdf}
@@ -292,7 +343,7 @@ The time-walk effect is due to the presence of a threshold that induces a time s
 
 After the time-walk correction, an improvement of $\sim$3\% can be achieved on the time resolution of the AHCAL (RMS 5.20 ns) as shown in figure \ref{fig:timing_muons}. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained in the complete AHCAL. The obtained time resolution is around 5 ns. The distribution is still asymmetric, it is most likely coming from the non-linearity of the TDC ramp of the trigger reference as no external time is available to correct for it. This is taken into account in the simulation by parametrising the time distribution with a double Gaussian function. The number of events identified later than 5$\sigma$ ($\sim$25 ns) is around 1.22\% giving us a good assessment of the noise suppression for muons.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AllLayers.pdf}
@@ -312,7 +363,7 @@ After the time-walk correction, an improvement of $\sim$3\% can be achieved on t
 
 In order to validate the calibration, an electron sample is taken. Electromagnetic showers are quasi-instantaneous and perfect to cross-check the time calibration procedure. The selection applied to the data sample is described in subsection \ref{subsec:elec_sel}. The same calibration constants and correction constants are applied to the data except that an additional offset from the trigger signal has to be corrected for. The additional offset is expected to be small as the trigger configuration is very similar to the one for muons. The offset is in the order of 10 ns which is consistent with the changes in trigger configuration. The time of the first hit distribution is shown in figure \ref{fig:Timing_electrons}. The time distribution presents a large tail to the right and is much wider than for muons. This gives a hint that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher as well as the energy deposited in a single cell can be over hundreds MIP.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_AllLayers_AfterMuons.pdf}
 	\caption{Time of the first hit distribution for 20 GeV electrons, Max = 10.05 ns, RMS = 8.92 ns.}
@@ -324,7 +375,7 @@ In order to validate the calibration, an electron sample is taken. Electromagnet
 
 Pedestal shift for energy measurement is not a new feature of the SPIROC2b chip \cite{OskarMaster}. This electronic effect may be also present for timing measurement. It can be investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. It is shown in figure \ref{fig:nhits_profile}. This can be drastic on the time measurement of the AHCAL, a correction up to 15-20 ns can be necessary to the data for a high number of trigger. The correction parameters are determined by a linear fit to the data.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/NumberHits_Dependance.pdf}
@@ -342,7 +393,7 @@ Pedestal shift for energy measurement is not a new feature of the SPIROC2b chip 
 \subsection{Time of the first hit for electrons}
 \label{subsec:Electron_Final}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_AllLayers_20GeV.pdf}
@@ -360,7 +411,7 @@ Pedestal shift for energy measurement is not a new feature of the SPIROC2b chip 
 The distribution of the time of the first for 20 GeV is shown in figure \ref{fig:timing_electrons_corr} after correction. As seen the correction improves the RMS of the distribution ($\sim$14.6\%) as well as the distribution appears more gaussian-like. However, there is still a discrepancy ($\sim$32.6\%) with the time resolution obtained for muons (5 ns). This is due to the fact that not only the mean time shifts but that the RMS also increases as a function of number of hits as seen in figure \ref{fig:RMS_nHits}. In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrised from the data. More details can be read in the appendix \ref{appendix:ped_shift}. A comparison with the muon data has been done in order to cross-check the calibration as seen in figure \ref{fig:timing_electron_muon_comp}. If only single hits in a chip are taken, the time resolution obtained is very similar to the time resolution observed in muons ($\sim$7.7\% difference).\\
 The cause of observed effect is most likely due to an element in the chip (a delay box) that get unstable with the number of triggered channels and that is responsible for the hold of the TDC value in the chip. The hold is delayed thus sampling a higher TDC value than the one expected. All electron runs have been checked to validate the correction and calibration procedure. The figure \ref{fig:all_electron_energies} shows the comparison from 10 GeV to 50 GeV. The distributions are in agreement within a 10-15\% range for all energies which is within systematical uncertainty as explained in subsection \ref{subsec:det_inhomo}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/ComparisonDataEnergies.pdf}
 	\caption{Comparison of the time of first hit distribution for all electron energies.}
@@ -371,7 +422,7 @@ The cause of observed effect is most likely due to an element in the chip (a del
 \label{subsec:det_inhomo}
 
 A study has been performed to estimate the influence of the detector inhomogeneity on timing independent of the beam profile. For this, only events in which the centre of gravity in x and y are within the 4 centre tiles of the detector are selected. This has been checked for 10 and 50 GeV electron beam energy. The difference between the distribution can help to estimate the systematic uncertainty due to the inhomogeneity of the detector.
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Systematic_Inhomogeneity_10GeV.pdf}
@@ -391,7 +442,7 @@ The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show
 
 The next step is to compare data with simulation and cross-check the simulation with electrons. The timing resolution is extracted from muon data runs by fitting a double Gaussian in the range [-50 ns, 50 ns] and is used to smear the timing of simulated hits. The table \ref{table:time_res_sim} sums up the parameters used. The comparison for muons is shown in figure \ref{fig:sim_data_muon}. The comparison shows that in the full range, the difference between data and simulation is around 10-20\% maximum. This may be because of the asymmetry present in data that might be not well reproduced in Monte-Carlo. In general, the simulation is in a good agreement with data.
 
-\begin{table}[t]
+\begin{table}[htb!]
 	\centering
 	\caption[Timing resolution extracted with a double Gaussian fit from muon data used for simulation.]{Timing resolution extracted with a double Gaussian fit from muon data used for simulation.\footnotemark[1]}
 	\label{table:time_res_sim}
@@ -405,7 +456,7 @@ The next step is to compare data with simulation and cross-check the simulation 
 \end{table}
 \footnotetext{A table of rejected chips is available in appendix \ref{appendix:rejection}.}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Muons/Comparison_MokkaDD4hepData_Muons.pdf}
 	\caption{Time of first hit for data and simulation between -20 and 20 ns.}
@@ -414,7 +465,7 @@ The next step is to compare data with simulation and cross-check the simulation 
 
 In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrisation of the increase of the width of the time distribution function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. The figure \ref{fig:sim_data_elec} shows this comparison. The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figure \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of interest of 6 to 10 hits per chip. The simulation is in better agreement for higher energies (40-50 GeV) than for lower energies (10-15 GeV). This might come from the inhomogeneity of the detector that is not well reproduced in simulation by the global time parametrisation used. This may suggest that the time parametrisation is chip-wise of layer-wise. But due to the limited amount of data, only a global time parametrisation can be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within uncertainties.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons10GeV.pdf}
@@ -454,7 +505,7 @@ In the next step, a comparison with electron data is necessary to validate the s
 	\label{fig:sim_data_elec}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_10GeV.pdf}
@@ -499,7 +550,7 @@ In the next step, a comparison with electron data is necessary to validate the s
 
 One of the main goal is to compared \geant simulation with different hadronic physics models to the recorded pion data. The table \ref{table:pion_runs} summarises the runs and datasets used.
 
-\begin{table}[t]
+\begin{table}[htb!]
 	\centering
 	\caption{Table with the statistic before and after selection used for the pion dataset.}
 	\label{table:pion_runs}

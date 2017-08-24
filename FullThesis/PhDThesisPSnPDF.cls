@@ -38,7 +38,7 @@
 \DeclareOption{times}{
   \ifsetFont
     \ClassWarning{PhDThesisPSnPDF}{Font selection conflict: A font package was
-      aleady specified. Please check the document class options in case you 
+      aleady specified. Please check the document class options in case you
       have defined two fonts.}
   \else
     \PHD@timestrue
@@ -50,7 +50,7 @@
 \DeclareOption{fourier}{
   \ifsetFont
     \ClassWarning{PhDThesisPSnPDF}{Font selection conflict: A font package was
-      aleady specified. Please check the document class options in case you 
+      aleady specified. Please check the document class options in case you
       have defined two fonts.}
   \else
     \PHD@fouriertrue
@@ -62,7 +62,7 @@
 \DeclareOption{customfont}{
   \ifsetFont
     \ClassWarning{PhDThesisPSnPDF}{Font selection conflict: A font package was
-      aleady specified. Please check the document class options in case you 
+      aleady specified. Please check the document class options in case you
       have defined two fonts.}
   \else
     \setCustomFonttrue
@@ -164,7 +164,7 @@
 \newif\ifPHD@chapter\PHD@chapterfalse % Enable Separate Abstract
 \DeclareOption{chapter}{
   \PHD@chaptertrue
-  \ClassWarning{PhDThesisPSnPDF}{You have chosen an option that generates only 
+  \ClassWarning{PhDThesisPSnPDF}{You have chosen an option that generates only
     selected chapters with references, if this was intentional, ignore this
     warning. If not, please remove the option `chapter' from the document class
     and recompile. Good luck with your writing!}
@@ -206,13 +206,13 @@ footnotes.}
 \DeclareOption{twoside}{\PassOptionsToClass{\CurrentOption}{book}}%
 
 % Draft Mode
-\DeclareOption{draft}{\PassOptionsToClass{\CurrentOption}{book} 
+\DeclareOption{draft}{\PassOptionsToClass{\CurrentOption}{book}
 \ClassWarning{PhDThesisPSnPDF}{Draft is ON. You can use `draftmode' instead,
-  which adds watermark with timestamp and line numbering. Don't forget to turn 
+  which adds watermark with timestamp and line numbering. Don't forget to turn
   `draft' off for your final version.}}%
-\DeclareOption{draftmode}{\PassOptionsToClass{draft}{book}\PHD@drafttrue 
+\DeclareOption{draftmode}{\PassOptionsToClass{draft}{book}\PHD@drafttrue
 \ClassWarning{PhDThesisPSnPDF}{Draft Mode is ON.
-  Don't forget to turn it off for your final version.}}% 
+  Don't forget to turn it off for your final version.}}%
 
 % Line Numbers
 \newif\ifPHD@lineno\PHD@linenotrue
@@ -340,7 +340,7 @@ supported!}
   \renewenvironment{#1}%
      {\linenomath\csname old#1\endcsname}%
      {\csname oldend#1\endcsname\endlinenomath}%
-}% 
+}%
 
 \newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
   \patchAmsMathEnvironmentForLineno{#1}%
@@ -414,10 +414,10 @@ supported!}
 }
 
 % If NOT Draft Mode
-\else 
+\else
 
 \renewcommand\SetDraftText[1]{\ClassWarning{PhDThesisPSnPDF}{DraftMode is
-    inactive, to use SetDraftText include `draftmode' in the document 
+    inactive, to use SetDraftText include `draftmode' in the document
     class options.}}
 % Draft Version
 \renewcommand\SetDraftVersion[1]{\ClassWarning{PhDThesisPSnPDF}{DraftMode is
@@ -439,7 +439,7 @@ supported!}
 % ******************************* Bibliography *********************************
 \ifPHD@authoryear
   \ifPHD@biblatex
-    \RequirePackage[backend=biber, style=authoryear, citestyle=alphabetic, 
+    \RequirePackage[backend=biber, style=authoryear, citestyle=alphabetic,
       sorting=nty, natbib=true]{biblatex}
     \setBiBLaTeXtrue
   \else
@@ -448,7 +448,7 @@ supported!}
 \else
   \ifPHD@numbered
     \ifPHD@biblatex
-      \RequirePackage[backend=biber, style=numeric-comp, 
+      \RequirePackage[backend=biber, style=numeric-comp,
         citestyle=numeric, sorting=none, natbib=true]{biblatex}
       \setBiBLaTeXtrue
     \else
@@ -460,7 +460,7 @@ supported!}
           \@ifpackageloaded{natbib}{}{
             \@ifpackageloaded{biblatex}{}{
               \ClassWarning{PhDThesisPSnPDF}{%
-                Custom bibliography is chosen, but no corresponding package 
+                Custom bibliography is chosen, but no corresponding package
                 (biblatex/natbib) has been loaded. Please load the
                 appropriate bibliography package in the preamble.}
             }
@@ -472,7 +472,7 @@ supported!}
           citestyle=numeric, sorting=none, natbib=true]{biblatex}
         \setBiBLaTeXfalse
       \else
-        \RequirePackage[numbers,sort&compress]{natbib} 
+        \RequirePackage[numbers,sort&compress]{natbib}
       \fi % default
       \setBibfalse
     \fi % custombib
@@ -482,7 +482,7 @@ supported!}
 \ifsetBib
 \else
 \ClassWarning{PhDThesisPSnPDF}{No bibliography style was specified.
-  Default numbered style is used. If you would like to use a 
+  Default numbered style is used. If you would like to use a
   different style, use `authoryear' or `numbered' in the options in
   documentclass or use `custombib` and define the natbib package or
   biblatex package with required style in the Preamble.tex file}
@@ -515,9 +515,9 @@ supported!}
 \ifsetFont
 \else
   \ClassWarning{PhDThesisPSnPDF}{Using default font Latin Modern. If you
-    would like to use other pre-defined fonts use `times' (The Cambridge 
+    would like to use other pre-defined fonts use `times' (The Cambridge
     University PhD thesis guidelines recommend using Times font)  or `fourier'
-    or load a custom font in the preamble.tex file by specifying `customfont' 
+    or load a custom font in the preamble.tex file by specifying `customfont'
     in the class options}
   \RequirePackage{lmodern}
 \fi
@@ -670,7 +670,7 @@ supported!}
 % ******************************** Justification *******************************
 % Left aligned as per University identity guidelines
 \ifPHD@textJustify
-\message{PhDThesisPSnPDF: The University identity guidelines recommend using 
+\message{PhDThesisPSnPDF: The University identity guidelines recommend using
 left aligned text. Please use `flushleft' in the documentclass option, if you
 wish to left align your text}
 \else
@@ -704,9 +704,9 @@ wish to left align your text}
 \renewcommand{\chaptermark}[1]{\markboth{##1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ ##1\ }}
 \fancyhf{}
-\fancyhead[RO]{\nouppercase \rightmark\hspace{0.25em} | 
+\fancyhead[RO]{\nouppercase \rightmark\hspace{0.25em} |
   \hspace{0.25em} \bfseries{\thepage}}
-\fancyhead[LE]{ {\bfseries\thepage} \hspace{0.25em} | 
+\fancyhead[LE]{ {\bfseries\thepage} \hspace{0.25em} |
   \hspace{0.25em} \nouppercase \leftmark}
 
 
@@ -775,11 +775,11 @@ wish to left align your text}
 % Appending the appendix name to the letter in TOC
 % Especially when backmatter is enabled
 
-%\renewcommand\backmatter{
-%    \def\chaptermark##1{\markboth{%
-%        \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}{%
-%        \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}}%
-%    \def\sectionmark##1{\relax}}
+\renewcommand\backmatter{
+   \def\chaptermark##1{\markboth{%
+       \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}{%
+       \ifnum  \c@secnumdepth > \m@ne  \@chapapp\ \thechapter:  \fi  ##1}}%
+   \def\sectionmark##1{\relax}}
 
 
 % ******************************************************************************

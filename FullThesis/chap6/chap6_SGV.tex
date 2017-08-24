@@ -19,7 +19,7 @@ And finally, covariance matrix calculations can be performed using the detector 
 
 In general, a track is calculated by the intersection of the helix of a particle with pseudo-layers describing the material in the tracker. From the outermost hit, an helix is parametrised and then propagated to the next inner layer and the intersection and covariance matrix are calculated, the propagation is done until the inner most layer is reached.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.3\linewidth]{chap6/fig_SGV/Tracking_SGV.png}
   \caption{Tracking in SGV \cite{Berggren2012}. The tracker is represented by pseudo-layers at which intersection with a track, the covariance matrix is calculated, going from the outer part of the tracker to the inner part (inversed Kalman filter).}
@@ -48,7 +48,7 @@ In SGV, usual errors are already implemented i.e on detected energy, shower posi
 
 If (a part of) a neutral cluster is wrongly associated to a charged track (so then considered as a charged cluster), energy is then lost as shown in figure \ref{fig:asso_errors}. On the other hand, if (a part of) a charged cluster is not associated to any track (considered then as a neutral cluster), the energy is double counted as shown in figure \ref{fig:asso_errors2}. Theses mis-associations give rise to an error on the total energy of an event and the particle momentum \cite{Chera2014}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -74,14 +74,14 @@ The study of these association errors was done by using the Letter of Intent (LO
 
 From this, probability distribution functions are derived (figures \ref{fig:proba_para} and \ref{fig:proba_para2}). The algorithm is applied in the Particle Flow parametrisation of SGV. So far, the results seems to be in a good agreement mostly for the neutrals but still some development is needed to get the best agreement possible between SGV and the full simulation.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/prob_split.png}
   \caption{Probability distribution of splitting in function of the cluster energy and the type of the particle.}
   \label{fig:proba_split}
 \end{figure}
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -103,7 +103,7 @@ From this, probability distribution functions are derived (figures \ref{fig:prob
 
 The following study was perform on a simulated data sample from the Detailed Baseline Report (DBD) of \ee \ra\ \WWqqqq{} at 500 \GeV center of mass energy as shown on figure \ref{fig:DiagWWqqqq}. It is particularly interesting in order to evaluate the separation between the two $W$ bosons and the full hadronic decay complicating the reconstruction. This sample includes a \gam\gam \ra\ $hadrons$ background overlay. Several preparatory steps are performed during the reconstruction. First, a procedure is done to remove the overlay. Then hits are clustered into jets.
 %%% Feyman diagram process %%%%%%%%%%%%
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[trim={0 18cm 0 3cm},clip, width=1\linewidth]{chap6/fig_SGV/FeymanDiagram/DiagWWqqqq.pdf}
   \caption{Tree level Feymann diagram for the process \ee \ra\ \WWqqqq{} at \rts\ = 500 \GeV.}
@@ -159,7 +159,7 @@ A second criterion is used for non-vertex tracks i.e. tracks that are not matchi
 
 The goal was to check if whether Pandora rejects tracks with a PFO in SGV. As in SGV, no information is provided on the state of the track at a specific point or no tracker hit information is stored, only the relevant part of the selection made by PandoraPFA was applied. After the pseudo-selection, histograms ($h_{selected}$) for each track parameter ($d_0$, $z_0$, $cos\theta$ and $p_T$) were filled. For tracks that have the flag \"inPFO\" meaning that the track was indeed used by Pandora and formed a PFO, histograms ($h_{inPFO}$) with the track parameters were also filled.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/eff_track_selection_curlers.png}
   \caption{Ratio $\epsilon$ for the track parameters $d_0$, $z_0$, $cos\theta$ and $p_T$. The full simulation is represented by a black line. SGV fast simulation is represented by a blue line.}
@@ -172,7 +172,7 @@ As expected for the full simulation, the impact parameter ($d_0$) and the z posi
 
 The main difference appears for the $cos\theta$ parameter, the full simulation seems to drop very much for very low angles compared to SGV. After further investigation, theses tracks are curlers in the TPC that make through until the endcap. At this reconstruction step, theses tracks are considered by Pandora to be able to form a PFO but further a matching between clusters and track enables to get rid of most of theses curling tracks. A cut on $z_{min} - z_0$ that should be less than half a turn of the helix can get rid of most of theses curlers as shown in figures \ref{fig:trk_para_mc_reco} and \ref{fig:trk_select_wocurlers}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -194,7 +194,7 @@ By adding this cut, SGV and the full simulation agrees better. Nevertheless, the
 
 A look at the number of tracks or multiplicity inside a jet was performed in order to see if SGV performs as expected. The number of tracks were counted per jet energy bins for full simulation, SGV with and without the Particle Flow parametrisation as shown on figure \ref{fig:trk_multiplicity}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/multiplicity_jet_track.pdf}
   \caption{Track Multiplicity in bins of jet energy. The full simulation is in black line, SGV without the particle flow parametrisation is in red and SGV with the parametrisation is in blue. The results in SGV are in a very good agreement with the full simulation.}
@@ -205,7 +205,7 @@ One can see that the multiplicity of tracks are in very good agreement between S
 
 Typically, jets are composed of 60-70\% of charged particles, 10\% of photons and 20-30\% of neutrals. The correlation between the fraction of charged energy in a jet and track multiplicity was also looked at. The distributions shown on figures \ref{fig:correlation_distrib_full} and \ref{fig:correlation_distrib_sgv} are in agreement and correspond to what is expected.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -227,7 +227,7 @@ Typically, jets are composed of 60-70\% of charged particles, 10\% of photons an
 
 Association errors can happen during reconstruction as explained in section \ref{} because of a confusion term coming from the overlap of showers into the calorimeters.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/weight_corr.png}
   \caption{Distribution of the weights of track-true particle relation. The contribution from true represent the contribution of a true particle to a track in terms of hits from this true particle compared to the total hits in the track and the contribution to track represent the inverse relation, the number of hits from a true particle compared to the total of simulated hits from this true particle.}
@@ -252,7 +252,7 @@ with $m_{\pi}$ = 0.139 \GeV and $\overrightarrow{p}$, the reconstructed particle
 
 If $E_{track} < E_{cluster}$, the difference is categorized as double-counted energy. Naturally the energy of the cluster should be the track energy because the resolution of the tracker is much better than the calorimeter. So if there is more energy in the cluster it means that a part of it may come from a near neutral particle or from a mis-measurement. If the opposite is true i.e. $E_{track} > E_{cluster}$, then it is categorized as lost energy. The double counted and lost energy is summed up for all the particles in the event. This method is done for each reconstructed particles in an event, thus for each event we have a point $E_{dc}$ and $E_{lost}$. The result is shown on figure \ref{fig:cluster_track_level}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/Correlation_nojet.pdf}
   \caption{2D plot representing the lost energy versus the double-counted energy. The top plot is the full simulation and the bottom plot is SGV fast simulation. Each point in this plot represents an event. The red and the black dotted line indicate a correlation of 100\% and 80\%. One can observe that there is slightly different correlations for SGV and the full simulation.}
@@ -261,7 +261,7 @@ If $E_{track} < E_{cluster}$, the difference is categorized as double-counted en
 
 In the full simulation, it seems that PandoraPFA is leveling between the lost and double counted energy. Pandora may balancing both quantities on event by event basis. For SGV, the correlation is very similar with the parametrisation. SGV is has a tendency to have more double counting energy than lost energy indicating that SGV tends to split more clusters.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/Evis.pdf}
   \caption{Representation of the total energy of all events for the full simulation in black line and SGV with (in blue line) and without the particle flow parametrisation (in red line).}
@@ -270,7 +270,7 @@ In the full simulation, it seems that PandoraPFA is leveling between the lost an
 
 Looking at the total energy as shown on figure \ref{fig:energy_total}, SGV without the particle flow parametrisation seems to describe well the total energy but doesn't include the reconstruction effects explaining the smaller width of the distribution. When the parametrisation is used, a tail in the total energy appears. Though the width of the distribution seems correct, a shift in energy is visible. Therefore, the energy distribution of neutral and charged reconstructed particles was looked at as shown on figure \ref{fig:energy_charged_neutral}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/Total_EneuEcha_notjet.pdf}
   \caption{The top plot represents the total charged reconstructed particle energy. The bottom plot represents the total neutral reconstructed particle energy. SGV is indicated by a blue line (red line) with the particle flow parametrisation (without respectively) and the full simulation in black line.}
@@ -283,7 +283,7 @@ The neutral energy distribution improves in SGV with the particle flow parametri
 
 The process \ee \ra\ \WWqqqq{} at \rts\ = 500 \GeV has a typical topology of 4 jets from the 4 primary quarks. The jets are obtained by running the Durham algorithm after the reconstruction. The Durham algorithm is a $k_T$-algorithm, it clusters all reconstructed particles into jets as explained in section \ref{}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/Jet_spectrum.pdf}
   \caption{Jet energy spectrum between the full simulation in black line and SGV in blue (red) line with (without) the particle flow parametrisation.}
@@ -296,7 +296,7 @@ For low jet energies, SGV and the full simulation seems to be in agreement. On t
 
 The reason could be that, in these cases, the energy density in the calorimeter is so high. So that the association errors can be committed more easily because the confusion term of the overlapping showers is getting bigger and bigger in function of the jet energy. PandoraPFA, to solve this problem, may be switching to a pure \"Energy Flow\" mode. Meaning that it is discarding the track information and only keeps the calorimeter information. And by reclustering, PandoraPFA is matching the overall energy in a calorimeter region to the tracks in the same region.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -318,7 +318,7 @@ This may indicate that the current parametrisation can be improved and that the 
 
 Jets are composed of many charged and neutral particles. For each jet energy bin, the distribution of the charged/neutral energy fraction to the jet energy was looked at. It could give a handle in order to understand the effect of the parametrisation on a jet level and the observed discrepencies between the full simulation and SGV.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -350,7 +350,7 @@ After this, the list of neutrals is looped over and the distance to all charged 
 \end{equation}
 with $x_{i,j}$, $y_{i,j}$, $z_{i,j}$ the coordinates of the neutral particle $i$ and any charged particle $j$ at the front face of the ECAL/HCAL is calculated. A distinction between endcap and barrel is done to get rid of corner effects. The minimum distance $d_{min}$ is defined as $min(r_{ij})$ for each neutral particle. The plots are shown on figures \ref{fig:dmin_ECAL} and \ref{fig:dmin_HCAL}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
@@ -368,7 +368,7 @@ with $x_{i,j}$, $y_{i,j}$, $z_{i,j}$ the coordinates of the neutral particle $i$
 
 One can observe that there is a discrepancy between full simulation and SGV with Particle Flow in the ECAL. The Particle Flow parametrisation seems to have the effect that particles are placed closer in the ECAL. On the other hand, the Particle Flow parametrisation seems to have a rather good effect in the HCAL. Thus the PFA parametrisation was disable for the ECAL and the same distributions were looked again as shown on figures \ref{fig:dmin_ECAL_noPFA} and \ref{fig:dmin_HCAL_noPFA}.
 
-% \begin{figure}[t]
+% \begin{figure}[htbp!]
 %   \centering
 %   \begin{subfigure}[t]{0.45\textwidth}
 %     \centering
@@ -390,7 +390,7 @@ In that case, the distributions are in rather good agreement for the ECAL and HC
 
 Is the parametrisation of Particle Flow in SGV useless for the ECAL? In order to check the influence of the parametrisation on the ECAL energy distribution, the charged and neutral energy were looked at again. As expected, switching off the Particle Flow parametrisation for the ECAL have rather no or limited impact on the charged energy distribution as shown on figure \ref{fig:energy_ECALnoPFA}.
 
-\begin{figure}[t]
+\begin{figure}[htbp!]
   \centering
   \includegraphics[width=1\linewidth]{chap6/fig_SGV/Total_EneuEcha_notjet_onlyHCAL.pdf}
   \caption{Neutral and charged energy distributions with Particle Flow disabled for the ECAL.}
