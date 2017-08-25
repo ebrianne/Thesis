@@ -7,7 +7,7 @@
 	\centering
 	\caption{Selection cuts for muon runs.}
 	\label{table:muon_sel}
-	\resizebox{0.9\textwidth}{!}{%
+	\resizebox{0.75\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
@@ -28,7 +28,7 @@
 	\centering
 	\caption{Selection cuts for each electron energies.}
 	\label{table:electron_sel}
-	\resizebox{0.9\textwidth}{!}{%
+	\resizebox{0.75\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
@@ -47,7 +47,7 @@
 	\centering
 	\caption{Selection cuts for pions.}
 	\label{table:pion_sel}
-	\resizebox{0.9\textwidth}{!}{%
+	\resizebox{0.75\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
@@ -55,6 +55,8 @@
 		\multirow{1}{*}{Event Quality}& All & Cherenkow OFF\\
 		\hline
 		\multirow{3}{*}{Pion Selection}& All & $n_{hits}$ > 20 \\& All & $n_{hits}$ in the first 2 AHCAL layers < 5 \\& All & Energy in last two layers > 1\% $E_{sum}$ \\
+		\hline
+		\multirow{2}{*}{Multi Particle Rejection}& All & $n_{hits}$ in time window > 5 \\& All & $n_{Cluster}$ > 0 \\
 		\hline
 	\end{tabular}
 	}
