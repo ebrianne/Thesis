@@ -697,6 +697,78 @@ The systematics errors are added in quadrature for the full systematic. For comp
 \end{table}
 }
 
+\subsection{Hadronic shower timing}
+
+Inside a hadronic shower, absorber materials with a high atomic number Z therefore containing high number of neutrons are expected to release a high number of evaporation neutrons. These neutrons then will deposit energy by two different mechanism with different time scales relative to the first hard interaction.
+
+First, the elastic scattering of neutrons in the active material especially with high hydrogen content will contribute to few nanoseconds to tens of nanoseconds time scale, whereas neutron capture in the absorber material at the interface with the active material will contribute to several hundreds or thousands of nanoseconds time scale due to the relative long time of flight of thermal neutrons and the lifetime of such atomic states. Thus it is expected that hadronic shower will present an increase of the late component compared to muons or electrons.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_dNdt_Comparison.pdf}
+	\caption{Time of first hit for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The histograms are normalised to the number of events. The lines represent the fit to the data as explained in the text.}
+	\label{fig:dNdt_Comparison}
+\end{figure}
+
+The figure \ref{fig:dNdt_Comparison} confirms this. Muons and electrons energy deposition are instantaneous within a certain time window centered around $t=0$ ns (determined by the intrinsic time resolution of the detector). Some isolated hits are present in the tails most likely caused by SiPM thermal noise. This gives an idea of the noise level as well as the rejection of noise in the analysis. One can remark that the noise level in electron data is lower than in the muon data. This could be likely caused by the auto-trigerring scheme, the configuration of the trigger thresholds and the time until the detector gets full and read-out, where electron shower would get a chip full in average faster than a muon beam. Around 2.03\% of hits are after 50 ns compared to the core of the distribution between -50 and 50 ns. For electrons, only 0.37\% of hits are in the same region.
+For hadron showers, the situation is different. In this case, about 1.55\% of hits are after 50 ns. Moreover, the pion data presents a higher tail between 30 to 50 ns than in the electron data. In order to characterize the distribution, a similar model of the sum of two exponentials and a contant as T3B experiment \cite{Simon2013} is applied following the equation \ref{eq:dNdt_eq}:
+
+\begin{equation} \label{eq:dNdt_eq}
+	\frac{1}{N}\frac{dN}{dt} = A_{fast} \times e^{-\frac{t}{\tau_{fast}}} + A_{slow} \times e^{-\frac{t}{\tau_{slow}}} + c
+\end{equation}
+
+where $A_{fast}, \tau_{fast}$ and $A_{slow}, \tau_{slow}$ are the amplitudes and decays times of the modeled fast and slow component of the hadronic shower. Since the fit is performed on several orders of magnitudes, the same method that T3B has been applied for fitting. It is done in two steps. First, the slow component is fitted between 90 ns and \SI{2}{\micro\second}. Then fixing the parameters of the slow component, the fast component is fitted between 10 ns to \SI{2}{\micro\second}.
+With this procedure, a fast component of $7.04 \pm 0.59$ ns and a slow component of $826 \pm 183$ ns are fitted. The fast component is in the same order of magnitude as given by T3B of 8 ns and interpreted by the evaporation neutrons energy depositions in the active medium. But due to the time resolution of the AHCAL being in the same order of magnitude, it is difficult to confirm this origin. On the other hand, the slow component is very different than in T3B (around 80 ns in steel). This may be due to the contribution of SiPM noise which reduces the sensitivity to this slow component in the shower. One can also remark that this model may be incomplete as the fitting function does match well the data in the transition region of 50 to 100 ns similar as the T3B data. The table \ref{table:dNdt_fit} sums up the fitted results.
+
+\begin{table}[htb!]
+	\centering
+	\caption{Summary of the fit results in figure \ref{fig:dNdt_Comparison}.}
+	\label{table:dNdt_fit}
+	\begin{tabular}{@{} lccc @{}}
+		\hline
+		Parameter & Muon & Electron & Pion \\
+		\hline
+		$\tau_{fast}$ [ns] & - & - & $7.04 \pm 0.59$ \\
+		$\tau_{slow}$ [ns] & - & - & $826 \pm 183$ \\
+		$c$ & $(7.91 \pm 0.09) \times 10^{-6}$ & $(1.20 \pm 0.02) \times 10^{-6}$ & $(3.38 \pm 0.56) \times 10^{-6}$ \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Energy_Comparison_ShortAsymRange.pdf}
+	\caption{Time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns.}
+	\label{fig:Energy_Comparison}
+\end{figure}
+
+\subsection{Radial dependence of timing profiles}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf}
+		\caption{.}\label{fig:Radius_Comparison_SSF}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_BL.pdf}
+		\caption{.}\label{fig:Radius_Comparison_BL}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:RadialTiming}
+\end{figure}
+
+\subsection{Longitudinal dependence of timing profiles}
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange.pdf}
+	\caption{Time of first hit as function of the layer position for muons, electrons and pions in steel absorber in a range of -50 to 200 ns.}
+	\label{fig:Depth_Comparison}
+\end{figure}
+
 \section{Comparison to simulation}
 
 
