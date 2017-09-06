@@ -735,6 +735,8 @@ With this procedure, a fast component of $7.04 \pm 0.59$ ns and a slow component
 	\end{tabular}
 \end{table}
 
+The energy dependence of the timing of hits has been studied in a second step as shown on figure \ref{fig:Energy_Comparison}. It shows the mean time of first hit taken between [-50, 200] ns as function of the hit energy for muon, electron and pion beam. For muons and electrons, no dependence with energy is observed as expected as all hits are prompt. For pions, the situation is different. A delay of 2-3 ns at 0.5 MIP is observed and decreases down to 0-1 ns above 1 MIP. For higher pion energies than 10 GeV, a dip in the distribution can be observed between 0.5 and 1.5 MIP. This effect is most likely due to an over-correction of the data with the number of triggered channels in a chip that induces an increase of the left tail of the distribution. In principle, it should follow the same shape as for 10 GeV pions as there is no dependency with beam energy.
+
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Energy_Comparison_ShortAsymRange.pdf}
@@ -742,25 +744,71 @@ With this procedure, a fast component of $7.04 \pm 0.59$ ns and a slow component
 	\label{fig:Energy_Comparison}
 \end{figure}
 
+This figure demonstrates that low energy hits are responsible for delayed deposition most likely by low energy neutron from capture and spallation processes. Higher energy deposits occurs mostly in the prompt part of the hadron shower.
+
 \subsection{Radial dependence of timing profiles}
+
+As shown in the previous subsection, the prompt part of the shower is dominated by EM subshowers and relativistic particles. As for the delayed part is coming from mostly evaporation and spallation low energy neutrons. It is expected that the former is concentrated near the shower axis as for the latter, it is spread out laterally as these neutrons can travel far away in the calorimeter before interacting. This is investigated by looking at the mean time of first hit as a function of the distance to the shower center of gravity defined in the [x,y] plane. This is shown in figures \ref{fig:Radius_Comparison_SSF} and \ref{fig:Radius_Comparison_BL} for the small layers from 3 to 10 and the big layers from 11 to 14 separately.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf}
-		\caption{.}\label{fig:Radius_Comparison_SSF}
+		\caption{Small layers from 3 to 10.}\label{fig:Radius_Comparison_SSF}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_BL.pdf}
-		\caption{.}\label{fig:Radius_Comparison_BL}
+		\caption{Big layers from 11 to 14.}\label{fig:Radius_Comparison_BL}
 	\end{subfigure}
-	\caption{.}
+	\caption{Radial shower timing profile of the time of first hit for muon, electron and pion beams. The left plot shows the timing profile for the small layers and the right profile shows the timing profile for big layers. The explanation for the separation is described in the text. The systematics are shown by the color bands.}
 	\label{fig:RadialTiming}
 \end{figure}
 
+For muons and electrons, the mean time of the first hit does not vary with the increase of radius showing that the processes involved are prompt and independant of the position. On the contrary for hadronic showers, it shows an increase with the distance to the shower axis for both type of boards, though the slopes are different with the small layers presenting a steeper slope. This is consistant with the expectation of the core of the shower depositing promptly most of the energy via EM subshowers and relativistic particle near the shower axis. This is followed by a hadronic halo which contributes to delayed signals by mainly neutron-induced processes. For the small layers, the time of first hit varies between 0 ns at small radius and 10 ns at 25 cm. For the big layers, it varies between 0, 4 ns at 25 cm and 6 ns at 35 cm. This shows a relative difference between both distributions. This is thought to come from the fact that different parts of the shower are sampled in the front / back of the calorimeter respectively and where the physics may differ.
+
+To confirm this, I investigated the time of first hit as function of the radius to the shower axis at constant distance between the layer looked at and the first hard interaction (FHI) layer of the hadronic shower. First, a small algorithm for a shower start finder to find the layer of the first hard interaction had to be written. This is based on previous work \cite{} with slight modifications due to the fact that few layers in the front of the detector present a bad performance. The basics of the algorithm was to find the primary track and check the number of hits between layer $i$ and $i+1$. This number was chosen to be $>6$. If an event was found in this case, a check on the length of the track was performed and it was required to be $>3$ hits in a track. A simple check on the performance of the algorithm was done by looking at the difference between the reconstructed layer of the FHI and the Monte-Carlo truth as well as the correlation between both. This is shown in figures \ref{fig:Diff_FHI_RecoMC} and \ref{fig:Corr_FHI_RecoMC}. The performance of the algorithm is fairly good in order to get a good estimate of the FHI layer.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ShowerStart_Difference_noOptimisation.pdf}
+		\caption{Difference between reconstructed FHI and MC truth layer.}\label{fig:Diff_FHI_RecoMC}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ShowerStart_Difference_noOptimisation_2D.pdf}
+		\caption{Correlation between reconstructed FHI and MC truth layer.}\label{fig:Corr_FHI_RecoMC}
+	\end{subfigure}
+	\caption{Performance check of the FHI algorithm in the AHCAL detector. The left plot shows the difference between the reconstructed FHI and the MC truth. The distribution is slightly decentred at -0.81 with a RMS of 1.87. The right plot shows the correlation between them. The black line represent a guide line for a perfect correlation.}
+	\label{fig:FHIAlgo}
+\end{figure}
+
+So looking back at the data, it is expected that with a constant distance between the reconstructed FHI and the layer looked at that there is will be the same dependence of the mean time of the hit as function of the radius as the same part of the shower would be looked at. Or that inversely by looking at a fixed layer for different FHI layer, the expected behavior would be a change in the slope of the time of first hit as function of the radius to the shower axis. The figure \ref{fig:Radius_FHI} and \ref{fig:Radius_FHI_Fixed} is an attempt at this.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf}
+		\caption{Fixed FHI-layer distance case.}\label{fig:Radius_FHI}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf}
+		\caption{Fixed layer with difference FHI case.}\label{fig:Radius_FHI_Fixed}
+	\end{subfigure}
+	\caption{Investigation of the difference of the shape of the radial timing distribution between small and big layers. The left plot shows the timing profile of layer 7 and 10 selecting events only where the difference between the reconstructed FHI layer and the observed layer is 4. The right plot shows the time profile of layer 10 for events with different reconstructed FHI.}
+	\label{fig:Radius_FHI}
+\end{figure}
+
+The data seems to shows that by fixing the distance between the FHI and the layer, that the time of first hit displays the same slope within the systematic uncertainties. Also on the other side, looking at a fixed layer in this case layer 10, it seems that there is a trend of an increase of the slope of the distribution as function of the reconstructed FHI within the systematics. Unfortunately due to the small amount of data available as well as the unusability of more layers of the detector, it is difficult to confirm this observation strongly and would need more investigation in a new testbeam campaign with a full equipped prototype.
+
 \subsection{Longitudinal dependence of timing profiles}
+
+The longitudinal dependence of time was also looked at.
 
 \begin{figure}[htbp!]
 	\centering
