@@ -655,13 +655,16 @@ The table \ref{table:pion_runs} summarises the runs and datasets used for the pi
 For a significant assesment of differences observed between data and simulations, systematic errors must be evaluated. Several possible errors where identified:
 
 \begin{itemize}
+	% \item MIP Energy Scale: An error on the MIP energy scale needs to be converted in time when looking at the dependence of time with hit energy. An error of 0.5\% is taken. Using simulation, this can be converted into time. For muon and electron beams, it has mostly no effects. For pion beams, it ranges from XXX ns at 0.5 MIP to XXX ns at 1 MIP.
 	\item Non-Linearity correction: A non-linearity correction is applied to the data as explained in section \ref{subsec:lin_corr}. The residuals of the correction give a systematic error at the level of 0.2 ns.
 	\item Time walk correction: In the same way as for the non-linearity correction, the error obtained from the residuals of the correction is in the order of 0.2 ns.
 	\item Number of triggered channels correction: the correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the timing in the order of 1 ns. This systematic error is the most dominant over all other uncertainties.
 	\item Determination of the offset to $t=0$: A shift of the time distribution at zero is done for each layer. The error of this shift varies between 0.05 to 0.1 ns for data. In this case, a conservative error of 0.1 ns is used. For simulation, the shift can be calculated easily using a simple time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this a uncertainty of 3 mm is taken in z corresponding to 0.01 ns error in timing.
 	\item Position relative of the detector to the beam: The detector was positionned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the centimeter level. Thus a conservative error of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the small layers and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the big layers using 10 GeV data. For each beam energy, the systematics were determined.
+	\item Cross-talk: No measurement for cross-talk is available and from previous measurements it varies between 10\% and 18\%. These are used for systematics in simulation.
 	\item Detector inhomogeneities: Following a small study of timing independant of the beam profile, variations in the absolute number of entries in each time bins can be observed. The variations are between 10-20\% thus a conservative error of 20\% is used for the time distribution.
 	\item Number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection. Thus the number of absolute pion events is not known. A conservative error of 10\% when comparing data to simulation for the absolute number of hits per time bin.
+	\item Smearing parametrisation: A parametrisation was obtained from data for the width of the time smearing as function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
 \end{itemize}
 
 The systematics errors are added in quadrature for the full systematic. For comparison data-MC of the number of hits per time bin, an error of 20\% for muons/electrons and 30\% for pions is used. For the distribution of time versus energy, the systematic error is resulting at 1.04 ns. For the distribution of time versus radius, the systematic error is varying between 0.36 ns at small radius to 1.54 ns at large radius for the small layers and from 0.15 ns at small radius to 0.95 ns at large radius for the big layers. The table \ref{table:time_syst} sums up the systematic errors used in the analysis.
@@ -672,16 +675,17 @@ The systematics errors are added in quadrature for the full systematic. For comp
 	\centering
 	\caption{Summary of systematic uncertainties.}
 	\label{table:time_syst}
-	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{@{} |l|c| @{}}
 		\hline
 		\multicolumn{1}{|c|}{Uncertainty source} & Full uncertainty steel \\
 		\hline
+		% MIP Energy Scale & XXX-XXX ns \\
 		Non-linearity residuals & 0.2 ns \\
 		Time-walk residuals & 0.2 ns \\
 		Number of triggered channels over 0.5 MIP residuals & 1 ns \\
 		Offset to $t=0$ & 0.1 ns (data) 0.01 ns (MC) \\
 		Position relative to the beam & 0.36-1.54 ns (SSF) 0.15-0.95 ns (BL) \\
+		Cross-talk & 10-18\% \\
 		Detector inhomogeneities & 20\% \\
 		Number of absolute events & 10\% (pions) \\
 		\hline
@@ -693,7 +697,6 @@ The systematics errors are added in quadrature for the full systematic. For comp
 		data-MC vs hit distance to CoG & 1.10-1.86 ns (SSF) 1.05-1.41 ns (BL) \\
 		\hline
 	\end{tabular}
-	}
 \end{table}
 }
 
@@ -808,17 +811,224 @@ The data seems to shows that by fixing the distance between the FHI and the laye
 
 \subsection{Longitudinal dependence of timing profiles}
 
-The longitudinal dependence of time was also looked at.
+The longitudinal dependence of time was also looked at. It is expected that the further you are in the calorimeter that more low energy neutrons contributes to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange.pdf}
-	\caption{Time of first hit as function of the layer position for muons, electrons and pions in steel absorber in a range of -50 to 200 ns.}
-	\label{fig:Depth_Comparison}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange.pdf}
+		\caption{Time of first hit as function of the layer position.} \label{fig:Depth_Comparison}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf}
+		\caption{Time of first hit as function of the distance to the FHI.}\label{fig:Depth_Comparison_FHI}
+	\end{subfigure}
+	\caption{The left plot shows that all distributions are compatible with a flat distribution for the time of first hit as function of the layer position. The right plot shows the same as function of the distance to the reconstructed FHI.}
+	\label{fig:DepthProfile}
 \end{figure}
+
+It seems that the observation in the data is compatible with no increase of the time with the layer depth within systematics. This may be due to the fact that the sensibility to this late component is suppressed by the time resolution of the calorimeter as well as the systematic errors. An attempt to get a better sensitivity was to look at the mean time of first hit as function of the depth from the reconstructed FHI as shown in figure \ref{fig:Depth_Comparison_FHI}. Same conclusion within systematics this is compatible with a flat distribution around $t=0$.
+
+\subsection{Time correlations between layers}
+
+The advantage of this studied prototype over T3B is the possibility to investigate the possible time correlations between layers. This has been looked at as shown on figures \ref{fig:Time_Corr_short} and \ref{fig:Time_Corr_long} for the 50 GeV pion sample. For this, the data below 50 ns is ignored as only the tail of the timing distributions is interresting. Two types of correlations was investigated, short and long. For the short correlation, the layers 6 and 7 were chosen. As for the long, the layers 13 and 14 were selected. These were mostly chosen due to the fact that few layers were working properly. It is not very clear what to expect in these cases except that for the short one, a possible correlation would be visible due to the proximity of the layers.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Time_Correlation_short.pdf}
+		\caption{Time correlation between layer 6 and 7 for 50 GeV pions.} \label{fig:Time_Corr_short}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Time_Correlation_long.pdf}
+		\caption{Time correlation between layer 13 and 14 for 50 GeV pions.}\label{fig:Time_Corr_long}
+	\end{subfigure}
+	\caption{The left plot shows the time correlation between layer 6 and 7 separated by 1 $X_0$. The right plot shows the time correlation for layers 13 and 14 separated by 1 $\lambda_{\pi}$. Both plots show a visible time correlation.}
+	\label{fig:TimeCorrelation}
+\end{figure}
+
+The figures show that a correlation is visible in both cases in the data. To quantify this, the ratio $R$ of the number of hits per time bin between 50 ns and \SI{2}{\micro\second} and the total number of hits per time bin $N_{tot}$ in the histogram is calculated:
+
+\begin{equation}
+R = \frac{\int_{50 ns}^{2 \mu s} \int_{50 ns}^{2 \mu s} \frac{dN_i(t)}{dt_i} \frac{dN_j(t)}{dt_j} dt_i dt_j}{N_{tot}}
+\end{equation}
+
+The results show that 18.14\% of the entries are on the diagonal for the short correlation. This could be indeed possible due to the proximity of the layer and may come from the fast component of the hadron shower as well as correlated noise between layers. For the long correlation, 3.24\% of the entries are on the diagonal. This represent a substential amount of hits that are correlated. This is not clear the origin of this correlation but it may come from the fact that the suppression of the multiple particle events that is not suppressed enough and decrease the sensitivity to the physics.
 
 \section{Comparison to simulation}
 
+In this section, the data collected is compared to \geant simulations using different hadronic models as explained in chapter \ref{chap:G4Simulation}.
 
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion10GeV_LateClusters.pdf}
+		\caption{10 GeV.} \label{fig:dNdt_SimData_10GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion30GeV_LateClusters.pdf}
+		\caption{30 GeV.}\label{fig:dNdt_SimData_30GeV}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion50GeV_LateClusters.pdf}
+		\caption{50 GeV.} \label{fig:dNdt_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion70GeV_LateClusters.pdf}
+		\caption{70 GeV.} \label{fig:dNdt_SimData_70GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion90GeV_LateClusters.pdf}
+		\caption{90 GeV.} \label{fig:dNdt_SimData_90GeV}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:dNdt_SimData_Comparison}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_10GeV.pdf}
+		\caption{10 GeV.} \label{fig:Energy_SimData_10GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_30GeV.pdf}
+		\caption{30 GeV.}\label{fig:Energy_SimData_30GeV}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_50GeV.pdf}
+		\caption{50 GeV.} \label{fig:Energy_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_70GeV.pdf}
+		\caption{70 GeV.} \label{fig:Energy_SimData_70GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_90GeV.pdf}
+		\caption{90 GeV.} \label{fig:Energy_SimData_90GeV}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:Energy_SimData_Comparison}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_10GeV_SSF.pdf}
+		\caption{10 GeV (SSF).} \label{fig:Radius_SSF_SimData_10GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_30GeV_SSF.pdf}
+		\caption{30 GeV (SSF).} \label{fig:Radius_SSF_SimData_30GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_50GeV_SSF.pdf}
+		\caption{50 GeV (SSF).} \label{fig:Radius_SSF_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_70GeV_SSF.pdf}
+		\caption{70 GeV (SSF).} \label{fig:Radius_SSF_SimData_70GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_90GeV_SSF.pdf}
+		\caption{90 GeV (SSF).} \label{fig:Radius_SSF_SimData_90GeV}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:Radius_SSF_SimData_Comparison}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_10GeV_BL.pdf}
+		\caption{10 GeV (BL).}\label{fig:Radius_BL_SimData_10GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_30GeV_BL.pdf}
+		\caption{30 GeV (BL).} \label{fig:Radius_BL_SimData_30GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_50GeV_BL.pdf}
+		\caption{50 GeV (BL).} \label{fig:Radius_BL_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_70GeV_BL.pdf}
+		\caption{70 GeV (BL).} \label{fig:Radius_BL_SimData_70GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_90GeV_BL.pdf}
+		\caption{90 GeV (BL).} \label{fig:Radius_BL_SimData_90GeV}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:Radius_BL_SimData_Comparison}
+\end{figure}
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_10GeV.pdf}
+		\caption{10 GeV.}\label{fig:Depth_SimData_10GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_30GeV.pdf}
+		\caption{30 GeV.} \label{fig:Depth_SimData_30GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_50GeV.pdf}
+		\caption{50 GeV.} \label{fig:Depth_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_70GeV.pdf}
+		\caption{70 GeV.} \label{fig:Depth_SimData_70GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_90GeV.pdf}
+		\caption{90 GeV.} \label{fig:Depth_SimData_90GeV}
+	\end{subfigure}
+	\caption{.}
+	\label{fig:Depth_SimData_Comparison}
+\end{figure}
 
 \section{Conclusion and Outlook}
