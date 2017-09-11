@@ -83,13 +83,13 @@ The muon selection was designed to efficiently select muons and reject late pion
 The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pions. The selection effectively reduces the contamination of late pion showers by over 50\% and the remaining pion efficiency is well compatible with the fraction of pions traversing the AHCAL without hard interaction. A detailed overview of the MIP selection is given in table \ref{table:muon_sel}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsLayer_Muons}
 		\caption{Maximum number of hits per layer normalized to the number of AHCAL Towers.} \label{fig:Muons_Track_nHitsLayer}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsTrack_Muons}
 		\caption{Number of hits in a track normalized to the number of events.} \label{fig:Muons_Track_nHits}
@@ -127,37 +127,37 @@ The selection cuts are summed up in table \ref{table:electron_sel} for each ener
 \end{table}
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_E3}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_E3}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_Elast}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_Elast}
@@ -243,13 +243,13 @@ The data analysis is performed in several steps. The first step is the calibrati
 The determination of the parameter $\text{slope}_{chip, BXID}$ is assuming that the TDC ramp in the chip is linear to a first order. The parameters Max$_{chip, BXID}$ and Pedestal$_{chip, BXID}$ in eq.\ref{eq:slope} are extracted from the TDC spectrum from a specific chip and BXID using only the first memory cell as illustrated in figure \ref{fig:TDC_Spectrum}. At the same time, the parameter Pedestal$_{mem=1}$ in eq.\ref{eq:time_chn} is extracted from the spectrum for each channel and the first memory cell of a chip without taking into account the BXID of the ramp as the difference between both pedestal can be corrected for at a later stage. This is accounting for a total of 208 slopes and 3744 pedestals to be extracted for the testbeam setup.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/ExampleTDCSpectra}
 		\caption{TDC Spectrum of a typical chip.} \label{fig:TDC_Spectrum}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/BadTDCSpectra_Layer12}
 		\caption{TDC Spectrum of a bad chip.} \label{fig:TDC_Spectrum_bad}
@@ -279,13 +279,13 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 After time calibration of the hit, events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range to reject noise hits from theses channels. In addition, as these channels receive exactly the same signal from the NIM-logic at the same time, a quadratic correction is applied to ensure that they match in time as shown in figure \ref{fig:Corr_T12T14}. The correction is performed by correcting the time of T$_{12}$ and T$_{13}$ compared to the time of T$_{14}$. The figure \ref{fig:T0_Correction} shows that the correction reduces the spread of the trigger channels w.r.t to each other. The resulting resolution for the reference trigger signal is around 4-5 ns. This resolution from the electronics contributes to the final timing resolution obtained.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/Correlation_T12vsT14_TDC2ns.pdf}
 		\caption{Time correlation the reference triggers T$_{12}$ and T$_{14}$.}\label{fig:Corr_T12T14}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/T0_Resolution_5.pdf}
 		\caption{Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$.}	\label{fig:T0_Correction}
@@ -307,13 +307,13 @@ Since the absolute time between the passage of a muon and the trigger of a chann
 This offset is determined by iteration requiring at least 4 prompt hits i.e hits in the range from -20 to 20 ns of the event. This is required to remove noisy channels and ensure a good calibration of the offset. In this way, 18338 individual offsets are extracted from data. A distribution of the extracted offsets using muon data can be seen in figure \ref{fig:offset_trigger_distribution}. The figure \ref{fig:BXID_offset} shows that individual offsets have to be extracted for each BXID and indicates that a pedestal value per BXID is needed.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ExtractedOffsets.pdf}
 		\caption{Distribution of the offset used to correct for the trigger delay.}\label{fig:offset_trigger_distribution}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/CorrelationOffsets_BXID.pdf}
 		\caption{Correlation between offsets extracted for even and odd BXID.}\label{fig:BXID_offset}
@@ -328,13 +328,13 @@ After the selection and calibration, the time of the first hit (T$_{fH}$) can be
 Each layer is also looked at individually as shown in figure \ref{fig:reso_nocorrection}. A comparison between a gaussian fit and the RMS of the distribution is done. All layers are very similar in terms of time resolution and gaussian-like. The layer 6 and 10 present a higher time resolution which was expected due to the bad quality of these layers. The discrepancy observed for the layer 11 is most likely due to an electronic problem in the TDC voltage ramp of all the chips on that layer.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_noCorrections.pdf}
 		\caption{Timing for all layers in the AHCAL excluding layer 11.}\label{fig:timing_nocorrection}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_noCorrections.pdf}
 		\caption{Extracted resolution for all layers in the AHCAL.}\label{fig:reso_nocorrection}
@@ -350,13 +350,13 @@ Each layer is also looked at individually as shown in figure \ref{fig:reso_nocor
 The calibration relies on the linearity of the TDC voltage ramp in the \textit{SPIROC2B} by measuring the minimum and maximum of the ramp and interpolating the slope assuming a linear ramp. This assumption is not entirely reliable as described in \cite{Hartbrich2011, Brianne2012}. The voltage slope presents a slight kink around the middle leading to a non-linear ramp. For this, a correction of the non-linearity has to be applied.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/LinearityCorrection_Module09_Chip146_BXID0.pdf}
 		\caption{Quadratic fit of chip 146 (BXID even) on layer 09.}\label{fig:LinCorr}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/LinearityCorrection_Module09_Chip146_BXID0_Corrected.pdf}
 		\caption{Profile for chip 146 on layer 09 after the non-linearity correction of the ramp.}\label{fig:LinCorr_2}
@@ -369,13 +369,13 @@ By simply looking at the time of the first hit (T$_{fH}$) for each chip and BXID
 The non-linearity correction results in an improvement on the timing resolution (RMS) of the AHCAL of about 5.1\% (5.36 ns) as shown in figure \ref{fig:timing_lincorrection}. The assymetry of the time distribution remains and is most likely due to the time reference which is non corrected for the non-linearity as no external time reference for these channels is present. Looking at each layer, as shown on figure \ref{fig:reso_lincorrection}, the time resolution went down by the same amount.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_LinCorrection.pdf}
 		\caption{Timing for all layers in the AHCAL excluding layer 11.}\label{fig:timing_lincorrection}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_LinCorrection.pdf}
 		\caption{Extracted resolution for all layers in the AHCAL.}\label{fig:reso_lincorrection}
@@ -391,13 +391,13 @@ The time-walk effect is due to the presence of a threshold that induces a time s
 The correction is assumed to be the same for all the chips, independent of the position of the threshold of each chip, as hits are cut at 0.5 MIP and most of the chips were having the threshold set-up well below 0.5 MIP. An exponential fit of the form $\text{A} \times e^{-\lambda{}x} + \text{B}$ is performed on the data to extract the parameters needed to correct the time walk effect as shown on figure \ref{fig:time_walk}. The residuals after correction are in the order of few hundreds of picoseconds as seen in figure \ref{fig:time_walk_corr}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/TimeWalkProfile.pdf}
 		\caption{Profile of the time of first hit as function of the hit energy.}\label{fig:time_walk}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/TimeWalkProfile_Correction.pdf}
 		\caption{Same profile after time-walk correction.}\label{fig:time_walk_corr}
@@ -411,13 +411,13 @@ The correction is assumed to be the same for all the chips, independent of the p
 After the time-walk correction, an improvement of around 3\% can be achieved on the time resolution of the AHCAL as shown in figure \ref{fig:timing_muons}. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained in the complete AHCAL. The obtained time resolution is around 5.2 ns. The distribution is still asymmetric and it is taken into account in the simulation by parametrising the time distribution with a double Gaussian function. The number of events identified later than 5$\sigma$ ($\sim$ 25 ns) is around 1.22\% giving us a good assessment of the noise suppression for muons.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AllLayers.pdf}
 		\caption{Time of the first hit distribution of the AHCAL after all corrections.}\label{fig:timing_muons}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_AllCorrection.pdf}
 		\caption{Time resolution obtained for each AHCAL layers.}\label{fig:timing_reso_all_muons}
@@ -449,13 +449,13 @@ Pedestal shift for energy measurement is not a new feature of the \textit{SPIROC
 It is shown in figure \ref{fig:nhits_profile}. This can be drastic on the time measurement of the AHCAL, a correction up to 30-40 ns can be necessary to the data for a high number of trigger (15-20). The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but as well its width. The width increases with the number of triggers in a chip thus making the time resolution of the AHCAL dependant on the number of hits. This is shown on figure \ref{fig:RMS_nHits}. As expected, if only a single channel triggers in a chip, the time resolution is closed to the one obtained for muons.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/NumberHits_Dependance_AllEnergies.pdf}
 		\caption{Time of the first hit function of the number of triggered channels in a chip for all electron energies.}\label{fig:nhits_profile}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/ParametrisationPedestalShift_20GeV.pdf}
 		\caption{RMS of the time of first hit function of the number of triggered channels for 20 GeV electrons.}\label{fig:RMS_nHits}
@@ -469,13 +469,13 @@ It is shown in figure \ref{fig:nhits_profile}. This can be drastic on the time m
 The distribution of the time of the first for 20 GeV is shown in figure \ref{fig:timing_electrons_corr} after correction as function of the triggered channels. The correction improves the RMS of the distribution, around 12.1\%, as well as the distribution appears more gaussian-like. However, there is still a discrepancy (around 33.7\%) with the time resolution obtained for muons (5.2 ns). This is due to the fact that not only the mean time shifts but that the RMS also increases as a function of number of hits as seen in figure \ref{fig:RMS_nHits}. In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrised from the data. More details can be read in the appendix \ref{appendix:ped_shift}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_AllLayers_20GeV.pdf}
 		\caption{Time of the first hit distribution for 20 GeV electrons after correction as function of the number of triggered channels.}\label{fig:timing_electrons_corr}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/ComparisonAll_ElectronsSingleHit.pdf}
 		\caption{Comparison between eletrons and muons of time of first hit distribution.}\label{fig:timing_electron_muon_comp}
@@ -498,13 +498,13 @@ A comparison with the muon data has been done in order to cross-check the calibr
 A study has been performed to estimate the influence of the detector inhomogeneity on timing independent of the beam profile. For this, only events in which the centre of gravity in x and y are within the 4 centre tiles of the detector are selected. This has been checked for 10 and 50 GeV electron beam energy. The difference between the distribution can help to estimate the systematic uncertainty due to the inhomogeneity of the detector to which electrons are very sensible to.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Systematic_Inhomogeneity_10GeV.pdf}
 		\caption{Time of the first hit distribution at 10 GeV.}\label{fig:timing_inhomo_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Systematic_Inhomogeneity_50GeV.pdf}
 		\caption{Time of the first hit distribution at 50 GeV.}\label{fig:timing_inhomo_50GeV}
@@ -541,37 +541,37 @@ The next step is to compare data with simulation. The timing resolution is extra
 In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrisation of the increase of the width of the time distribution function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. The figures \ref{fig:sim_data_elec} shows this comparison.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons10GeV.pdf}
 		\caption{10 GeV.}\label{fig:elec_sim_data_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons15GeV.pdf}
 		\caption{15 GeV.}\label{fig:elec_sim_data_15GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons20GeV.pdf}
 		\caption{20 GeV.}\label{fig:elec_sim_data_20GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons30GeV.pdf}
 		\caption{30 GeV.}\label{fig:elec_sim_data_30GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons40GeV.pdf}
 		\caption{40 GeV.}\label{fig:elec_sim_data_40GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons50GeV.pdf}
 		\caption{50 GeV.}\label{fig:elec_sim_data_50GeV}
@@ -583,37 +583,37 @@ In the next step, a comparison with electron data is necessary to validate the s
 The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figures \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of interest of 6 to 10 hits per chip. The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in simulation can influence highly the number of triggers in a chip. As well the parametrisation may be imperfect and may suggest that the time parametrisation could be chip-wise or layer-wise. But due to the limited amount of data, only a global time parametrisation can be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_10GeV.pdf}
 		\caption{10 GeV.}\label{fig:elec_sim_data_nHits_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_15GeV.pdf}
 		\caption{15 GeV.}\label{fig:elec_sim_data_nHits_15GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_20GeV.pdf}
 		\caption{20 GeV.}\label{fig:elec_sim_data_nHits_20GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_30GeV.pdf}
 		\caption{30 GeV.}\label{fig:elec_sim_data_nHits_30GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_40GeV.pdf}
 		\caption{40 GeV.}\label{fig:elec_sim_data_nHits_40GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_50GeV.pdf}
 		\caption{50 GeV.}\label{fig:elec_sim_data_nHits_50GeV}
@@ -754,13 +754,13 @@ This figure demonstrates that low energy hits are responsible for delayed deposi
 As shown in the previous subsection, the prompt part of the shower is dominated by EM subshowers and relativistic particles. As for the delayed part is coming from mostly evaporation and spallation low energy neutrons. It is expected that the former is concentrated near the shower axis as for the latter, it is spread out laterally as these neutrons can travel far away in the calorimeter before interacting. This is investigated by looking at the mean time of first hit as a function of the distance to the shower center of gravity defined in the [x,y] plane. This is shown in figures \ref{fig:Radius_Comparison_SSF} and \ref{fig:Radius_Comparison_BL} for the small layers from 3 to 10 and the big layers from 11 to 14 separately.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf}
 		\caption{Small layers from 3 to 10.}\label{fig:Radius_Comparison_SSF}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_BL.pdf}
 		\caption{Big layers from 11 to 14.}\label{fig:Radius_Comparison_BL}
@@ -774,13 +774,13 @@ For muons and electrons, the mean time of the first hit does not vary with the i
 To confirm this, I investigated the time of first hit as function of the radius to the shower axis at constant distance between the layer looked at and the first hard interaction (FHI) layer of the hadronic shower. First, a small algorithm for a shower start finder to find the layer of the first hard interaction had to be written. This is based on previous work \cite{} with slight modifications due to the fact that few layers in the front of the detector present a bad performance. The basics of the algorithm was to find the primary track and check the number of hits between layer $i$ and $i+1$. This number was chosen to be $>6$. If an event was found in this case, a check on the length of the track was performed and it was required to be $>3$ hits in a track. A simple check on the performance of the algorithm was done by looking at the difference between the reconstructed layer of the FHI and the Monte-Carlo truth as well as the correlation between both. This is shown in figures \ref{fig:Diff_FHI_RecoMC} and \ref{fig:Corr_FHI_RecoMC}. The performance of the algorithm is fairly good in order to get a good estimate of the FHI layer.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ShowerStart_Difference_noOptimisation.pdf}
 		\caption{Difference between reconstructed FHI and MC truth layer.}\label{fig:Diff_FHI_RecoMC}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ShowerStart_Difference_noOptimisation_2D.pdf}
 		\caption{Correlation between reconstructed FHI and MC truth layer.}\label{fig:Corr_FHI_RecoMC}
@@ -792,13 +792,13 @@ To confirm this, I investigated the time of first hit as function of the radius 
 So looking back at the data, it is expected that with a constant distance between the reconstructed FHI and the layer looked at that there is will be the same dependence of the mean time of the hit as function of the radius as the same part of the shower would be looked at. Or that inversely by looking at a fixed layer for different FHI layer, the expected behavior would be a change in the slope of the time of first hit as function of the radius to the shower axis. The figure \ref{fig:Radius_FHI} and \ref{fig:Radius_FHI_Fixed} is an attempt at this.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf}
 		\caption{Fixed FHI-layer distance case.}\label{fig:Radius_FHI}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf}
 		\caption{Fixed layer with difference FHI case.}\label{fig:Radius_FHI_Fixed}
@@ -814,13 +814,13 @@ The data seems to shows that by fixing the distance between the FHI and the laye
 The longitudinal dependence of time was also looked at. It is expected that the further you are in the calorimeter that more low energy neutrons contributes to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange.pdf}
 		\caption{Time of first hit as function of the layer position.} \label{fig:Depth_Comparison}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf}
 		\caption{Time of first hit as function of the distance to the FHI.}\label{fig:Depth_Comparison_FHI}
@@ -836,13 +836,13 @@ It seems that the observation in the data is compatible with no increase of the 
 The advantage of this studied prototype over T3B is the possibility to investigate the possible time correlations between layers. This has been looked at as shown on figures \ref{fig:Time_Corr_short} and \ref{fig:Time_Corr_long} for the 50 GeV pion sample. For this, the data below 50 ns is ignored as only the tail of the timing distributions is interresting. Two types of correlations was investigated, short and long. For the short correlation, the layers 6 and 7 were chosen. As for the long, the layers 13 and 14 were selected. These were mostly chosen due to the fact that few layers were working properly. It is not very clear what to expect in these cases except that for the short one, a possible correlation would be visible due to the proximity of the layers.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Time_Correlation_short.pdf}
 		\caption{Time correlation between layer 6 and 7 for 50 GeV pions.} \label{fig:Time_Corr_short}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Time_Correlation_long.pdf}
 		\caption{Time correlation between layer 13 and 14 for 50 GeV pions.}\label{fig:Time_Corr_long}
@@ -854,181 +854,253 @@ The advantage of this studied prototype over T3B is the possibility to investiga
 The figures show that a correlation is visible in both cases in the data. To quantify this, the ratio $R$ of the number of hits per time bin between 50 ns and \SI{2}{\micro\second} and the total number of hits per time bin $N_{tot}$ in the histogram is calculated:
 
 \begin{equation}
-R = \frac{\int_{50 ns}^{2 \mu s} \int_{50 ns}^{2 \mu s} \frac{dN_i(t)}{dt_i} \frac{dN_j(t)}{dt_j} dt_i dt_j}{N_{tot}}
+	R = \frac{\int_{50 ns}^{2 \mu s} \int_{50 ns}^{2 \mu s} \frac{dN_i(t)}{dt_i} \frac{dN_j(t)}{dt_j} dt_i dt_j}{N_{tot}}
 \end{equation}
 
 The results show that 18.14\% of the entries are on the diagonal for the short correlation. This could be indeed possible due to the proximity of the layer and may come from the fast component of the hadron shower as well as correlated noise between layers. For the long correlation, 3.24\% of the entries are on the diagonal. This represent a substential amount of hits that are correlated. This is not clear the origin of this correlation but it may come from the fact that the suppression of the multiple particle events that is not suppressed enough and decrease the sensitivity to the physics.
 
 \section{Comparison to simulation}
 
-In this section, the data collected is compared to \geant simulations using different hadronic models as explained in chapter \ref{chap:G4Simulation}.
+In this section, the data collected is compared to \geant simulations using different hadronic models as explained in chapter \ref{chap:G4Simulation}. The figure \ref{fig:dNdt_SimData_Comparison} show the time distribution of first hits compared with three different physics lists for pion beams ranging from 10 to 90 GeV.
+
+From 10 to 50 GeV, QGSP\_BERT\_HP reproduces well the distribution. Over 50 GeV, the late tail is well described by the distribution but between 50 and 100 ns is not well reproduced and under-estimated. This may be just an effect remaining in the data that has not been completely removed by corrections. QBBC tends to over-estimate slightly the late tail by around a factor 2. This somehow contradicts the observations made in the T3B experiment were QBBC agreed well with the time distribution. It may be related to the use of different \geant versions. For all distributions, QGSP\_BERT over-estimate the tail of the distribution by around a factor 10. For the core of the distribution under 50 ns, generally all physics lists describe relatively well the distribution within systematics.
+
+The figure \ref{fig:Energy_SimData_Comparison} show the mean time of first hit as function of the hit energy. For 10 GeV pion, the simulation reproduce well the data within the systematics. For higher energies, a difference is visible in the region 0.5 to 1.5 MIP were the simulation is above the data. This is believed due to an over-correction of the data that shifts down the distribution. Above around 2 MIPs, the data and simulations agree well. QBBC and QGSP\_BERT seems higher in general over the full energy range showing that without precision neutron tracking, late depositions may be produced in too much quantities though this is within systematics of the data.
+
+The radial profile of pion showers is also compared to simulations as shown on figures \ref{fig:Radius_SSF_SimData_Comparison} and \ref{fig:Radius_BL_SimData_Comparison}. For the small layers, the physics lists QBBC and QGSP\_BERT\_HP reproduce well the data within systematics. QGSP\_BERT agrees well under 10 cm and starts to deviate up to 4-6 ns at 23 cm. Concerning the big layers, over the full energy range, QGSP\_BERT\_HP physics list agrees the best with the data. QBBC and QGSP\_BERT agree with data up to around 10 cm radius and then over-estimate the mean time of first hit. The difference with the data varies between 1 ns to 3-4 ns between 10 cm to 35 cm radius. This confirms that without precision neutron tracking, the physics lists produce too many late energy depositions that are spread far away from the shower axis.
+
+\begin{table}[htb!]
+	\centering
+	\caption{Summary of number of correlated hits. The top number is for Mokka simulations, the bottom one is for DD4hep.}
+	\label{table:Correlation_DataSim}
+	\begin{tabular}{@{} |l|cc| @{}}
+		\hline
+		Type & Short [\%] & Long [\%] \\
+		\hline
+		Data & 18.14 & 3.24\\
+		\hline
+		\multirow{2}{*}{QGSP\_BERT} & 3.93 & 0.66\\ & 2.28 & 0.50\\
+		\hline
+		\multirow{2}{*}{QGSP\_BERT\_HP} & 4.01 & 0.72\\ & 2.24 & 0.53\\
+		\hline
+		\multirow{2}{*}{QBBC} & 3.98 & 0.70\\ & 2.29 & 0.53\\
+		\hline
+	\end{tabular}
+\end{table}
+
+As the calorimeter is equipped with many layers, the longitudinal timing profile was also compared to simulations. As in the data, the mean time of first hit is compatible with a flat distribution around $t=0$. All simulations agree with the data within systematics. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth.
+
+Finally, as in data, time correlations between layers were looked at for different physics lists as shown on figure \ref{fig:Corr_Mokka_Simulation}. In the same way, the number of correlated hits was calculated and it is summed up in table \ref{table:Correlation_DataSim}. Looking at the number, there is a large discrepency between data and simulation. In general, simulations posseses less correlated hits than in data for both types. DD4hep also has slightly less correlated hits than in Mokka but is within statistical uncertainties. The reason for the discrepency is not yet clear though it may come from the selection of the data that may be not good enough to reject multi-particle events thus providing more correlated hits than observed in simulation. More data is required in order to understand the origin of such correlations.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion10GeV_LateClusters.pdf}
 		\caption{10 GeV.} \label{fig:dNdt_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion30GeV_LateClusters.pdf}
 		\caption{30 GeV.}\label{fig:dNdt_SimData_30GeV}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion50GeV_LateClusters.pdf}
 		\caption{50 GeV.} \label{fig:dNdt_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion70GeV_LateClusters.pdf}
 		\caption{70 GeV.} \label{fig:dNdt_SimData_70GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/Comparison_SimData_Pion90GeV_LateClusters.pdf}
 		\caption{90 GeV.} \label{fig:dNdt_SimData_90GeV}
 	\end{subfigure}
-	\caption{.}
+	\caption{Comparison between simulations and data of the time of first hit per bin time for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
 	\label{fig:dNdt_SimData_Comparison}
 \end{figure}
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_10GeV.pdf}
 		\caption{10 GeV.} \label{fig:Energy_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_30GeV.pdf}
 		\caption{30 GeV.}\label{fig:Energy_SimData_30GeV}
 	\end{subfigure}
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_50GeV.pdf}
 		\caption{50 GeV.} \label{fig:Energy_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_70GeV.pdf}
 		\caption{70 GeV.} \label{fig:Energy_SimData_70GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Energy_90GeV.pdf}
 		\caption{90 GeV.} \label{fig:Energy_SimData_90GeV}
 	\end{subfigure}
-	\caption{.}
+	\caption{Comparison between simulations and data of the time of first hit as function of the hit energy for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
 	\label{fig:Energy_SimData_Comparison}
 \end{figure}
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_10GeV_SSF.pdf}
 		\caption{10 GeV (SSF).} \label{fig:Radius_SSF_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_30GeV_SSF.pdf}
 		\caption{30 GeV (SSF).} \label{fig:Radius_SSF_SimData_30GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_50GeV_SSF.pdf}
 		\caption{50 GeV (SSF).} \label{fig:Radius_SSF_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_70GeV_SSF.pdf}
 		\caption{70 GeV (SSF).} \label{fig:Radius_SSF_SimData_70GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_90GeV_SSF.pdf}
 		\caption{90 GeV (SSF).} \label{fig:Radius_SSF_SimData_90GeV}
 	\end{subfigure}
-	\caption{.}
+	\caption{Comparison between simulations and data of the time of first hit as function of the distance to the shower axis for pion beams between 10 GeV and 90 GeV for the small layers (layers 3 to 10). The grey and color bands shows the systematics.}
 	\label{fig:Radius_SSF_SimData_Comparison}
 \end{figure}
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_10GeV_BL.pdf}
 		\caption{10 GeV (BL).}\label{fig:Radius_BL_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_30GeV_BL.pdf}
 		\caption{30 GeV (BL).} \label{fig:Radius_BL_SimData_30GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_50GeV_BL.pdf}
 		\caption{50 GeV (BL).} \label{fig:Radius_BL_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_70GeV_BL.pdf}
 		\caption{70 GeV (BL).} \label{fig:Radius_BL_SimData_70GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Radius_90GeV_BL.pdf}
 		\caption{90 GeV (BL).} \label{fig:Radius_BL_SimData_90GeV}
 	\end{subfigure}
-	\caption{.}
+	\caption{Comparison between simulations and data of the time of first hit as function of the distance to the shower axis for pion beams between 10 GeV and 90 GeV for the big layers (layers 11 to 14). The grey and color bands shows the systematics.}
 	\label{fig:Radius_BL_SimData_Comparison}
 \end{figure}
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_10GeV.pdf}
 		\caption{10 GeV.}\label{fig:Depth_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_30GeV.pdf}
 		\caption{30 GeV.} \label{fig:Depth_SimData_30GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_50GeV.pdf}
 		\caption{50 GeV.} \label{fig:Depth_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_70GeV.pdf}
 		\caption{70 GeV.} \label{fig:Depth_SimData_70GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.45\textwidth}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Depth_90GeV.pdf}
 		\caption{90 GeV.} \label{fig:Depth_SimData_90GeV}
 	\end{subfigure}
-	\caption{.}
+	\caption{Comparison between simulations and data of the time of first hit as function of the layer position for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
 	\label{fig:Depth_SimData_Comparison}
 \end{figure}
 
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf}
+		\caption{Short correlation (QGSP\_BERT\_HP).} \label{fig:Corr_short_QGSPBERTHP}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf}
+		\caption{Long correlation (QGSP\_BERT\_HP).} \label{fig:Corr_long_QGSPBERTHP}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf}
+		\caption{Short correlation (QGSP\_BERT).}\label{fig:Corr_short_QGSPBERT}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf}
+		\caption{Long correlation (QGSP\_BERT).} \label{fig:Corr_long_QGSPBERT}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf}
+		\caption{Short correlation (QBBC).} \label{fig:Corr_short_QBBC}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Pions/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf}
+		\caption{Long correlation (QBBC).} \label{fig:Corr_long_QBBC}
+	\end{subfigure}
+	\caption{Timing correlations between layers 6 and 7 and layers 13 and 14 in Mokka simulations for different physics lists in 50 GeV pion beam.}
+	\label{fig:Corr_Mokka_Simulation}
+\end{figure}
+
 \section{Conclusion and Outlook}
+
+The time structure of hadronic showers, and the level of accuracy with which it can be simulated in GEANT4, is highly relevant for calorimeters at future collider experiments. This applies in particular in conditions with high background levels and high repetition rates, such as at CLIC, where tungsten is considered for the absorber material of the hadron calorimeter. The T3B experiment studies the time structure of hadronic showers on a statistical basis with large event samples in hadron calorimeters with steel and tungsten absorbers collected in conjunction with the CALICE imaging calorimeter prototypes. T3B is based on 15 small scintillator tiles with SiPMs and fast USB oscilloscope readout arranged in a strip to provide full radial sampling of the showers with high granularity and sub-ns time resolution over an acquisition window of 2.4 us.
+The data show late components of hadronic showers, which are substantially more pronounced in tungsten than in steel. The late component is predominantly concentrated at lower hit energies, but also extends up to several MIP-equivalents in tungsten. The importance of the late energy de- positions increases with increasing distance from the shower axis, due to the wide lateral spread of late activity driven by neutrons in contrast to the more concentrated evolution of the prompt electromagnetic subshowers and relativistic hadrons. The comparison of detailed detector simulations with the data shows that the time structure is generally quite well modelled in steel. In contrast, the tungsten data is only reproduced by models with a dedicated treatment of low-energy neutrons, such as the high-precision neutron package in QGSP BERT HP, or alternative implementations used in the QBBC model. The QGSP BERT physics list, which is widely used for LHC and linear collider detector simulations, substantially overestimates the amount of late energy depositions in tungsten.
