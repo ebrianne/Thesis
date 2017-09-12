@@ -869,6 +869,10 @@ The figure \ref{fig:Energy_SimData_Comparison} show the mean time of first hit a
 
 The radial profile of pion showers is also compared to simulations as shown on figures \ref{fig:Radius_SSF_SimData_Comparison} and \ref{fig:Radius_BL_SimData_Comparison}. For the small layers, the physics lists QBBC and QGSP\_BERT\_HP reproduce well the data within systematics. QGSP\_BERT agrees well under 10 cm and starts to deviate up to 4-6 ns at 23 cm. Concerning the big layers, over the full energy range, QGSP\_BERT\_HP physics list agrees the best with the data. QBBC and QGSP\_BERT agree with data up to around 10 cm radius and then over-estimate the mean time of first hit. The difference with the data varies between 1 ns to 3-4 ns between 10 cm to 35 cm radius. This confirms that without precision neutron tracking, the physics lists produce too many late energy depositions that are spread far away from the shower axis.
 
+As the calorimeter is equipped with many layers, the longitudinal timing profile was also compared to simulations. As in the data, the mean time of first hit is compatible with a flat distribution around $t=0$. All simulations agree with the data within systematics. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth.
+
+Finally, as in data, time correlations between layers were looked at for different physics lists as shown on figure \ref{fig:Corr_Mokka_Simulation}. In the same way, the number of correlated hits was calculated and it is summed up in table \ref{table:Correlation_DataSim}. Looking at the number, there is a large discrepency between data and simulation. In general, simulations posseses less correlated hits than in data for both types. DD4hep also has slightly less correlated hits than in Mokka but is within statistical uncertainties. The reason for the discrepency is not yet clear though it may come from the selection of the data that may be not good enough to reject multi-particle events thus providing more correlated hits than observed in simulation. More data is required in order to understand the origin of such correlations.
+
 \begin{table}[htb!]
 	\centering
 	\caption{Summary of number of correlated hits. The top number is for Mokka simulations, the bottom one is for DD4hep.}
@@ -887,10 +891,6 @@ The radial profile of pion showers is also compared to simulations as shown on f
 		\hline
 	\end{tabular}
 \end{table}
-
-As the calorimeter is equipped with many layers, the longitudinal timing profile was also compared to simulations. As in the data, the mean time of first hit is compatible with a flat distribution around $t=0$. All simulations agree with the data within systematics. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth.
-
-Finally, as in data, time correlations between layers were looked at for different physics lists as shown on figure \ref{fig:Corr_Mokka_Simulation}. In the same way, the number of correlated hits was calculated and it is summed up in table \ref{table:Correlation_DataSim}. Looking at the number, there is a large discrepency between data and simulation. In general, simulations posseses less correlated hits than in data for both types. DD4hep also has slightly less correlated hits than in Mokka but is within statistical uncertainties. The reason for the discrepency is not yet clear though it may come from the selection of the data that may be not good enough to reject multi-particle events thus providing more correlated hits than observed in simulation. More data is required in order to understand the origin of such correlations.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
