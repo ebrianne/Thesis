@@ -514,6 +514,18 @@ A study has been performed to estimate the influence of the detector inhomogenei
 
 The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each tiles at 10 and 50 GeV respectively. The ratio shown is compared to the top left centre tile. One can see that for both energies, the distributions are within a 10-20\% agreement. Therefore a conservative systematic uncertainty of 20\% is assigned to electron and pion data in the following.
 
+\subsection{Portability of the calibration}
+
+A small check on the transport of the calibration has been performed on another dataset from a tesbeam at DESY II in May 2016. The goal was to reuse the calibration constants obtained and apply them to another dataset in order to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminium absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_May2016_BigLayers.pdf}
+	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016.}\label{fig:TBMay2016}
+\end{figure}
+
+The same calibration constants were used except a small re-calibration of the trigger channels ($T_{0}$) was performed. The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 13 and 14. The time resolution obtained of 7 ns is somewhat very close to the time resolution obtained in July 2015. The difference may come from the fact that different layers were used in the testbeam at CERN compared to DESY. Despite this, it gives a good hint that the calibration constnats are to some extent transportable to a different testbeam configuration.
+
 \section{Validation of the simulation}
 
 \begin{table}[htb!]
@@ -892,6 +904,19 @@ Finally, as in data, time correlations between layers were looked at for differe
 	\end{tabular}
 \end{table}
 
+\section{Summary and Outlook}
+
+The understanding of the time structure of hadronic showers and the level of accuracy reflected in \geant simulations is highly relevant for calorimeters at future (linear) collider experiments. This can be applied for conditions with high level of background such as $\gamma\gamma \rightarrow hadrons$ or high repetition rates experiments to remove out-of-time pile-up events.
+
+The AHCAL testbeam at CERN in July 2015 was focused to address this, with steel absorber and closed to the ILD detector design, by collecting data from muon, electron and pion beams. The AHCAL technological prototype was equipped with 14 layers using scintillator tiles as active material readout by SiPMs to provide radial and longitidual sampling of showers with high granularity and ns-scale time resolution. For the first time, time study of hadronic showers was done to a large scale using integrated readout electronics.
+In this analysis, the time calibration procedure of the AHCAL was presented. A time resolution in the order of 5 ns is achieved for a muon beam. Due to an electronic effect of widening of the time resolution with the number of triggered channels in a chip, a time resolution of 8 ns is achieved for electron and pion beams.
+
+Studying hadronic showers, the data shows that late deposition are concentrated at low hit energies below 1.5 MIPs in iron. Theses hits are mostly at a great distance from the shower axis in contrary with the electromagnetic sub-showers and relativistic hadrons that a predominant near the shower axis. Timing correlations between layers has also been investigated. Correlations are visible at short range as well as long range in different proportions in the data.
+
+The comparison of detailled simulations with data has been performed. It shows that in general, the simulation reproduces well the data within the systematics. The tracking of low energy neutrons in the HP package or other implementations like in QBBC show that they are needed to reproduce well the tail of the data where without it is generally over-estimated. Time correlations are reproduced somewhat in simulation but the proportion of hits in data and simulation differ quite significantly. This may be due to the selection of the data that does not reject efficiently multi-particle events and would need more data and investigations to understand their origin.
+
+The running mode in Testbeam does not reflect the time resolution that would be accessible in ILC running mode. By extrapolation, a time resolution of the order of 1 ns would be optained. The use of timing information could be a powerful tool to have to help in separating nearby showers in case of very busy events like $ttH$ process. It could be used in a software compensation way by using timing bins differentiating electromagnetic subshowers or relativistic hadrons and the hadronic late component, and weight them accordingly.
+
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
@@ -1099,8 +1124,3 @@ Finally, as in data, time correlations between layers were looked at for differe
 	\caption{Timing correlations between layers 6 and 7 and layers 13 and 14 in Mokka simulations for different physics lists in 50 GeV pion beam.}
 	\label{fig:Corr_Mokka_Simulation}
 \end{figure}
-
-\section{Conclusion and Outlook}
-
-The time structure of hadronic showers, and the level of accuracy with which it can be simulated in GEANT4, is highly relevant for calorimeters at future collider experiments. This applies in particular in conditions with high background levels and high repetition rates, such as at CLIC, where tungsten is considered for the absorber material of the hadron calorimeter. The T3B experiment studies the time structure of hadronic showers on a statistical basis with large event samples in hadron calorimeters with steel and tungsten absorbers collected in conjunction with the CALICE imaging calorimeter prototypes. T3B is based on 15 small scintillator tiles with SiPMs and fast USB oscilloscope readout arranged in a strip to provide full radial sampling of the showers with high granularity and sub-ns time resolution over an acquisition window of 2.4 us.
-The data show late components of hadronic showers, which are substantially more pronounced in tungsten than in steel. The late component is predominantly concentrated at lower hit energies, but also extends up to several MIP-equivalents in tungsten. The importance of the late energy de- positions increases with increasing distance from the shower axis, due to the wide lateral spread of late activity driven by neutrons in contrast to the more concentrated evolution of the prompt electromagnetic subshowers and relativistic hadrons. The comparison of detailed detector simulations with the data shows that the time structure is generally quite well modelled in steel. In contrast, the tungsten data is only reproduced by models with a dedicated treatment of low-energy neutrons, such as the high-precision neutron package in QGSP BERT HP, or alternative implementations used in the QBBC model. The QGSP BERT physics list, which is widely used for LHC and linear collider detector simulations, substantially overestimates the amount of late energy depositions in tungsten.
