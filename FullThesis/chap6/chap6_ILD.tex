@@ -24,7 +24,7 @@ Concerning the energy resolution all the curves are very similar and are as expe
     \caption{Cluster hit linearity curve} \label{fig:linhits}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_Hits}}
     \caption{Cluster hit resolution curve} \label{fig:resohits}
@@ -46,7 +46,7 @@ For the resolution curves, one can see a rise of the resolution at high energies
     \caption{PFO linearity curve} \label{fig:linpfo}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_PFO}}
     \caption{PFO resolution curve} \label{fig:resopfo}
@@ -60,13 +60,13 @@ As shown in figure \ref{fig:momentumparticlejets}, for jets representative of he
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Momentum_spectra_to100GeV_final}
     \caption{Momentum spectrum of charged hadrons.} \label{fig:momentumparticlejets}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat}
     \caption{Minimal distance between a charged and neutral particle at the front face of the ECAL.} \label{fig:distancefrontfacejets}
@@ -96,7 +96,7 @@ The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the 
     \caption{Linearity curve with no time smearing.} \label{fig:linearityNoSmearing}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerResoAbsolute_TimeCuts_noSmearing}}
     \caption{Resolution curve with no time smearing.} \label{fig:resoNoSmearing}
@@ -111,6 +111,8 @@ The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the ene
   \includegraphics[width=0.5\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerReso_TimeCuts_noSmearing}
   \caption{Relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
 \end{figure}
+
+One can observe that the energy resolution resolution degrades rapidly and faster than the energy of the shower. Naively, you would expect that if for example randomly 10\% of the shower energy is removed in average that then the resolution would behave as $\sqrt{E}$ and would degrade by around 6\% from a statistical point of view. But timing cut does not remove randomly hits. It has a bias to remove late hits which are mostly coming from the hadronic component of the shower. As in hadronic showers, the electromagnetic fraction is fluctating a lot on event-by-event basis this may affect the energy resolution much more. To understand this effect, a similar study as in \cite{} has been performed.
 
 The figure \ref{RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadronic shower. The radial profile of the shower is filled for each hit with the distance to the main shower axis ($R_{i}$, eq.\ref{eq:radialprof})  weighted by the hit energy ($E_{i}$).
 
@@ -131,7 +133,7 @@ The main part of the energy density is situated in the core within few centimete
     \caption{Radial profile.} \label{fig:RadialProfNoSmearing}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.5\textwidth}
     \centering
     \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/HitRadiusOverlayMCP_TimeCuts_noSmearing}}
     \caption{Hit radius.} \label{fig:HitRadiusSmearing}
