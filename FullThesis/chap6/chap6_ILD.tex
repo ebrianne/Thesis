@@ -78,9 +78,51 @@ A complementary study was to look at the minimal distance between a charged and 
 
 \subsection{Timing cut effects on hadronic showers in ILD detector}
 
-In this section, the effect of timing cuts on hadronic showers is investigated. The study was performed using the \ilcsoft framework for reconstruction and a personal \marlin processor for analysis. In order to study the effect of timing on hadronic shower properties, the initial study was performed assuming a perfect timing resolution (i.e. the timing information is the Monte-Carlo truth). In a following step, several timing resolution were used to assess different scenarios. The smearing of the time was done by randomly sampling a normalised gaussian centered in \SI{0}{\nano\second} with a timing resolution denoted $\sigma_{t}$ = 0.4, 1 and \SI{8}{\nano\second}.
+In this section, the effect of timing cuts on hadronic showers is investigated. The study was performed using the \ilcsoft framework for reconstruction and a personal \marlin processor for analysis. In order to study the effect of timing on hadronic shower properties, the initial study was performed assuming a perfect timing resolution (i.e. the timing information is the Monte-Carlo truth). In a following step, several timing resolution were used to assess different scenarios. The smearing of the time was done by randomly sampling a normalised gaussian centered in \SI{0}{\nano\second} with a timing resolution denoted $\sigma_{t}$ = 0.4, 1 and \SI{8}{\nano\second} only on HCAL hits.
 
-The selection of events is fairly simple, only events in the barrel region ($cos\theta < 0.7$) are selected. All the calorimeter hits in the ECAL and HCAL are used.
+The selection of events is simple, only events in the barrel region ($cos\theta < 0.7$) are selected. All the calorimeter hits in the ECAL and HCAL are used.
+
+\subsubsection{Impact on Particle Flow Objects (PFOs) reconstruction}
+
+A first simple check was to see the impact of timing cuts on the number of reconstructed particles. The figure \ref{fig:EventRecoPFO} shows the number of events reconstructed with a single PFO per event.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NumberEvents_PFO_TimeCuts_noSmearing}
+    \caption{Relative number of events reconstructed with a single PFO.} \label{fig:EventRecoPFO}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NumberReconstructedPFO_TimeCuts_50GeV}
+    \caption{Number of PFO per event.} \label{fig:DistriPFO}
+  \end{subfigure}
+  \caption{\subref{fig:EventRecoPFO}) The plot shows the number of events reconstructed with only a single PFO normalised to the number of events in the case of 100 ns. The plots shows a relative increase with a lower timing cut with an increase up to 20-25\% of more events reconstructed using 1 ns timing cut. \subref{fig:DistriPFO}) Distribution of the number of PFO reconstructed per event for 50 GeV \kzeroL{} in the ILD barrel for different timing cuts. It shows that timing cuts indeed improves the number of events reconstructed with a single PFO but as well a large tail is present. The use of timing cuts seems to reduce slighly the tail of the distribution without affecting much the distribution over 6+ PFOs reconstructed.}
+\end{figure}
+
+It seems that timing cuts improves the reconstruction with events containing a single PFO. Though this does not show the full story as Pandora tends to split more clusters as it is easier in general to recombine, it may still be a sign that timing cuts somehow could improve pattern recognition. In order to understand more what happens, the distribution of the number of reconstructed PFOs per event has been looked at on figure \ref{fig:DistriPFO}. One can notice that more events are indeed reconstructed with a single PFO but a long tail is present also in all distributions. Up to 15+ PFO can be reconstructed in a single event though it is at a permil level. It also shows that timing cuts does reduce also the number of events reconstrcuted with more than 1 PFO. Also a look at the energy distribution and distance of the second most energetic cluster to the main cluster has been performed in case of more than one PFO reconstructed. It can be seen on figures \ref{fig:Energy2ndCluster} and \ref{fig:Distance2ndCluster}.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Energy2ndCluster_100ns_50GeV}
+    \caption{Energy distribution of 2$^{nd}$ most energetic cluster.} \label{fig:Energy2ndCluster}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Distance2ndCluster_100ns_50GeV}
+    \caption{Distance to main PFO of 2$^{nd}$ most energetic cluster.} \label{fig:Distance2ndCluster}
+  \end{subfigure}
+  \caption{\subref{fig:Energy2ndCluster}) The plot shows the relative energy of the second most energetic cluster to the main cluster. One can see that most of the entries are below few percents. \subref{fig:Distance2ndCluster}) The plot shows the distribution of the distance of the second most energetic cluster to the main cluster. The distribution peaks in the region 25-30 cm.}
+\end{figure}
+
+The figures shows that the second most energetic cluster has mostly an energy below few percents, over 90\% of the entries are below 20\% of the most energetic cluster and can be up to 50\% or more, around 4\% of entries are between 50 and 100\%. Also the mean distance of this second cluster is around 25-30 cm from the main cluster with around 50\% of entries below 40 cm. This tells us that mainly the splitted cluster has negligible energy compared to the main cluster and is situated at around 7 to 10 AHCAL tiles away from the main cluster which is far enough to not be recombined with the main cluster. Thus these may be clusters coming from low energy neutrons travelling through the calorimeter. This explains why by inducing a timing cut more events are reconstructed with a single PFO; as shown in chapter \ref{chap:TimingAHCAL}, low energy neutrons are correlated with low energy deposition and late depositions far away from the shower axis and are removed with a timing cut below few tens of nanoseconds.
+
+One interresting point though would be the investigation of timing cuts in the case of overlapping showers in the calorimeter.
 
 \subsubsection{On Monte-Carlo level}
 
@@ -112,9 +154,9 @@ The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the ene
   \caption{Relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
 \end{figure}
 
-One can observe that the energy resolution resolution degrades rapidly and faster than the energy of the shower. Naively, you would expect that if for example randomly 10\% of the shower energy is removed in average that then the resolution would behave as $\sqrt{E}$ and would degrade by around 6\% from a statistical point of view. But timing cut does not remove randomly hits. It has a bias to remove late hits which are mostly coming from the hadronic component of the shower. As in hadronic showers, the electromagnetic fraction is fluctating a lot on event-by-event basis this may affect the energy resolution much more. To understand this effect, a similar study as in \cite{} has been performed.
+One can observe that the energy resolution resolution degrades rapidly and faster than the energy of the shower. Naively, you would expect that if for example randomly 10\% of the shower energy is removed in average that then the resolution would behave as $\sqrt{E}$ and would degrade by around 6\% from a statistical point of view. But timing cut does not remove randomly hits. It has a bias to remove late hits which are mostly coming from the hadronic component of the shower. As in hadronic showers, the electromagnetic fraction is fluctating a lot on event-by-event basis this may affect the energy resolution much more. To understand this effect, a similar study as in \cite{SoftCompNew2012} has been performed.
 
-The figure \ref{RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadronic shower. The radial profile of the shower is filled for each hit with the distance to the main shower axis ($R_{i}$, eq.\ref{eq:radialprof})  weighted by the hit energy ($E_{i}$).
+The figure \ref{fig:RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadronic shower. The radial profile of the shower is filled for each hit with the distance to the main shower axis ($R_{i}$, eq.\ref{eq:radialprof})  weighted by the hit energy ($E_{i}$).
 
 \begin{equation} \label{eq:radialprof}
   \begin{split}

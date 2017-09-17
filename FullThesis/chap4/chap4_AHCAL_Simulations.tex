@@ -1,7 +1,7 @@
 \chapter{\geant Simulations}
 \label{chap:G4Simulation}
 
-In High Energy Physics as well as in other reasearch area, simulations are a tool that has become indispensable. They are used to provide models predictions, a guideline for an analysis as well as for optimising cost and performance of detector designs. In this thesis, the simulations will be used as a guideline for the selection of specific events of the recorded data. An understanding of their functionning is useful and will be described in this chapter.
+In High Energy Physics as well as in other reasearch areas, simulations are a tool that has become indispensable. They are used to provide model predictions, a guideline for an analysis as well as for optimising cost and performance of detector designs. In this thesis, the simulations will be used as a guideline for the selection of specific events of the recorded data. An understanding of their functionning is useful and will be described in this chapter.
 
 \section{Simulation of particle showers}
 
@@ -9,9 +9,9 @@ The \geant framework \cite{Agostinelli2003} is a common toolkit in particle phys
 
 \subsection{Electromagnetic showers}
 
-Electromagnetic showers are generally well understood. This is mainly due to the fact that electrons, positrons and photons are only involved and their interaction with matter is fairly simple as described in \ref{}. All EM interactions are simulated with a standard EM package in \geant \cite{Ivanchenko2010}. This packages has been extensively compared to mainy observables measured in calorimeters to a level of $\leq$ 1\% \cite{Apostolakis2015}.
+Electromagnetic showers are generally well understood. This is mainly due to the fact that electrons, positrons and photons are only involved and their interaction with matter is simple as described in section \ref{}. All EM interactions are simulated with a standard EM package in \geant \cite{Ivanchenko2010}. This packages has been extensively compared to mainy observables measured in calorimeters to a level of $\leq$ 1\% \cite{Apostolakis2015}.
 
-Recently additions have been made to EM physics list with a \_{}EMY suffix especially for ionisation processes in active medium. This is needed in order to correctly simulate thin active layers where the detection method is very sensitive to the primary ionisation, like in gas detectors such as RPCs. The use of the \_{}EMY physics list is greatly improving the agreement between data and simulation in the RPC based CALICE calorimeter prototype, the SDHCAL and DHCAL \cite{Neubueser2016}. Many other suffix options are available depending on the type of physics, detector and precision needed for EM processes.
+Recently additions have been made to the \geant EM physics list by improving the description of ionisation processes in active medium. The EM list is used with a suffix \_{}EMY. This is needed in order to correctly simulate thin active layers where the detection method is very sensitive to the primary ionisation, like in gas detectors such as RPCs. The use of the \_{}EMY suffix in the EM physics list is greatly improving the agreement between data and simulation in the RPC based CALICE calorimeter prototype, the SDHCAL and DHCAL \cite{Neubueser2016}. Many other suffix options are available depending on the type of physics, detector and precision needed for EM processes.
 
 \subsection{Hadronic showers}
 
@@ -31,7 +31,7 @@ For particle energies above few hundreds MeV and below few GeV, the quark substr
 
 \textbf{Bertini Cascade}\\
 
-The Bertini cascade model \cite{Heikkinen2003} consists of the modelisation of a nuclei by three concentric spherical shells of approximative constant nucleon density. The nucleons are treated as a degenerated Fermi gas in each shell and all energy levels are filled up until the Fermi energy ($E_F$). Following the Pauli exclusion principle, only nucleons of energy $E > E_F$ can interact in each region. During intra-nuclear-cascade (INC), the momentum, the type of interaction and the four momentum of the interaction for each nucleon is calculated until the energy of the tracked nucleon is below 2 MeV. The INC gives rise to exited states of the nucleon, a pre-equlibrium evaporation as emission of protons and neutrons is computed. Then a de-excitation model is performed including Fermi break-up of highly excited light nuclei (A < 12), explosion model, fission model and evaporation model until the excitation energy is below 0.1 MeV.\\
+The Bertini cascade model \cite{Heikkinen2003} consists of the modelisation of a nuclei by three concentric spherical shells of approximative constant nucleon density. The nucleons are treated as a degenerated Fermi gas in each shell and all energy levels are filled up until the Fermi energy ($E_F$). Following the Pauli exclusion principle, only nucleons of energy $E > E_F$ can interact in each region. During intra-nuclear-cascade (INC), the momentum, the type of interaction and the four momentum of the interaction for each nucleon is calculated until the energy of the tracked nucleon is below 2 MeV. The INC gives rise to exited states of the nucleon thus a pre-equlibrium evaporation, as emission of protons and neutrons, is computed. Then a de-excitation model is performed including Fermi break-up of highly excited light nuclei (A < 12), explosion model, fission model and evaporation model until the excitation energy is below 0.1 MeV.\\
 
 \textbf{Binary Cascade}\\
 
@@ -41,12 +41,12 @@ The Binary cascade \cite{Folger2004} is another approach to modelise the interac
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \includegraphics[width=1.\linewidth]{chap4/fig/QGS_nucleus.jpeg}
     \caption{} \label{fig:QGS_nucleus}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \includegraphics[width=1.\linewidth]{chap4/fig/QGS_stringfrag.jpeg}
     \caption{} \label{fig:QGS_string}
   \end{subfigure}
@@ -55,16 +55,16 @@ The Binary cascade \cite{Folger2004} is another approach to modelise the interac
 
 The string-parton models \cite{Folger2003} are used in \geant to simulate inelastic scattering of particles with a target nuclei as shown in figures \ref{fig:QGS_nucleus} and \ref{fig:QGS_string}. This is used at energies where INC models break down and where the quark substructure of the nuclei must be taken into account. The model uses string excitation to calculate the scaterring. Currently, \geant provides two different models, the Fritiof model (FTF) and the quark gluon string model (QGS). The latter will be described in the following.
 
-The initial state consists of building the nuclei of individual protons and neutrons. The interaction between the primary particle and the nuclei gives place to one or more excited strings and a excited state nuclei. A string has two endpoints such as the quark content is defined and caries energy and momentum. The fragmentation of the strings is handled by a longitudinal string fragmentation model and the interaction of secondaries is carried out by cascade models as described in the former paragraph. The de-excitation is then simulated by fragmentation, pre-compound and nuclear de-excitation model natively provided by \geant. The QGS model differs from the FTF model by the use of Pomerons as mediators for color exchange and momentum transfert.
+The initial state consists of building the nuclei of individual protons and neutrons. The interaction between the primary particle and the nuclei gives place to one or more excited strings and a excited state nuclei. A string has two endpoints such as the quark content is defined and caries energy and momentum. The fragmentation of the strings is handled by a longitudinal string fragmentation model and the interaction of secondaries is carried out by cascade models as described in the former paragraph. The de-excitation is then simulated by fragmentation, pre-compound and nuclear de-excitation models natively provided by \geant. The QGS model differs from the FTF model by the use of Pomerons as mediators for color exchange and momentum transfert.
 
 \subsection{\geant Physics Lists}
 
-\geant provides several physics lists for simulation that combines different hadron physics models. In this thesis, the physics lists QGSP\_BERT and QBBC are used. The validity range of the physics list is shown in figure \ref{fig:physics_list}. The former is used in combinaison with the High-Precision neutron tracking (HP) package. The HP option delivers an increased accuracy in the treatment of neutrons interactions below 20 MeV. The latter possesses a comparable tracking for neutrons with less precision.
+\geant provides several physics lists for simulation that combines different hadron physics models. In this thesis, the physics lists QGSP\_BERT and QBBC are used. The validity range of the physics list is shown in figure \ref{fig:physics_list}. The former is used in combinaison with the High-Precision neutron tracking (HP) package. The HP option delivers an increased accuracy in the treatment of neutron interactions below 20 MeV. The latter possesses a comparable tracking for neutrons with less precision.
 In addition, the QGSP\_BERT physics list uses a parametrised LEP model (based on expirimental data) to fill the gap between the transition of cascade models and string-parton models.
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=1.\linewidth]{chap4/fig/PhysicsLists.jpeg}
+  \includegraphics[width=1\linewidth]{chap4/fig/PhysicsLists.jpeg}
   \caption{Schematic of the physics list used in \geant for this thesis. The validity range extends over 30 GeV.} \label{fig:physics_list}
 \end{figure}
 
@@ -80,7 +80,7 @@ Pion showers are simulated using QGSP\_BERT, QGSP\_BERT\_HP and QBBC physics lis
 
 \subsection{Digitisation}
 
-The digitisation of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. Using, if available, individual calibration factors obtained from data to extract the light yield which is needed to model the statistical fluctuations of photons hitting a SiPM. Saturation effects are also included using the number of pixels available on each SiPM type. Most of the tiles used are wrapped with a reflective foil in order that crosstalk effect between channels can be neglected. For layers with no wrapping a default value of 15\% cross-talk is applied. The timing is modelled in the same way as in the SPIROC, the energy from sub-hits in a cell is integrated over a sliding time window of 15 ns, if the energy sum passes the threshold the time of the simulated sub-hit passing the threshold is registered as the time of the hit.\\
+The digitisation of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. Using, if available, individual calibration factors obtained from data to extract the light yield which is needed to model the statistical fluctuations of photons hitting a SiPM \cite{Hartbrich:2016bbz}. Saturation effects are also included using the number of pixels available on each SiPM type. Most of the tiles used are wrapped with a reflective foil in order that crosstalk effect between channels can be neglected. For layers with no wrapping a default value of 15\% cross-talk is applied. The timing is modelled in the same way as in the SPIROC, the energy from sub-hits in a cell is integrated over a sliding time window of 15 ns, if the energy sum passes the threshold the time of the simulated sub-hit passing the threshold is registered as the time of the hit.\\
 
 In order to simulate detector resolution effects, the time of a hit is smeared with a double gaussian function with slightly different means and sigmas convoluted with a gaussian of fixed mean and variable sigma. More details are explained in appendix \ref{appendix:ped_shift}. Noise needs to be taken into account for with the engineering AHCAL prototype. Noise is added using muon runs by removing found tracks and keeping remaining hits. This is described in appendix \ref{appendix:noise}.\\
 
