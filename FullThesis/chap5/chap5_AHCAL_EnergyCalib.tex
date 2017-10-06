@@ -27,13 +27,13 @@ The beam instrumentation was consisted of two $10 \times 10$ cm$^2$ (in front of
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{chap5/fig_EnergyCalib/IMG_1170.jpg}
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/IMG_1170.jpg}
 	\caption{Photo of the AHCAL detector before the installation in the testbeam area.} \label{fig:AHCAL_photo}
 \end{figure}
 
 \section{Energy Calibration of the AHCAL}
 
-Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combined them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailled in section \ref{}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The MPV of the Laudau-Gaussian convoluted function is defined as the MIP constant (ADC$_{MIP_i}$) for the i-th channel.
+Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combined them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailled in section \ref{}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant (ADC$_{MIP_i}$) for the i-th channel.
 
 \subsection{Pedestal extraction}
 
@@ -41,7 +41,7 @@ To obtain the correct MIP constant, a pedestal substraction has to be done. The 
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{chap5/fig_EnergyCalib/PedestalExtractionExample.pdf}
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/PedestalExtractionExample.pdf}
 	\caption{Typical pedestal distribution of a channel in auto-trigger mode. The different colored boxed represent the iterative procedure to extract the pedestal value marked with the red line.} \label{fig:PedExtraction}
 \end{figure}
 
@@ -49,10 +49,71 @@ As the SiPM noise needs to be taken into account for the pedestal value and cons
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.8\linewidth]{chap5/fig_EnergyCalib/ComparisonMeanPedtoMemorycell.pdf}
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/ComparisonMeanPedtoMemorycell.pdf}
 	\caption{Distribution of the difference between the mean pedestal to the memory-cell wise pedestal per channel.} \label{fig:CompMeanMem}
 \end{figure}
 
 \subsection{MIP extraction}
 
 After the pedestal calibration, the extraction of the MIP constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needed to be automatised and robust. In order to reduce noise in the energy spectra of each cell that would lead to unstable fits and wrong MIP constants, a simple tracking selection has been performed as explained in section \ref{subsec:Muon_sel}.
+
+After the selection, an histogram for each channel is filled with the energy value of each hit in ADC which are already pedestal substracted. Then the fitting procedure is performed. The fitting procedure is very sensible to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. Only channels with more than 1000 entries are considered. First, the area is fitted. Secondly, the other parameters are released and fitted as well. Finally a final fit is performed on the four parameter in the range in the range of 30\% of the maximum of the previous fitted function. The detailled procedure is explained in \cite{FabianThesis}. A typical example of a MIP fit can be seen in figure \ref{fig:MIPFit}. Moreover, in order to fit possible channel that failed on the first attempt, an iteration of the procedure is done again on histograms that are filled with the energy of the hit for hits above 0.5 times the MPV value of the channel, if no value was fitted and estimation is used.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/ExampleMIP_Module3.pdf}
+	\caption{Typical energy distribution in a single channel of the AHCAL.} \label{fig:MIPFit}
+\end{figure}
+
+In this way, for the testbeam in July 2015, 72\% of the channels are fitted (over 3744 channels). This does not mean that 28\% of channels are dead (around 15\% of the channels are considered dead), as for the most part, the outer channels of the big layers don't have enough statistic to perform a fit. For centered chips, where channels are not fitted, the mean MPV value of a chip or layer is used. In this way, 83\% of the channels are completed. In order to have a value for each channel, especially for the big layers, the values are combined with previous testbeams performed in April and May 2015 with the big layers. In this way, all 3744 channels have a MIP constant.
+
+\section{Calibration Results}
+
+In this section, a small assesment of the performance of the detector calibration is performed.
+
+\subsection{Error on the calibration}
+
+After the calibration, it is necessary to evaluate the performance of the calibration procedure by looking at the relative error on the extracted MPV value for a MIP. The figure \ref{fig:MIPError} shows the relative error computed for all the channels of the detector. The relative error on the MIP value is for most of the channels in the expected range of 1 to 3\%. Though some higher values can be seen, this comes from the uncalibrated channels that derived their MIP value from the mean of the chip or layer mainly located in the small layers but for the analysis most of them are rejected later on by the list of dead channels due to the lack of gain value or pedestal value.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/RelativeErrorMIP_Combined.pdf}
+	\caption{Relative error of the MIP value extracted.} \label{fig:MIPError}
+\end{figure}
+
+\subsection{Comparison with simulation}
+
+The MIP calibration defined the energy scale for measure energy depositions in the AHCAL. It is needed to carefully calibrate and validate the MIP calibration in data and simulation in order to get comparable results. Applying the MIP selection, it results into energy depositions of single MIP amplitudes for all channels. The comparison of the MIP spectrum for the whole AHCAL between data and simulation in figure \ref{fig:MIPData_MC} shows that the shape of the hit energy spectrum matches relatively well. The data appears slightly wider than for simulation as channel-wise mis-calibration are not modeled in simulation. This comparison validates the digitization of scintillator-SiPM readout calorimeters.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/ComparisonMCData_MIPPeak.pdf}
+		\caption{} \label{fig:MIPData_MC}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/ComparisonMCData_MPV.pdf}
+		\caption{} \label{fig:MPVData_MC}
+	\end{subfigure}
+	\caption{\subref{fig:MIPData_MC}) Hit Energy Spectra for the complete AHCAL for muon like-track hits. \subref{fig:MPVData_MC}) Distribution of fitted MPV in single channels of the AHCAL.}
+\end{figure}
+
+The extraction of the MPV value in data and simulation has been done for each single channels of the AHCAL. The figure \ref{fig:MPVData_MC} shows the obtained distribution. Ideally, the fitted MPV should be at 1 for all chips. But in practice, due to miscalibrations and statistics limitation this results in a widening of the distribution. Both data and simulation give a mean value around 1 MIP for the AHCAL indicating a good average calibration at the cell level. The AHCAL data is slightly shifted to the left to lower values but still reasonably close to unity.
+
+\subsection{Systematic on the MIP scale}
+
+A systematic error on the MIP scale can be derived by divided the muon sample into two sub-samples by even or odd run number. This is will take into account not only the error on the MIP calibration but as well variations due to temperature or temporal variations. Then each samples are fitted using the same fitting procedure as described above.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/SystematicMIP.pdf}
+	\caption{MPV fitted value in MIP for the two muon sub-samples. Even runs are in blue, odd runs are in red.} \label{fig:MIPSyst}
+\end{figure}
+
+One can see that both samples are very similar with less than 1\% shift in the mean value. By taking the average of the RMS of the distributions, a systematic uncertainty of 6\% on the MIP scale can be derived. This systematic can be used later \ref{} when comparing the mean time of first hit versus the hit energy deposition.
+
+\section{Conclusion}
+
+This chapter presents the results of the MIP calibration obtained for the AHCAL technological prototype installed in the CERN SPS testbeam area in July 2015. The MIP calibration procedure was explained and developed in order to accomodate for such high number of channels as well as the diversity in SiPM types and tile designs. In this way, 83\% of the channels in the detector have their MIP constant determined. An error around 2\% is made on the MIP constant value which is in the order of magnitude expected due to the limited statistics. In order to validate the calibration and the simulation, comparisons have been made at the single channel level. Both data and simulation are in a good agreement though simulation is narrower due to mis-calibration channel-wise not being modelled. A systematic error of around 6\% had been determined on the MIP scale due to run and environmental variations.
