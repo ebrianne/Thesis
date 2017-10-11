@@ -13,7 +13,7 @@ During the summer of 2015, CALICE performed several testbeam campaigns with the 
 
 For the production of particles, a primary high intensity proton beam (around $10^{12}$ protons per burst) of 400 GeV is impinged on a target. From this a secondary beam is produced containing various particles type and energies. For muons, the beam is obtained by scrapping the halo of a pion beam with collimators. For electrons, a neutral beam of photons is send to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. For pions, the beam is selected via a set of collimators and magnets. Due to the decay of $\pi_0$ and the acceptance of the beamline, a contamination of the pion beam with electrons is possible at low momentum (< 20 GeV).
 
-\section{TestBeam Setup}
+\section{Testbeam Setup}
 
 In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDET-Report-2010-02} with 48 iron absorber plates. Of it, 14 layers of active material was available for this testbeam as shown in figures \ref{fig:Det_layout} and \ref{fig:AHCAL_photo}. The data was recorded with beam from 10 to 90 GeV. The detector was placed on a movable stage, in order to be able to move the detector relative to the beam for muon calibration runs. This thesis will analyse muon data, electron showers between 10 and 50 GeV and pion showers between 10 and 90 GeV focusing on the timing aspect of the detector.
 
@@ -31,9 +31,36 @@ The beam instrumentation was consisted of two $10 \times 10$ cm$^2$ (in front of
 	\caption{Photo of the AHCAL detector before the installation in the testbeam area.} \label{fig:AHCAL_photo}
 \end{figure}
 
+\section{Testbeam monitoring}
+
+It is important to monitor the data acquired during Testbeam. During testbeam, this is done at two level. On a pure hardware level, this is ideal to check fastly that all layers are working as intented based on basic data. On a reconstructed level, this reflect more the data quality based on physics observables. For the former, a tool was already made and developped by the AHCAL group to check basic ADC/TDC, trigger informations channel-wise. Recently a shift has been done to a new monitoring tool developped in the AIDA2020 framework called DQM4HEP \cite{}. For the latter, no tool was available for shifters without the knowledged of the framework. This is why I developped a tool based on Qt and the ILCSoft framework called \textit{QtReco}. The tool is available on Github \cite{GithubTB}.
+
+Simply, this tool is user-friendly by its interface and enables shifters to check physics observables as shower profiles, center of gravity, total energy with the acquired data in a quasi-online way. The tool is using the Marlin framework and the CALICE software package in order to reconstruct the data. A simple analysis module produce the necessary plots that are stored into a rootfile. A client can be used in order to get the desired plots based on server-socket communication. An example of the monitoring software can be seen in figures \ref{fig:QtReco_Server} and \ref{fig:QtReco_Client}.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/QtReco_Marlin.png}
+		\caption{} \label{fig:QtReco_Server}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/Shower_pion.png}
+		\caption{} \label{fig:QtReco_Client}
+	\end{subfigure}
+	\caption{\subref{fig:QtReco_Server}) The server-side of the monitoring software. It is used to enter the parameters of the run via a steering file and reconstruct the data acquired quasi-online. \subref{fig:QtReco_Client}) Example of the plots obtained with the software from the client-side.}
+\end{figure}
+
 \section{Energy Calibration of the AHCAL}
 
-Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combined them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailled in section \ref{}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant (ADC$_{MIP_i}$) for the i-th channel.
+Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combined them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailled in section \ref{}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The full calibration is expressed as:
+
+\begin{equation}
+	E_i [MIP] = \frac{(A_i [ADC] - Ped_i [ADC]) \times IC_i }{ICP_i \times M_{i} [\frac{ADC}{MIP}]}
+\end{equation}
+
+where $E_i$ is the calibrated amplitude in MIP, $A_i$ the measured amplitude in ADC, $Ped_i$ the pedestal in ADC, $ICP_i$ the intercalibration between calibration and physics mode, $IC_i$ the intercalibration between High/Low gain and $M_{i}$ the MIP constant of the i-th channel. This formula is used in the case of no correction is performed for the SiPM saturation.
 
 \subsection{Pedestal extraction}
 
