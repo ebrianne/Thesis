@@ -8,10 +8,28 @@ The simulation needs as one input the position and width of the particle gun. It
 The best method to estimate the beam profile for data would be to analyse the beam profile provided by the wired chambers. Unfortunately, this data is not available for this analysis. As a work-around, the mean and RMS of the center of gravity distributions in x and y are used to estimate the beam size instead. This does not reflect the true positions since both positions are biased by dead and noisy channels. This has been done for electrons runs as well as for pions runs for each energies. No significant differences in beam profile is visible on a run-by-run basis. The muon beam is simulated by a plane square distribution with a half width of 20 cm. The center of gravity is calculated as the following:
 
 \begin{equation}
-  CoG_x [mm] = \frac{\Sigma_i E_i x_i}{\Sigma_i E_i} \quad \text{and} \quad CoG_y [mm] = \frac{\Sigma_i E_i y_i}{\Sigma_i E_i}
+  CoG_x [mm] = \frac{\Sigma_i E_i x_i}{\Sigma_i E_i} \quad \text{,} \quad CoG_y [mm] = \frac{\Sigma_i E_i y_i}{\Sigma_i E_i} \quad \text{and} \quad CoG_z [mm] = \frac{\Sigma_i E_i z_i}{\Sigma_i E_i}
 \end{equation}
 
 \noindent with $E_i$ the energy of the i-th hit and $x_i$ and $y_i$ the x and y position of the i-th hit.
+
+The beam profiles in the x and y directions for muons is shown in figures \ref{fig:BPmu} for data and simulation. The beam profile is not perfectly reproduced but is good enough. This will have a slight impact on the data and simulation comparison as we are very sensitive to the
+profile of the beam.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/BeamProfileX.pdf}
+    \caption{CoG X.} \label{fig:mu150GeVX}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/BeamProfileY.pdf}
+    \caption{CoG Y.} \label{fig:mu150GeVY}
+  \end{subfigure}
+  \caption{Beam profiles for 150 GeV muons for data and simulation in the x and y directions.}
+  \label{fig:BPmu}
+\end{figure}
 
 Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data and simulation for 10 GeV and 50 GeV electrons. The aggrement look much better for 10 GeV than for 50 GeV, this may be due to contamination from lower energy electrons. Moreover, at higher energy, the beam looks less gaussian-like and the shape in simulation can't be simulated correctly. Figures \ref{fig:BPpi} show the beam profiles in the x and y direction for data and simulation for 10 GeV and 90 GeV pions. The aggrement looks quite good for both energies in the x direction, only a slight difference is visible on the y direction but should have not much impact.
 
@@ -67,13 +85,13 @@ Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data 
 
 \section{Validation of the simulation}
 
-In order to justify any comparison made with the simulation, it needs to be validated first. This is done in two steps using muons and electrons. The comparison of the energy deposited and the number of hits in data and simuation is used to validate the detector simulation. Figures \ref{fig:muVal} show the visible energy $E_{vis}$ and the number of hits above 0.5 MIP for 150 GeV muons in data and simulation.
+In order to justify any comparison made with the simulation, it needs to be validated first. This is done in two steps using muons and electrons. The comparison of the energy deposited and the number of hits in data and simuation is used to validate the detector simulation. Figures \ref{fig:muVal} show the visible energy $E_{sum}$ and the number of hits above 0.5 MIP for 150 GeV muons in data and simulation.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/Validation_Evis_Muons.pdf}
-    \caption{$E_{vis}$.} \label{fig:muEvis}
+    \caption{$E_{sum}$.} \label{fig:muEvis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
@@ -87,8 +105,40 @@ In order to justify any comparison made with the simulation, it needs to be vali
 One can notice that the distributions are quite similar though the simulation shows a higher mean deposited energy and also less entries to around 5 MIP. As well simulation seems to show a slight higher number of hits. This may be due to the beam profile that is not perfectly well reproduced in simulation. In this case, the impact of dead channels is high depending on where the beam is located. Further, an investigation of the energy deposited per layer has been done and can be seen in figure \ref{fig:muEdep}. It shows that the simulations aggree with data within 5\%. This indicates that the calibration has been performed well for all layers.
 
 \begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Muons/ProfileMuons_Edep.pdf}
-	\caption{Mean energy deposited per layer for data and simulation.}
-	\label{fig:muEdep}
+  \centering
+  \includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Muons/ProfileMuons_Edep.pdf}
+  \caption{Mean energy deposited per layer for data and simulation.}
+  \label{fig:muEdep}
+\end{figure}
+
+In a second part, electrons are used to validate further the simulation. As the physics of electron showers is very well understood and can be simulated with great accuracy, it is used as a tool to validate the detector geometry especially concerning the material budget. Also besides noise and beam profiles, the influence of cross-talk has a significant impact due to the higher energy deposited. Simple shower variables have been looked at such as number of hits, energy sum and center of gravity in z direction per event in order to validate the simulation.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_EnergySum_Xtalk_electrons10GeV.pdf}
+    \caption{$E_{sum}$.} \label{fig:e10Evis}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_nHits_Xtalk_electrons10GeV.pdf}
+    \caption{nHits.} \label{fig:e10nHits}
+  \end{subfigure}
+  \caption{\subref{fig:e10Evis}) . \subref{fig:e10nHits}) .}
+  \label{fig:muVal}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_EnergySum_Xtalk_electrons50GeV.pdf}
+    \caption{$E_{sum}$.} \label{fig:e50Evis}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.49\textwidth}
+    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_nHits_Xtalk_electrons50GeV.pdf}
+    \caption{nHits.} \label{fig:e50nHits}
+  \end{subfigure}
+  \caption{\subref{fig:e50Evis}) . \subref{fig:e50nHits}) .}
+  \label{fig:muVal}
 \end{figure}
