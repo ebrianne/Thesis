@@ -1,4 +1,5 @@
 \chapter{Understanding the degration of the energy resolution with timing cuts}
+\label{appendix:eresdegrad}
 
 To investigate and understand the degradation of the energy resolution with timing cuts, a simple complementary analysis has been done based on the CAN 028 \cite{}. This CALICE Analysis note presents a software compensation method to improve energy resolution using a correction factor derived from the knowledge of the electromagnetic and hadronic fraction in a shower on an event-by-event basis. It was found that the shape of energy density distributions are correlated with the calorimeter response. The goal of this study is to show that timing cuts favors high electromagnetic fraction events and reduces the correlation.
 
@@ -87,3 +88,31 @@ The inverse correlation is much stronger for higher kaon energies and becomes we
 In a next step, timing cut will be applied and a comparison with these results will be done. It is believed that timing cuts will have an effect of reducing the inverse correlation of $C^{lim}$/$C^{av}$ with the energy deposited as fluctuation are cut down by timing cuts thus would favored higher electromagnetic fraction hadronic showers.
 
 \section{Influence of timing cuts on hit energy spectra in HCAL}
+
+A first check was performed on the shape of the hit spectra in the HCAL with different timing cuts. The figure \ref{fig:HitSpectra80_timingcuts} shows the hit spectra for 80 GeV kaons with a timing cut of 100, 5 and 1 ns. The green line in the bottom plot represents the value of $e^{lim}$ = 3.5 MIPs.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{chap6/fig_TimingILD/AdditionalPlots/HitEnergySpectra_80GeV.pdf}
+  \caption{The top plots shows the hit energy spectra in the HCAL for 80 GeV kaons with different timing cuts applied. The bottom plot shows the ratio of the spectra compared to 100 ns.} \label{fig:HitSpectra80_timingcuts}
+\end{figure}
+
+One can notice that the shape of the spectra differ slightly with timing cuts, a reduction of low energy hits (~ 1 MIP) and a higher tail to higher hit energies. With a cut of 1 ns, there are around 10\% more hits over 4 MIPs. With a value of 3.5 MIP for $e^{lim}$, it seems that there is globally less hits below, thus reducing the value of $C^{lim}$ ($C^{av}$ is quite independent of the timing cut). A lower value of $C^{lim}$/$C^{av}$ corresponds to higher energy deposited thus giving a hint that timing cuts enhance the electromagnetic response of the calorimeter making even more non-compensating. To further confirm this observation, the same correlation plots between the energy deposited in the HCAL and the ratio $C^{lim}$/$C^{av}$ is shown in figures \ref{fig:EhcalCLimCav10_1ns} and \ref{fig:EhcalCLimCav80_1ns}.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/AdditionalPlots/EhcalCLimCav_1ns_10GeV.pdf}
+    \caption{10 GeV.} \label{fig:EhcalCLimCav10_1ns}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.45\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/AdditionalPlots/EhcalCLimCav_1ns_80GeV.pdf}
+    \caption{80 GeV.} \label{fig:EhcalCLimCav80_1ns}
+  \end{subfigure}
+  \caption{\subref{fig:EhcalCLimCav10_1ns}) Correlation between the energy deposited in the HCAL for 10 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs with a timing cut of 1 ns. \subref{fig:EhcalCLimCav80_1ns}) Correlation between the energy deposited in the HCAL for 80 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs with a timing cut of 1 ns.}
+\end{figure}
+
+It appears that the anti-correlation is reduced slightly but more visible for lower energy kaons. This further confirms that the timing cuts reduce the fluctuations between the electromagnetic and hadronic fractions in hadronic showers by cutting the hadronic response and enhancing the electromagnetic one. This has an effect of non-compensation in the response to hadronic showers thus degrading the energy resolution further more.
