@@ -1,6 +1,6 @@
 \chapter{Timing Calibration and Validation}
 
-To perform the timing calibration of the AHCAL, the complete muon dataset is used. The electron dataset is used in a next step to validate the calibration procedure as described in subsection \ref{subsec:validation} before studying hadronic showers. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Selected events are counted after the selection on the error of the time reference as explained in \ref{subsection:time_ref}.
+To perform the timing calibration of the AHCAL, the complete muon dataset is used. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Raw events are the number of events after the MIP selection. Selected events are counted after the selection on the error of the time reference as explained in \ref{subsection:time_ref}.
 
 \begin{table}[htb!]
 	\centering
@@ -23,6 +23,14 @@ To perform the timing calibration of the AHCAL, the complete muon dataset is use
 	}
 \end{table}
 
+The timing calibration is performed in several steps and will be explained in the following sections.
+\begin{itemize}
+	\item Determination of the timing slope to convert TDC value to nanoseconds.
+	\item Calibration of the time reference
+	\item Non-linearity correction
+	\item Time-walk correction
+\end{itemize}
+
 \section{Slope calibration}
 \label{subsec:slope_calib}
 
@@ -35,7 +43,7 @@ The data analysis is performed in several steps. The first step is the calibrati
 	\text{T}_{chn} \: \text{[ns]} = \text{slope}_{chip, BXID} \times (\text{TDC} - \text{Pedestal}_{mem=1} )
 \end{equation}
 
-The determination of the parameter $\text{slope}_{chip, BXID}$ is assuming that the TDC ramp in the chip is linear to a first order. The parameters Max$_{chip, BXID}$ and Pedestal$_{chip, BXID}$ in eq.\ref{eq:slope} are extracted from the TDC spectrum for a specific chip and BXID using only the first memory cell as illustrated in figure \ref{fig:TDC_Spectrum}. At the same time, the parameter Pedestal$_{mem=1}$ in eq.\ref{eq:time_chn} is extracted from the spectrum for each channel and the first memory cell of a chip without taking into account the BXID of the ramp as the difference between both pedestal can be corrected for at a later stage. This is accounting for a total of 208 slopes and 3744 pedestals to be extracted for the testbeam setup.
+The slope are calculated separately for odd and even BXID due to the chip design presenting two voltage ramps, one for each BXID parity. The determination of the parameter $\text{slope}_{chip, BXID}$ is assuming that the TDC ramp in the chip is linear to a first order. The parameters Max$_{chip, BXID}$ and Pedestal$_{chip, BXID}$ in eq.\ref{eq:slope} are extracted from the TDC spectrum for a specific chip and BXID using only the first memory cell as illustrated in figure \ref{fig:TDC_Spectrum}. At the same time, the parameter Pedestal$_{mem=1}$ in eq.\ref{eq:time_chn} is extracted from the spectrum for each channel and the first memory cell of a chip without taking into account the BXID of the ramp. The difference between both pedestals and for the other memory-cells will be corrected for at a later stage. This is accounting for a total of 208 slopes and 3744 pedestals to be extracted for the testbeam setup.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -47,48 +55,71 @@ The determination of the parameter $\text{slope}_{chip, BXID}$ is assuming that 
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/BadTDCSpectra_Layer12}
-		\caption{TDC Spectrum of a bad chip.} \label{fig:TDC_Spectrum_bad}
+		\caption{TDC Spectrum of a bad chip on layer 12.} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
-	\caption{\subref{fig:TDC_Spectrum}) The red rectangle are the fitted Max and Pedestal parameters for this chip. The yellow bands represents estimation of the error made on the extraction of the parameters by a variation of 1 RMS of the threshold $\mu$. The parameters extracted are slope = 1.56 $\pm$ 0.01, Pedestal = 816 $\pm$ 9 and Maximum = 3336 $\pm$ 8. \subref{fig:TDC_Spectrum_bad}) An example of a bad chip presenting a long tail to high TDC values. The reason is not totally understood but present on all chips on that layer.}
+	\caption{\subref{fig:TDC_Spectrum}) The black lines indicate the fitted Max and Pedestal parameters for this chip. The yellow bands represents estimation of the uncertainty on the extraction of the parameters by a variation of 1 RMS of the threshold $\mu$. slope = 1.56 $\pm$ 0.01, Pedestal = 816 $\pm$ 9 and Maximum = 3336 $\pm$ 8. \subref{fig:TDC_Spectrum_bad}) An example of a bad chip (Chip 190) on layer 12 presenting a long tail to high TDC values. The reason is not totally understood but present on all chips on that layer.}
 \end{figure}
-
-The technique of extraction is based on an edge detection method. For each chip and BXID, an histogram is filled with the y value of each bin then the mean of this histogram is defined as a threshold $\mu$. The parameter Pedestal$_{chip, BXID}$ is extracted as the first bin above 30\% of $\mu$. For the parameter Max$_{chip, BXID}$, it is extracted by taking 50\% of the maximum bin of the original histogram. The maximum seems not to be exactly at the last bin of the spectrum, this is due to the technique that needed to be robust against strange spectra as shown in figure \ref{fig:TDC_Spectrum_bad}.
-
-An estimation of the errors made on the pedestal and maximum is done by looking at the maximum difference between 1 RMS of $\mu$ and 33\% of the maximum bin to the extracted value and are represented on the spectra by the yellow bands. More details about the estimation of the calibration errors is described in the appendix \ref{appendix:calib_error}.
-
-The extracted values for the slopes are in the expected range of 1.6 ns per TDC bin due to the limited dynamic range provided by the chip (around 2500 bins for 4 $\mu$s) which is in aggreement with figure \ref{fig:slope_time}.
+The technique of extraction is based on an edge detection method. For each chip and BXID, an histogram is filled with the y value of each bin. Then the mean of this histogram is defined as a threshold $\mu$. The parameter Pedestal$_{chip, BXID}$ is extracted as the first bin above 30\% of $\mu$. For the parameter Max$_{chip, BXID}$, it is extracted as the last bin above 50\% of the highest bin $BinMax$ of the original histogram. The maximum seems not to be exactly at the last bin of the spectrum, this is due to the technique that needed to be robust against strange spectra as shown in figure \ref{fig:TDC_Spectrum_bad}.
+An estimation of the uncertainties on the pedestal $\sigma_{Ped}$ and maximum $\sigma_{Max}$ is done by the following formulas:
+\begin{equation} \label{eq:errorPed}
+	\begin{aligned}
+		\sigma_{Ped} \: = & \: \text{max}(\left|\text{FirstBinAbove}(\mu - RMS) \times 0.3 - \text{Pedestal}_{chip, BXID}\right|, \\
+		& \left|\text{FirstBinAbove}(\mu + RMS) \times 0.3 - \text{Pedestal}_{chip, BXID}\right|)
+	\end{aligned}
+\end{equation}
+\begin{equation} \label{eq:errorMax}
+	\begin{aligned}
+		\sigma_{Max} \: = & \: \text{max}(\left|\text{LastBinAbove}(BinMax - 0.33 \times BinMax) \times 0.5 - \text{Max}_{chip, BXID}\right|, \\
+		& \left|\text{LastBinAbove}(BinMax - 0.33 \times BinMax) \times 0.5 - \text{Max}_{chip, BXID}\right|)
+	\end{aligned}
+\end{equation}
+More details about the estimation of the calibration uncertainties is described in the appendix \ref{appendix:calib_error}. The extracted values for the slopes are shown in figure \ref{fig:slope_time}. They are in the expected range of 1.6 ns per TDC bin due to the limited dynamic range provided by the chip (around 2500 bins for 4 $\mu$s).
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Muons/SlopesTDC}
-	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. All the 208 TDC slopes were extracted.} \label{fig:slope_time}
+	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
 \end{figure}
 
-\section{Determination of the time of first hit}
+\section{Calibration of the time reference}
+\label{section:time_ref}
 
-\subsection{Time reference}
-\label{subsection:time_ref}
-
-To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in subsection \ref{subsec:trigger} are calibrated using the same method as explained above with the addition that all memory cells are extracted for these channels to guaranty the most accurate result.
-
-After time calibration of the hit, events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range to reject noise hits from theses channels. In addition, as these channels receive exactly the same signal from the NIM-logic at the same time, a quadratic correction is applied to ensure that they match in time as shown in figure \ref{fig:Corr_T12T14}. The correction is performed by correcting the time of T$_{12}$ and T$_{13}$ compared to the time of T$_{14}$. The figure \ref{fig:T0_Correction} shows that the correction reduces the spread of the trigger channels w.r.t to each other. The resulting resolution for the reference trigger signal is around 4-5 ns. This resolution from the electronics contributes to the final timing resolution obtained.
+To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in subsection \ref{subsec:trigger} are calibrated using the same method as explained above with the addition that the values for all memory cells are extracted separately, possible due to the high statistics in these channels, for these channels to guaranty the most accurate result.
 
 \begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/T0s/Profiles_DeviationT0_12_14}
+		\caption{Profile of the difference between T$_{12}$ and T$_{14}$ before correction.} \label{fig:DeviationProfileT0s}
+	\end{subfigure}
+	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/Correlation_T12vsT14_TDC2ns.pdf}
 		\caption{Time correlation the reference triggers T$_{12}$ and T$_{14}$.}\label{fig:Corr_T12T14}
 	\end{subfigure}
-	\hfill
+	\caption{\subref{fig:DeviationProfileT0s} .\subref{fig:Corr_T12T14}) The top left plot shows the time correlation between the references T$_{12}$ and T$_{14}$ after correction. An additionnal cut on the time between 500 and 3500 ns is done. The bottom plot show the profile of the difference between them.}
+\end{figure}
+
+After time calibration of the calorimeter hits, events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range (see appendix \ref{}) to reject noise hits from these channels. In addition, as these channels receive exactly the same signal from the NIM-logic at the same time, a correction is applied to ensure that they match in time. The correction is performed by correcting the time of T$_{12}$ and T$_{13}$ compared to the time of T$_{14}$ as shown in figure \ref{fig:DeviationProfileT0s}.
+After correction, the figure \ref{fig:Corr_T12T14} shows the correlation between T$_{12}$ and T$_{14}$. The figure \ref{fig:T0_Correction} shows that the correction reduces the difference of the trigger channels w.r.t to each other. This is certainly due to the fact that a different value of the pedestal is needed for each BXID parity which was not expected. The resulting width for the reference trigger signal is around 4-5 ns. This resolution from the electronics contributes to the final timing resolution obtained.
+
+\begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/T0_Resolution_5.pdf}
 		\caption{Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$.}	\label{fig:T0_Correction}
 	\end{subfigure}
-	\caption{\subref{fig:Corr_T12T14}) The top plot shows the time correlation between the references T$_{12}$ and T$_{14}$. The bottom plot show the profile of the difference between them. \subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependant of the bunch-crossing.}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/T0s/T0ReferenceError}
+		\caption{Distribution of the uncertainty $\sigma_{ref}$. The red line represents the cut of 4 ns.} \label{fig:T0ReferenceError}
+	\end{subfigure}
+	\caption{\subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependant of the bunch-crossing parity. \subref{fig:T0ReferenceError}}
 \end{figure}
 
-In a next step, to reduce the uncertainty made on the time of the trigger, the time reference $T_{ref}$ is calculated using the mean of T$_{12}$, T$_{13}$ and T$_{14}$ and its associated error $\sigma_{ref}$ as shown in eq. \ref{eq:tref} \& \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large error on the time of the trigger reference. Finally only hits with a TDC value between 500 and 3500 were considered to avoid TDC ramp edge effects.
+In a next step, to reduce the uncertainty made on the time of the trigger, the time reference $T_{ref}$ is calculated using the mean of T$_{12}$, T$_{13}$ and T$_{14}$ and its associated uncertainty $\sigma_{ref}$ as shown in eq. \ref{eq:tref} \& \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. Finally only hits with a calibrated time value between 500 and 3500 were considered to avoid ramp edge effects.
 
 \begin{equation} \label{eq:tref}
 	\text{T}_{ref} = \frac{\text{T}_{12} + \text{T}_{13} + \text{T}_{14}}{3}
@@ -97,7 +128,9 @@ In a next step, to reduce the uncertainty made on the time of the trigger, the t
 	\sigma_{ref}^2 = \frac{ (\text{T}_{12} - \text{T}_{ref})^2 + (\text{T}_{13} - \text{T}_{ref})^2  + (\text{T}_{14} - \text{T}_{ref})^2 }{6}
 \end{equation}
 
-Since the absolute time between the passage of a muon and the trigger of a channel is not known due to cabling and the trigger electronics, the time offset relative to the trigger is determined from data. Muons are quasi-instantaneous particles thus the time of the first hit distribution for each channel, memory cells and BXID has to be shifted to \textit{t=0}. This shifting procedure takes into account the delay time of the trigger due to cabling and the NIM-logic as well as possible mis-calibrations in pedestals. Only memory-cells containing more than 100 events are considered.
+\section{Determination of the time of first hit}
+
+Since the absolute time between the passage of a muon and the trigger of a channel is not known a priori due to cabling and the trigger electronics, the time offset relative to the trigger is determined from data. Muons are quasi-instantaneous particles thus the time of the first hit distribution for each channel, memory cells and BXID should peak at \textit{t=0}. This shifting procedure takes into account the delay time of the trigger due to cabling and the NIM-logic as well as possible mis-calibrations in pedestals. Only memory-cells containing more than 100 events are considered.
 
 This offset is determined by iteration requiring at least 4 prompt hits i.e hits in the range from -20 to 20 ns of the event. This is required to remove noisy channels and ensure a good calibration of the offset. In this way, 18338 individual offsets are extracted from data. A distribution of the extracted offsets using muon data can be seen in figure \ref{fig:offset_trigger_distribution}. The mean value of -150 ns is in the expected order for the cabling and NIM-logic delay. The figure \ref{fig:BXID_offset} shows that individual offsets have to be extracted for each BXID and indicates that a pedestal value per BXID should be needed.
 
