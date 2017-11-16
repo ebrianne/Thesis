@@ -1,55 +1,5 @@
 \chapter{Timing of the pion data}
 
-\section{Systematic uncertainties}
-
-For a significant assesment of differences observed between data and simulations, systematic errors must be evaluated. Several possible errors where identified:
-
-\begin{itemize}
-	% \item MIP Energy Scale: An error on the MIP energy scale needs to be converted in time when looking at the dependence of time with hit energy. An error of 0.5\% is taken. Using simulation, this can be converted into time. For muon and electron beams, it has mostly no effects. For pion beams, it ranges from XXX ns at 0.5 MIP to XXX ns at 1 MIP.
-	\item Non-Linearity correction: A non-linearity correction is applied to the data as explained in section \ref{subsec:lin_corr}. The residuals of the correction give a systematic error at the level of 0.2 ns.
-	\item Time walk correction: In the same way as for the non-linearity correction, the error obtained from the residuals of the correction is in the order of 0.2 ns.
-	\item Number of triggered channels correction: the correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the timing in the order of 1 ns. This systematic error is the most dominant over all other uncertainties.
-	\item Determination of the offset to $t=0$: A shift of the time distribution at zero is done for each layer. The error of this shift varies between 0.05 to 0.1 ns for data. In this case, a conservative error of 0.1 ns is used. For simulation, the shift can be calculated easily using a simple time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this a uncertainty of 3 mm is taken in z corresponding to 0.01 ns error in timing.
-	\item Position relative of the detector to the beam: The detector was positionned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the centimeter level. Thus a conservative error of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the small layers and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the big layers using 10 GeV data. For each beam energy, the systematics were determined.
-	\item Cross-talk: No measurement for cross-talk is available and from previous measurements it varies between 10\% and 18\%. These are used for systematics in simulation.
-	\item Detector inhomogeneities: Following a small study of timing independant of the beam profile, variations in the absolute number of entries in each time bins can be observed. The variations are between 10-20\% thus a conservative error of 20\% is used for the time distribution.
-	\item Number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection. Thus the number of absolute pion events is not known. A conservative error of 10\% when comparing data to simulation for the absolute number of hits per time bin.
-	\item Smearing parametrisation: A parametrisation was obtained from data for the width of the time smearing as function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
-\end{itemize}
-
-The systematics errors are added in quadrature for the full systematic. For comparison data-MC of the number of hits per time bin, an error of 20\% for muons/electrons and 30\% for pions is used. For the distribution of time versus energy, the systematic error is resulting at 1.04 ns. For the distribution of time versus radius, the systematic error is varying between 0.36 ns at small radius to 1.54 ns at large radius for the small layers and from 0.15 ns at small radius to 0.95 ns at large radius for the big layers. The table \ref{table:time_syst} sums up the systematic errors used in the analysis.
-%% Systematics from number of hits may be underestmated... %
-{
-\renewcommand{\arraystretch}{1.2}
-\begin{table}[htb!]
-	\centering
-	\caption{Summary of systematic uncertainties.}
-	\label{table:time_syst}
-	\begin{tabular}{@{} |l|c| @{}}
-		\hline
-		\multicolumn{1}{|c|}{Uncertainty source} & Full uncertainty steel \\
-		\hline
-		% MIP Energy Scale & XXX-XXX ns \\
-		Non-linearity residuals & 0.2 ns \\
-		Time-walk residuals & 0.2 ns \\
-		Number of triggered channels over 0.5 MIP residuals & 1 ns \\
-		Offset to $t=0$ & 0.1 ns (data) 0.01 ns (MC) \\
-		Position relative to the beam & 0.36-1.54 ns (SSF) 0.15-0.95 ns (BL) \\
-		Cross-talk & 10-18\% \\
-		Detector inhomogeneities & 20\% \\
-		Number of absolute events & 10\% (pions) \\
-		\hline
-		\hline
-		\multicolumn{2}{|c|}{Combinaison systematics} \\
-		\hline
-		data-MC hits per time bin & 20\% (muons/electrons) - 30\% (pions) \\
-		data-MC vs hit energy & 1.04 ns \\
-		data-MC vs hit distance to CoG & 1.10-1.86 ns (SSF) 1.05-1.41 ns (BL) \\
-		\hline
-	\end{tabular}
-\end{table}
-}
-
 \section{Hadronic shower timing}
 
 The table \ref{table:pion_runs} summarises the runs and datasets used for the pion analysis. The calibration is applied to pion data directly after the selection. The pion selection is applied and the same trigger reference selection is use to select events. The table shows that more 80\% of the events pass the trigger selection.
