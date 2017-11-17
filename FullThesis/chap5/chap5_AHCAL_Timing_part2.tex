@@ -422,7 +422,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 	\end{tabular}
 \end{table}
 
-The next step is to compare data with simulation. The timing resolution is extracted from muon data runs by fitting a double Gaussian to the data in the range [-50 ns, 50 ns] and is used to smear the timing of simulated calorimeter hits. The table \ref{table:time_res_sim} sums up the parameters used. The comparison for muons is shown in figure \ref{fig:sim_data_muon}. The comparison shows that in the full range, the difference between data and simulation is around 10-20\% maximum. In general, the simulation is in a good agreement with data.
+The next step is to compare data with simulation. The timing resolution is extracted from muon data runs by fitting a double Gaussian to the data in the range [-50 ns, 50 ns] and is used to smear the timing of simulated calorimeter hits. The table \ref{table:time_res_sim} sums up the parameters used. The comparison for muons is shown in figure \ref{fig:sim_data_muon}. The comparison shows that in the full range, the difference between data and simulation is around 10-20\% maximum.
 
 \begin{figure}[htbp!]
 	\centering
@@ -431,7 +431,7 @@ The next step is to compare data with simulation. The timing resolution is extra
 	\label{fig:sim_data_muon}
 \end{figure}
 
-In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrisation of the increase of the width of the time distribution function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. The figures \ref{fig:sim_data_elec} shows this comparison.
+In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrisation of the increase of the width of the time distribution as a function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. Figure \ref{fig:sim_data_elec} shows this comparison.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -473,8 +473,8 @@ In the next step, a comparison with electron data is necessary to validate the s
 	\label{fig:sim_data_elec}
 \end{figure}
 
-The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figures \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of interest of 6 to 10 hits per chip. The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in simulation can influence highly the number of triggers in a chip. As well the parametrisation may be imperfect and may suggest that the time parametrisation could be chip-wise or layer-wise. But due to the limited amount of data, only a global time parametrisation can be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
-
+The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figure \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of 6 to 10 hits per chip. For the time of first hit, The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in simulation can influence highly the number of triggers in a chip. Also the number of triggered channels parametrisation may be imperfect and may suggest that it could be chip-wise or layer-wise. But due to the limited amount of data, only a global parametrisation could be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
+% Change plots from -50 to 50 ns?%
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
