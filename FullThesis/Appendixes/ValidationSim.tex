@@ -85,6 +85,8 @@ Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data 
 
 \section{Validation of the simulation}
 
+\subsection{Muons}
+
 In order to justify any comparison made with the simulation, it needs to be validated first. This is done in two steps using muons and electrons. The comparison of the energy deposited and the number of hits in data and simulation is used to validate the detector simulation. Figures \ref{fig:muVal} show the visible energy $E_{sum}$ and the number of hits above 0.5 MIP for 150 GeV muons in data and simulation.
 
 \begin{figure}[htbp!]
@@ -118,6 +120,8 @@ One can notice that the distributions are quite similar though the simulation sh
   \caption{\subref{fig:muEdep}) Longitudinal energy profile for 150 GeV muons for data and simulations. \subref{fig:e10GoGZ}) Distribution of the center of gravity in the z direction for 10 GeV electrons for data and simulation.}
   \label{fig:Val}
 \end{figure}
+
+\subsection{Electrons}
 
 In a second part, electrons are used to validate further the simulation. As the physics of electron showers is very well understood and can be simulated with great accuracy, it is used as a tool to validate the detector geometry especially concerning the material budget. Also besides noise and beam profiles, the influence of cross-talk has a significant impact due to the higher energy deposited. Moreover, desaturation of high energy cells is very important as generally electrons deposit in few cells their energy. Unfortunately no saturation curves are available and only estimations of the necessary parameters are derived from simulation by tuning it to the data. Though, in this analysis, the energy deposited in a single cell is only relevant at low energies (from 0.5 to few MIPs) where the response of the SiPM is linear. Thus desaturation is not used. On the other side, only saturation of the hit energy is performed on simulation where the same parameters are used, this has an effect on the matching between data and simulations for the energy sum but similar as the desaturation does not matter for this analysis. Simple shower variables have been looked at such as number of hits, energy sum and center of gravity in z direction per event in order to validate the simulation.
 
@@ -170,24 +174,30 @@ Figures \ref{fig:eVal} show the mean energy sum $<E_{sum}>$ and mean number of h
   \label{fig:eVal}
 \end{figure}
 
-The investigation of these observables enables us to validate the simulations to a certain degree of confidence between 5-20\% with the data. The precision of the detector simulation for electrons is limited by the cross-talk simulation and for energies above 20 GeV, by the possible contamination by low energy electrons in the data. A deeper investigation on the energy aspect of the data is carried out in parallel of this analysis \cite{AmbraEnergy}.
+The investigation of these observables enables us to validate the simulations between 5-20\% with the data. The precision of the detector simulation for electrons is limited by the cross-talk simulation and for energies above 20 GeV, by the possible contamination by low energy electrons in the data. A deeper investigation on the energy aspect of the data is carried out in parallel of this analysis \cite{AmbraEnergy}.
 
-Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT\_HP physics list was only used for comparison. The center of gravity in z direction, the number of hits and the energy sum are the variables looked at.
+\subsection{Pions}
+
+Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT\_HP physics list was only used for comparison. The center of gravity in z direction, the number of hits and the energy sum are the variables looked at and are shown in figures \ref{fig:piGoGZ}, figures \ref{fig:pi10Val} and figures \ref{fig:pi90Val}.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_CoGZ_Xtalk_pions10GeV.pdf}
-    \caption{$E_{sum}$.} \label{fig:pi10CoGZ}
+    \caption{$CoGZ$ 10 GeV.} \label{fig:pi10CoGZ}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
     \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_CoGZ_Xtalk_pions90GeV.pdf}
-    \caption{nHits.} \label{fig:pi90CoGZ}
+    \caption{$CoGZ$ 90 GeV.} \label{fig:pi90CoGZ}
   \end{subfigure}
-  \caption{\subref{fig:pi10CoGZ}) . \subref{fig:pi90CoGZ}) .}
+  \caption{Distributions of the center of gravity in the z direction for data and simulations of 10 GeV (left) and 90 GeV (right) pions. The simulations have a cross-talk value of 10\% and 18\%.}
   \label{fig:piGoGZ}
 \end{figure}
+
+In figure \ref{fig:piGoGZ}, for 10 GeV pions, the CoGZ is well reproduced by the simulations with a cross-talk value between 10\% and 18\% whereas for 90 GeV pions, small discrepancies are visible between data and simulations. Also it is noticeable that the DD4hep and Mokka simulations also differ slightly. The reason is not clear. The discrepancy with the data may be related to multi-particle events as shown in the figures below.
+
+The figure \ref{fig:pi10Val} shows the comparison between data and simulation with cross-talk values of 10\% and 18\% of the energy sum and number of hits distributions for 10 GeV pions. The data is well reproduced by the simulations. The figure \ref{fig:pi90Val} shows the same distributions for 90 GeV pions. Some discrepancies are visible between data and simulations, especially for the energy sum where a second peak is visible in data and may be from multi-particle events. A slight shift for the first peak is visible and may come from mis-calibrations (intercalibration of high/low gain). Concerning the number of hits, the Mokka simulation represents well the data as for DD4hep it over-estimates the fraction of events around 40-50 hits and under-estimates it over 80 hits.
 
 \begin{figure}[htbp!]
   \centering
@@ -219,6 +229,8 @@ Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT
   \label{fig:pi90Val}
 \end{figure}
 
+Finally, the mean energy sum $<E_{sum}>$ and mean number of hits $<nHits>$ as function of the beam energy between 10 and 90 GeV for data and simulation with different cross-talk parameters was looked at as for electrons and are shown in figure \ref{fig:piVal}. The visible energy for data is above the simulations for all energies but agrees better with simulations for 10 and 50 GeV points. For higher energies, the data deviates significantly to higher values that may be due to multiple particle events shifting the mean of the distribution to higher energy values. The number of hits is well described by the Mokka simulation and slightly lower for the DD4hep simulation that is also visible in the mean energy sum. The reason is not clear as the material description is very similar in both simulations as shown with electrons.
+
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
@@ -233,3 +245,5 @@ Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT
   \caption{\subref{fig:EsumMean}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters. \subref{fig:nHitsMean}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters.}
   \label{fig:piVal}
 \end{figure}
+
+In conclusion, the investigation of these observables for pions enables us to validate the simulations between 10-20\% with the data. The precision of the detector simulation for pions is limited by the cross-talk simulation and by the possible contamination by multi-particle events in the data.
