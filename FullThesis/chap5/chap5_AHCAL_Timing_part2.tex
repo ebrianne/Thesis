@@ -48,13 +48,13 @@ The slope are calculated separately for odd and even BXID due to the chip design
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/ExampleTDCSpectra}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra}
 		\caption{TDC Spectrum of a typical chip.} \label{fig:TDC_Spectrum}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/BadTDCSpectra_Layer12}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer12}
 		\caption{TDC Spectrum of a bad chip on layer 12.} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
 	\caption{\subref{fig:TDC_Spectrum}) The black lines indicate the fitted Max and Pedestal parameters for this chip. The yellow bands represents estimation of the uncertainty on the extraction of the parameters by a variation of 1 RMS of the threshold $\mu$. slope = 1.56 $\pm$ 0.01, Pedestal = 816 $\pm$ 9 and Maximum = 3336 $\pm$ 8. \subref{fig:TDC_Spectrum_bad}) An example of a bad chip (Chip 190) on layer 12 presenting a long tail to high TDC values. The reason is not totally understood but present on all chips on that layer.}
@@ -77,7 +77,7 @@ More details about the estimation of the calibration uncertainties is described 
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Muons/SlopesTDC}
+	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC}
 	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
 \end{figure}
 
@@ -89,13 +89,13 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/T0s/Profiles_DeviationT0_12_14}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/Profiles_DeviationT0_12_14}
 		\caption{Profile of the difference between T$_{12}$ and T$_{14}$ before correction.} \label{fig:DeviationProfileT0s}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/Correlation_T12vsT14_TDC2ns.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/Correlation_T12vsT14_TDC2ns.pdf}
 		\caption{Time correlation the reference triggers T$_{12}$ and T$_{14}$.}\label{fig:Corr_T12T14}
 	\end{subfigure}
 	\caption{\subref{fig:DeviationProfileT0s} .\subref{fig:Corr_T12T14}) The top left plot shows the time correlation between the references T$_{12}$ and T$_{14}$ after correction. An additionnal cut on the time between 500 and 3500 ns is done. The bottom plot show the profile of the difference between them.}
@@ -107,16 +107,16 @@ After correction, the figure \ref{fig:Corr_T12T14} shows the correlation between
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/T0s/T0_Resolution_5.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5.pdf}
 		\caption{Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$.}	\label{fig:T0_Correction}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/T0s/T0ReferenceError}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError}
 		\caption{Distribution of the uncertainty $\sigma_{ref}$. The red line represents the cut of 4 ns.} \label{fig:T0ReferenceError}
 	\end{subfigure}
-	\caption{\subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependant of the bunch-crossing parity. \subref{fig:T0ReferenceError}}
+	\caption{\subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependent of the bunch-crossing parity. \subref{fig:T0ReferenceError}}
 \end{figure}
 
 In a next step, to reduce the uncertainty made on the time of the trigger, the time reference $T_{ref}$ is calculated using the mean of T$_{12}$, T$_{13}$ and T$_{14}$ and its associated uncertainty $\sigma_{ref}$ as shown in eq. \ref{eq:tref} \& \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. Finally only hits with a calibrated time value between 500 and 3500 were considered to avoid ramp edge effects.
@@ -137,13 +137,13 @@ In this way, 18338 individual offsets are extracted from data. A distribution of
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ExtractedOffsets.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ExtractedOffsets.pdf}
 		\caption{Distribution of the offset used to correct for the trigger delay.}\label{fig:offset_trigger_distribution}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/CorrelationOffsets_BXID.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/CorrelationOffsets_BXID.pdf}
 		\caption{Correlation between offsets extracted for even and odd BXID.}\label{fig:BXID_offset}
 	\end{subfigure}
 	\caption{\subref{fig:offset_trigger_distribution}) Extracted offset used to correct for the trigger delay signal. The mean delay of the trigger is $\sim$ 150 ns and is in the expected order. \subref{fig:BXID_offset}) Correlation between offsets extracted for BXID even and odd.}
@@ -158,13 +158,13 @@ Each layer was also looked at individually as shown in figure \ref{fig:reso_noco
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_noCorrections.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections.pdf}
 		\caption{Timing for all layers in the AHCAL excluding layer 11.}\label{fig:timing_nocorrection}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_noCorrections.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections.pdf}
 		\caption{Extracted resolution for all layers in the AHCAL.}\label{fig:reso_nocorrection}
 	\end{subfigure}
 	\caption{\subref{fig:timing_nocorrection}) Time of the first hit distribution of the AHCAL after the first part of the calibration. $\mu$ = -0.06 ns , RMS = 5.65 ns. The distribution is clearly asymmetric to the left. \subref{fig:reso_nocorrection}) Time resolution for all layers in the AHCAL. The mean RMS time resolution is represented by the blue line. Mean $\sigma$ = 5.65 ns, Mean RMS = 5.82 ns.}
@@ -180,13 +180,13 @@ The calibration relies on the linearity of the TDC voltage ramp in the \textit{S
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/LinearityCorrection_Module09_Chip146_BXID0.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0.pdf}
 		\caption{Quadratic fit of chip 146 (BXID even) on layer 9.}\label{fig:LinCorr}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/LinearityCorrection_Module09_Chip146_BXID0_Corrected.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0_Corrected.pdf}
 		\caption{Profile for chip 146 on layer 9 after the non-linearity correction of the ramp.}\label{fig:LinCorr_2}
 	\end{subfigure}
 	\caption{\subref{fig:LinCorr}) Typical profile of the time of the hit versus the TDC of the hit before the non-linearity correction. The graph is slightly curved showing that this chip presents a non-linear TDC ramp. The $\chi^2/ndf$ of the fit is 1.29. \subref{fig:LinCorr_2}) The correction parameters are applied then on the data to cross-check the quality of the correction. One can see that the curve flattens with the correction applied.}
@@ -199,13 +199,13 @@ The non-linearity correction results in an improvement in the timing resolution 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AHCAL_LinCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_LinCorrection.pdf}
 		\caption{Timing for all layers in the AHCAL excluding layer 11.}\label{fig:timing_lincorrection}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_LinCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_LinCorrection.pdf}
 		\caption{Extracted resolution for all layers in the AHCAL.}\label{fig:reso_lincorrection}
 	\end{subfigure}
 	\caption{\subref{fig:timing_lincorrection}) Time of the first hit distribution of the AHCAL after the non-linearity correction. $\mu$ = -0.04 ns , RMS = 5.36 ns. \subref{fig:reso_lincorrection}) Time resolution for all layers in the AHCAL. The mean RMS is 5.54 ns.}
@@ -221,13 +221,13 @@ The correction is assumed to be the same for all the chips, independent of the p
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/TimeWalkProfile.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile.pdf}
 		\caption{Profile of the time of first hit as function of the hit energy.}\label{fig:time_walk}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/TimeWalkProfile_Correction.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf}
 		\caption{Same profile after time-walk correction.}\label{fig:time_walk_corr}
 	\end{subfigure}
 	\caption{\subref{fig:time_walk}) Time-walk correction extracted from data. A = 10.06 $\pm$ 0.07, $\lambda$ = -1.34 $\pm$ 0.01, B = -2.01 $\pm$ 0.01. A difference up to 6 ns is seen between small and large amplitudes. \subref{fig:time_walk_corr}) Time-walk profile after correction showing a spread of less than 1 ns.}
@@ -236,18 +236,18 @@ The correction is assumed to be the same for all the chips, independent of the p
 \subsection{Time of first hit for muons after corrections}
 \label{subsec:Muon_final}
 
-After the time-walk correction, an improvement of around 3\% can be achieved on the time resolution of the AHCAL as shown in figure \ref{fig:timing_muons}. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The distribution is still asymmetric and it is taken into account in the simulation by parametrising the time distribution with a double Gaussian function (see table \ref{table:time_res_sim}). The number of events identified later than 5$\sigma$ ($\sim$ 25 ns) is around 1.22\% giving a good assessment of the noise suppression for muons.
+After the time-walk correction, an improvement of around 3\% can be achieved on the time resolution of the AHCAL as shown in figure \ref{fig:timing_muons}. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The distribution is still asymmetric and it is taken into account in the simulation by parametrizing the time distribution with a double Gaussian function (see table \ref{table:time_res_sim}). The number of events identified later than 5$\sigma$ ($\sim$ 25 ns) is around 1.22\% giving a good assessment of the noise suppression for muons.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/Timing_AllLayers.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf}
 		\caption{Time of the first hit distribution of the AHCAL after all corrections.}\label{fig:timing_muons}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Muons/ResolutionPerModule_AllCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf}
 		\caption{Time resolution obtained for each AHCAL layers.}\label{fig:timing_reso_all_muons}
 	\end{subfigure}
 	\caption{\subref{fig:timing_muons}) Time of the first hit for muons after all corrections excluding layer 11. The extracted parameters are then used to tune the simulation. \subref{fig:timing_reso_all_muons}) Time resolution obtained for each layer in the AHCAL. Mean RMS = 5.35 ns.}
@@ -265,7 +265,7 @@ The additional offset is expected to be small as the trigger configuration is ve
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_AllLayers_AfterMuons.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
 	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data, before further corrections. Max = -10.05 ns, RMS = 8.92 ns.}
 	\label{fig:Timing_electrons}
 \end{figure}
@@ -273,22 +273,22 @@ The additional offset is expected to be small as the trigger configuration is ve
 \section{Influence of the number of triggered channels}
 \label{subsec:ped_shift}
 
-Pedestal shift for energy measurement is not a new feature of the \textit{SPIROC2B} chip \cite{Hartbrich2012}. This electronic effect may be also present for the timing measurement. It can be investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. The correction should not be energy dependant and all electron beam energies are used to determine the correction curve.
+Pedestal shift for energy measurement is not a new feature of the \textit{SPIROC2B} chip \cite{Hartbrich2012}. This electronic effect may be also present for the timing measurement. It can be investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. The correction should not be energy dependent and all electron beam energies are used to determine the correction curve.
 
 It is shown in figure \ref{fig:nhits_profile}. The effect on the measure hit time can be very large, a correction up to 30-40 ns can be necessary to the data for a high number of triggered channels above 0.5 MIP (15-20). The cause of observed effect is most likely due to an element in the chip called a delay box that get unstable with the number of triggered channels and that is responsible for the hold of the TDC value in the chip. The hold is delayed thus the sampling of a higher TDC value than the one expected is done.
 
-The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but also increases its width. The width increases with the number of triggers in a chip thus making the time resolution of the AHCAL dependant on the number of hits. This is shown in figure \ref{fig:RMS_nHits}. As expected, if only a single channel triggers in a chip, the time resolution is closed to the one obtained for muons. Additionally, it has been checked with the energy sum of the hits per chip but the correlation is better with the former quantity chosen.
+The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but also increases its width. The width increases with the number of triggers in a chip thus making the time resolution of the AHCAL dependent on the number of hits. This is shown in figure \ref{fig:RMS_nHits}. As expected, if only a single channel triggers in a chip, the time resolution is closed to the one obtained for muons. Additionally, it has been checked with the energy sum of the hits per chip but the correlation is better with the former quantity chosen.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/NumberHits_Dependance_AllEnergies.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/NumberHits_Dependance_AllEnergies.pdf}
 		\caption{Time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip for all electron energies.}\label{fig:nhits_profile}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/ParametrisationPedestalShift_20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.pdf}
 		\caption{RMS of the time of first hit function of the number of triggered channels above 0.5 MIP for 20 GeV electrons.}\label{fig:RMS_nHits}
 	\end{subfigure}
 	\caption{\subref{fig:nhits_profile}) Mean time of the hit as function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. The plot is obtained by combining all electron energies and a polynomial fit is done. \subref{fig:RMS_nHits}) The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels.}
@@ -297,18 +297,18 @@ The correction parameters are determined by a polynomial fit to the data. In add
 \section{Time of the first hit for electrons}
 \label{subsec:Electron_Final}
 
-The distribution of the time of the first for 20 GeV is shown in figure \ref{fig:timing_electrons_corr} after correction as function of the triggered channels. The correction improves the RMS of the distribution by around 12.1\%, as well as the distribution appears more gaussian-like. However, there is still a discrepancy (around 33.7\%) with the time resolution obtained for muons (5.2 ns). This is due to the fact that not only the mean time shifts but that the RMS also increases as a function of the number of hits as seen in figure \ref{fig:RMS_nHits} and can't be corrected (each individual distributions have been checked). In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrised from the data. More details can be read in the appendix \ref{appendix:ped_shift}.
+The distribution of the time of the first for 20 GeV is shown in figure \ref{fig:timing_electrons_corr} after correction as function of the triggered channels. The correction improves the RMS of the distribution by around 12.1\%, as well as the distribution appears more gaussian-like. However, there is still a discrepancy (around 33.7\%) with the time resolution obtained for muons (5.2 ns). This is due to the fact that not only the mean time shifts but that the RMS also increases as a function of the number of hits as seen in figure \ref{fig:RMS_nHits} and can't be corrected (each individual distributions have been checked). In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrized from the data. More details can be read in the appendix \ref{appendix:ped_shift}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_AllLayers_20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_20GeV.pdf}
 		\caption{}\label{fig:timing_electrons_corr}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/ComparisonAll_ElectronsSingleHit.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonAll_ElectronsSingleHit.pdf}
 		\caption{}\label{fig:timing_electron_muon_comp}
 	\end{subfigure}
 	\caption{\subref{fig:timing_electrons_corr}) Time of the first hit distribution for 20 GeV electrons after number of triggered channel correction, $\mu$ = -0.018 ns, RMS = 7.84 ns. \subref{fig:timing_electron_muon_comp}) Comparison of the electron data sample, the time distribution is very similar to the muon one if only events with single hits in a chip are taken.}
@@ -318,7 +318,7 @@ A comparison with the muon data has been done in order to cross-check the calibr
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Electrons/ComparisonDataEnergies.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonDataEnergies.pdf}
 	\caption{Comparison of the time of first hit distribution for all electron energies.}
 	\label{fig:all_electron_energies}
 \end{figure}
@@ -331,13 +331,13 @@ A study has been performed to estimate the influence of the detector inhomogenei
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Systematic_Inhomogeneity_10GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV.pdf}
 		\caption{}\label{fig:timing_inhomo_10GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Systematic_Inhomogeneity_50GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV.pdf}
 		\caption{}\label{fig:timing_inhomo_50GeV}
 	\end{subfigure}
 	\caption{\subref{fig:timing_inhomo_10GeV}) Time of the first hit distribution for all four middle tiles with 10 GeV electron beam. \subref{fig:timing_inhomo_50GeV}) Time of the first hit distribution for all four middle tiles with 50 GeV electron beam. All distribution are within 10-20\% in the core.}
@@ -347,11 +347,11 @@ The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show
 
 \section{Portability of the calibration}
 
-A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal was to reuse the calibration constants obtained and apply them to another dataset in order to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminium absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
+A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal was to reuse the calibration constants obtained and apply them to another dataset in order to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminum absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{chap5/fig_AHCAL_timing/Electrons/Timing_May2016_BigLayers.pdf}
+	\includegraphics[width=0.7\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf}
 	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14.}\label{fig:TBMay2016}
 \end{figure}
 
@@ -366,16 +366,16 @@ For a significant assesment of differences observed between data and simulations
 	\item Non-Linearity correction: A non-linearity correction is applied to the data as explained in section \ref{subsec:lin_corr}. The residuals of the correction give a systematic error at the level of 0.2 ns.
 	\item Time walk correction: In the same way as for the non-linearity correction, the error obtained from the residuals of the correction is in the order of 0.2 ns.
 	\item Number of triggered channels correction: the correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the timing in the order of 1 ns. This systematic error is the most dominant over all other uncertainties.
-	\item Smearing parametrisation: A parametrisation was obtained from data for the width of the time smearing as function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
+	\item Smearing parametrization: A parametrization was obtained from data for the width of the time smearing as function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
 	\item Determination of the offset to $t=0$: A shift of the time distribution at zero is done for each layer. The uncertainty of this shift varies between 0.05 to 0.1 ns for data. In this case, a conservative uncertainty of 0.1 ns is used. For simulation, the shift can be calculated easily using a simple time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this a uncertainty of 3 mm is taken in z corresponding to 0.01 ns uncertainty in timing.
-	\item Position relative of the detector to the beam: The detector was positionned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the millimeter level. Thus a conservative uncertainty of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the small layers and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the big layers using 10 GeV data.
+	\item Position relative of the detector to the beam: The detector was positioned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the millimeter level. Thus a conservative uncertainty of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the small layers and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the big layers using 10 GeV data.
 	\item Cross-talk: No measurement for optical cross-talk between tiles is available and from previous measurements it varies between 10\% and 18\%. These are used for systematics in simulation only for the layers 4 to 10.
 	\item Detector inhomogeneities: As explained in section \ref{subsec:det_inhomo}, variations in the absolute number of entries in each time bins can be observed. The variations are between 10-20\% thus a conservative error of 20\% is used for the time distribution.
 	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection. Thus the number of absolute pion events is not known. A conservative error of 10\% when comparing data to simulation for the absolute number of hits per time bin.
 \end{itemize}
 
 The systematic uncertainties are added in quadrature for the full systematic uncertainty. For comparison between data-MC of the number of hits per time bin, an uncertainty of 20\% for muons/electrons and 30\% for pions is used. For the distribution of time versus energy, the systematic uncertainty is resulting at 1.04 ns. For the distribution of time versus radius, the systematic uncertainty is varying between 0.36 ns at small radius to 1.54 ns at large radius for the small layers and from 0.15 ns at small radius to 0.95 ns at large radius for the big layers. The table \ref{table:time_syst} sums up the systematic uncertainties used in the analysis.
-%% Systematics from number of hits may be underestmated... %
+%% Systematics from number of hits may be underestimated... %
 {
 \renewcommand{\arraystretch}{1.2}
 \begin{table}[htb!]
@@ -397,7 +397,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		Number of absolute events & 10\% (pions) \\
 		\hline
 		\hline
-		\multicolumn{2}{|c|}{Combinaison of systematics} \\
+		\multicolumn{2}{|c|}{Systematics combined} \\
 		\hline
 		data-MC hits per time bin & 20\% (muons/electrons) - 30\% (pions) \\
 		data-MC vs hit energy & 1.04 ns \\
@@ -426,89 +426,89 @@ The next step is to compare data with simulation. The timing resolution is extra
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{chap5/fig_AHCAL_timing/Muons/Comparison_MokkaDD4hepData_Muons.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf}
 	\caption{Time of first hit for data and simulation between -20 and 20 ns.}
 	\label{fig:sim_data_muon}
 \end{figure}
 
-In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrisation of the increase of the width of the time distribution as a function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. Figure \ref{fig:sim_data_elec} shows this comparison.
+In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrization of the increase of the width of the time distribution as a function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. Figure \ref{fig:sim_data_elec} shows this comparison.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons10GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf}
 		\caption{10 GeV.}\label{fig:elec_sim_data_10GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons15GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf}
 		\caption{15 GeV.}\label{fig:elec_sim_data_15GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf}
 		\caption{20 GeV.}\label{fig:elec_sim_data_20GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons30GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf}
 		\caption{30 GeV.}\label{fig:elec_sim_data_30GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons40GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf}
 		\caption{40 GeV.}\label{fig:elec_sim_data_40GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons50GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf}
 		\caption{50 GeV.}\label{fig:elec_sim_data_50GeV}
 	\end{subfigure}
-	\caption{Comparison between electron data and MC for all energies of the time of first hit. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter and with the error envelope from the number of hits parameterisation.}
+	\caption{Comparison between electron data and MC for all energies of the time of first hit. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter and with the error envelope from the number of hits parametrization.}
 	\label{fig:sim_data_elec}
 \end{figure}
 
-The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figure \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of 6 to 10 hits per chip. For the time of first hit, The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in simulation can influence highly the number of triggers in a chip. Also the number of triggered channels parametrisation may be imperfect and may suggest that it could be chip-wise or layer-wise. But due to the limited amount of data, only a global parametrisation could be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
+The simulation is systematically narrower than data for all energies. This would suggest that simulation has less hits than data which is in agreement with figure \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of 6 to 10 hits per chip. For the time of first hit, The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in simulation can influence highly the number of triggers in a chip. Also the number of triggered channels parametrization may be imperfect and may suggest that it could be chip-wise or layer-wise. But due to the limited amount of data, only a global parametrization could be applied. For 10 to 20 GeV comparisons, the description of the tails in simulation are quite underestimated. This may be due to the description of the noise in simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
 % Change plots from -50 to 50 ns?%
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_10GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf}
 		\caption{10 GeV.}\label{fig:elec_sim_data_nHits_10GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_15GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf}
 		\caption{15 GeV.}\label{fig:elec_sim_data_nHits_15GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf}
 		\caption{20 GeV.}\label{fig:elec_sim_data_nHits_20GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_30GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf}
 		\caption{30 GeV.}\label{fig:elec_sim_data_nHits_30GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_40GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf}
 		\caption{40 GeV.}\label{fig:elec_sim_data_nHits_40GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{chap5/fig_AHCAL_timing/Electrons/Comparison_SimData_Electrons_nHits_50GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf}
 		\caption{50 GeV.}\label{fig:elec_sim_data_nHits_50GeV}
 	\end{subfigure}
 	\caption{Comparison between electron data and MC for all energies of the number of triggered channels per chip. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}

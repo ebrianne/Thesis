@@ -9,7 +9,7 @@ Finally, a benchmark of a fast simulation software (SGV) against the ILD full si
 
 \subsection{\ilcsoft software framework}
 
-Various tools developed by the Linear Collider community is regrouped in a common software framework called \ilcsoft \cite{ILCSoftPortal}. It provides a complete framework that can be used for Monte-Carlo studies and experiments. As an example, physics studies, ILD detector optimisation and performance for the ILC are performed under the \ilcsoft framework.\\
+Various tools developed by the Linear Collider community is regrouped in a common software framework called \ilcsoft \cite{ILCSoftPortal}. It provides a complete framework that can be used for Monte-Carlo studies and experiments. As an example, physics studies, ILD detector optimization and performance for the ILC are performed under the \ilcsoft framework.\\
 
 Most of the tools in the framework use an Event Data Model (EMD) named Linear Collider I/O (\lcio) which provides a reliable and performant solution for simulation and analysis studies \cite{Gaede:2003ip}. With this tool, various detector concepts and analysis can be shared.
 
@@ -20,7 +20,7 @@ The reconstruction and analysis tools used in this analysis are mostly part of \
 \subsection{ILD Detector Simulation}
 
 The following analysis is using one of the generic ILD detector model (ILD\_o1\_v05) as describe in \ref{} within the \mokka framework. Many other models are also considered for ILD as shown in Table \ref{table:ILDOptions}. \mokka is a front-end to \geant and provides a realistic geometry of the ILD detector. The \mokka version used is v08-05 and the \geant version is 10.01.
-The simulation is performed by simply using the particle gun provided in \geant to shoot particles (\piminus or \kzeroL) in different regions of the detector by randomly variating the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT physics list was used. The output of the simulation provides a lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within \marlin.
+The simulation is performed by simply using the particle gun provided in \geant to shoot particles (\piminus or \kzeroL) in different regions of the detector by randomly variating the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT physics list was used. The output of the simulation provides a \lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within \marlin.
 
 \begin{table}[htb!]
   \centering
@@ -48,11 +48,11 @@ Track fitting is performed using the track segments with an inversed Kalman filt
 
 \subsection{Calorimeter digitization}
 
-The calorimeter digitisation is performed on simulated calorimeter hits as part of ILDCaloDigi processor \cite{Jeans2015}. It takes account for threshold effect from the electronics, sampling fraction of the calorimeter and the readout technology used. In the considered model of ILD, the SiW-ECAL and AHCAL are used.
+The calorimeter digitization is performed on simulated calorimeter hits as part of ILDCaloDigi processor \cite{Jeans2015}. It takes account for threshold effect from the electronics, sampling fraction of the calorimeter and the readout technology used. In the considered model of ILD, the SiW-ECAL and AHCAL are used.
 
-In both cases, it uses a silicon-pixel based technology. The digitisation then takes into account the finite number of pixels that can be fired as well as the statistical fluctuations related to pixel readout \cite{Hartbrich:2016bbz}.
+In both cases, it uses a silicon-pixel based technology. The digitization then takes into account the finite number of pixels that can be fired as well as the statistical fluctuations related to pixel readout \cite{Hartbrich:2016bbz}.
 
-Concerning time, it uses a simple digitisation. For a simulated hit, all contributions are looped over and only adds contributions under a certain timing cut (default is \SI{100}{\ns}). This modelisation of timing is very simplified as in reality the electronics are shaping the signal with a certain shapping time and register the time of the first contribution over the threshold (default is 0.5 MIP) \ref{}.
+Concerning time, it uses a simple digitization. For a simulated hit, all contributions are looped over and only adds contributions under a certain timing cut (default is \SI{100}{\ns}). This modelisation of timing is very simplified as in reality the electronics are shaping the signal with a certain shaping time and register the time of the first contribution over the threshold (default is 0.5 MIP) \ref{}.
 
 \subsection{Pandora PFA}
 

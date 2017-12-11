@@ -8483,6 +8483,77 @@ void TimingMay2016()
   c1->SaveAs("Plots/Timing_May2016_BigLayers.pdf");
 }
 
+void ChipRejection()
+{
+  CaliceStyle();
+
+  TFile *f = new TFile("Rootfiles/FractionHits.root", "OPEN");
+  TH1F *hFrac;
+  TH1F *hChip;
+
+  f->GetObject("hFrac", hFrac);
+
+  TIter next(f->GetListOfKeys());
+  TKey *key;
+
+  while ((key = (TKey*)next()))
+  {
+    TClass *cl = gROOT->GetClass(key->GetClassName());
+    if (!cl->InheritsFrom("TH1")) continue;
+
+    TH1 *h = (TH1*)key->ReadObj();
+    string histoname = key->GetName();
+    int Chip = atoi(histoname.substr(histoname.find("Chip")+4, 3).c_str());
+
+    if(Chip == 149)
+    hChip = (TH1F*)h;
+  }
+
+  TLine *line = new TLine(98, 0, 98, 10);
+  line->SetLineColor(kRed);
+  line->SetLineWidth(3);
+  line->SetLineStyle(2);
+
+  TCanvas *c1 = new TCanvas("c1", "", 800, 600);
+  // hFrac->Rebin(2);
+  hFrac->SetLineColor(kBlue);
+  hFrac->SetFillColor(kBlue);
+  hFrac->SetLineWidth(2);
+  hFrac->SetFillStyle(3002);
+  hFrac->GetXaxis()->SetRangeUser(90, 100);
+  hFrac->GetYaxis()->SetRangeUser(0, 10);
+  hFrac->GetXaxis()->SetTitle("Fraction of hits between [-50, 50] ns [%]");
+  hFrac->GetYaxis()->SetTitle("Number of chips");
+  hFrac->Draw();
+  line->Draw("same");
+
+  c1->SaveAs("Plots/FractionRejectedChips.pdf");
+
+  TPaveText *pt = new TPaveText(0.18, 0.75, 0.38, 0.90, "tbNDC");
+  pt->SetBorderSize(0);
+  pt->SetTextColor(15);
+  pt->SetFillColor(0);
+  pt->SetTextSize(0.04);
+  pt->SetTextAlign(13); //left center
+  pt->AddText("CALICE AHCAL");
+  pt->AddText("50 GeV e-, Chip 149");
+  pt->AddText("Work in progress");
+
+  hChip->GetXaxis()->SetRangeUser(-200, 200);
+  hChip->Scale(1./hChip->Integral("width"));
+
+  TCanvas *c2 = new TCanvas("c2", "", 800, 600);
+  gPad->SetLogy();
+  hChip->SetLineColor(kBlack);
+  hChip->SetLineWidth(2);
+  hChip->GetXaxis()->SetTitle("Time of first hit [ns]");
+  hChip->GetYaxis()->SetTitle("Fraction of hits");
+  hChip->Draw();
+  pt->Draw("same");
+
+  c2->SaveAs("Plots/ExampleBadChip149.pdf");
+}
+
 void MakePlots()
 {
   Validation();
@@ -8524,4 +8595,5 @@ void MakePlots()
   BeamProfile_50GeV();
 
   TimingMay2016();
+  ChipRejection();
 }

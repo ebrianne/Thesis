@@ -80,14 +80,14 @@ The AHCAL distribution of $cog_Z$ vs $n_{Hits}$ obtained from simulated 50 GeV m
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Muons/SelectionCut_nHitsCoGZ_Muons}
+	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SelectionCut_nHitsCoGZ_Muons}
 	\caption{Event distribution in $cog_Z:n_{Hits}$ plane. The black box represents the space-phase covered by the pre-selection.} \label{fig:Muons_CoGZ_nHits}
 \end{figure}
 
 \section{MIP Selection}
 \label{subsec:Muon_sel}
 
-The muon runs were taken first at 50 GeV then another scan at the end of the campaign was performed at 150 GeV. The muon beam was produced by scraping the halo of a secondary pion beam using collimators. After investigation, muon runs were contaminated by pions. A simple estimation by looking at the sprectrum of the number of hits per event provided that around 30\% of the events were contaminated by pions.
+The muon runs were taken first at 50 GeV then another scan at the end of the campaign was performed at 150 GeV. The muon beam was produced by scraping the halo of a secondary pion beam using collimators. After investigation, muon runs were contaminated by pions. A simple estimation by looking at the spectrum of the number of hits per event provided that around 30\% of the events were contaminated by pions.
 
 The muon selection was designed to efficiently select muons and reject late pion showers. For this, a simple MIP track-finder has been developed based on pre-existing work \cite{Hartbrich:2016bbz}. The algorithm selects AHCAL towers of hits in the same $x:y$ position and rejects towers under a certain number of hits. In order to select muons or punch through pions, a straight track of at least 7 hits is required in the whole AHCAL without a hard interaction. This also assumes that the calorimeter was perfectly perpendicular to the beam, any tilted tracks would be missed. In addition to reject late pion showers, no more than 2 hits are allowed per layer accounting for some flexibility with noise hits. The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 50 GeV muons, electrons and pions after pre-selection. The track-finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part of the big layers (BL) in order to catch the halo of muons.
 
@@ -96,16 +96,16 @@ The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pi
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsLayer_Muons}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsLayer_Muons}
 		\caption{Number of hits in a layer normalized to the number of events.} \label{fig:Muons_Track_nHitsLayer}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/TrackFinderCut_nHitsTrack_Muons}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsTrack_Muons}
 		\caption{Number of hits in a track normalized to the number of events.} \label{fig:Muons_Track_nHits}
 	\end{subfigure}
-	\caption{\subref{fig:Muons_Track_nHitsLayer}) Distribution of number of hits per layer for simulated muons, electrons and pions at 50 GeV. The black line represents the cut of the maximum allowed number of hits per layer applied for the MIP selection. \subref{fig:Muons_Track_nHits}) Distribution of the number of hits in a track for simulated muons, electrons and pions at 50 GeV. A Tower size of 7 for the inner detector and 2 for the outer big layers was chosen.}
+	\caption{\subref{fig:Muons_Track_nHitsLayer}) Distribution of number of hits in a layer for simulated muons, electrons and pions at 50 GeV. The black line represents the cut of the maximum allowed number of hits in a layer applied for the MIP selection. \subref{fig:Muons_Track_nHits}) Distribution of the number of hits in a track for simulated muons, electrons and pions at 50 GeV. A Tower size of 7 for the inner detector and 2 for the outer big layers was chosen.}
 \end{figure}
 
 \section{Electron Selection}
@@ -137,42 +137,42 @@ The selection cuts are summarized in table \ref{table:electron_sel} for each ene
 	\end{tabular}
 \end{table}
 
-One can notice that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a berilluim target, it is believe that there is no pion contamination in the data. Thus no additional cut is needed.
+One can notice that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is believe that there is no pion contamination in the data. Thus no additional cut is needed.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyE3_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_E3}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyE3_50GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyE3_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_E3}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_nHitsCoGZ_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_nHitsCoGZ_50GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_nHitsCoGZ_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyLastLayers_10GeV}
 		\caption{10 GeV.} \label{fig:e10GeV_Elast}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Electrons/SelectionCut_EnergyLastLayers_50GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyLastLayers_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_Elast}
 	\end{subfigure}
 	\caption{Distribution of the variables used in the electron selection of simulated electron and pion beams between 10 and 50 GeV. The muons are simulated at 50 GeV only. These plots were used to determine the best selection criteria for electrons.} \label{fig:electronselection}
@@ -213,37 +213,37 @@ A detailed description of the selection cuts are shown in table \ref{table:pion_
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_N3N4_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV}
 		\caption{10 GeV.} \label{fig:pi10GeV_N3N4}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_N3N4_90GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV}
 		\caption{90 GeV.} \label{fig:pi90GeV_N3N4}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_nHitsCoGZ_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV}
 		\caption{10 GeV.} \label{fig:pi10GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_nHitsCoGZ_90GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV}
 		\caption{90 GeV.} \label{fig:pi90GeV_nHitsCoGZ}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_EnergyLastLayers_10GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV}
 		\caption{10 GeV.} \label{fig:pi10GeV_Elast}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Pions/SelectionCut_EnergyLastLayers_90GeV}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV}
 		\caption{90 GeV.} \label{fig:pi90GeV_Elast}
 	\end{subfigure}
 	\caption{Plots of simulated muon, electron and pion beams between 10 and 90 GeV. Theses plots were used to determine the best selection criterium for pions.} \label{fig:pionselection}
@@ -253,12 +253,25 @@ In appendix \ref{appendix:SimulationVal}, more distributions are available to sh
 
 \section{Chip rejection}
 
-For each type of data analysed, a carefull check of each chip has been performed. For all the data collected, the layer 11 is rejected. For the muon data, only a single chip (157) shows a strange behavior likely because the IDACs on this chip were broken.
+For each type of data analyzed, a careful check of each chip has been performed. For all the data collected, the layer 11 is rejected. For the muon data, only a single chip (157) shows a strange behavior likely because the IDACs on this chip were broken.
 
 For the electron data, a relative fraction of hits $r$ following the equation \ref{eq:fraction_rejection} was looked at. If this fraction $r$ is below 98\%, the chip is rejected. This means that most of the hits in the event are in the core of the distribution between -50 and 50 ns. With this method, 20 chips are rejected.
-
 \begin{equation} \label{eq:fraction_rejection}
 	r = \frac{1}{N} \left|\int_{50 ns}^{200 ns} \frac{dN(t)}{dt} dt - \int_{-200 ns}^{50 ns} \frac{dN(t)}{dt} dt\right|
 \end{equation}
+For the pion data, applying the same method as for electrons is not possible due to the late tail related to delayed energy deposition from neutrons. The same chips as for electrons were rejected but additionally, each chip time distribution after correction were manually checked and chips presenting an abnormal shape were discarded. This way additionally 16 chips are rejected. This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
 
-For the pion data, applying the same method as for electrons is not possible due to the late tail related to delayed energy deposition from neutrons. The same chips as for electrons were rejected but additionally, each chip time distribution after correction were maually checked and chips presenting an anormal shape were discarded. This way additionally 16 chips are rejected. This leaves 44 chips in the pion analysis. A detailled table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips.pdf}
+		\caption{.} \label{fig:FracRejChip}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149.pdf}
+		\caption{.} \label{fig:ExBadChip}
+	\end{subfigure}
+	\caption{\subref{fig:FracRejChip}) Distribution of the fraction of hits between -50 and 50 ns for 50 GeV electrons. Each entry corresponds to a chip. The red line represent the cut applied to reject bad chips. \subref{fig:ExBadChip}) Example of a bad chip that is rejected with this method (Chip 149).}
+\end{figure}

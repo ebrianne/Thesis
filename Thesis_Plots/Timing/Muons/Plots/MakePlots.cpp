@@ -1159,7 +1159,7 @@ void SelectionCuts()
 
   hHitsPerLayer_Muons_SSF->SetLineColor(kBlue);
   hHitsPerLayer_Muons_SSF->SetLineWidth(2);
-  hHitsPerLayer_Muons_SSF->GetXaxis()->SetTitle("Maximum number of hits in a layer");
+  hHitsPerLayer_Muons_SSF->GetXaxis()->SetTitle("Number of hits in a layer");
   hHitsPerLayer_Muons_SSF->GetYaxis()->SetTitle("Fraction of Towers");
   hHitsPerLayer_Muons_SSF->Scale(1./87584);
   hHitsPerLayer_Muons_SSF->GetYaxis()->SetRangeUser(0, 1.1);
@@ -1168,7 +1168,7 @@ void SelectionCuts()
   hHitsPerLayer_Muons_BL->SetLineColor(kBlue);
   hHitsPerLayer_Muons_BL->SetLineWidth(2);
   hHitsPerLayer_Muons_BL->SetLineStyle(2);
-  hHitsPerLayer_Muons_BL->GetXaxis()->SetTitle("Maximum number of hits in a layer");
+  hHitsPerLayer_Muons_BL->GetXaxis()->SetTitle("Number of hits in a layer");
   hHitsPerLayer_Muons_BL->GetYaxis()->SetTitle("Fraction of Towers");
   hHitsPerLayer_Muons_BL->Scale(1./70609);
   hHitsPerLayer_Muons_BL->GetYaxis()->SetRangeUser(0, 1.1);

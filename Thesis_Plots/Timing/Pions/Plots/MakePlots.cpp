@@ -6992,6 +6992,185 @@ void AdditionalShowerStart()
   c3->SaveAs(canvasname);
 }
 
+void AdditionalShowerStart2()
+{
+  CaliceStyle();
+
+  TString rootfilename = "Rootfiles/Comparison_Radius";
+  rootfilename += "_ShortAsymRange_ShowerStart.root";
+
+  TFile *f6 = new TFile(rootfilename, "OPEN");
+  TProfile *pRadiusData_Pion50_Module06_SS4, *pRadiusData_Pion50_Module10_SS7;
+  TProfile *pRadiusData_Pion50_Module07_SS4, *pRadiusData_Pion50_Module10_SS6;
+
+  f6->GetObject("Pion_profile50_Module06_SS4", pRadiusData_Pion50_Module06_SS4);
+  f6->GetObject("Pion_profile50_Module10_SS7", pRadiusData_Pion50_Module10_SS7);
+
+  f6->GetObject("Pion_profile50_Module07_SS4", pRadiusData_Pion50_Module07_SS4);
+  f6->GetObject("Pion_profile50_Module10_SS6", pRadiusData_Pion50_Module10_SS6);
+
+  TGraphErrors *gRadiusData_Pion50_Module06_SS4 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module10_SS7 = new TGraphErrors();
+
+  TGraphErrors *gRadiusData_Pion50_Module07_SS4 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module10_SS6 = new TGraphErrors();
+
+  gRadiusData_Pion50_Module06_SS4->SetMarkerSize(1);
+  gRadiusData_Pion50_Module06_SS4->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module06_SS4->SetMarkerColor(kOrange+1);
+  gRadiusData_Pion50_Module06_SS4->SetLineColor(kOrange+1);
+  gRadiusData_Pion50_Module06_SS4->SetFillColor(kOrange+1);
+  gRadiusData_Pion50_Module06_SS4->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module10_SS7->SetMarkerSize(1);
+  gRadiusData_Pion50_Module10_SS7->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module10_SS7->SetMarkerColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS7->SetLineColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS7->SetFillColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS7->SetFillStyle(3001);
+
+  //----
+
+  gRadiusData_Pion50_Module07_SS4->SetMarkerSize(1);
+  gRadiusData_Pion50_Module07_SS4->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module07_SS4->SetMarkerColor(kOrange+1);
+  gRadiusData_Pion50_Module07_SS4->SetLineColor(kOrange+1);
+  gRadiusData_Pion50_Module07_SS4->SetFillColor(kOrange+1);
+  gRadiusData_Pion50_Module07_SS4->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module10_SS6->SetMarkerSize(1);
+  gRadiusData_Pion50_Module10_SS6->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module10_SS6->SetMarkerColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS6->SetLineColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS6->SetFillColor(kYellow+2);
+  gRadiusData_Pion50_Module10_SS6->SetFillStyle(3001);
+
+  //----------- Add systematic error ------------------
+
+  int ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module06_SS4->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module06_SS4->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module06_SS4->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module06_SS4->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module06_SS4->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module06_SS4->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module06_SS4->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module10_SS7->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module10_SS7->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module10_SS7->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module10_SS7->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module10_SS7->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module10_SS7->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module10_SS7->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  //---------
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module07_SS4->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module07_SS4->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module07_SS4->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module07_SS4->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module07_SS4->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module07_SS4->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module07_SS4->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module10_SS6->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module10_SS6->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module10_SS6->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module10_SS6->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module10_SS6->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module10_SS6->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module10_SS6->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  TMultiGraph *multi5 = new TMultiGraph();
+  // multi3->Add(gRadiusData_Pion50_Module06_SS4);
+  // multi3->Add(gRadiusData_Pion50_Module10_SS7);
+
+  multi5->Add(gRadiusData_Pion50_Module07_SS4);
+  multi5->Add(gRadiusData_Pion50_Module10_SS6);
+
+  TLegend *leg5 = new TLegend(0.22, 0.75, 0.62, 0.90);
+  leg5->SetBorderSize(0);
+  leg5->SetTextSize(0.03);
+  // leg3->AddEntry(gRadiusData_Pion50_Module06_SS4, "Module 6", "pf");
+  // leg3->AddEntry(gRadiusData_Pion50_Module10_SS7, "Module 10", "pf");
+
+  leg5->AddEntry(gRadiusData_Pion50_Module07_SS4, "Module 7 (Shower Start Layer 3)", "pf");
+  leg5->AddEntry(gRadiusData_Pion50_Module10_SS6, "Module 10 (Shower Start Layer 6)", "pf");
+
+  TPaveText *pt5 = new TPaveText(0.68, 0.80, 0.88, 0.90, "tbNDC");
+  pt5->SetBorderSize(0);
+  pt5->SetTextColor(15);
+  pt5->SetFillColor(0);
+  pt5->SetTextSize(0.04);
+  pt5->SetTextAlign(13); //left center
+  pt5->AddText("CALICE AHCAL");
+  pt5->AddText("Work in progress");
+
+  TCanvas *c4 = new TCanvas("c3", "Timing vs Radius ShowerStart", 800, 600);
+  c4->cd();
+  multi5->Draw("APX");
+  multi5->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+  multi5->GetXaxis()->SetRangeUser(0, 380);
+  multi5->GetYaxis()->SetTitle("Time of first hit_{[-50, 200]} [ns]");
+  multi5->GetYaxis()->SetRangeUser(-2, 18);
+  pt5->Draw("SAME");
+  leg5->Draw("SAME");
+  multi5->Draw("E3");
+
+  TString canvasname = "Plots/Timing_Radius_Comparison";
+  canvasname += "_ShortAsymRange_ShowerStart.pdf";
+
+  c4->SaveAs(canvasname);
+}
+
 void TimeCorrelationData()
 {
   CaliceStyle();
@@ -7788,30 +7967,31 @@ void Variables_90GeV()
 
 void MakePlots()
 {
-  TimingPions_10GeV();
-  TimingPions_30GeV();
-  TimingPions_50GeV();
-  TimingPions_70GeV();
-  TimingPions_90GeV();
-
-  BeamProfile_10GeV();
-  BeamProfile_90GeV();
-
-  SelectionCuts_10GeV();
-  SelectionCuts_90GeV();
-
-  ShowerStartChecks();
-
-  ComparisonTungstendNdt();
-  ComparisonTungstenEnergy();
-  ComparisonTungstenRadius();
-
-  ComparisonData();
+  // TimingPions_10GeV();
+  // TimingPions_30GeV();
+  // TimingPions_50GeV();
+  // TimingPions_70GeV();
+  // TimingPions_90GeV();
+  //
+  // BeamProfile_10GeV();
+  // BeamProfile_90GeV();
+  //
+  // SelectionCuts_10GeV();
+  // SelectionCuts_90GeV();
+  //
+  // ShowerStartChecks();
+  //
+  // ComparisonTungstendNdt();
+  // ComparisonTungstenEnergy();
+  // ComparisonTungstenRadius();
+  //
+  // ComparisonData();
   AdditionalShowerStart();
-  TimeCorrelationData();
-
-  Validation();
-
-  Variables_10GeV();
-  Variables_90GeV();
+  AdditionalShowerStart2();
+  // TimeCorrelationData();
+  //
+  // Validation();
+  //
+  // Variables_10GeV();
+  // Variables_90GeV();
 }

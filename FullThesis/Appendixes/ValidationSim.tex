@@ -3,9 +3,9 @@
 
 \section{Beam profiles}
 
-The simulation needs as one input the position and width of the particle gun. It has to be placed in x, y directions such that the beam sizes of the experiment are modeled and in order to garanty that the same cells of the detector are hit in the simulation as in data. Otherwise, dead and noisy channels could bias the comparison between data and simulation. In the z direction, the beam gun needs to be put as close as possible of the detector to avoid beam broadening by scatering on air molecules.
+The simulation needs as one input the position and width of the particle gun. It has to be placed in x, y directions such that the beam sizes of the experiment are modeled and in order to guaranty that the same cells of the detector are hit in the simulation as in data. Otherwise, dead and noisy channels could bias the comparison between data and simulation. In the z direction, the beam gun needs to be put as close as possible of the detector to avoid beam broadening by scattering on air molecules.
 
-The best method to estimate the beam profile for data would be to analyse the beam profile provided by the wired chambers. Unfortunately, this data is not available for this analysis. As a work-around, the mean and RMS of the center of gravity distributions in x and y are used to estimate the beam size instead. This does not reflect the true positions since both positions are biased by dead and noisy channels. This has been done for electrons runs as well as for pions runs for each energies. No significant differences in beam profile is visible on a run-by-run basis. The muon beam is simulated by a plane square distribution with a half width of 20 cm. The center of gravity is calculated as the following:
+The best method to estimate the beam profile for data would be to analyze the beam profile provided by the wired chambers. Unfortunately, this data is not available for this analysis. As a work-around, the mean and RMS of the center of gravity distributions in x and y are used to estimate the beam size instead. This does not reflect the true positions since both positions are biased by dead and noisy channels. This has been done for electrons runs as well as for pions runs for each energies. No significant differences in beam profile is visible on a run-by-run basis. The muon beam is simulated by a plane square distribution with a half width of 20 cm. The center of gravity is calculated as the following:
 
 \begin{equation}
   CoG_x [mm] = \frac{\Sigma_i E_i x_i}{\Sigma_i E_i} \quad \text{,} \quad CoG_y [mm] = \frac{\Sigma_i E_i y_i}{\Sigma_i E_i} \quad \text{and} \quad CoG_z [mm] = \frac{\Sigma_i E_i z_i}{\Sigma_i E_i}
@@ -19,39 +19,39 @@ profile of the beam.
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/BeamProfileX.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf}
     \caption{CoG X.} \label{fig:mu150GeVX}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/BeamProfileY.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf}
     \caption{CoG Y.} \label{fig:mu150GeVY}
   \end{subfigure}
   \caption{Beam profiles for 150 GeV muons for data and simulation in the x and y directions.}
   \label{fig:BPmu}
 \end{figure}
 
-Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data and simulation for 10 GeV and 50 GeV electrons. The aggrement look much better for 10 GeV than for 50 GeV, this may be due to contamination from lower energy electrons. Moreover, at higher energy, the beam looks less gaussian-like and the shape in simulation can't be simulated correctly. Figures \ref{fig:BPpi} show the beam profiles in the x and y direction for data and simulation for 10 GeV and 90 GeV pions. The aggrement looks quite good for both energies in the x direction, only a slight difference is visible on the y direction but should have not much impact.
+Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data and simulation for 10 GeV and 50 GeV electrons. The agreement look much better for 10 GeV than for 50 GeV, this may be due to contamination from lower energy electrons. Moreover, at higher energy, the beam looks less gaussian-like and the shape in simulation can't be simulated correctly. Figures \ref{fig:BPpi} show the beam profiles in the x and y direction for data and simulation for 10 GeV and 90 GeV pions. The agreement looks quite good for both energies in the x direction, only a slight difference is visible on the y direction but should have not much impact.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Run24542_CoGX_AHCAL_10GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGX_AHCAL_10GeV_Comparison.pdf}
     \caption{10 GeV.} \label{fig:e10GeVX}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Run24542_CoGY_AHCAL_10GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGY_AHCAL_10GeV_Comparison.pdf}
     \caption{10 GeV.} \label{fig:e10GeVY}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf}
     \caption{50 GeV.} \label{fig:e50GeVX}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf}
     \caption{50 GeV.} \label{fig:e50GeVY}
   \end{subfigure}
   \caption{Beam profiles for 10 GeV and 50 GeV electrons for data and simulation in the x and y directions.}
@@ -61,22 +61,22 @@ Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Run24306_CoGX_AHCAL_10GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGX_AHCAL_10GeV_Comparison.pdf}
     \caption{10 GeV.} \label{fig:pi10GeVX}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Run24306_CoGY_AHCAL_10GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGY_AHCAL_10GeV_Comparison.pdf}
     \caption{10 GeV.} \label{fig:pi10GeVY}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf}
     \caption{90 GeV.} \label{fig:pi90GeVX}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf}
     \caption{90 GeV.} \label{fig:pi90GeVY}
   \end{subfigure}
   \caption{Beam profiles for 10 GeV and 90 GeV pions for data and simulation in the x and y directions.}
@@ -92,12 +92,12 @@ In order to justify any comparison made with the simulation, it needs to be vali
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/Validation_Evis_Muons.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf}
     \caption{$E_{sum}$.} \label{fig:muEvis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Muons/Validation_nHits_Muons.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf}
     \caption{nHits.} \label{fig:munHits}
   \end{subfigure}
   \caption{\subref{fig:muEvis}) The energy sum in the AHCAL for 150 GeV muons in data and simulations. \subref{fig:munHits}) The number of hits in the AHCAL for 150 GeV muons in data and simulations.}
@@ -109,12 +109,12 @@ One can notice that the distributions are quite similar though the simulation sh
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1\linewidth]{chap5/fig_AHCAL_timing/Muons/ProfileMuons_Edep.pdf}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ProfileMuons_Edep.pdf}
     \caption{} \label{fig:muEdep}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_CoGZ_Xtalk_electrons10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_CoGZ_Xtalk_electrons10GeV.pdf}
     \caption{} \label{fig:e10GoGZ}
   \end{subfigure}
   \caption{\subref{fig:muEdep}) Longitudinal energy profile for 150 GeV muons for data and simulations. \subref{fig:e10GoGZ}) Distribution of the center of gravity in the z direction for 10 GeV electrons for data and simulation.}
@@ -130,12 +130,12 @@ The center of gravity in z was looked at as this variable is mostly sensible to 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_EnergySum_Xtalk_electrons10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf}
     \caption{$E_{sum}$.} \label{fig:e10Evis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_nHits_Xtalk_electrons10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf}
     \caption{nHits.} \label{fig:e10nHits}
   \end{subfigure}
   \caption{\subref{fig:e10Evis}) The energy sum in the AHCAL for 10 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:e10nHits}) The number of hits in the AHCAL for 10 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%.}
@@ -145,12 +145,12 @@ The center of gravity in z was looked at as this variable is mostly sensible to 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_EnergySum_Xtalk_electrons50GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf}
     \caption{$E_{sum}$.} \label{fig:e50Evis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/Comparison_nHits_Xtalk_electrons50GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf}
     \caption{nHits.} \label{fig:e50nHits}
   \end{subfigure}
   \caption{\subref{fig:e50Evis}) The energy sum in the AHCAL for 50 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:e50nHits}) The number of hits in the AHCAL for 50 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%.}
@@ -162,12 +162,12 @@ Figures \ref{fig:eVal} show the mean energy sum $<E_{sum}>$ and mean number of h
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/EsumElectrons_BeamEnergy.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/EsumElectrons_BeamEnergy.pdf}
     \caption{} \label{fig:EsumMean}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Electrons/nHitsElectrons_BeamEnergy.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/nHitsElectrons_BeamEnergy.pdf}
     \caption{} \label{fig:nHitsMean}
   \end{subfigure}
   \caption{\subref{fig:EsumMean}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. \subref{fig:nHitsMean}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters.}
@@ -183,12 +183,12 @@ Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_CoGZ_Xtalk_pions10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_CoGZ_Xtalk_pions10GeV.pdf}
     \caption{$CoGZ$ 10 GeV.} \label{fig:pi10CoGZ}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_CoGZ_Xtalk_pions90GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_CoGZ_Xtalk_pions90GeV.pdf}
     \caption{$CoGZ$ 90 GeV.} \label{fig:pi90CoGZ}
   \end{subfigure}
   \caption{Distributions of the center of gravity in the z direction for data and simulations of 10 GeV (left) and 90 GeV (right) pions. The simulations have a cross-talk value of 10\% and 18\%.}
@@ -202,12 +202,12 @@ The figure \ref{fig:pi10Val} shows the comparison between data and simulation wi
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_EnergySum_Xtalk_pions10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_EnergySum_Xtalk_pions10GeV.pdf}
     \caption{$E_{sum}$.} \label{fig:pi10Evis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_nHits_Xtalk_pions10GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_nHits_Xtalk_pions10GeV.pdf}
     \caption{nHits.} \label{fig:pi10nHits}
   \end{subfigure}
   \caption{\subref{fig:pi10Evis}) The energy sum in the AHCAL for 10 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:pi10nHits}) The number of hits in the AHCAL for 10 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%.}
@@ -217,12 +217,12 @@ The figure \ref{fig:pi10Val} shows the comparison between data and simulation wi
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_EnergySum_Xtalk_pions90GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_EnergySum_Xtalk_pions90GeV.pdf}
     \caption{$E_{sum}$.} \label{fig:pi90Evis}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/Comparison_nHits_Xtalk_pions90GeV.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_nHits_Xtalk_pions90GeV.pdf}
     \caption{nHits.} \label{fig:pi90nHits}
   \end{subfigure}
   \caption{\subref{fig:pi90Evis}) The energy sum in the AHCAL for 90 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:pi90nHits}) The number of hits in the AHCAL for 90 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%.}
@@ -234,12 +234,12 @@ Finally, the mean energy sum $<E_{sum}>$ and mean number of hits $<nHits>$ as fu
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/EsumPions_BeamEnergy.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/EsumPions_BeamEnergy.pdf}
     \caption{} \label{fig:EsumMean}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap5/fig_AHCAL_Timing/Pions/nHitsPions_BeamEnergy.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/nHitsPions_BeamEnergy.pdf}
     \caption{} \label{fig:nHitsMean}
   \end{subfigure}
   \caption{\subref{fig:EsumMean}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters. \subref{fig:nHitsMean}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters.}
