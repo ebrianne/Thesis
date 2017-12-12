@@ -20,13 +20,13 @@ Concerning the energy resolution all the curves are very similar and are as expe
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_linearity_Curves_Hits}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits}
     \caption{Cluster hit linearity curve} \label{fig:linhits}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_Hits}}
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits}}
     \caption{Cluster hit resolution curve} \label{fig:resohits}
   \end{subfigure}
   \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the cluster hit level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
@@ -42,13 +42,13 @@ For the resolution curves, one can see a rise of the resolution at high energies
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_linearity_Curves_PFO}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO}
     \caption{PFO linearity curve} \label{fig:linpfo}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \raisebox{8ex}{\includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Comparison_resolution_Curves_PFO}}
+    \raisebox{8ex}{\includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO}}
     \caption{PFO resolution curve} \label{fig:resopfo}
   \end{subfigure}
   \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the PFO level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
@@ -62,13 +62,13 @@ As shown in figure \ref{fig:momentumparticlejets}, for jets representative of he
   \centering
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Momentum_spectra_to100GeV_final}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final}
     \caption{Momentum spectrum of charged hadrons.} \label{fig:momentumparticlejets}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat}
     \caption{Minimal distance between a charged and neutral particle at the front face of the ECAL.} \label{fig:distancefrontfacejets}
   \end{subfigure}
   \caption{\subref{fig:momentumparticlejets}) Momentum distribution for charged particles in simulated \ee{}\ra{} \Zqq{} with $q = u,d,s$ at \rts{} = 91 \GeV and \ee{}\ra{} \WWqqqq{} where q is a quark at \rts{} = 500 \GeV. \subref{fig:distancefrontfacejets}) Distribution of distances to the closest charged track for neutral particles produced in \Zqq{} and \WWqqqq{} processes measured at the front face of the electromagnetic calorimeter in the ILD detector.}
@@ -97,13 +97,13 @@ A first simple check was to see the impact of timing cuts on the number of recon
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/NumberEvents_PFO_TimeCuts_noSmearing}
+    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/NumberEvents_PFO_TimeCuts_noSmearing}%To do
     \caption{Relative number of events reconstructed with a single PFO.} \label{fig:EventRecoPFO}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/AdditionalPlots/NumberReconstructedPFO_TimeCuts_50GeV}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV}
     \caption{Number of PFO per event.} \label{fig:DistriPFO}
   \end{subfigure}
   \caption{\subref{fig:EventRecoPFO}) The plot shows the number of events reconstructed with only a single PFO normalized to the number of events in the case of 100 ns. The plots shows a relative increase with a lower timing cut with an increase up to 20-25\% of more events reconstructed using 1 ns timing cut. \subref{fig:DistriPFO}) Distribution of the number of PFO reconstructed per event for 50 GeV \kzeroL{} in the ILD barrel for different timing cuts. It shows that timing cuts indeed improves the number of events reconstructed with a single PFO but as well a large tail is present. The use of timing cuts seems to reduce slightly the tail of the distribution without affecting much the distribution over 6+ PFOs reconstructed.}
@@ -115,13 +115,13 @@ It seems that timing cuts improves the reconstruction with events containing a s
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/AdditionalPlots/Energy2ndCluster_100ns_50GeV}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV}
     \caption{Energy distribution of 2$^{nd}$ most energetic cluster.} \label{fig:Energy2ndCluster}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/AdditionalPlots/Distance2ndCluster_100ns_50GeV}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV}
     \caption{Distance to main PFO of 2$^{nd}$ most energetic cluster.} \label{fig:Distance2ndCluster}
   \end{subfigure}
   \caption{\subref{fig:Energy2ndCluster}) The plot shows the relative energy of the second most energetic cluster to the main cluster. One can see that most of the entries are below few percents. \subref{fig:Distance2ndCluster}) The plot shows the distribution of the distance of the second most energetic cluster to the main cluster. The distribution peaks in the region 25-30 cm.}
@@ -141,13 +141,13 @@ The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the 
   \centering
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/Linearity_TimeCuts_noSmearing}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing}
     \caption{Linearity curve with no time smearing.} \label{fig:linearityNoSmearing}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerResoAbsolute_TimeCuts_noSmearing}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing}
     \caption{Resolution curve with no time smearing.} \label{fig:resoNoSmearing}
   \end{subfigure}
   \caption{\subref{fig:linearityNoSmearing}) The top plot represent the linearity curve in the ILD detector over a range of energy from 5 \GeV to 90 \GeV for different timing cuts assuming a perfect resolution. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts. \subref{fig:resoNoSmearing}) The plot illustrates the relative energy resolution ($\frac{\sigma_{E}}{E}$) at single particle level for different timing cuts. The green line is a fit performed at \SI{100}{\nano\second} of the form $\frac{\sigma_{E}}{E} = \frac{a}{\sqrt{E}} \bigoplus b$ where $a$ is the stochastic term ($44.01\% \pm 3.17$) and $b$ the constant term ($7.26 \pm 0.84$).}
@@ -157,7 +157,7 @@ The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the ene
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerReso_TimeCuts_noSmearing}
+  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerReso_TimeCuts_noSmearing}
   \caption{Relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
 \end{figure}
 
@@ -176,7 +176,7 @@ The main part of the energy density is situated in the core within few centimete
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{chap6/fig_TimingILD/NoSmearing/RadialProfileOverlay_noSmearing}
+  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing}
   \caption{The top plot shows the radial profile of a 50 \GeV hadronic shower overlaid for different timing cuts. The bottom plot shows the ratio of the histograms to \SI{100}{\nano\second} radial profile.} \label{fig:RadialProfNoSmearing}
 \end{figure}
 
@@ -194,12 +194,12 @@ The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmeari
   \begin{minipage}{.45\textwidth}
     \begin{subfigure}[t]{0.7\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerWidth_TimeCuts_noSmearing}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing}
       \caption{} \label{fig:ShowerWidthNoSmearing}
     \end{subfigure}
     \begin{subfigure}[t]{0.7\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerWidthAbso_TimeCuts_noSmearing}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing}
       \caption{} \label{fig:ShowerWidthAbsoNoSmearing}
     \end{subfigure}
   \end{minipage}
@@ -207,7 +207,7 @@ The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmeari
     \centering
     \begin{subfigure}[t]{1\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/NoSmearing/ShowerWidth_Resolution_noSmearing}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing}
       \vspace{-6ex}
       \caption{}  \label{fig:ShowerWidthResoNoSmearing}
     \end{subfigure}
@@ -237,6 +237,12 @@ In this section, a similar study is performed as in section \ref{}. Instead it a
   \end{tabular}
 \end{table}
 
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/TimeDistribution/Plots/ComparisonSmearingTimingAHCAL}
+  \caption{.} \label{fig:SmearingAHCAL}
+\end{figure}
+
 The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as explained in section \ref{}. The ideal time resolution is in the order of the time scale of the development of hadronic showers. And finally, the ILC extrapolated is obtained by assuming a linear extrapolation from the testbeam time resolution with a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (x20 faster) as explained in \ref{}.\\
 
 \begin{figure}[htbp!]
@@ -244,20 +250,20 @@ The testbeam resolution is the time resolution obtained with the current AHCAL t
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/0.4ns_Smearing/Linearity_TimeCuts_Smearing0.4ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1}
       \vspace{-6ex}
       \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Lin0.4ns}
     \end{subfigure}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/1ns_Smearing/Linearity_TimeCuts_Smearing1ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2}
       \vspace{-6ex}
       \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Lin1ns}
     \end{subfigure}
   \end{minipage}
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/8ns_Smearing/Linearity_TimeCuts_Smearing8ns}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3}
     \vspace{-6ex}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:Lin8ns}
   \end{subfigure}
@@ -271,18 +277,18 @@ Looking at the impact on linearity and energy resolution, time resolution in the
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/0.4ns_Smearing/ShowerResoAbsolute_TimeCuts_Smearing0.4ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1}
       \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Reso0.4ns}
     \end{subfigure}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/1ns_Smearing/ShowerResoAbsolute_TimeCuts_Smearing1ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2}
       \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Reso1ns}
     \end{subfigure}
   \end{minipage}
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/8ns_Smearing/ShowerResoAbsolute_TimeCuts_Smearing8ns}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:Reso8ns}
   \end{subfigure}
   \caption{Energy resolution curves for different assumed time resolutions (0.4 to 8 ns from left to right). The plot represents the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV for each timing cut. The green line is a fit applied to 100 ns timing cut of the typical form $\frac{\sigma_{E}}{E} = \frac{a}{\sqrt{E}} \bigoplus b$.}
@@ -295,20 +301,20 @@ Looking back again at the resolution as function of the shower width, one can no
   \begin{minipage}{1\textwidth}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/0.4ns_Smearing/ShowerWidth_Resolution_Smearing0.4ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1}
       \vspace{-6ex}
       \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:WidthReso0.4ns}
     \end{subfigure}
     \begin{subfigure}[t]{0.5\textwidth}
       \centering
-      \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/1ns_Smearing/ShowerWidth_Resolution_Smearing1ns}
+      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2}
       \vspace{-6ex}
       \caption{\SI{1}{\nano\second} time smearing.} \label{fig:WidthReso1ns}
     \end{subfigure}
   \end{minipage}
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{chap6/fig_TimingILD/8ns_Smearing/ShowerWidth_Resolution_Smearing8ns}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3}
     \vspace{-6ex}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:WidthReso8ns}
   \end{subfigure}
