@@ -1,4 +1,4 @@
-void MakePlots()
+void ILD_Hits()
 {
   CaliceStyle();
   TFile *f = new TFile("Rootfiles/ILDTiming_NoSmearing.root", "OPEN");
@@ -637,5 +637,68 @@ void MakePlots()
   c15->SaveAs("Plots/ShowerRadiusOverlay_TimeCuts_noSmearing.pdf");
 
   //----------------------------------------------------------------------------
+}
 
+void ILD_PFO()
+{
+  CaliceStyle();
+
+  TFile *f = new TFile("Rootfiles/ILDTiming_noSmearing_PFO.root", "OPEN");
+
+  const int nTime = 13;
+  const int nEnergy = 10;
+
+  int timecuts[nTime] = {1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70, 100};
+  int energies[nEnergy] = {5, 10, 20, 30, 40, 50, 60, 70, 80, 90};
+  int colors[nEnergy] = {kBlack, kRed, kGreen, kBlue, kYellow, kOrange+1, kMagenta, kViolet, kAzure-4, kTeal};
+  int colors2[nTime] = {kBlack, kRed, kGreen, kBlue, kYellow, kOrange+1, kMagenta, kViolet, kAzure-4, kTeal, kSpring, kPink, kGreen-3};
+
+  TGraphErrors *gNEvts[nEnergy];
+
+  for(int i = 0; i < nEnergy; i++)
+  f->GetObject(TString::Format("gNEvts_%02iGeV", energies[i]), gNEvts[i]);
+
+  for(int i = 0; i < nEnergy; i++)
+  {
+    gNEvts[i]->SetMarkerColor(colors[i]);
+    gNEvts[i]->SetMarkerStyle(20);
+    gNEvts[i]->SetLineColor(colors[i]);
+    gNEvts[i]->SetLineWidth(2);
+  }
+
+  TMultiGraph *multi = new TMultiGraph();
+
+  TLegend *leg = new TLegend(0.75, 0.6, 0.9, 0.9);
+  leg->SetBorderSize(0);
+  leg->SetTextSize(0.028);
+
+  for(int i = 0; i < nEnergy; i++)
+  {
+    multi->Add(gNEvts[i]);
+    leg->AddEntry(gNEvts[i], TString::Format("%02i GeV", energies[i]), "lp");
+  }
+
+  TLine *line = new TLine(-2, 100, 102, 100);
+  line->SetLineColor(kBlack);
+  line->SetLineStyle(2);
+  line->SetLineWidth(2);
+
+  TCanvas *c20 = new TCanvas("c20", "nPFO vs time cut", 800, 600);
+  multi->Draw("APL");
+  multi->GetXaxis()->SetTitle("Time Cut [ns]");
+  multi->GetYaxis()->SetTitle("Number of events with 1 PFO reconstructed [%]");
+  multi->GetYaxis()->SetTitleSize(0.04);
+  multi->GetYaxis()->SetTitleOffset(1.3);
+  multi->GetXaxis()->SetRangeUser(-2, 102);
+  multi->GetYaxis()->SetRangeUser(98, 130);
+  leg->Draw("same");
+  line->Draw("same");
+
+  c20->SaveAs("Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf");
+}
+
+void MakePlots()
+{
+  ILD_Hits();
+  ILD_PFO();
 }

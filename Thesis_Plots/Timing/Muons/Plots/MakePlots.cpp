@@ -2008,18 +2008,407 @@ void ComparisonSimData()
 	c->SaveAs("Plots/Comparison_MokkaDD4hepData_Muons.pdf");
 }
 
+void Noise()
+{
+	CaliceStyle();
+
+  TFile *f = new TFile("Rootfiles/Noise_Run24647_Flat.root", "OPEN");
+  TTree *tree = (TTree*)f->Get("bigtree");
+
+  /* Variables */
+  /* Noise */
+  int ahc_noise_nHits;
+  int ahc_noise_hitI[500];
+  int ahc_noise_hitJ[500];
+  int ahc_noise_hitK[500];
+
+  float ahc_noise_hitEnergy[500];
+  float ahc_noise_hitTime[500];
+  float ahc_noise_hitPos[500][3];
+  int ahc_noise_hitType[500];
+
+  /* Tracks */
+  int ahc_tracks_nHits;
+  int ahc_tracks_hitI[500];
+  int ahc_tracks_hitJ[500];
+  int ahc_tracks_hitK[500];
+
+  float ahc_tracks_hitEnergy[500];
+  float ahc_tracks_hitTime[500];
+  float ahc_tracks_hitPos[500][3];
+  int ahc_tracks_hitType[500];
+
+  /* event variable */
+  int eventNumber;
+  int runNumber;
+  int BXID;
+  int nTracks;
+
+  tree->SetBranchAddress("eventNumber", &eventNumber);
+  tree->SetBranchAddress("runNumber", &runNumber);
+  tree->SetBranchAddress("event_BXID", &BXID);
+  tree->SetBranchAddress("event_nTracks", &nTracks);
+
+  tree->SetBranchAddress("ahc_noise_nHits", &ahc_noise_nHits);
+  tree->SetBranchAddress("ahc_noise_hitI", &ahc_noise_hitI);
+  tree->SetBranchAddress("ahc_noise_hitJ", &ahc_noise_hitJ);
+  tree->SetBranchAddress("ahc_noise_hitK", &ahc_noise_hitK);
+  tree->SetBranchAddress("ahc_noise_hitEnergy", &ahc_noise_hitEnergy);
+  tree->SetBranchAddress("ahc_noise_hitTime", &ahc_noise_hitTime);
+  tree->SetBranchAddress("ahc_noise_hitPos", &ahc_noise_hitPos);
+  tree->SetBranchAddress("ahc_noise_hitType", &ahc_noise_hitType);
+
+  tree->SetBranchAddress("ahc_tracks_nHits", &ahc_tracks_nHits);
+  tree->SetBranchAddress("ahc_tracks_hitI", &ahc_tracks_hitI);
+  tree->SetBranchAddress("ahc_tracks_hitJ", &ahc_tracks_hitJ);
+  tree->SetBranchAddress("ahc_tracks_hitK", &ahc_tracks_hitK);
+  tree->SetBranchAddress("ahc_tracks_hitEnergy", &ahc_tracks_hitEnergy);
+  tree->SetBranchAddress("ahc_tracks_hitTime", &ahc_tracks_hitTime);
+  tree->SetBranchAddress("ahc_tracks_hitPos", &ahc_tracks_hitPos);
+  tree->SetBranchAddress("ahc_tracks_hitType", &ahc_tracks_hitType);
+
+  TH1F *hTime = new TH1F("hTime", "hTime", 8000, -4000, 4000);
+  TH1F *hEnergy = new TH1F("hEnergy", "hEnergy", 100, 0, 20);
+
+  for(int i = 0; i < tree->GetEntries(); i++)
+  {
+    tree->GetEntry(i);
+
+    //Noise
+    for(int ihit = 0; ihit < ahc_noise_nHits; ihit++)
+    {
+      int I = ahc_noise_hitI[ihit];
+      int J = ahc_noise_hitJ[ihit];
+      int K = ahc_noise_hitK[ihit];
+
+      float energy = ahc_noise_hitEnergy[ihit];
+      float time = ahc_noise_hitTime[ihit];
+      int Mem = ahc_noise_hitType[ihit]%100;
+      float x = ahc_noise_hitPos[ihit][0];
+      float y = ahc_noise_hitPos[ihit][1];
+      float z = ahc_noise_hitPos[ihit][2];
+
+      if(time < -4000 || time > 4000) continue;
+
+      hEnergy->Fill(energy);
+      hTime->Fill(time);
+    }
+  }
+
+  hTime->SetLineColor(kBlack);
+  hTime->SetLineWidth(2);
+  hTime->GetXaxis()->SetTitle("Hit Time [ns]");
+  hTime->GetYaxis()->SetTitle("Fraction of hits / 10 ns");
+  hTime->Rebin(10);
+  hTime->Scale(1./hTime->Integral("width"));
+
+  hEnergy->SetLineColor(kBlack);
+  hEnergy->SetLineWidth(2);
+  hEnergy->GetXaxis()->SetTitle("Hit Energy [MIP]");
+  hEnergy->GetYaxis()->SetTitle("Fraction of hits / MIP");
+  hEnergy->Scale(1./hEnergy->Integral("width"));
+
+  TPaveText *pt = new TPaveText(0.7, 0.82, 0.8, 0.92, "tbNDC");
+  pt->SetBorderSize(0);
+  pt->SetTextColor(15);
+  pt->SetFillColor(0);
+  pt->SetTextSize(0.04);
+  pt->SetTextAlign(13); //left center
+  pt->AddText("CALICE AHCAL");
+  pt->AddText("Work in progress");
+
+  TCanvas *c1 = new TCanvas("c1", "Noise Time", 800, 600);
+  gPad->SetLogy();
+  hTime->Draw();
+  //hTime->GetYaxis()->SetRangeUser(1e-6, 1e-3);
+  pt->Draw("same");
+
+  TCanvas *c2 = new TCanvas("c2", "Noise Energy", 800, 600);
+  gPad->SetLogy();
+  hEnergy->Draw();
+  //hEnergy->GetYaxis()->SetRangeUser(1e-4, 1);
+  pt->Draw("same");
+
+  c1->SaveAs("Plots/Noise_Time_Flat.pdf");
+  c2->SaveAs("Plots/Noise_Energy_Flat.pdf");
+}
+
+map<int, map<int, pair<float, float> > > m_slope;
+
+void MakeMapSlope()
+{
+	cout << "Map slope" << endl;
+
+	ifstream fIn("/afs/desy.de/group/flc/pool/ebrianne/Projects/AHCAL/Testbeam_July2015/Data_Analysis/Timing/Muons/Data/Edge_Detection/Results/TDCslopes_noPreSelection_noBinning.txt");
+
+	if(fIn.is_open())
+	{
+		string line;
+		while(getline(fIn, line))
+		{
+			if(line == "" || line.at(0) == '#') continue;
+
+			istringstream iss(line);
+			int Module, BXID, Chip;
+			float slope, slope_err, slope_deadtime, slope_err_deadtime;
+
+			iss >> Module >> BXID >> Chip >> slope >> slope_err >> slope_deadtime >> slope_err_deadtime;
+
+			if(Module < 3)
+			continue;
+
+			if(m_slope[Module].count(Chip*100+BXID) == 0)
+			{
+				//cout << Module << "\t" << Chip << "\t" << BXID << endl;
+				m_slope[Module][Chip*100+BXID] = make_pair(slope_deadtime, slope_err_deadtime);
+			}
+		}
+	}
+	else
+	{
+		cout << "Can t open file" << endl;
+		return;
+	}
+
+}
+
+/*------------------------------------
+/*
+*
+------------------------------------*/
+
+map<int, map<int, pair<float, float> > > m_Pedestal;
+
+void MakeMapPed()
+{
+	cout << "Map Pedestal" << endl;
+
+	ifstream fIn("/afs/desy.de/group/flc/pool/ebrianne/Projects/AHCAL/Testbeam_July2015/Data_Analysis/Timing/Muons/Data/Pedestal_Extraction/Results/PedestalExtraction_noBinning.txt");
+
+	if(fIn.is_open())
+	{
+		string line;
+		while(getline(fIn, line))
+		{
+			if(line == "" || line.at(0) == '#') continue;
+
+			istringstream iss(line);
+			int Module, Chip, Chn, Mem, Ped, Ped_err;
+
+			iss >> Module >> Chip >> Chn >> Mem >> Ped >> Ped_err;
+
+			if(Module < 3)
+			continue;
+
+			if(m_Pedestal[Module*1000+Chip].count(Chn*100+Mem) == 0)
+			{
+				//cout << Module << "\t" << Chip << "\t" << BXID << endl;
+				m_Pedestal[Module*1000+Chip][Chn*100+Mem] = make_pair(Ped, Ped_err);
+			}
+		}
+	}
+	else
+	{
+		cout << "Can t open file" << endl;
+		return;
+	}
+}
+
+/*------------------------------------
+/*
+*
+------------------------------------*/
+
+map<int, map<int, pair<float, float> > > m_Max;
+
+void MakeMapMax()
+{
+	cout << "Map Maximum" << endl;
+
+	ifstream fIn("/afs/desy.de/group/flc/pool/ebrianne/Projects/AHCAL/Testbeam_July2015/Data_Analysis/Timing/Muons/Data/Edge_Detection/Results/TDCslopes_noPreSelection_noBinning.txt");
+
+	if(fIn.is_open())
+	{
+		string line;
+		while(getline(fIn, line))
+		{
+			if(line == "" || line.at(0) == '#') continue;
+
+			istringstream iss(line);
+			int Module, BXID, Chip;
+			float slope, slope_err, slope_deadtime, slope_err_deadtime, Ped, Ped_err, Max, Max_err;
+
+			iss >> Module >> BXID >> Chip >> slope >> slope_err >> slope_deadtime >> slope_err_deadtime >> Ped >> Ped_err >> Max >> Max_err;
+
+			if(Module < 3)
+			continue;
+
+			if(m_Max[Module].count(Chip*100+BXID) == 0)
+			{
+				//cout << Module << "\t" << Chip << "\t" << BXID << endl;
+				m_Max[Module][Chip*100+BXID] = make_pair(Max, Max_err);
+			}
+		}
+	}
+	else
+	{
+		cout << "Can t open file" << endl;
+		return;
+	}
+}
+
+/*------------------------------------
+/*
+*
+------------------------------------*/
+
+void ErrorTDCCalib()
+{
+	MakeMapSlope();
+	MakeMapPed();
+	MakeMapMax();
+	CaliceStyle();
+
+	TH2F *hTimeErrorCorr = new TH2F("hTimeErrorCorr", "hTimeErrorCorr", 4000, 0, 4000, 60, 0, 30);
+	hTimeErrorCorr->GetXaxis()->SetTitle("Time [ns]");
+	hTimeErrorCorr->GetYaxis()->SetTitle("#deltat [ns]");
+	hTimeErrorCorr->SetMarkerColor(kBlue);
+
+	TH2F *hTimeErrorCorr2 = new TH2F("hTimeErrorCorr2", "hTimeErrorCorr2", 4000, 0, 4000, 60, 0, 30);
+	hTimeErrorCorr2->GetXaxis()->SetTitle("Time [ns]");
+	hTimeErrorCorr2->GetYaxis()->SetTitle("#deltat [ns]");
+	hTimeErrorCorr2->SetMarkerColor(kBlue);
+
+	for(map<int, map<int, pair<float, float> > >::iterator it = m_Pedestal.begin(); it != m_Pedestal.end(); ++it)
+	{
+		int Module = it->first/1000;
+		int Chip = it->first%1000;
+
+		if(Module == 3 && Chip == 2)
+		{
+			for(map<int, pair<float, float> >::iterator it2 = it->second.begin(); it2 != it->second.end(); ++it2)
+			{
+				int Chn = it2->first/100;
+				int Mem = it2->first%100;
+
+				if(Mem == 1 && Chn == 20)
+				{
+					int BXID = 0;
+					cout << Module << "\t" << Chip << "\t" << Chn << "\t" << Mem << "\t" << BXID << endl;
+
+					float RampLength = 3920.;
+					float Ped = it2->second.first;
+					float Max = m_Max[Module][Chip*100+BXID].first;
+					float slope = m_slope[Module][Chip*100+BXID].first;
+
+					float RampLength_err = 0.;
+					float Ped_err = it2->second.second;
+					float Max_err = m_Max[Module][Chip*100+BXID].second;
+
+					cout << Ped_err << "\t" << Max_err << endl;
+
+					for(int TDC = Ped; TDC < Max; TDC++)
+					{
+						float time = (TDC-Ped)*slope;
+
+						float A = 1/(Max-Ped);
+						float x = RampLength*(TDC-Max)*Ped_err/(Max-Ped);
+						float xx = RampLength*(TDC-Ped)*Max_err/(Max-Ped);
+						float xxx = (TDC-Ped)*RampLength_err;
+
+						float deltat_squared = A * A * ( x*x + xx*xx + xxx*xxx );
+						float deltat = TMath::Sqrt(deltat_squared);
+
+						//cout << time << "\t" << deltat << "\t" << relative_deltat << endl;
+
+						hTimeErrorCorr->Fill(time, deltat);
+					}
+				}
+			}
+		}
+
+		if(Module == 5 && Chip == 2)
+		{
+			for(map<int, pair<float, float> >::iterator it2 = it->second.begin(); it2 != it->second.end(); ++it2)
+			{
+				int Chn = it2->first/100;
+				int Mem = it2->first%100;
+
+				if(Mem == 1 && Chn == 20)
+				{
+					int BXID = 0;
+					cout << Module << "\t" << Chip << "\t" << Chn << "\t" << Mem << "\t" << BXID << endl;
+
+					float RampLength = 3920.;
+					float Ped = it2->second.first;
+					float Max = m_Max[Module][Chip*100+BXID].first;
+					float slope = m_slope[Module][Chip*100+BXID].first;
+
+					float RampLength_err = 0.;
+					float Ped_err = it2->second.second;
+					float Max_err = m_Max[Module][Chip*100+BXID].second;
+
+					cout << Ped_err << "\t" << Max_err << endl;
+
+					for(int TDC = Ped; TDC < Max; TDC++)
+					{
+						float time = (TDC-Ped)*slope;
+
+						float A = 1/(Max-Ped);
+						float x = RampLength*(TDC-Max)*Ped_err/(Max-Ped);
+						float xx = RampLength*(TDC-Ped)*Max_err/(Max-Ped);
+						float xxx = (TDC-Ped)*RampLength_err;
+
+						float deltat_squared = A * A * ( x*x + xx*xx + xxx*xxx );
+						float deltat = TMath::Sqrt(deltat_squared);
+
+						//cout << time << "\t" << deltat << "\t" << relative_deltat << endl;
+
+						hTimeErrorCorr2->Fill(time, deltat);
+					}
+				}
+			}
+		}
+	}
+
+	//Single Chn/Mem/Chip/BXID error
+	TLegend *leg = new TLegend(0.40, 0.80, 0.90, 0.90);
+	leg->AddEntry((TObject*)0, TString::Format("TDC Calibration Error"), "");
+	leg->AddEntry(hTimeErrorCorr, TString::Format("Layer 3, Chip 2, BXID 0, Mem 1, Chn 20"), "");
+	leg->SetBorderSize(0);
+
+	TCanvas *c3 = new TCanvas("c3", "Time Error distribution from calibration (Correlation)", 800, 600);
+	hTimeErrorCorr->Draw();
+	leg->Draw("SAME");
+
+	c3->SaveAs("Plots/TimeErrorEstimation_Layer3.pdf");
+
+	TLegend *leg2 = new TLegend(0.40, 0.80, 0.90, 0.90);
+	leg2->AddEntry((TObject*)0, TString::Format("TDC Calibration Error"), "");
+	leg2->AddEntry(hTimeErrorCorr2, TString::Format("Layer 5, Chip 2, BXID 0, Mem 1, Chn 20"), "");
+	leg2->SetBorderSize(0);
+
+	TCanvas *c4 = new TCanvas("c4", "Time Error distribution from calibration (Correlation)", 800, 600);
+	hTimeErrorCorr2->Draw();
+	leg2->Draw("SAME");
+
+	c4->SaveAs("Plots/TimeErrorEstimation_Layer5.pdf");
+}
+
 void MakePlots()
 {
-	CorrectionOffsets();
-	EdgeDetection();
-	LinearityCorrection();
-	Pedestal();
-	TimeWalk();
-	TimingFull_AHCAL();
-	TimingFullCorrections();
-	TimingNoCorrections();
-	TimingLinCorrections();
-	SelectionCuts();
-	Validation();
-	ComparisonSimData();
+	// CorrectionOffsets();
+	// EdgeDetection();
+	// LinearityCorrection();
+	// Pedestal();
+	// TimeWalk();
+	// TimingFull_AHCAL();
+	// TimingFullCorrections();
+	// TimingNoCorrections();
+	// TimingLinCorrections();
+	// SelectionCuts();
+	// Validation();
+	// ComparisonSimData();
+	// Noise();
+	ErrorTDCCalib();
 }

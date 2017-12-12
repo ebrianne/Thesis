@@ -7191,43 +7191,78 @@ void TimeCorrelationData()
   hPions50_long->SetLineColor(kBlack);
   hPions50_long->SetLineWidth(2);
 
-  //Long
-  int low_bin = hPions50_long->GetXaxis()->FindBin(50);
-  int high_bin = hPions50_long->GetXaxis()->FindBin(2000);
+  int nEntries_long = hPions50_long->GetEntries();
 
+  //Normalisation of each bin to the number of entries
+  for(int i = 1; i < hPions50_long->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_long->GetNbinsY(); j++)
+    {
+      float content = hPions50_long->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hPions50_long->SetBinContent(i, j, new_content);
+    }
+  }
+
+  //Long
   hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_long = hPions50_long->GetEntries();
-  hPions50_long->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_long->GetYaxis()->SetRangeUser(50, 2000);
-  int integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
+  int low_bin = hPions50_long->GetXaxis()->FindBin(50);
+  int high_bin = hPions50_long->GetXaxis()->FindBin(2000);
+  float integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
+
+  int nEntries_short = hPions50_short->GetEntries();
+
+  for(int i = 1; i < hPions50_short->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_short->GetNbinsY(); j++)
+    {
+      float content = hPions50_short->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hPions50_short->SetBinContent(i, j, new_content);
+    }
+  }
 
   //Short
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
-
-  low_bin = hPions50_short->GetXaxis()->FindBin(50);
-  high_bin = hPions50_short->GetXaxis()->FindBin(2000);
-
   hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_short = hPions50_short->GetEntries();
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
+  low_bin = hPions50_short->GetXaxis()->FindBin(50);
+  high_bin = hPions50_short->GetXaxis()->FindBin(2000);
   integral = hPions50_short->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
-  TPaveText *pt = new TPaveText(0.58, 0.78, 0.83, 0.90, "tbNDC");
+  TPaveText *pt = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
   pt->SetBorderSize(0);
   pt->SetTextColor(15);
   pt->SetFillColor(0);
   pt->SetTextSize(0.04);
   pt->SetTextAlign(13); //left center
   pt->AddText("CALICE AHCAL");
+  pt->AddText("50 GeV #pi-");
   pt->AddText("Work in progress");
+
+  TLine *line = new TLine(50, 50, 50, 2000);
+  line->SetLineColor(kRed);
+  line->SetLineWidth(3);
+  line->SetLineStyle(2);
+
+  TLine *line2 = new TLine(50, 50, 2000, 50);
+  line2->SetLineColor(kRed);
+  line2->SetLineWidth(3);
+  line2->SetLineStyle(2);
+
+  TLine *line3 = new TLine(2000, 50, 2000, 2000);
+  line3->SetLineColor(kRed);
+  line3->SetLineWidth(3);
+  line3->SetLineStyle(2);
+
+  TLine *line4 = new TLine(50, 2000, 2000, 2000);
+  line4->SetLineColor(kRed);
+  line4->SetLineWidth(3);
+  line4->SetLineStyle(2);
 
   TCanvas *c2 = new TCanvas("c2", "", 800, 600);
   c2->cd();
@@ -7236,7 +7271,12 @@ void TimeCorrelationData()
   hPions50_short->Draw("COLZ");
   hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
+  hPions50_short->GetZaxis()->SetRangeUser(1e-6, 1);
   pt->Draw("SAME");
+  line->Draw("same");
+  line2->Draw("same");
+  line3->Draw("same");
+  line4->Draw("same");
 
   TCanvas *c3 = new TCanvas("c3", "", 800, 600);
   c3->cd();
@@ -7245,7 +7285,12 @@ void TimeCorrelationData()
   hPions50_long->Draw("COLZ");
   hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
+  hPions50_long->GetZaxis()->SetRangeUser(1e-6, 1);
   pt->Draw("SAME");
+  line->Draw("same");
+  line2->Draw("same");
+  line3->Draw("same");
+  line4->Draw("same");
 
   c2->SaveAs("Plots/Time_Correlation_short.pdf");
   c3->SaveAs("Plots/Time_Correlation_long.pdf");
@@ -7986,9 +8031,9 @@ void MakePlots()
   // ComparisonTungstenRadius();
   //
   // ComparisonData();
-  AdditionalShowerStart();
-  AdditionalShowerStart2();
-  // TimeCorrelationData();
+  // AdditionalShowerStart();
+  // AdditionalShowerStart2();
+  TimeCorrelationData();
   //
   // Validation();
   //

@@ -345,7 +345,7 @@ A study has been performed to estimate the influence of the detector inhomogenei
 
 The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each tile at 10 and 50 GeV respectively. The ratio shown is compared to the top left centre tile. One can see that for both energies, the distributions are within a 10-20\% agreement with the region [-20, 20] ns. Therefore a conservative systematic uncertainty of 20\% is assigned to electron and pion data in the following. % Need to add argument why -20, 20 ns... maybe do -50, 200?%
 
-\section{Portability of the calibration}
+\section{Calibration applied to another dataset}
 
 A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal was to reuse the calibration constants obtained and apply them to another dataset in order to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminum absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
 
@@ -355,7 +355,7 @@ A check on the validity of the calibration for other data-taking periods has bee
 	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14.}\label{fig:TBMay2016}
 \end{figure}
 
-The same calibration constants were used except a re-calibration of the trigger channels ($T_{0}$) was performed. This was to be done due to a different cabling and trigger logic. The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 13 and 14. The time resolution obtained of 7 ns is slighly better than the time resolution obtained in July 2015. The difference may come from the fact a different configuration was used in the testbeam at CERN compared to DESY but also the lower beam energy. We can learn from this study, that the time calibration constants determined in a specific dataset can also be used for another dataset with the same layers.
+The same calibration constants were used except a re-calibration of the trigger channels ($T_{0}$) and the electronic offset was performed. This was to be done due to a different cabling and trigger logic. The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 13 and 14. The time resolution obtained of 7 ns is slightly better than the time resolution obtained in July 2015. The difference may come from the fact a different configuration was used in the testbeam at CERN compared to DESY but also the lower beam energy. The distribution is also narrower because maybe of the number of hits per chip which is smaller at DESY (lower beam energy). We can learn from this study, that the time calibration constants determined in a specific dataset can also be used for another dataset with the same layers and does not change dramatically the time distribution though this is not a full proof method of the portability of the timing calibration.
 
 \section{Systematic uncertainties}
 
