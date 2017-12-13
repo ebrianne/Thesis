@@ -7171,7 +7171,7 @@ void AdditionalShowerStart2()
   c4->SaveAs(canvasname);
 }
 
-void TimeCorrelationData()
+void TimeData()
 {
   CaliceStyle();
 

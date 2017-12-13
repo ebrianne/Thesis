@@ -10801,13 +10801,6 @@ void TimeCorrelations_Mokka()
   f->GetObject("histo_Pion50_short", hPions50_short);
   f->GetObject("histo_Pion50_long", hPions50_long);
 
-  //Rebin
-  // hPions50_short->RebinX(20);
-  // hPions50_short->RebinY(20);
-  //
-  // hPions50_long->RebinX(20);
-  // hPions50_long->RebinY(20);
-
   hPions50_short->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hPions50_short->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
   hPions50_short->SetLineColor(kBlack);
@@ -10826,13 +10819,6 @@ void TimeCorrelations_Mokka()
   f2->GetObject("histo_Pion50_short", hSimPions50_short);
   f2->GetObject("histo_Pion50_long", hSimPions50_long);
 
-  //Rebin
-  // hSimPions50_short->RebinX(20);
-  // hSimPions50_short->RebinY(20);
-  //
-  // hSimPions50_long->RebinX(20);
-  // hSimPions50_long->RebinY(20);
-
   hSimPions50_short->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
   hSimPions50_short->SetLineColor(kRed);
@@ -10848,13 +10834,6 @@ void TimeCorrelations_Mokka()
 
   f2->GetObject("histo_Pion50_short_QBBC", hSimPions50_short_QBBC);
   f2->GetObject("histo_Pion50_long_QBBC", hSimPions50_long_QBBC);
-
-  //Rebin
-  // hSimPions50_short_QBBC->RebinX(20);
-  // hSimPions50_short_QBBC->RebinY(20);
-  //
-  // hSimPions50_long_QBBC->RebinX(20);
-  // hSimPions50_long_QBBC->RebinY(20);
 
   hSimPions50_short_QBBC->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short_QBBC->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
@@ -10872,13 +10851,6 @@ void TimeCorrelations_Mokka()
   f2->GetObject("histo_Pion50_short_QGSP_BERT", hSimPions50_short_QGSP_BERT);
   f2->GetObject("histo_Pion50_long_QGSP_BERT", hSimPions50_long_QGSP_BERT);
 
-  //Rebin
-  // hSimPions50_short_QGSP_BERT->RebinX(20);
-  // hSimPions50_short_QGSP_BERT->RebinY(20);
-  //
-  // hSimPions50_long_QGSP_BERT->RebinX(20);
-  // hSimPions50_long_QGSP_BERT->RebinY(20);
-
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
   hSimPions50_short_QGSP_BERT->SetLineColor(kGreen);
@@ -10895,232 +10867,329 @@ void TimeCorrelations_Mokka()
 
   //Data
   //Long
+  int nEntries_long = hPions50_long->GetEntries();
+
+  for(int i = 1; i < hPions50_long->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_long->GetNbinsY(); j++)
+    {
+      float content = hPions50_long->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hPions50_long->SetBinContent(i, j, new_content);
+    }
+  }
+
   int low_bin = hPions50_long->GetXaxis()->FindBin(50);
   int high_bin = hPions50_long->GetXaxis()->FindBin(2000);
 
   hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_long = hPions50_long->GetEntries();
-  hPions50_long->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_long->GetYaxis()->SetRangeUser(50, 2000);
-  int integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
+  float integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
+  int nEntries_short = hPions50_short->GetEntries();
+
+  for(int i = 1; i < hPions50_short->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_short->GetNbinsY(); j++)
+    {
+      float content = hPions50_short->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hPions50_short->SetBinContent(i, j, new_content);
+    }
+  }
 
   low_bin = hPions50_short->GetXaxis()->FindBin(50);
   high_bin = hPions50_short->GetXaxis()->FindBin(2000);
 
   hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_short = hPions50_short->GetEntries();
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
   integral = hPions50_short->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QGSP_BERT_HP
   //Long
+  nEntries_long = hSimPions50_long->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long->GetXaxis()->FindBin(2000);
 
   hSimPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long->GetEntries();
-  hSimPions50_long->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT_HP Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QGSP_BERT_HP Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short->GetXaxis()->FindBin(2000);
 
   hSimPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short->GetEntries();
-  hSimPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT_HP Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QGSP_BERT_HP Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QBBC
   //Long
+  nEntries_long = hSimPions50_long_QBBC->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long_QBBC->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long_QBBC->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long_QBBC->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long_QBBC->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long_QBBC->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long_QBBC->GetXaxis()->FindBin(2000);
 
   hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long_QBBC->GetEntries();
-  hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long_QBBC->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QBBC Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QBBC Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short_QBBC->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short_QBBC->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short_QBBC->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short_QBBC->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short_QBBC->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short_QBBC->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short_QBBC->GetXaxis()->FindBin(2000);
 
   hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short_QBBC->GetEntries();
-  hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short_QBBC->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QBBC Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QBBC Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QGSP_BERT
   //Long
+  nEntries_long = hSimPions50_long_QGSP_BERT->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long_QGSP_BERT->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long_QGSP_BERT->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long_QGSP_BERT->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long_QGSP_BERT->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long_QGSP_BERT->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long_QGSP_BERT->GetXaxis()->FindBin(2000);
 
   hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long_QGSP_BERT->GetEntries();
-  hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long_QGSP_BERT->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QGSP_BERT Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short_QGSP_BERT->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short_QGSP_BERT->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short_QGSP_BERT->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short_QGSP_BERT->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short_QGSP_BERT->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short_QGSP_BERT->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short_QGSP_BERT->GetXaxis()->FindBin(2000);
 
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short_QGSP_BERT->GetEntries();
-  hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short_QGSP_BERT->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QGSP_BERT Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //-------------------------------------------
 
-  TLegend *leg2 = new TLegend(0.23, 0.17, 0.43, 0.33);
-  leg2->SetBorderSize(0);
-  leg2->SetTextSize(0.025);
-  leg2->SetHeader("50 GeV Pions - steel");
-  leg2->AddEntry(hPions50_short, "Data", "l");
-  leg2->AddEntry(hSimPions50_short_QGSP_BERT, "QGSP_BERT", "l");
-  leg2->AddEntry(hSimPions50_short, "QGSP_BERT_HP", "l");
-  leg2->AddEntry(hSimPions50_short_QBBC, "QBBC", "l");
-
-  TPaveText *pt2 = new TPaveText(0.62, 0.30, 0.83, 0.45, "tbNDC");
-  pt2->SetBorderSize(0);
-  pt2->SetTextColor(15);
-  pt2->SetFillColor(0);
-  pt2->SetTextSize(0.04);
-  pt2->SetTextAlign(13); //left center
-  pt2->AddText("CALICE AHCAL");
-  pt2->AddText("Work in progress");
-  pt2->AddText("50 GeV #pi^{-}");
+  TPaveText *pt_Data = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_Data->SetBorderSize(0);
+  pt_Data->SetTextColor(15);
+  pt_Data->SetFillColor(0);
+  pt_Data->SetTextSize(0.04);
+  pt_Data->SetTextAlign(13); //left center
+  pt_Data->AddText("CALICE AHCAL");
+  pt_Data->AddText("Work in progress");
+  pt_Data->AddText("50 GeV #pi^{-} (Data)");
 
   //Short Correlation
   //Data
   TCanvas *c1 = new TCanvas("c1", "", 800, 600);
   c1->cd();
-  hPions50_short->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hPions50_short->Draw("COLZ");
   hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hPions50_short->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_Data->Draw("SAME");
 
   c1->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_Data.pdf");
+
+  TPaveText *pt_HP = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_HP->SetBorderSize(0);
+  pt_HP->SetTextColor(15);
+  pt_HP->SetFillColor(0);
+  pt_HP->SetTextSize(0.04);
+  pt_HP->SetTextAlign(13); //left center
+  pt_HP->AddText("CALICE AHCAL");
+  pt_HP->AddText("Work in progress");
+  pt_HP->AddText("50 GeV #pi^{-} (QGSP_BERT_HP)");
 
   //QGSP_BERT_HP
   TCanvas *c2 = new TCanvas("c2", "", 800, 600);
   c2->cd();
-  hSimPions50_short->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short->Draw("COLZ");
   hSimPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_HP->Draw("SAME");
 
   c2->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf");
+
+  TPaveText *pt_QBBC = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_QBBC->SetBorderSize(0);
+  pt_QBBC->SetTextColor(15);
+  pt_QBBC->SetFillColor(0);
+  pt_QBBC->SetTextSize(0.04);
+  pt_QBBC->SetTextAlign(13); //left center
+  pt_QBBC->AddText("CALICE AHCAL");
+  pt_QBBC->AddText("Work in progress");
+  pt_QBBC->AddText("50 GeV #pi^{-} (QBBC)");
 
   //QBBC
   TCanvas *c3 = new TCanvas("c3", "", 800, 600);
   c3->cd();
-  hSimPions50_short_QBBC->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short_QBBC->Draw("COLZ");
   hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short_QBBC->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QBBC->Draw("SAME");
 
   c3->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf");
+
+  TPaveText *pt_QGSP = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_QGSP->SetBorderSize(0);
+  pt_QGSP->SetTextColor(15);
+  pt_QGSP->SetFillColor(0);
+  pt_QGSP->SetTextSize(0.04);
+  pt_QGSP->SetTextAlign(13); //left center
+  pt_QGSP->AddText("CALICE AHCAL");
+  pt_QGSP->AddText("Work in progress");
+  pt_QGSP->AddText("50 GeV #pi^{-} (QGSP_BERT)");
 
   //QGSP_BERT
   TCanvas *c4 = new TCanvas("c4", "", 800, 600);
   c4->cd();
-  hSimPions50_short_QGSP_BERT->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short_QGSP_BERT->Draw("COLZ");
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short_QGSP_BERT->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QGSP->Draw("SAME");
 
   c4->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf");
 
   //Long Correlation
-  TLegend *leg3 = new TLegend(0.23, 0.17, 0.43, 0.33);
-  leg3->SetBorderSize(0);
-  leg3->SetTextSize(0.025);
-  leg3->SetHeader("50 GeV Pions - steel");
-  leg3->AddEntry(hPions50_long, "Data", "l");
-  leg3->AddEntry(hSimPions50_long_QGSP_BERT, "QGSP_BERT", "l");
-  leg3->AddEntry(hSimPions50_long, "QGSP_BERT_HP", "l");
-  leg3->AddEntry(hSimPions50_long_QBBC, "QBBC", "l");
-
   //Data
   TCanvas *c5 = new TCanvas("c5", "", 800, 600);
   c5->cd();
-  hPions50_long->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hPions50_long->Draw("COLZ");
   hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hPions50_long->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_Data->Draw("SAME");
 
   c5->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_Data.pdf");
 
   //QGSP_BERT_HP
   TCanvas *c6 = new TCanvas("c6", "", 800, 600);
   c6->cd();
-  hSimPions50_long->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long->Draw("COLZ");
   hSimPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_HP->Draw("SAME");
 
   c6->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf");
 
   //QBBC
   TCanvas *c7 = new TCanvas("c7", "", 800, 600);
   c7->cd();
-  hSimPions50_long_QBBC->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long_QBBC->Draw("COLZ");
   hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long_QBBC->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QBBC->Draw("SAME");
 
   c7->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf");
 
   //QGSP_BERT
   TCanvas *c8 = new TCanvas("c8", "", 800, 600);
   c8->cd();
-  hSimPions50_long_QGSP_BERT->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long_QGSP_BERT->Draw("COLZ");
   hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long_QGSP_BERT->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QGSP->Draw("SAME");
 
   c8->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf");
 }
@@ -11134,13 +11203,6 @@ void TimeCorrelations_DD4hep()
 
   f->GetObject("histo_Pion50_short", hPions50_short);
   f->GetObject("histo_Pion50_long", hPions50_long);
-
-  //Rebin
-  // hPions50_short->RebinX(4);
-  // hPions50_short->RebinY(4);
-  //
-  // hPions50_long->RebinX(4);
-  // hPions50_long->RebinY(4);
 
   hPions50_short->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hPions50_short->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
@@ -11160,13 +11222,6 @@ void TimeCorrelations_DD4hep()
   f2->GetObject("histo_Pion50_short", hSimPions50_short);
   f2->GetObject("histo_Pion50_long", hSimPions50_long);
 
-  //Rebin
-  // hSimPions50_short->RebinX(4);
-  // hSimPions50_short->RebinY(4);
-  //
-  // hSimPions50_long->RebinX(4);
-  // hSimPions50_long->RebinY(4);
-
   hSimPions50_short->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
   hSimPions50_short->SetLineColor(kRed);
@@ -11182,13 +11237,6 @@ void TimeCorrelations_DD4hep()
 
   f2->GetObject("histo_Pion50_short_QBBC", hSimPions50_short_QBBC);
   f2->GetObject("histo_Pion50_long_QBBC", hSimPions50_long_QBBC);
-
-  //Rebin
-  // hSimPions50_short_QBBC->RebinX(4);
-  // hSimPions50_short_QBBC->RebinY(4);
-  //
-  // hSimPions50_long_QBBC->RebinX(4);
-  // hSimPions50_long_QBBC->RebinY(4);
 
   hSimPions50_short_QBBC->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short_QBBC->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
@@ -11206,13 +11254,6 @@ void TimeCorrelations_DD4hep()
   f2->GetObject("histo_Pion50_short_QGSP_BERT", hSimPions50_short_QGSP_BERT);
   f2->GetObject("histo_Pion50_long_QGSP_BERT", hSimPions50_long_QGSP_BERT);
 
-  //Rebin
-  // hSimPions50_short_QGSP_BERT->RebinX(4);
-  // hSimPions50_short_QGSP_BERT->RebinY(4);
-  //
-  // hSimPions50_long_QGSP_BERT->RebinX(4);
-  // hSimPions50_long_QGSP_BERT->RebinY(4);
-
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetTitle("Time of hit (Module 6) [ns]");
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetTitle("Time of closest hit (Module 7) [ns]");
   hSimPions50_short_QGSP_BERT->SetLineColor(kGreen);
@@ -11229,235 +11270,354 @@ void TimeCorrelations_DD4hep()
 
   //Data
   //Long
+  int nEntries_long = hPions50_long->GetEntries();
+
+  for(int i = 1; i < hPions50_long->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_long->GetNbinsY(); j++)
+    {
+      float content = hPions50_long->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hPions50_long->SetBinContent(i, j, new_content);
+    }
+  }
+
   int low_bin = hPions50_long->GetXaxis()->FindBin(50);
   int high_bin = hPions50_long->GetXaxis()->FindBin(2000);
 
   hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_long = hPions50_long->GetEntries();
-  hPions50_long->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_long->GetYaxis()->SetRangeUser(50, 2000);
-  int integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
+  float integral = hPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
+  int nEntries_short = hPions50_short->GetEntries();
+
+  for(int i = 1; i < hPions50_short->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hPions50_short->GetNbinsY(); j++)
+    {
+      float content = hPions50_short->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hPions50_short->SetBinContent(i, j, new_content);
+    }
+  }
 
   low_bin = hPions50_short->GetXaxis()->FindBin(50);
   high_bin = hPions50_short->GetXaxis()->FindBin(2000);
 
   hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  int nEntries_short = hPions50_short->GetEntries();
-  hPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hPions50_short->GetYaxis()->SetRangeUser(50, 2000);
   integral = hPions50_short->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QGSP_BERT_HP
   //Long
+  nEntries_long = hSimPions50_long->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long->GetXaxis()->FindBin(2000);
 
   hSimPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long->GetEntries();
-  hSimPions50_long->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT_HP Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QGSP_BERT_HP Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short->GetXaxis()->FindBin(2000);
 
   hSimPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short->GetEntries();
-  hSimPions50_short->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT_HP Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QGSP_BERT_HP Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QBBC
   //Long
+  nEntries_long = hSimPions50_long_QBBC->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long_QBBC->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long_QBBC->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long_QBBC->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long_QBBC->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long_QBBC->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long_QBBC->GetXaxis()->FindBin(2000);
 
   hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long_QBBC->GetEntries();
-  hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long_QBBC->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QBBC Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QBBC Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short_QBBC->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short_QBBC->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short_QBBC->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short_QBBC->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short_QBBC->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short_QBBC->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short_QBBC->GetXaxis()->FindBin(2000);
 
   hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short_QBBC->GetEntries();
-  hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short_QBBC->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QBBC Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QBBC Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //QGSP_BERT
   //Long
+  nEntries_long = hSimPions50_long_QGSP_BERT->GetEntries();
+
+  for(int i = 1; i < hSimPions50_long_QGSP_BERT->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_long_QGSP_BERT->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_long_QGSP_BERT->GetBinContent(i, j);
+      float new_content = content / nEntries_long;
+      hSimPions50_long_QGSP_BERT->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_long_QGSP_BERT->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_long_QGSP_BERT->GetXaxis()->FindBin(2000);
 
   hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_long = hSimPions50_long_QGSP_BERT->GetEntries();
-  hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_long_QGSP_BERT->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT Long : " << nEntries_long << " " << integral << " " << (float)integral/nEntries_long*100 << "%" << endl;
+  cout << "QGSP_BERT Long : " << nEntries_long << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //Short
+  nEntries_short = hSimPions50_short_QGSP_BERT->GetEntries();
+
+  for(int i = 1; i < hSimPions50_short_QGSP_BERT->GetNbinsX(); i++)
+  {
+    for(int j = 1; j < hSimPions50_short_QGSP_BERT->GetNbinsY(); j++)
+    {
+      float content = hSimPions50_short_QGSP_BERT->GetBinContent(i, j);
+      float new_content = content / nEntries_short;
+      hSimPions50_short_QGSP_BERT->SetBinContent(i, j, new_content);
+    }
+  }
+
   low_bin = hSimPions50_short_QGSP_BERT->GetXaxis()->FindBin(50);
   high_bin = hSimPions50_short_QGSP_BERT->GetXaxis()->FindBin(2000);
 
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  nEntries_short = hSimPions50_short_QGSP_BERT->GetEntries();
-  hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(50, 2000);
-  hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(50, 2000);
   integral = hSimPions50_short_QGSP_BERT->Integral(low_bin, high_bin, low_bin, high_bin);
 
-  cout << "QGSP_BERT Short : " << nEntries_short << " " << integral << " " << (float)integral/nEntries_short*100 << "%" << endl;
+  cout << "QGSP_BERT Short : " << nEntries_short << " " << integral << " " << (float)integral*100 << "%" << endl;
 
   //-------------------------------------------
 
-  TLegend *leg2 = new TLegend(0.23, 0.17, 0.43, 0.33);
-  leg2->SetBorderSize(0);
-  leg2->SetTextSize(0.025);
-  leg2->SetHeader("50 GeV Pions - steel");
-  leg2->AddEntry(hPions50_short, "Data", "l");
-  leg2->AddEntry(hSimPions50_short_QGSP_BERT, "QGSP_BERT", "l");
-  leg2->AddEntry(hSimPions50_short, "QGSP_BERT_HP", "l");
-  leg2->AddEntry(hSimPions50_short_QBBC, "QBBC", "l");
-
-  TPaveText *pt2 = new TPaveText(0.62, 0.30, 0.83, 0.45, "tbNDC");
-  pt2->SetBorderSize(0);
-  pt2->SetTextColor(15);
-  pt2->SetFillColor(0);
-  pt2->SetTextSize(0.04);
-  pt2->SetTextAlign(13); //left center
-  pt2->AddText("CALICE AHCAL");
-  pt2->AddText("Work in progress");
-  pt2->AddText("50 GeV #pi^{-}");
+  TPaveText *pt_Data = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_Data->SetBorderSize(0);
+  pt_Data->SetTextColor(15);
+  pt_Data->SetFillColor(0);
+  pt_Data->SetTextSize(0.04);
+  pt_Data->SetTextAlign(13); //left center
+  pt_Data->AddText("CALICE AHCAL");
+  pt_Data->AddText("Work in progress");
+  pt_Data->AddText("50 GeV #pi^{-} (Data)");
 
   //Short Correlation
+  //Data
+  TCanvas *c1 = new TCanvas("c1", "", 800, 600);
+  c1->cd();
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hPions50_short->Draw("COLZ");
+  hPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
+  hPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
+  hPions50_short->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_Data->Draw("SAME");
+
+  c1->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_Data.pdf");
+
+  TPaveText *pt_HP = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_HP->SetBorderSize(0);
+  pt_HP->SetTextColor(15);
+  pt_HP->SetFillColor(0);
+  pt_HP->SetTextSize(0.04);
+  pt_HP->SetTextAlign(13); //left center
+  pt_HP->AddText("CALICE AHCAL");
+  pt_HP->AddText("Work in progress");
+  pt_HP->AddText("50 GeV #pi^{-} (QGSP_BERT_HP)");
+
   //QGSP_BERT_HP
   TCanvas *c2 = new TCanvas("c2", "", 800, 600);
   c2->cd();
-  hSimPions50_short->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short->Draw("COLZ");
   hSimPions50_short->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_HP->Draw("SAME");
 
   c2->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP_DD4hep.pdf");
+
+  TPaveText *pt_QBBC = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_QBBC->SetBorderSize(0);
+  pt_QBBC->SetTextColor(15);
+  pt_QBBC->SetFillColor(0);
+  pt_QBBC->SetTextSize(0.04);
+  pt_QBBC->SetTextAlign(13); //left center
+  pt_QBBC->AddText("CALICE AHCAL");
+  pt_QBBC->AddText("Work in progress");
+  pt_QBBC->AddText("50 GeV #pi^{-} (QBBC)");
 
   //QBBC
   TCanvas *c3 = new TCanvas("c3", "", 800, 600);
   c3->cd();
-  hSimPions50_short_QBBC->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short_QBBC->Draw("COLZ");
   hSimPions50_short_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short_QBBC->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QBBC->Draw("SAME");
 
   c3->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep.pdf");
+
+  TPaveText *pt_QGSP = new TPaveText(0.28, 0.78, 0.53, 0.90, "tbNDC");
+  pt_QGSP->SetBorderSize(0);
+  pt_QGSP->SetTextColor(15);
+  pt_QGSP->SetFillColor(0);
+  pt_QGSP->SetTextSize(0.04);
+  pt_QGSP->SetTextAlign(13); //left center
+  pt_QGSP->AddText("CALICE AHCAL");
+  pt_QGSP->AddText("Work in progress");
+  pt_QGSP->AddText("50 GeV #pi^{-} (QGSP_BERT)");
 
   //QGSP_BERT
   TCanvas *c4 = new TCanvas("c4", "", 800, 600);
   c4->cd();
-  hSimPions50_short_QGSP_BERT->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_short_QGSP_BERT->Draw("COLZ");
   hSimPions50_short_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_short_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg2->Draw("SAME");
+  hSimPions50_short_QGSP_BERT->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QGSP->Draw("SAME");
 
   c4->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep.pdf");
 
   //Long Correlation
-  TLegend *leg3 = new TLegend(0.23, 0.17, 0.43, 0.33);
-  leg3->SetBorderSize(0);
-  leg3->SetTextSize(0.025);
-  leg3->SetHeader("50 GeV Pions - steel");
-  leg3->AddEntry(hPions50_long, "Data", "l");
-  leg3->AddEntry(hSimPions50_long_QGSP_BERT, "QGSP_BERT", "l");
-  leg3->AddEntry(hSimPions50_long, "QGSP_BERT_HP", "l");
-  leg3->AddEntry(hSimPions50_long_QBBC, "QBBC", "l");
+  //Data
+  TCanvas *c5 = new TCanvas("c5", "", 800, 600);
+  c5->cd();
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hPions50_long->Draw("COLZ");
+  hPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
+  hPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
+  hPions50_long->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_Data->Draw("SAME");
+
+  c5->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_Data.pdf");
 
   //QGSP_BERT_HP
   TCanvas *c6 = new TCanvas("c6", "", 800, 600);
   c6->cd();
-  hSimPions50_long->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long->Draw("COLZ");
   hSimPions50_long->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_HP->Draw("SAME");
 
   c6->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP_DD4hep.pdf");
 
   //QBBC
   TCanvas *c7 = new TCanvas("c7", "", 800, 600);
   c7->cd();
-  hSimPions50_long_QBBC->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long_QBBC->Draw("COLZ");
   hSimPions50_long_QBBC->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QBBC->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long_QBBC->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QBBC->Draw("SAME");
 
   c7->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep.pdf");
 
   //QGSP_BERT
   TCanvas *c8 = new TCanvas("c8", "", 800, 600);
   c8->cd();
-  hSimPions50_long_QGSP_BERT->Draw("BOX");
+  gPad->SetLogz();
+  gPad->SetRightMargin(0.12);
+  hSimPions50_long_QGSP_BERT->Draw("COLZ");
   hSimPions50_long_QGSP_BERT->GetXaxis()->SetRangeUser(-50, 2000);
   hSimPions50_long_QGSP_BERT->GetYaxis()->SetRangeUser(-50, 2000);
-  pt2->Draw("SAME");
-  //leg3->Draw("SAME");
+  hSimPions50_long_QGSP_BERT->GetZaxis()->SetRangeUser(1e-6, 1);
+  pt_QGSP->Draw("SAME");
 
   c8->SaveAs("Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep.pdf");
 }
 
 void MakePlots()
 {
-  Energy_10GeV();
-  Radius_10GeV();
-  Depth_10GeV();
-
-  Energy_30GeV();
-  Radius_30GeV();
-  Depth_30GeV();
-
-  Energy_50GeV();
-  Radius_50GeV();
-  Depth_50GeV();
-
-  Energy_70GeV();
-  Radius_70GeV();
-  Depth_70GeV();
-
-  Energy_90GeV();
-  Radius_90GeV();
-  Depth_90GeV();
+  // Energy_10GeV();
+  // Radius_10GeV();
+  // Depth_10GeV();
+  //
+  // Energy_30GeV();
+  // Radius_30GeV();
+  // Depth_30GeV();
+  //
+  // Energy_50GeV();
+  // Radius_50GeV();
+  // Depth_50GeV();
+  //
+  // Energy_70GeV();
+  // Radius_70GeV();
+  // Depth_70GeV();
+  //
+  // Energy_90GeV();
+  // Radius_90GeV();
+  // Depth_90GeV();
 
   TimeCorrelations_Mokka();
   TimeCorrelations_DD4hep();

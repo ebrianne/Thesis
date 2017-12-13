@@ -20,7 +20,7 @@ The testing of individual chips prior to the soldering to the HBU board is neces
   \caption{\subref{fig:Testboard_SP2B}) Testboard used to test the SPIROC2B chip standalone. \subref{fig:AnalogSignal_SP2B}) Example of an analog signal outputted by the slow shaper of the SPIROC2B. The signal is represented in yellow. The trigger is represented in red.}
 \end{figure}
 
-The board as shown in figure \ref{fig:Testboard_SP2B} contains all the debugging feature needed to check the functioning of the chip. In red, the input signal pulse, generally similar to a SiPM pulse with a fast rising edge (around 1 ns) and a slower falling edge (around 20 ns), can be injected to the 36 channels of the chip. In blue and yellow are the output signals, this enables to check via an oscilloscope the output analog signal after the slow shaper as shown in figure \ref{fig:AnalogSignal_SP2B}, but can only be checked in external trigger mode. In purple, these are the input signals for the FPGA such as the slow clock, external trigger signals. And finally in green, the DACs can be tested individually or automatically by connecting a Keythley multimeter to the serial port.
+The board as shown in figure \ref{fig:Testboard_SP2B} contains all the debugging feature needed to check the functioning of the chip. In red, the input signal pulse, generally similar to a SiPM pulse with a fast rising edge (around 1 ns) and a slower falling edge (around 20 ns), can be injected to the 36 channels of the chip. In blue and yellow are the output signals, this enables to check via an oscilloscope the output analog signal after the slow shaper as shown in figure \ref{fig:AnalogSignal_SP2B}, but can only be checked in external trigger mode. In purple, these are the input signals for the FPGA such as the slow clock, external trigger signals. And finally in green, the DACs can be tested individually or automatically by connecting a Keithley multimeter to the serial port.
 
 In this manual procedure, only vital parts of the chips are tested. This includes to check that all channels are working correctly, the chip works in both external and auto-trigger modes, all the DACs of the chip are working and that the digital part provides data. For the testbeam in July 2015, around 60 chips have been tested manually. The mean time for a chip to be tested was around 10 mins.
 
@@ -48,7 +48,7 @@ One can notice that the spread channel-to-channel for the input DACs increases w
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-Around 60 chips were tested with a yield over 84\%. There is no obvious common cause for failure (digital part not working, no response to slow control programming, broken input DACs...). The time achieved by testing chips manually was around 10 mins which is not possible on a mass-production scale where only around 1 min is required at maximum per chip. This is why a new testing board has been designed between DESY and the University of Wuppertal in order to automatize the testing procedure of individual chips on BGA packaging \cite{AHCALMain2016_Amine}. This new board has already been commisionned in July 2017 and is being used currently for the next generation AHCAL prototype (around 650 chips).
+Around 60 chips were tested with a yield over 84\%. There is no obvious common cause for failure (digital part not working, no response to slow control programming, broken input DACs...). The time achieved by testing chips manually was around 10 mins which is not possible on a mass-production scale where only around 1 min is required at maximum per chip. This is why a new testing board has been designed between DESY and the University of Wuppertal in order to automatize the testing procedure of individual chips on BGA packaging \cite{AHCALMain2016_Amine}. This new board has already been commissioned in July 2017 and is being used currently for the next generation AHCAL prototype (around 650 chips).
 
 \section{Commissioning procedure}
 
@@ -85,7 +85,7 @@ An AHCAL board or HBU is dotted of 144 channels, each equipped with a plastic ti
   \end{tabular}
 \end{table}
 
-\subsection{First Characterisation of the gain}
+\subsection{First Characterization of the gain}
 
 In this section, the SiPM gain is related to the ADC value between two peaks of a single pixel spectra where individual pixels, in a relative small number (~10-15 pixels), are fired by an integrated LED system. This value is proportional to the high voltage applied to the SiPM and can be also modified by adjusting a feedback capacitor to the SPIROC2B high gain pre-amplifier. Before starting the gain measurement procedure, a holdscan needs to be performed. This procedure determines the necessary Hold time bits to set in the slow control configuration to sample the maximum of the signal. The procedure is simple, a fixed amplitude signal is injected via the LED integrated system to all the channels while repeating this for several Hold time values. The analysis enables to reconstruct the signal shape after the slow shaper and thus determine the Hold time necessary per chip as shown in figure \ref{fig:Holdscan}.
 
