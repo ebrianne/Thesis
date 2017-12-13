@@ -403,47 +403,49 @@ void MakePlots()
 
   //----------------------------------------------------------------------------
 
+  int PointEnergy = 3;
+
   TLegend *leg99 = new TLegend(0.2, 0.60, 0.4, 0.9);
-  leg99->SetHeader("Mokka ILD_o1_v06, v17-11-p03, Hit level, 50 GeV K_{0}^{L}, cos(#theta) < 0.7");
+  leg99->SetHeader("Mokka ILD_o1_v06, v17-11-p03, Hit level, 30 GeV K_{0}^{L}, cos(#theta) < 0.7");
   leg99->SetBorderSize(0);
   leg99->SetTextSize(0.028);
-  leg99->AddEntry(hEnergyHits[5][0], "1 ns timing cut", "l");
-  leg99->AddEntry(hEnergyHits[5][3], "5 ns timing cut", "l");
-  leg99->AddEntry(hEnergyHits[5][7], "20 ns timing cut", "l");
-  leg99->AddEntry(hEnergyHits[5][10], "50 ns timing cut", "l");
-  leg99->AddEntry(hEnergyHits[5][12], "100 ns timing cut", "l");
+  leg99->AddEntry(hEnergyHits[PointEnergy][0], "1 ns timing cut", "l");
+  leg99->AddEntry(hEnergyHits[PointEnergy][3], "5 ns timing cut", "l");
+  leg99->AddEntry(hEnergyHits[PointEnergy][7], "20 ns timing cut", "l");
+  leg99->AddEntry(hEnergyHits[PointEnergy][10], "50 ns timing cut", "l");
+  leg99->AddEntry(hEnergyHits[PointEnergy][12], "100 ns timing cut", "l");
 
   TCanvas *c99 = new TCanvas("c99", "Superposition Shower Hit Energies 50 GeV time cuts", 800, 600);
   // gPad->SetLogy();
 
-  hEnergyHits[5][0]->SetLineColor(kBlack);
-  hEnergyHits[5][0]->SetLineWidth(2);
-  hEnergyHits[5][0]->SetFillStyle(0);
-  hEnergyHits[5][0]->Draw();
-  hEnergyHits[5][0]->GetXaxis()->SetTitle("Energy [GeV]");
-  hEnergyHits[5][0]->GetYaxis()->SetTitle("Normalized events");
-  hEnergyHits[5][0]->GetXaxis()->SetRangeUser(0, 80);
-  hEnergyHits[5][0]->GetYaxis()->SetRangeUser(0, 0.1);
+  hEnergyHits[PointEnergy][0]->SetLineColor(kBlack);
+  hEnergyHits[PointEnergy][0]->SetLineWidth(2);
+  hEnergyHits[PointEnergy][0]->SetFillStyle(0);
+  hEnergyHits[PointEnergy][0]->Draw();
+  hEnergyHits[PointEnergy][0]->GetXaxis()->SetTitle("Energy [GeV]");
+  hEnergyHits[PointEnergy][0]->GetYaxis()->SetTitle("Normalized events");
+  hEnergyHits[PointEnergy][0]->GetXaxis()->SetRangeUser(0, 80);
+  hEnergyHits[PointEnergy][0]->GetYaxis()->SetRangeUser(0, 0.1);
 
-  hEnergyHits[5][3]->SetLineColor(kRed);
-  hEnergyHits[5][3]->SetLineWidth(2);
-  hEnergyHits[5][3]->SetFillStyle(0);
-  hEnergyHits[5][3]->Draw("same");
+  hEnergyHits[PointEnergy][3]->SetLineColor(kRed);
+  hEnergyHits[PointEnergy][3]->SetLineWidth(2);
+  hEnergyHits[PointEnergy][3]->SetFillStyle(0);
+  hEnergyHits[PointEnergy][3]->Draw("same");
 
-  hEnergyHits[5][7]->SetLineColor(kBlue);
-  hEnergyHits[5][7]->SetLineWidth(2);
-  hEnergyHits[5][7]->SetFillStyle(0);
-  hEnergyHits[5][7]->Draw("same");
+  hEnergyHits[PointEnergy][7]->SetLineColor(kBlue);
+  hEnergyHits[PointEnergy][7]->SetLineWidth(2);
+  hEnergyHits[PointEnergy][7]->SetFillStyle(0);
+  hEnergyHits[PointEnergy][7]->Draw("same");
 
-  hEnergyHits[5][10]->SetLineColor(kGreen);
-  hEnergyHits[5][10]->SetLineWidth(2);
-  hEnergyHits[5][10]->SetFillStyle(0);
-  hEnergyHits[5][10]->Draw("same");
+  hEnergyHits[PointEnergy][10]->SetLineColor(kGreen);
+  hEnergyHits[PointEnergy][10]->SetLineWidth(2);
+  hEnergyHits[PointEnergy][10]->SetFillStyle(0);
+  hEnergyHits[PointEnergy][10]->Draw("same");
 
-  hEnergyHits[5][12]->SetLineColor(kOrange);
-  hEnergyHits[5][12]->SetLineWidth(2);
-  hEnergyHits[5][12]->SetFillStyle(0);
-  hEnergyHits[5][12]->Draw("same");
+  hEnergyHits[PointEnergy][12]->SetLineColor(kOrange);
+  hEnergyHits[PointEnergy][12]->SetLineWidth(2);
+  hEnergyHits[PointEnergy][12]->SetFillStyle(0);
+  hEnergyHits[PointEnergy][12]->Draw("same");
   leg99->Draw("same");
 
   c99->SaveAs("Plots/HitEnergyHisto_50GeV_TimeCuts_Smearing3.pdf");
@@ -455,61 +457,61 @@ void MakePlots()
   TLegend *leg13 = new TLegend(0.6, 0.55, 0.9, 0.85);
   leg13->SetBorderSize(0);
   leg13->SetTextSize(0.04);
-  leg13->AddEntry(hRadialProfile[5][12], "50 GeV K_{0}^{L}, 100 ns", "l");
-  leg13->AddEntry(hRadialProfile[5][5], "50 GeV K_{0}^{L}, 10 ns", "l");
-  leg13->AddEntry(hRadialProfile[5][3], "50 GeV K_{0}^{L}, 5 ns", "l");
-  leg13->AddEntry(hRadialProfile[5][0], "50 GeV K_{0}^{L}, 1 ns", "l");
+  leg13->AddEntry(hRadialProfile[PointEnergy][12], "30 GeV K_{0}^{L}, 100 ns", "l");
+  leg13->AddEntry(hRadialProfile[PointEnergy][5], "30 GeV K_{0}^{L}, 10 ns", "l");
+  leg13->AddEntry(hRadialProfile[PointEnergy][3], "30 GeV K_{0}^{L}, 5 ns", "l");
+  leg13->AddEntry(hRadialProfile[PointEnergy][0], "30 GeV K_{0}^{L}, 1 ns", "l");
 
   //Radial Ratios
-  TH1F* hRadialRatio100 = (TH1F*)hRadialProfile[5][12]->Clone("hRadialRatio100");
-  hRadialRatio100->Divide(hRadialProfile[5][12]);
+  TH1F* hRadialRatio100 = (TH1F*)hRadialProfile[PointEnergy][12]->Clone("hRadialRatio100");
+  hRadialRatio100->Divide(hRadialProfile[PointEnergy][12]);
   hRadialRatio100->SetLineColor(kGreen);
   hRadialRatio100->SetLineWidth(2);
 
-  TH1F* hRadialRatio10 = (TH1F*)hRadialProfile[5][5]->Clone("hRadialRatio10");
-  hRadialRatio10->Divide(hRadialProfile[5][12]);
+  TH1F* hRadialRatio10 = (TH1F*)hRadialProfile[PointEnergy][5]->Clone("hRadialRatio10");
+  hRadialRatio10->Divide(hRadialProfile[PointEnergy][12]);
   hRadialRatio10->SetLineColor(kBlue);
   hRadialRatio10->SetLineWidth(2);
 
-  TH1F* hRadialRatio5 = (TH1F*)hRadialProfile[5][3]->Clone("hRadialRatio5");
-  hRadialRatio5->Divide(hRadialProfile[5][12]);
+  TH1F* hRadialRatio5 = (TH1F*)hRadialProfile[PointEnergy][3]->Clone("hRadialRatio5");
+  hRadialRatio5->Divide(hRadialProfile[PointEnergy][12]);
   hRadialRatio5->SetLineColor(kRed);
   hRadialRatio5->SetLineWidth(2);
 
-  TH1F* hRadialRatio1 = (TH1F*)hRadialProfile[5][0]->Clone("hRadialRatio1");
-  hRadialRatio1->Divide(hRadialProfile[5][12]);
+  TH1F* hRadialRatio1 = (TH1F*)hRadialProfile[PointEnergy][0]->Clone("hRadialRatio1");
+  hRadialRatio1->Divide(hRadialProfile[PointEnergy][12]);
   hRadialRatio1->SetLineColor(kBlack);
   hRadialRatio1->SetLineWidth(2);
 
   TCanvas *c13;
   TPad *pad13, *pad14;
   setupPadsTopBottom(c13, "c13", "Radial Profile Overlay", pad13, pad14, sFactor, 800, 600);
-  setupAxisScalingTop(hRadialProfile[5][12], sFactor);
+  setupAxisScalingTop(hRadialProfile[PointEnergy][12], sFactor);
   setupAxisScalingBottom(hRadialRatio100, sFactor);
   pad13->cd();
   gPad->SetLogy();
-  hRadialProfile[5][12]->Scale(1. / Nevt[5] );
-  hRadialProfile[5][12]->Draw("hist");
-  hRadialProfile[5][12]->SetLineColor(kGreen);
-  hRadialProfile[5][12]->SetLineWidth(2);
-  hRadialProfile[5][12]->GetXaxis()->SetTitle("Hit radius [mm]");
-  hRadialProfile[5][12]->GetXaxis()->SetRangeUser(0, 500);
-  hRadialProfile[5][12]->GetYaxis()->SetTitle("E_{vis} [GeV/evt#timesmm^{2}]");
+  hRadialProfile[PointEnergy][12]->Scale(1. / Nevt[PointEnergy] );
+  hRadialProfile[PointEnergy][12]->Draw("hist");
+  hRadialProfile[PointEnergy][12]->SetLineColor(kGreen);
+  hRadialProfile[PointEnergy][12]->SetLineWidth(2);
+  hRadialProfile[PointEnergy][12]->GetXaxis()->SetTitle("Hit radius [mm]");
+  hRadialProfile[PointEnergy][12]->GetXaxis()->SetRangeUser(0, 500);
+  hRadialProfile[PointEnergy][12]->GetYaxis()->SetTitle("E_{vis} [GeV/evt#timesmm^{2}]");
 
-  hRadialProfile[5][5]->Scale(1. / Nevt[5] );
-  hRadialProfile[5][5]->Draw("hist same");
-  hRadialProfile[5][5]->SetLineColor(kBlue);
-  hRadialProfile[5][5]->SetLineWidth(2);
+  hRadialProfile[PointEnergy][5]->Scale(1. / Nevt[PointEnergy] );
+  hRadialProfile[PointEnergy][5]->Draw("hist same");
+  hRadialProfile[PointEnergy][5]->SetLineColor(kBlue);
+  hRadialProfile[PointEnergy][5]->SetLineWidth(2);
 
-  hRadialProfile[5][3]->Scale(1. / Nevt[5] );
-  hRadialProfile[5][3]->Draw("hist same");
-  hRadialProfile[5][3]->SetLineColor(kRed);
-  hRadialProfile[5][3]->SetLineWidth(2);
+  hRadialProfile[PointEnergy][3]->Scale(1. / Nevt[PointEnergy] );
+  hRadialProfile[PointEnergy][3]->Draw("hist same");
+  hRadialProfile[PointEnergy][3]->SetLineColor(kRed);
+  hRadialProfile[PointEnergy][3]->SetLineWidth(2);
 
-  hRadialProfile[5][0]->Scale(1. / Nevt[5] );
-  hRadialProfile[5][0]->Draw("hist same");
-  hRadialProfile[5][0]->SetLineColor(kBlack);
-  hRadialProfile[5][0]->SetLineWidth(2);
+  hRadialProfile[PointEnergy][0]->Scale(1. / Nevt[PointEnergy] );
+  hRadialProfile[PointEnergy][0]->Draw("hist same");
+  hRadialProfile[PointEnergy][0]->SetLineColor(kBlack);
+  hRadialProfile[PointEnergy][0]->SetLineWidth(2);
 
   leg13->Draw("same");
   pad14->cd();
@@ -530,55 +532,55 @@ void MakePlots()
   //----------------------------------------------------------------------------
 
   //Hits Radial Profile
-  TH1F* hHitsRadialRatio100 = (TH1F*)hHitsRadial[5][12]->Clone("hHitsRadialRatio100");
-  hHitsRadialRatio100->Divide(hHitsRadial[5][12]);
+  TH1F* hHitsRadialRatio100 = (TH1F*)hHitsRadial[PointEnergy][12]->Clone("hHitsRadialRatio100");
+  hHitsRadialRatio100->Divide(hHitsRadial[PointEnergy][12]);
   hHitsRadialRatio100->SetLineColor(kGreen);
   hHitsRadialRatio100->SetLineWidth(2);
 
-  TH1F* hHitsRadialRatio10 = (TH1F*)hHitsRadial[5][5]->Clone("hHitsRadialRatio10");
-  hHitsRadialRatio10->Divide(hHitsRadial[5][12]);
+  TH1F* hHitsRadialRatio10 = (TH1F*)hHitsRadial[PointEnergy][5]->Clone("hHitsRadialRatio10");
+  hHitsRadialRatio10->Divide(hHitsRadial[PointEnergy][12]);
   hHitsRadialRatio10->SetLineColor(kBlue);
   hHitsRadialRatio10->SetLineWidth(2);
 
-  TH1F* hHitsRadialRatio5 = (TH1F*)hHitsRadial[5][3]->Clone("hHitsRadialRatio5");
-  hHitsRadialRatio5->Divide(hHitsRadial[5][12]);
+  TH1F* hHitsRadialRatio5 = (TH1F*)hHitsRadial[PointEnergy][3]->Clone("hHitsRadialRatio5");
+  hHitsRadialRatio5->Divide(hHitsRadial[PointEnergy][12]);
   hHitsRadialRatio5->SetLineColor(kRed);
   hHitsRadialRatio5->SetLineWidth(2);
 
-  TH1F* hHitsRadialRatio1 = (TH1F*)hHitsRadial[5][0]->Clone("hHitsRadialRatio1");
-  hHitsRadialRatio1->Divide(hHitsRadial[5][12]);
+  TH1F* hHitsRadialRatio1 = (TH1F*)hHitsRadial[PointEnergy][0]->Clone("hHitsRadialRatio1");
+  hHitsRadialRatio1->Divide(hHitsRadial[PointEnergy][12]);
   hHitsRadialRatio1->SetLineColor(kBlack);
   hHitsRadialRatio1->SetLineWidth(2);
 
   TCanvas *c14;
   TPad *pad15, *pad16;
   setupPadsTopBottom(c14, "c14", "Hits Radial Profile Overlay", pad15, pad16, sFactor, 800, 600);
-  setupAxisScalingTop(hHitsRadial[5][12], sFactor);
+  setupAxisScalingTop(hHitsRadial[PointEnergy][12], sFactor);
   setupAxisScalingBottom(hHitsRadialRatio100, sFactor);
   pad15->cd();
   gPad->SetLogy();
-  hHitsRadial[5][12]->Scale(1. / Nevt[5] );
-  hHitsRadial[5][12]->Draw("hist");
-  hHitsRadial[5][12]->SetLineColor(kGreen);
-  hHitsRadial[5][12]->SetLineWidth(2);
-  hHitsRadial[5][12]->GetXaxis()->SetTitle("Hit radius [mm]");
-  hHitsRadial[5][12]->GetXaxis()->SetRangeUser(0, 500);
-  hHitsRadial[5][12]->GetYaxis()->SetTitle("N_{hits} [1/evt#timesmm^{2}]");
+  hHitsRadial[PointEnergy][12]->Scale(1. / Nevt[PointEnergy] );
+  hHitsRadial[PointEnergy][12]->Draw("hist");
+  hHitsRadial[PointEnergy][12]->SetLineColor(kGreen);
+  hHitsRadial[PointEnergy][12]->SetLineWidth(2);
+  hHitsRadial[PointEnergy][12]->GetXaxis()->SetTitle("Hit radius [mm]");
+  hHitsRadial[PointEnergy][12]->GetXaxis()->SetRangeUser(0, 500);
+  hHitsRadial[PointEnergy][12]->GetYaxis()->SetTitle("N_{hits} [1/evt#timesmm^{2}]");
 
-  hHitsRadial[5][5]->Scale( 1./ Nevt[5] );
-  hHitsRadial[5][5]->Draw("hist same");
-  hHitsRadial[5][5]->SetLineColor(kBlue);
-  hHitsRadial[5][5]->SetLineWidth(2);
+  hHitsRadial[PointEnergy][5]->Scale( 1./ Nevt[PointEnergy] );
+  hHitsRadial[PointEnergy][5]->Draw("hist same");
+  hHitsRadial[PointEnergy][5]->SetLineColor(kBlue);
+  hHitsRadial[PointEnergy][5]->SetLineWidth(2);
 
-  hHitsRadial[5][3]->Scale( 1./ Nevt[5] );
-  hHitsRadial[5][3]->Draw("hist same");
-  hHitsRadial[5][3]->SetLineColor(kRed);
-  hHitsRadial[5][3]->SetLineWidth(2);
+  hHitsRadial[PointEnergy][3]->Scale( 1./ Nevt[PointEnergy] );
+  hHitsRadial[PointEnergy][3]->Draw("hist same");
+  hHitsRadial[PointEnergy][3]->SetLineColor(kRed);
+  hHitsRadial[PointEnergy][3]->SetLineWidth(2);
 
-  hHitsRadial[5][0]->Scale( 1./ Nevt[5] );
-  hHitsRadial[5][0]->Draw("hist same");
-  hHitsRadial[5][0]->SetLineColor(kBlack);
-  hHitsRadial[5][0]->SetLineWidth(2);
+  hHitsRadial[PointEnergy][0]->Scale( 1./ Nevt[PointEnergy] );
+  hHitsRadial[PointEnergy][0]->Draw("hist same");
+  hHitsRadial[PointEnergy][0]->SetLineColor(kBlack);
+  hHitsRadial[PointEnergy][0]->SetLineWidth(2);
 
   leg13->Draw("same");
   pad16->cd();
@@ -601,36 +603,36 @@ void MakePlots()
   TLegend *leg14 = new TLegend(0.65, 0.65, 0.85, 0.85);
   leg14->SetBorderSize(0);
   leg14->SetTextSize(0.03);
-  leg14->AddEntry(hwRadius[5][12], "50 GeV K_{0}^{L}, 100 ns", "l");
-  leg14->AddEntry(hwRadius[5][5], "50 GeV K_{0}^{L}, 10 ns", "l");
-  leg14->AddEntry(hwRadius[5][3], "50 GeV K_{0}^{L}, 5 ns", "l");
-  leg14->AddEntry(hwRadius[5][0], "50 GeV K_{0}^{L}, 1 ns", "l");
+  leg14->AddEntry(hwRadius[PointEnergy][12], "30 GeV K_{0}^{L}, 100 ns", "l");
+  leg14->AddEntry(hwRadius[PointEnergy][5], "30 GeV K_{0}^{L}, 10 ns", "l");
+  leg14->AddEntry(hwRadius[PointEnergy][3], "30 GeV K_{0}^{L}, 5 ns", "l");
+  leg14->AddEntry(hwRadius[PointEnergy][0], "30 GeV K_{0}^{L}, 1 ns", "l");
 
   TCanvas *c15 = new TCanvas("c15", "Shower Radius", 800, 600);
   // gPad->SetLogy();
-  hwRadius[5][12]->Scale( 1./ hwRadius[5][12]->GetEntries() );
-  hwRadius[5][12]->Draw("hist");
-  hwRadius[5][12]->GetXaxis()->SetTitle("Shower Radius [mm]");
-  hwRadius[5][12]->GetYaxis()->SetTitle("Normalised events");
-  hwRadius[5][12]->GetYaxis()->SetRangeUser(0, 0.08);
-  hwRadius[5][12]->GetXaxis()->SetRangeUser(0, 600);
-  hwRadius[5][12]->SetLineColor(kGreen);
-  hwRadius[5][12]->SetLineWidth(2);
+  hwRadius[PointEnergy][12]->Scale( 1./ hwRadius[PointEnergy][12]->GetEntries() );
+  hwRadius[PointEnergy][12]->Draw("hist");
+  hwRadius[PointEnergy][12]->GetXaxis()->SetTitle("Shower Radius [mm]");
+  hwRadius[PointEnergy][12]->GetYaxis()->SetTitle("Normalised events");
+  hwRadius[PointEnergy][12]->GetYaxis()->SetRangeUser(0, 0.08);
+  hwRadius[PointEnergy][12]->GetXaxis()->SetRangeUser(0, 600);
+  hwRadius[PointEnergy][12]->SetLineColor(kGreen);
+  hwRadius[PointEnergy][12]->SetLineWidth(2);
 
-  hwRadius[5][5]->Scale( 1./ hwRadius[5][5]->GetEntries() );
-  hwRadius[5][5]->Draw("hist same");
-  hwRadius[5][5]->SetLineColor(kBlue);
-  hwRadius[5][5]->SetLineWidth(2);
+  hwRadius[PointEnergy][5]->Scale( 1./ hwRadius[PointEnergy][5]->GetEntries() );
+  hwRadius[PointEnergy][5]->Draw("hist same");
+  hwRadius[PointEnergy][5]->SetLineColor(kBlue);
+  hwRadius[PointEnergy][5]->SetLineWidth(2);
 
-  hwRadius[5][3]->Scale( 1./ hwRadius[5][3]->GetEntries() );
-  hwRadius[5][3]->Draw("hist same");
-  hwRadius[5][3]->SetLineColor(kRed);
-  hwRadius[5][3]->SetLineWidth(2);
+  hwRadius[PointEnergy][3]->Scale( 1./ hwRadius[PointEnergy][3]->GetEntries() );
+  hwRadius[PointEnergy][3]->Draw("hist same");
+  hwRadius[PointEnergy][3]->SetLineColor(kRed);
+  hwRadius[PointEnergy][3]->SetLineWidth(2);
 
-  hwRadius[5][0]->Scale( 1./ hwRadius[5][0]->GetEntries() );
-  hwRadius[5][0]->Draw("hist same");
-  hwRadius[5][0]->SetLineColor(kBlack);
-  hwRadius[5][0]->SetLineWidth(2);
+  hwRadius[PointEnergy][0]->Scale( 1./ hwRadius[PointEnergy][0]->GetEntries() );
+  hwRadius[PointEnergy][0]->Draw("hist same");
+  hwRadius[PointEnergy][0]->SetLineColor(kBlack);
+  hwRadius[PointEnergy][0]->SetLineWidth(2);
 
   leg14->Draw("same");
 

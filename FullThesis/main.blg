@@ -1,0 +1,90 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: chap1/chap1_Theo.aux
+A level-1 auxiliary file: chap2/chap2_ILC.aux
+A level-1 auxiliary file: chap2/chap2_PFA.aux
+A level-1 auxiliary file: chap3/chap3_CALICE_Detectors.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Simulations.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Commi.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_EnergyCalib.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part1.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part2.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part3.aux
+A level-1 auxiliary file: chap6/chap6_intro.aux
+A level-1 auxiliary file: chap6/chap6_ILD.aux
+A level-1 auxiliary file: chap6/chap6_conclusion.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: biblio.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: Appendixes/EvtSelection.aux
+A level-1 auxiliary file: Appendixes/ValidationSim.aux
+A level-1 auxiliary file: Appendixes/Noise.aux
+A level-1 auxiliary file: Appendixes/ErrorTDCCalib.aux
+A level-1 auxiliary file: Appendixes/MCParamnHits.aux
+A level-1 auxiliary file: Appendixes/RejectChips.aux
+A level-1 auxiliary file: Appendixes/SCCan28.aux
+Database file #1: biblio.bib
+Warning--entry type for "ILCSoftPortal" isn't style-file defined
+--line 47 of file biblio.bib
+Warning--entry type for "OmegaWeb" isn't style-file defined
+--line 454 of file biblio.bib
+Warning--entry type for "GithubTB" isn't style-file defined
+--line 459 of file biblio.bib
+Warning--entry type for "H2Beamline" isn't style-file defined
+--line 483 of file biblio.bib
+Warning--I didn't find a database entry for ""
+Warning--empty journal in Adloff2013
+Warning--empty year in Adloff2013
+Warning--empty journal in Heikkinen2003
+Warning--empty year in Heikkinen2003
+Warning--empty journal in Folger2003
+Warning--empty year in Folger2003
+Warning--empty journal in Benaglia2016
+Warning--empty journal in Jeans2015
+You've used 39 entries,
+            1876 wiz_defined-function locations,
+            722 strings with 9539 characters,
+and the built_in function-call counts, 7362 in all, are:
+= -- 718
+> -- 218
+< -- 0
++ -- 95
+- -- 56
+* -- 421
+:= -- 1036
+add.period$ -- 37
+call.type$ -- 39
+change.case$ -- 38
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 423
+empty$ -- 792
+format.name$ -- 56
+if$ -- 1839
+int.to.chr$ -- 0
+int.to.str$ -- 39
+missing$ -- 25
+newline$ -- 125
+num.names$ -- 35
+pop$ -- 155
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 291
+stack$ -- 0
+substring$ -- 285
+swap$ -- 147
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 8
+while$ -- 57
+width$ -- 41
+write$ -- 338
+(There were 13 warnings)

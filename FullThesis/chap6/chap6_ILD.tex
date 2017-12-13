@@ -1,11 +1,12 @@
 %!TEX root = ../main.tex
 \section{Influence of time cuts on hadronic showers}
+\label{sec:ILDTiming}
 
 In this section, a study of timing cuts on hadronic shower is performed. The goal of this study is to assess the influence of timing cuts on the properties of hadronic showers as for example the width of the shower as well as the needed time resolution. The study will be divided in 2 parts, the first part assuming a perfect time resolution and the second part assuming time resolution for different cases.
 
 \subsection{Modification of timing window in ILDCaloDigi}
 
-Timing of hits is registered in a very simplified way as explained in \ref{}. The modification of the time window (ranging from 1 ns to 100 ns) is performed during the reconstruction for different simulated \kzeroL energies (ranging from 5 to 90 GeV).
+Timing of hits is registered in a very simplified way as explained in \ref{subsec:ILDDigiCalo}. The modification of the time window (ranging from 1 ns to 100 ns) is performed during the reconstruction for different simulated \kzeroL{} energies (ranging from 5 to 90 GeV).
 
 \subsection{Effects of calibration constants and Pandora constants}
 
@@ -25,9 +26,9 @@ Concerning the energy resolution all the curves are very similar and are as expe
     \caption{Cluster hit linearity curve} \label{fig:linhits}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \raisebox{8ex}{\includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits}}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits}
     \caption{Cluster hit resolution curve} \label{fig:resohits}
   \end{subfigure}
   \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the cluster hit level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
@@ -47,9 +48,9 @@ For the resolution curves, one can see a rise of the resolution at high energies
     \caption{PFO linearity curve} \label{fig:linpfo}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.45\textwidth}
     \centering
-    \raisebox{8ex}{\includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO}}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO}
     \caption{PFO resolution curve} \label{fig:resopfo}
   \end{subfigure}
   \caption{\subref{fig:linhits}) The top plot shows the mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} function of the simulated energy $E_{initial}$ for different constant parameters used in the reconstruction at the PFO level. The bottom plot shows the relative difference of the different curves to the line $x = y$. \subref{fig:resohits}) The plot shows the relative resolution RMS$_{90}$/Mean$_{90}$ for different constant parameters used in the reconstruction function of the energy. The blue curve uses the standard calibration, the black curve uses a modified set of parameters using energy truncation and no SC, the red curve uses constant parameters after recalibration and the green curve uses the same parameters as the red curve with non-linearity correction. The error bars represent statistical uncertainties.}
@@ -133,6 +134,7 @@ The figures shows that the second most energetic cluster has mostly an energy be
 One interesting point though would be the investigation of timing cuts in the case of overlapping showers in the calorimeter where timing could have the potential to improve separation between showers.
 
 \subsubsection{On Monte-Carlo level}
+\label{sec:MCLevelILDTiming}
 
 The following section present results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed at the calorimeter hit level. Several shower observables were looked at as a function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL. The different time cuts used are: 1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70 and \SI{100}{\nano\second}.
 
@@ -158,7 +160,7 @@ The figure \ref{fig:resoRelativeNoSmearing} shows the relative impact on the ene
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerReso_TimeCuts_noSmearing}
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerReso_TimeCuts_noSmearing}
   \caption{Relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut. The error bars represent the statistical uncertainty.} \label{fig:resoRelativeNoSmearing}
 \end{figure}
 
@@ -177,7 +179,7 @@ The main part of the energy density is situated in the core within few centimete
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing}
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing}
   \caption{The top plot shows the radial profile of a 50 \GeV hadronic shower overlaid for different timing cuts. The bottom plot shows the ratio of the histograms to \SI{100}{\nano\second} radial profile.} \label{fig:RadialProfNoSmearing}
 \end{figure}
 
@@ -188,31 +190,26 @@ Another aspect looked at was the influence of timing cut on the shower width <R>
 \end{equation}
 \vspace{1ex}
 
-The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmearing} show the shower width <R> for different particle energies as function of the timing cut. It shows that a tight timing cut at\SI{1}{\nano\second} can reduce the shower width up to around 70\%. One can observe also that the shower width at 5 and 10 \GeV are behaving differently than higher than 10 \GeV. This may come from the transition from the Bertini model (BERT) to the quark string gluon model (QGSP) in the physics list in this energy range. Looking at the shower width in absolute value, hadronic showers are wider at lower energies ($\sim$\SI{180}{\milli\meter} for 5 \GeV) certainly due to the magnetic field. Applying a timing cut removes more and more hits from the halo of the shower, thus reducing its size up to a point where it reaches the core of the shower at $\sim$\SI{20}{\nano\second} timing cut where the shower is around a couple of tiles in size. At this point, the shower width behaves similarly for all energies by reducing gradually the size of the core.
+The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmearing} show the shower width <R> for different particle energies as function of the timing cut. It shows that a tight timing cut at\SI{1}{\nano\second} can reduce the shower width up to around 70\%. One can observe also that the shower width at 5 and 10 \GeV are behaving differently than higher than 10 \GeV. This may come from the transition from the Bertini model (BERT) to the quark string gluon model (QGSP) in the physics list in this energy range. Looking at the shower width in absolute value, hadronic showers are wider at lower energies ($\sim$\SI{180}{\milli\meter} for 5 GeV) certainly due to the magnetic field. Applying a timing cut removes more and more hits from the halo of the shower, thus reducing its size up to a point where it reaches the core of the shower at $\sim$\SI{20}{\nano\second} timing cut where the shower is around a couple of tiles in size. At this point, the shower width behaves similarly for all energies by reducing gradually the size of the core.
 
 \begin{figure}[htbp!]
   \centering
-  \begin{minipage}{.45\textwidth}
-    \begin{subfigure}[t]{0.7\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing}
-      \caption{} \label{fig:ShowerWidthNoSmearing}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.7\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing}
-      \caption{} \label{fig:ShowerWidthAbsoNoSmearing}
-    \end{subfigure}
-  \end{minipage}
-  \begin{minipage}{.45\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
-    \begin{subfigure}[t]{1\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing}
-      \vspace{-6ex}
-      \caption{}  \label{fig:ShowerWidthResoNoSmearing}
-    \end{subfigure}
-  \end{minipage}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing}
+    \caption{} \label{fig:ShowerWidthNoSmearing}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing}
+    \caption{} \label{fig:ShowerWidthAbsoNoSmearing}
+  \end{subfigure}
+  \centering
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing}
+    \caption{}  \label{fig:ShowerWidthResoNoSmearing}
+  \end{subfigure}
   \caption{\subref{fig:ShowerWidthNoSmearing}) The plot represents the mean of the shower width <R> as function of timing cut for different particle energies. The y-axis has been normalized to the shower width at \SI{100}{\nano\second}. The shower width decreases steadily as function of the timing cut, indicating that the shower gets narrower. \subref{fig:ShowerWidthAbsoNoSmearing}) The plots represents the absolute value of the mean shower width <R> in \SI{}{\milli\meter} as function of the timing cut. This shows that the low energy showers are generally wider certainly due to the magnetic field. And under \SI{20}{\nano\second}, the width is very similar indicating the core of the shower is fairly similar for all energies. \subref{fig:ShowerWidthResoNoSmearing}) The top plot is the energy resolution as function of shower width for different particle energies. Each point represents a timing cut from \SI{1}{\nano\second} ns to \SI{100}{\nano\second} from left to right. The bottom plot is the loss of resolution compared to the gain in shower width size.}
 \end{figure}
 
@@ -222,7 +219,7 @@ This study shows that the use of timing cuts give a great advantage in order to 
 
 \subsubsection{In a realistic scenario}
 
-In this section, a similar study is performed as in section \ref{}. Instead it assumes realistic time resolutions based on the current electronic technology. The table \ref{table:TimeReso} sums up the investigated time resolutions. The same selection is applied as in the previous section.
+In this section, a similar study is performed as in previous section \ref{sec:MCLevelILDTiming}. Instead it assumes realistic time resolutions based on the current electronic technology. The table \ref{table:TimeReso} sums up the investigated time resolutions. The same selection is applied as in the previous section.
 
 \begin{table}[htb!]
   \centering
@@ -240,32 +237,27 @@ In this section, a similar study is performed as in section \ref{}. Instead it a
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{../Thesis_Plots/ILD/TimeDistribution/Plots/ComparisonSmearingTimingAHCAL}
-  \caption{.} \label{fig:SmearingAHCAL}
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/TimeDistribution/Plots/ComparisonSmearingTimingAHCAL}
+  \caption{Distribution of the time of all hits in the AHCAL with different values used for time smearing.} \label{fig:SmearingAHCAL}
 \end{figure}
 
-The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as explained in section \ref{}. The ideal time resolution is in the order of the time scale of the development of hadronic showers. And finally, the ILC extrapolated is obtained by assuming a linear extrapolation from the testbeam time resolution with a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (x20 faster) as explained in \ref{}.\\
+The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as shown in section \ref{subsec:Electron_Final}. The ideal time resolution is in the order of the time scale of the development of hadronic showers. And finally, the ILC extrapolated is obtained by assuming a linear extrapolation from the testbeam time resolution with a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (x20 faster) as explained in \ref{}.\\
 
 \begin{figure}[htbp!]
   \centering
-  \begin{minipage}{1\textwidth}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1}
-      \vspace{-6ex}
-      \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Lin0.4ns}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2}
-      \vspace{-6ex}
-      \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Lin1ns}
-    \end{subfigure}
-  \end{minipage}
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1}
+    \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Lin0.4ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2}
+    \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Lin1ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3}
-    \vspace{-6ex}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:Lin8ns}
   \end{subfigure}
   \caption{Linearity curves for different assumed time resolutions (0.4 to 8 ns from left to right). The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.}
@@ -275,19 +267,17 @@ Looking at the impact on linearity and energy resolution, time resolution in the
 
 \begin{figure}[htbp!]
   \centering
-  \begin{minipage}{1\textwidth}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1}
-      \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Reso0.4ns}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2}
-      \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Reso1ns}
-    \end{subfigure}
-  \end{minipage}
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1}
+    \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:Reso0.4ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2}
+    \caption{\SI{1}{\nano\second} time smearing.} \label{fig:Reso1ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:Reso8ns}
@@ -299,24 +289,19 @@ Looking back again at the resolution as function of the shower width, one can no
 
 \begin{figure}[htbp!]
   \centering
-  \begin{minipage}{1\textwidth}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1}
-      \vspace{-6ex}
-      \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:WidthReso0.4ns}
-    \end{subfigure}
-    \begin{subfigure}[t]{0.5\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2}
-      \vspace{-6ex}
-      \caption{\SI{1}{\nano\second} time smearing.} \label{fig:WidthReso1ns}
-    \end{subfigure}
-  \end{minipage}
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1}
+    \caption{\SI{0.4}{\nano\second} time smearing.} \label{fig:WidthReso0.4ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2}
+    \caption{\SI{1}{\nano\second} time smearing.} \label{fig:WidthReso1ns}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.48\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3}
-    \vspace{-6ex}
     \caption{\SI{8}{\nano\second} time smearing.}  \label{fig:WidthReso8ns}
   \end{subfigure}
   \caption{Energy resolution as function of the shower width for different assumed time resolutions (0.4 to 8 ns from left to right). The top plot shows the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV where each point is representing a timing cut as function of the shower width. The bottom plot shows the deviation to the nominal resolution at 100 ns as a function of the shower width.}

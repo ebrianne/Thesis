@@ -1,0 +1,175 @@
+\begin{thebibliography}{10}
+
+\bibitem{Agostinelli2003}
+S.~Agostinelli and al., ``Geant4 -- a simulation toolkit,'' {\em Nuclear
+  Instruments and Methods in Physics Research Section A: Accelerators,
+  Spectrometers, Detectors and Associated Equipment}, vol.~506, no.~3, pp.~250
+  -- 303, 2003.
+
+\bibitem{Freitas2003}
+H.~V. P.~Mora~de Freitas, ``Detector simulation with mokka/geant4 : Present and
+  future,'' software, Laboratoire Leprince Ringuet CNRS/IN2P3 - Ecole
+  Polytechnique 91128 Palaiseau, France, 2003.
+
+\bibitem{Frank2014}
+M.~Frank, F.~Gaede, C.~Grefe, and P.~Mato, ``Dd4hep: A detector description
+  toolkit for high energy physics experiments,'' {\em Journal of Physics:
+  Conference Series}, vol.~513, no.~2, p.~022010, 2014.
+
+\bibitem{Ivanchenko2010}
+V.~Ivanchenko and al., ``{Recent Improvements in Geant4 Electromagnetic Physics
+  Models and Interfaces},'' in {\em {3th Monte Carlo Conference MC2010}},
+  vol.~2, (Tokyo, Japan), pp.~898--903, Oct. 2010.
+
+\bibitem{Apostolakis2015}
+J.~Apostolakis and al., ``Progress in geant4 electromagnetic physics modeling
+  and validation,'' in {\em CHEP2015}, 2015.
+
+\bibitem{Neubueser2016}
+C.~Neubueser, {\em {C}omparison of {T}wo {H}ighly {G}ranular {H}adronic
+  {C}alorimeter {C}oncepts}.
+\newblock Dr., Universitat Hamburg, Hamburg, 2016.
+\newblock Universitat Hamburg, Diss., 2016.
+
+\bibitem{Adloff2013}
+T.~C. Collaboration, ``Validation of geant4 monte carlo models with a highly
+  granular scintillator-steel hadron calorimeter,''
+
+\bibitem{Bilki2015}
+T.~C. Collaboration, ``Pion and proton showers in the calice scintillator-steel
+  analogue hadron calorimeter,'' {\em Journal of Instrumentation}, vol.~10,
+  no.~04, p.~P04014, 2015.
+
+\bibitem{Feege2011}
+N.~Feege, {\em Low-Energetic Hadron Interactions in a Highly Granular
+  Calorimeter}.
+\newblock PhD thesis, Universitat Hamburg, 2011.
+
+\bibitem{Heikkinen2003}
+A.~Heikkinen, N.~Stepanov, and J.~P. Wellisch, ``Bertini intra-nuclear cascade
+  implementation in geant4,''
+
+\bibitem{Folger2004}
+G.~Folger, V.~N. Ivanchenko, and J.~P. Wellisch, ``The binary cascade,'' {\em
+  The European Physical Journal A - Hadrons and Nuclei}, vol.~21, pp.~407--417,
+  Sep 2004.
+
+\bibitem{Folger2003}
+G.~Folger and J.~P. Wellisch, ``String parton models in geant4,''
+
+\bibitem{2011_JINST_6_P04003}
+T.~C. collaboration, ``Electromagnetic response of a highly granular hadronic
+  calorimeter,'' {\em Journal of Instrumentation}, vol.~6, no.~04, p.~P04003,
+  2011.
+
+\bibitem{Hartbrich:2016bbz}
+O.~Hartbrich, {\em {Scintillator Calorimeters for a Future Linear Collider
+  Experiment}}.
+\newblock PhD thesis, Hasylab, DESY, Hamburg, 2016.
+
+\bibitem{OmegaWeb}
+``{Omega LAL/IN2P3 Website}.''
+
+\bibitem{AHCALMain2016_Amine}
+A.~Elkhalii, ``Design of new test-board for the spiroc2e bga package,'' {\em
+  AHCAL Main Meeting, December 2016}, 2016.
+
+\bibitem{LloydTrigger}
+L.~T.~T. Tong, ``Trigger threshold verification for the hadronic calorimeter
+  prototype for the ilc,'' {\em Summer Student Report}, 2014.
+
+\bibitem{H2Beamline}
+``{CERN North Area H2 beamline}.''
+
+\bibitem{GOVORKOV20059}
+B.~Govorkov, ``Cherenkov detectors in cherenkov's laboratory,'' {\em Nuclear
+  Instruments and Methods in Physics Research Section A: Accelerators,
+  Spectrometers, Detectors and Associated Equipment}, vol.~553, no.~1, pp.~9 --
+  17, 2005.
+\newblock Proceedings of the fifth International Workshop on Ring Imaging
+  Detectors.
+
+\bibitem{EUDET-Report-2010-02}
+{K. Gadow, E. Garutti, P. Gottlicher, M. Reinecke, F. Sefkow, M. Terwort},
+  ``Concept, realization and results of the mechanical and electronics
+  integration efforts for an analog hadronic calorimeter,'' {\em EUDET Report},
+  2010.
+
+\bibitem{GithubTB}
+``{CALICE Testbeam Github repository}.''
+
+\bibitem{FabianThesis}
+F.~Lenzen, ``Channel by channel mip-calibration of the analogue hadronic
+  calice-calorimeter,'' {\em Bachelor Thesis, Bergische Universitat Wuppertal},
+  2014.
+
+\bibitem{Benaglia2016}
+A.~Benaglia, E.~Auffray, P.~Lecoq, H.~Wenzel, and A.~Para, ``Space-time
+  development of electromagnetic and hadronic showers and perspectives for
+  novel calorimetric techniques,'' vol.~63, pp.~574--579, 04 2016.
+
+\bibitem{Hartbrich2011}
+O.~Hartbrich, ``Investigation of the time measurement capabilities of the
+  spiroc2b asic.'' DESY summer student report, 2011.
+
+\bibitem{Brianne2012}
+E.~Brianne, ``Studies of the front-end electronics of the analog hcal.'' DESY
+  summer student report, 2012.
+
+\bibitem{Laurien2016}
+S.~Laurien, ``Private communication,'' 2016.
+
+\bibitem{Hartbrich2012}
+O.~Hartbrich, ``{Commissioning and LED system tests of the engineering
+  prototype of the analog hadronic calorimeter of the CALICE collaboration},''
+  Master's thesis, Wuppertal U., Dept. Math., 2012.
+
+\bibitem{Simon2013}
+F.~Simon, C.~Soldner, and L.~Weuste, ``T3b - an experiment to measure the time
+  structure of hadronic showers,'' {\em Journal of Instrumentation}, vol.~8,
+  no.~12, p.~P12001, 2013.
+
+\bibitem{CaN026}
+T.~C. Collaboration, ``Pion showers in the calice ahcal prototype,'' {\em
+  CALICE Analysis Note 026}, 2010.
+
+\bibitem{ChristianTungsten}
+C.~Graf, ``Private communication,'' 2017.
+
+\bibitem{ILCSoftPortal}
+``{ILCSoft web portal}.''
+
+\bibitem{Gaede:2003ip}
+F.~Gaede, T.~Behnke, N.~Graf, and T.~Johnson, ``{LCIO: A Persistency framework
+  for linear collider simulation studies},'' {\em eConf}, vol.~C0303241,
+  p.~TUKT001, 2003.
+
+\bibitem{Gaede:2006pj}
+F.~Gaede, ``{Marlin and LCCD: Software tools for the ILC},'' {\em Nucl.
+  Instrum. Meth.}, vol.~A559, pp.~177--180, 2006.
+
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
+  fitting},'' {\em Nucl. Instrum. Meth.}, vol.~A262, pp.~444--450, 1987.
+
+\bibitem{Jeans2015}
+D.~Jeans and O.~Hartbrich, ``{Realistic calorimeter hit digitisation in the
+  ILDCaloDigi processor},'' 2015.
+
+\bibitem{Thomson:2009rp}
+M.~A. Thomson, ``{Particle Flow Calorimetry and the PandoraPFA Algorithm},''
+  {\em Nucl. Instrum. Meth.}, vol.~A611, pp.~25--40, 2009.
+
+\bibitem{SoftCompNew2012}
+T.~C. Collaboration, ``Hadronic energy resolution of a highly granular
+  scintillator-steel hadron calorimeter using software compensation
+  techniques,'' {\em arXiv:1207.4210v2}, 2012.
+
+\bibitem{AmbraEnergy}
+A.~Provenza, ``Private communication,'' 2017.
+
+\bibitem{CaN028}
+T.~C. Collaboration, ``A new approach to software compensation for the calice
+  ahcal,'' {\em CALICE Analysis Note 028}, 2010.
+
+\end{thebibliography}
