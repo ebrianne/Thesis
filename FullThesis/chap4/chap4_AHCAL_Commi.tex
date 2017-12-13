@@ -1,3 +1,4 @@
+%!TEX root = ../main.tex
 \chapter{Commissioning of the AHCAL technological prototype}
 
 Before every testbeam, all the electronics of the detector must be characterized. Before the full assembly, each individual chips must be tested in order to reject chips that presents bad channels or any other defects. After the assembly, each board needs to be characterized. This included the measurement of the SiPM-tile gain, the trigger threshold and noise. In this chapter, the testing of the chips and the commissioning procedure of the AHCAL will be presented.
@@ -105,7 +106,7 @@ In this section, the SiPM gain is related to the ADC value between two peaks of 
 
 After this, a first characterization of the gain can be done at nominal settings which is using a pre-amplifier value of 100 fF. For this, all channels are illuminated by the LED system over a certain range of LED voltage by steps of 100 mV in order to characterize all channels (variation in response due to LED light, tiles, SiPM). In the case of old boards, a range of 10-15 voltages are generally needed but due to improvements for the new boards on the LED integrated calibration system, SiPM quality, tile quality, a much smaller range is used. The minimum used was 3 LED voltages to characterize all the channels. An example of a single pixel spectra at 100 fF can be seen in figure \ref{fig:Gain100fF}.
 
-\subsection{Iteration}
+\subsection{Adjustment of the ADC dynamic range}
 
 The goal of this procedure is to fit the dynamic range of the SPIROC2B in ADC to the number of pixels on the SiPM to avoid any ADC saturation before SiPM saturation. This calculation gives a good order of magnitude but is still approximative due to several unknown variables such as the number of effective pixels of a SiPM or the high/low gain intercalibration factor for each channels. The targeted gain is calculated by:
 

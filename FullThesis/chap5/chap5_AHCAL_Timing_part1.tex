@@ -1,3 +1,4 @@
+%!TEX root = ../main.tex
 \phantomsection
 \addcontentsline{toc}{chapter}{Timing study of hadronic showers in the AHCAL technological prototype}
 \chapter*{Timing study of hadronic showers in the AHCAL technological prototype}
@@ -180,7 +181,7 @@ One can notice that a significant fraction of pions is present at low beam energ
 
 \section{Pion Selection}
 
-A simple selection is performed on pion events. The goal is to reject punch-through pions, muons and possible electron contamination. An \textit{Event Quality} pre-selection is performed utilizing the Cherenkov information, events with no Cherenkov ON are selected. This is only applied to data. The pion selection is based on the same variables: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$). The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the selection on the start of the pion shower. To ensure that the pion showered, the energy in the last two layers of the AHCAL must be over 1\%. And finally, to mitigate possible particle contamination from electrons, the number of hits in the two first AHCAL layer must be under 5. The distributions of each variables used in the selection are shown in figures \ref{fig:pionselection} for simulated 10 GeV and 90 GeV muons, electrons and pions.
+A simple selection is performed on pion events. The goal is to reject punch-through pions, muons and possible electron contamination. An \textit{Event Quality} pre-selection is performed utilizing the Cherenkov information, events with no Cherenkov ON are selected. This is only applied to data. The pion selection is based on the same variables: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$). The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the selection on the start of the pion shower. To ensure that the pion showered, the energy in the last two layers of the AHCAL must be over 1\%. And finally, to mitigate possible particle contamination from electrons, the number of hits in the two first AHCAL layer must be under 5. The distributions of each variables used in the selection are shown in figures \ref{fig:pionselection} for simulated 10 GeV and 90 GeV muons, electrons and pions. The selection efficiencies for beam energies between 10 and 90 GeV are shown in table \ref{table:eff_pion} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
 
 \begin{figure}[htbp!]
 	\centering
@@ -196,7 +197,7 @@ A detailed description of the selection cuts are shown in table \ref{table:pion_
 \begin{table}[htb!]
 	\centering
 	\caption{Efficiency of the pion selection for beam energies between 10 and 90 GeV.}
-	\label{table:eff_electron}
+	\label{table:eff_pion}
 	\begin{tabular}{@{} llll @{}}
 		\hline
 		\textbf{Beam Energy} & \textbf{$\epsilon_{\mu}$} & \textbf{$\epsilon_{e}$} & \textbf{$\epsilon_{\pi}$}\\
