@@ -11599,25 +11599,25 @@ void TimeCorrelations_DD4hep()
 
 void MakePlots()
 {
-  // Energy_10GeV();
-  // Radius_10GeV();
-  // Depth_10GeV();
-  //
-  // Energy_30GeV();
-  // Radius_30GeV();
-  // Depth_30GeV();
-  //
-  // Energy_50GeV();
-  // Radius_50GeV();
-  // Depth_50GeV();
-  //
-  // Energy_70GeV();
-  // Radius_70GeV();
-  // Depth_70GeV();
-  //
-  // Energy_90GeV();
-  // Radius_90GeV();
-  // Depth_90GeV();
+  Energy_10GeV();
+  Radius_10GeV();
+  Depth_10GeV();
+
+  Energy_30GeV();
+  Radius_30GeV();
+  Depth_30GeV();
+
+  Energy_50GeV();
+  Radius_50GeV();
+  Depth_50GeV();
+
+  Energy_70GeV();
+  Radius_70GeV();
+  Depth_70GeV();
+
+  Energy_90GeV();
+  Radius_90GeV();
+  Depth_90GeV();
 
   TimeCorrelations_Mokka();
   TimeCorrelations_DD4hep();

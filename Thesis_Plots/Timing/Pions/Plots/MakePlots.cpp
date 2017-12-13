@@ -8010,6 +8010,90 @@ void Variables_90GeV()
   cout << "Esum " << 90 << " " << hEsumData->GetMean() << " " << hEsum_10->GetMean() << " " << hEsum_18->GetMean() << " " << hEsum_10_DD4hep->GetMean() << " " << hEsum_18_DD4hep->GetMean() << endl;
 }
 
+void SimDepth_noSmearing()
+{
+  CaliceStyle();
+
+  TFile *f2 = new TFile("/afs/desy.de/group/flc/pool/ebrianne/Projects/AHCAL/Testbeam_July2015/Data_Analysis/Timing/Pions/50GeV/Simulation/Longitudinal_noSmearing/Rootfiles/Comparison_Depth_ShortAsymRange_noSmearing.root");
+  TProfile *pDepthSim_Pion50;
+
+  f2->GetObject("Pion_profile50", pDepthSim_Pion50);
+
+  TGraphAsymmErrors *gDepthSim_Pion50 = new TGraphAsymmErrors();
+  gDepthSim_Pion50->SetMarkerSize(1);
+  gDepthSim_Pion50->SetMarkerStyle(20);
+  gDepthSim_Pion50->SetMarkerColor(kRed);
+  gDepthSim_Pion50->SetLineColor(kRed);
+  gDepthSim_Pion50->SetFillColor(kRed);
+  gDepthSim_Pion50->SetFillStyle(3001);
+
+  int ipoint = 0;
+  for(int ibin = 1; ibin < pDepthSim_Pion50->GetNbinsX(); ibin++)
+  {
+    double content = pDepthSim_Pion50->GetBinContent(ibin);
+    double Depth = pDepthSim_Pion50->GetXaxis()->GetBinCenter(ibin);
+
+    double error_low = 0.;
+    double error_up = 0.;
+
+    double error_Xtalk_low = 0.;
+    double error_Xtalk_up = 0.;
+
+    if(content == 0) continue;
+
+    double error_stat = pDepthSim_Pion50->GetBinError(ibin);
+    double error_syst = 0.01;
+    double Depth_err = pDepthSim_Pion50->GetXaxis()->GetBinWidth(ibin)/2;
+
+    gDepthSim_Pion50->SetPoint(ipoint, Depth, content);
+    gDepthSim_Pion50->SetPointError(ipoint, Depth_err, Depth_err, TMath::Sqrt(error_syst*error_syst + error_stat*error_stat + error_low*error_low + error_Xtalk_low*error_Xtalk_low), TMath::Sqrt(error_syst*error_syst + error_stat*error_stat + error_up*error_up + error_Xtalk_up*error_Xtalk_up));
+    ipoint++;
+  }
+
+  TLegend *leg2 = new TLegend(0.65, 0.65, 0.92, 0.85);
+  leg2->SetBorderSize(0);
+  leg2->SetTextSize(0.025);
+  leg2->SetHeader("Mokka");
+  leg2->AddEntry(gDepthSim_Pion50, "QGSP_BERT_HP", "pf");
+
+  TPaveText *pt2 = new TPaveText(0.20, 0.70, 0.4, 0.85, "tbNDC");
+  pt2->SetBorderSize(0);
+  pt2->SetTextColor(15);
+  pt2->SetFillColor(0);
+  pt2->SetTextSize(0.04);
+  pt2->SetTextAlign(13); //left center
+  pt2->AddText("CALICE AHCAL");
+  pt2->AddText("Work in progress");
+  pt2->AddText("50 GeV #pi^{-} - steel");
+
+  TMultiGraph *multi2 = new TMultiGraph();
+  multi2->Add(gDepthSim_Pion50);
+
+  gStyle->SetPadTopMargin(0.1);
+  gStyle->SetPadTickX(0);
+
+  TCanvas *c2 = new TCanvas("c2", "Timing vs Depth", 800, 600);
+  c2->cd();
+  multi2->Draw("APX");
+  multi2->GetXaxis()->SetTitle("Layer Position [mm]");
+  multi2->GetXaxis()->SetRangeUser(50, 850);
+  multi2->GetYaxis()->SetTitle("Time of first hit_{[-50, 200]} [ns]");
+  multi2->GetYaxis()->SetRangeUser(0, 3);
+  multi2->Draw("E3");
+  multi2->Draw("PX");
+  pt2->Draw("SAME");
+  leg2->Draw("SAME");
+  TGaxis *axis = new TGaxis(48, 3, 851, 3, 0.02, 4.17, 510, "-");
+  axis->SetLabelFont(42);
+  axis->SetLabelSize(0.04);
+  axis->SetTitleFont(42);
+  axis->SetTitleSize(0.04);
+  axis->SetTitle("#lambda_{#pi}");
+  axis->Draw();
+
+  c2->SaveAs("Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf");
+}
+
 void MakePlots()
 {
   // TimingPions_10GeV();
@@ -8033,10 +8117,12 @@ void MakePlots()
   // ComparisonData();
   // AdditionalShowerStart();
   // AdditionalShowerStart2();
-  TimeCorrelationData();
+  // TimeCorrelationData();
   //
   // Validation();
   //
   // Variables_10GeV();
   // Variables_90GeV();
+
+  SimDepth_noSmearing();
 }
