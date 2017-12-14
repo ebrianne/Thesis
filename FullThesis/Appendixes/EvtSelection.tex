@@ -2,13 +2,11 @@
 \chapter{Event selection}
 \label{appendix:evt_selection}
 
-\section{MIP selection}
-
 \begin{table}[htb!]
 	\centering
 	\caption{Selection cuts for muon runs.}
 	\label{table:muon_sel}
-	\resizebox{0.7\textwidth}{!}{%
+	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
@@ -23,18 +21,16 @@
 	}
 \end{table}
 
-\section{Electron selection}
-
 \begin{table}[htb!]
 	\centering
 	\caption{Selection cuts for each electron energies.}
 	\label{table:electron_sel}
-	\resizebox{0.7\textwidth}{!}{%
+	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
 		\hline
-		\multirow{2}{*}{Event Quality}& All & Cherenkow ON\\& All & Energy in the first 3 layers of AHCAL > 10 MIP \\
+		\multirow{2}{*}{Event Quality}& All & Cherenkov ON\\& All & Energy in the first 3 layers of AHCAL > 10 MIP \\
 		\hline
 		\multirow{9}{*}{Electron Selection}& 10 GeV & 25 < $n_{hits}$ < 75 \\& 15 GeV & 30 < $n_{hits}$ < 90 \\& 20 GeV & 40 < $n_{hits}$ < 100 \\& 30 GeV & 50 < $n_{hits}$ < 110 \\& 40 GeV & 60 < $n_{hits}$ < 120 \\& 50 GeV & 70 < $n_{hits}$ < 140 \\& All & $cog_{z}$ < 250 mm\\& All & -90 mm < $cog_{x, y}$ < 90 mm \\& All & Energy in last two layers < 1\% $E_{sum}$ \\
 		\hline
@@ -42,18 +38,16 @@
 	}
 \end{table}
 
-\section{Pion selection}
-
 \begin{table}[htb!]
 	\centering
 	\caption{Selection cuts for pions.}
 	\label{table:pion_sel}
-	\resizebox{0.7\textwidth}{!}{%
+	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
 		\hline
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
 		\hline
-		\multirow{1}{*}{Event Quality}& All & Cherenkow OFF\\
+		\multirow{1}{*}{Event Quality}& All & Cherenkov OFF\\
 		\hline
 		\multirow{3}{*}{Pion Selection}& All & $n_{hits}$ > 20 \\& All & $n_{hits}$ in the first 2 AHCAL layers < 5 \\& All & Energy in last two layers > 1\% $E_{sum}$ \\
 		\hline

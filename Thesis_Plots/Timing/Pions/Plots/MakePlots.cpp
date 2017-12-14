@@ -8094,6 +8094,634 @@ void SimDepth_noSmearing()
   c2->SaveAs("Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf");
 }
 
+void Radius_IndividualLayers()
+{
+  CaliceStyle();
+
+  //------------------- Radius --------------------------
+
+  TString rootfilename = "Rootfiles/Comparison_Radius_ShortAsymRange_IndividualLayers.root";
+
+  TFile *f3 = new TFile(rootfilename, "OPEN");
+  TProfile *pRadiusData_Pion50_Module03, *pRadiusData_Pion50_Module06;
+  TProfile *pRadiusData_Pion50_Module07, *pRadiusData_Pion50_Module10;
+  TProfile *pRadiusData_Pion50_Module13, *pRadiusData_Pion50_Module14;
+
+  f3->GetObject("Pion_profile50_Module03", pRadiusData_Pion50_Module03);
+  f3->GetObject("Pion_profile50_Module06", pRadiusData_Pion50_Module06);
+  f3->GetObject("Pion_profile50_Module07", pRadiusData_Pion50_Module07);
+  f3->GetObject("Pion_profile50_Module10", pRadiusData_Pion50_Module10);
+  f3->GetObject("Pion_profile50_Module13", pRadiusData_Pion50_Module13);
+  f3->GetObject("Pion_profile50_Module14", pRadiusData_Pion50_Module14);
+
+  TGraphErrors *gRadiusData_Pion50_Module03 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module06 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module07 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module10 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module13 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module14 = new TGraphErrors();
+
+  gRadiusData_Pion50_Module03->SetMarkerSize(1);
+  gRadiusData_Pion50_Module03->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module03->SetMarkerColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetLineColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetFillColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module06->SetMarkerSize(1);
+  gRadiusData_Pion50_Module06->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module06->SetMarkerColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetLineColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetFillColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module07->SetMarkerSize(1);
+  gRadiusData_Pion50_Module07->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module07->SetMarkerColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetLineColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetFillColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module10->SetMarkerSize(1);
+  gRadiusData_Pion50_Module10->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module10->SetMarkerColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetLineColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetFillColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module13->SetMarkerSize(1);
+  gRadiusData_Pion50_Module13->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module13->SetMarkerColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetLineColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetFillColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module14->SetMarkerSize(1);
+  gRadiusData_Pion50_Module14->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module14->SetMarkerColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetLineColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetFillColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetFillStyle(3001);
+
+  int ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module03->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module03->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module03->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module03->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module03->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module03->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module03->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module06->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module06->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module06->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module06->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module06->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module06->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module06->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module07->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module07->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module07->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module07->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module07->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module07->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module07->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module10->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module10->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module10->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module10->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module10->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module10->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module10->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module13->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module13->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module13->GetXaxis()->GetBinCenter(ibin);
+
+    // if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module13->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module13->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module13->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module13->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module14->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module14->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module14->GetXaxis()->GetBinCenter(ibin);
+
+    // if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module14->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module14->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = TMath::Sqrt(1.04*1.04 + GetSyst(radius, 50, "SSF"));
+
+    gRadiusData_Pion50_Module14->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module14->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  TMultiGraph *multi3 = new TMultiGraph();
+  multi3->Add(gRadiusData_Pion50_Module03);
+  multi3->Add(gRadiusData_Pion50_Module06);
+  multi3->Add(gRadiusData_Pion50_Module07);
+  multi3->Add(gRadiusData_Pion50_Module10);
+  multi3->Add(gRadiusData_Pion50_Module13);
+  multi3->Add(gRadiusData_Pion50_Module14);
+
+  TLegend *leg3 = new TLegend(0.22, 0.70, 0.62, 0.90);
+  leg3->SetBorderSize(0);
+  leg3->SetTextSize(0.03);
+  leg3->AddEntry(gRadiusData_Pion50_Module03, "Layer 3", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module06, "Layer 6", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module07, "Layer 7", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module10, "Layer 10", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module13, "Layer 13", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module14, "Layer 14", "pf");
+
+  TPaveText *pt3 = new TPaveText(0.68, 0.75, 0.88, 0.90, "tbNDC");
+  pt3->SetBorderSize(0);
+  pt3->SetTextColor(15);
+  pt3->SetFillColor(0);
+  pt3->SetTextSize(0.04);
+  pt3->SetTextAlign(13); //left center
+  pt3->AddText("CALICE AHCAL");
+  pt3->AddText("Work in progress");
+  pt3->AddText("50 GeV #pi-");
+
+  TCanvas *c3 = new TCanvas("c3", "Timing vs Radius Individual layers", 800, 600);
+  c3->cd();
+  multi3->Draw("APX");
+  multi3->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+  multi3->GetXaxis()->SetRangeUser(0, 380);
+  multi3->GetYaxis()->SetTitle("Time of first hit_{[-50, 200]} [ns]");
+  multi3->GetYaxis()->SetRangeUser(-5, 28);
+  pt3->Draw("SAME");
+  leg3->Draw("SAME");
+  multi3->Draw("E3");
+
+  TString canvasname = "Plots/Timing_Radius_Comparison";
+  canvasname += "_ShortAsymRange_IndividualLayers.pdf";
+
+  c3->SaveAs(canvasname);
+}
+
+void SimRadius_IndividualLayers()
+{
+  CaliceStyle();
+
+  //------------------- Radius --------------------------
+
+  TString rootfilename = "Rootfiles/Comparison_Radius_ShortAsymRange_IndividualLayers_Sim.root";
+
+  TFile *f3 = new TFile(rootfilename, "OPEN");
+  TProfile *pRadiusData_Pion50_Module03, *pRadiusData_Pion50_Module06;
+  TProfile *pRadiusData_Pion50_Module07, *pRadiusData_Pion50_Module10;
+  TProfile *pRadiusData_Pion50_Module13, *pRadiusData_Pion50_Module14;
+
+  f3->GetObject("Pion_profile50_Module03", pRadiusData_Pion50_Module03);
+  f3->GetObject("Pion_profile50_Module06", pRadiusData_Pion50_Module06);
+  f3->GetObject("Pion_profile50_Module07", pRadiusData_Pion50_Module07);
+  f3->GetObject("Pion_profile50_Module10", pRadiusData_Pion50_Module10);
+  f3->GetObject("Pion_profile50_Module13", pRadiusData_Pion50_Module13);
+  f3->GetObject("Pion_profile50_Module14", pRadiusData_Pion50_Module14);
+
+  TGraphErrors *gRadiusData_Pion50_Module03 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module06 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module07 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module10 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module13 = new TGraphErrors();
+  TGraphErrors *gRadiusData_Pion50_Module14 = new TGraphErrors();
+
+  gRadiusData_Pion50_Module03->SetMarkerSize(1);
+  gRadiusData_Pion50_Module03->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module03->SetMarkerColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetLineColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetFillColor(kRed+1);
+  gRadiusData_Pion50_Module03->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module06->SetMarkerSize(1);
+  gRadiusData_Pion50_Module06->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module06->SetMarkerColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetLineColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetFillColor(kOrange+1);
+  gRadiusData_Pion50_Module06->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module07->SetMarkerSize(1);
+  gRadiusData_Pion50_Module07->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module07->SetMarkerColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetLineColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetFillColor(kBlue+1);
+  gRadiusData_Pion50_Module07->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module10->SetMarkerSize(1);
+  gRadiusData_Pion50_Module10->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module10->SetMarkerColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetLineColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetFillColor(kYellow+1);
+  gRadiusData_Pion50_Module10->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module13->SetMarkerSize(1);
+  gRadiusData_Pion50_Module13->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module13->SetMarkerColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetLineColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetFillColor(kGreen+1);
+  gRadiusData_Pion50_Module13->SetFillStyle(3001);
+
+  gRadiusData_Pion50_Module14->SetMarkerSize(1);
+  gRadiusData_Pion50_Module14->SetMarkerStyle(20);
+  gRadiusData_Pion50_Module14->SetMarkerColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetLineColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetFillColor(kMagenta+1);
+  gRadiusData_Pion50_Module14->SetFillStyle(3001);
+
+  int ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module03->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module03->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module03->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module03->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module03->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module03->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module03->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module06->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module06->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module06->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module06->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module06->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module06->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module06->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module07->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module07->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module07->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module07->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module07->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module07->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module07->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module10->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module10->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module10->GetXaxis()->GetBinCenter(ibin);
+
+    if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module10->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module10->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module10->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module10->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module13->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module13->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module13->GetXaxis()->GetBinCenter(ibin);
+
+    // if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module13->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module13->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module13->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module13->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  ipoint = 0;
+  for(int ibin = 1; ibin < pRadiusData_Pion50_Module14->GetNbinsX(); ibin++)
+  {
+    double content = pRadiusData_Pion50_Module14->GetBinContent(ibin);
+    double radius = pRadiusData_Pion50_Module14->GetXaxis()->GetBinCenter(ibin);
+
+    // if(radius > 260) continue;
+    if(content == 0) continue;
+
+    double error_stat = pRadiusData_Pion50_Module14->GetBinError(ibin);
+    double radius_err = pRadiusData_Pion50_Module14->GetXaxis()->GetBinWidth(ibin)/2;
+
+    //Error syst
+    double error_syst = 0.5;
+
+    gRadiusData_Pion50_Module14->SetPoint(ipoint, radius, content);
+    gRadiusData_Pion50_Module14->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+    ipoint++;
+  }
+
+  TMultiGraph *multi3 = new TMultiGraph();
+  multi3->Add(gRadiusData_Pion50_Module03);
+  multi3->Add(gRadiusData_Pion50_Module06);
+  multi3->Add(gRadiusData_Pion50_Module07);
+  multi3->Add(gRadiusData_Pion50_Module10);
+  multi3->Add(gRadiusData_Pion50_Module13);
+  multi3->Add(gRadiusData_Pion50_Module14);
+
+  TLegend *leg3 = new TLegend(0.22, 0.70, 0.4, 0.90);
+  leg3->SetBorderSize(0);
+  leg3->SetTextSize(0.03);
+  leg3->AddEntry(gRadiusData_Pion50_Module03, "Layer 3", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module06, "Layer 6", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module07, "Layer 7", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module10, "Layer 10", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module13, "Layer 13", "pf");
+  leg3->AddEntry(gRadiusData_Pion50_Module14, "Layer 14", "pf");
+
+  TPaveText *pt3 = new TPaveText(0.5, 0.75, 0.88, 0.90, "tbNDC");
+  pt3->SetBorderSize(0);
+  pt3->SetTextColor(15);
+  pt3->SetFillColor(0);
+  pt3->SetTextSize(0.04);
+  pt3->SetTextAlign(13); //left center
+  pt3->AddText("CALICE AHCAL Simulation");
+  pt3->AddText("QGSP_BERT_HP");
+  pt3->AddText("50 GeV #pi-");
+
+  TCanvas *c3 = new TCanvas("c3", "Timing vs Radius Individual layers", 800, 600);
+  c3->cd();
+  multi3->Draw("APX");
+  multi3->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+  multi3->GetXaxis()->SetRangeUser(0, 380);
+  multi3->GetYaxis()->SetTitle("Time of first hit_{[-50, 200]} [ns]");
+  multi3->GetYaxis()->SetRangeUser(-5, 28);
+  pt3->Draw("SAME");
+  leg3->Draw("SAME");
+  multi3->Draw("E3");
+
+  TString canvasname = "Plots/Timing_Radius_Comparison";
+  canvasname += "_ShortAsymRange_IndividualLayers_Sim.pdf";
+
+  c3->SaveAs(canvasname);
+}
+
+void SimAdditionalShowerStart()
+{
+  CaliceStyle();
+
+  TFile *f = new TFile("Rootfiles/Radius_ShowerStart.root");
+
+  TProfile *pRadius[9];
+
+  TGraphErrors *gRadius[9];
+  TMultiGraph *multi = new TMultiGraph();
+
+  for(int i = 0; i < 9; i++)
+  {
+    f->GetObject(TString::Format("Profile_Radius_ShowerStart%02i_Module%02i", i+1, i+5), pRadius[i]);
+    pRadius[i]->SetMarkerStyle(20);
+    pRadius[i]->SetMarkerColor(i+1);
+    pRadius[i]->SetLineColor(i+1);
+    pRadius[i]->SetLineWidth(2);
+    pRadius[i]->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+    pRadius[i]->GetYaxis()->SetTitle("Time of first hit [ns]");
+
+    gRadius[i] = new TGraphErrors();
+    gRadius[i]->SetMarkerSize(1);
+    gRadius[i]->SetMarkerStyle(20);
+    gRadius[i]->SetMarkerColor(i+1);
+    gRadius[i]->SetLineColor(i+1);
+    gRadius[i]->SetFillColor(i+1);
+    gRadius[i]->SetFillStyle(3001);
+
+    int ipoint = 0;
+    for(int ibin = 1; ibin < pRadius[i]->GetNbinsX(); ibin++)
+    {
+      double content = pRadius[i]->GetBinContent(ibin);
+      double radius = pRadius[i]->GetXaxis()->GetBinCenter(ibin);
+
+      if(content == 0) continue;
+
+      if(i+5 < 11 && radius > 240) continue;
+      if(i+5 >= 11 && radius > 350) continue;
+
+      double error_stat = pRadius[i]->GetBinError(ibin);
+      double error_syst = 0.5;
+
+      double radius_err = pRadius[i]->GetXaxis()->GetBinWidth(ibin)/2;
+
+      gRadius[i]->SetPoint(ipoint, radius, content);
+      gRadius[i]->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+      ipoint++;
+    }
+
+    multi->Add(gRadius[i]);
+  }
+
+  TLegend *leg = new TLegend(0.78, 0.2, 0.90, 0.45);
+  leg->SetBorderSize(0);
+  leg->SetTextSize(0.025);
+
+  for(int i = 0; i < 9; i++)
+  leg->AddEntry(gRadius[i], TString::Format("Layer %02i", i+5), "f");
+
+  TPaveText *pt3 = new TPaveText(0.18, 0.75, 0.38, 0.90, "tbNDC");
+  pt3->SetBorderSize(0);
+  pt3->SetTextColor(15);
+  pt3->SetFillColor(0);
+  pt3->SetTextSize(0.04);
+  pt3->SetTextAlign(13); //left center
+  pt3->AddText("CALICE AHCAL Simulation");
+  pt3->AddText("QGSP_BERT_HP");
+  pt3->AddText("d_{layer-SS} = 4");
+
+  TCanvas *c1 = new TCanvas("c1", "Radius Simulation", 800, 600);
+  multi->Draw("APE3");
+  multi->GetXaxis()->SetRangeUser(0, 450);
+  multi->GetYaxis()->SetRangeUser(-1, 20);
+  multi->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+  multi->GetYaxis()->SetTitle("Time of first hit [ns]");
+  pt3->Draw("same");
+  leg->Draw("same");
+
+  c1->SaveAs("Plots/Radius_ShowerStartTruth.pdf");
+
+  //------------------------------------------------------
+
+  //Fixed Module 10
+
+  TProfile *pRadiusModule10[8];
+
+  TGraphErrors *gRadiusModule10[8];
+  TMultiGraph *multi2 = new TMultiGraph();
+
+  for(int i = 0; i < 8; i++)
+  {
+    f->GetObject(TString::Format("Profile_Radius_ShowerStart%02i_Module10", i+4), pRadiusModule10[i]);
+    pRadiusModule10[i]->SetMarkerStyle(20);
+    pRadiusModule10[i]->SetMarkerColor(i+2);
+    pRadiusModule10[i]->SetLineColor(i+2);
+    pRadiusModule10[i]->SetLineWidth(2);
+    pRadiusModule10[i]->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+    pRadiusModule10[i]->GetYaxis()->SetTitle("Time of first hit [ns]");
+
+    gRadiusModule10[i] = new TGraphErrors();
+    gRadiusModule10[i]->SetMarkerSize(1);
+    gRadiusModule10[i]->SetMarkerStyle(20);
+    gRadiusModule10[i]->SetMarkerColor(i+1);
+    gRadiusModule10[i]->SetLineColor(i+1);
+    gRadiusModule10[i]->SetFillColor(i+1);
+    gRadiusModule10[i]->SetFillStyle(3001);
+
+    int ipoint = 0;
+    for(int ibin = 1; ibin < pRadiusModule10[i]->GetNbinsX(); ibin++)
+    {
+      double content = pRadiusModule10[i]->GetBinContent(ibin);
+      double radius = pRadiusModule10[i]->GetXaxis()->GetBinCenter(ibin);
+
+      if(content == 0) continue;
+
+      if(radius > 240) continue;
+
+      double error_stat = pRadiusModule10[i]->GetBinError(ibin);
+      double error_syst = 0.5;
+
+      double radius_err = pRadiusModule10[i]->GetXaxis()->GetBinWidth(ibin)/2;
+
+      gRadiusModule10[i]->SetPoint(ipoint, radius, content);
+      gRadiusModule10[i]->SetPointError(ipoint, radius_err, TMath::Sqrt(error_stat*error_stat + error_syst*error_syst));
+      ipoint++;
+    }
+
+    multi2->Add(gRadiusModule10[i]);
+  }
+
+  TPaveText *pt = new TPaveText(0.2, 0.76, 0.40, 0.90, "tbNDC");
+  pt->SetBorderSize(0);
+  pt->SetTextColor(15);
+  pt->SetFillColor(0);
+  pt->SetTextSize(0.04);
+  pt->SetTextAlign(13); //left center
+  pt->AddText("CALICE AHCAL Simulation");
+  pt->AddText("QGSP_BERT_HP");
+  pt->AddText("Layer 10");
+
+  TLegend *leg2 = new TLegend(0.2, 0.43, 0.40, 0.70);
+  leg2->SetBorderSize(0);
+  leg2->SetTextSize(0.03);
+
+  for(int i = 0; i < 8; i++)
+  leg2->AddEntry(gRadiusModule10[i], TString::Format("Shower Start %02i", i+4), "f");
+
+  TCanvas *c2 = new TCanvas("c2", "Radius Simulation Fixed Module", 800, 600);
+  multi2->Draw("APE3");
+  multi2->GetXaxis()->SetRangeUser(0, 270);
+  multi2->GetYaxis()->SetRangeUser(-1, 20);
+  multi2->GetXaxis()->SetTitle("Distance to shower CoG [mm]");
+  multi2->GetYaxis()->SetTitle("Time of first hit [ns]");
+  pt->Draw("same");
+  leg2->Draw("same");
+
+  c2->SaveAs("Plots/Radius_ShowerStartTruth_FixedModule.pdf");
+}
+
 void MakePlots()
 {
   // TimingPions_10GeV();
@@ -8117,6 +8745,8 @@ void MakePlots()
   // ComparisonData();
   // AdditionalShowerStart();
   // AdditionalShowerStart2();
+  SimAdditionalShowerStart();
+
   // TimeCorrelationData();
   //
   // Validation();
@@ -8124,5 +8754,7 @@ void MakePlots()
   // Variables_10GeV();
   // Variables_90GeV();
 
-  SimDepth_noSmearing();
+  // SimDepth_noSmearing();
+  // Radius_IndividualLayers();
+  // SimRadius_IndividualLayers();
 }
