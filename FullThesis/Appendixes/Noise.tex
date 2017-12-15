@@ -2,9 +2,9 @@
 \chapter{Implementation of noise for timing in simulations.}
 \label{appendix:noise}
 
-Due to the nature of the detector triggering, noise can't be extracted like the previous CALICE physics prototypes with external triggers between between spills. Moreover if no validation signal is provided by the trigger scintillators, the chip removes noise events stored in memory.
+Due to the nature of the detector triggering, noise can't be extracted like the previous CALICE physics prototypes with external triggers between spills. Moreover, if no validation signal is provided by the trigger scintillators, the chip removes noise events stored in memory.
 
-One way to avoid this, one can use real events to extract noise. This is can be efficiently done with muon runs as a track in present in the calorimeter due to the muon. By removing the track and keeping remaining hits, noise can be extracted. Muon runs from 24647 to 24656 are used for noise extraction. The events are selected by the cuts shown in table \ref{table:noise_sel}.
+One way to avoid this, one can use real events to extract noise. This is can be efficiently done with muon runs as a track is present in the calorimeter due to the muon. By removing the track and keeping remaining hits, noise can be extracted. Muon runs from 24647 to 24656 are used for noise extraction. The events are selected by the cuts shown in table \ref{table:noise_sel}.
 
 \begin{table}[htb!]
 	\centering
@@ -21,7 +21,7 @@ One way to avoid this, one can use real events to extract noise. This is can be 
 	}
 \end{table}
 
-Remaining hits after track removal are considered as noise hits. Initially, the time of these are in TDC values. To get an approximation of the noise distribution, the time of a noise hit is randomly shifted by a flat distribution between 500 and 3500 ns. This acts as a time reference for these hits and thus give a quite good description of the noise time distribution. The figures \ref{fig:noise_energy} and \ref{fig:noise_time} show the energy and time distribution of noise hits.
+Remaining hits after track removal are considered as noise hits. Initially, the time of these is in TDC unit. To get an approximation of the noise distribution, the time of a noise hit is randomly shifted by a flat distribution between 500 and 3500 ns. This acts as a time reference for these hits and thus give a quite good description of the noise time distribution. The figures \ref{fig:noise_energy} and \ref{fig:noise_time} show the energy and time distribution of noise hits.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
