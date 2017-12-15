@@ -568,7 +568,7 @@ void TimingFull_AHCAL()
 	pt2->AddText(TString::Format("Mean: %2.2f, RMS: %2.3f ns", h->GetMean(), h->GetRMS()));
 	pt2->AddText(TString::Format("#mu_{1}: %2.3f ns, #sigma_{1}: %2.3f ns", Mean1, sigma1));
 	pt2->AddText(TString::Format("#mu_{2}: %2.3f ns, #sigma_{2}: %2.3f ns", Mean2, sigma2));
-	pt2->AddText(TString::Format("#chi2: %2.2f", chi2));
+	pt2->AddText(TString::Format("#chi2/ndf: %2.2f", chi2));
 
 	TCanvas *c1 = new TCanvas("c1", "Full AHCAL Timing (Muons)", 800, 600);
 	c1->cd();
