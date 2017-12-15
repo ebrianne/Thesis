@@ -356,7 +356,7 @@ void LinearityCorrection()
 	pt2->SetFillColor(0);
 	pt2->SetTextSize(0.03);
 	pt2->SetTextAlign(13); //left center
-	pt2->AddText("Module09 / Chip146 / BXID0");
+	pt2->AddText("Layer 9 / Chip146 / BXID0");
 	pt2->AddText(TString::Format("#chi2/ndf: %2.2f/%i", prof->GetFunction("fit")->GetChisquare(), prof->GetFunction("fit")->GetNDF()));
 	pt2->AddText(TString::Format("p0: %2.3f #pm %2.3f", prof->GetFunction("fit")->GetParameter(0), prof->GetFunction("fit")->GetParError(0)));
 	pt2->AddText(TString::Format("p1: %2.6f #pm %2.6f", prof->GetFunction("fit")->GetParameter(1), prof->GetFunction("fit")->GetParError(1)));
@@ -707,7 +707,7 @@ void TimingFullCorrections()
 	TCanvas *c3 = new TCanvas("c3", "Resolution per Module", 800, 600);
 	c3->cd();
 	graph_AllMem_BXID->Draw("AP");
-	graph_AllMem_BXID->GetXaxis()->SetTitle("Module");
+	graph_AllMem_BXID->GetXaxis()->SetTitle("Layer");
 	graph_AllMem_BXID->GetYaxis()->SetTitle("Resolution [ns]");
 	graph_AllMem_BXID->GetYaxis()->SetRangeUser(0, 20);
 	graph_AllMem_BXID_RMS->Draw("P same");
@@ -2397,18 +2397,18 @@ void ErrorTDCCalib()
 
 void MakePlots()
 {
-	// CorrectionOffsets();
-	// EdgeDetection();
-	// LinearityCorrection();
-	// Pedestal();
-	// TimeWalk();
-	// TimingFull_AHCAL();
-	// TimingFullCorrections();
-	// TimingNoCorrections();
-	// TimingLinCorrections();
-	// SelectionCuts();
-	// Validation();
-	// ComparisonSimData();
-	// Noise();
+	CorrectionOffsets();
+	EdgeDetection();
+	LinearityCorrection();
+	Pedestal();
+	TimeWalk();
+	TimingFull_AHCAL();
+	TimingFullCorrections();
+	TimingNoCorrections();
+	TimingLinCorrections();
+	SelectionCuts();
+	Validation();
+	ComparisonSimData();
+	Noise();
 	ErrorTDCCalib();
 }

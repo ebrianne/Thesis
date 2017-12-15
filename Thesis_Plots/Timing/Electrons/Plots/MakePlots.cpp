@@ -870,7 +870,7 @@ void Timing_AfterMuons()
   h->GetYaxis()->SetTitleOffset(1.4);
   h->GetXaxis()->SetRangeUser(-50, 50);
 
-  TPaveText *pt = new TPaveText(0.17, 0.82, 0.5, 0.92, "tbNDC");
+  TPaveText *pt = new TPaveText(0.17, 0.82, 0.35, 0.92, "tbNDC");
   pt->SetBorderSize(0);
   pt->SetTextColor(15);
   pt->SetFillColor(0);
