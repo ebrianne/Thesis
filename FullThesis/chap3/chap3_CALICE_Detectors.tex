@@ -33,6 +33,22 @@ After the validation of the calorimeter concept, a technological SiECAL prototyp
 \subsection{ScECAL}
 \label{subsec:ScECAL}
 
+The ScECAL physics prototype consists of 30 layers of scintillator and tungsten carbide absorber plates 3.5 mm thick. The total calorimeter thickness is 266 mm or 21.5 X$_0$. The layers have a transverse area of 180$\times$180 mm$^2$. Each layer is composed of four rows of 18 scintillator strips of dimensions 45$\times$10$\times$3 mm$^3$ and the strips are placed orthogonally in consecutive layers. The strips have a Wavelength-shifting Fiber (WLS) inside to guide the scintillation light to a Silicon-Photomultiplier (SiPM), a MPPC from Hamamatsu. This accounts for 2160 channels to be read out. This prototype was tested in various beams, an energy resolution of 12.6\% stochastic and 1.6\% constant term was demonstrated \cite{1707.07126v2}.
+
+To look forward, a technological prototype is now developed to accommodate the front-end electronics into the layer to reduce the amount of dead material due to cabling. An ECAL Base Unit (EBU) has 144 scintillator strips of dimensions 45$\times$5$\times$2 mm$^3$. Each layer has a transverse dimension of 180$\times$180 mm$^2$. The strips don't have a WLS fiber due to improvements in SiPM technology for blue light ($\sim$ 450 nm) detection efficiency. Several designs in SiPM and scintillator strip shape are being studied to optimize light collection. In this thesis (see section \ref{}), two designs were used in testbeam at CERN, a bottom-side readout and baseline readout design. The former uses 10k pixels surface-mounted MPPC, the latter uses 1.6k pixels MPPC placed on the side of the strips. Each SiPM are read out by an ASIC, the SPIROC2B. Each layer are equipped with four SPIROC ASICs. Each channel has also an integrated LED calibration system in order to monitor the SiPM gain.
+
+\subsubsection{SPIROC2B ASIC}
+
+The SPIROC2B (SiPM Integrated Read-Out Chip) is a dedicated ASIC to readout and digitize the signal of 36 SiPM channels. Each channel can be tuned in bias voltage from -4.5V to 0V with a resolution of around 20-200 mV. Each channel, also, has a configurable charge pre-amplifier gain to cover a high SiPM pixel dynamic range. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events. A 12-bit Wilkinson ADC is used to digitize the charge stored in the capacitor array for the amplitude and time measurement. The hit time is registered via a 12-bit TDC voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}), in testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}). The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{chap3/fig/SPIROC2B_schematic.png}
+  \caption{Schematic of the analog signal path of the SPIROC2 for a single channel \cite{SPIROC2_datasheet}.} \label{fig:SPIROC2B_sche}
+\end{figure}
+
+The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. In auto-trigger mode, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is sampled. Once the 16 memory-cells are filled, no further hits can be stored. Thus, the memory-cells are readout, digitized and the data is transferred out of the chip.
+
 \section{Hadronic Calorimeters}
 
 \subsection{AHCAL}
