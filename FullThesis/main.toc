@@ -1,0 +1,132 @@
+\thispagestyle {empty}
+\contentsline {chapter}{Abstract}{iii}{section*.1}
+\contentsline {chapter}{Introduction}{xi}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Particle Physics: Theory}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}The Standard Model of Particle Physics}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}The Higgs Boson}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Beyond the Standard Model}{1}{section.1.3}
+\contentsline {chapter}{\numberline {2}The International Linear Collider: a future $e^+e^-$ linear collider}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Damping rings}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Sources}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Linac}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}ILC Physics}{3}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Higgs Physics}{3}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Electroweak Physics}{3}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Top mass measurement}{3}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Beyond the Standard Model}{3}{subsection.2.4.4}
+\contentsline {section}{\numberline {2.5}The International Large Detector (ILD)}{3}{section.2.5}
+\contentsline {chapter}{\numberline {3}Calorimetry and Particle Flow Concept}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Calorimetry in High Energy Physics}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Particle interaction with matter}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Calorimeters}{5}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Pandora, a Particle Flow Algorithm}{5}{section.3.2}
+\contentsline {chapter}{\numberline {4}CALICE Calorimeter concepts}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Electromagnetic Calorimeters}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}SiECAL}{8}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}ScECAL}{9}{subsection.4.1.2}
+\contentsline {subsubsection}{SPIROC2B ASIC}{10}{section*.6}
+\contentsline {section}{\numberline {4.2}Hadronic Calorimeters}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}AHCAL}{11}{subsection.4.2.1}
+\contentsline {subsubsection}{Current status of the EPT AHCAL}{13}{section*.9}
+\contentsline {subsection}{\numberline {4.2.2}SDHCAL}{15}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}DHCAL}{16}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Simulations}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Simulation of particle showers}{19}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Hadronic shower models}{20}{subsection.5.1.2}
+\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{20}{section*.14}
+\contentsline {subsubsection}{String-Parton Cascade Models}{22}{section*.16}
+\contentsline {subsection}{\numberline {5.1.3}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Physics Lists}{23}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}AHCAL Detector Geometry implementation and Digitization}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Geometry implementation}{24}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Digitization}{26}{subsection.5.2.2}
+\contentsline {chapter}{\numberline {6}Commissioning of the AHCAL technological prototype}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testing of individual SPIROC2B chips}{29}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}DAC Testing}{30}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Commissioning procedure}{32}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Setting the High Voltage}{32}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}First characterization of the gain}{33}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Adjustment of the ADC dynamic range}{34}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Threshold scan}{36}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Noise Measurement in the AHCAL}{36}{section.6.3}
+\contentsline {chapter}{\numberline {7}Energy Calibration of the AHCAL}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Beamline Setup}{40}{section.7.1}
+\contentsline {section}{\numberline {7.2}Testbeam Setup}{40}{section.7.2}
+\contentsline {section}{\numberline {7.3}Testbeam monitoring}{42}{section.7.3}
+\contentsline {section}{\numberline {7.4}Energy Calibration of the AHCAL}{43}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Pedestal extraction}{44}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}MIP extraction}{45}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}Calibration Results}{47}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Error on the calibration}{47}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Comparison with simulation}{48}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Systematic on the MIP scale}{49}{subsection.7.5.3}
+\contentsline {section}{\numberline {7.6}Conclusion}{49}{section.7.6}
+\contentsline {chapter}{Timing study of hadronic showers in the AHCAL technological prototype}{51}{section*.40}
+\contentsline {chapter}{\numberline {8}Runs \& Event Selection}{53}{chapter.8}
+\contentsline {section}{\numberline {8.1}Trigger Signals}{53}{section.8.1}
+\contentsline {section}{\numberline {8.2}Dataset}{54}{section.8.2}
+\contentsline {section}{\numberline {8.3}MIP Pre-selection}{55}{section.8.3}
+\contentsline {section}{\numberline {8.4}MIP Selection}{56}{section.8.4}
+\contentsline {section}{\numberline {8.5}Electron Selection}{56}{section.8.5}
+\contentsline {section}{\numberline {8.6}Pion Selection}{58}{section.8.6}
+\contentsline {section}{\numberline {8.7}Chip rejection}{61}{section.8.7}
+\contentsline {chapter}{\numberline {9}Timing Calibration and Validation}{65}{chapter.9}
+\contentsline {section}{\numberline {9.1}Slope calibration}{66}{section.9.1}
+\contentsline {section}{\numberline {9.2}Calibration of the time reference}{68}{section.9.2}
+\contentsline {section}{\numberline {9.3}Determination of the time of the first hit}{70}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Time of the first hit distribution}{71}{subsection.9.3.1}
+\contentsline {section}{\numberline {9.4}Corrections applied to data}{72}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Ramp non-linearity correction}{72}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Time Walk correction}{73}{subsection.9.4.2}
+\contentsline {subsection}{\numberline {9.4.3}Time of first hit for muons after corrections}{74}{subsection.9.4.3}
+\contentsline {section}{\numberline {9.5}Cross-check of the calibration with electrons}{76}{section.9.5}
+\contentsline {section}{\numberline {9.6}Influence of the number of triggered channels}{76}{section.9.6}
+\contentsline {section}{\numberline {9.7}Time of the first hit for electrons}{77}{section.9.7}
+\contentsline {section}{\numberline {9.8}Influence of the detector inhomogeneity}{80}{section.9.8}
+\contentsline {section}{\numberline {9.9}Calibration applied to another dataset}{80}{section.9.9}
+\contentsline {section}{\numberline {9.10}Systematic uncertainties}{82}{section.9.10}
+\contentsline {section}{\numberline {9.11}Validation of the simulation}{83}{section.9.11}
+\contentsline {chapter}{\numberline {10}Timing of the pion data}{89}{chapter.10}
+\contentsline {section}{\numberline {10.1}Hadronic shower timing}{89}{section.10.1}
+\contentsline {section}{\numberline {10.2}Radial dependence of timing profiles}{93}{section.10.2}
+\contentsline {section}{\numberline {10.3}Longitudinal dependence of timing profiles}{100}{section.10.3}
+\contentsline {section}{\numberline {10.4}Time correlations between layers}{105}{section.10.4}
+\contentsline {section}{\numberline {10.5}Comparison of pion showers in a tungsten absorber}{108}{section.10.5}
+\contentsline {section}{\numberline {10.6}Summary and Outlook}{109}{section.10.6}
+\contentsline {chapter}{\numberline {11}ILD detector simulation studies}{111}{chapter.11}
+\contentsline {section}{\numberline {11.1}Simulation and software framework}{111}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}\textsc {ILCSoft}\xspace software framework}{111}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}ILD Detector Simulation}{112}{subsection.11.1.2}
+\contentsline {section}{\numberline {11.2}Reconstruction chain}{113}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Tracking}{113}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Calorimeter digitization}{113}{subsection.11.2.2}
+\contentsline {subsection}{\numberline {11.2.3}Pandora PFA}{114}{subsection.11.2.3}
+\contentsline {section}{\numberline {11.3}Influence of time cuts on hadronic showers}{115}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Modification of timing window in ILDCaloDigi}{115}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Effects of calibration constants and Pandora constants}{115}{subsection.11.3.2}
+\contentsline {subsection}{\numberline {11.3.3}Timing cut effects on hadronic showers in ILD detector}{119}{subsection.11.3.3}
+\contentsline {subsubsection}{Event Selection}{119}{section*.99}
+\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{119}{section*.100}
+\contentsline {subsubsection}{On Monte-Carlo level}{122}{section*.103}
+\contentsline {subsubsection}{In a realistic scenario}{127}{section*.108}
+\contentsline {subsubsection}{Conclusion}{130}{section*.114}
+\contentsline {section}{\numberline {11.4}Conclusion and Outlook}{132}{section.11.4}
+\contentsline {chapter}{Conclusion and Outlook}{133}{section*.115}
+\setcounter {tocdepth}{0}
+\contentsline {chapter}{Acknowledgments}{135}{section*.117}
+\contentsline {chapter}{References}{137}{appendix*.119}
+\contentsline {chapter}{Appendix \numberline {A}Event selection}{143}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Validation of the simulation}{145}{Appendix.1.B}
+\contentsline {section}{\numberline {B.1}Beam profiles}{145}{section.1.B.1}
+\contentsline {section}{\numberline {B.2}Validation of the simulation}{146}{section.1.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Muons}{146}{subsection.1.B.2.1}
+\contentsline {subsection}{\numberline {B.2.2}Electrons}{149}{subsection.1.B.2.2}
+\contentsline {subsection}{\numberline {B.2.3}Pions}{152}{subsection.1.B.2.3}
+\contentsline {chapter}{Appendix \numberline {C}Implementation of noise for timing in simulations.}{157}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}Estimation of the uncertainty of the time calibration.}{159}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Influence of the number of triggered channels and parametrization in Monte-Carlo.}{163}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Tables of rejected chips.}{167}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Understanding the degradation of the energy resolution with timing cuts}{169}{Appendix.1.G}
+\contentsline {section}{\numberline {G.1}Hit Energy spectra in HCAL}{169}{section.1.G.1}
+\contentsline {section}{\numberline {G.2}Influence of timing cuts on hit energy spectra in HCAL}{173}{section.1.G.2}
+\contentsline {chapter}{Appendix \numberline {H}Calibration database}{177}{Appendix.1.H}
