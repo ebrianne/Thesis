@@ -90,7 +90,12 @@ This analysis uses the sub-detector \mokka models \textit{TBecal4d} for the ScEC
   \caption{\subref{fig:GeomModel}) DD4hep geometry model of the 2015 testbeam prototype. The dark blue represents the steel absorber structure, the light blue represents the active scintillator layers and the beam instrumentation in front and back of the calorimeter and the dark grey represents the additional lead material to account for missing upstream material. \subref{fig:material_layout}) Material description of one layer in the \mokka and \ddhep simulations of the AHCAL. Dimensions are not to scale.}
 \end{figure}
 
-The material description is showed in table \ref{table:material_sim} for thicknesses and corresponding radiation length and nuclear interaction length. A schematic of the HCAL layer structure can be seen in figure \ref{fig:material_layout}. The cable-mix of 1.5 mm, the polystyrole foils of 0.115 mm and the air gaps of 1.285 mm are not listed because of the negligible impact but are present in simulations. A picture of the model in \ddhep is shown in figure \ref{fig:GeomModel}. A check was performed with \mokka and \ddhep models with muons and electrons to ensure that the material description in both models is better than 20\% (see appendix \ref{appendix:SimulationVal}).
+The material description is showed in table \ref{table:material_sim} for thicknesses and corresponding radiation length and nuclear interaction length. A schematic of the HCAL layer structure can be seen in figure \ref{fig:material_layout}. The cable-mix of 1.5 mm, the polystyrole foils of 0.115 mm and the air gaps of 1.285 mm are not listed because of the negligible impact but are present in simulations. A picture of the model in \ddhep is shown in figure \ref{fig:GeomModel}. The simulation includes also saturation effects in the scintillator known as the Birk's Law. The saturation appears a high ionization densities due to shielding effects of the scintillator material. The implementation of the Birk's Law in \geant is used and follows the expression
+\begin{equation}
+  \frac{dL}{dx} = \frac{dE}{dx} \times \frac{1}{1 + k_B \frac{dE}{dx}}
+\end{equation}
+with $\frac{dL}{dx}$ the light yield by unit length and $\frac{dE}{dx}$ the ionization density. The parameter $k_B$ depends on the material and a value of 0.07943 mm/MeV is taken \cite{kB:IEEE}.
+A check was performed with \mokka and \ddhep models with muons and electrons to ensure that the material description in both models is better than 20\% (see appendix \ref{appendix:SimulationVal}).
 \begin{table}[htb!]
   \centering
   \caption{Material description in \mokka and \ddhep simulations of the testbeam setup at CERN in July 2015. The X$_0$ and $\lambda_n$ numbers are obtained by the command-line \textit{materialScan} in the \ddhep framework.}
@@ -141,7 +146,13 @@ Pion showers are simulated using QGSP\_BERT, QGSP\_BERT\_HP and QBBC physics lis
 
 \subsection{Digitization}
 
-The digitization of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. First, the energy deposited in a cell is converted in MIP. The conversion unit named \textit{GeVtoMIP} is extracted from simulation by projecting 8 GeV muons onto a detector tile and fitting the resulting spectrum with a Landau function. Motivated by physics, as explained in section \ref{subsec:PartInter}, ideally for a thin active material, the energy deposited follows a Landau distribution. The most probable value (MPV) of this distribution is used as the \textit{GeVtoMIP} factor. For this setup, a value of 470 keV is used for the AHCAL and 309 keV for the ScECAL.
+The digitization of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. First, the energy deposited in a cell is converted in MIP. The conversion unit named \textit{MIPtoGeV} is extracted from simulation by projecting 8 GeV muons onto the AHCAL detector and fitting the resulting spectrum of the deposited energy with a Landau function. Motivated by physics, as explained in section \ref{subsec:PartInter}, ideally for a thin active material, the energy deposited follows a Landau distribution. The most probable value (MPV) of this distribution is used as the \textit{MIPtoGeV} factor. For this setup, a value of 470 keV is used for the AHCAL as shown in figure \ref{fig:landau_MPV} and 309 keV for the ScECAL.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.5\linewidth]{chap4/fig/Landau_mu_HCAL.pdf}
+  \caption{The energy deposited in the AHCAL cells from the raw simulation without any detector effects for 8 GeV muons. The spectrum has been fitted with a Landau distribution and the MPV is extracted as the \textit{MIPtoGeV} factor.} \label{fig:landau_MPV}
+\end{figure}
 
 If available, individual calibration factors obtained from data are used to extract the light yield which is needed to model the statistical fluctuations of photons hitting a SiPM \cite{Hartbrich:2016bbz}. Saturation effects are also included using the number of pixels available on each SiPM type. Most of the tiles used are wrapped with a reflective foil such that crosstalk effects between channels can be neglected. For layers with no wrapping, a default value of 15\% cross-talk is applied. Additionally, noise needs to be taken into account for the engineering AHCAL prototype. It is important to note that noise is much lower than in the physics prototype but it is important to be taken into account for this thesis as timing is very sensitive to low statistics late tails. Noise is added using muon runs by removing found tracks and keeping remaining hits. This is described in appendix \ref{appendix:noise}.
 
