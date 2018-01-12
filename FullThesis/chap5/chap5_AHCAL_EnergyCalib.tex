@@ -1,73 +1,30 @@
 %!TEX root = ../main.tex
-\chapter{Energy Calibration of the AHCAL}
+\chapter{Energy Scale Calibration of the AHCAL}
 \label{chap:ECalibAHCAL}
 
-The CALICE Analog Hadronic Calorimeter (AHCAL) technological prototype was installed at the SPS CERN facilities in July and August 2015, in order to provide energy and time measurements of electromagnetic and hadronic showers using plastic scintillators. The data recorded in each cell of the calorimeter is measured in ADC counts, thus this scale cannot be compared directly between different channels. Therefore to compare them, all channels have to be scaled to a common physical energy unit. For the AHCAL, the Minimum Ionizing Particle or MIP unit is chosen. This unit relates to the cell energy in a well and understood physical process almost independent of outside conditions.
+The CALICE Analog Hadronic Calorimeter (AHCAL) technological prototype was installed at the SPS CERN facilities in July and August 2015, in order to provide energy and time measurements of electromagnetic and hadronic showers using plastic scintillators. The data recorded in each cell of the calorimeter is measured in ADC counts. Due to difference in light yield and gain, this scale cannot be compared directly between different channels. Therefore to compare them, all channels have to be scaled to a common physical energy unit. For the AHCAL, the Minimum Ionizing Particle or MIP unit is chosen. This unit relates to the cell energy in a well understood physical process almost independent of outside conditions.
 
-The conversion requires a calibration of each cell of the calorimeter which is by itself a challenge due to the high number of readout channels. In this testbeam, 3744 channels have to be calibrated. Due to the boards equipped with SiPMs from various different batches, the procedure needs to be automatic and robust to extract the calibration constant for each channel. At the end, all the calibration constants are entered in the official CALICE database.
+The conversion requires a calibration of each cell of the calorimeter which is by itself a challenge due to the high number of readout channels. In this testbeam, 3744 channels had to be calibrated. Due to the boards equipped with various types of SiPMs, the procedure needs to be automatic and robust to extract the calibration constant for each channel. At the end, all the calibration constants are entered in the official CALICE database.
 
-This chapter will firstly describe the beamline facilities used in July 2015 at CERN, followed by the description of the testbeam setup and finally describe the procedure performed for the AHCAL energy calibration.
-
-\section{Beamline Setup}
-\label{sec:beamline}
-
-During the summer of 2015, CALICE performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 at the North Area beamline at CERN \cite{H2Beamline}. The beamline provided wire chambers and scintillators that enabled us to have information about the beam position and number of particles but unfortunately, no data from these detectors were recorded. The information collected about the amount of material upstream of the detector until the last momentum selection magnet is limited. A Cherenkov detector (at around 500 m upstream) was also available to tag incoming particles. These detectors take advantage of the fact, a particle that traverses a medium faster than the speed of light in that medium will generate a cone of Cherenkov light \cite{GOVORKOV20059}. This light can then be collected by a photomultiplier. The detector at this beamline offered the possibility to set a threshold for particle tagging. Usually, the threshold is set to distinguish between electrons and pions/kaons. This is particularly needed to tag electrons in pion runs. The tagging signal provided by the Cherenkov detector was fed to several AHCAL channels in order to be able to tag events.\\
-
-For the production of particles, a primary high-intensity proton beam (around $10^{12}$ protons per burst) of 400 GeV impinges on a target. From this, a secondary beam is produced containing various particles type and energies. For muons, the beam is obtained by scrapping the halo of a pion beam with collimators. For electrons, a neutral beam of photons is sent to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. For pions, the beam is selected via a set of collimators and magnets. Due to the decay of $\pi_0$ and the acceptance of the beamline, a contamination of the pion beam with electrons is possible at low momentum (< 20 GeV).
-
-\section{Testbeam Setup}
-\label{sec:TBsetup}
-
-In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDET-Report-2010-02} with 48 iron absorber plates. Of it, 14 layers of active material was available for this testbeam as shown in figures \ref{fig:Det_layout} and \ref{fig:AHCAL_photo}. The data was recorded with different particle beams from 10 to 90 GeV. The detector was placed on a movable stage, in order to be able to move the detector relative to the beam for muon calibration runs. This thesis will analyze muon data, electron showers between 10 and 50 GeV and pion showers between 10 and 90 GeV focusing on the timing aspect of the detector.
-
-\begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/Detector_layout.png}
-	\caption{Simplified view of the detector layout.} \label{fig:Det_layout}
-\end{figure}
-
-The beam instrumentation consisted of two $10 \times 10$ cm$^2$ (in front of the calorimeter) as well as two $50 \times 50$ cm$^2$ (in front and back) scintillator plates readout with photomultiplier tubes. The coincidence of the $50 \times 50$ cm$^2$ scintillator was used for the muon runs and the coincidence of the $10 \times 10$ cm$^2$ scintillator was used for the electron and pion runs. Additionally, the coincidence signal from the scintillator was fed to several channels in the AHCAL in order to provide a reference time for the trigger which is important in this analysis.
-
-\begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/IMG_1170.jpg}
-	\caption{Photo of the AHCAL detector before the installation in the testbeam area.} \label{fig:AHCAL_photo}
-\end{figure}
-
-\section{Testbeam monitoring}
-
-It is important to monitor the data acquired during Testbeam. During testbeam, this is done at two level. On a pure hardware level, this is ideal to check fast that all layers are working as intended based on basic data. On a reconstructed level, this reflects more the data quality based on physics observables. For the former, a tool was already made and developed by the AHCAL group to check basic ADC/TDC, trigger information channel-wise. Recently a shift has been done to a new monitoring tool developed in the AIDA2020 framework called DQM4HEP \cite{Ete:2291805}. For the latter, no tool was available for shifters without the knowledge of the framework. This is why I developed a tool based on Qt and the ILCSoft framework called \textit{QtReco}. The tool is available on Github \cite{GithubTB}.
-
-Simply, this tool is user-friendly by its interface and enables shifters to check physics observables as shower profiles, the center of gravity, total energy with the acquired data in a quasi-online way. The tool is using the Marlin framework and the CALICE software package in order to reconstruct the data. A simple analysis module produces the necessary plots that are stored into a rootfile. A client can be used in order to get the desired plots based on server-socket communication. An example of the monitoring software can be seen in figures \ref{fig:QtReco_Server} and \ref{fig:QtReco_Client}.
-
-\begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/QtReco_Marlin.png}
-		\caption{} \label{fig:QtReco_Server}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/Shower_pion.png}
-		\caption{} \label{fig:QtReco_Client}
-	\end{subfigure}
-	\caption{\subref{fig:QtReco_Server}) The server-side of the monitoring software. It is used to enter the parameters of the run via a steering file and reconstruct the data acquired quasi-online. \subref{fig:QtReco_Client}) Example of the plots obtained with the software from the client-side.}
-\end{figure}
+This chapter will describe the procedure performed for the AHCAL energy scale calibration.
 
 \section{Energy Calibration of the AHCAL}
 
-Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combine them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailed in section \ref{subsec:PartInter}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The full calibration is expressed as:
-
+Every channel of the detector provides a measure of the energy deposited in ADC units. To compare them or combine them, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as Minimum Ionizing Particles or MIP. Therefore muon runs were recorded. As detailed in section \ref{subsec:PartInter}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The conversion to the MIP energy scale for a AHCAL cell is expressed as:
 \begin{equation}
-	E_i [MIP] = \frac{(A_i [ADC] - Ped_i [ADC]) \times IC_i }{ICP_i \times M_{i} [\frac{ADC}{MIP}]}
+	E_i = \frac{(A_i - P_i) \times IC_i }{\frac{M_{i}}{ICP_i}}
 \end{equation}
 
-where $E_i$ is the calibrated amplitude in MIP, $A_i$ the measured amplitude in ADC, $Ped_i$ the pedestal in ADC, $ICP_i$ the intercalibration between calibration and physics mode, $IC_i$ the intercalibration between High/Low gain and $M_{i}$ the MIP constant of the i-th channel. This formula is used in the case of no correction is performed for the SiPM saturation.
+where $E_i$ is the calibrated amplitude in MIP, $A_i$ the measured amplitude in ADC, $P_i$ the pedestal in ADC, $ICP_i$ the intercalibration between calibration and physics mode, $IC_i$ the intercalibration between High/Low gain (equal to 1 in case of HG measurement) and $M_{i}$ the MIP constant of the i-th channel in $\frac{ADC}{MIP}$. In case of correction for SiPM saturation, the following formula is used
+\begin{equation}
+	E_i = \frac{f^{i}_{unsat}( (A_i - P_i) \times \frac{IC_i \times ICP_i}{G_i} )}{LY_{i}}
+\end{equation}
+
+where $f^{i}_{unsat}$ is the inversed of the SiPM saturation function and $LY_{i} = \frac{M_{i}}{G_i}$ the light yield of the i-th channel.
 
 \subsection{Pedestal extraction}
 
-To obtain the correct MIP constant, a pedestal subtraction has to be done. The pedestal value for each channel is extracted from the data taking muon runs. In order to be consistent, the pedestal value is extracted in the same running mode as data taking .i.e in auto-trigger (AT). For each channel and memory cell, a histogram is filled with the ADC value of a cycle in case no Hit Bit is set for the channel. The extraction is performed in an iterative way due to a high energy tail that is not yet understood.
+To obtain the correct MIP constant, a pedestal subtraction has to be done. The pedestal value for each channel is extracted from the data taking muon runs. In order to be consistent, the pedestal value is extracted in the same running mode as data taking .i.e in auto-trigger (AT) \cite{Hermberg:2015gaa}. For each channel and memory cell, a histogram is filled with the ADC value of a cycle in case no Hit Bit is set for the channel. The extraction is performed in an iterative way due to a high energy tail that is not yet understood and could come from inefficiency in the trigger.
 
 \begin{figure}[htbp!]
 	\centering
@@ -75,7 +32,7 @@ To obtain the correct MIP constant, a pedestal subtraction has to be done. The p
 	\caption{Typical pedestal distribution of a channel in auto-trigger mode. The different colored boxed represent the iterative procedure to extract the pedestal value marked with the red line.} \label{fig:PedExtraction}
 \end{figure}
 
-As the SiPM noise needs to be taken into account for the pedestal value and considering a Poisson statistic, one to three pixels could be fired due to DCR and cross-talk. The fitting range then needs to be in the same order of magnitude of 1 to 3 pixels. For this, the histogram is reduced in the range of 3 RMS around the mean 2 times. After the mean of the histogram is taken the pedestal value as shown in figure \ref{fig:PedExtraction}. As no pedestal subtraction memory cell-wise is performed in the reconstruction at the moment and the database structure is not designed to have the pedestal constant for each memory cell, a mean over all memory cell is computed per channel. The average difference between the mean pedestal and the memory cell wise pedestal shown in figure \ref{fig:CompMeanMem} is around 21 ADC which would correspond to an error of about 4\% on the MIP constant (assuming a MIP value of 500 ADC). This error is dominating in the MIP constant uncertainty.
+As the SiPM noise needs to be taken into account for the pedestal value and considering a Poisson statistic, one to three pixels could be fired due to DCR and cross-talk. The fitting range then needs to be in the same order of magnitude of 1 to 3 pixels. For this, the histogram range is reduced in the range of 3 RMS around the mean. It is done iteratively two times. Then the mean of the histogram is taken the pedestal value as shown in figure \ref{fig:PedExtraction}. As no pedestal subtraction memory cell-wise is performed in the reconstruction at the moment and the database structure is not designed to have the pedestal constant for each memory cell, a mean over all memory cells is computed per channel. The difference between the mean pedestal and the memory cell wise pedestal shown in figure \ref{fig:CompMeanMem}. The RMS of the distribution is around 21 ADC which would correspond to an error of about 4\% on the MIP constant (assuming a typical MIP value of 500 ADC). This error is dominating in the MIP constant uncertainty.
 
 \begin{figure}[htbp!]
 	\centering
@@ -85,9 +42,11 @@ As the SiPM noise needs to be taken into account for the pedestal value and cons
 
 \subsection{MIP extraction}
 
-After the pedestal calibration, the extraction of the MIP constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needed to be automatized and robust. In order to reduce noise in the energy spectra of each cell that would lead to unstable fits and wrong MIP constants, a simple tracking selection has been performed as explained in section \ref{subsec:Muon_sel}.
+After the pedestal calibration, the extraction of the MIP constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needed to be automatized and robust. In order to reduce noise in the energy spectra of each cell that would lead to unstable fits and wrong MIP constants, a simple track selection has been performed as explained in section \ref{subsec:Muon_sel}.
 
-After the selection, a histogram for each channel is filled with the energy value of each hit in ADC which are already pedestal subtracted. Then the fitting procedure is performed. The fitting procedure is very sensitive to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. Only channels with more than 1000 entries are considered. First, the area is fitted. Secondly, the other parameters are released and fitted as well. Finally, a final fit is performed on the four parameters in the range in the range of 30\% of the maximum of the previous fitted function. The detailed procedure is explained in \cite{FabianThesis}. A typical example of a MIP fit can be seen in figure \ref{fig:MIPFit}. Moreover, in order to fit possible channel that failed on the first attempt, an iteration of the procedure is done again on histograms that are filled with the energy of the hit for hits above 0.5 times the MPV value of the channel, if no value was fitted and estimation is used.
+After the selection, a histogram for each channel is filled with the energy value of each hit in ADC which are already pedestal subtracted memory-cell wise. Then the fitting procedure is performed. The fitting procedure is very sensitive to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. Only channels with more than 1000 entries are considered. The detailed procedure is explained in \cite{FabianThesis}. The parameters to fit are: the area or normalization constant $A$, the width of the convoluted Gaussian $\sigma_G$, the MPV of the Landau distribution $MPV$ and the width of the Landau distribution $\sigma_L$
+
+First, the area $A$ of the histogram is fitted with $\sigma_G$, $MPV$ and $\sigma_L$ fixed. Secondly, the parameters $\sigma_G$, $MPV$ and $\sigma_L$ are released and fitted as well. Finally, a final fit is performed on the four parameters in the range in the range of 30\% of the maximum of the previous fitted function. A typical example of a MIP fit can be seen in figure \ref{fig:MIPFit}. Then a histogram for each channel is filled with the energy value of each hit in ADC with a cut at 0.5 MIP of the previously extracted $MPV$ and the fitting procedure is iterated.
 
 \begin{figure}[htbp!]
 	\centering
@@ -95,21 +54,55 @@ After the selection, a histogram for each channel is filled with the energy valu
 	\caption{Typical energy distribution in a single channel of the AHCAL.} \label{fig:MIPFit}
 \end{figure}
 
-In this way, for the testbeam in July 2015, 72\% of the channels are fitted (over 3744 channels). This does not mean that 28\% of channels are dead (around 15\% of the channels are considered dead), as for the most part, the outer channels of the big layers don't have enough statistic to perform a fit. For centered chips, where channels are not fitted, the mean MPV value of a chip or layer is used. In this way, 83\% of the channels are completed. In order to have a value for each channel, especially for the big layers, the values are combined with previous testbeams performed in April and May 2015 with the big layers. In this way, all 3744 channels have a MIP constant.
+In this way, for the testbeam in July 2015, 72\% of the channels are fitted (over 3744 channels). This does not mean that 28\% of channels are dead as for the most part, the outer channels (on the border of the HBUs) of the layers 11 to 14 don't have enough statistic to perform a fit. In order to have a value for the outer channels, especially for the layers 11 to 14, the values are combined with previous testbeams performed in April and May 2015 with these layers. Finally, if a channel is does not have a value, the mean and mean error of the MPV distribution of a chip or layer is used. In this way, all 3744 channels have a MIP constant. Excluding dead and noisy channels (see appendix \ref{appendix:deadChn}) which account for 15\% of the channels, 3171 channels have been calibrated.
 
 \section{Calibration Results}
 
 In this section, a small assessment of the performance of the detector calibration is performed.
 
-\subsection{Error on the calibration}
+\subsection{MIP extraction results}
 
-After the calibration, it is necessary to evaluate the performance of the calibration procedure by looking at the relative error on the extracted MPV value for a MIP. The figure \ref{fig:MIPError} shows the relative error computed for all the channels of the detector. The relative error on the MIP value is for most of the channels in the expected range of 1 to 3\% and compatible with previous results \cite{SarahMaster}. Though some higher values can be seen, this comes from the uncalibrated channels that derived their MIP value from the mean of the chip or layer mainly located in the small layers but for the analysis most of them are rejected later on by the list of dead channels due to the lack of gain value or pedestal value.
+The results of the MIP extraction are shown in table \ref{table:MIPAHCAL} and are regrouped by SiPM types. The results are well compatible with \cite{SarahMaster} although there is slight difference in the number of fitted channels that may come from the differences in our method and also that, in this table, all dead and noisy channels are rejected.
+
+\begin{table}[htb!]
+	\centering
+	\caption{Table containing the results of the MIP extraction. The results are regrouped by SiPM type. Dead and noisy channels are rejected.}
+	\label{table:MIPAHCAL}
+	\begin{tabular}{@{} cccc @{}}
+		\hline
+		Layer \# & MPV [ADC] & RMS [ADC] & $N_{fitted}$\\
+		\hline
+		\hline
+		1-2 & 66.72 & 35.54 & 172\\
+		3 & 501.71 & 50.4 & 142\\
+		4-5 & 796.54 & 113.12 & 265\\
+		6-10 & 250.99 & 62.72 & 414\\
+		11-12 & 285.85 & 62.83 & 1069\\
+		13-14 & 307.73 & 58.96 & 1109\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\subsection{Error of the calibration procedure}
+
+After the calibration, it is necessary to evaluate the performance of the calibration procedure by looking at the relative error on the extracted MPV value for a MIP. The figure \ref{fig:MIPError} shows the relative error $\frac{\Delta MIP_i}{MIP_i}$ computed for all the channels of the detector. The relative error on the MIP value is for most of the channels in the expected range of 1 to 3\% and compatible with previous results \cite{SarahMaster}. Some higher values can be seen, this comes from the EBU where difficulties were met due to high noise.
 
 \begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/EnergyCalib/Plots/RelativeErrorMIP_Combined.pdf}
-	\caption{Relative error of the MIP value extracted.} \label{fig:MIPError}
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/RelativeErrorMIP_Combined.pdf}
+		\caption{} \label{fig:MIPError}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/FullMIPError_Combined.pdf}
+		\caption{} \label{fig:FullError}
+	\end{subfigure}
+	\caption{\subref{fig:MIPError}) Relative error of the MIP value extracted. \subref{fig:FullError}) Total error on the MIP calibration.}
 \end{figure}
+
+To estimate the error on the MIP calibration, the pedestal error has to be added in quadrature to the fit error as uncorrelated.
 
 \subsection{Comparison with simulation}
 

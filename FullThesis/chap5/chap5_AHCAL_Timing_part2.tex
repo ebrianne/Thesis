@@ -1,4 +1,21 @@
 %!TEX root = ../main.tex
+\phantomsection
+\addcontentsline{toc}{chapter}{Timing study of hadronic showers in the AHCAL technological prototype}
+\chapter*{Timing study of hadronic showers in the AHCAL technological prototype}
+\label{chap:TimingAHCAL}
+
+The International Large Detector (ILD), as described in \ref{sec:ILD}, considers a highly granular hadronic calorimeter using iron absorbers to achieve a compact detector with the best jet energy resolution of around 3-4\% at 250 GeV satisfying the space constraint imposed by the solenoid magnet. Timing measurements in a calorimeter can be used to reject pile-up events, for example at the LHC or CLIC coming from out-of-time pile-up events due to the bunch-to-bunch spacing of 25 (0.5 ns) respectively. The high level of $\gamma\gamma \rightarrow$ hadrons events at CLIC could be rejected by using the timing information from the calorimeter in order to limit the impact of the background on physics measurements. Time information could be used also for improving energy reconstruction \cite{Benaglia2016}.\\
+
+In the hadronic calorimeter, the timing is highly influenced by the time structure of the shower itself. A hadronic shower possesses several timing components depending on the different processes happening in the shower. A fast component related to instantaneous high energy depositions from relativistic hadrons and electromagnetic sub-showers. A slow component due to neutron scattering, nuclear-recoil and photons from nuclear processes. This component can live up to several milliseconds. Apart from physics processes, the measured hit time is influenced by the active medium used as well as by the electronics. Time constants in the active medium, such as scintillation decay time, can affect the measurement.\\
+
+The performance of the ILD relies on simulation studies based on \geant, it is important to study how well the simulation performs to reproduce the time structure of hadronic showers observed in data. The CALICE Analog Hadronic Calorimeter (AHCAL) technological prototype was installed at the SPS CERN facilities in July and August 2015, in order to provide measurements using plastic scintillators. The goal of this study is to improve our knowledge about hadronic showers, especially in terms of its time evolution and the time correlations between layers within the calorimeter. The strategy of this analysis is fairly simple and divided into three parts:
+\begin{itemize}
+	\item The determination of the time calibration constants using muon data
+	\item The cross-check of the time calibration with electron data
+	\item The analysis of the pion data
+\end{itemize}
+This chapter will firstly describe the timing calibration procedure of the AHCAL, followed by the comparison between data and simulation for muons and electrons and finally a comparison with pion data.
+
 \chapter{Timing Calibration and Validation}
 
 To perform the timing calibration of the AHCAL, the complete muon dataset is used. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Raw events are the number of events after the MIP selection. Selected events are counted after the selection on the error of the time reference as explained in \ref{section:time_ref}.

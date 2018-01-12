@@ -1,25 +1,54 @@
 %!TEX root = ../main.tex
-\phantomsection
-\addcontentsline{toc}{chapter}{Timing study of hadronic showers in the AHCAL technological prototype}
-\chapter*{Timing study of hadronic showers in the AHCAL technological prototype}
-\label{chap:TimingAHCAL}
-
-The International Large Detector (ILD), as described in \ref{sec:ILD}, considers a highly granular hadronic calorimeter using iron absorbers to achieve a compact detector with the best jet energy resolution of around 3-4\% at 250 GeV satisfying the space constraint imposed by the solenoid magnet. Timing measurements in a calorimeter can be used to reject pile-up events, for example at the LHC or CLIC coming from out-of-time pile-up events due to the bunch-to-bunch spacing of 25 (0.5 ns) respectively. The high level of $\gamma\gamma \rightarrow$ hadrons events at CLIC could be rejected by using the timing information from the calorimeter in order to limit the impact of the background on physics measurements. Time information could be used also for improving energy reconstruction \cite{Benaglia2016}.\\
-
-In the hadronic calorimeter, the timing is highly influenced by the time structure of the shower itself. A hadronic shower possesses several timing components depending on the different processes happening in the shower. A fast component related to instantaneous high energy depositions from relativistic hadrons and electromagnetic sub-showers. A slow component due to neutron scattering, nuclear-recoil and photons from nuclear processes. This component can live up to several milliseconds. Apart from physics processes, the measured hit time is influenced by the active medium used as well as by the electronics. Time constants in the active medium, such as scintillation decay time, can affect the measurement.\\
-
-The performance of the ILD relies on simulation studies based on \geant, it is important to study how well the simulation performs to reproduce the time structure of hadronic showers observed in data. The CALICE Analog Hadronic Calorimeter (AHCAL) technological prototype was installed at the SPS CERN facilities in July and August 2015, in order to provide measurements using plastic scintillators. The goal of this study is to improve our knowledge about hadronic showers, especially in terms of its time evolution and the time correlations between layers within the calorimeter. The strategy of this analysis is fairly simple and divided into three parts:
-\begin{itemize}
-	\item The determination of the time calibration constants using muon data
-	\item The cross-check of the time calibration with electron data
-	\item The analysis of the pion data
-\end{itemize}
-This chapter will firstly describe the timing calibration procedure of the AHCAL, followed by the comparison between data and simulation for muons and electrons and finally a comparison with pion data.
-
-\chapter{Runs \& Event Selection}
+\chapter{AHCAL Testbeam setup \& Event Selection}
 \label{sec:EvtSelection}
 
-A description of the beamline is available in section \ref{sec:beamline} as well a description of the detector setup in section \ref{sec:TBsetup}.
+\section{Beamline Setup}
+\label{sec:beamline}
+
+During the summer of 2015, CALICE performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 at the North Area beamline at CERN \cite{H2Beamline}. The beamline provided wire chambers and scintillators that enabled us to have information about the beam position and number of particles but unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information collected about the amount of material upstream of the detector until the last momentum selection magnet is limited. A Cherenkov detector (at around 100 m upstream) was also available to tag incoming particles. These detectors take advantage of the fact that, a particle that traverses a medium faster than the speed of light in that medium will generate a cone of Cherenkov light \cite{GOVORKOV20059}. The opening angle of the cone, in the direction of motion of the particle, is given by
+\begin{equation}
+	cos(\theta_{cone}) = \frac{1}{n\beta}
+\end{equation}
+with n the refraction index of the gas and $\beta$ the ratio of the particle speed and the speed of light. For particles of the same momentum, only particle below a threshold mass $m_{thr} = \frac{p}{c}\sqrt{n^2 - 1}$ will emit Cherenkov light. The opening angle of the cone $\theta_{cone}$ is directly proportional to the mass difference $m_{thr} - m_{particle}$. As n is proportional to the gas pressure in the Cherenkov detector, $\theta_{cone}$ and $m_{thr}$ depend directly on the selected gas pressure. The Cherenkov light can then be collected by a photomultiplier. The detector at this beamline offered the possibility to set a threshold for particle tagging. Usually, the threshold is set to distinguish between electrons and pions/kaons. This is particularly needed to tag electrons in pion runs. The tagging signal provided by the Cherenkov detector was fed to several AHCAL channels in order to be able to tag events.\\
+
+For the production of particles, a primary high-intensity proton beam (around $10^{12}$ protons per burst) of 400 GeV impinges on a target. From this, a secondary beam is produced containing various particles type and energies. For muons, the beam is obtained by scrapping the halo of a pion beam with collimators. For electrons, a neutral beam of photons is sent to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. Another possibility is to impeach the charged beam onto a secondary target and filter the beam with an absorber. But this has the disadvantage of low rates at low energy and possible contamination with pions. For pions, the beam is selected via a set of collimators and magnets. Due to the decay of $\pi_0$ (conversion of the photons into the absorber filter) and the acceptance of the beamline, a contamination of the pion beam with electrons is possible at low momentum (< 20 GeV).
+
+\section{Testbeam Setup}
+\label{sec:TBsetup}
+
+In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDET-Report-2010-02} with 48 iron absorber plates. Of it, 14 layers of active material was available for this testbeam as shown in figures \ref{fig:Det_layout} and \ref{fig:AHCAL_photo}. The data was recorded with different particle beams from 10 to 90 GeV. The detector was placed on a movable stage, in order to be able to move the detector relative to the beam for muon calibration runs. This thesis will analyze muon data, electron showers between 10 and 50 GeV and pion showers between 10 and 90 GeV focusing on the timing aspect of the detector.
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/Detector_layout.png}
+	\caption{Simplified view of the detector layout.} \label{fig:Det_layout}
+\end{figure}
+
+The beam instrumentation consisted of two $10\times10$ cm$^2$ (in front of the calorimeter) as well as two $50\times50$ cm$^2$ (in front and back) scintillator plates readout with photomultiplier tubes. The coincidence of the $50\times50$ cm$^2$ scintillator was used for the muon runs and the coincidence of the $10\times10$ cm$^2$ scintillator was used for the electron and pion runs as validation signal. Additionally, the coincidence signal from the scintillator was fed to several channels in the AHCAL in order to provide a reference time for the trigger which is important in this analysis.
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/IMG_1170.jpg}
+	\caption{Photo of the AHCAL detector before the installation in the testbeam area.} \label{fig:AHCAL_photo}
+\end{figure}
+
+\section{Testbeam monitoring}
+
+It is important to monitor the data acquired during Testbeam. During testbeam, this is done at two levels. On a pure hardware level, this is ideal to check fast that all layers are working as intended based on basic data. On a reconstructed level, this reflects more the data quality based on physics observables. For the former, a tool was already made and developed by the AHCAL group to check basic ADC/TDC, trigger information channel-wise. Recently a shift has been done to a new monitoring tool developed in the AIDA2020 framework called DQM4HEP \cite{Ete:2291805}. For the latter, no tool was available for shifters without the knowledge of the framework. This is why I developed a tool based on Qt and the ILCSoft framework called \textit{QtReco}. The tool is available on Github \cite{GithubTB}.
+
+Simply, this tool is user-friendly by its interface and enables shifters to check physics observables as shower profiles, the center of gravity, total energy with the acquired data in a quasi-online way. The tool is using the Marlin framework and the CALICE software package in order to reconstruct the data. A simple analysis module produces the necessary plots that are stored into a rootfile. A client can be used in order to get the desired plots based on server-socket communication. An example of the monitoring software can be seen in figures \ref{fig:QtReco_Server} and \ref{fig:QtReco_Client}.
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/QtReco_Marlin.png}
+		\caption{} \label{fig:QtReco_Server}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{chap5/fig_EnergyCalib/Shower_pion.png}
+		\caption{} \label{fig:QtReco_Client}
+	\end{subfigure}
+	\caption{\subref{fig:QtReco_Server}) The server-side of the monitoring software. It is used to enter the parameters of the run via a steering file and reconstruct the data acquired quasi-online. \subref{fig:QtReco_Client}) Example of the plots obtained with the software from the client-side.}
+\end{figure}
 
 \section{Trigger Signals}
 \label{subsec:trigger}
