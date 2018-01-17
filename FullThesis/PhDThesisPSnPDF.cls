@@ -504,7 +504,7 @@ pdfauthor = {\@author}
 % type” means exactly (in terms of millimetres baseline distance). The following
 % LaTeX setting has routinely been considered perfectly acceptable:
 
-\renewcommand\baselinestretch{1.5}
+\renewcommand\baselinestretch{1}
 
 % ************************** TOC and Hide Sections *****************************
 \newcommand{\nocontentsline}[3]{}
