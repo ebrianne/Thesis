@@ -9,6 +9,7 @@ In HEP, calorimeters are fundamental tools used to measure the energy of particl
 In this section, a description of the physics of the interaction of particles with matter will be given. This includes electromagnetic showers induced by electrons and photons, the energy loss by heavy charged particles and the development of hadronic showers. Moreover, the consequences of these interactions on calorimetric measurements will be discussed.
 
 \subsection{Electromagnetic showers}
+\label{subsec:EMShowers}
 
 \subsubsection{Energy loss by charged particles}
 
@@ -79,7 +80,7 @@ On average, 90\% of the energy of the shower will be contained into a cylinder o
 
 As explained above Bremsstrahlung is the main process through particles lose their energy. But this process is suppressed by the particle mass as $1/m^4$, thus for muons or charged hadrons, ionization is the main process for energy loss. The mean energy loss of a heavy charged particle is given by the Bethe-Bloch formula \cite{Wigmans:392793}
 \begin{equation}
-\left<\frac{dE}{dx}\right> = Kz^2\frac{Z}{A}\frac{1}{\beta^2}\left(\frac{1}{2}\ln\frac{2m_ec^2\beta^2\gamma^2T_{max}}{I^2} - \beta^2 - \frac{\delta}{2}\right)
+  \left<\frac{dE}{dx}\right> = Kz^2\frac{Z}{A}\frac{1}{\beta^2}\left(\frac{1}{2}\ln\frac{2m_ec^2\beta^2\gamma^2T_{max}}{I^2} - \beta^2 - \frac{\delta}{2}\right)
 \end{equation}
 with $T_{max}$ the maximum single collision energy transfer, $I$ the mean excitation energy of the absorber, $\delta$ a correction term for density effect depending on $\beta\gamma$, K a constant equals to $4\pi{}N_Ar_e^2m_ec^2$, $\beta$ the particle velocity and $\gamma$ the Lorentz factor. The figure \ref{fig:BetheBloch} shows the mean energy loss for muons in copper as function the particle momentum and $\beta\gamma = \frac{p}{mc}$.
 
@@ -100,16 +101,110 @@ However, due to large fluctuations in energy transfer, the mean energy loss may 
 For thick materials, the distribution becomes more Gaussian-like.
 
 \subsection{Hadronic showers}
+\label{subsec:HadShowers}
 
-Charged hadrons
+Due to the strong interaction, hadronic showers are more complicated than electromagnetic showers. The physical processes that occur in a hadronic shower are various and much larger in number involving both the incoming particle and the nucleus of the absorber material.
+
+When a charged or neutral hadron penetrates matter, some of the processes described above may be involved. If the hadron is charged, it will ionize the atom of the medium much like a muon. However, at a certain depth, the hadron will in general interact strongly with an atom of the medium. This depth can be characterized by a longitudinal scale like EM shower with the radiation length $X_0$. This scale is called the nuclear interaction length $\lambda_n$ generally much larger than $X_0$ (e.g in iron, $\lambda_n/X_0 \sim 9.5$). Similar to EM showers, the longitudinal depth of the shower increases logarithmically with the energy of the incoming hadron.
+
+For neutral hadrons, no ionization is possible and they may lose energy only via nuclear reactions.
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{chap2/fig/images_had-shower.png}
+  \caption{Schematic of a hadronic shower. The different "types" of energy are represented in colors. Electromagnetic energy: decay of $\pi^0$s and $\eta$s to $\gamma$s. Non-EM energy: ionization by charged hadrons, spallation. Escaped energy: neutrinos from hadron decays. Invisible energy: nuclear binding energy, neutron scattering and capture. Taken from \cite{Grahn:2009ki}.} \label{fig:HadShower}
+\end{figure}
+
+In general, hadronic shower can be characterized by two components, a electromagnetic component and a hadronic component. A representation of the development of a hadronic shower is shown in figure \ref{fig:HadShower}.
+
+\subsubsection{Electromagnetic component}
+
+When a hadron interacts strongly with the medium, it produces a number of secondary particles, in particular $\pi^0$s and $\eta$s, which have a very short life ($\sim 10^{-7}$s) and decay electromagnetically to photons such as
+\begin{equation*}
+  \begin{aligned}
+    &\pi^0 \rightarrow 2\gamma \quad (99\%)\\
+    &\eta \rightarrow 2\gamma \quad (39\%)\\
+    &\eta \rightarrow 3\pi^0 \quad (33\%)\\
+    &\eta \rightarrow \pi^0 + 2\gamma \quad (0.03\%)
+  \end{aligned}
+\end{equation*}
+Per hadron collision, on average, 1/3 of the available energy will be carried by the EM component. If the initial energy of the projectile is sufficient after $n$ generations of reactions, the total electromagnetic fraction $f_{EM}$ can be parametrized as \cite{Wigmans:392793}
+\begin{equation}
+  f_{EM} = 1 - (1 - \frac{1}{3})^n
+\end{equation}
+However, this is a very simplified model and should be seen as only a upper limit due to other effects (baryon number conservation, ionization and nuclear excitations...) which lower the average electromagnetic fraction. A more accurate representation can be \cite{Wigmans:392793}
+\begin{equation}
+  f_{EM} = 1 - <m>^{n(k-1)}
+\end{equation}
+with $<m>$, the average particle multiplicity and the exponent $k$ relating the energy dependence of the EM fraction, function of the pion production threshold $E_0$ and the average fraction of pion production $f_{\pi^0}$. Typically, $f_{EM}$ increase as function of the initial particle energy. For example, a 10 GeV pion in copper\footnote{With the following parameters: $E_0$ = 0.7 GeV, $k$ = 0.82, $f_{\pi^0}$ = 1/4.} has $<f_{EM}> = 0.38$ and at 1 TeV $<f_{EM}> = 0.73$ \cite{Wigmans:392793}.
+
+\subsubsection{Hadronic component}
+\label{subsubsec:HadComp}
+
+When a high energy hadron interacts with a nucleus, it most likely undergoes the process of spallation. This process can be described in two stages: an fast intra-nuclear cascade involving the constituents of the nucleus and a slow nuclear evaporation. In the first stage, the incoming hadron interacts strongly with the nucleons of the nucleus producing a cascade of new stable and unstable hadrons. The resulting hadrons can then in turn go under interaction with a nucleus or decay.
+
+The second stage consists of the de-excitation of the nucleus by evaporating free nucleons until the excitation energy is less than the binding energy of the nucleus. This binding energy is often called \textit{invisible energy} as it is lost during the measurement process. Nevertheless, this energy can be regained by using materials with high fission cross-section such as $^{238}U$.
+
+During spallation, a large quantity of neutrons can be released. These neutrons are \textit{invisible} to the calorimeter and undergoes scattering through the calorimeter (mean free path $\sim$ cm) until they lost most of their kinetic energy (\textit{thermalization}). Then these neutrons can get captured by a nucleus as the capture cross-section is maximal at rest. This process leads to late energy depositions ($\sim$ min). The excited nucleus emits $\gamma$-rays usually to get rid of the excess energy.
+
+Since the \textit{invisible} energy only occurs in hadron showers, this leads to a difference of the calorimeter response between electrons and hadrons of the same energy. This introduces the term of \textit{compensation} that will be described in \ref{subsec:Compensation}.
 
 \section{Calorimeters}
 
+Calorimeters have a tools for decades in HEP to measure the energy of particles. As explained in \ref{subsec:EMShowers} and \ref{subsec:HadShowers}, the longitudinal depth of the shower scales logarithmically with the energy of the incoming particle. Thus the energy of a shower can be mostly contained completely with a moderate amount of material, even for very high energy particles.
+
+Calorimeters can be separated in two types: \textit{homogenous} and \textit{sampling} calorimeters. In homogenous calorimeters, the complete detector volume is sensitive to particle energy depositions. On the contrary, sampling calorimeters, the calorimeter is separated in a passive medium, the absorber that can be made of usually a high-density material, and active medium that generates the signal to be measured.
+
+An example of homogenous calorimeter is the CMS ECAL calorimeter. It uses $PbWO_4$ scintillating crystals of around $2.2 \times 2.2 \times 2.3 cm^3$, these have very short radiation length ($X_0$ = 0.85 cm) and Moli\'ere Radius ($\rho_M$ = 2.19 cm) allowing for a compact design. As this calorimeter is homogenous, the entire kinetic energy of an incoming electron or photon can be measured, reducing sampling fluctuations and achieving a very good single particle energy resolution\footnote{Explained in \ref{subsec:EnergyReso}.} of $\sigma_E/E = 2.8\%/\sqrt(E) + 0.3\% + 0.128/E$ \cite{1742-6596-587-1-012001}.
+
+Sampling calorimeters offer the freedom to chose the the absorber and active material. The absorber can be chosen to minimize the amount of material while still containing most of the energy of the shower. Active materials can be chosen for special purposes, e.g organic material with high hydrogen content to mitigate the neutrons from hadron interactions and improve the energy resolution by recovering a part of the \textit{invisible energy} by absorbing more neutrons. Also, this allows for optimization of the design and cost. Nevertheless, it has the disadvantage of worse energy resolution than homogenous calorimeters due to sampling fluctuations as only a fraction of the energy of a shower is measured.
+
+A sampling calorimeter can be characterized by its sampling fraction $f_{samp}$ as
+\begin{equation}
+  f_{samp} = \frac{E_{MIP}^{active}}{E_{MIP}^{active} + E_{MIP}^{passive}}
+\end{equation}
+
 \subsection{Energy resolution}
+\label{subsec:EnergyReso}
+
+The figure of merit of every calorimeter is the energy resolution. For EM showers, the energy resolution is limited by fluctuations in the shower development. For hadronic showers, these fluctuations are even larger due to large fluctuations in the EM fraction and the average invisible energy. This can be mitigated by compensation or by measuring the EM fraction for each event.
+The energy resolution $\sigma_E/E$ can be parametrized as:
+\begin{equation}
+  \frac{\sigma_E}{E} = \frac{a}{\sqrt(E)} \oplus b \oplus \frac{c}{E}
+\end{equation}
+
+The first term $\frac{a}{\sqrt(E)}$ is the stochastic term. Assuming that $N$ particles contributed to the signal, the uncertainty follows a Poisson statistic (Gaussian if $N$ > 10) such as $\sigma_N/N = \sqrt{N}/N = 1/\sqrt{N}$. Thus the stochastic term for the energy resolution follow this. Additionally, the sampling fraction $f_{samp}$ adds an additional uncertainty proportional to $\sqrt{1/f_{samp}}$. For hadronic showers, the fluctuations in the invisible energy also scales as $1/\sqrt(E)$ and the fluctuations in the electromagnetic fraction scales as $1/E^j$ with $j \leq 0.5$.
+
+The second term $b$ is the constant term. This term is affected by detector inhomogeneities such as calibration uncertainties. This term dominates at high energies.
+
+The third term $\frac{c}{E}$ is the noise term. It is energy independent and arise from different effects like the electronics. This term dominates at low energies.
 
 \subsection{Compensation}
+\label{subsec:Compensation}
 
-\subsection{Sampling calorimeters}
+As explained in \ref{subsubsec:HadComp}, the invisible energy in a hadron shower initiated by a $\pi$ lowers the calorimeter response compare to an EM shower from an electron of the same energy. The response ratio $e/\pi$ is over 1. This is called \textit{non-compensation}. Moreover, this ratio decreases with energy as the electromagnetic fraction increases with energy. The pion response of a calorimeter can be parametrized as
+\begin{equation}
+  \pi = <f_{EM}> \times e + (1 - <f_{EM}>) \times h
+\end{equation}
+with $e$ and $h$ representing the calorimeter response to EM and non-EM fractions. Thus $e/\pi$ can be written as
+\begin{equation}
+  e/\pi = \frac{e/h}{1 - <f_{EM}>\left(1 - e/h\right)}
+\end{equation}
+
+Homogenous calorimeters have generally a significantly higher ratio $e/h \sim 2$. Sampling calorimeter can be designed to reach $e/h \sim 1$. To reach compensation, either the EM response can be lowered or the hadronic response can be boosted. A famous example, is the ZEUS calorimeter that used uranium (Z = 82) absorbers and plastic scintillator as active material. The thicknesses of the absorber and active material were carefully optimized to reach compensation. In this way, an energy resolution for pions of $\sigma_E/E = 35\%/\sqrt(E) + 2\%$ was achieved with $e/h \sim 1$ \cite{BERNSTEIN199323}.
+
+Other methods can be used to achieve compensation:
+\begin{itemize}
+  \item \textit{Dual readout} using Cherenkov radiation to estimate the electromagnetic fraction of each event \cite{Akchurin:2013yaa}.
+  \item \textit{Spacial resolution} in order to identify EM sub-showers within a hadronic shower and re-weight the whole shower or individual hits of the shower. This has been demonstrated for the H1 experiment \cite{Schacht:1990zw}. A similar method, called \textit{Offline software} compensation can be done by assigning weights to calorimeter hits as function of its energy density \cite{SoftCompNew2012}.
+\end{itemize}
 
 \section{Pandora, a Particle Flow Algorithm}
 \label{sec:PFA}
+
+Particle Flow is a new approach to calorimetry in order to achieve a jet energy resolution much better than traditional calorimetry approaches (order of twice better). It has a potential to revolutionize particle detector design for future lepton collider experiment. \textit{Particle Flow Algorithms} (PFAs) have the ability of reconstructing the energy of all the individual contributions inside a jet. This was made possible by the significant improvements in tracking detectors and calorimeters over the last decade. Some implementations of PFAs were made in the past like H1 at HERA \cite{Abt:1994ye} and up to now in CMS at the LHC \cite{Sirunyan:2017ulk}. However, these detectors were not designed and optimized for particle flow reconstruction. The ILC detectors are designed in such a way that they offer the best instrumentation for the application of PFAs, called Pandora \cite{Marshall2013}.
+
+On average in a jet, 60\% of the energy is carried by charged hadrons, 30\% by photons and 10\% by neutral hadrons \cite{Ebrahimi:394104}. As hadronic calorimeters have a poor energy resolution ($\sim 60\%/\sqrt(E)$), by traditional approach, 70\% of the energy would be poorly measured. By using the tracker to measure charged hadrons, which have a much better resolution ($\sigma_p/p \sim 10^{-5}$ GeV$^{-1}$), their energy can be measured much precisely:
+\begin{equation}
+  E = (pc)^2 + (mc^2)^2
+\end{equation}
+Typically, Pandora assumes the particle to be a pion to calculate the energy, which is a well educated guess for the ILC. It can be later corrected by identifying the particle. The 30\% energy fraction from the photons can be measured accurately by the ECAL. Thus the 10\% energy fraction carried by neutral hadrons is measured by the HCAL. A schematic of the Particle Flow concept is shown in figure \ref{}.
