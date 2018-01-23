@@ -2,10 +2,38 @@
 \chapter{CALICE Calorimeter concepts}
 \label{chap:CALICE_Det}
 
-The CALICE Collaboration is developing and testing electromagnetic and hadronic calorimeters. These detector concepts are optimized toward a linear collider environment such as the International Linear Collider (ILC) \cite{Behnke:2013lya} or Compact Linear Collider (CLIC) \cite{2012arXiv1202.5940L} but collaboration with the Large Hadron Collider community for the High-Lumi upgrade (HL-LHC) is ongoing \cite{1748-0221-12-01-C01042}. The CALICE calorimeters are high granularity calorimeters optimized for the particle flow algorithm (Pandora PFA) providing a very detailed image of physics events.\\
+The CALICE Collaboration is developing and testing electromagnetic and hadronic calorimeters. These detector concepts are optimized toward a linear collider environment such as the International Linear Collider (ILC) \cite{ILC_TDR_Vol1} or Compact Linear Collider (CLIC) \cite{CLIC_CDR} but collaboration with the Large Hadron Collider community for the High-Lumi upgrade (HL-LHC) is ongoing \cite{1748-0221-12-01-C01042}. The CALICE calorimeters are high granularity calorimeters optimized for the particle flow algorithm (Pandora PFA) providing a very detailed image of physics events.\\
 Several prototypes for physics were build in the past and tested in testbeam campaigns at DESY, CERN and FNAL \cite{1748-0221-3-08-P08001, 1748-0221-5-05-P05004, 1707.07126v2, 1748-0221-10-10-P10039, 1748-0221-3-05-P05001}. Three physics prototypes of 1 m$^3$ were conceived using different active material and absorbers as well different readout schemes.\\
 Nowadays, the CALICE Collaboration is still performing analysis on the data collected by these prototypes \cite{OskarCAN, YasmineCAN}. Also, the collaboration is looking forward in the integration into a full linear collider detector by designing several new technological calorimeter prototypes.\\
 In this chapter, the electromagnetic and hadronic calorimeter concepts will be introduced, described.
+
+\section{Silicon Photomultipliers}
+
+Semi-conductors detectors have been used since more than 50 years and are still a major research topic in high energy physics \cite{1748-0221-4-04-P04004, Garutti:2011qv, Garutti:2017ipx}. \textit{Silicon photomultipliers} (SiPMs) are semi-conductors used to measure light amplitudes down to the single photon. SiPMs are composed of an array of \textit{Avalanche Photodiodes} (APDs) pixels operated in Geiger-mode. The pixels are all connected in parallel to a common cathode and anode. Nowadays, thousands of pixels can be integrated into a few $mm^2$ area.
+
+Each pixels are operated in reverse bias ($V_{bias}$), in the order of 30-60 V, larger than the \textit{breakdown voltage} ($V_{bd}$). When a photon is absorbed, an electron-hole pair is created in the depletion region by the photo-electric effect. This electron is accelerated by the electric field and starts to create a self-sustained avalanche or \textit{Geiger discharge} by impact ionization, rendering the diode conductive. A serial \textit{quenching resistor} ($R_q$) reduces the effective voltage of the pixel below $V_{bd}$ thus quenching the avalanche. Each pixel deliver a charge $Q$ such as
+\begin{equation}
+  Q = C_{px} \times (V_{bias} - V_{bd})
+\end{equation}
+with $C_{px}$ the capacitance of the pixel, typically around few pF and depends on the geometry and doping profile of the pixel. $V_{bias} - V_{bd}$ is the over-voltage or excess voltage over the breakdown voltage.
+
+Following this equation, $Q$ characterizes the gain of the SiPM and is proportional to the over-voltage. $V_{bd}$ is temperature dependent, effectively increasing with the temperature. Thus SiPM gain show an inverse correlation function of the temperature in the range of -1\%/K. Similarly, the \textit{quantum efficiency or photon detection efficiency} (PDE), the probability to initiate a Geiger discharge, has an inverse correlation with temperature and increases with $V_{bias} - V_{bd}$.
+
+Once an avalanche has stopped, the effective voltage of the pixel can return to $V_{bias}$ with the \textit{recovery time} $R_q \cdot C_{px}$ in the order of hundred of nanoseconds before the pixel can fired again. Carriers trapped in defects in the silicon matrix introduce new levels of energy in the conduction band, a release of these carriers causes \textit{afterpulsing} in a period of 50-100 ns after firing.
+
+The measured total charge is the sum of all the fired pixels. With a good uniformity in pixel capacitance and low-noise electronic amplification, the SiPM gain can be measured in-situ by illuminating the SiPM with short and low amplitude light pulses giving a \textit{single-photon spectra} (SPS) as shown in subsection \ref{subsec:GainCharac}.
+
+Due to the finite number of pixels and the recovery time of the pixels in the order of several nanoseconds, the response of a SiPM is non-linear and can be at a first order parametrized as
+\begin{equation}
+  N_{fired} \approx N_{total} \times (1 - e^{\frac{- N_{\gamma} \cdot PDE}{N_{total}}})
+\end{equation}
+with $N_{total}$, the total number of pixels, $N_{\gamma}$, the number of incoming photons and $PDE$, the photon detection efficiency. This parametrization can describe the data very well at low light levels but can significantly differ with a high number of photons \cite{Kotera:2015rha}.
+
+An avalanche can be initiated by a photon but also free carriers in the depleted layer. The rate of the latter \textit{dark noise} increases with $V_{bias} - V_{bd}$ and the temperature. A dark rate of 100 kHz to several MHz per mm$^2$ is produced by typical SiPMs. This dark count rate falls dramatically when increasing the threshold of the readout electronics and typically the increase of the threshold by 1 photo-electron amplitude reduces the dark rate by around one order of magnitude.
+
+Geiger avalanches in a pixel can produce photons that can travel to the nearest pixel and trigger an avalanche. This is referred as \textit{optical cross-talk}. This effect is in the order of 3-10\% for typical SiPMs and can be mitigated by reducing the operating voltage, adding an optical absorber or trenches between pixels.
+
+In the last decade, significant improvements in the manufacture of SiPMs have been achieved and are commercially available. The PDE range has been improved to be sensitive down to near ultraviolet light (300-400 nm) up to infrared light (800-1000 nm). The dark noise rates have been reduced as low as few tens of kHz at room temperature. The introduction of trenches between pixels in the substrate have enabled to reduce the cross-talk probability under 1\% \cite{Liu:2015cpe}. Pixel-to-pixel uniformity in capacitance and breakdown voltages improvements reduce the need for individual bias adjustment. And finally, SiPMs with a very high number of pixels ($\geq$10000) are available, improving the range of linear response and increase the dynamic range but at the detriment of noise rates and PDE.
 
 \section{Electromagnetic Calorimeters}
 

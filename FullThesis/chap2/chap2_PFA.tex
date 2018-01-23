@@ -148,6 +148,10 @@ During spallation, a large quantity of neutrons can be released. These neutrons 
 
 Since the \textit{invisible} energy only occurs in hadron showers, this leads to a difference of the calorimeter response between electrons and hadrons of the same energy. This introduces the term of \textit{compensation} that will be described in \ref{subsec:Compensation}.
 
+\subsubsection{Time development}
+
+EM cascades develop at the speed of light due to the prompt generation of particles with relativistic energies. However, hadronic cascades have different components which have an impact on the time development of the shower. The EM component is prompt as an EM cascade but the hadronic component can be delayed significantly due to nuclear excited states ($\sim$\si{\micro\second}) and the release of thermal neutrons ($\sim$\si{\micro\second}-\si{\second}). Thermal neutrons can travel significantly through the detector before being capture by a nucleus and generate a signal in the calorimeter. These effects have an impact on the time acceptance of the readout electronics and thus on the reconstructed energy and spatial development of the shower.
+
 \section{Calorimeters}
 
 Calorimeters have a tools for decades in HEP to measure the energy of particles. As explained in \ref{subsec:EMShowers} and \ref{subsec:HadShowers}, the longitudinal depth of the shower scales logarithmically with the energy of the incoming particle. Thus the energy of a shower can be mostly contained completely with a moderate amount of material, even for very high energy particles.
@@ -203,14 +207,25 @@ Other methods can be used to achieve compensation:
 
 Particle Flow is a new approach to calorimetry in order to achieve a jet energy resolution much better than traditional calorimetry approaches (order of twice better). It has a potential to revolutionize particle detector design for future lepton collider experiment. \textit{Particle Flow Algorithms} (PFAs) have the ability of reconstructing the energy of all the individual contributions inside a jet. This was made possible by the significant improvements in tracking detectors and calorimeters over the last decade. Some implementations of PFAs were made in the past like H1 at HERA \cite{Abt:1994ye} and up to now in CMS at the LHC \cite{Sirunyan:2017ulk}. However, these detectors were not designed and optimized for particle flow reconstruction. The ILC detectors are designed in such a way that they offer the best instrumentation for the application of PFAs, called Pandora \cite{Marshall2013}.
 
-On average in a jet, 60\% of the energy is carried by charged hadrons, 30\% by photons and 10\% by neutral hadrons \cite{Ebrahimi:394104}. As hadronic calorimeters have a poor energy resolution ($\sim 60\%/\sqrt(E)$), by traditional approach, 70\% of the energy would be poorly measured. By using the tracker to measure charged hadrons, which have a much better resolution ($\sigma_p/p \sim 10^{-5}$ GeV$^{-1}$), their energy can be measured much precisely:
+On average in a jet, 60\% of the energy is carried by charged hadrons, 30\% by photons and 10\% by neutral hadrons \cite{Ebrahimi:394104}. As hadronic calorimeters have a poor energy resolution ($\sim 60\%/\sqrt(E)$), by traditional approach, 70\% of the energy would be poorly measured. By using the tracker to measure charged hadrons, which have a much better resolution ($\sigma_p/p \sim 10^{-5}$ GeV$^{-1}$), their energy can be measured much precisely $E = (pc)^2 + (mc^2)^2$ Typically, Pandora assumes the particle to be a pion to calculate the energy, which is a well educated guess for the ILC. It can be later corrected by identifying the particle. The 30\% energy fraction from the photons can be measured accurately by the ECAL. Thus the 10\% energy fraction carried by neutral hadrons is measured by the HCAL. A schematic of the Particle Flow concept is shown in figure \ref{fig:PFAConcept}.
+
+In this way, the Particle flow approach has the potential to improve the jet energy resolution to around 3-4\% in the range of 45 to 250 GeV ($\sim \frac{30\%}{\sqrt{E}}$). The jet energy resolution can be parametrized as
 \begin{equation}
-  E = (pc)^2 + (mc^2)^2
+  \sigma_{jet} = f_{charged} \cdot \sigma_{Tracker} \oplus f_{\gamma} \cdot \sigma_{ECAL} \oplus f_{neutral} \cdot \sigma_{HCAL} \oplus \sigma_{conf} \oplus \sigma_{leak}
 \end{equation}
-Typically, Pandora assumes the particle to be a pion to calculate the energy, which is a well educated guess for the ILC. It can be later corrected by identifying the particle. The 30\% energy fraction from the photons can be measured accurately by the ECAL. Thus the 10\% energy fraction carried by neutral hadrons is measured by the HCAL. A schematic of the Particle Flow concept is shown in figure \ref{}.
+$\sigma_{Tracker}, \sigma_{ECAL}, \sigma_{HCAL}$ are the energy resolutions of the tracker, ECAL and HCAL respectively, contributing to the jet energy resolution with weighted fractions of the particle type in the event. $\sigma_{conf}$ represents the confusion term due to possible wrong assignment of tracks and calorimeter depositions. It is a limiting factor in Particle Flow calorimetry and starts to dominates for high jet energies. Other contributions such as $\sigma_{leak}$ that degrade the jet energy resolution due to leakage in the calorimeter and uninstrumented areas.
+
+An example of the Particle Flow performance is shown in figure \ref{fig:ILDPFA}. The figure shows the jet energy resolution $\frac{rms_{90}}{E_{jet}}$ as function of the jet energy. The contribution of confusion is represented by the dotted line and is dominating for high energy jets. To mitigate this effect, the detectors must have a fine segmentation to increase the spacial resolution and better associate tracks to energy depositions in the calorimeter and combined with an advance reconstruction and tracking software.
+
+\newpage
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=1\linewidth]{chap2/fig/PFAConcept.png}
+  \caption{Schematic of the Particle Flow Concept. On the left: Traditional calorimetry, The ECAL and HCAL measure the energy deposited by all particles in the a jet (charged particles, photons and neutral particles). The tracker information is not used. On the right: Particle flow approach, The tracker measures all charged particles and the calorimeter information is removed, the ECAL measures the photons and the HCAL measures only neutral particles. Taken from \cite{Feege:2011dsa}.} \label{fig:PFAConcept}
+\end{figure}
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.5\linewidth]{chap2/fig/pfa_figure_10.png}
-  \caption{. Taken from \cite{}.} \label{fig:ILDPFA}
+  \includegraphics[width=0.6\linewidth]{chap2/fig/pfa_figure_10.png}
+  \caption{Jet energy resolution as function of the jet energy for PandoraPFA and the ILD detector. The contribution of confusion is represented by the back dotted line. The dotted-dashed blue curve shows the jet energy resolution only from the calorimetric depositions. Moreover, a parametrization of a typical jet energy resolution ($\frac{60\%}{\sqrt{E}} \oplus 2\%$) is shown in red using the traditional calorimetry approach. Taken from \cite{Thomson:2009rp}.} \label{fig:ILDPFA}
 \end{figure}
