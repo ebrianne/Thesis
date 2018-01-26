@@ -96,32 +96,122 @@ The last particle to describe is the Higgs Boson ($H$) of spin 0. This boson is 
 \section{The Higgs Boson}
 \label{sec:HiggsTheo}
 
-In the Standard Model, the Lagrangian $\mathcal{L}_{D}$, also known as the \textit{Dirac Lagrangian}, for free particle of spin 1/2 such as the electron is
+In the Standard Model, the Lagrangian $\mathcal{L}_{D}$, also known as the \textit{Dirac Lagrangian}, for free particle of spin 1/2 such as the electron is \cite{Griffiths:343277}
 \begin{equation}
-  \mathcal{L}_{D} = i(\hbar c)\overline{\rm \Phi}\gamma^{\mu}\partial_{\mu}\Phi - (mc^2)\overline{\rm \Phi}\Phi
+  \mathcal{L}_{D} = i(\hbar c)\overline{\rm \Psi}\gamma^{\mu}\partial_{\mu}\Psi - (mc^2)\overline{\rm \Psi}\Psi
 \end{equation}
-with $\Phi$ a spinor field, $\gamma^{\mu}$ the Dirac $\gamma$-matrices (4 matrices) \cite{Peskin:1995ev} and $m$ the mass of the particle. This Lagrangian is invariant under the \textit{global} gauge transformation $\Phi \rightarrow e^{i\theta}\Phi$ with $\theta$ being constant. However, this in not invariant under \textit{local} gauge transformation where the phase factor $\theta$ is function of space-time $\theta(x)$.
+with $\Psi$ a spinor field, $\gamma^{\mu}$ the Dirac $\gamma$-matrices (4 matrices) \cite{Peskin:1995ev} and $m$ the mass of the particle. This Lagrangian is invariant under the \textit{global} gauge transformation $\Psi \rightarrow e^{i\theta}\Psi$ with $\theta$ being constant (equivalent to a simple phase rotation). However, this in not invariant under \textit{local} gauge transformation where the phase factor $\theta$ is function of space-time $\theta(x)$.
 
-The local gauge invariance can be restored by adding a new field $A_{\mu}$ which follows the local gauge transformation $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\lambda$ and changing the derivative $\partial_{\mu}$ by the \textit{covariant derivative} $\mathcal{D}_{\mu} = \partial_{\mu} + i\frac{q}{\hbar c}A_{\mu}$. The local gauge invariant Lagrangian for a free particle of spin 1/2 is then:
+The local gauge invariance can be restored by adding a new field $A_{\mu}$ which follows the local gauge transformation $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\lambda$ and changing the derivative $\partial_{\mu}$ by the \textit{covariant derivative} $\mathcal{D}_{\mu} = \partial_{\mu} + i\frac{q}{\hbar c}A_{\mu}$. The local gauge invariant Lagrangian for a free particle of spin 1/2 is then \cite{Griffiths:343277}
 \begin{equation}
-  \mathcal{L}_{QED} = i(\hbar c)\overline{\rm \Phi}\gamma^{\mu}\mathcal{D}_{\mu}\Phi - (mc^2)\overline{\rm \Phi}\Phi - q\overline{\rm \Phi}\gamma^{\mu}\Phi A_{\mu} - \frac{1}{16\pi}F^{\mu\nu}F_{\mu\nu}
+  \mathcal{L}_{QED} = i(\hbar c)\overline{\rm \Psi}\gamma^{\mu}\mathcal{D}_{\mu}\Psi - (mc^2)\overline{\rm \Psi}\Psi + (q\overline{\rm \Psi}\gamma^{\mu}\Psi)A_{\mu} - \frac{1}{4}F^{\mu\nu}F_{\mu\nu}
 \end{equation}
-with $F^{\mu\nu} \equiv \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu}$ the photon field. The term $q\overline{\rm \Phi}\gamma^{\mu}\Phi A_{\mu}$ describes the interaction of the fermion with the photon. By introducing the new field $A_{\mu}$, a term $mA^{\mu}A_{\mu}$ should be present but breaks the local gauge symmetry thus the new field is massless (the photon). This Lagrangian describes well the fermions fields interacting with the photon field otherwise known as QED.
+with $F^{\mu\nu} \equiv \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu}$ the photon field. The term $(q\overline{\rm \Phi}\gamma^{\mu}\Psi)A_{\mu}$ describes the interaction of the fermion with the photon. By introducing the new field $A_{\mu}$, a term $m^2A^{\mu}A_{\mu}$ should be present but breaks the local gauge symmetry thus the new field is massless (the photon). This Lagrangian describes well the fermions fields interacting with the photon field otherwise known as QED and is invariant under $U(1)$.
 
-A similar approach was done by \textit{Yang-Mills} for the weak interaction, also for the strong interaction in QCD under $SU(3)$. It requires the Lagrangian to be invariant under $SU(2)_{L}$ local gauge transformation. This is done by changing the derivative with the according \textit{covariant derivative} to satisfy local gauge invariance under $SU(2)_{L}$.
+A similar approach was done by \textit{Yang-Mills} for the weak interaction, also for the strong interaction in QCD under $SU(3)$. It requires the Lagrangian to be invariant under $SU(2)_{L}$ local gauge transformation. This is done by changing the derivative with the according \textit{covariant derivative} to satisfy local gauge invariance under $SU(2)_{L}$. The resulting Lagrangian is in the form \cite{Griffiths:343277}
+\begin{equation}
+  \mathcal{L}_{YM} = i(\hbar c)\overline{\rm \Psi}\gamma^{\mu}\mathcal{D}_{\mu}\Psi - (mc^2)\overline{\rm \Psi}\Psi + (q\overline{\rm \Psi}\gamma^{\mu}\mathbf{T}\Psi) \cdot \mathbf{A_{\mu}} - \frac{1}{4}\mathbf{F^{\mu\nu}} \cdot \mathbf{F_{\mu\nu}}, \quad \Psi = \begin{pmatrix} \Psi_1 \\ \Psi_2 \end{pmatrix}
+\end{equation}
+with $\Psi_1$ and $\Psi_2$ four-component field spinors, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + i\frac{q}{\hbar c}\mathbf{T} \cdot \mathbf{A_{\mu}}$ the covariant derivative. $\mathbf{T}$ are the Pauli matrices and $\mathbf{A_{\mu}} = (A_{\mu}^1, A_{\mu}^2, A_{\mu}^3)$ is the new gauge field. This Lagrangian satisfies local gauge symmetry in $SU(2)_{L}$ only if the new gauge bosons are massless! However, the weak bosons $W^{+/-}$ and $Z^0$ are proven to be heavy thus their mass term should be included in $\mathcal{L}_{YM}$ which would break the local symmetry. A similar problem arises for the fermions. To resolve this problem, the Higgs mechanism was beautifully created.
 
 \subsection{The Higgs mechanism}
+\label{subsec:HiggsMecha}
+
+As shown previously, local symmetry does not allow for fermions and bosons to be massive. A new framework is needed in order to give mass to the particles and to conserve symmetry at the same time. This is where the Higgs mechanism and spontaneous symmetry breaking comes in. The Lagrangian for a scalar field $\Phi$ of mass $m$ with spin 0 is written as \cite{Griffiths:343277}
+\begin{equation}
+  \mathcal{L} = \frac{1}{2}(\partial_{\mu}\Phi)^{\dagger}(\partial^{\mu}\Phi) - \frac{1}{2}\left(\frac{mc}{\hbar}\right)^2\Phi^2
+\end{equation}
+and can be re-written (from classical Lagrangian) as
+\begin{equation} \label{eq:HiggsLag}
+  \mathcal{L} = \frac{1}{2}(\partial_{\mu}\Phi)^{\dagger}(\partial^{\mu}\Phi) - V(\Phi)
+\end{equation}
+with $V(\Phi)$ the potential term. Let's take a potential of the form:
+\begin{equation}
+  \begin{aligned}
+    V(\Phi) & = \mu^2(\Phi^*\Phi) + \lambda(\Phi^*\Phi)^2 \\
+    & = \mu^2|\Phi|^2 + \lambda|\Phi|^4
+  \end{aligned}
+\end{equation}
+with $\mu$ and $\lambda > 0$ real constants. If $\mu^2 > 0$, the vacuum is at zero and the Lagrangian is symmetric. It describes a particle of mass $\mu$ with a self-interaction term. However, if $\mu^2 < 0$, this induces that the potential has a non-zero field value of $v = \sqrt{-\mu^2/\lambda}$. To circumvent this, we can introduce a field centered at the vacuum $\eta = \Phi - v$. Rewriting the Lagrangian in this case yields
+\begin{equation}
+  \mathcal{L} = \frac{1}{2}(\partial_{\mu}\eta)^{\dagger}(\partial^{\mu}\eta) - \lambda v^2\eta^2
+\end{equation}
+neglecting term higher than the 2$^{nd}$ order. This Lagrangian describes the kinematics for a scalar particle of mass $m_{\eta} = \sqrt{2\lambda}v$, the Higgs mass. This gives the principle for the Higgs mechanism for an Abelian\footnote{More commonly a commutative group i.e $a \cdot b = b \cdot a$} group ($U(1)$).
 
 \subsection{Interpretation in the SM}
 
-\section{Quantum Chromodynamics}
-\label{sec:QCD}
+It can be generalized to non-Abelian\footnote{The counterpart of Abelian groups where commutation is not applicable i.e $a \cdot b \neq b \cdot a$} group ($SU(2)_{L} \times U(1)_{Y}$) by taking the field $\Phi \equiv \Phi_1+i\Phi_2$ as a complex scalar. The Higgs Lagrangian is then
+\begin{equation}
+  \mathcal{L}_{Higgs} = \underbrace{\frac{1}{2}(\mathcal{D}_{\mu}\Phi)^{\dagger}(\mathcal{D}^{\mu}\Phi)}_{\text{Gauge boson mass term}} - \underbrace{V(\Phi)}_{\text{Higgs mass + self-interaction}}
+\end{equation}
+with the covariant derivative operator of $SU(2)_{L} \times U(1)_{Y}$, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + ig\mathbf{T} \cdot \mathbf{W_{\mu}} + ig^{\prime} B_{\mu}Y$ with $g$ and $g^{\prime}$ the gauge couplings and $\mathbf{W_{\mu}}$ and $B_{\mu}$ the gauge fields (representing the $W^{+/-}$, $Z^0$ bosons and the photon).
 
-\subsection{Quarks and Hadronisation}
+This leads to the $W^{+/-}$ and $Z^0$ to acquire mass through interaction with the Higgs
+\begin{equation}
+  \begin{aligned}
+    m_{W} &= g\frac{v}{2}\\
+    m_{Z} &= \sqrt{g^2 + g^{\prime 2}}\frac{v}{2}
+  \end{aligned}
+\end{equation}
+
+The only piece of the puzzle is the interaction of the fermions with the Higgs field. As shown in section \ref{sec:HiggsTheo}, the term $m^2\overline{\rm \Psi}\Psi$ breaks local gauge symmetry and would imply that fermions are massless. The Higgs mechanism described in subsection \ref{subsec:HiggsMecha} can give fermions mass and keep the local gauge symmetry. This results in the Lagrangian of the form \cite{ILC_TDR_Vol2}
+\begin{equation}
+  \mathcal{L}_{Yukawa} = - y^u_{ij}\bar{u}_{Ri}\widetilde{\Phi}^{\dagger}Q_{Lj} - y^d_{ij}\bar{d}_{Ri}\Phi^{\dagger}Q_{Lj} - y^l_{ij}\bar{l}_{Ri}\Phi^{\dagger}L_{Lj} + \text{h.c}.
+\end{equation}
+with $Q_{Lj}$ left-handed quarks, $\bar{u}_{Ri}$ right-handed up-type quarks, $\bar{d}_{Ri}$ right-handed down-type quarks, $L_{Lj}$ the left-handed leptons and $\bar{l}_{Ri}$ the right-handed leptons. The term $\widetilde{\Phi} = iT_2\Phi^{*}$ is the Higgs conjugate. The terms $y^u$, $y^d$ and $y^l$ are the Yukawa coupling matrices for up-type quarks, down-type quarks and charged leptons respectively.
+
+All the couplings of fermions with the Higgs can be predicted and are proportional to the fermion mass and $v$, $g_{Hff} \propto \frac{m_f}{v}$. But the fermion masses are not given in the Standard Model, they must be measured experimentally. The couplings of the gauge bosons with the Higgs are proportional to the square of the boson mass, $g_{HVV} \propto \frac{m_V^2}{v}$. The full Lagrangian in the Standard Model can be written as \cite{Woithe:2017lzd}
+\begin{equation}
+  \begin{aligned}
+    \mathcal{L}_{SM} = &\underbrace{-\frac{1}{4}F^{\mu\nu}F_{\mu\nu}}_{\text{interaction particles}} + \underbrace{i\bar{\Psi}\mathcal{D}\Psi}_{\text{interactions between particles}} \\
+    &+ \underbrace{\Psi_iy_{ij}\Psi_j\Phi}_{\text{Fermion mass}} \quad + \quad \underbrace{|D_{\mu}\Phi|^2}_{\text{Bosons mass}}\\
+    &- \underbrace{V(\Phi)}_{\text{Higgs mass + self-interaction}} + \text{ h.c}
+  \end{aligned}
+\end{equation}
+
+\section{Hadron physics}
+
+Quarks are fundamental particles of the Standard Model govern by the strong interaction. Bound states of quarks forming particles have been observed since the middle of $20^{th}$ century. These particles are called \textit{hadrons}. The theory of the strong interaction in quantum field theory is known as quantum chromodynamics (QCD). QCD is similarly based on the concept of QED but in the $SU(3)$ gauge group. Therefore, 8 massless bosons known as \textit{gluons} are the mediators of the strong interaction and can also self-interact (on the contrary in QED, the photon has no self-interaction). Gluons carry a \textit{color charge} and anticolor charge at the same time. There are 3 different charges: red ($r$), blue ($b$), green ($g$). Thus this creates 9 possible combinations.
+
+Quarks have been proven experimentally but no \textit{free} quarks have been observed. This is explained by \textit{color confinement} in which color charged particles must be colorless thus quarks cannot be isolated and cannot be observed directly.
+
+An important aspect of QCD is \textit{asymptotic freedom}. This means that the strong coupling constant $\alpha_s$ decreases and become small at high energy scales, i.e. short distances. Asymptotic freedom has the effect that quarks inside a hadron a considered free and not tightly bounded.
+
+In particle physics, experiments observe only hadrons and not quarks. Quarks turn into colorless hadrons though a process called \textit{hadronisation}. This process is not calculable in perturbation theory ($\alpha_s >> 1$) thus can only be described phenomenologically. Many different models are available: independent hadronisation, string hadronisation \cite{Artru1988} and cluster hadronisation \cite{Webber:1983if}.
+
+When a quark-antiquark pair is created such as in a collision $e^+e^- \rightarrow q\bar{q}$, the quarks start to move away from each other. A short distances, the quarks are considered free. They can radiate gluons (similar to Bremsstrahlung for an electron) that in turn can radiate gluons. This process is known as \textit{parton showering}. Once the distance become large enough, quarks are bounded by a \textit{tube} or \textit{string} that confines both objects. At one point, the energy stored in the string will be sufficient to produce a new pair of quark-antiquark. This causes the color field to break into smaller fields of smaller energy. This process continues and creates a cascade of new $q\bar{q}$ pairs until the energy is low enough to combine the quark into hadrons. Unstable hadrons decay further into more stable particles. This creates a collimated cascade of particles known as a \textit{jet}.
 
 \section{Beyond the Standard Model}
 \label{sec:BeyondSM}
 
+The Standard Model has been a wonderful theory to describe and predict many physical phenomena. The current Standard Model is composed of 19 free parameters which have no explanation from the theory and are chosen to match experimental data. Nevertheless, they are still open questions that need to be answered by the Standard Model and would suggest that maybe the SM is only a \textit{low energy} approximation of a higher theory.
+
 \subsection{Short-comings of the SM}
 
-\subsection{Supersymmetry (SUSY)}
+\subsubsection*{Gravity}
+
+Gravity is a fundamental force in nature and is explained by the theory of general relativity. The Standard Model does not include gravity and latest attempts to include general relativity have not been successful so far.
+
+\subsubsection*{Dark Matter}
+
+Astrophysics and Cosmology have given observations for the existence of invisible matter known as the \textit{dark matter}. As these particles have not been found so far, it suggests that the coupling of dark matter to electromagnetic and strong interactions is extremely low. New physics beyond the Standard Model is needed to explain the nature of these particles.
+
+\subsubsection*{Neutrino masses}
+
+No neutrino masses are present in the Standard Model as there is no right-handed neutrino thus it cannot acquire mass through Yukawa coupling. However, experiments on neutrino oscillations \cite{Dore:2008dp} shows that neutrinos have a mass (how extremely small it is). The mechanism by which neutrinos gain mass is so far unclear.
+
+\subsubsection*{Hierarchy problem}
+
+At high energies, the Higgs mass has large loop corrections \cite{Vieira:2012ex}. If the Standard Model is valid up to the Plank scale $\Lambda \sim 10^19$ GeV, these corrections become very large. Therefore, it is difficult to keep the Higgs mass at the electroweak scale $\sim$100 GeV and would require a very fine-tuning. This is considered unnatural.
+
+\subsubsection*{Asymmetry matter-antimatter}
+
+The Standard Model predicts that matter and anti-matter should be in equal amounts in the observable universe. But it is well established that our universe is composed mostly of matter. This \textit{baryon asymmetry} is not explained in the Standard Model. CP violation \cite{Ellis:1978hq} may be the answer for this asymmetry, it is present in the Standard Model but has only been observed for weak interactions in the quark sector. But the only condition of CP violation would not entirely explain the asymmetry and would require more conditions \cite{Sakharov:1967dj}.
+
+Numerous theoretician are extending the Standard Model to answer few of these questions. One approach is to add symmetries to the Lagrangian. This approach is called \textit{Supersymmetry} (SUSY) which adds super-partners to the Standard Model particles differing of a spin of 1/2, i.e. each fermions has a boson super-partner and vice-versa.
+
+\begin{center}
+\rule{0.5\textwidth}{.4pt}
+\end{center}
+
+The Standard Model is so far the most reliable theory of the forces that govern our world. The Higgs is the cornerstone of the theory therefore a very precise measurement of its properties such as mass and couplings are needed. This enables us to probe the Standard Model deeply and look for any effects that would suggest physics beyond the Standard Model. Measurements at hadrons colliders like LHC does not achieve the level of precision needed to distinguished theories beyond the Standard Model. A lepton collider would be the perfect tool to conduct precision measurements including the Higgs.
