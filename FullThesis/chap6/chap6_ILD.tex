@@ -242,16 +242,16 @@ The testbeam resolution is the time resolution obtained with the current AHCAL t
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2}
-  \caption{\SI{1}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.} \label{fig:Lin1ns}
+  \caption{Linearity curves \SI{1}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.} \label{fig:Lin1ns}
 \end{figure}
 
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3}
-  \caption{\SI{8}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.}  \label{fig:Lin8ns}
+  \caption{Linearity curves \SI{8}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.}  \label{fig:Lin8ns}
 \end{figure}
 
-Looking at the impact on linearity and energy resolution, time resolution in the order of sub-nanosecond does not affect much the linearity and resolution as shown in figures \ref{fig:Lin0.4ns} and \ref{fig:Reso0.4ns}. For a time resolution in the nanosecond order, the linearity and resolution does not get affected much as shown in figures \ref{fig:Lin1ns} and \ref{fig:Reso1ns}. Of course, for a cut below 1-2 ns, it will start to degrade the linearity and resolution rapidly. For timing resolution higher, the linearity and resolution, as shown in figures \ref{fig:Lin8ns} and \ref{fig:Reso8ns}, start to get heavily degraded for timing cuts below 10-20 \SI{}{\nano\second}.
+Looking at the impact on linearity and energy resolution, time resolution in the order of sub-nanosecond does not affect much the linearity and resolution as shown in figures \ref{fig:Lin0.4ns} and \ref{fig:Reso0.4ns}. For a time resolution in the nanosecond order, the linearity and resolution does not get affected much as shown in figures \ref{fig:Lin1ns} and \ref{fig:Reso1ns}. Of course, for a cut below 1-2 ns, it will start to degrade the linearity rapidly, between 35-40\% for 1 ns time resolution. The resolution gets affected as well, by around 35-50\%. For the 8 ns timing resolution, the linearity and resolution, as shown in figures \ref{fig:Lin8ns} and \ref{fig:Reso8ns}, start to get heavily degraded for timing cuts below 10-20 \SI{}{\nano\second}, around 55-60\% for the linearity and around 50-60\% for the resolution.
 
 \begin{figure}[htbp!]
   \centering
@@ -271,7 +271,7 @@ Looking at the impact on linearity and energy resolution, time resolution in the
   \caption{Energy resolution curves for \SI{8}{\nano\second} time resolution. The plot represents the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV for each timing cut. The green line is a fit applied to 100 ns timing cut of the typical form $\frac{\sigma_{E}}{E} = \frac{a}{\sqrt{E}} \bigoplus b$.}  \label{fig:Reso8ns}
 \end{figure}
 
-Looking back again at the resolution as function of the shower width, one can notice that in the case of (sub-)nanosecond scale time resolution, the loss of resolution is similar as in the case with no smearing while gaining up to 40\% in shower width. A time resolution of 1 ns would degrade additionally the energy resolution by around 2\% for the same decrease in shower width as shown in figures \ref{fig:WidthReso0.4ns} and \ref{fig:WidthReso1ns}. On the other side, a time resolution of 8 ns would yield a reduction of only 30\% of the shower width for the same loss in resolution corresponding to a timing cut of 10 ns as shown in figure \ref{fig:WidthReso8ns}.\\
+Looking back again at the resolution as function of the shower width, one can notice that in the case of (sub-)nanosecond scale time resolution, the loss of resolution is similar as in the case with no smearing while gaining up to 40-50\% in shower width. A time resolution of 1 ns would degrade additionally the energy resolution by around 2\% in absolute for the same decrease in shower width as shown in figures \ref{fig:WidthReso0.4ns} and \ref{fig:WidthReso1ns}. On the other side, a time resolution of 8 ns would yield a reduction of only 30\% of the shower width for the same loss in resolution. This would correspond to a timing cut of 10 ns as shown in figure \ref{fig:WidthReso8ns}.\\
 
 \begin{figure}[htbp!]
   \centering
@@ -295,7 +295,7 @@ Looking back again at the resolution as function of the shower width, one can no
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-The study presented in this section demonstrates that timing information can be used in hadronic showers in order to improve pattern recognition. This study was performed assuming different time resolutions and shows that in order to benefit from timing information, a time resolution for the electronics in the (sub-)nanosecond scale would be ideal. Assuming a time resolution of 1 ns, a time cut around 1-2 ns would greatly reduce the shower width by about 40\% and would degrade the energy resolution by about 8\% as well as the linearity by decreasing the slope which could be corrected.
+The study presented in this section demonstrates that timing information can be used in hadronic showers in order to improve pattern recognition. This study was performed assuming different time resolutions and shows that in order to benefit from timing information, a time resolution for the electronics in the (sub-)nanosecond scale would be ideal. Assuming a time resolution of 1 ns, a time cut around 1-2 ns would greatly reduce the shower width by about 40\% and would degrade the energy resolution by about 8\% in absolute as well as the linearity by 30\% maximum.
 
 Higher time resolution would certainly help but would impact to a certain level the calorimeter energy resolution. One would need to think how to implement the use of time information in Pandora in order to improve the pattern recognition efficiently.
 
@@ -306,7 +306,7 @@ To investigate and understand the degradation of the energy resolution with timi
 
 \subsection{Hit Energy spectra in HCAL}
 
-Due to the high granularity of the HCAL in the ILD detector, a detailed study of hadronic showers is possible at the single cell level (hits). The hadronic calorimeter in ILD is of a non-compensating nature resulting in a higher response of the electromagnetic component of a hadronic shower to the hadronic response. The $\frac{e}{\pi}$ ratio is around 1.19. Because of this, hadron induced shower with a higher electromagnetic fraction will give a higher response and vice-versa. An example is shown in figure \ref{fig:Esum30_100ns}. $E_{mean}$ and $\sigma$ correspond to the mean of the distribution and RMS, respectively. The blue subsample can be identified to events reconstructed with $E_{reco} < E_{mean} - \sigma$ and the red one with $E_{reco} > E_{mean} + \sigma$. The corresponding hit energy spectrum is shown in figure \ref{fig:HitSpectra30_100ns}. This shows that the shape of the hit energy spectrum is related to the deposited energy.
+Due to the high granularity of the HCAL in the ILD detector, a detailed study of hadronic showers is possible at the single cell level (hits). The hadronic calorimeter in ILD is of a non-compensating nature resulting in a higher response for the electromagnetic component of a hadronic shower than for the hadronic component. The $\frac{e}{\pi}$ ratio is around 1.19 \cite{}. Because of this, hadron induced showers with a higher electromagnetic fraction will give a higher response and vice-versa. An example is shown in figure \ref{fig:Response30GeV}. $E_{mean}$ and $\sigma$ correspond to the mean of the distribution and RMS, respectively. The blue subsample contains events reconstructed with $E_{reco} < E_{mean} - \sigma$ and the red one with $E_{reco} > E_{mean} + \sigma$. The corresponding hit energy spectrum is shown in figure \ref{fig:HitSpectra30_100ns}. This shows that the shape of the hit energy spectrum is closely related to the deposited energy. Clusters with a higher reconstructed energy contain hits with larger hit energies which are expected to be mainly caused by the EM component.
 
 \begin{figure}[htbp!]
   \centering
@@ -321,15 +321,15 @@ Due to the high granularity of the HCAL in the ILD detector, a detailed study of
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf}
     \caption{} \label{fig:HitSpectra30_100ns}
   \end{subfigure}
-  \caption{\subref{fig:Esum30_100ns}) Reconstructed energy distribution for 30 GeV kaons. \subref{fig:HitSpectra30_100ns}) Associated hit energy spectrum in the HCAL corresponding to subsamples with low (in blue) and high (in red) energy depositions.}
+  \caption{\subref{fig:Esum30_100ns}) Reconstructed energy distribution for 30 GeV kaons. \subref{fig:HitSpectra30_100ns}) Associated hit energy spectrum in the HCAL corresponding to subsamples with low (in blue) and high (in red) energy depositions.} \label{fig:Response30GeV}
 \end{figure}
 
-Following the note, a quantitative probability $C_{i}^{lim}$ of the i-th event was obtained as follows:
+Following the CAN 028, a quantitative probability $C_{i}^{lim}$ of the i-th event was obtained as follows:
 \begin{equation}
   C_{i}^{lim} = \frac{N_{i}(e \leq e^{lim})}{N_{i}^{HCAL}}
 \end{equation}
 
-where $N_{i}(e \leq e^{lim})$ is the number of hits with energy $e \leq e^{lim}$ and $N_{i}^{HCAL}$ the number of hits in the HCAL. For events with a lower energy deposition (blue spectrum), they have a higher $C_{i}^{lim}$ probability. The value of $e^{lim}$ is in an interval of 3 to 5 MIPs and was observed for the intersection of hit energy spectra for kaons betweeen 10 and 80 GeV as an example is shown in figure \ref{fig:HitSpectra30_Zoom_100ns}.
+where $N_{i}(e \leq e^{lim})$ is the number of hits with energy $e \leq e^{lim}$ and $N_{i}^{HCAL}$ the number of hits in the HCAL. The value of $e^{lim}$ is in an interval of 3 to 5 MIPs and was observed for the intersection of hit energy spectra for kaons between 10 and 80 GeV as an example is shown in figure \ref{fig:HitSpectra30_Zoom_100ns}.
 
 \begin{figure}[htbp!]
   \centering
