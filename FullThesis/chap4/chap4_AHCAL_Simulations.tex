@@ -10,7 +10,7 @@ The \geant framework \cite{Agostinelli2003} is a common toolkit in particle phys
 
 \subsection{Electromagnetic shower models}
 
-Electromagnetic showers are generally well understood. This is mainly due to the fact that only electrons, positrons and photons are involved and their interaction with matter is simple as described in section \ref{subsec:PartInter}. All EM interactions are simulated with a standard EM package in \geant \cite{Ivanchenko2010}. This package has been extensively compared to many observables measured in calorimeters to a level of $\leq$ 1\% \cite{Apostolakis2015}.
+Electromagnetic showers are generally well understood. This is mainly due to the fact that only electrons, positrons and photons are involved and their interaction with matter is simple as described in section \ref{sec:PartInter}. All EM interactions are simulated with a standard EM package in \geant \cite{Ivanchenko2010}. This package has been extensively compared to many observables measured in calorimeters to a level of $\leq$ 1\% \cite{Apostolakis2015}.
 
 Recently additions have been made to the \geant EM physics list by improving the description of ionization processes in the active medium. Then the EM list is used with a suffix \_{}EMY. This is needed in order to correctly simulate thin active layers where the detection method is very sensitive to the primary ionization, like in gas detectors such as RPCs. The use of the \_{}EMY suffix in the EM physics list is greatly improving the agreement between data and simulation in the RPC based CALICE calorimeter prototypes, the SDHCAL and DHCAL \cite{Neubueser2016}. Many other suffix options are available depending on the type of physics, detector and precision needed for EM processes.
 
@@ -162,8 +162,9 @@ Pion showers are simulated using QGSP\_BERT, QGSP\_BERT\_HP and QBBC physics lis
 \end{table}
 
 \subsection{Digitization}
+\label{subsec:Digitization}
 
-The digitization of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. First, the energy deposited in a cell is converted in MIP. The conversion unit named \textit{MIPtoGeV} is extracted from simulation by projecting 8 GeV muons onto the AHCAL detector and fitting the resulting spectrum of the deposited energy with a Landau function. Motivated by physics, as explained in section \ref{subsec:PartInter}, ideally for a thin active material, the energy deposited follows a Landau distribution. The most probable value (MPV) of this distribution is used as the \textit{MIPtoGeV} factor. For this setup, a value of 470 keV is used for the AHCAL as shown in figure \ref{fig:landau_MPV} and 309 keV for the ScECAL.
+The digitization of simulated hits is very similar to the one used in the ScECAL and AHCAL physics prototypes \cite{2011_JINST_6_P04003}. First, the energy deposited in a cell is converted in MIP. The conversion unit named \textit{MIPtoGeV} is extracted from simulation by projecting 8 GeV muons onto the AHCAL detector and fitting the resulting spectrum of the deposited energy with a Landau function. Motivated by physics, as explained in section \ref{sec:PartInter}, ideally for a thin active material, the energy deposited follows a Landau distribution. The most probable value (MPV) of this distribution is used as the \textit{MIPtoGeV} factor. For this setup, a value of 470 keV is used for the AHCAL as shown in figure \ref{fig:landau_MPV} and 309 keV for the ScECAL.
 
 \begin{figure}[htbp!]
   \centering

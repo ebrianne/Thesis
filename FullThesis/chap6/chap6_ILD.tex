@@ -288,7 +288,7 @@ Looking back again at the resolution as function of the shower width, one can no
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3}
-  \caption{Energy resolution as function of the shower width for \SI{8}{\nano\second} time resolution. The top plot shows the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV where each point is representing a timing cut as function of the shower width. The bottom plot shows the deviation to the nominal resolution at 100 ns as a function of the shower width.}  \label{fig:WidthReso8ns}
+  \caption{Energy resolution as function of the shower width for \SI{8}{\nano\second} time resolution. The top plot shows the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV where each point is representing a timing cut as function of the shower width. The bottom plot shows the deviation to the nominal resolution at 100 ns as a function of the shower width. The error bars are due to the low amount of statistics available.}  \label{fig:WidthReso8ns}
 \end{figure}
 
 \begin{center}
@@ -306,17 +306,17 @@ To investigate and understand the degradation of the energy resolution with timi
 
 \subsection{Hit Energy spectra in HCAL}
 
-Due to the high granularity of the HCAL in the ILD detector, a detailed study of hadronic showers is possible at the single cell level (hits). The hadronic calorimeter in ILD is of a non-compensating nature resulting in a higher response for the electromagnetic component of a hadronic shower than for the hadronic component. The $\frac{e}{\pi}$ ratio is around 1.19 \cite{}. Because of this, hadron induced showers with a higher electromagnetic fraction will give a higher response and vice-versa. An example is shown in figure \ref{fig:Response30GeV}. $E_{mean}$ and $\sigma$ correspond to the mean of the distribution and RMS, respectively. The blue subsample contains events reconstructed with $E_{reco} < E_{mean} - \sigma$ and the red one with $E_{reco} > E_{mean} + \sigma$. The corresponding hit energy spectrum is shown in figure \ref{fig:HitSpectra30_100ns}. This shows that the shape of the hit energy spectrum is closely related to the deposited energy. Clusters with a higher reconstructed energy contain hits with larger hit energies which are expected to be mainly caused by the EM component.
+Due to the high granularity of the HCAL in the ILD detector, a detailed study of hadronic showers is possible at the single cell level (hits). The hadronic calorimeter in ILD is of a non-compensating nature resulting in a higher response for the electromagnetic component of a hadronic shower than for the hadronic component. The $\frac{e}{\pi}$ ratio is around 1.2 \cite{ILC_TDR_Vol4}. Because of this, hadron induced showers with a higher electromagnetic fraction will give a higher response and vice-versa. An example is shown in figure \ref{fig:Response30GeV}. $E_{mean}$ and $\sigma$ correspond to the mean of the distribution and RMS, respectively. The blue subsample contains events reconstructed with $E_{reco} < E_{mean} - \sigma$ and the red one with $E_{reco} > E_{mean} + \sigma$. The corresponding hit energy spectrum is shown in figure \ref{fig:HitSpectra30_100ns}. This shows that the shape of the hit energy spectrum is closely related to the deposited energy. Clusters with a higher reconstructed energy contain hits with larger hit energies which are expected to be mainly caused by the EM component.
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf}
     \caption{} \label{fig:Esum30_100ns}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf}
     \caption{} \label{fig:HitSpectra30_100ns}
@@ -329,7 +329,7 @@ Following the CAN 028, a quantitative probability $C_{i}^{lim}$ of the i-th even
   C_{i}^{lim} = \frac{N_{i}(e \leq e^{lim})}{N_{i}^{HCAL}}
 \end{equation}
 
-where $N_{i}(e \leq e^{lim})$ is the number of hits with energy $e \leq e^{lim}$ and $N_{i}^{HCAL}$ the number of hits in the HCAL. The value of $e^{lim}$ is in an interval of 3 to 5 MIPs and was observed for the intersection of hit energy spectra for kaons between 10 and 80 GeV as an example is shown in figure \ref{fig:HitSpectra30_Zoom_100ns}.
+where $N_{i}(e \leq e^{lim})$ is the number of hits with energy $e \leq e^{lim}$ and $N_{i}^{HCAL}$ the number of hits in the HCAL. The value of $e^{lim}$ is in an interval of 3 to 5 MIPs and was observed for the intersection of hit energy spectra for kaons between 10 and 80 GeV. A zoom between 0 and 14 MIP for 30 GeV is shown in figure \ref{fig:HitSpectra30_Zoom_100ns}.
 
 \begin{figure}[htbp!]
   \centering
@@ -337,83 +337,78 @@ where $N_{i}(e \leq e^{lim})$ is the number of hits with energy $e \leq e^{lim}$
   \caption{The top plot shows the hit energy spectrum in the HCAL for 30 GeV kaons for the subsample low (blue) and high (red) of energy depositions. The bottom plot shows the ratio of the red to the blue spectrum.} \label{fig:HitSpectra30_Zoom_100ns}
 \end{figure}
 
-The distribution of $C^{lim}$ for different values of $e^{lim}$ are shown in figures \ref{fig:CLim10_100ns} and \ref{fig:CLim80_100ns} for 10 GeV and 80 GeV kaons. One can see that the distributions get narrower with increasing $e^{lim}$. A higher value of $e^{lim}$ results with more events with a value of $C^{lim}$ close to 1. For this analysis, a value of 3.5 MIP was chosen for $e^{lim}$.
+The distribution of $C^{lim}$ for different values of $e^{lim}$ are shown in figure \ref{fig:CLim30_100ns} for 30 GeV kaons. One can see that the distributions get narrower with increasing $e^{lim}$. By choosing the right value of $e^{lim}$, it may be possible to distinguish between the red and blue subsamples by their $C^{lim}$ distributions. For this analysis, a value of 3.5 MIP was chosen for $e^{lim}$. One can observe that for events where the reconstructed energy is below $E_{mean} - \sigma$ correspond to a higher value of $C^{lim}$ and vice-versa. The blue distribution has a mean of 0.71 and the red distribution has a mean of 0.61, this corresponds to a separation of 14.1\%.
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_10GeV.pdf}
-    \caption{10 GeV.} \label{fig:CLim10_100ns}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_80GeV.pdf}
-    \caption{80 GeV.} \label{fig:CLim80_100ns}
-  \end{subfigure}
-  \caption{\subref{fig:CLim10_100ns}) Distributions of $C^{lim}$ for different values of $e^{lim}$ for 10 GeV kaons. \subref{fig:CLim80_100ns}) Distributions of $C^{lim}$ for different values of $e^{lim}$ for 80 GeV kaons.}
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf}
+  \caption{Distributions of $C^{lim}$ for different values of $e^{lim}$ for 30 GeV kaons. The red and blue filled histograms corresponds to events that are in the region $E_{mean} \pm \sigma$ respectively.} \label{fig:CLim30_100ns}
 \end{figure}
 
-Similarly another variable $C_{i}^{av}$ was calculated as follows:
-\begin{equation}
-  C_{i}^{av} = \frac{N_{i}(e \leq e_{i}^{av})}{N_{i}^{HCAL}}
-\end{equation}
-
-where $N_{i}(e \leq e^{av})$ is the number of hits with energy $e \leq e_{i}^{av}$, $e_{i}^{av}$ is the mean of the energy spectrum of the i-th event and $N_{i}^{HCAL}$ the number of hits in the HCAL. The ratio of $C_{i}^{lim}$ and $C_{i}^{av}$ is calculated for each event and appears inversely correlated to the deposited energy in the HCAL $E_i^{HCAL}$. It is shown in figures \ref{fig:EhcalCLimCav10_100ns} and \ref{fig:EhcalCLimCav80_100ns}.
+An inverse correlation is found between the total energy in the HCAL and $C^{lim}$ as shown in figure \ref{fig:EhcalCLim30_100ns}. The inverse correlation is much stronger for higher kaon energies and becomes weaker with lower energies.
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLimCav_100ns_10GeV.pdf}
-    \caption{10 GeV.} \label{fig:EhcalCLimCav10_100ns}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLimCav_100ns_80GeV.pdf}
-    \caption{80 GeV.} \label{fig:EhcalCLimCav80_100ns}
-  \end{subfigure}
-  \caption{\subref{fig:EhcalCLimCav10_100ns}) Correlation between the energy deposited in the HCAL for 10 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs. \subref{fig:EhcalCLimCav80_100ns}) Correlation between the energy deposited in the HCAL for 80 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs.}
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf}
+  \caption{Correlation between the energy deposited in the HCAL for 30 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs.} \label{fig:EhcalCLim30_100ns}
 \end{figure}
 
-The inverse correlation is much stronger for higher kaon energies and becomes weaker with lower energies. By looking at the figure \ref{fig:CLimCav_100ns}, it appears that fluctuations are stronger at lower energies and $C^{lim}$/$C^{av}$ is energy dependent.
+% \begin{figure}[htbp!]
+%   \centering
+%   \begin{subfigure}[t]{0.49\textwidth}
+%     \centering
+%     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf}
+%     \caption{30 GeV.} \label{fig:EhcalCLim30_100ns}
+%   \end{subfigure}
+%   \hfill
+%   \begin{subfigure}[t]{0.49\textwidth}
+%     \centering
+%     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_80GeV.pdf}
+%     \caption{80 GeV.} \label{fig:EhcalCLim80_100ns}
+%   \end{subfigure}
+%   \caption{\subref{fig:EhcalCLim30_100ns}) Correlation between the energy deposited in the HCAL for 30 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs. \subref{fig:EhcalCLim80_100ns}) Correlation between the energy deposited in the HCAL for 80 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs.}
+% \end{figure}
 
-\begin{figure}[htbp!]
-  \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLimCav_100ns_SeveralEnergies.pdf}
-  \caption{Distributions of $C^{lim}$/$C^{av}$ for different kaon energies.} \label{fig:CLimCav_100ns}
-\end{figure}
-
-In a next step, timing cut will be applied and a comparison with these results will be done. It is believed that timing cuts will have an effect of reducing the inverse correlation of $C^{lim}$/$C^{av}$ with the energy deposited as fluctuation are cut down by timing cuts thus would favor higher electromagnetic fraction hadronic showers.
+In a next step, timing cut will be applied and a comparison with these results will be done. It is believed that timing cuts will have an effect of narrowing the $C^{lim}$ distributions, thus bringing the blue $C^{lim}$ distribution (hadronic component) closer to the red $C^{lim}$ distribution (EM component). Therefore reducing the inverse correlation of $C^{lim}$ with the energy deposited as fluctuation are cut down by timing cuts thus would favor higher electromagnetic fraction hadronic showers.
 
 \subsection{Influence of timing cuts on hit energy spectra in HCAL}
 
-A first check was performed on the shape of the hit spectra in the HCAL with different timing cuts. The figure \ref{fig:HitSpectra80_timingcuts} shows the hit spectra for 80 GeV kaons with a timing cut of 100, 5 and 1 ns. The green line in the bottom plot represents the value of $e^{lim}$ = 3.5 MIPs.
+A check was performed on the shape of the hit spectra in the HCAL with different timing cuts. The figure \ref{fig:HitSpectra30_timingcuts} shows the hit spectra for 30 GeV kaons with a timing cut of 100 and 1 ns. The green line in the bottom plot represents the value of $e^{lim}$ = 3.5 MIPs.
+
+% \begin{figure}[htbp!]
+%   \centering
+%   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf}
+%   \caption{The upper plot shows the hit energy spectra in the HCAL for 30 GeV kaons with different timing cuts applied. The bottom plot shows the ratio of the spectra compared to 100 ns.} \label{fig:HitSpectra30_timingcuts}
+% \end{figure}
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_80GeV.pdf}
-  \caption{The top plots shows the hit energy spectra in the HCAL for 80 GeV kaons with different timing cuts applied. The bottom plot shows the ratio of the spectra compared to 100 ns.} \label{fig:HitSpectra80_timingcuts}
-\end{figure}
-
-One can notice that the shape of the spectra differs slightly with timing cuts, a reduction of low energy hits (~ 1 MIP) and a higher tail to higher hit energies. With a cut of 1 ns, there are around 10\% more hits over 4 MIPs. With a value of 3.5 MIP for $e^{lim}$, it seems that there are globally fewer hits below, thus reducing the value of $C^{lim}$ ($C^{av}$ is quite independent of the timing cut). A lower value of $C^{lim}$/$C^{av}$ corresponds to a higher energy deposited thus giving a hint that timing cuts enhance the electromagnetic response of the calorimeter making even more non-compensating. To further confirm this observation, the same correlation plots between the energy deposited in the HCAL and the ratio $C^{lim}$/$C^{av}$ is shown in figures \ref{fig:EhcalCLimCav10_1ns} and \ref{fig:EhcalCLimCav80_1ns}.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLimCav_1ns_10GeV.pdf}
-    \caption{10 GeV.} \label{fig:EhcalCLimCav10_1ns}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf}
+    \caption{30 GeV.} \label{fig:HitSpectra30_timingcuts}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.49\textwidth}
     \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLimCav_1ns_80GeV.pdf}
-    \caption{80 GeV.} \label{fig:EhcalCLimCav80_1ns}
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf}
+    \caption{80 GeV.} \label{fig:CLim30_1ns}
   \end{subfigure}
-  \caption{\subref{fig:EhcalCLimCav10_1ns}) Correlation between the energy deposited in the HCAL for 10 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs with a timing cut of 1 ns. \subref{fig:EhcalCLimCav80_1ns}) Correlation between the energy deposited in the HCAL for 80 GeV kaons and $C^{lim}$/$C^{av}$ for $e^{lim}$ = 3.5 MIPs with a timing cut of 1 ns.}
+  \caption{\subref{fig:HitSpectra30_timingcuts}) The upper plot shows the hit energy spectra in the HCAL for 30 GeV kaons with different timing cuts applied. The bottom plot shows the ratio of the spectra compared to 100 ns. \subref{fig:CLim30_1ns}) Distributions of $C^{lim}$ for different values of $e^{lim}$ for 30 GeV kaons for 1 ns timing cut. The red and blue filled histograms corresponds to events that are in the region $E_{mean} \pm \sigma$ respectively.}
 \end{figure}
 
-It appears that the anti-correlation is reduced slightly but more visible for lower energy kaons. This further confirms that the timing cuts reduce the fluctuations between the electromagnetic and hadronic fractions in hadronic showers by cutting the hadronic response and enhancing the electromagnetic one. This has an effect of non-compensation in the response to hadronic showers thus degrading the energy resolution furthermore.
+One can notice that the shape of the spectra differs slightly with timing cuts. A large reduction of low energy hits ($\sim$1 MIP) is visible. With a cut of 1 ns, there are around 10\% less hits over 4 MIPs but up to 60\% less hits below 1 MIP. With a value of 3.5 MIP for $e^{lim}$, it seems that there are globally fewer hits below, thus reducing the value of $C^{lim}$. A lower value of $C^{lim}$ would correspond to a higher energy deposited thus giving a hint that timing cuts enhance the electromagnetic response of the calorimeter making even more non-compensating. This is shown in figure \ref{fig:CLim30_1ns}.
+
+% \begin{figure}[htbp!]
+%   \centering
+%   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf}
+%   \caption{Distributions of $C^{lim}$ for different values of $e^{lim}$ for 30 GeV kaons for 1 ns timing cut. The blue and red filled histograms corresponds to events that are in the region $E_{mean} \pm \sigma$ respectively.} \label{fig:CLim30_1ns}
+% \end{figure}
+
+The blue $C^{lim}$ distribution has a mean of 0.66 and the red $C^{lim}$ distribution has a mean of 0.58. This corresponds to a separation of 12.1\%. The timing cut of 1 ns has the effect of reducing the distance between both distributions by around 2\%. To further confirm this observation, the same correlation plots between the energy deposited in the HCAL and $C^{lim}$ is shown in figure \ref{fig:EhcalCLim30_1ns} for 1 ns timing cut. The anti-correlation is reduced slightly with the correlation coefficient going from -0.58 to -0.48 and the distribution looks more circular. This further confirms that the timing cuts reduce the fluctuations between the electromagnetic and hadronic fractions in hadronic showers by cutting the hadronic response and enhancing the electromagnetic one. This has an effect of non-compensation in the response to hadronic showers thus degrading the energy resolution furthermore.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf}
+  \caption{Correlation between the energy deposited in the HCAL for 30 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs with a timing cut of 1 ns.} \label{fig:EhcalCLim30_1ns}
+\end{figure}
