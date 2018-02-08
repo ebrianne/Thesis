@@ -2,14 +2,20 @@
 \chapter{CALICE Calorimeter concepts}
 \label{chap:CALICE_Det}
 
-The CALICE Collaboration is developing and testing electromagnetic and hadronic calorimeters. These detector concepts are optimized toward a linear collider environment such as the International Linear Collider (ILC) \cite{ILC_TDR_Vol1} or Compact Linear Collider (CLIC) \cite{CLIC_CDR} but collaboration with the Large Hadron Collider community for the High-Lumi upgrade (HL-LHC) is ongoing \cite{1748-0221-12-01-C01042}. The CALICE calorimeters are high granularity calorimeters optimized for the particle flow algorithm (Pandora PFA) providing a very detailed image of physics events.\\
-Several prototypes for physics were build in the past and tested in testbeam campaigns at DESY, CERN and FNAL \cite{1748-0221-3-08-P08001, 1748-0221-5-05-P05004, 1707.07126v2, 1748-0221-10-10-P10039, 1748-0221-3-05-P05001}. Three physics prototypes of 1 m$^3$ were conceived using different active material and absorbers as well different readout schemes.\\
-Nowadays, the CALICE Collaboration is still performing analysis on the data collected by these prototypes \cite{OskarCAN, YasmineCAN}. Also, the collaboration is looking forward in the integration into a full linear collider detector by designing several new technological calorimeter prototypes.\\
-In this chapter, the electromagnetic and hadronic calorimeter concepts will be introduced, described.
+The CALICE Collaboration is developing and testing electromagnetic and hadronic calorimeters. These detector concepts are optimized toward a linear collider environment such as the International Linear Collider (ILC) \cite{ILC_TDR_Vol1} or Compact Linear Collider (\acrshort{clic}) \cite{CLIC_CDR} but collaboration with the Large Hadron Collider community for the High-Lumi upgrade (HL-LHC) is ongoing \cite{1748-0221-12-01-C01042}. The CALICE calorimeters are high granularity calorimeters optimized for the use of particle flow algorithms, e.g. Pandora PFA \cite{Marshall2013}, providing a very detailed image of physics events and a high spatial resolution to separate nearby showers.\\
+Several \textit{physics prototypes} were build in the past and tested in testbeam campaigns at DESY, CERN and FNAL \cite{1748-0221-3-08-P08001, 1748-0221-5-05-P05004, 1707.07126v2, 1748-0221-10-10-P10039, 1748-0221-3-05-P05001} to demonstrate the principle of particle flow. Three prototypes of 1 m$^3$ were conceived using different active material and absorbers as well different readout schemes.\\
+The CALICE Collaboration is still performing analysis on the data collected by these prototypes \cite{OskarCAN, YasmineCAN}. Nowadays, the collaboration focuses on in the integration and scalability into a full linear collider detector by designing several new \textit{technological calorimeter prototypes}.\\
+In this chapter, the electromagnetic and hadronic calorimeter concepts will be introduced and will be described.
 
 \section{Silicon Photomultipliers}
 
-Semi-conductors detectors have been used since more than 50 years and are still a major research topic in high energy physics \cite{1748-0221-4-04-P04004, Garutti:2011qv, Garutti:2017ipx}. \textit{Silicon photomultipliers} (SiPMs) are semi-conductors used to measure light amplitudes down to the single photon. SiPMs are composed of an array of \textit{Avalanche Photodiodes} (APDs) pixels operated in Geiger-mode. The pixels are all connected in parallel to a common cathode and anode. Nowadays, thousands of pixels can be integrated into a few $mm^2$ area.
+Semi-conductors detectors have been used since more than 50 years and are still a major research topic in high energy physics \cite{1748-0221-4-04-P04004, Garutti:2011qv, Garutti:2017ipx}. \textit{Silicon photomultipliers} (SiPMs) are semi-conductors used to measure light amplitudes down to the single photon. SiPMs are composed of an array of \textit{Avalanche Photodiodes} (APDs) pixels operated in Geiger-mode. The pixels are all connected in parallel to a common cathode and anode. Nowadays, thousands of pixels can be integrated into a few $mm^2$ area. A picture of a surface-mounted SiPM is shown in figure \ref{fig:SMD_SiPM}.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.4\linewidth]{chap3/fig/SMD_SiPM.png}
+  \caption{Picture of a surface-mounted SiPM. The picture shows the SiPM package as well the grid of pixels.} \label{fig:SMD_SiPM}
+\end{figure}
 
 Each pixels are operated in reverse bias ($V_{bias}$), in the order of 30-60 V, larger than the \textit{breakdown voltage} ($V_{bd}$). When a photon is absorbed, an electron-hole pair is created in the depletion region by the photo-electric effect. This electron is accelerated by the electric field and starts to create a self-sustained avalanche or \textit{Geiger discharge} by impact ionization, rendering the diode conductive. A serial \textit{quenching resistor} ($R_q$) reduces the effective voltage of the pixel below $V_{bd}$ thus quenching the avalanche. Each pixel deliver a charge $Q$ such as
 \begin{equation}
@@ -37,11 +43,11 @@ In the last decade, significant improvements in the manufacture of SiPMs have be
 
 \section{Electromagnetic Calorimeters}
 
-The CALICE Collaboration is developing two different electromagnetic calorimeters (ECAL) concepts. Physics prototypes whose goal was to prove the performance of such calorimeters for detailed measurements of EM showers were first built. Now engineering prototypes are designed in order to improve the calorimeter design, the integration of the front-end electronics and the readout scheme. In the next subsections, the silicon-based SiECAL and the scintillator-based ScECAL calorimeters using both tungsten as absorber material will be described.
+The CALICE collaboration is developing two different electromagnetic calorimeters (ECAL) concepts. The goal of the previous prototypes was to prove the performance of such calorimeters for detailed measurements of EM showers. Now engineering prototypes are designed in order to improve the calorimeter design, the integration of the front-end electronics and the readout scheme. In the next subsections, the silicon-based SiECAL and the scintillator-based ScECAL calorimeters using both tungsten as absorber material will be described.
 
 \subsection{SiECAL}
 
-The SiECAL physics prototype consists of 30 active and absorber layers. The sensitive layer is made of high-resistivity silicon wafers 525 \si{\micro\meter} thick. These are divided into 6$\times$6 cm$^2$ sensors, segmented into a matrix of 1$\times$1 cm$^2$ PIN diodes operated in reversed bias. The total active area is 18$\times$18 cm$^2$ which resulted in 9720 channels. The depth of the calorimeter was 24 X$_0$ achieved by 10 layers of 0.4 X$_0$ (1.4 mm), followed by 10 layers of 0.8 X$_0$ (2.8 mm) and 10 more layers of 1.2 X$_0$ (4.2 mm) thick tungsten absorber plates. No front-end electronic was integrated into the layers but placed off-detector using analog lines. The performance of such calorimeter was tested in various beams at DESY and CERN. An energy resolution of $\frac{16.53\%}{\sqrt{E}}$ stochastic term and $1.07\%$ constant term was achieved \cite{ADLOFF2009372}.
+The SiECAL physics prototype \cite{1748-0221-3-08-P08001} consists of 30 active and absorber layers. The sensitive layer is made of high-resistivity silicon wafers 525 \si{\micro\meter} thick. These are divided into 6$\times$6 cm$^2$ sensors, segmented into a matrix of 1$\times$1 cm$^2$ PIN diodes operated in reversed bias. The total active area is 18$\times$18 cm$^2$ which resulted in 9720 channels. The depth of the calorimeter was 24 X$_0$ achieved by 10 layers of 0.4 X$_0$ (1.4 mm), followed by 10 layers of 0.8 X$_0$ (2.8 mm) and 10 more layers of 1.2 X$_0$ (4.2 mm) thick tungsten absorber plates. No front-end electronic was integrated into the layers but placed off-detector using analog lines. A schematic of the prototype is shown in figure \ref{fig:SiWECALPhysics}. The performance of such calorimeter was tested in various beams at DESY and CERN. An energy resolution of $\frac{16.53\%}{\sqrt{E}}$ stochastic term and $1.07\%$ constant term was achieved \cite{ADLOFF2009372}.
 
 \begin{figure}[htbp!]
   \centering
@@ -57,12 +63,12 @@ The SiECAL physics prototype consists of 30 active and absorber layers. The sens
   \caption{\subref{fig:SiWECALPhysics}) The schematics of the SiW-ECAL physics prototype. \subref{fig:SiWECALTechno}) Picture of a layer of the SiW-ECAL technological prototype.}
 \end{figure}
 
-After the validation of the calorimeter concept, a technological SiECAL prototype is being developed focusing on the integration into a full linear collider detector. To do this, modules close to the ILD design are being developed taking into account mass-production and low-power front-end electronics are integrated into the detector volume. The silicon wafers are larger and divided into 9$\times$9 cm$^2$ sensors. The PIN diode matrix is reduced to 5$\times$5 mm$^2$ pads to improve the pattern recognition of the calorimeter. New designs to the sensor are also made to minimize dead area at the sensor edge and cross-talk effects. The front-end is equipped with an ASIC, the SKIROC2 chip \cite{1748-0221-6-12-C12040}. It has 64 channels with adjustable gain charge pre-amplifier, a 12-bit ADC and digital logic. Also, it allows for auto-triggering with an adjustable threshold (below 0.5 MIP) and hit time recording performed on a 12-bit TDC ramp. The SKIROC2 ASIC is designed to match the ILC beam structure (see chapter \ref{chap:FutureColliders}) and thus allows for a power-pulsed mode where electronics are switched off between ILC bunches. This allows a very low power dissipation in the order of 25 \si{\micro\watt} per channel.
+After the validation of the calorimeter concept, a technological SiECAL prototype is being developed focusing on the integration into a full linear collider detector. To do this, modules close to the ILD design are being developed taking into account mass-production and low-power front-end electronics are integrated into the detector volume. The silicon wafers are larger and divided into 9$\times$9 cm$^2$ sensors. The PIN diode matrix is reduced to 5$\times$5 mm$^2$ pads to improve the pattern recognition of the calorimeter. New designs of the sensor are also made to minimize dead area at the sensor edge and cross-talk effects. The front-end is equipped with an ASIC, the SKIROC2 chip \cite{1748-0221-6-12-C12040}. It has 64 channels with adjustable gain charge pre-amplifier, a 12-bit ADC and digital logic. Also, it allows for auto-triggering with an adjustable threshold (below 0.5 MIP) and hit time recording performed on a 12-bit TDC ramp. The SKIROC2 ASIC is designed to match the ILC beam structure (see chapter \ref{chap:FutureColliders}) and thus allows for a power-pulsed mode where electronics are switched off between ILC bunches. This allows a very low power dissipation in the order of 25 \si{\micro\watt} per channel. A picture of a layer of the technological prototype can be seen in figure \ref{fig:SiWECALTechno}. The fully assembled layers are inserted into an alveolar absorber structure.
 
 \subsection{ScECAL}
 \label{subsec:ScECAL}
 
-The ScECAL physics prototype consists of 30 layers of scintillator and tungsten carbide absorber plates 3.5 mm thick. The total calorimeter thickness is 266 mm or 21.5 X$_0$. The layers have a transverse area of 180$\times$180 mm$^2$. Each layer is composed of four rows of 18 scintillator strips of dimensions 45$\times$10$\times$3 mm$^3$ and the strips are placed orthogonally in consecutive layers. The strips have a Wavelength-shifting Fiber (WLS) inside to guide the scintillation light to a Silicon-Photomultiplier (SiPM), a MPPC from Hamamatsu. This accounts for 2160 channels to be read out. This prototype was tested in various beams, an energy resolution of $\frac{12.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term was demonstrated \cite{1707.07126v2}.
+The ScECAL physics prototype \cite{1707.07126v2} consists of 30 layers of scintillator and tungsten carbide absorber plates 3.5 mm thick. The total calorimeter thickness is 266 mm or 21.5 X$_0$. The layers have a transverse area of 180$\times$180 mm$^2$. Each layer is composed of four rows of 18 scintillator strips of dimensions 45$\times$10$\times$3 mm$^3$ and the strips are placed orthogonally in consecutive layers. The strips have a Wavelength-shifting Fiber (WLS) inside to guide the scintillation light to a Silicon-Photomultiplier (SiPM), a MPPC from Hamamatsu. This accounts for 2160 channels to be read out. This prototype was tested in various beams, an energy resolution of $\frac{12.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term was demonstrated \cite{1707.07126v2}.
 
 \begin{figure}[htbp!]
   \centering
@@ -78,11 +84,14 @@ The ScECAL physics prototype consists of 30 layers of scintillator and tungsten 
   \caption{\subref{fig:ScECALPhysics}) Photo of the ScECAL physics prototype with the Fe-AHCAL at FNAL. \subref{fig:ScECALTechno}) Photo of the top side of the technological ScECAL prototype.}
 \end{figure}
 
-To look forward, a technological prototype is now developed to accommodate the front-end electronics into the layer to reduce the amount of dead material due to cabling. An ECAL Base Unit (EBU) has 144 scintillator strips of dimensions 45$\times$5$\times$2 mm$^3$. Each layer has a transverse dimension of 180$\times$180 mm$^2$. The strips don't have a WLS fiber due to improvements in SiPM technology for blue light ($\sim$ 450 nm) detection efficiency. Several designs in SiPM and scintillator strip shape are being studied to optimize light collection. In this thesis (see section \ref{sec:TBsetup}), two designs were used in testbeam at CERN, a bottom-side readout and baseline readout design. The former uses 10k pixels surface-mounted MPPC, the latter uses 1.6k pixels MPPC placed on the side of the strips. Each SiPM are read out by an ASIC, the SPIROC2B. Each layer is equipped with four SPIROC ASICs. Each channel has also an integrated LED calibration system in order to monitor the SiPM gain.
+To look forward, a technological prototype is now developed to accommodate the front-end electronics into the layer to reduce the amount of dead material due to cabling. An ECAL Base Unit (EBU) has 144 scintillator strips of dimensions 45$\times$5$\times$2 mm$^3$. Each EBU has a transverse dimension of 180$\times$180 mm$^2$. The design of the EBU is derived from the HBU design (see subsection \ref{subsec:AHCAL}). The strips don't have a WLS fiber due to improvements in SiPM technology for blue light ($\sim$ 450 nm) detection efficiency. Several designs in SiPM and scintillator strip shape are being studied to optimize light collection. Moreover by using a strip splitting algorithm (SSA) \cite{Kotera:2014psa}, an effective granularity of $5\times5$ mm$^2$ can be achieved.
+
+In this thesis (see section \ref{sec:TBsetup}), two designs were used in testbeam at CERN, a bottom-side readout and baseline readout design. The former uses 10k pixels surface-mounted MPPC, the latter uses 1.6k pixels MPPC placed on the side of the strips. Each SiPM are read out by an ASIC, the SPIROC2B. Each layer is equipped with four SPIROC ASICs. Each channel has also an integrated LED calibration system in order to monitor the SiPM gain.
 
 \subsubsection{SPIROC2B ASIC}
+\label{subsec:SPIROC2B}
 
-The SPIROC2B (SiPM Integrated Read-Out Chip) is a dedicated ASIC to readout and digitize the signal of 36 SiPM channels. Each channel can be tuned in bias voltage from -4.5V to 0V with a resolution of around 20-200 mV. Each channel, also, has a configurable charge pre-amplifier gain to cover a high SiPM pixel dynamic range. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events. A 12-bit Wilkinson ADC is used to digitize the charge stored in the capacitor array for the amplitude and time measurement. The hit time is registered via a 12-bit TDC voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}), in testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}). The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off.
+The SPIROC2B (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC to readout and digitize the signal of 36 SiPM channels. Each channel can be tuned in bias voltage from -4.5V to 0V with a resolution of around 20-200 mV. Each channel, also, has a configurable charge pre-amplifier gain to cover a high SiPM pixel dynamic range. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events. A 12-bit Wilkinson ADC is used to digitize the charge stored in the capacitor array for the amplitude and time measurement. The hit time is registered via a 12-bit TDC voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}). The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off.
 
 \begin{figure}[htbp!]
   \centering
@@ -94,10 +103,12 @@ The chip can be operated in either external trigger mode (ET) or auto-trigger mo
 
 \section{Hadronic Calorimeters}
 
-\subsection{AHCAL}
-\label{subsec:SPIROC2B}
+The CALICE collaboration is developing several hadron calorimeters concepts. Each concepts are varying in the granularity from $3\times3$ cm$^2$ to $1\times1$ cm$^2$ but as well in the precision of the amplitude information. The DHCAL and SDHCAL calorimeter concepts are using digital information of the amplitude by counting the number of hits on 1 bit or 2 bits using thresholds. The AHCAL calorimeter concept rely on the full analog information of the amplitude digitized on 12 bits. A detailed comparison study of these different calorimeter concepts has been done and can be read in \cite{Neubueser2016}.
 
-The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillator tiles has active material. The absorber structure can be either steel or tungsten but I will focus on the former one. The physics prototype consists of 38 active layers inserted in a steel structure of 1 m$^3$ with 39 absorber plates 1$\times$1 m wide and 17.4 mm thick on average. The calorimeter has a total depth of 4.28 $\lambda_{\pi}$ (5.3 $\lambda_{n}$). Active layers are consisted of a steel cassette housing 216, for the 30 first layers, or 141, for the 8 last layers, scintillator tiles connected on a PCB. The tiles are 5 mm thick and have different sizes of 3$\times$3, 6$\times$6, 12$\times$12 cm$^2$. This accounts for a total of 7608 channels. The light produced in the scintillator is guided through a WLS fiber 1 mm thick that is inserted in the tile to a SiPM. The SiPM sensitive area is 1.1$\times$1.1 mm$^2$ containing 1156 pixels which were produced by the MEPhi/PULSAR group in Russia. The performance of this prototype has been demonstrated in several beam types. For electrons, the energy resolution of the AHCAL measured is $\frac{21.7\%}{\sqrt{E}}$ stochastic and <1\% constant term \cite{CAN034}. For pions, the intrinsic energy resolution of the AHCAL has been measured to be $\frac{57.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term. This can be improved to $\frac{45\%}{\sqrt{E}}$ stochastic term by using a technique called \textit{software compensation} \cite{SoftCompNew2012}.
+\subsection{AHCAL}
+\label{subsec:AHCAL}
+
+The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillator tiles as active material. The absorber structure can be either steel or tungsten but I will focus on the former one. The physics prototype \cite{1748-0221-5-05-P05004} consists of 38 active layers inserted in a steel structure of 1 m$^3$ with 39 absorber plates 1$\times$1 m wide and 17.4 mm thick on average. The calorimeter has a total depth of 4.28 $\lambda_{\pi}$ (5.3 $\lambda_{n}$). Active layers consist of a steel cassette housing 216, for the 30 first layers, or 141, for the 8 last layers, scintillator tiles connected on a PCB. The tiles are 5 mm thick and have different sizes of 3$\times$3, 6$\times$6, 12$\times$12 cm$^2$. This accounts for a total of 7608 channels. The light produced in the scintillator is guided through a WLS fiber 1 mm thick that is inserted in the tile to a SiPM. The SiPM sensitive area is 1.1$\times$1.1 mm$^2$ containing 1156 pixels which were produced by the MEPhi/PULSAR group in Russia. The performance of this prototype has been demonstrated in several beam types. For electrons, the energy resolution of the AHCAL measured is $\frac{21.7\%}{\sqrt{E}}$ stochastic and <1\% constant term \cite{CAN034}. For pions, the intrinsic energy resolution of the AHCAL has been measured to be $\frac{57.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term. This can be improved to $\frac{45\%}{\sqrt{E}}$ stochastic term by using a technique called \textit{software compensation} \cite{SoftCompNew2012}.
 
 \begin{figure}[htbp!]
   \centering
@@ -113,18 +124,8 @@ The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillat
   \caption{\subref{fig:AHCALPhysics}) Photo of the AHCAL physics prototype at CERN. \subref{fig:AHCALPhysics2}) Photo of the active layer of the AHCAL physics prototype showing the layout of the differently sized tiles.}
 \end{figure}
 
-The AHCAL engineering prototype (EPT AHCAL) is currently being studied. The goals of this prototype are to demonstrate the scalability of the AHCAL concept to a full linear collider detector. The HCAL Base Unit (HBU), see figure \ref{fig:AHCALHBU}, is 36 cm wide PCB holding 4 SPIROC2B ASICs for a total of 144 SiPM channels coupled to a scintillator tile of 30$\times$30$\times$3 mm size to be read out. Up to 6 HBUs can be connected together to form what is called a \textit{slab}. A full AHCAL layer can be up to 3 slabs connected in parallel to a common set of readout (DIF), calibration (CALIB) and power modules (PWR). An integrated LED Calibration system can deliver LED light pulses with amplitudes to few photons up to saturation of the SiPM in order to calibrated and monitor each HBU channel. Several designs of HBU and tiles have been produced to accommodate for soldering pin or surface-mounted (SMD) type SiPMs. A cross-section of a AHCAL layer is shown in figure \ref{fig:SectionAHCAL}.
+The AHCAL engineering prototype (EPT AHCAL) \cite{Felix:ProtoAHCAL} is currently being built. The goals of this prototype are to demonstrate the scalability of the AHCAL concept to a full linear collider detector. The HCAL Base Unit (HBU), see figure \ref{fig:AHCALHBU}, is 36 cm wide PCB holding 4 SPIROC2B ASICs for a total of 144 SiPM channels coupled to scintillator tiles of 30$\times$30$\times$3 mm size to be read out. Up to 6 HBUs can be connected together to form what is called a \textit{slab}. A full AHCAL layer can be up to 3 slabs connected in parallel to a common set of readout (DIF), calibration (CALIB) and power modules (PWR). An integrated LED Calibration system can deliver LED light pulses with amplitudes of a few photons up to saturation of the SiPM in order to calibrate and monitor each channel. Several designs of HBU and tiles have been produced to accommodate for soldering pin or surface-mounted (SMD) type SiPMs.
 
-\begin{figure}[htbp!]
-  \centering
-  %\includegraphics[width=0.8\linewidth]{chap3/fig/AHCAL_section.png}
-  \includegraphics[width=0.8\linewidth]{chap3/fig/HCAL_cross_endface_vers0p4.jpg}
-  \caption{Cross-section of a layer in the Fe-AHCAL engineering prototype with the SPIROC2E.} \label{fig:SectionAHCAL}
-\end{figure}
-
-\subsubsection{Current status of the EPT AHCAL}
-
-A first step was achieved with the operation of 15 AHCAL layers in testbeam at CERN in July and August 2015. Various HBU designs with many types of SiPMs from different manufacturers have been used and served as a benchmark for the ongoing development of scintillator tiles concepts. These results have been used to focus on a particular tile design for the next generation prototype.
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.37\textwidth}
@@ -132,20 +133,36 @@ A first step was achieved with the operation of 15 AHCAL layers in testbeam at C
     \caption{} \label{fig:AHCALHBU}
   \end{subfigure}
   \hfill
-  \begin{subfigure}[t]{0.61\textwidth}
-    \includegraphics[width=1.\linewidth]{chap3/fig/small_HCAL_stack.png}
-    \caption{} \label{fig:AHCALSmallStack}
+  \begin{subfigure}[t]{0.58\textwidth}
+    \includegraphics[width=1.\linewidth]{chap3/fig/P1030531_small.jpg}
+    \caption{} \label{fig:AHCALStack2015}
   \end{subfigure}
-  \caption{\subref{fig:AHCALHBU}) Top view of the HBU2 with SPIROC2b. \subref{fig:AHCALSmallStack}) Photo of the small AHCAL stack operated at CERN in June 2017.}
+  \caption{\subref{fig:AHCALHBU}) Top view of the HBU2 with SPIROC2b. \subref{fig:AHCALStack2015}) Picture of the AHCAL technological prototype in 2015 with several layers inserted.}
 \end{figure}
 
-A first milestone has been achieved by the construction of the small prototype of 15 AHCAL layers in 2016, see figure \ref{fig:AHCALSmallStack}. The goals for this prototype are the further validation of the surface mounted tile-SiPM design using Hamamatsu MPPCs with 2700 px and the new HBU (version 4) design, the performance of such calorimeter in electron beams at DESY, the operation in power-pulsing mode and in magnetic field \cite{CR_IEEE2017}. Moreover, this prototype has been used as backing calorimeter for the CMS HG-HCAL prototype for the HL-LHC upgrade \cite{Felix:AHCALMain2017_HGHCAL}.
+A first step was achieved with the operation of 15 AHCAL layers in testbeam at CERN in July and August 2015. Various HBU designs with many types of SiPMs from different manufacturers have been used and served as a benchmark for the ongoing development of scintillator tiles concepts. The active layers were inserted into a steel absorber stack into gaps 9 mm wide with absorber plates that are 1.72 cm thick. The number of channel for this prototype accounts to a total of 3744. A picture of the steel stack with few inserted AHCAL layers is shown in figure \ref{fig:AHCALStack2015}. The data collected with this prototype is analyzed in this thesis (see from chapter \ref{chap:Commissioning} to \ref{chap:TimingPions}).
 
-Concerning the assembly of HBU boards, for electric components, this is fully automatized. For the scintillator tiles, the assembly on a mass-production scale is being investigated and is currently being demonstrated for the production batch of HBU boards \cite{Phi:AHCALMain2017}.
+This prototype was composed of several different modules. The oldest ones were using a WLS fiber that conducted the light on a SiPM whereas the newest modules were having wrapped tiles in a reflector foil without any WLS fiber inside due to the use of SiPMs that are blue-sensitive. A picture of the tiles is shown in figure \ref{fig:TilesAHCAL2015}.
+
+\begin{figure}[htbp!]
+  \centering
+  \begin{subfigure}[t]{0.43\textwidth}
+    \includegraphics[width=1.\linewidth]{chap3/fig/AHCALTile_old.png}
+    \caption{} \label{fig:AHCALTile_old}
+  \end{subfigure}
+  \hspace{2cm}
+  \begin{subfigure}[t]{0.37\textwidth}
+    \includegraphics[width=1.\linewidth]{chap3/fig/AHCALTile_wrapped.png}
+    \caption{} \label{fig:AHCALTile_new}
+  \end{subfigure}
+  \caption{The two different tiles used in the AHCAL technological prototype. The tile on the left is an older version with a WLS fiber and the tile on the right is a new design by University of Hamburg which is wrapped in reflective foil and has no WLS fiber.} \label{fig:TilesAHCAL2015}
+\end{figure}
 
 The current AHCAL DAQ system is fully capable of operating a full scale calorimeter prototype in testbeam in various configurations and is being extended to integrate with other DAQ systems of other detectors (CMS HG-HCAL prototype, Sc/SiECAL prototype...) and testbeam instrumentation (Telescope, Trigger Logic Unit (TLU)...) using the common EUDAQ framework \cite{Kvasnicka:CR_IEEE2016, Kvasnicka:2017bpx, Wing:2296332}.
 
-Over the last years, several iterations of the SPIROC2 ASIC have been designed, produced and tested (SPIROC2 up to SPIROC2d). However, issues have been showed for all iterations which limit their use in testbeams. A next iteration, the SPIROC2e is supposed to correct all known problems of the previous iterations and also is the first SPIROC version to use Ball Grid Array (BGA) as packaging.
+\subsubsection{Current status of the EPT AHCAL}
+
+A first milestone has been achieved by the construction of the small prototype of 15 AHCAL layers in 2016. The goals for this prototype are the further validation of the surface mounted tile-SiPM design using Hamamatsu MPPCs with 2700 px and the new HBU (version 4) design, the performance of such calorimeter in electron beams at DESY, the operation in power-pulsing mode and in magnetic field \cite{CR_IEEE2017}. Moreover, this prototype has been used as backing calorimeter for the CMS HG-CAL prototype for the HL-LHC upgrade \cite{Felix:AHCALMain2017_HGHCAL}.
 
 \begin{figure}[htbp!]
   \centering
@@ -153,11 +170,27 @@ Over the last years, several iterations of the SPIROC2 ASIC have been designed, 
   \caption{Photo of the top view of the HBU5 with SPIROC2e used for the new AHCAL prototype.} \label{fig:HBU5_BGA}
 \end{figure}
 
+Concerning the assembly of HBU boards, for electric components, this is fully automatized. For the scintillator tiles, the assembly on a mass-production scale is being investigated and is currently being demonstrated for the production batch of HBU boards \cite{Phi:AHCALMain2017}.
+
+Over the last years, several iterations of the SPIROC2 ASIC have been designed, produced and tested (SPIROC2 up to SPIROC2d). However, issues have been showed for all iterations which limit their use in testbeams. A next iteration, the SPIROC2e is supposed to correct all known problems of the previous iterations and also is the first SPIROC version to use Ball Grid Array (BGA) as packaging.
+
 The next milestone is the construction and operation of a full calorimeter prototype consisted of 40 $2\times2$ HBU layers equipped with the current surface-mounted MPPCs and tiles, in a steel absorber stack and using the SPIROC2e as front-end electronics, see figure \ref{fig:HBU5_BGA}. It is planned to be operated in power-pulsing mode in various electron and hadron beams at CERN in 2018 before the shutdown \cite{Felix:AHCALMain2017}.
+
+\subsection{DHCAL}
+
+The Digital Hadron Calorimeter prototype \cite{Bilki:2013bea} is a sampling calorimeter consisting of 38 active layers. Each active layer consists of 3 GRPCs stacked to form an active area of $1\times1$ m$^2$. The chambers are in a cassette with a front copper plate 2 mm thick and back steel plate 2mm thick. They are inserted into the same steel absorber structure used of the AHCAL into gaps 1.4 cm wide. A schematic of the cross-section of a DHCAL layer is shown in figure \ref{fig:DHCALCross}. The gas mixture used is similar than for the SDHCAL with slight variations in concentrations. The readout anode is segmented into $1\times1$ cm$^2$ pads, read out by 2 front-end boards for each RPC (a total of 6 boards for a layer) hosting 24 chips each for a total of 144 chips per layer. Each chip reads out 64 pads. The prototype accounts for a total of 350208 channels.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.9\linewidth]{chap3/fig/Cross-section-DHCAL.png}
+  \caption{Cross-section of an active RPC layer in the DHCAL prototype. Taken from \cite{1748-0221-3-05-P05001}.} \label{fig:DHCALCross}
+\end{figure}
+
+The detection principle is the same followed by the SDHCAL with the main difference being in the readout of the pads. The measured charged is not proportional to the original deposited energy, the signal pads are read out in 1 bit (on or off). Each chip thus gives a hit pattern of 64 bits with a timestamp per hit of a resolution of 100 ns. An energy resolution of $\frac{35.1\%}{\sqrt{E}}$ stochastic and 12.4\% constant term has been achieved in a positron beam. More details about the DHCAL prototype can be read in \cite{Neubueser2016}. However this can be improved to around $\frac{13\%}{\sqrt{E}}$ stochastic and 6.2\% constant term with the DHCAL without absorbers \cite{Freund:2016wvz}.
 
 \subsection{SDHCAL}
 
-The Semi-Digital Hadron Calorimeter (SDHCAL) prototype (see figure \ref{fig:SDHCAL}) consists of 48 active layers. Each active layer consists of 2-glass Resistive Plate Chambers (RPCs) \cite{BEDJIDIAN2010120} with a gap of 1.2 mm filled with gas and a readout electrode segmented in $1\times1$ cm$^2$ pads. The active layers are inserted into a steel absorber structure of 1.5 cm thick plates. The gas mixture consists of Forane (93\%), CO$_2$ (5\%) and SF$_6$ (2\%). A high voltage of around 7 kV is applied to the RPCs. The detection principle of such calorimeter is based on gas ionization and avalanche multiplication and more details can be found in \cite{1748-0221-10-10-P10039}.
+The Semi-Digital Hadron Calorimeter (SDHCAL) prototype \cite{1748-0221-10-10-P10039} (see figure \ref{fig:SDHCAL}) consists of 48 active layers. Each active layer consists of 2-glass Resistive Plate Chambers (RPCs) \cite{BEDJIDIAN2010120} with a gap of 1.2 mm filled with gas and a readout electrode segmented in $1\times1$ cm$^2$ pads. The active layers are inserted into a steel absorber structure of 1.5 cm thick plates. The gas mixture consists of Forane (93\%), CO$_2$ (5\%) and SF$_6$ (2\%). A high voltage of around 7 kV is applied to the RPCs. The detection principle of such calorimeter is based on gas ionization and avalanche multiplication and more details can be found in \cite{1748-0221-10-10-P10039}.
 
 \begin{figure}[htbp!]
   \centering
@@ -171,22 +204,10 @@ The energy reconstruction of the SDHCAL is based on the information provided by 
 \begin{equation}
   E_{rec} = \alpha N_1 + \beta N_2 + \gamma N_3
 \end{equation}
-where N$_1$, N$_2$ and N$_3$ are the number of hits for each thresholds and $\alpha$, $\beta$, $\gamma$ the weights in units of GeV. The weights are parametrized as a second order polynomial of the total number of hits N$_{hits}$ =  N$_1$ + N$_2$ + N$_3$.
-
-\subsection{DHCAL}
-
-The Digital Hadron Calorimeter prototype is a sampling calorimeter consisted of 38 active layers. Each active layer consists of 3 GRPCs stacked to form an active area of $1\times1$ m$^2$. The chambers are in a cassette with a front copper plate 2 mm thick and back steel plate 2mm thick. They are inserted into a steel absorber structure into gaps 1.4 cm wide. A schematic of the cross-section of a DHCAL layer is shown in figure \ref{fig:DHCALCross}. The gas mixture used is similar than for the SDHCAL with slight variations in concentrations. The readout anode is segmented into $1\times1$ cm$^2$ pads, read out by 2 front-end boards for each RPC (a total of 6 boards for a layer) hosting 24 chips each for a total of 144 chips per layer. Each chip reads out 64 pads. The prototype accounts for a total of 350208 channels.
-
-\begin{figure}[htbp!]
-  \centering
-  \includegraphics[width=0.9\linewidth]{chap3/fig/Cross-section-DHCAL.png}
-  \caption{Cross-section of an active RPC layer in the DHCAL prototype. Taken from \cite{1748-0221-3-05-P05001}.} \label{fig:DHCALCross}
-\end{figure}
-
-The detection principle is the same followed by the SDHCAL with the main difference being in the readout of the pads. The measured charged is not proportional to the original deposited energy, the signal pads are read out in 1 bit (on or off). Each chip thus gives a hit pattern of 64 bits with a timestamp per hit of a resolution of 100 ns. More details about the DHCAL prototype can be read in \cite{Neubueser2016}.
+where N$_1$, N$_2$ and N$_3$ are the number of hits for each thresholds and $\alpha$, $\beta$, $\gamma$ the weights in units of GeV. The weights are parametrized as a second order polynomial of the total number of hits N$_{hits}$ =  N$_1$ + N$_2$ + N$_3$. The energy resolution of this prototype goes from 14.9\% at 30 GeV to 9.5\% at 80 GeV with pion beams \cite{Buridon:2016ill}.
 
 \begin{center}
-\rule{0.5\textwidth}{.4pt}
+  \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-In this chapter, the calorimeter concepts (electromagnetic and hadronic) of the CALICE Collaboration have been described. Concerning the hadronic calorimeters, 3 concepts have been presented. The AHCAL uses scintillator-tiles coupled to a SiPM readout system to measure the deposited energy in each cell. The DHCAL and SDHCAL use resistive plate chambers by ionization of a gas mixture and avalanche multiplication to measure a signal and are readout on 1 or 3 bits by measuring the number of hits. A detailed comparison study of these different calorimeter concepts has been done and can be read in \cite{Neubueser2016}.
+In this chapter, the calorimeter concepts (electromagnetic and hadronic) of the CALICE Collaboration have been described. Concerning the hadronic calorimeters, 3 concepts have been presented. The AHCAL uses scintillator-tiles coupled to a SiPM readout system to measure the deposited energy in each cell. The DHCAL and SDHCAL use resistive plate chambers by ionization of a gas mixture and avalanche multiplication to measure a signal and are readout on 1 or 3 bits by measuring the number of hits.

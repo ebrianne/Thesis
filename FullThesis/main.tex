@@ -3,6 +3,7 @@
 \documentclass[a4paper, 11pt, fourier, numbered, twoside]{PhDThesisPSnPDF}
 
 \include{style}
+\include{glossary}
 
 \begin{document}
 
@@ -22,8 +23,8 @@
 
 \tochide
 \tableofcontents
-%\listoffigures
-%\listoftables
+% \listoffigures
+% \listoftables
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -76,6 +77,11 @@
 %%% Declaration oath %%%%%%%%
 \include{oath}
 
+%%% Acronyms %%%%
+\cleardoublepage
+\glossarystyle{list}
+\printglossary[type=\acronymtype]
+
 %%% References page %%%%%%%
 \include{biblio}
 
@@ -92,7 +98,5 @@
   \include{Appendixes/Database}
   %\include{Appendixes/SGV}
 \end{appendices}
-
-\printthesisindex
 
 \end{document}

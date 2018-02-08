@@ -1,0 +1,119 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: chap1/chap1_Theo.aux
+A level-1 auxiliary file: chap2/chap2_ILC.aux
+A level-1 auxiliary file: chap2/chap2_PFA.aux
+A level-1 auxiliary file: chap3/chap3_CALICE_Detectors.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Simulations.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Commi.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part1.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_EnergyCalib.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part2.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part3.aux
+A level-1 auxiliary file: chap6/chap6_intro.aux
+A level-1 auxiliary file: chap6/chap6_ILD.aux
+A level-1 auxiliary file: chap6/chap6_conclusion.aux
+A level-1 auxiliary file: conclusion.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: oath.aux
+A level-1 auxiliary file: biblio.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: Appendixes/EvtSelection.aux
+A level-1 auxiliary file: Appendixes/ValidationSim.aux
+A level-1 auxiliary file: Appendixes/Noise.aux
+A level-1 auxiliary file: Appendixes/ErrorTDCCalib.aux
+A level-1 auxiliary file: Appendixes/MCParamnHits.aux
+A level-1 auxiliary file: Appendixes/RejectChips.aux
+A level-1 auxiliary file: Appendixes/DeadChn.aux
+A level-1 auxiliary file: Appendixes/Database.aux
+Database file #1: biblio.bib
+Warning--entry type for "ILCSoftPortal" isn't style-file defined
+--line 47 of file biblio.bib
+Warning--entry type for "OmegaWeb" isn't style-file defined
+--line 438 of file biblio.bib
+Warning--entry type for "GithubTB" isn't style-file defined
+--line 443 of file biblio.bib
+Warning--entry type for "H2Beamline" isn't style-file defined
+--line 474 of file biblio.bib
+Warning--I didn't find a database entry for "Feege2011"
+Warning--empty journal in ILC_TDR_Vol2
+Warning--empty journal in ILC_TDR_Vol1
+Warning--empty journal in ILC_TDR_Vol3.1
+Warning--empty journal in ILC_TDR_Vol3.2
+Warning--empty journal in ILC_TDR_Vol4
+Warning--empty journal in Akchurin:2013yaa
+Warning--empty journal in Marshall2013
+Warning--empty year in Marshall2013
+Warning--empty journal in Garutti:2017ipx
+Warning--empty journal in Kotera:2015rha
+Warning--empty journal in SPIROC2_datasheet
+Warning--empty journal in Wing:2296332
+Warning--empty booktitle in Felix:AHCALMain2017_HGHCAL
+Warning--empty booktitle in Phi:AHCALMain2017
+Warning--empty booktitle in Felix:AHCALMain2017
+Warning--empty booktitle in HARDROC:IEEE
+Warning--empty year in HARDROC:IEEE
+Warning--empty journal in Adloff2013
+Warning--empty year in Adloff2013
+Warning--empty journal in Heikkinen2003
+Warning--empty year in Heikkinen2003
+Warning--empty journal in Folger2003
+Warning--empty year in Folger2003
+Warning--empty booktitle in Geant4PhysicsLists:IEEE
+Warning--empty year in Geant4PhysicsLists:IEEE
+Warning--empty title in CALICESoft
+Warning--empty journal in CALICESoft
+Warning--empty year in CALICESoft
+Warning--empty booktitle in kB:IEEE
+Warning--empty year in kB:IEEE
+Warning--empty journal in Ete:2291805
+Warning--empty journal in Benaglia2016
+Warning--empty journal in Jeans2015
+Warning--empty journal in PandoraCalib
+Warning--empty year in PandoraCalib
+You've used 123 entries,
+            1876 wiz_defined-function locations,
+            1206 strings with 24519 characters,
+and the built_in function-call counts, 28080 in all, are:
+= -- 2661
+> -- 1089
+< -- 0
++ -- 427
+- -- 304
+* -- 1771
+:= -- 3975
+add.period$ -- 126
+call.type$ -- 123
+change.case$ -- 116
+chr.to.int$ -- 0
+cite$ -- 158
+duplicate$ -- 1656
+empty$ -- 2739
+format.name$ -- 304
+if$ -- 6953
+int.to.chr$ -- 0
+int.to.str$ -- 123
+missing$ -- 109
+newline$ -- 388
+num.names$ -- 119
+pop$ -- 481
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1105
+stack$ -- 0
+substring$ -- 1208
+swap$ -- 654
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 35
+while$ -- 212
+width$ -- 126
+write$ -- 1117
+(There were 40 warnings)
