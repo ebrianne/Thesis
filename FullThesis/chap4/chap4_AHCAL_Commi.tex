@@ -6,7 +6,7 @@ Before any beam measurement, all the electronics of the detector must be charact
 
 \section{Testing of individual SPIROC2B chips}
 
-The testing of individual chips prior to the soldering to the HBU board is necessary. This avoids broken chips to be installed and reduces the number of dead channels. In the past, OMEGA was testing the functioning of the SPIROC ASICs and classify it into 3 grades: A, B and C grades. Only A-grades ASICs were used. The testing is done manually for each chip as no fully automatic testing setup was available at the time of testing. This reduces the number of cross-checks done on the chips due to time constraints. The SPIROC2B chip can be tested standalone on a custom made PCB board. The SPIROC2B chip is installed in a special socket and is readout out by an ALTERA FPGA. The board is operated by a Labview software made by the OMEGA group \cite{OmegaWeb}.
+The testing of individual chips prior to the soldering to the HBU board is necessary. This avoids broken chips to be installed and reduces the number of dead channels. In the past, OMEGA was testing the functioning of the SPIROC ASICs and classify it into 3 grades: A, B and C grades. Only A-grades ASICs were used. The testing is done manually for each chip as no fully automatic testing setup was available at the time of testing. This reduces the number of cross-checks done on the chips due to time constraints. The SPIROC2B chip can be tested standalone on a custom made PCB board. The SPIROC2B chip is installed in a special socket and is readout out by an ALTERA \acrshort{fpga}. The board is operated by a Labview software made by the OMEGA group \cite{OmegaWeb}.
 
 \begin{figure}[htbp!]
   \centering
@@ -58,7 +58,7 @@ For the output DAC, it is directly measured from 0 to 512 with the Keithley mult
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-Around 60 chips were tested with a yield of 84\%. There is no obvious common cause for failure (digital part not working, no response to slow control programming, broken input DACs...). The time achieved by testing chips manually was around 10 minutes which is not possible on a mass-production scale where a goal of around 1 minute per chip would be needed. This is why a new testing board has been designed by DESY and the University of Wuppertal in order to automatize the testing procedure of individual chips on BGA packaging \cite{AHCALMain2016_Amine}. This new board has been commissioned in July 2017 and is being used currently for the next generation AHCAL prototype (around 650 chips).
+Around 60 chips were tested with a yield of 84\%. There is no obvious common cause for failure (digital part not working, no response to slow control programming, broken input DACs...). The time achieved by testing chips manually was around 10 minutes which is not possible on a mass-production scale where a goal of around 1 minute per chip would be needed. This is why a new testing board has been designed by DESY and the University of Wuppertal in order to automatize the testing procedure of individual chips on \acrshort{bga} packaging \cite{AHCALMain2016_Amine}. This new board has been commissioned in July 2017 and is being used currently for the next generation AHCAL prototype (around 650 chips).
 
 \section{HBU Commissioning procedure}
 

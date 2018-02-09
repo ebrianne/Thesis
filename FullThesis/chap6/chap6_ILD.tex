@@ -8,7 +8,7 @@ The timing of hits is registered in a very simplified way as explained in sectio
 
 \subsection{Check of the energy calibration}
 
-Before studying the effect of timing on hadrons showers, a check was performed on the initially provided calibration constants of the ILD detector. Several constants are used for the digitization and reconstruction (GeV to MIP, sampling, Pandora EM/Had constants...) in order to get the correct reconstructed energy. The plots below are selecting events with only one reconstructed ParticleFlow Object (PFO) and a $|\cos\theta| < 0.7$.
+Before studying the effect of timing on hadrons showers, a check was performed on the initially provided calibration constants of the ILD detector. Several constants are used for the digitization and reconstruction (GeV to MIP, sampling, Pandora EM/Had constants...) in order to get the correct reconstructed energy. The plots below are selecting events with only one reconstructed Particle Flow Object (PFO) and a $|\cos\theta| < 0.7$.
 
 One can look at different levels concerning the calibration: at the hit level by summing up all hits in the calorimeter or at the cluster/PFO level. Therefore this enables to understand the effects of the digitization constants in ILDDigiCalo though small clustering effects are present. The calibration procedure of the constants is explained in \cite{PandoraCalib}. The same procedure as described in \textit{Pandora Analysis} package is used to determine the energy (Mean$_{90}$) and the resolution (RMS$_{90}$). The calibration is composed of several different calibration methods and are referred into the following figures as
 \begin{itemize}
@@ -194,7 +194,7 @@ Looking at the shower width in absolute value, hadronic showers are slightly wid
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing}
     \caption{} \label{fig:ShowerWidthNoSmearing}
   \end{subfigure}
-  \caption{\subref{fig:ShowerWidthAbsoNoSmearing}) The plots represents the absolute value of the mean shower width <R> in \SI{}{\milli\meter} as function of the timing cut. This shows that the low energy showers are generally wider certainly due to the magnetic field. And under \SI{20}{\nano\second}, the width is very similar indicating the core of the shower is fairly similar for all energies. \subref{fig:ShowerWidthNoSmearing}) The plot represents the mean of the shower width <R> as function of timing cut for different particle energies. The y-axis has been normalized to the shower width at \SI{100}{\nano\second}. The shower width decreases steadily as function of the timing cut, indicating that the shower gets narrower.}
+  \caption{\subref{fig:ShowerWidthAbsoNoSmearing}) The plots represents the absolute value of the mean shower width $<R>$ in \SI{}{\milli\meter} as function of the timing cut. This shows that the low energy showers are generally wider certainly due to the magnetic field. And under \SI{20}{\nano\second}, the width is very similar indicating the core of the shower is fairly similar for all energies. \subref{fig:ShowerWidthNoSmearing}) The plot represents the mean of the shower width $<R>$ as function of timing cut for different particle energies. The y-axis has been normalized to the shower width at \SI{100}{\nano\second}. The shower width decreases steadily as function of the timing cut, indicating that the shower gets narrower.}
 \end{figure}
 
 \begin{figure}[htbp!]
