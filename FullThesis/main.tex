@@ -65,10 +65,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-%%% Conclusion page %%%%%%%
 \backmatter
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
-
+%%% Conclusion page %%%%%%%
 \include{conclusion}
 
 %%% Acknowledgments page %%%%%%%
@@ -87,6 +85,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 
+\appendix
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \begin{appendices}
   \include{Appendixes/EvtSelection}
   \include{Appendixes/ValidationSim}
