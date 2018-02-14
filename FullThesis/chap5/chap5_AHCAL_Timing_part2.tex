@@ -17,8 +17,9 @@ The performance of the ILD relies on simulation studies based on \geant, it is i
 This chapter will firstly describe the timing calibration procedure of the AHCAL, followed by the comparison between data and simulation for muons and electrons and finally a comparison with pion data.
 
 \chapter{Timing Calibration and Validation}
+\label{chap:TimingCalib}
 
-To perform the timing calibration of the AHCAL, the complete muon dataset is used. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Raw events are the number of events after the MIP selection. Selected events are counted after the selection on the error of the time reference as explained in \ref{section:time_ref}.
+To perform the timing calibration of the AHCAL, the complete muon dataset is used. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Raw events are the number of events after the MIP selection. Selected events are counted after the selection on the error of the time reference as explained in section \ref{section:time_ref}.
 
 \begin{table}[htb!]
 	\centering
@@ -398,6 +399,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 	\centering
 	\caption{Summary of systematic uncertainties.}
 	\label{table:time_syst}
+	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{@{} |l|c| @{}}
 		\hline
 		\multicolumn{1}{|c|}{Uncertainty source} & Full uncertainty steel \\
@@ -420,6 +422,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		data-MC vs hit distance to CoG & 1.10-1.86 ns (SSF) 1.05-1.41 ns (BL) \\
 		\hline
 	\end{tabular}
+	}
 \end{table}
 }
 

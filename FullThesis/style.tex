@@ -7,7 +7,7 @@
 
 % changes the default name `Bibliography` -> `References'
 \usepackage{natbib}
-\renewcommand{\bibname}{References}
+\renewcommand{\bibname}{Bibliography}
 
 % ******************** Captions and Hyperreferencing / URL **********************
 
@@ -42,12 +42,6 @@
 \usepackage{amssymb}
 \usepackage{siunitx} % use this package module for SI units
 
-% ******************************* Line Spacing *********************************
-
-\renewcommand*\contentsname{Contents}
-% \setcounter{secnumdepth}{3}
-% \setcounter{tocdepth}{3}
-
 % ******************************* Custom *********************************
 
 \usepackage{soul} % use this for cross line(many fancier options)
@@ -73,5 +67,9 @@
 
 \usepackage[acronym, toc]{glossaries}
 \glsdisablehyper
+
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1.3em}{3em}}
+\makeatother
 
 \author{Eldwan Brianne}

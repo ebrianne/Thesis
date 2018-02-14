@@ -19,12 +19,10 @@
 \include{abstract}
 %%%%%%%%%%%%%%%%%%%%%%
 
-%%% Table content/list figures page %%%%%%%
+%%% Table content page %%%%%%%
 
 \tochide
 \tableofcontents
-% \listoffigures
-% \listoftables
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -38,14 +36,14 @@
 %%% Main matter page %%%%%%%
 \mainmatter
 
-%% Theorie Physics %%%
+%% Theory Physics %%%
 \include{chap1/chap1_Theo}
 
 %% ILC description %%%
 \include{chap2/chap2_ILC}
 \include{chap2/chap2_PFA}
 
-%% Calice detectors %%%
+%% CALICE detectors %%%
 \include{chap3/chap3_CALICE_Detectors}
 
 %%% AHCAL Commissioning, Noise Measurement and Simulations %%%
@@ -65,28 +63,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 
-\backmatter
 %%% Conclusion page %%%%%%%
-\include{conclusion}
+\include{summary}
 
 %%% Acknowledgments page %%%%%%%
 \include{acknowledgments}
 
-%%% Declaration oath %%%%%%%%
-\include{oath}
-
-%%% Acronyms %%%%
-\cleardoublepage
-\glossarystyle{list}
-\printglossary[type=\acronymtype,nonumberlist]
-
-%%% References page %%%%%%%
-\include{biblio}
-
 %%%%%%%%%%%%%%%%%%%%%%
 
 \appendix
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \begin{appendices}
   \include{Appendixes/EvtSelection}
   \include{Appendixes/ValidationSim}
@@ -98,5 +83,24 @@
   \include{Appendixes/Database}
   %\include{Appendixes/SGV}
 \end{appendices}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\listoftables
+
+\listoffigures
+
+%%% Acronyms %%%%
+\cleardoublepage
+\thispagestyle{empty}
+\setglossarystyle{list}
+\printglossary[type=\acronymtype,nonumberlist,nopostdot]
+
+%%% References page %%%%%%%
+\include{biblio}
+
+%%% Declaration oath %%%%%%%%
+\include{oath}
 
 \end{document}

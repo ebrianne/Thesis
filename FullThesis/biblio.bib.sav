@@ -1,0 +1,1608 @@
+% Encoding: UTF-8
+
+@Article{Gaede:2003ip,
+author        = {Gaede, Frank and Behnke, Ties and Graf, Norman and Johnson, Tony},
+title         = {{LCIO: A Persistency framework for linear collider simulation studies}},
+journal       = {eConf},
+year          = {2003},
+volume        = {C0303241},
+pages         = {TUKT001},
+archiveprefix = {arXiv},
+booktitle     = {{Proceedings, 13th International Conference on Computing in High-Enery and Nuclear Physics (CHEP 2003): La Jolla, California, March 24-28, 2003}},
+eprint        = {physics/0306114},
+primaryclass  = {physics},
+reportnumber  = {SLAC-PUB-9992, CHEP-2003-TUKT001},
+slaccitation  = {%%CITATION = PHYSICS/0306114;%%},
+}
+
+@Article{Gaede:2006pj,
+author       = {Gaede, F.},
+title        = {{Marlin and LCCD: Software tools for the ILC}},
+journal      = {Nucl. Instrum. Meth.},
+year         = {2006},
+volume       = {A559},
+pages        = {177-180},
+booktitle    = {{Advanced computing and analysis techniques in physics research. Proceedings, 10th International Workshop, ACAT05, Zeuthen, Germany, May 22-27, 2005}},
+doi          = {10.1016/j.nima.2005.11.138},
+slaccitation = {%%CITATION = NUIMA,A559,177;%%},
+}
+
+@PhdThesis{Hartbrich:2016bbz,
+author       = {Hartbrich, Oskar},
+title        = {{Scintillator Calorimeters for a Future Linear Collider Experiment}},
+school       = {Hasylab, DESY},
+year         = {2016},
+address      = {Hamburg},
+doi          = {10.3204/PUBDB-2016-02800},
+reportnumber = {DESY-THESIS-2016-020},
+slaccitation = {%%CITATION = DESY-THESIS-2016-020;%%},
+}
+
+@Article{Jeans2015,
+author = {Daniel Jeans and Oskar Hartbrich},
+title  = {{Realistic calorimeter hit digitisation in the ILDCaloDigi processor}},
+year   = {2015},
+}
+
+@Electronic{ILCSoftPortal,
+title = {{ILCSoft web portal}},
+url   = {http://ilcsoft.desy.de/portal},
+}
+
+@Article{Fruhwirth:1987fm,
+author       = {Fruhwirth, R.},
+title        = {{Application of Kalman filtering to track and vertex fitting}},
+journal      = {Nucl. Instrum. Meth.},
+year         = {1987},
+volume       = {A262},
+pages        = {444-450},
+doi          = {10.1016/0168-9002(87)90887-4},
+reportnumber = {HEPHY-PUB-87-503},
+slaccitation = {%%CITATION = NUIMA,A262,444;%%},
+}
+
+@article{Thomson:2009rp,
+author         = "Thomson, M. A.",
+title          = "{Particle Flow Calorimetry and the PandoraPFA Algorithm}",
+journal        = "Nucl. Instrum. Meth.",
+volume         = "A611",
+year           = "2009",
+pages          = "25-40",
+doi            = "10.1016/j.nima.2009.09.009",
+eprint         = "0907.3577",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+reportNumber   = "CU-HEP-09-11",
+SLACcitation   = "%%CITATION = ARXIV:0907.3577;%%"
+}
+
+@Article{Berggren2012,
+author      = {Mikael Berggren},
+title       = {SGV 3.0 - a fast detector simulation},
+abstract    = {The need for fast simulation programs is emphasised, both in terms of the need for "rapid response" to new results - in particular from the LHC - and new theoretical ideas, and in terms of how to cope with multi-billion simulated event samples. The latter would arise both from the need to be able to simulate significantly more events than expected in the real data, also for high cross-section processes, and the need to scan multi-parameter theories. The {\it Simulation \`a Grande Vitesse}, SGV, is presented, and is shown to be able to address these issues. The tracking performance of SGV is shown to reproduce very closely that of the full simulation and reconstruction of the ILD concept. Preliminary results on how to also closely emulate the calorimetric performance from full simulation is presented. The procedure is parametric, with no the need to simulate the detailed shower development, and promises to be many orders of magnitude faster than such approaches. Contrary to what is often the case with fast simulation programs, the procedure gives a somewhat {\it pessimistic} result, compared to the full simulation and reconstruction.},
+date        = {2012-03-01},
+eprint      = {1203.0217v1},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1203.0217v1:PDF},
+keywords    = {physics.ins-det, hep-ex},
+}
+
+@Article{Marshall2013,
+author      = {J. S. Marshall and M. A. Thomson},
+title       = {The Pandora Particle Flow Algorithm},
+abstract    = {A high-energy e+e- collider, such as the ILC or CLIC, is arguably the best option to complement and extend the LHC physics programme. A lepton collider will allow for exploration of Standard Model Physics, such as precise measurements of the Higgs, top and gauge sectors, in addition to enabling a multitude of New Physics searches. However, physics analyses at such a collider will place unprecedented demands on calorimetry, with a required jet energy resolution of \sigma(E)/E < 3.5%. To meet these requirements will need a new approach to calorimetry. The particle flow approach to calorimetry requires both fine granularity detectors and sophisticated software algorithms. It promises to deliver unparalleled jet energy resolution by fully reconstructing the paths of individual particles through the detector. The energies of charged particles can then be extracted from precise inner detector tracker measurements, whilst photon energies will be measured in the ECAL, and only neutral hadron energies (10% of jet energies) will be measured in the HCAL, largely avoiding the typically poor HCAL resolution. This document introduces the Pandora particle flow algorithms, which offer the current state of the art in particle flow calorimetry for the ILC and CLIC. The performance of the algorithms is investigated by examining the reconstructed jet energy resolution and the ability to separate the hadronic decays of W and Z bosons.},
+date        = {2013-08-21},
+eprint      = {1308.4537v1},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1308.4537v1:PDF},
+keywords    = {physics.ins-det, hep-ex},
+}
+
+@Conference{Chera2011,
+author = {M. Chera},
+title  = {Parametrising Particle Flow reconstruction for fast simulation of ILC detectors.},
+year   = {2011},
+}
+
+@Conference{Chera2014,
+author = {M. Chera},
+title  = {Particle Flow in SGV: Implementation and Comparisons},
+year   = {2014},
+}
+
+@Article{Pohl2002,
+author      = {M. Pohl and H. J. Schreiber},
+title       = {SIMDET - Version 4 A Parametric Monte Carlo for a TESLA Detector},
+abstract    = {A new release of the parametric detector Monte Carlo program \verb+SIMDET+ (version 4.01) is now available. We describe the principles of operation and the usage of this program to simulate the response of a detector for the TESLA linear collider. The detector components are implemented according to the TESLA Technical Design Report. All detector component responses are treated in a realistic way using a parametrisation of results from the {\em ab initio} Monte Carlo program \verb+BRAHMS+. Pattern recognition is emulated using a complete cross reference between generated particles and detector response. Also, for charged particles, the covariance matrix and $dE/dx$ information are made available. An idealised energy flow algorithm defines the output of the program, consisting of particles generically classified as electrons, photons, muons, charged and neutral hadrons as well as unresolved clusters. The program parameters adjustable by the user are described in detail. User hooks inside the program and the output data structure are documented.},
+date        = {2002-06-05},
+eprint      = {hep-ex/0206009v1},
+eprintclass = {hep-ex},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/hep-ex/0206009v1:PDF},
+keywords    = {hep-ex},
+}
+
+@Article{Li2013,
+author      = {Bo Li and Keisuke Fujii and Yuanning Gao},
+title       = {Kalman-filter-based track fitting in non-uniform magnetic field with segment-wise helical track model},
+abstract    = {In the future International Linear Collider (ILC) experiment, high performance tracking is essential to its physics program including precision Higgs studies. One of major challenges for a detector such as the proposed International Large Detector (ILD) is to provide excellent momentum resolution in a magnetic filed with small (but non-negligible) non-uniformity. The non-uniform magnetic field implies deviation from a helical track and hence requires the extension of a helical track model used for track fitting in a uniform magnetic field. In this paper, a segment-wise helical track model is introduced as such an extension. The segment-wise helical track model approximates the magnetic field between two nearby measurement sites to be uniform and steps between the two sites along a helix. The helix frame is then transformed according to the new magnetic field direction for the next step, so as to take into account the non-uniformity of the magnetic field. Details of the algorithm and mathematical aspects of the segment-wise helical track model in a Kalman-filter-based track fitting in the non-uniform magnetic field are elaborated. The new track model is implemented and successfully tested in the framework of the Kalman filter tracking software package, KalTest, which was originally developed for tracking in a uniform magnetic field.},
+date        = {2013-05-31},
+doi         = {10.1016/j.cpc.2013.11.003},
+eprint      = {1305.7300v2},
+eprintclass = {physics.ins-det},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/1305.7300v2:PDF},
+keywords    = {physics.ins-det},
+}
+
+@Article{CATANI1991432,
+author  = {S. Catani and Yu.L. Dokshitzer and M. Olsson and G. Turnock and B.R. Webber},
+title   = {New clustering algorithm for multijet cross sections in e+e- annihilation},
+journal = {Physics Letters B},
+year    = {1991},
+volume  = {269},
+number  = {3},
+pages   = {432 - 438},
+issn    = {0370-2693},
+doi     = {http://dx.doi.org/10.1016/0370-2693(91)90196-W},
+url     = {http://www.sciencedirect.com/science/article/pii/037026939190196W},
+}
+
+@Article{Moretti1998,
+author       = {Stefano Moretti and Leif Lönnblad and Torbjörn Sjöstrand},
+title        = {New and Old Jet Clustering Algorithms for Electron-Positron Events},
+abstract     = {Over the years, many jet clustering algorithms have been proposed for the analysis of hadronic final states in $e^+e^-$ annihilations. These have somewhat different emphasis and are therefore more or less suited for various applications. We here review some of the most used and compare them from a theoretical and experimental point of view.},
+date         = {1998-04-15},
+doi          = {10.1088/1126-6708/1998/08/001},
+eprint       = {hep-ph/9804296v1},
+eprintclass  = {hep-ph},
+eprinttype   = {arXiv},
+file         = {online:http\://arxiv.org/pdf/hep-ph/9804296v1:PDF},
+journaltitle = {JHEP 9808:001,1998},
+keywords     = {hep-ph, hep-ex},
+}
+
+@PhdThesis{Mueller:301339,
+author            = {Mueller, Felix Johannes},
+title             = {{D}evelopment of a {T}riple {GEM} {R}eadout {M}odule for a {T}ime {P}rojection {C}hamber $\&$ {M}easurement {A}ccuracies of {H}adronic {H}iggs {B}ranching {F}ractions in $\nu\nu${H} at a 350 {G}e{V} {ILC}},
+school            = {Universitat Hamburg},
+year              = {2016},
+type              = {Dr.},
+address           = {Hamburg},
+note              = {Universit\"at Hamburg, Diss., 2016},
+cid               = {I:(DE-H253)FLC-20120731},
+cin               = {FLC},
+doi               = {10.3204/PUBDB-2016-02659},
+experiment        = {EXP:(DE-H253)TestBeamline24-20150101 / EXP:(DE-MLZ)NOSPEC-20140101},
+issn              = {1435-8085},
+othercontributors = {Behnke, Ties and Garutti, Erika},
+pages             = {245},
+pid               = {G:(DE-HGF)POF3-632 / G:(DE-HGF)POF3-611 / G:(DE-H253)DFG-SFB-676-B01},
+pnm               = {632 - Detector technology and systems (POF3-632) / 611 - Fundamental Particles and Forces (POF3-611) / SFB 676-B01 - Optimising the ILC setup: Physics programme, running scenarios and design choices (DFG-SFB-676)},
+publisher         = {Verlag Deutsches Elektronen-Synchrotron},
+reportid          = {PUBDB-2016-02659, DESY-THESIS-2016-018},
+series            = {DESY-THESIS},
+typ               = {PUB:(DE-HGF)29 / PUB:(DE-HGF)11},
+url               = {http://bib-pubdb1.desy.de/record/301339},
+}
+
+@Article{Benaglia2016,
+author    = {Benaglia, Andrea and Auffray, Etiennette and Lecoq, Paul and Wenzel, Hans and Para, Adam},
+title     = {Space-Time Development of Electromagnetic and Hadronic Showers and Perspectives for Novel Calorimetric Techniques},
+year      = {2016},
+volume    = {63},
+pages     = {574-579},
+month     = {04},
+booktitle = {IEEE Transactions on Nuclear Science},
+}
+
+@Article{Agostinelli2003,
+author   = {S. Agostinelli and al.},
+title    = {Geant4 -- a simulation toolkit},
+journal  = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+year     = {2003},
+volume   = {506},
+number   = {3},
+pages    = {250 - 303},
+issn     = {0168-9002},
+doi      = {http://dx.doi.org/10.1016/S0168-9002(03)01368-8},
+keywords = {Simulation, Particle interactions, Geometrical modelling, Software engineering, Object-oriented technology, Distributed software development},
+url      = {http://www.sciencedirect.com/science/article/pii/S0168900203013688},
+}
+
+@TechReport{Freitas2003,
+author      = {P. Mora de Freitas, H. Videau},
+title       = {Detector Simulation with MOKKA/GEANT4 : Present and Future},
+institution = {Laboratoire Leprince Ringuet CNRS/IN2P3 - Ecole Polytechnique 91128 Palaiseau, France},
+year        = {2003},
+type        = {software},
+}
+
+@Article{Frank2014,
+author   = {M Frank and F Gaede and C Grefe and P Mato},
+title    = {DD4hep: A Detector Description Toolkit for High Energy Physics Experiments},
+journal  = {Journal of Physics: Conference Series},
+year     = {2014},
+volume   = {513},
+number   = {2},
+pages    = {022010},
+abstract = {The detector description is an essential component that is used to analyze data resulting from particle collisions in high energy physics experiments. We will present a generic detector description toolkit and describe the guiding requirements and the architectural design for such a toolkit, as well as the main implementation choices. The design is strongly driven by easy of use; developers of detector descriptions and applications using them should provide minimal information and minimal specific code to achieve the desired result. The toolkit will be built reusing already existing components from the ROOT geometry package and provides missing functional elements and interfaces to offer a complete and coherent detector description solution. A natural integration to Geant4, the detector simulation program used in high energy physics, is provided.},
+url      = {http://stacks.iop.org/1742-6596/513/i=2/a=022010},
+}
+
+@Conference{Apostolakis2015,
+author    = {J. Apostolakis and al.},
+title     = {Progress in Geant4 electromagnetic physics modeling and validation},
+booktitle = {CHEP2015},
+year      = {2015},
+}
+
+@InProceedings{Ivanchenko2010,
+author      = {Ivanchenko, V. and al.},
+title       = {{Recent Improvements in Geant4 Electromagnetic Physics Models and Interfaces}},
+booktitle   = {{3th Monte Carlo Conference MC2010}},
+year        = {2010},
+volume      = {2},
+pages       = {898-903},
+address     = {Tokyo, Japan},
+month       = Oct,
+hal_id      = {in2p3-00658779},
+hal_version = {v1},
+keywords    = {Geant4 ; bremsstrahlung ; Monte Carlo ; multiple scattering ; energy loss},
+url         = {http://hal.in2p3.fr/in2p3-00658779},
+}
+
+@PhdThesis{Neubueser2016,
+author            = {Neubueser, Coralie},
+title             = {{C}omparison of {T}wo {H}ighly {G}ranular {H}adronic {C}alorimeter {C}oncepts},
+school            = {Universitat Hamburg},
+year              = {2016},
+type              = {Dr.},
+address           = {Hamburg},
+note              = {Universitat Hamburg, Diss., 2016},
+cid               = {I:(DE-H253)FLC-20120731},
+cin               = {FLC},
+doi               = {10.3204/PUBDB-2016-05499},
+experiment        = {EXP:(DE-MLZ)NOSPEC-20140101},
+issn              = {1435-8085},
+othercontributors = {Garutti, Erika and Krueger, Katja},
+pages             = {157},
+pid               = {G:(DE-HGF)POF3-611 / G:(DE-HGF)POF3-632},
+pnm               = {611 - Fundamental Particles and Forces (POF3-611) / 632 - Detector technology and systems (POF3-632)},
+publisher         = {Verlag Deutsches Elektronen-Synchrotron},
+reportid          = {PUBDB-2016-05499, DESY-THESIS-2016-030},
+series            = {DESY-THESIS},
+typ               = {PUB:(DE-HGF)3 / PUB:(DE-HGF)29 / PUB:(DE-HGF)11},
+url               = {http://bib-pubdb1.desy.de/record/314943},
+}
+
+@Article{Bilki2015,
+  author  = {{The CALICE Collaboration}},
+  title   = {Pion and proton showers in the CALICE scintillator-steel analogue hadron calorimeter},
+  journal = {Journal of Instrumentation},
+  year    = {2015},
+  volume  = {10},
+  number  = {04},
+  pages   = {P04014},
+  url     = {http://stacks.iop.org/1748-0221/10/i=04/a=P04014},
+}
+
+@Article{Folger2004,
+author   = {Folger, G. and Ivanchenko, V. N. and Wellisch, J. P.},
+title    = {The Binary Cascade},
+journal  = {The European Physical Journal A - Hadrons and Nuclei},
+year     = {2004},
+volume   = {21},
+number   = {3},
+pages    = {407--417},
+month    = {Sep},
+issn     = {1434-601X},
+abstract = {The Binary Cascade introduces a novel approach towards intra-nuclear cascade calculations. Like many QMD codes, it uses a detailed 3-dimensional model of the nucleus, and is based exclusively on binary scattering between reaction participants and nucleons within this nuclear model. Like a classical cascade, it uses optical potentials to describe the time evolution of particles passing through the nuclear medium. In the present paper we introduce the model, and investigate its predictive power for hadron spectra in nucleon nuclear reactions final states.},
+day      = {01},
+doi      = {10.1140/epja/i2003-10219-7},
+url      = {https://doi.org/10.1140/epja/i2003-10219-7},
+}
+
+@Article{Heikkinen2003,
+author      = {Aatos Heikkinen and Nikita Stepanov and J. P. Wellisch},
+title       = {Bertini intra-nuclear cascade implementation in Geant4},
+abstract    = {We present here a intra-nuclear cascade model implemented in Geant4 5.0. The cascade model is based on re-engineering of INUCL code. Models included are Bertini intra-nuclear cascade model with exitons, pre-equilibrium model, nucleus explosion model, fission model, and evaporation model. Intermediate energy nuclear reactions from 100 MeV to 3 GeV energy are treated for proton, neutron, pions, photon and nuclear isotopes. We represent overview of the models, review results achieved from simulations and make comparisons with experimental data.},
+date        = {2003-06-02},
+eprint      = {nucl-th/0306008v1},
+eprintclass = {nucl-th},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/nucl-th/0306008v1:PDF},
+keywords    = {nucl-th},
+}
+
+@Article{Adloff2013,
+  author       = {{The CALICE Collaboration}},
+  title        = {Validation of GEANT4 Monte Carlo Models with a Highly Granular Scintillator-Steel Hadron Calorimeter},
+  abstract     = {Calorimeters with a high granularity are a fundamental requirement of the Particle Flow paradigm. This paper focuses on the prototype of a hadron calorimeter with analog readout, consisting of thirty-eight scintillator layers alternating with steel absorber planes. The scintillator plates are finely segmented into tiles individually read out via Silicon Photomultipliers. The presented results are based on data collected with pion beams in the energy range from 8GeV to 100GeV. The fine segmentation of the sensitive layers and the high sampling frequency allow for an excellent reconstruction of the spatial development of hadronic showers. A comparison between data and Monte Carlo simulations is presented, concerning both the longitudinal and lateral development of hadronic showers and the global response of the calorimeter. The performance of several GEANT4 physics lists with respect to these observables is evaluated.},
+  date         = {2013-06-13},
+  doi          = {10.1088/1748-0221/8/07/P07005},
+  eprint       = {1306.3037v3},
+  eprintclass  = {physics.ins-det},
+  eprinttype   = {arXiv},
+  file         = {online:http\://arxiv.org/pdf/1306.3037v3:PDF},
+  journaltitle = {JINST 8 P07005 2013},
+  keywords     = {physics.ins-det, hep-ex},
+}
+
+@Article{Folger2003,
+author      = {G. Folger and J. P. Wellisch},
+title       = {String Parton Models in Geant4},
+abstract    = {Dual parton and quark gluon string model are the by now almost standard theoretical techniques by which one can arrive at precision description of high energy, soft, inclusive reactions. These reactions make the part of jets at energies that contribute strongly to discovery channels such as H$\to$WWjj, or search for compositeness at the highest transverse momenta. The above modeling approach is available with Geant4 for nucleon induced reactions since the first release. Its object oriented design and parameter set was recently extended to allow for simulation of pion and kaon induced reactions, as well as heavy ion reactions. We will briefly describe the theory and algorithmic approaches that underly the modeling, show the object oriented designs and component structure of the string parton sub-systems of Geant4, present validation/verification results pertaining to these models, as well as results concerning their usage in calorimeter simulation.},
+date        = {2003-06-02},
+eprint      = {nucl-th/0306007v1},
+eprintclass = {nucl-th},
+eprinttype  = {arXiv},
+file        = {online:http\://arxiv.org/pdf/nucl-th/0306007v1:PDF},
+keywords    = {nucl-th},
+}
+
+@Article{2011_JINST_6_P04003,
+  author  = {{The CALICE collaboration}},
+  title   = {Electromagnetic response of a highly granular hadronic calorimeter},
+  journal = {Journal of Instrumentation},
+  year    = {2011},
+  volume  = {6},
+  number  = {04},
+  pages   = {P04003},
+  url     = {http://stacks.iop.org/1748-0221/6/i=04/a=P04003},
+}
+
+@Misc{Hartbrich2011,
+author       = {Oskar Hartbrich},
+title        = {Investigation of the time measurement capabilities of the SPIROC2b ASIC},
+howpublished = {DESY summer student report},
+year         = {2011},
+}
+
+@Misc{Brianne2012,
+author       = {Eldwan Brianne},
+title        = {Studies of the front-end electronics of the Analog HCAL},
+howpublished = {DESY summer student report},
+year         = {2012},
+}
+
+@Misc{Laurien2016,
+author = {Sebastian Laurien},
+title  = {Private communication},
+year   = {2016},
+}
+
+@MastersThesis{Hartbrich2012,
+author       = {Hartbrich, Oskar},
+title        = {{Commissioning and LED system tests of the engineering prototype of the analog hadronic calorimeter of the CALICE collaboration}},
+school       = {Wuppertal U., Dept. Math.},
+year         = {2012},
+reportnumber = {DESY-THESIS-2012-040},
+slaccitation = {%%CITATION = DESY-THESIS-2012-040;%%},
+url          = {http://www-library.desy.de/cgi-bin/showprep.pl?thesis12-040},
+}
+
+@Article{Simon2013,
+author   = {F Simon and C Soldner and L Weuste},
+title    = {T3B - an experiment to measure the time structure of hadronic showers},
+journal  = {Journal of Instrumentation},
+year     = {2013},
+volume   = {8},
+number   = {12},
+pages    = {P12001},
+abstract = {The goal of the T3B experiment is the measurement of the time structure of hadronic showers with nanosecond precision and high spatial resolution together with the CALICE hadron calorimeter prototypes, with a focus on the use of tungsten as absorber medium. The detector consists of a strip of 15 scintillator cells individually read out by silicon photomultipliers (SiPMs) and fast oscilloscopes with a PC-controlled data acquisition system. The data reconstruction uses an iterative subtraction technique which provides a determination of the arrival time of each photon on the light sensor with sub-nanosecond precision. The calibration is based on single photon-equivalent dark pulses constantly recorded during data taking, automatically eliminating the temperature dependence of the SiPM gain. In addition, a statistical correction for SiPM afterpulsing is demonstrated. To provide the tools for a comparison of T3B data with GEANT4 simulations, a digitization routine, which accounts for the detector response to energy deposits in the detector, has been implemented.},
+url      = {http://stacks.iop.org/1748-0221/8/i=12/a=P12001},
+}
+
+@Article{SoftCompNew2012,
+  author  = {{The CALICE Collaboration}},
+  title   = {Hadronic energy resolution of a highly granular scintillator-steel hadron calorimeter using software compensation techniques},
+  journal = {Journal of Instrumentation},
+  year    = {2012},
+  volume  = {7},
+  number  = {09},
+  pages   = {P09017},
+  url     = {http://stacks.iop.org/1748-0221/7/i=09/a=P09017},
+}
+
+@Article{CaN026,
+  author  = {{The CALICE Collaboration}},
+  title   = {Pion Showers in the CALICE AHCAL Prototype},
+  journal = {CALICE Analysis Note 026},
+  year    = {2010},
+}
+
+@Article{CaN028,
+  author  = {{The CALICE Collaboration}},
+  title   = {A new approach to software compensation for the CALICE AHCAL},
+  journal = {CALICE Analysis Note 028},
+  year    = {2010},
+  doi     = {10.1088/1748-0221/7/09/P09017},
+}
+
+@Article{FabianThesis,
+author  = {Fabian Lenzen},
+title   = {Channel by Channel MIP-Calibration of the Analogue Hadronic Calice-Calorimeter},
+journal = {Bachelor Thesis, Bergische Universitat Wuppertal},
+year    = {2014},
+}
+
+@Article{AHCALMain2016_Amine,
+author  = {Amine Elkhalii},
+title   = {Design of new test-board for the SPIROC2E BGA package},
+journal = {AHCAL Main Meeting, December 2016},
+year    = {2016},
+}
+
+@Electronic{OmegaWeb,
+title = {{Omega LAL/IN2P3 Website}},
+url   = {http://omega.in2p3.fr},
+}
+
+@Electronic{GithubTB,
+title = {{CALICE Testbeam Github repository}},
+url   = {https://github.com/CALICETB},
+}
+
+@Article{LloydTrigger,
+author  = {Lloyd Teh Tzer Tong},
+title   = {Trigger Threshold Verification for the Hadronic Calorimeter Prototype for the ILC},
+journal = {Summer Student Report},
+year    = {2014},
+}
+
+@Misc{AmbraEnergy,
+author = {Ambra Provenza},
+title  = {Calibration and analysis of data taken with the technological prototype of the Analog Hadron Calorimeter (AHCAL) for a detector at the Internationnal Linear Collider},
+year   = {2017},
+}
+
+@article{AmbraTokyo,
+author  = {Ambra Provenza},
+title   = {Analysis of July 2015 CERN test beam electron data},
+journal = {CALICE Collaboration Meeting, Tokyo},
+year    = {2017},
+}
+
+@Misc{ChristianTungsten,
+author = {Christian Graf},
+title  = {Private communication},
+year   = {2017},
+}
+
+@Electronic{H2Beamline,
+title = {{CERN North Area H2 beamline}},
+url   = {http://sba.web.cern.ch/sba/},
+}
+
+@article{GOVORKOV20059,
+title = "Cherenkov detectors in Cherenkov's laboratory",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+volume = "553",
+number = "1",
+pages = "9 - 17",
+year = "2005",
+note = "Proceedings of the fifth International Workshop on Ring Imaging Detectors",
+issn = "0168-9002",
+doi = "https://doi.org/10.1016/j.nima.2005.08.088",
+url = "http://www.sciencedirect.com/science/article/pii/S0168900205015627",
+author = "B.B. Govorkov",
+keywords = "RICH, Heaviside, Cherenkov radiation, Cherenkov detectors, Cherenkov spectrometers"
+}
+
+@Article{EUDET-Report-2010-02,
+author  = {{K. Gadow, E. Garutti, P. Gottlicher, M. Reinecke, F. Sefkow, M. Terwort}},
+title   = {Concept, Realization and Results of the Mechanical and Electronics Integration Efforts for an Analog Hadronic Calorimeter},
+journal = {EUDET Report},
+year    = {2010},
+}
+
+@article{ELLSWORTH1982167,
+title = "{A study of albedo from hadronic calorimeter for energies $\sim$100–2000 GeV}",
+journal = "Nuclear Instruments and Methods in Physics Research",
+volume = "203",
+number = "1",
+pages = "167 - 177",
+year = "1982",
+issn = "0167-5087",
+doi = "https://doi.org/10.1016/0167-5087(82)90625-1",
+url = "http://www.sciencedirect.com/science/article/pii/0167508782906251",
+author = "R.W. Ellsworth and J.A. Goodman and A.S. Ito and J.R. Macfall and F. Siohan and R.E. Streitmatter and S.C. Tonwar and P.R. Viswanath and G.B. Yodh"
+}
+
+@Article{SarahMaster,
+author  = {Sarah Schroeder},
+title   = {Commissioning of a prototype hadronic calorimeter},
+journal = {Master Thesis},
+year    = {2015},
+}
+
+@article{Ete:2291805,
+author        = "Ete, R. and Coates, T. and Pingault, A.",
+title         = "{Data quality monitoring tools ready}",
+month         = "Nov",
+year          = "2017",
+reportNumber  = "AIDA-2020-MS67",
+url           = "http://cds.cern.ch/record/2291805",
+}
+
+@article{ADLOFF2009372,
+title = "{Response of the CALICE Si-W electromagnetic calorimeter physics prototype to electrons}",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+volume = "608",
+number = "3",
+pages = "372 - 383",
+year = "2009",
+issn = "0168-9002",
+doi = "https://doi.org/10.1016/j.nima.2009.07.026",
+url = "http://www.sciencedirect.com/science/article/pii/S0168900209014673",
+author = "{The CALICE Collaboration}",
+keywords = "CALICE, ILC, Electromagnetic calorimeter, Silicon detector, Electron reconstruction"
+}
+
+@article{1748-0221-6-12-C12040,
+author={S Callier and F Dulucq and C de La Taille and G Martin-Chassard and N Seguin-Moreau},
+title={{SKIROC2, front end chip designed to readout the Electromagnetic CALorimeter at the ILC}},
+journal={Journal of Instrumentation},
+volume={6},
+number={12},
+pages={C12040},
+url={http://stacks.iop.org/1748-0221/6/i=12/a=C12040},
+year={2011}
+}
+
+@article{1748-0221-3-08-P08001,
+author={{The CALICE collaboration}},
+title={{Design and electronics commissioning of the physics prototype of a Si-W electromagnetic calorimeter for the International Linear Collider}},
+journal={Journal of Instrumentation},
+volume={3},
+number={08},
+pages={P08001},
+url={http://stacks.iop.org/1748-0221/3/i=08/a=P08001},
+year={2008}
+}
+
+@article{1748-0221-5-05-P05004,
+author={{The CALICE collaboration}},
+title={{Construction and commissioning of the CALICE analog hadron calorimeter prototype}},
+journal={Journal of Instrumentation},
+volume={5},
+number={05},
+pages={P05004},
+url={http://stacks.iop.org/1748-0221/5/i=05/a=P05004},
+year={2010}
+}
+
+@article{1707.07126v2,
+author={{The CALICE collaboration}},
+title={{Construction and Response of a Highly Granular Scintillator-based Electromagnetic Calorimeter}},
+journal={arXiv},
+url={https://arxiv.org/abs/1707.07126v2},
+year={2017}
+}
+
+@article{1748-0221-10-10-P10039,
+author={G. Baulieu and al.},
+title={{Construction and commissioning of a technological prototype of a high-granularity semi-digital hadronic calorimeter}},
+journal={Journal of Instrumentation},
+volume={10},
+number={10},
+pages={P10039},
+url={http://stacks.iop.org/1748-0221/10/i=10/a=P10039},
+year={2015}
+}
+
+@article{1748-0221-3-05-P05001,
+author={B Bilki and al.},
+title={{Calibration of a digital hadron calorimeter with muons}},
+journal={Journal of Instrumentation},
+volume={3},
+number={05},
+pages={P05001},
+url={http://stacks.iop.org/1748-0221/3/i=05/a=P05001},
+year={2008}
+}
+
+@article{1748-0221-12-01-C01042,
+author={A.-M. Magnan},
+title={{HGCAL: a High-Granularity Calorimeter for the endcaps of CMS at HL-LHC}},
+journal={Journal of Instrumentation},
+volume={12},
+number={01},
+pages={C01042},
+url={http://stacks.iop.org/1748-0221/12/i=01/a=C01042},
+year={2017}
+}
+
+@article{OskarCAN,
+author={{The CALICE Collaboration}},
+title={{Pion Response and Resolution in a Combined Scintillator Calorimeter System in the FNAL Testbeam}},
+journal={CALICE Analysis Note},
+volume={56},
+url={https://twiki.cern.ch/twiki/pub/CALICE/CaliceAnalysisNotes/CAN-056.pdf},
+year={2016}
+}
+
+@article{YasmineCAN,
+author={{The CALICE Collaboration}},
+title={{Energy Reconstruction of Hadrons in a Highly Granular Si-W ECAL and Plastic Scintillator HCAL Calorimeter System}},
+journal={CALICE Analysis Note},
+volume={58},
+url={https://twiki.cern.ch/twiki/pub/CALICE/CaliceAnalysisNotes/CAN-058.pdf},
+year={2017}
+}
+
+@article{SPIROC2_datasheet,
+author={{Omega Group}},
+title={{SPIROC2 User Guide}},
+url={http://azusa.shinshu-u.ac.jp/~coterra/EBUreferences/Spiroc/DataSheet/Spiroc2_datasheet.pdf},
+year={2009}
+}
+
+@article{CAN034,
+author={{The CALICE Collaboration}},
+title={{Analysis of low-energetic electron and pion data collected with the AHCAL prototype at Fermilab}},
+journal={CALICE Analysis Note},
+volume={34},
+url={https://twiki.cern.ch/twiki/pub/CALICE/CaliceAnalysisNotes/CAN-034.pdf},
+year={2011}
+}
+
+@article{CR_IEEE2017,
+author={{Christian Graf for the CALICE Collaboration}},
+title={{Performance of a Highly Granular Scintillator-SiPM Based Hadron Calorimeter Prototype in Strong Magnetic Fields}},
+journal={Conference Record IEEE},
+url={https://agenda.linearcollider.org/event/7773/contributions/39971/attachments/32142/49288/Graf_IEEE_AHCAL_CR.pdf},
+year={2017}
+}
+
+@article{Kvasnicka:2017bpx,
+author         = "Kvasnicka, Jiri",
+title          = "{Data Acquisition System for the CALICE AHCAL
+Calorimeter}",
+booktitle      = "{Proceedings, Topical Workshop on Electronics for
+Particle Physics (TWEPP 2016): Karlsruhe, Germany}",
+collaboration  = "CALICE",
+journal        = "JINST",
+volume         = "12",
+year           = "2017",
+number         = "03",
+pages          = "C03043",
+doi            = "10.1088/1748-0221/12/03/C03043",
+eprint         = "1701.02232",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1701.02232;%%"
+}
+
+@article{Kvasnicka:CR_IEEE2016,
+author={{Kvasnicka, Jiri}},
+title={{A Scalable Data Acquisition System for the
+CALICE Tile Hadron Calorimeter}},
+journal={Conference Record IEEE},
+url={http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8069932},
+year={2016}
+}
+
+@article{Wing:2296332,
+author        = "Wing, M. and Ete, R. and Liu, Y. and Kvasnicka, J.",
+title         = "{Data acquisition software}",
+month         = "Dec",
+year          = "2017",
+reportNumber  = "AIDA-2020-D5.3",
+url           = "http://cds.cern.ch/record/2296332",
+}
+
+@Conference{Felix:AHCALMain2017,
+author        = "Felix Sefkow",
+title         = "{Welcome and overview}",
+journal       = "AHCAL Main Meeting",
+month         = "Dec",
+year          = "2017",
+url           = "https://agenda.linearcollider.org/event/7807/contributions/40515/attachments/32549/49480/AHCALMainDec17_.pdf",
+}
+
+@Conference{Phi:AHCALMain2017,
+author        = "Phi Chau",
+title         = "{HBU tile assembly \& integrated performance test setup}",
+journal       = "AHCAL Main Meeting",
+month         = "Dec",
+year          = "2017",
+url           = "https://agenda.linearcollider.org/event/7807/contributions/40518/attachments/32555/49487/Meeting_17_12_13v3.pdf",
+}
+
+@Conference{Felix:AHCALMain2017_HGHCAL,
+author        = "Felix Sefkow",
+title         = "{CMS scintillator HGCAL}",
+journal       = "AHCAL Main Meeting",
+month         = "Dec",
+year          = "2017",
+url           = "https://agenda.linearcollider.org/event/7807/contributions/40535/attachments/32576/49527/HGCAL-AHCALMain-Dec17.pdf",
+}
+
+@conference{HARDROC:IEEE,
+author = "F. Dulucq et al.",
+title = "HARDROC: Readout chip for CALICE/EUDET Digital Hadronic Calorimeter",
+url = "http://ieeexplore.ieee.org/document/5874060/",
+journal = "Nuclear Science Symposium Conference Record (NSS/MIC), 2010 IEEE",
+}
+
+@article{BEDJIDIAN2010120,
+title = "Glass resistive plate chambers for a semi-digital HCAL",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+volume = "623",
+number = "1",
+pages = "120 - 122",
+year = "2010",
+note = "1st International Conference on Technology and Instrumentation in Particle Physics",
+issn = "0168-9002",
+doi = "https://doi.org/10.1016/j.nima.2010.02.168",
+url = "http://www.sciencedirect.com/science/article/pii/S0168900210004353",
+author = "M. Bedjidian and J.-P. Ianigro and R. Kieffer and I. Laktineh and N. Lumb and S. Vanzetto",
+keywords = "ILC, HCAL, GRPC"
+}
+
+@conference{Geant4PhysicsLists:IEEE,
+author = "J. Apostolakis et al.",
+title = "GEANT4 Physics Lists for HEP",
+url = "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4774655",
+journal = "Nuclear Science Symposium Conference Record, 2008 IEEE",
+}
+
+@conference{kB:IEEE,
+author = "M.Hirschberg et al.",
+title = "Precise measurement of Birks kB parameter in plastic scintillators",
+url = "http://ieeexplore.ieee.org/document/258896/",
+journal = "IEEE Trans. Nuc. Sci. 39 (1992) 511",
+}
+
+@PhdThesis{Hermberg:2015gaa,
+  author       = {Hermberg, Benjamin},
+  title        = {{Measuring Hadronic Jets at the ILC - From Particle Flow Calorimetry to the Higgs Self-Coupling}},
+  school       = {U. Hamburg, Dept. Phys.},
+  year         = {2015},
+  address      = {Hamburg},
+  reportnumber = {DESY-THESIS-2015-039},
+  slaccitation = {%%CITATION = DESY-THESIS-2015-039;%%},
+  url          = {http://bib-pubdb1.desy.de/search?cc=Publication+Database&of=hd&p=reportnumber:DESY-THESIS-2015-039},
+}
+
+@article{ILC_TDR_Vol1,
+author         = "Behnke, Ties and Brau, James E. and Foster, Brian and
+Fuster, Juan and Harrison, Mike and Paterson, James McEwan
+and Peskin, Michael and Stanitzki, Marcel and Walker,
+Nicholas and Yamamoto, Hitoshi",
+title          = "{The International Linear Collider Technical Design
+Report - Volume 1: Executive Summary}",
+year           = "2013",
+eprint         = "1306.6327",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.acc-ph",
+reportNumber   = "ILC-REPORT-2013-040, ANL-HEP-TR-13-20,
+BNL-100603-2013-IR, IRFU-13-59, CERN-ATS-2013-037,
+COCKCROFT-13-10, CLNS-13-2085, DESY-13-062,
+FERMILAB-TM-2554, IHEP-AC-ILC-2013-001, INFN-13-04-LNF,
+JAI-2013-001, JINR-E9-2013-35, JLAB-R-2013-01,
+KEK-REPORT-2013-1, KNU-CHEP-ILC-2013-1, LLNL-TR-635539,
+SLAC-R-1004, ILC-HIGRADE-REPORT-2013-003",
+SLACcitation   = "%%CITATION = ARXIV:1306.6327;%%"
+}
+
+@article{ILC_TDR_Vol2,
+author         = "Baer, Howard and Barklow, Tim and Fujii, Keisuke and Gao,
+Yuanning and Hoang, Andre and Kanemura, Shinya and List,
+Jenny and Logan, Heather E. and Nomerotski, Andrei and
+Perelstein, Maxim and others ",
+title          = "{The International Linear Collider Technical Design
+Report - Volume 2: Physics}",
+year           = "2013",
+eprint         = "1306.6352",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ph",
+reportNumber   = "ILC-REPORT-2013-040, ANL-HEP-TR-13-20,
+BNL-100603-2013-IR, IRFU-13-59, CERN-ATS-2013-037,
+COCKCROFT-13-10, CLNS-13-2085, DESY-13-062,
+FERMILAB-TM-2554, IHEP-AC-ILC-2013-001, INFN-13-04-LNF,
+JAI-2013-001, JINR-E9-2013-35, JLAB-R-2013-01,
+KEK-REPORT-2013-1, KNU-CHEP-ILC-2013-1, LLNL-TR-635539,
+SLAC-R-1004, ILC-HIGRADE-REPORT-2013-003",
+SLACcitation   = "%%CITATION = ARXIV:1306.6352;%%"
+}
+
+@article{ILC_TDR_Vol3.1,
+author         = "Adolphsen, Chris and Barone, Maura and Barish, Barry and
+Buesser, Karsten and Burrows, Philip and Carwardine, John
+and Clark, Jeffrey and Mainaud Durand, Hélène and Dugan,
+Gerry and Elsen, Eckhard and others ",
+title          = "{The International Linear Collider Technical Design
+Report - Volume 3.I: Accelerator \& in the Technical
+Design Phase}",
+year           = "2013",
+eprint         = "1306.6353",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.acc-ph",
+reportNumber   = "ILC-REPORT-2013-040, ANL-HEP-TR-13-20,
+BNL-100603-2013-IR, IRFU-13-59, CERN-ATS-2013-037,
+COCKCROFT-13-10, CLNS-13-2085, DESY-13-062,
+FERMILAB-TM-2554, IHEP-AC-ILC-2013-001, INFN-13-04-LNF,
+JAI-2013-001, JINR-E9-2013-35, JLAB-R-2013-01,
+KEK-REPORT-2013-1, KNU-CHEP-ILC-2013-1, LLNL-TR-635539,
+SLAC-R-1004, ILC-HIGRADE-REPORT-2013-003",
+SLACcitation   = "%%CITATION = ARXIV:1306.6353;%%"
+}
+
+@article{ILC_TDR_Vol3.2,
+author         = "Adolphsen, Chris and Barone, Maura and Barish, Barry and
+Buesser, Karsten and Burrows, Philip and Carwardine, John
+and Clark, Jeffrey and Mainaud Durand, Hélène and Dugan,
+Gerry and Elsen, Eckhard and others ",
+title          = "{The International Linear Collider Technical Design
+Report - Volume 3.II: Accelerator Baseline Design}",
+year           = "2013",
+eprint         = "1306.6328",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.acc-ph",
+reportNumber   = "ILC-REPORT-2013-040, ANL-HEP-TR-13-20,
+BNL-100603-2013-IR, IRFU-13-59, CERN-ATS-2013-037,
+COCKCROFT-13-10, CLNS-13-2085, DESY-13-062,
+FERMILAB-TM-2554, IHEP-AC-ILC-2013-001, INFN-13-04-LNF,
+JAI-2013-001, JINR-E9-2013-35, JLAB-R-2013-01,
+KEK-REPORT-2013-1, KNU-CHEP-ILC-2013-1, LLNL-TR-635539,
+SLAC-R-1004, ILC-HIGRADE-REPORT-2013-003",
+SLACcitation   = "%%CITATION = ARXIV:1306.6328;%%"
+}
+
+@article{ILC_TDR_Vol4,
+author         = "Abramowicz, Halina and others",
+editor         = "Behnke, Ties and Brau, James E. and Burrows, Philip N.
+and Fuster, Juan and Peskin, Michael and Stanitzki, Marcel
+and Sugimoto, Yasuhiro and Yamada, Sakue and Yamamoto,
+Hitoshi",
+title          = "{The International Linear Collider Technical Design
+Report - Volume 4: Detectors}",
+year           = "2013",
+eprint         = "1306.6329",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+reportNumber   = "ILC-REPORT-2013-040, ANL-HEP-TR-13-20,
+BNL-100603-2013-IR, IRFU-13-59, CERN-ATS-2013-037,
+COCKCROFT-13-10, CLNS-13-2085, DESY-13-062,
+FERMILAB-TM-2554, IHEP-AC-ILC-2013-001, INFN-13-04-LNF,
+JAI-2013-001, JINR-E9-2013-35, JLAB-R-2013-01,
+KEK-REPORT-2013-1, KNU-CHEP-ILC-2013-1, LLNL-TR-635539,
+SLAC-R-1004, ILC-HIGRADE-REPORT-2013-003",
+SLACcitation   = "%%CITATION = ARXIV:1306.6329;%%"
+}
+
+@ARTICLE{CLIC_CDR,
+author = {{Linssen}, L. and {Miyamoto}, A. and {Stanitzki}, M. and {Weerts}, H.
+},
+title = "{Physics and Detectors at CLIC: CLIC Conceptual Design Report}",
+journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+eprint = {1202.5940},
+primaryClass = "physics.ins-det",
+keywords = {Physics - Instrumentation and Detectors},
+year = 2012,
+month = feb,
+adsurl = {http://adsabs.harvard.edu/abs/2012arXiv1202.5940L},
+adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Yan:2016xyx,
+author         = "Yan, Jacqueline and Watanuki, Shun and Fujii, Keisuke and
+Ishikawa, Akimasa and Jeans, Daniel and Strube, Jan and
+Tian, Junping and Yamamoto, Hitoshi",
+title          = "{Measurement of the Higgs boson mass and $e^+e^- \to ZH$
+cross section using $Z \to \mu^+\mu^-$ and $Z \to e^+ e^-$
+at the ILC}",
+journal        = "Phys. Rev.",
+volume         = "D94",
+year           = "2016",
+number         = "11",
+pages          = "113002",
+doi            = "10.1103/PhysRevD.94.113002",
+eprint         = "1604.07524",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+SLACcitation   = "%%CITATION = ARXIV:1604.07524;%%"
+}
+
+@Article{Thomson2016,
+author="Thomson, M. A.",
+title="Model-independent measurement of the e+e- to HZ cross section at a future e+ e- linear collider using hadronic Z decays",
+journal="The European Physical Journal C",
+year="2016",
+month="Feb",
+day="13",
+volume="76",
+number="2",
+pages="72",
+issn="1434-6052",
+doi="10.1140/epjc/s10052-016-3911-5",
+url="https://doi.org/10.1140/epjc/s10052-016-3911-5"
+}
+
+@phdthesis{Duerig:2016dvi,
+author         = "Dürig, Claude Fabienne",
+title          = "{Measuring the Higgs Self-coupling at the International
+Linear Collider}",
+school         = "Hamburg U.",
+year           = "2016",
+address        = "Hamburg",
+url            = "http://bib-pubdb1.desy.de/search?cc=Publication+Database&of=hd&p=reportnumber:DESY-THESIS-2016-027",
+reportNumber   = "DESY-THESIS-2016-027",
+SLACcitation   = "%%CITATION = DESY-THESIS-2016-027;%%"
+}
+
+@article{Abe:1995hr,
+author         = "Abe, F. and others",
+title          = "{Observation of top quark production in $\bar{p}p$
+collisions}",
+collaboration  = "CDF",
+journal        = "Phys. Rev. Lett.",
+volume         = "74",
+year           = "1995",
+pages          = "2626-2631",
+doi            = "10.1103/PhysRevLett.74.2626",
+eprint         = "hep-ex/9503002",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "FERMILAB-PUB-95-022-E, CDF-PUB-TOP-PUBLIC-3040,
+ANL-HEP-PR-95-44",
+SLACcitation   = "%%CITATION = HEP-EX/9503002;%%"
+}
+
+@article{D0:1995jca,
+author         = "Abachi, S. and others",
+title          = "{Observation of the top quark}",
+collaboration  = "D0",
+journal        = "Phys. Rev. Lett.",
+volume         = "74",
+year           = "1995",
+pages          = "2632-2637",
+doi            = "10.1103/PhysRevLett.74.2632",
+eprint         = "hep-ex/9503003",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "FERMILAB-PUB-95-028-E, D0-2698, D0-PUB-95-7",
+SLACcitation   = "%%CITATION = HEP-EX/9503003;%%"
+}
+
+@BOOK{Wigmans:392793,
+author       = {Wigmans, Richard},
+title        = {{C}alorimetry: energy measurement in particle physics; 2nd
+ed.},
+volume       = {168},
+address      = {Oxford},
+publisher    = {Oxford Univ. Pr.},
+reportid     = {PUBDB-2017-11078},
+isbn         = {9780198786351},
+series       = {International series of monographs on physics},
+pages        = {854 p.},
+year         = {2017},
+keywords     = {calorimetry (DE-H253) / particle physics (DE-H253) / energy
+measurement (DE-H253) / colorimeter systems (DE-H253)},
+ddc          = {539.77},
+shelfmark    = {E Wig},
+typ          = {PUB:(DE-HGF)3},
+doi          = {10.1093/oso/9780198786351.001.0001},
+url          = {https://bib-pubdb1.desy.de/record/392793},
+}
+
+@article{Patrignani:2016xqp,
+author         = "Patrignani, C. and others",
+title          = "{Review of Particle Physics}",
+collaboration  = "Particle Data Group",
+journal        = "Chin. Phys.",
+volume         = "C40",
+year           = "2016",
+number         = "10",
+pages          = "100001",
+doi            = "10.1088/1674-1137/40/10/100001",
+SLACcitation   = "%%CITATION = CHPHD,C40,100001;%%"
+}
+
+@inproceedings{Grahn:2009ki,
+author         = "Grahn, Karl-Johan",
+title          = "{A Layer Correlation Technique for Pion Energy
+Calibration at the 2004 ATLAS Combined Beam Test}",
+booktitle      = "{Proceedings, 2009 IEEE Nuclear Science Symposium and
+Medical Imaging Conference (NSS/MIC 2009): Orlando,
+Florida, October 25-31, 2009}",
+collaboration  = "ATLAS Liquid Argon",
+year           = "2009",
+url            = "http://inspirehep.net/record/836891/files/arXiv:0911.2639.pdf",
+pages          = "751-757",
+doi            = "10.1109/NSSMIC.2009.5402211",
+eprint         = "0911.2639",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:0911.2639;%%"
+}
+
+@article{1742-6596-587-1-012001,
+author={Cristina Biino},
+title={The CMS Electromagnetic Calorimeter: overview, lessons learned during Run 1 and future projections},
+journal={Journal of Physics: Conference Series},
+volume={587},
+number={1},
+pages={012001},
+url={http://stacks.iop.org/1742-6596/587/i=1/a=012001},
+year={2015}
+}
+
+@article{BERNSTEIN199323,
+title = "Beam tests of the ZEUS barrel calorimeter",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment",
+volume = "336",
+number = "1",
+pages = "23 - 52",
+year = "1993",
+issn = "0168-9002",
+doi = "https://doi.org/10.1016/0168-9002(93)91078-2",
+url = "http://www.sciencedirect.com/science/article/pii/0168900293910782",
+author = "A. Bernstein and T. Bienz and A. Caldwell and L. Chen and M. Derrick and I. Gialas and A. Hamri and R. Imlay and S. Kartik and H.J. Kim and T. Kinnel and H. Kreutzmann and C.G. Li and J.N. Lim and R. Loveless and B. Lu and U. Mallik and K.W. McLean and R. McNeil and W. Metcalf and B. Musgrave and B.Y. Oh and S. Park and J.A. Parsons and D. Reeder and J. Repond and S. Ritz and M.T.P. Roco and P.H. Sandler and F. Sciulli and W.H. Smith and R.L. Talaga and G. Tzanakos and L. Wai and M.Z. Wang and J. Whitmore and J. Wu and S. Yang"
+}
+
+@article{Akchurin:2013yaa,
+author         = "Akchurin, N. and others",
+title          = "{Dual-readout Calorimetry}",
+year           = "2013",
+eprint         = "1307.5538",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1307.5538;%%"
+}
+
+@inproceedings{Schacht:1990zw,
+author         = "Schacht, P.",
+title          = "{Software compensation for single particles and jets in
+the H1 calorimeter}",
+booktitle      = "{ECFA Large Hadron Collider Workshop, Aachen, Germany,
+4-9 Oct 1990: Proceedings.3.}",
+collaboration  = "H1",
+year           = "1990",
+SLACcitation   = "%%CITATION = INSPIRE-310818;%%"
+}
+
+@article{Sirunyan:2017ulk,
+author         = "Sirunyan, A. M. and others",
+title          = "{Particle-flow reconstruction and global event
+description with the CMS detector}",
+collaboration  = "CMS",
+journal        = "JINST",
+volume         = "12",
+year           = "2017",
+number         = "10",
+pages          = "P10003",
+doi            = "10.1088/1748-0221/12/10/P10003",
+eprint         = "1706.04965",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+reportNumber   = "CMS-PRF-14-001, CERN-EP-2017-110",
+SLACcitation   = "%%CITATION = ARXIV:1706.04965;%%"
+}
+
+@article{Abt:1994ye,
+author         = "Abt, I. and others",
+title          = "{Energy flow and charged particle spectrum in deep
+inelastic scattering at HERA}",
+collaboration  = "H1",
+journal        = "Z. Phys.",
+volume         = "C63",
+year           = "1994",
+pages          = "377-390",
+doi            = "10.1007/BF01580319",
+reportNumber   = "DESY-94-033",
+SLACcitation   = "%%CITATION = ZEPYA,C63,377;%%"
+}
+
+@PHDTHESIS{Ebrahimi:394104,
+author       = {Ebrahimi, Aliakbar},
+othercontributors = {Krueger, Katja and List, Jenny and Garutti, Erika},
+title        = {{J}et {E}nergy {M}easurements at {ILC}:{C}alorimeter {DAQ}
+{R}equirements and {A}pplication in {H}iggs {B}oson {M}ass
+{M}easurements},
+school       = {Universität Hamburg},
+type         = {Dissertation},
+address      = {Hamburg},
+publisher    = {Verlag Deutsches Elektronen-Synchrotron},
+reportid     = {PUBDB-2017-11891, DESY-THESIS-2017-045},
+series       = {DESY-THESIS},
+pages        = {205},
+year         = {2017},
+note         = {Dissertation, Universität Hamburg, 2017},
+cin          = {FLC},
+cid          = {I:(DE-H253)FLC-20120731},
+pnm          = {611 - Fundamental Particles and Forces (POF3-611) / 613 -
+Matter and Radiation from the Universe (POF3-613) / 632 -
+Detector technology and systems (POF3-632)},
+pid          = {G:(DE-HGF)POF3-611 / G:(DE-HGF)POF3-613 /
+G:(DE-HGF)POF3-632},
+experiment   = {EXP:(DE-H253)ILC(machine)-20150101 /
+EXP:(DE-MLZ)External-20140101},
+typ          = {PUB:(DE-HGF)3 / PUB:(DE-HGF)29 / PUB:(DE-HGF)11},
+doi          = {10.3204/PUBDB-2017-11891},
+url          = {http://bib-pubdb1.desy.de/record/394104},
+}
+
+@phdthesis{Feege:2011dsa,
+author         = "Feege, Nils",
+title          = "{Low-energetic hadron interactions in a highly granular
+calorimeter}",
+school         = "Hamburg U.",
+year           = "2011",
+url            = "http://www-library.desy.de/cgi-bin/showprep.pl?thesis11-048",
+reportNumber   = "DESY-THESIS-2011-048",
+SLACcitation   = "%%CITATION = DESY-THESIS-2011-048;%%"
+}
+
+@article{1748-0221-4-04-P04004,
+author={D Renker and E Lorenz},
+title={Advances in solid state photon detectors},
+journal={Journal of Instrumentation},
+volume={4},
+number={04},
+pages={P04004},
+url={http://stacks.iop.org/1748-0221/4/i=04/a=P04004},
+year={2009}
+}
+
+@article{Garutti:2011qv,
+author         = "Garutti, Erika",
+title          = "{Silicon Photomultipliers for High Energy Physics
+Detectors}",
+booktitle      = "{Fast Cherenkov detectors: Photon detection, DIRC design
+and DAQ. Proceedings, Workshop, DIRC 2011, Giessen,
+Germany, April 4-6, 2011}",
+journal        = "JINST",
+volume         = "6",
+year           = "2011",
+pages          = "C10003",
+doi            = "10.1088/1748-0221/6/10/C10003",
+eprint         = "1108.3166",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1108.3166;%%"
+}
+
+@article{Garutti:2017ipx,
+author         = "Garutti, E. and Klanner, R. and Lomidze, D. and Schwandt,
+J. and Zvolsky, M.",
+title          = "{Characterisation of highly radiation-damaged SiPMs using
+current measurements}",
+year           = "2017",
+eprint         = "1709.05226",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1709.05226;%%"
+}
+
+@article{Kotera:2015rha,
+author         = "Kotera, Katsushige and Choi, Weonseok and Takeshita,
+Tohru",
+title          = "{Describing the response of saturated SiPMs}",
+year           = "2015",
+eprint         = "1510.01102",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1510.01102;%%"
+}
+
+@inproceedings{Liu:2015cpe,
+author         = "Liu, Yong and Büscher, Volker and Caudron, Julien and
+Chau, Phi and Krause, Sascha and Masetti, Lucia and
+Schäfer, Ulrich and Spreckels, Rouven and Tapprogge,
+Stefan and Wanke, Rainer",
+title          = "{A Design of Scintillator Tiles Read Out by
+Surface-Mounted SiPMs for a Future Hadron Calorimeter}",
+booktitle      = "{Proceedings, 21st Symposium on Room-Temperature
+Semiconductor X-ray and Gamma-ray Detectors (RTSD 2014):
+Seattle, WA, USA, November 8-15, 2014}",
+year           = "2016",
+url            = "https://inspirehep.net/record/1410633/files/arXiv:1512.05900.pdf",
+pages          = "7431118",
+doi            = "10.1109/NSSMIC.2014.7431118",
+eprint         = "1512.05900",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1512.05900;%%"
+}
+
+@article{JJThomson:1897,
+author         = "J.J. Thomson",
+title          = "{Cathode Rays}",
+year           = "1897",
+journal        = {Philos. Mag. 44(1897), 293},
+url            = "http://web.ihep.su/dbserv/compas/src/thomson97/eng.pdf"
+}
+
+@article{Rutherford:1911,
+author         = "E. Rutherford",
+title          = "{The scattering of $\alpha$ and $\beta$ particles by matter and the structure of
+the atom}",
+year           = "1911",
+journal        = {Phil. Mag. 21(1911) 669},
+url            = "http://www.lawebdefisica.com/arts/structureatom.pdf"
+}
+
+@article{Aad:2012tfa,
+author         = "Aad, Georges and others",
+title          = "{Observation of a new particle in the search for the
+Standard Model Higgs boson with the ATLAS detector at the
+LHC}",
+collaboration  = "ATLAS",
+journal        = "Phys. Lett.",
+volume         = "B716",
+year           = "2012",
+pages          = "1-29",
+doi            = "10.1016/j.physletb.2012.08.020",
+eprint         = "1207.7214",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CERN-PH-EP-2012-218",
+SLACcitation   = "%%CITATION = ARXIV:1207.7214;%%"
+}
+
+@article{Chatrchyan:2012xdj,
+author         = "Chatrchyan, Serguei and others",
+title          = "{Observation of a new boson at a mass of 125 GeV with the
+CMS experiment at the LHC}",
+collaboration  = "CMS",
+journal        = "Phys. Lett.",
+volume         = "B716",
+year           = "2012",
+pages          = "30-61",
+doi            = "10.1016/j.physletb.2012.08.021",
+eprint         = "1207.7235",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+reportNumber   = "CMS-HIG-12-028, CERN-PH-EP-2012-220",
+SLACcitation   = "%%CITATION = ARXIV:1207.7235;%%"
+}
+
+@article{Einstein:1905ve,
+author         = "Einstein, Albert",
+title          = "{On the electrodynamics of moving bodies}",
+journal        = "Annalen Phys.",
+volume         = "17",
+year           = "1905",
+pages          = "891-921",
+doi            = "10.1002/andp.200590006",
+note           = "[Annalen Phys.14,194(2005)]",
+SLACcitation   = "%%CITATION = ANPYA,17,891;%%"
+}
+
+@article{Yang:1954ek,
+author         = "Yang, Chen-Ning and Mills, Robert L.",
+title          = "{Conservation of Isotopic Spin and Isotopic Gauge
+Invariance}",
+journal        = "Phys. Rev.",
+volume         = "96",
+year           = "1954",
+pages          = "191-195",
+doi            = "10.1103/PhysRev.96.191",
+SLACcitation   = "%%CITATION = PHRVA,96,191;%%"
+}
+
+@article{Higgs:1964pj,
+author         = "Higgs, Peter W.",
+title          = "{Broken Symmetries and the Masses of Gauge Bosons}",
+journal        = "Phys. Rev. Lett.",
+volume         = "13",
+year           = "1964",
+pages          = "508-509",
+doi            = "10.1103/PhysRevLett.13.508",
+SLACcitation   = "%%CITATION = PRLTA,13,508;%%"
+}
+
+@article{Englert:1964et,
+author         = "Englert, F. and Brout, R.",
+title          = "{Broken Symmetry and the Mass of Gauge Vector Mesons}",
+journal        = "Phys. Rev. Lett.",
+volume         = "13",
+year           = "1964",
+pages          = "321-323",
+doi            = "10.1103/PhysRevLett.13.321",
+SLACcitation   = "%%CITATION = PRLTA,13,321;%%"
+}
+
+@BOOK{Griffiths:343277,
+author       = {Griffiths, David},
+title        = {{I}ntroduction to elementary particles; 2nd, rev. ed.},
+address      = {Weinheim},
+publisher    = {Wiley-VCH},
+reportid     = {PUBDB-2017-127085},
+isbn         = {9783527406012},
+series       = {Physics textbook},
+pages        = {454 p},
+year         = {2008},
+keywords     = {elementary particles (DE-H253) / gauge theories (DE-H253) /
+quantum chromodynamics (DE-H253) / quantum electrodynmamics
+(DE-H253) / weak interactions (DE-H253) / neutrino
+oscillations (DE-H253) / quarks (DE-H253)},
+ddc          = {539.721},
+shelfmark    = {E Gri},
+typ          = {PUB:(DE-HGF)3},
+url          = {https://bib-pubdb1.desy.de/record/343277},
+}
+
+@book{Peskin:1995ev,
+author         = "Peskin, Michael E. and Schroeder, Daniel V.",
+title          = "{An Introduction to quantum field theory}",
+publisher      = "Addison-Wesley",
+address        = "Reading, USA",
+year           = "1995",
+url            = "http://www.slac.stanford.edu/~mpeskin/QFT.html",
+ISBN           = "9780201503975, 0201503972",
+SLACcitation   = "%%CITATION = INSPIRE-407703;%%"
+}
+
+@article{Woithe:2017lzd,
+author         = "Woithe, Julia and Wiener, Gerfried J. and Van der Veken,
+Frederik F.",
+title          = "{Let’s have a coffee with the Standard Model of
+particle physics!}",
+journal        = "Phys. Educ.",
+volume         = "52",
+year           = "2017",
+number         = "3",
+pages          = "034001",
+doi            = "10.1088/1361-6552/aa5b25",
+SLACcitation   = "%%CITATION = 00449,52,034001;%%"
+}
+
+@article{Dore:2008dp,
+author         = "Dore, U. and Orestano, Domizia",
+title          = "{Experimental results on neutrino oscillations}",
+journal        = "Rept. Prog. Phys.",
+volume         = "71",
+year           = "2008",
+pages          = "106201",
+doi            = "10.1088/0034-4885/71/10/106201",
+eprint         = "0811.1194",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ex",
+SLACcitation   = "%%CITATION = ARXIV:0811.1194;%%"
+}
+
+@article{Vieira:2012ex,
+author         = "Vieira, A. Rodrigues and Hiller, Brigitte and Sampaio,
+Marcos D. R. and Nemes, M. C.",
+title          = "{Naturalness and Theoretical Constraints on the Higgs
+Boson Mass}",
+journal        = "Int. J. Theor. Phys.",
+volume         = "52",
+year           = "2013",
+pages          = "3494-3503",
+doi            = "10.1007/s10773-013-1652-x",
+eprint         = "1207.4088",
+archivePrefix  = "arXiv",
+primaryClass   = "hep-ph",
+SLACcitation   = "%%CITATION = ARXIV:1207.4088;%%"
+}
+
+@article{Ellis:1978hq,
+author         = "Ellis, John R. and Gaillard, Mary K.",
+title          = "{Strong and Weak CP Violation}",
+journal        = "Nucl. Phys.",
+volume         = "B150",
+year           = "1979",
+pages          = "141-162",
+doi            = "10.1016/0550-3213(79)90297-9",
+reportNumber   = "FERMILAB-PUB-78-066-THY, FERMILAB-PUB-78-066-T",
+SLACcitation   = "%%CITATION = NUPHA,B150,141;%%"
+}
+
+@Article{Artru1988,
+author="Artru, X.
+and Bowler, M. G.",
+title="Quantisation of the string fragmentation model",
+journal="Zeitschrift f{\"u}r Physik C Particles and Fields",
+year="1988",
+month="Jun",
+day="01",
+volume="37",
+number="2",
+pages="293--304",
+issn="1431-5858",
+doi="10.1007/BF01579915",
+url="https://doi.org/10.1007/BF01579915"
+}
+
+@article{Webber:1983if,
+author         = "Webber, B. R.",
+title          = "{A QCD Model for Jet Fragmentation Including Soft Gluon
+Interference}",
+journal        = "Nucl. Phys.",
+volume         = "B238",
+year           = "1984",
+pages          = "492-528",
+doi            = "10.1016/0550-3213(84)90333-X",
+reportNumber   = "CERN-TH-3713",
+SLACcitation   = "%%CITATION = NUPHA,B238,492;%%"
+}
+
+@article{Sakharov:1967dj,
+author         = "Sakharov, A. D.",
+title          = "{Violation of CP Invariance, c Asymmetry, and Baryon
+Asymmetry of the Universe}",
+journal        = "Pisma Zh. Eksp. Teor. Fiz.",
+volume         = "5",
+year           = "1967",
+pages          = "32-35",
+doi            = "10.1070/PU1991v034n05ABEH002497",
+note           = "[Usp. Fiz. Nauk161,61(1991)]",
+SLACcitation   = "%%CITATION = ZFPRA,5,32;%%"
+}
+
+@inproceedings{MoradeFreitas:2002kj,
+author         = "Mora de Freitas, P. and Videau, H.",
+title          = "{Detector simulation with MOKKA / GEANT4: Present and
+future}",
+booktitle      = "{Linear colliders. Proceedings, International Workshop on
+physics and experiments with future electron-positron
+linear colliders, LCWS 2002, Seogwipo, Jeju Island, Korea,
+August 26-30, 2002}",
+url            = "http://www-library.desy.de/cgi-bin/showprep.pl?lc-tool03-010",
+year           = "2002",
+pages          = "623-627",
+reportNumber   = "LC-TOOL-2003-010",
+SLACcitation   = "%%CITATION = LC-TOOL-2003-010;%%"
+}
+
+@article{Frank:2014zya,
+author         = "Frank, Markus and Gaede, F. and Grefe, C. and Mato, P.",
+title          = "{DD4hep: A Detector Description Toolkit for High Energy
+Physics Experiments}",
+booktitle      = "{Proceedings, 20th International Conference on Computing
+in High Energy and Nuclear Physics (CHEP 2013): Amsterdam,
+The Netherlands, October 14-18, 2013}",
+journal        = "J. Phys. Conf. Ser.",
+volume         = "513",
+year           = "2014",
+pages          = "022010",
+doi            = "10.1088/1742-6596/513/2/022010",
+SLACcitation   = "%%CITATION = 00462,513,022010;%%"
+}
+
+@article{CALICESoft,
+author = "{https://svnsrv.desy.de/websvn/wsvn/General.calice?}"
+}
+
+@INPROCEEDINGS{6036245,
+author={M. Terwort and A. Lucaci-Timoce},
+booktitle={IEEE Nuclear Science Symposuim Medical Imaging Conference},
+title={The CALICE software framework and operational experience},
+year={2010},
+volume={},
+number={},
+pages={1-4},
+keywords={calorimeters;CALICE software framework;calorimeters;data format;linear collider detector;operational experience;Collaboration;Data models;Detectors;Energy measurement;Mesons;Software;Steel;CALICE software;GRID;ILC;cmake},
+doi={10.1109/NSSMIC.2010.6036245},
+ISSN={1082-3654},
+month={Oct},}
+
+@article{PandoraCalib,
+author = "Steve Green",
+title = "Pandora Analysis Calibration Executables",
+url   = "{https://github.com/PandoraPFA/LCPandoraAnalysis/blob/master/doc/CalibrationPandoraAnalysisExplained.tex}"
+}
+
+@article{Tran:2017tgr,
+author         = "{Tran, Huong Lan and Kr\"{u}ger, Katja and Sefkow, Felix and Green, Steven and Marshall, John and Thomson, Mark and Simon, Frank}",
+title          = "{Software compensation in Particle Flow reconstruction}",
+journal        = "Eur. Phys. J.",
+volume         = "C77",
+year           = "2017",
+number         = "10",
+pages          = "698",
+doi            = "10.1140/epjc/s10052-017-5298-3",
+eprint         = "1705.10363",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+reportNumber   = "DESY-17-083, MPP-2017-98",
+SLACcitation   = "%%CITATION = ARXIV:1705.10363;%%"
+}
+
+@article{Kotera:2014psa,
+author         = "Kotera, Katsushige and Jeans, Daniel and Miyamoto, Akiya
+and Takeshita, Tohru",
+title          = "{A novel strip energy splitting algorithm for the fine
+granular readout of a scintillator strip electromagnetic
+calorimeter}",
+journal        = "Nucl. Instrum. Meth.",
+volume         = "A789",
+year           = "2015",
+pages          = "158-164",
+doi            = "10.1016/j.nima.2015.04.001, 10.1016/j.nima.2015.06.030",
+note           = "[Erratum: Nucl. Instrum. Meth.A797,330(2015)]",
+eprint         = "1405.4456",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1405.4456;%%"
+}
+
+@INPROCEEDINGS{5401891,
+author={S. Callier and F. Dulucq and R. Fabbri and C. de La Taille and B. Lutz and G. Martin-Chassard and L. Raux and W. Shen},
+booktitle={2009 IEEE Nuclear Science Symposium Conference Record (NSS/MIC)},
+title={Silicon Photomultiplier integrated readout chip (SPIROC) for the ILC: Measurements and possible further development},
+year={2009},
+volume={},
+number={},
+pages={42-46},
+keywords={amplifiers;analogue-digital conversion;application specific integrated circuits;nuclear electronics;particle calorimetry;photomultipliers;readout electronics;silicon radiation detectors;trigger circuits;12-bit wilkinson ADC;16-bit depth analog memory array;ILC AHCAL physics prototype;ILC hadronic calorimeter;SPIROC chip;auto-triggering capability;bi-gain amplification;calorimeter calibration;front-end ASIC chip;silicon photomultiplier integrated readout chip;Application specific integrated circuits;Detectors;Dynamic range;Germanium silicon alloys;Photomultipliers;Physics;Pipelines;Prototypes;Semiconductor device measurement;Silicon germanium;0.35μm SiGe;ILC;SPIROC;Silicon Photomultiplier;haronic calorimeter},
+doi={10.1109/NSSMIC.2009.5401891},
+ISSN={1082-3654},
+month={Oct},}
+
+@inproceedings{Bilki:2013bea,
+author         = "Bilki, Burak",
+title          = "{Construction and Testing of the CALICE Digital Hadron
+Calorimeter}",
+booktitle      = "{Proceedings, International Conference on Calorimetry for
+the High Energy Frontier (CHEF 2013): Paris, France, April
+22-25, 2013}",
+collaboration  = "CALICE",
+year           = "2013",
+url            = "http://inspirehep.net/record/1286533/files/CHEF2013_Burak_Bilki.pdf",
+pages          = "168-174",
+SLACcitation   = "%%CITATION = INSPIRE-1286533;%%"
+}
+
+@article{Freund:2016wvz,
+author         = "Freund, B. and others",
+title          = "{DHCAL with Minimal Absorber: Measurements with
+Positrons}",
+collaboration  = "CALICE",
+journal        = "JINST",
+volume         = "11",
+year           = "2016",
+number         = "05",
+pages          = "P05008",
+doi            = "10.1088/1748-0221/11/05/P05008",
+eprint         = "1603.01652",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1603.01652;%%"
+}
+
+@article{Buridon:2016ill,
+author         = "Buridon, V. and others",
+title          = "{First results of the CALICE SDHCAL technological
+prototype}",
+collaboration  = "CALICE",
+journal        = "JINST",
+volume         = "11",
+year           = "2016",
+number         = "04",
+pages          = "P04001",
+doi            = "10.1088/1748-0221/11/04/P04001",
+eprint         = "1602.02276",
+archivePrefix  = "arXiv",
+primaryClass   = "physics.ins-det",
+SLACcitation   = "%%CITATION = ARXIV:1602.02276;%%"
+}
+
+@article{Felix:ProtoAHCAL,
+author = "Felix Sefkow",
+title = "Prototype tests for a highly granular scintillator-based hadron calorimeter",
+url   = "{https://indico.cern.ch/event/629521/contributions/2702990/}",
+year = "2017",
+journal = {CHEF 2017}
+}
+
+@article{CMSCollaboration:2015zni,
+author         = "Contardo, D. and Klute, M. and Mans, J. and Silvestris,
+L. and Butler, J.",
+title          = "{Technical Proposal for the Phase-II Upgrade of the CMS
+Detector}",
+year           = "2015",
+reportNumber   = "CERN-LHCC-2015-010, LHCC-P-008, CMS-TDR-15-02",
+SLACcitation   = "%%CITATION = CERN-LHCC-2015-010;%%"
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
