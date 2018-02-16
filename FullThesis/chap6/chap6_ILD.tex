@@ -55,6 +55,7 @@ For the resolution curves, a very small rise ($\sim$ 1-2\%) of the resolution at
 Despite that the energy linearity is not perfect after the recalibration, it is verified that the calibration is correct. In the following subsections, I will look at only at the hit level in order to avoid clustering effects by PandoraPFA. Therefore, the recalibrated setting with energy truncation and non-linearity correction was chosen.
 
 \subsection{Timing cut effects on hadronic showers in ILD detector}
+\label{sec:MCLevelILDTiming}
 
 Though the linearity is not perfect over all energies for single particles, the most regarded observable is the jet energy resolution. As explained in chapter \ref{sec:PFA}, jets have a large fraction of charged particles of around 60\%. In this case, the energy of the PFO is coming from the track. Moreover neutral particles (excluding photons) are counting in average for around 30\% of the contribution in a jet.
 
@@ -130,9 +131,6 @@ To understand more into details what happens, a look at the energy distribution 
 The figures show that the second most energetic cluster has mostly an energy below few percents, over 97\% of the entries are below 20\% of the most energetic cluster. The mean distance of this second cluster is around 25-30 cm from the main cluster with around 22\% of entries below 40 cm and is comprised of a long tail to higher distances. This is visible for both timing cuts of 100 ns and 1 ns. This tells us that mainly the split cluster has little energy compared to the main cluster and is situated at around 7 to 10 AHCAL tiles away from the main cluster which is far enough to not be recombined by Pandora with the main cluster. These clusters may be coming from low energy neutrons traveling through the calorimeter. This explains why by introducing a timing cut more events are reconstructed with a single PFO, as shown in chapter \ref{chap:TimingAHCAL}, low energy neutrons are correlated with low energy deposition and late depositions far away from the shower axis and are removed with a timing cut below few tens of nanoseconds.
 
 One interesting point though would be the investigation of timing cuts in the case of overlapping showers in the calorimeter where timing could have the potential to improve separation between showers.
-
-\subsection{Assuming perfect timing resolution}
-\label{sec:MCLevelILDTiming}
 
 The following section presents results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed at the calorimeter hit level. Several shower observables were looked at as a function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL. The different time cuts used are: 1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70 and \SI{100}{\nano\second}.
 
