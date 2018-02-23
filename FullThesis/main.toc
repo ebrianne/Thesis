@@ -55,16 +55,16 @@
 \contentsline {chapter}{\numberline {4}CALICE Calorimeter concepts}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Requirements for the calorimeters in ILD}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}The CALICE Collaboration}{46}{section.4.2}
-\contentsline {section}{\numberline {4.3}Silicon Photomultipliers}{46}{section.4.3}
-\contentsline {section}{\numberline {4.4}The SPIROC2B ASIC}{48}{section.4.4}
-\contentsline {section}{\numberline {4.5}Electromagnetic Calorimeters}{49}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}SiECAL}{49}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}ScECAL}{51}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Hadronic Calorimeters}{52}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}AHCAL}{52}{subsection.4.6.1}
-\contentsline {subsubsection}{Current status of the EPT AHCAL}{55}{section*.44}
-\contentsline {subsection}{\numberline {4.6.2}DHCAL}{56}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}SDHCAL}{56}{subsection.4.6.3}
+\contentsline {section}{\numberline {4.3}Electromagnetic Calorimeters}{47}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Silicon-Tungsten ECAL}{47}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Scintillator Strip-Tungsten ECAL}{48}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Hadronic Calorimeters}{50}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Digital HCAL}{50}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Semi-Digital HCAL}{51}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Silicon Photomultipliers}{52}{section.4.5}
+\contentsline {section}{\numberline {4.6}The SPIROC2B ASIC}{54}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Analog HCAL}{54}{subsection.4.6.1}
+\contentsline {subsubsection}{Current status of the EPT AHCAL}{57}{section*.46}
 \contentsline {chapter}{\numberline {5}Simulation and Software tools}{59}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulation of particle showers}{59}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{59}{subsection.5.1.1}

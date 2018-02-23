@@ -368,15 +368,57 @@ G.~Baulieu and al., ``{Construction and commissioning of a technological
 B.~Bilki and al., ``{Calibration of a digital hadron calorimeter with muons},''
   {\em Journal of Instrumentation}, vol.~3, no.~05, p.~P05001, 2008.
 
-\bibitem{OskarCAN}
-{The CALICE Collaboration}, ``{Pion Response and Resolution in a Combined
-  Scintillator Calorimeter System in the FNAL Testbeam},'' {\em CALICE Analysis
-  Note}, vol.~56, 2016.
+\bibitem{ADLOFF2009372}
+{The CALICE Collaboration}, ``{Response of the CALICE Si-W electromagnetic
+  calorimeter physics prototype to electrons},'' {\em Nuclear Instruments and
+  Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors
+  and Associated Equipment}, vol.~608, no.~3, pp.~372 -- 383, 2009.
 
-\bibitem{YasmineCAN}
-{The CALICE Collaboration}, ``{Energy Reconstruction of Hadrons in a Highly
-  Granular Si-W ECAL and Plastic Scintillator HCAL Calorimeter System},'' {\em
-  CALICE Analysis Note}, vol.~58, 2017.
+\bibitem{1748-0221-6-12-C12040}
+S.~Callier, F.~Dulucq, C.~de~La~Taille, G.~Martin-Chassard, and
+  N.~Seguin-Moreau, ``{SKIROC2, front end chip designed to readout the
+  Electromagnetic CALorimeter at the ILC},'' {\em Journal of Instrumentation},
+  vol.~6, no.~12, p.~C12040, 2011.
+
+\bibitem{Kotera:2014psa}
+K.~Kotera, D.~Jeans, A.~Miyamoto, and T.~Takeshita, ``{A novel strip energy
+  splitting algorithm for the fine granular readout of a scintillator strip
+  electromagnetic calorimeter},'' {\em Nucl. Instrum. Meth.}, vol.~A789,
+  pp.~158--164, 2015.
+\newblock [Erratum: Nucl. Instrum. Meth.A797,330(2015)].
+
+\bibitem{Neubueser2016}
+C.~Neubueser, {\em {{C}omparison of {T}wo {H}ighly {G}ranular {H}adronic
+  {C}alorimeter {C}oncepts}}.
+\newblock Dr., Universitat Hamburg, Hamburg, 2016.
+\newblock Universitat Hamburg, Diss., 2016.
+
+\bibitem{Bilki:2013bea}
+B.~Bilki, ``{Construction and Testing of the CALICE Digital Hadron
+  Calorimeter},'' in {\em {Proceedings, International Conference on Calorimetry
+  for the High Energy Frontier (CHEF 2013): Paris, France, April 22-25, 2013}},
+  pp.~168--174, 2013.
+
+\bibitem{Freund:2016wvz}
+B.~Freund {\em et~al.}, ``{DHCAL with Minimal Absorber: Measurements with
+  Positrons},'' {\em JINST}, vol.~11, no.~05, p.~P05008, 2016.
+
+\bibitem{BEDJIDIAN2010120}
+M.~Bedjidian, J.-P. Ianigro, R.~Kieffer, I.~Laktineh, N.~Lumb, and S.~Vanzetto,
+  ``{Glass resistive plate chambers for a semi-digital HCAL},'' {\em Nuclear
+  Instruments and Methods in Physics Research Section A: Accelerators,
+  Spectrometers, Detectors and Associated Equipment}, vol.~623, no.~1, pp.~120
+  -- 122, 2010.
+\newblock 1st International Conference on Technology and Instrumentation in
+  Particle Physics.
+
+\bibitem{HARDROC:IEEE}
+F.~D. et~al., ``{HARDROC: Readout chip for CALICE/EUDET Digital Hadronic
+  Calorimeter},''
+
+\bibitem{Buridon:2016ill}
+V.~Buridon {\em et~al.}, ``{First results of the CALICE SDHCAL technological
+  prototype},'' {\em JINST}, vol.~11, no.~04, p.~P04001, 2016.
 
 \bibitem{1748-0221-4-04-P04004}
 D.~Renker and E.~Lorenz, ``Advances in solid state photon detectors,'' {\em
@@ -413,31 +455,6 @@ S.~Callier, F.~Dulucq, R.~Fabbri, C.~de~La~Taille, B.~Lutz, G.~Martin-Chassard,
 \bibitem{SPIROC2_datasheet}
 {Omega Group}, ``{SPIROC2 User Guide},'' 2009.
 
-\bibitem{ADLOFF2009372}
-{The CALICE Collaboration}, ``{Response of the CALICE Si-W electromagnetic
-  calorimeter physics prototype to electrons},'' {\em Nuclear Instruments and
-  Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors
-  and Associated Equipment}, vol.~608, no.~3, pp.~372 -- 383, 2009.
-
-\bibitem{1748-0221-6-12-C12040}
-S.~Callier, F.~Dulucq, C.~de~La~Taille, G.~Martin-Chassard, and
-  N.~Seguin-Moreau, ``{SKIROC2, front end chip designed to readout the
-  Electromagnetic CALorimeter at the ILC},'' {\em Journal of Instrumentation},
-  vol.~6, no.~12, p.~C12040, 2011.
-
-\bibitem{Kotera:2014psa}
-K.~Kotera, D.~Jeans, A.~Miyamoto, and T.~Takeshita, ``{A novel strip energy
-  splitting algorithm for the fine granular readout of a scintillator strip
-  electromagnetic calorimeter},'' {\em Nucl. Instrum. Meth.}, vol.~A789,
-  pp.~158--164, 2015.
-\newblock [Erratum: Nucl. Instrum. Meth.A797,330(2015)].
-
-\bibitem{Neubueser2016}
-C.~Neubueser, {\em {{C}omparison of {T}wo {H}ighly {G}ranular {H}adronic
-  {C}alorimeter {C}oncepts}}.
-\newblock Dr., Universitat Hamburg, Hamburg, 2016.
-\newblock Universitat Hamburg, Diss., 2016.
-
 \bibitem{CAN034}
 {The CALICE Collaboration}, ``{Analysis of low-energetic electron and pion data
   collected with the AHCAL prototype at Fermilab},'' {\em CALICE Analysis
@@ -473,33 +490,6 @@ P.~Chau, ``{HBU tile assembly \& integrated performance test setup},'' Dec
 
 \bibitem{Felix:AHCALMain2017}
 F.~Sefkow, ``{Welcome and overview},'' Dec 2017.
-
-\bibitem{Bilki:2013bea}
-B.~Bilki, ``{Construction and Testing of the CALICE Digital Hadron
-  Calorimeter},'' in {\em {Proceedings, International Conference on Calorimetry
-  for the High Energy Frontier (CHEF 2013): Paris, France, April 22-25, 2013}},
-  pp.~168--174, 2013.
-
-\bibitem{Freund:2016wvz}
-B.~Freund {\em et~al.}, ``{DHCAL with Minimal Absorber: Measurements with
-  Positrons},'' {\em JINST}, vol.~11, no.~05, p.~P05008, 2016.
-
-\bibitem{BEDJIDIAN2010120}
-M.~Bedjidian, J.-P. Ianigro, R.~Kieffer, I.~Laktineh, N.~Lumb, and S.~Vanzetto,
-  ``{Glass resistive plate chambers for a semi-digital HCAL},'' {\em Nuclear
-  Instruments and Methods in Physics Research Section A: Accelerators,
-  Spectrometers, Detectors and Associated Equipment}, vol.~623, no.~1, pp.~120
-  -- 122, 2010.
-\newblock 1st International Conference on Technology and Instrumentation in
-  Particle Physics.
-
-\bibitem{HARDROC:IEEE}
-F.~D. et~al., ``{HARDROC: Readout chip for CALICE/EUDET Digital Hadronic
-  Calorimeter},''
-
-\bibitem{Buridon:2016ill}
-V.~Buridon {\em et~al.}, ``{First results of the CALICE SDHCAL technological
-  prototype},'' {\em JINST}, vol.~11, no.~04, p.~P04001, 2016.
 
 \bibitem{Agostinelli2003}
 S.~Agostinelli and al., ``{Geant4 -- a simulation toolkit},'' {\em Nuclear
