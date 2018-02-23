@@ -4,7 +4,7 @@
 
 As explain in chapter \ref{chap:FutureColliders}, the ILC provides a clean environment for precision measurements. In many cases, the precision of the measurements is limited by the jet energy resolution. The jet energy resolution is itself limited by the energy resolution of the calorimeters (see section \ref{sec:PFA}). The jet energy resolution achieved by a traditional calorimetry is not sufficient for the ILC. A new approach called the Particle Flow is a promising solution to achieve an unprecedented jet energy resolution. The Particle Flow concept requires an excellent tracker and highly segmented electromagnetic and hadronic calorimeters. The \acrshort{calice} Collaboration is developing and testing highly granular electromagnetic and hadronic ca\-lo\-ri\-me\-ters concepts for a future linear collider optimized for Particle Flow.
 
-In this chapter, after discussing the requirements for the calorimeters at the ILC in section \ref{sec:CaloRequirements}, various technology prototypes will be introduced in section \ref{sec:EMCal} and \ref{sec:HadCal} with a focus on the Analog Hadronic Calorimeter (AHCAL). The detection principle and readout electronics for the AHCAL are introduced in section \ref{sec:SiPM} and \ref{sec:SPIROC2B}.
+In this chapter, after discussing the requirements for the calorimeters at the ILC in section \ref{sec:CaloRequirements}, various technology prototypes will be introduced in section \ref{sec:EMCal} and \ref{sec:HadCal} with a focus on the Analog Hadronic Calorimeter (AHCAL) in section \ref{sec:AHCAL}. The detection principle and readout electronics for the AHCAL are introduced in section \ref{sec:SiPM} and \ref{sec:SPIROC2B}.
 
 \section{Requirements for the calorimeters in ILD}
 \label{sec:CaloRequirements}
@@ -61,7 +61,7 @@ The front-end is equipped with an \acrshort{asic}, the \acrshort{skiroc2} chip \
 \subsection{Scintillator Strip-Tungsten ECAL}
 \label{subsec:ScECAL}
 
-The Scintillator Strip-Tungsten ECAL (ScECAL) physics prototype \cite{1707.07126v2} consists of 30 layers of scintillator strips and tungsten carbide absorber plates 3.5 mm thick. It exploits the same concept as the AHCAL later discussed in section \ref{subsec:AHCAL}. The total calorimeter thickness is 266 mm or 21.5 X$_0$. The layers have a transverse area of 180$\times$180 mm$^2$.
+The Scintillator Strip-Tungsten ECAL (ScECAL) physics prototype \cite{1707.07126v2} consists of 30 layers of scintillator strips and tungsten carbide absorber plates 3.5 mm thick. It exploits the same concept as the AHCAL later discussed in section \ref{sec:AHCAL}. The total calorimeter thickness is 266 mm or 21.5 X$_0$. The layers have a transverse area of 180$\times$180 mm$^2$.
 
 Each layer is composed of four rows of 18 scintillator strips of dimensions 45$\times$10$\times$3 mm$^3$ and the strips are placed orthogonally in consecutive layers. The strips have a Wavelength-shifting Fiber (WLS) inside to guide the scintillation light to a Silicon-Photomultiplier (see section \ref{sec:SiPM}). This accounts for 2160 channels in total to be read out. This prototype was tested in various beams, an energy resolution of $\frac{12.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term was demonstrated \cite{1707.07126v2}.
 
@@ -79,7 +79,7 @@ Each layer is composed of four rows of 18 scintillator strips of dimensions 45$\
   \caption{\subref{fig:ScECALPhysics}) Photo of the ScECAL physics prototype with the Fe-AHCAL at FNAL. \subref{fig:ScECALTechno}) Photo of the top side of the technological ScECAL prototype.}
 \end{figure}
 
-To look forward, a technological prototype is now developed to accommodate the front-end electronics into the layer to reduce the amount of dead material due to cabling. An ECAL Base Unit (EBU) has 144 scintillator strips of dimensions 45$\times$5$\times$2 mm$^3$. Each EBU has a transverse dimension of 180$\times$180 mm$^2$. The design of the EBU is derived from the HBU design (see section \ref{subsec:AHCAL}).
+To look forward, a technological prototype is now developed to accommodate the front-end electronics into the layer to reduce the amount of dead material due to cabling. An ECAL Base Unit (EBU) has 144 scintillator strips of dimensions 45$\times$5$\times$2 mm$^3$. Each EBU has a transverse dimension of 180$\times$180 mm$^2$. The design of the EBU is derived from the HBU design (see section \ref{sec:AHCAL}).
 
 The strips don't have a WLS fiber due to improvements in SiPM technology for the detection of blue light ($\sim$ 450 nm). Several designs in SiPM and scintillator strip shape are being studied to optimize light collection. Moreover by using a strip splitting algorithm (SSA) \cite{Kotera:2014psa}, an effective granularity of $5\times5$ mm$^2$ can be achieved.
 
@@ -92,7 +92,7 @@ The CALICE collaboration is developing several hadron calorimeters concepts. Eac
 
 \subsection{Digital HCAL}
 
-The Digital Hadron Calorimeter (DHCAL) prototype \cite{Bilki:2013bea} is a sampling calorimeter based on Resistive Plate Chambers (RPCs) gaseous technology. The DHCAL uses a 1-bit readout system based on the assumption that the deposited energy of a particle is proportional to the number of hits over a given threshold as a first order.
+The Digital Hadron Calorimeter (DHCAL) prototype \cite{Bilki:2013bea} is a sampling calorimeter based on Resistive Plate Chambers (RPCs) \cite{BEDJIDIAN2010120} gaseous technology. The DHCAL uses a 1-bit readout system based on the assumption that the deposited energy of a particle is proportional to the number of hits over a given threshold as a first order.
 
 The DHCAL consists of 38 active layers of an active area of $1\times1$ m$^2$. The chambers are in a cassette with a front copper plate 2 mm thick and back steel plate 2 mm thick. They are inserted into the same steel absorber structure used of the AHCAL into gaps 1.4 cm wide. A schematic of the cross-section of a DHCAL layer is shown in figure \ref{fig:DHCALCross}.
 
@@ -108,7 +108,9 @@ This prototype has been used in the testbeam facilities at CERN and Fermilab. A 
 
 \subsection{Semi-Digital HCAL}
 
-The Semi-Digital Hadron Calorimeter (SDHCAL) prototype \cite{1748-0221-10-10-P10039} (see figure \ref{fig:SDHCAL}) consists of 48 active layers. Each active layer consists of 2-glass Resistive Plate Chambers (RPCs) \cite{BEDJIDIAN2010120} with a gap of 1.2 mm filled with gas and a readout electrode segmented in $1\times1$ cm$^2$ pads. The active layers are inserted into a steel absorber structure of 1.5 cm thick plates. The gas mixture consists of Forane (93\%), CO$_2$ (5\%) and SF$_6$ (2\%). A high voltage of around 7 kV is applied to the RPCs. The detection principle of such calorimeter is based on gas ionization and avalanche multiplication and more details can be found in \cite{1748-0221-10-10-P10039}.
+The Semi-Digital Hadron Calorimeter (SDHCAL) prototype \cite{1748-0221-10-10-P10039} uses also RPCs technology for particle detection. The SDHCAL consists of 48 active layers. Each active layer consists of RPCs with a gap of 1.2 mm filled with gas and a readout electrode segmented in $1\times1$ cm$^2$ pads.
+
+The active layers are inserted into a steel absorber structure of 1.5 cm thick plates. In total, the SDHCAL prototype features 442 368 channels. More detail about the SDHCAL can be found in \cite{1748-0221-10-10-P10039}.
 
 \begin{figure}[htbp!]
   \centering
@@ -116,15 +118,16 @@ The Semi-Digital Hadron Calorimeter (SDHCAL) prototype \cite{1748-0221-10-10-P10
   \caption{Photo of SDHCAL at CERN in 2012.} \label{fig:SDHCAL}
 \end{figure}
 
-The readout is performed by the HARDROC ASIC \cite{HARDROC:IEEE} which can readout up to 64 channels. Three thresholds are used for the readout. These are not to estimate the deposited energy in a cell, it is possible but only with a large error due to large fluctuations in the avalanche process, but rather to distinguish if the recorded charge is the results of one, few or many particles traversing one cell.
+The readout is performed by the HARDROC ASIC \cite{HARDROC:IEEE} which can readout up to 64 channels. Instead of using 1-bit readout scheme like the DHCAL, the SDHCAL uses a 3-bit readout system corresponding to three coarse thresholds.
 
-The energy reconstruction of the SDHCAL is based on the information provided by the 3 thresholds. The energy is then reconstructed as a weighted sum of the number of hits for the 3 thresholds as follows:
-\begin{equation}
-  E_{rec} = \alpha N_1 + \beta N_2 + \gamma N_3
-\end{equation}
-where N$_1$, N$_2$ and N$_3$ are the number of hits for each thresholds and $\alpha$, $\beta$, $\gamma$ the weights in units of GeV. The weights are parametrized as a second order polynomial of the total number of hits N$_{hits}$ =  N$_1$ + N$_2$ + N$_3$. The energy resolution of this prototype goes from 14.9\% at 30 GeV to 9.5\% at 80 GeV with pion beams \cite{Buridon:2016ill}.
+The SDHCAL has been tested in various beam types at the CERN SPS facility in 2012. A picture of the prototype is shown in figure \ref{fig:SDHCAL}. The first results shows an energy resolution that goes from 14.9\% at 30 GeV to 9.5\% at 80 GeV with pion beams \cite{Buridon:2016ill}.
 
-\section{Silicon Photomultipliers}
+\subsection{Analog HCAL}
+\label{sec:AHCAL}
+
+The Analog Hadronic calorimeter uses scintillator-based tiles readout by Silicon Photomultipliers. Before discussing about the prototype, a short introduction about Silicon photomultipliers and the readout electronics is presented.
+
+\subsubsection{Silicon Photomultipliers}
 \label{sec:SiPM}
 
 Semi-conductors detectors have been used since more than 50 years and are still a major research topic in high energy physics \cite{1748-0221-4-04-P04004, Garutti:2011qv, Garutti:2017ipx}. \textit{Silicon photomultipliers} (\acrshort{sipm}) are semi-conductors used to measure light amplitudes down to the single photon. SiPMs are composed of an array of \textit{Avalanche Photodiodes} (\acrshort{apd}) pixels operated in Geiger-mode. The pixels are all connected in parallel to a common cathode and anode. Nowadays, thousands of pixels can be integrated into a few $mm^2$ area. A picture of a surface-mounted SiPM is shown in figure \ref{fig:SMD_SiPM}.
@@ -159,7 +162,7 @@ Geiger avalanches in a pixel can produce photons that can travel to the nearest 
 
 In the last decade, significant improvements in the manufacture of SiPMs have been achieved and are commercially available. The PDE range has been improved to be sensitive down to near ultraviolet light (300-400 nm) up to infrared light (800-1000 nm). The dark noise rates have been reduced as low as few tens of kHz at room temperature. The introduction of trenches between pixels in the substrate have enabled to reduce the cross-talk probability under 1\% \cite{Liu:2015cpe}. Pixel-to-pixel uniformity in capacitance and breakdown voltages improvements reduce the need for individual bias adjustment. And finally, SiPMs with a very high number of pixels ($\geq$10000) are available, improving the range of linear response and increase the dynamic range but at the detriment of noise rates and PDE.
 
-\section{The SPIROC2B ASIC}
+\subsubsection{The SPIROC2B ASIC}
 \label{sec:SPIROC2B}
 
 The SPIROC2B (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC to readout and digitize the signal of 36 SiPM channels. Each channel can be tuned in bias voltage from -4.5V to 0V with a resolution of around 20-200 mV (\acrshort{dac}). Each channel, also, has a configurable charge pre-amplifier gain to cover a high SiPM pixel dynamic range. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events. A 12-bit Wilkinson ADC is used to digitize the charge stored in the capacitor array for the amplitude and time measurement. The hit time is registered via a 12-bit TDC voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}). The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off.
@@ -172,8 +175,7 @@ The SPIROC2B (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC 
 
 The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. In auto-trigger mode, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is sampled. Once the 16 memory-cells are filled, no further hits can be stored. Thus, the memory-cells are readout, digitized and the data is transferred out of the chip.
 
-\subsection{Analog HCAL}
-\label{subsec:AHCAL}
+\subsubsection{The Prototype}
 
 The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillator tiles as active material. The absorber structure can be either steel or tungsten but I will focus on the former one. The physics prototype \cite{1748-0221-5-05-P05004} consists of 38 active layers inserted in a steel structure of 1 m$^3$ with 39 absorber plates 1$\times$1 m wide and 17.4 mm thick on average. The calorimeter has a total depth of 4.28 $\lambda_{\pi}$ (5.3 $\lambda_{n}$). Active layers consist of a steel cassette housing 216, for the 30 first layers, or 141, for the 8 last layers, scintillator tiles connected on a PCB. The tiles are 5 mm thick and have different sizes of 3$\times$3, 6$\times$6, 12$\times$12 cm$^2$. This accounts for a total of 7608 channels. The light produced in the scintillator is guided through a WLS fiber 1 mm thick that is inserted in the tile to a SiPM. The SiPM sensitive area is 1.1$\times$1.1 mm$^2$ containing 1156 pixels which were produced by the MEPhi/PULSAR group in Russia. The performance of this prototype has been demonstrated in several beam types. For electrons, the energy resolution of the AHCAL measured is $\frac{21.7\%}{\sqrt{E}}$ stochastic and <1\% constant term \cite{CAN034}. For pions, the intrinsic energy resolution of the AHCAL has been measured to be $\frac{57.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term. This can be improved to $\frac{45\%}{\sqrt{E}}$ stochastic term by using a technique called \textit{software compensation} \cite{SoftCompNew2012}.
 

@@ -399,10 +399,6 @@ B.~Bilki, ``{Construction and Testing of the CALICE Digital Hadron
   for the High Energy Frontier (CHEF 2013): Paris, France, April 22-25, 2013}},
   pp.~168--174, 2013.
 
-\bibitem{Freund:2016wvz}
-B.~Freund {\em et~al.}, ``{DHCAL with Minimal Absorber: Measurements with
-  Positrons},'' {\em JINST}, vol.~11, no.~05, p.~P05008, 2016.
-
 \bibitem{BEDJIDIAN2010120}
 M.~Bedjidian, J.-P. Ianigro, R.~Kieffer, I.~Laktineh, N.~Lumb, and S.~Vanzetto,
   ``{Glass resistive plate chambers for a semi-digital HCAL},'' {\em Nuclear
@@ -411,6 +407,10 @@ M.~Bedjidian, J.-P. Ianigro, R.~Kieffer, I.~Laktineh, N.~Lumb, and S.~Vanzetto,
   -- 122, 2010.
 \newblock 1st International Conference on Technology and Instrumentation in
   Particle Physics.
+
+\bibitem{Freund:2016wvz}
+B.~Freund {\em et~al.}, ``{DHCAL with Minimal Absorber: Measurements with
+  Positrons},'' {\em JINST}, vol.~11, no.~05, p.~P05008, 2016.
 
 \bibitem{HARDROC:IEEE}
 F.~D. et~al., ``{HARDROC: Readout chip for CALICE/EUDET Digital Hadronic
