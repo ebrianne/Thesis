@@ -5,15 +5,15 @@
 \contentsline {chapter}{\numberline {1}Particle Physics: Theory}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}The Standard Model of Particle Physics}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}The Standard Model framework}{1}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Elementary particles}{2}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Elementary matter particles}{2}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Fundamental Forces and Mediators}{3}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}The Higgs Boson}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Gauge invariance in the weak sector}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.1}Gauge invariance in the electroweak sector}{5}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}The Higgs mechanism}{6}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Interpretation in the SM}{7}{subsection.1.2.3}
 \contentsline {section}{\numberline {1.3}Hadron physics}{8}{section.1.3}
 \contentsline {section}{\numberline {1.4}Beyond the Standard Model}{9}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Open questions of the Standard Model}{9}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.1}Open questions of the Standard Model}{10}{subsection.1.4.1}
 \contentsline {chapter}{\numberline {2}Future $e^+e^-$ linear collider experiments}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}The case for a lepton collider}{14}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Higgs Physics}{14}{subsection.2.1.1}
@@ -63,9 +63,9 @@
 \contentsline {subsection}{\numberline {4.4.2}Semi-Digital HCAL}{51}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Analog HCAL}{52}{subsection.4.4.3}
 \contentsline {subsubsection}{Silicon Photomultipliers}{52}{section*.41}
-\contentsline {subsubsection}{The SPIROC2B ASIC}{54}{section*.43}
-\contentsline {subsubsection}{The Prototype}{55}{section*.45}
-\contentsline {subsubsection}{Current status of the EPT AHCAL}{57}{section*.49}
+\contentsline {subsubsection}{The SPIROC ASIC}{54}{section*.43}
+\contentsline {subsubsection}{The AHCAL Prototype}{56}{section*.45}
+\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{58}{section*.49}
 \contentsline {chapter}{\numberline {5}Simulation and Software tools}{61}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulation of particle showers}{61}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{61}{subsection.5.1.1}
@@ -73,8 +73,8 @@
 \contentsline {subsubsection}{Intra-Nuclear Cascade Models}{62}{section*.51}
 \contentsline {subsubsection}{String-Parton Cascade Models}{64}{section*.53}
 \contentsline {subsection}{\numberline {5.1.3}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Physics Lists}{65}{subsection.5.1.3}
-\contentsline {section}{\numberline {5.2}Software tools}{65}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}\textsc {ILCSoft}\xspace software framework}{65}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.2}Software tools}{66}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}\textsc {ILCSoft}\xspace software framework}{66}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}CALICE software framework}{66}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}AHCAL Detector Geometry implementation and Digitization}{66}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Geometry implementation}{66}{subsection.5.3.1}

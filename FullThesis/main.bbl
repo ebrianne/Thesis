@@ -452,6 +452,9 @@ S.~Callier, F.~Dulucq, R.~Fabbri, C.~de~La~Taille, B.~Lutz, G.~Martin-Chassard,
   {\em 2009 IEEE Nuclear Science Symposium Conference Record (NSS/MIC)},
   pp.~42--46, Oct 2009.
 
+\bibitem{OmegaWeb}
+``{Omega LAL/IN2P3 Website}.''
+
 \bibitem{SPIROC2_datasheet}
 {Omega Group}, ``{SPIROC2 User Guide},'' 2009.
 
@@ -463,6 +466,12 @@ S.~Callier, F.~Dulucq, R.~Fabbri, C.~de~La~Taille, B.~Lutz, G.~Martin-Chassard,
 \bibitem{Felix:ProtoAHCAL}
 F.~Sefkow, ``{Prototype tests for a highly granular scintillator-based hadron
   calorimeter},'' {\em CHEF 2017}, 2017.
+
+\bibitem{KVASNICKA2012402}
+J.~Kvasnicka and I.~Polak, ``Led calibration systems for calice hadron
+  calorimeter,'' {\em Physics Procedia}, vol.~37, pp.~402 -- 409, 2012.
+\newblock Proceedings of the 2nd International Conference on Technology and
+  Instrumentation in Particle Physics (TIPP 2011).
 
 \bibitem{Kvasnicka:CR_IEEE2016}
 {Kvasnicka, Jiri}, ``{A Scalable Data Acquisition System for the CALICE Tile
@@ -576,6 +585,9 @@ M.~Frank, F.~Gaede, C.~Grefe, and P.~Mato, ``{DD4hep: A Detector Description
 M.~et~al., ``{Precise measurement of Birks kB parameter in plastic
   scintillators},''
 
+\bibitem{H2Beamline}
+``{CERN North Area H2 beamline}.''
+
 \bibitem{2011_JINST_6_P04003}
 {The CALICE collaboration}, ``{Electromagnetic response of a highly granular
   hadronic calorimeter},'' {\em Journal of Instrumentation}, vol.~6, no.~04,
@@ -585,9 +597,6 @@ M.~et~al., ``{Precise measurement of Birks kB parameter in plastic
 O.~Hartbrich, {\em {Scintillator Calorimeters for a Future Linear Collider
   Experiment}}.
 \newblock PhD thesis, Hasylab, DESY, Hamburg, 2016.
-
-\bibitem{OmegaWeb}
-``{Omega LAL/IN2P3 Website}.''
 
 \bibitem{Hartbrich2012}
 O.~Hartbrich, ``{Commissioning and LED system tests of the engineering
@@ -606,9 +615,6 @@ L.~T.~T. Tong, ``{Trigger Threshold Verification for the Hadronic Calorimeter
 B.~Hermberg, {\em {Measuring Hadronic Jets at the ILC - From Particle Flow
   Calorimetry to the Higgs Self-Coupling}}.
 \newblock PhD thesis, U. Hamburg, Dept. Phys., Hamburg, 2015.
-
-\bibitem{H2Beamline}
-``{CERN North Area H2 beamline}.''
 
 \bibitem{GOVORKOV20059}
 B.~Govorkov, ``{Cherenkov detectors in Cherenkov's laboratory},'' {\em Nuclear

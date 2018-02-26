@@ -120,6 +120,8 @@ The active layers are inserted into a steel absorber structure of 1.5 cm thick p
 
 The readout is performed by the HARDROC ASIC \cite{HARDROC:IEEE} which can readout up to 64 channels. Instead of using 1-bit readout scheme like the DHCAL, the SDHCAL uses a 3-bit readout system corresponding to three coarse thresholds.
 
+The SDHCAL does not provide direct timing measurement. A timestamp with a precision of 200 ns corresponding to the internal clock of the ASIC can be applied to hits.
+
 The SDHCAL has been tested in various beam types at the CERN SPS facility in 2012. A picture of the prototype is shown in figure \ref{fig:SDHCAL}. The first results shows an energy resolution that goes from 14.9\% at 30 GeV to 9.5\% at 80 GeV with pion beams \cite{Buridon:2016ill}.
 
 \subsection{Analog HCAL}
@@ -160,12 +162,30 @@ An avalanche can be initiated by a photon but also free carriers in the depleted
 
 Geiger avalanches in a pixel can produce photons that can travel to the nearest pixel and trigger an avalanche. This is referred as \textit{optical cross-talk}. This effect is in the order of 3-10\% for typical SiPMs and can be mitigated by reducing the operating voltage, adding an optical absorber or trenches between pixels.
 
-In the last decade, significant improvements in the manufacture of SiPMs have been achieved and are commercially available. The PDE range has been improved to be sensitive down to near ultraviolet light (300-400 nm) up to infrared light (800-1000 nm). The dark noise rates have been reduced as low as few tens of kHz at room temperature. The introduction of trenches between pixels in the substrate have enabled to reduce the cross-talk probability under 1\% \cite{Liu:2015cpe}. Pixel-to-pixel uniformity in capacitance and breakdown voltages improvements reduce the need for individual bias adjustment. And finally, SiPMs with a very high number of pixels ($\geq$10000) are available, improving the range of linear response and increase the dynamic range but at the detriment of noise rates and PDE.
+In the last decade, significant improvements in the manufacture of SiPMs have been achieved and they are commercially available. The PDE range has been improved to be sensitive down to near ultraviolet light (300-400 nm) up to infrared light (800-1000 nm). The dark noise rates have been reduced as low as few tens of kHz at room temperature. The introduction of trenches between pixels in the substrate have enabled to reduce the cross-talk probability under 1\% \cite{Liu:2015cpe}. Pixel-to-pixel uniformity in capacitance and breakdown voltages improvements reduce the need for individual bias adjustment. And finally, SiPMs with a very high number of pixels ($\geq$10000) are available, improving the range of linear response and increase the dynamic range but at the detriment of noise rates and PDE.
 
-\subsubsection{The SPIROC2B ASIC}
+For the Analog Hadronic Calorimeter, a specific chip, the SPIROC2B has been developed to readout Silicon photomultipliers integrating all the requirements for the ILD detector. The next section will present the chip in details.
+
+\subsubsection{The SPIROC ASIC}
 \label{sec:SPIROC2B}
 
-The SPIROC2B (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC to readout and digitize the signal of 36 SiPM channels. Each channel can be tuned in bias voltage from -4.5V to 0V with a resolution of around 20-200 mV (\acrshort{dac}). Each channel, also, has a configurable charge pre-amplifier gain to cover a high SiPM pixel dynamic range. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events. A 12-bit Wilkinson ADC is used to digitize the charge stored in the capacitor array for the amplitude and time measurement. The hit time is registered via a 12-bit TDC voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}). The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off.
+The SPIROC (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC to readout and digitize the signal of SiPMs. The ASIC needs to satisfy the AHCAL requirements that are:
+
+\begin{itemize}
+  \item Readout and digitization of the SiPM signal.
+  \item Small footprint for integration into the active layers between absorbers.
+  \item Has a low power consumption under 25 mW per channel to avoid the need for active cooling.
+  \item Operates in the power-pulsing scheme to reduce the power consumption and send the data between bunch-trains.
+  \item Provides individual channel gain and bias voltage adjustment.
+  \item Provides auto-triggering with adjustable threshold to reduce the data volume.
+  \item Provides timing information of the SiPM signal
+\end{itemize}
+
+The SPIROC ASIC is developed by the OMEGA group \cite{OmegaWeb} to fulfill the AHCAL requirements. The SPIROC provides the readout for 36 SiPM channels capable to measure the charge and time for each channel. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events to store the charge and time measurement. A 12-bit Wilkinson ADC is used to digitize the charge and time measurement stored in the capacitor array. The digitized signal is then stored into a RAM buffer.
+
+Each channel can be tuned in bias voltage with a 8-bit Digital to Analog Converter (\acrshort{dac}) corresponding to a voltage range between -4.5V and 0V. Each channel, has a configurable low-noise charge pre-amplifier gain to operate in high gain or low gain to cover a high dynamic range between 1 to several thousand photoelectrons.
+
+The time measurement is digitized using a 12-bit Time to Digital Converter (TDC). The TDC is a voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}).
 
 \begin{figure}[htbp!]
   \centering
@@ -173,27 +193,33 @@ The SPIROC2B (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC 
   \caption{Schematic of the analog signal path of the SPIROC2 for a single channel \cite{SPIROC2_datasheet}.} \label{fig:SPIROC2B_sche}
 \end{figure}
 
-The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. In auto-trigger mode, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is sampled. Once the 16 memory-cells are filled, no further hits can be stored. Thus, the memory-cells are readout, digitized and the data is transferred out of the chip.
+The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. This mode is used to measure the SiPM gain using the integrated LED system of the AHCAL which is described in section \ref{subsec:GainCharac}. The auto-trigger capabilities of the SPIROC are provided by a fast shaper and a discriminator. The threshold of the discriminator is configurable with a 10-bits DAC and is common to the 36 channels. A 4-bit DAC provides channel-wise threshold adjustment. When a trigger happens, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is stored into one memory-cell. An external validation trigger can be provided to the ASIC to reduce SiPM noise. The time measurement is stored in another memory-cell when there is a trigger.
 
-\subsubsection{The Prototype}
+Once the 16 memory-cells are filled, no further hits can be stored. Hence, the memory-cells are read-out, digitized and the data is transferred out of the chip. The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off. A schematic of the analog part of the SPIROC is shown in figure \ref{fig:SPIROC2B_sche}.
 
-The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillator tiles as active material. The absorber structure can be either steel or tungsten but I will focus on the former one. The physics prototype \cite{1748-0221-5-05-P05004} consists of 38 active layers inserted in a steel structure of 1 m$^3$ with 39 absorber plates 1$\times$1 m wide and 17.4 mm thick on average. The calorimeter has a total depth of 4.28 $\lambda_{\pi}$ (5.3 $\lambda_{n}$). Active layers consist of a steel cassette housing 216, for the 30 first layers, or 141, for the 8 last layers, scintillator tiles connected on a PCB. The tiles are 5 mm thick and have different sizes of 3$\times$3, 6$\times$6, 12$\times$12 cm$^2$. This accounts for a total of 7608 channels. The light produced in the scintillator is guided through a WLS fiber 1 mm thick that is inserted in the tile to a SiPM. The SiPM sensitive area is 1.1$\times$1.1 mm$^2$ containing 1156 pixels which were produced by the MEPhi/PULSAR group in Russia. The performance of this prototype has been demonstrated in several beam types. For electrons, the energy resolution of the AHCAL measured is $\frac{21.7\%}{\sqrt{E}}$ stochastic and <1\% constant term \cite{CAN034}. For pions, the intrinsic energy resolution of the AHCAL has been measured to be $\frac{57.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term. This can be improved to $\frac{45\%}{\sqrt{E}}$ stochastic term by using a technique called \textit{software compensation} \cite{SoftCompNew2012}.
+Several iterations of the chip have been made to fix bugs and improve the provided functionalities. In this thesis, the SPIROC2b has been used for a large AHCAL prototype used in testbeams at DESY and CERN. A new version, the SPIROC2e, is currently used for constructing a cubic meter AHCAL prototype.
+
+\subsubsection{The AHCAL Prototype}
+
+The Analog Hadron Calorimeter (AHCAL) is a sampling calorimeter using scintillator tiles as active material. The absorber structure can be either steel or tungsten. The AHCAL physics prototype \cite{1748-0221-5-05-P05004} consists of 38 active layers inserted in a steel structure of a cubic meter with 39 absorber plates 1$\times$1 m wide and 17.4 mm thick on average. The calorimeter has a total depth of 4.28 $\lambda_{\pi}$ (5.3 $\lambda_{n}$). The active layers consist of a steel cassette housing 216, for the 30 first layers, or 141, for the 8 last layers, scintillator tiles connected on a PCB as shown in figure \ref{fig:AHCALPhysics}. The tiles are 5 mm thick and have different sizes of 3$\times$3, 6$\times$6, 12$\times$12 cm$^2$. This accounts for a total of 7608 channels. The light produced in the scintillator is guided through a WLS fiber 1 mm thick that is inserted in the tile to a SiPM. The SiPM sensitive area is 1.1$\times$1.1 mm$^2$ containing 1156 pixels which were produced by the MEPhi/PULSAR group in Russia.
+
+The performance of this prototype has been demonstrated in several beam types. For electrons, the energy resolution of the AHCAL measured is $\frac{21.7\%}{\sqrt{E}}$ stochastic and <1\% constant term \cite{CAN034}. For pions, the intrinsic energy resolution of the AHCAL has been measured to be $\frac{57.6\%}{\sqrt{E}}$ stochastic and 1.6\% constant term. This can be improved to $\frac{45\%}{\sqrt{E}}$ stochastic term by using a technique called \textit{software compensation} \cite{SoftCompNew2012}. A picture of the prototype is shown in figure \ref{fig:AHCALPhysics2}.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap3/fig/CERN_setup.png}
+    \includegraphics[width=1.\linewidth]{chap3/fig/moduleinside.png}
     \caption{} \label{fig:AHCALPhysics}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{chap3/fig/moduleinside.png}
+    \includegraphics[width=1.\linewidth]{chap3/fig/CERN_setup.png}
     \caption{} \label{fig:AHCALPhysics2}
   \end{subfigure}
-  \caption{\subref{fig:AHCALPhysics}) Photo of the AHCAL physics prototype at CERN. \subref{fig:AHCALPhysics2}) Photo of the active layer of the AHCAL physics prototype showing the layout of the differently sized tiles.}
+  \caption{\subref{fig:AHCALPhysics}) Photo of the active layer of the AHCAL physics prototype showing the layout of the differently sized tiles. \subref{fig:AHCALPhysics2}) Photo of the AHCAL physics prototype at CERN.}
 \end{figure}
 
-The AHCAL engineering prototype (EPT AHCAL) \cite{Felix:ProtoAHCAL} is currently being built. The goals of this prototype are to demonstrate the scalability of the AHCAL concept to a full linear collider detector. The HCAL Base Unit (HBU), see figure \ref{fig:AHCALHBU}, is 36 cm wide PCB holding 4 SPIROC2B ASICs for a total of 144 SiPM channels coupled to scintillator tiles of 30$\times$30$\times$3 mm size to be read out. Up to 6 HBUs can be connected together to form what is called a \textit{slab}. A full AHCAL layer can be up to 3 slabs connected in parallel to a common set of readout (DIF), calibration (CALIB) and power modules (PWR). An integrated \acrshort{led} Calibration system can deliver LED light pulses with amplitudes of a few photons up to saturation of the SiPM in order to calibrate and monitor each channel. Several designs of HBU and tiles have been produced to accommodate for soldering pin or surface-mounted (SMD) type SiPMs.
+The AHCAL engineering prototype (EPT AHCAL) \cite{Felix:ProtoAHCAL} is currently being built. The goals of this prototype are to demonstrate the scalability of the AHCAL concept to a full linear collider detector. The HCAL Base Unit (HBU), see figure \ref{fig:AHCALHBU}, is 36 cm wide PCB holding 4 SPIROC2B ASICs for a total of 144 SiPM channels coupled to scintillator tiles of 30$\times$30$\times$3 mm size to be read out. Up to 6 HBUs can be connected together to form a \textit{slab}. A full AHCAL layer can be up to 3 slabs connected in parallel to a common set of readout (DIF), calibration (CALIB) and power modules (PWR). An integrated \acrshort{led} Calibration system \cite{KVASNICKA2012402} can deliver LED light pulses with amplitudes of a few photons up to saturation of the SiPM in order to calibrate and monitor each channel. Several designs of HBU and tiles have been produced to accommodate for soldering pin or surface-mounted (SMD) type SiPMs.
 
 \begin{figure}[htbp!]
   \centering
@@ -209,9 +235,9 @@ The AHCAL engineering prototype (EPT AHCAL) \cite{Felix:ProtoAHCAL} is currently
   \caption{\subref{fig:AHCALHBU}) Top view of the HBU2 with SPIROC2b. \subref{fig:AHCALStack2015}) Picture of the AHCAL technological prototype in 2015 with several layers inserted.}
 \end{figure}
 
-A first step was achieved with the operation of 15 AHCAL layers in testbeam at CERN in July and August 2015. Various HBU designs with many types of SiPMs from different manufacturers have been used and served as a benchmark for the ongoing development of scintillator tiles concepts. The active layers were inserted into a steel absorber stack into gaps 9 mm wide with absorber plates that are 1.72 cm thick. The number of channel for this prototype accounts to a total of 3744. A picture of the steel stack with few inserted AHCAL layers is shown in figure \ref{fig:AHCALStack2015}. The data collected with this prototype is analyzed in this thesis (see from chapter \ref{chap:Commissioning} to \ref{chap:TimingPions}).
+A first step was achieved with the operation of 15 AHCAL layers in testbeam at the CERN SPS facility in July and August 2015. Various HBU designs with many types of SiPMs from different manufacturers have been used and served as a benchmark for the ongoing development of scintillator tiles concepts. The active layers were inserted into a steel absorber stack into gaps 9 mm wide with absorber plates that are 1.72 cm thick. The number of channel for this prototype accounts to a total of 3744. A picture of the steel stack with few inserted AHCAL layers is shown in figure \ref{fig:AHCALStack2015}. The data collected with this prototype is analyzed in this thesis (see from chapter \ref{chap:Commissioning} to \ref{chap:TimingPions}).
 
-This prototype was composed of several different modules. The oldest ones were using a WLS fiber that conducted the light on a SiPM whereas the newest modules were having wrapped tiles in a reflector foil without any WLS fiber inside due to the use of SiPMs that are blue-sensitive. A picture of the tiles is shown in figure \ref{fig:TilesAHCAL2015}.
+This prototype was composed of several different modules. The oldest ones were using a wavelength shifting fiber (WLS) that conducted the light on a SiPM whereas the newest modules were having wrapped tiles in a reflector foil without any WLS fiber inside due to the use of SiPMs that are blue light-sensitive. A picture of AHCAL tiles is shown in figure \ref{fig:TilesAHCAL2015}.
 
 \begin{figure}[htbp!]
   \centering
@@ -227,11 +253,18 @@ This prototype was composed of several different modules. The oldest ones were u
   \caption{The two different tiles used in the AHCAL technological prototype. The tile on the left is an older version with a WLS fiber and the tile on the right is a new design by University of Hamburg which is wrapped in reflective foil and has no WLS fiber.} \label{fig:TilesAHCAL2015}
 \end{figure}
 
-The current AHCAL DAQ system is fully capable of operating a full scale calorimeter prototype in testbeam in various configurations and is being extended to integrate with other DAQ systems of other detectors (CMS HG-HCAL prototype, Sc/SiECAL prototype...) and testbeam instrumentation (Telescope, Trigger Logic Unit (TLU)...) using the common EUDAQ framework \cite{Kvasnicka:CR_IEEE2016, Kvasnicka:2017bpx, Wing:2296332}.
+The current AHCAL DAQ system is fully capable of operating a full scale calorimeter prototype in testbeam in various configurations and is being extended to integrate with other DAQ systems of other detectors (CMS HGCAL prototype, Sc/SiECAL prototype...) and testbeam instrumentation (Telescope, Trigger Logic Unit (TLU)...) using the common EUDAQ framework \cite{Kvasnicka:CR_IEEE2016, Kvasnicka:2017bpx, Wing:2296332}.
 
-\subsubsection{Current status of the EPT AHCAL}
+\subsubsection{Current status of the AHCAL engineering prototype}
 
-A first milestone has been achieved by the construction of the small prototype of 15 AHCAL layers in 2016. The goals for this prototype are the further validation of the surface mounted tile-SiPM design using Hamamatsu MPPCs with 2700 px and the new HBU (version 4) design, the performance of such calorimeter in electron beams at DESY, the operation in power-pulsing mode and in magnetic field \cite{CR_IEEE2017}. Moreover, this prototype has been used as backing calorimeter for the CMS HG-CAL prototype for the HL-LHC upgrade \cite{Felix:AHCALMain2017_HGHCAL}.
+A first milestone has been achieved by the construction of the small prototype of 15 AHCAL layers in 2016. The goals for this prototype are:
+\begin{itemize}
+  \item The validation of the surface mounted tile-SiPM design using a Hamamatsu MPPC with 2700 px and the new HBU design.
+  \item The evaluation of the performance of such calorimeter in electron beams at DESY.
+  \item The operation of the detector in power-pulsing mode and in a magnetic field \cite{CR_IEEE2017}.
+  \end{itemize}
+
+In addition, this prototype has been used as backing calorimeter for the CMS HGCAL prototype for the HL-LHC upgrade \cite{Felix:AHCALMain2017_HGHCAL}.
 
 \begin{figure}[htbp!]
   \centering
@@ -241,12 +274,12 @@ A first milestone has been achieved by the construction of the small prototype o
 
 Concerning the assembly of HBU boards, for electric components, this is fully automatized. For the scintillator tiles, the assembly on a mass-production scale is being investigated and is currently being demonstrated for the production batch of HBU boards \cite{Phi:AHCALMain2017}.
 
-Over the last years, several iterations of the SPIROC2 ASIC have been designed, produced and tested (SPIROC2 up to SPIROC2d). However, issues have been showed for all iterations which limit their use in testbeams. A next iteration, the SPIROC2e is supposed to correct all known problems of the previous iterations and also is the first SPIROC version to use Ball Grid Array (BGA) as packaging.
-
 The next milestone is the construction and operation of a full calorimeter prototype consisted of 40 $2\times2$ HBU layers equipped with the current surface-mounted MPPCs and tiles, in a steel absorber stack and using the SPIROC2e as front-end electronics, see figure \ref{fig:HBU5_BGA}. It is planned to be operated in power-pulsing mode in various electron and hadron beams at CERN in 2018 before the shutdown \cite{Felix:AHCALMain2017}.
 
 \begin{center}
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-In this chapter, the calorimeter concepts (electromagnetic and hadronic) of the CALICE Collaboration have been described. Concerning the hadronic calorimeters, 3 concepts have been presented. The AHCAL uses scintillator-tiles coupled to a SiPM readout system to measure the deposited energy in each cell. The DHCAL and SDHCAL use resistive plate chambers by ionization of a gas mixture and avalanche multiplication to measure a signal and are readout on 1 or 3 bits by measuring the number of hits.
+In this chapter, the calorimeter concepts (electromagnetic and hadronic) of the CALICE Collaboration have been described. Concerning the hadronic calorimeters, 3 concepts have been presented. The DHCAL and SDHCAL use RPC gaseous technology to measure a signal on one or three bits readout scheme. The AHCAL uses scintillator-tiles coupled to a SiPM readout system to measure the analog signal of the deposited energy in each cell.
+
+In this thesis, the data analyzed is compared to different simulations. Before discussing the analysis and the results, it is important to understand the differences between the simulation models. In the next chapter, the simulation and software tools relevant for this thesis are discussed.

@@ -2,38 +2,38 @@
 \chapter{Particle Physics: Theory}
 \label{chap:Theory}
 
-In this chapter, the theoretical foundations for this thesis are described. A brief overview of the Standard Model of particle physics (\acrshort{sm}) is given in section \ref{sec:SM}. This is followed by a brief description of the Higgs mechanism and the particle itself which is one of the corner of the Standard Model in section \ref{sec:HiggsTheo}. And finally, short-comings of the Standard Model and possible solutions will be discussed in section \ref{sec:BeyondSM}.
+In this chapter, the theoretical foundations for this thesis are described. A brief overview of the Standard Model of particle physics (\acrshort{sm}) is given in section \ref{sec:SM}. This is followed by a brief description in section \ref{sec:HiggsTheo} of the Higgs mechanism and the particle itself, which is one of the corner of the Standard Model. Finally, open-questions of the Standard Model with possible solutions will be discussed in section \ref{sec:BeyondSM}.
 
 \section{The Standard Model of Particle Physics}
 \label{sec:SM}
 
-It is difficult to say when particle physics is born. It has its origins in the discovery of the electron by Thomson \cite{JJThomson:1897} in 1897 and followed by the scattering experiment of Rutherford \cite{Rutherford:1911} in 1909 along with the discovery of radioactivity. This gave rise to the classical model of the atom by Niels Bohr. Following further experiments, it was realized that atoms themselves have an internal structure and lead to the discovery of the nucleons, the proton and neutron. Following this, by going at higher energies, more and more particles were discovered. In parallel, a theory that tried to understand radiation and the forces emerged. Finally, it was understood that most of the new discovered particles were composite objects. All sub-atomic particles could be reduced to a small set of \textit{elementary particles} which are known nowadays as the smallest constituents of our universe.
+It is difficult to say when particle physics is born. It has its origins in the discovery of the electron by Thomson \cite{JJThomson:1897} in 1897 and followed by the scattering experiment of Rutherford \cite{Rutherford:1911} in 1909 along with the discovery of radioactivity. This gave rise to the classical model of the atom by Niels Bohr. Following further experiments, it was realized that atoms themselves have an internal structure, and thus leading to the discovery of the nucleons, the proton and the neutron. With energies going higher and higher, more and more particles were discovered. In parallel, a theory that tried to understand radiation and the forces emerged. Finally, it was understood that most of the new discovered particles were composite objects. All sub-atomic particles could be reduced to a small set of \textit{elementary particles} which are known nowadays as the smallest constituents of our universe.
 
 \subsection{The Standard Model framework}
 
 In nature, conservation laws are generally associated with symmetries. This is one fundamental base of particle physics and all interactions between particles can be described by symmetries. The mathematical framework of the Standard Model is the Quantum Field Theory (\acrshort{qft}). The electromagnetic interaction is described by Quantum electrodynamics (\acrshort{qed}), the strong interaction is described by Quantum chromodynamics (\acrshort{qcd}) and the weak interaction is described by the weak theory.
 
-In QFT, each elementary particle is described by a field $\Phi$. The interactions (kinematics and dynamics) of the theory are given by the \textit{Lagrangian density} $\mathcal{L}$, and it is function of the field $\Phi(x)$ and its derivatives $\partial_{\mu}\Phi(x)$.
+In QFT, each elementary particle is described by a field $\Phi$. To put it simply, a field is a property of space. In QFT, there is no particles, only fields. Particles are a manifestation of the excitation of the fields. The interactions (kinematics and dynamics) of the theory are given by the \textit{Lagrangian density} $\mathcal{L}$ as a function of the field $\Phi(x)$ and its derivatives $\partial_{\mu}\Phi(x)$.
 
-Symmetries are described by requiring that the Lagrangian is invariant under certain transformations. The Standard Model theory is based on gauge group theory and it can be formulated as
+Symmetries are described by requiring the Lagrangian to be invariant under certain transformations. The Standard Model theory is based on gauge group theory and it can be formulated as
 \begin{equation}
   SU(3)_{C} \times SU(2)_{L} \times U(1)_{Y}
 \end{equation}
 where $SU(3)_{C}$ is for QCD and $SU(2)_{L} \times U(1)_{Y}$ for the electroweak theory. The electroweak theory unifies the electromagnetic and weak interactions and is known as the \textit{Glashow-Weinberg-Salam} theory (GWS). These gauge groups are described by the Yang-Mills theory \cite{Yang:1954ek}.
 
-\subsection{Elementary particles}
+\subsection{Elementary matter particles}
 
-The Standard Model of particle physics is a theory that describes all elementary particles and their interactions. The SM is divided in different classes of elementary particles: the \textit{quarks} and the \textit{leptons} otherwise known as \textit{fermions}. Fermions are point-like particles without any internal structure. The interactions between particles are mediated by \textit{gauge bosons} (see section \ref{subsec:Mediators}).
+The Standard Model of particle physics is a theory that describes all elementary particles and their interactions. The SM is divided in different classes of elementary matter particles: the \textit{quarks} and the \textit{leptons} otherwise known as \textit{fermions}. All elementary matter particles have a spin of 1/2. Fermions are point-like particles without any internal structure. The interactions between particles are mediated by \textit{gauge bosons} (see section \ref{subsec:Mediators}).
 
-In the Standard Model, there are six \textit{flavors} of quarks and leptons that are divided into three generations. They are classified according to their quantum numbers. The \textit{charge} ($Q$), the \textit{spin} ($S$), the \textit{color charge} and the \textit{flavor}. The quarks are divided into two categories: up-type ($u$, $c$, $t$) and down-type quark ($d$, $s$, $b$) which denotes their flavor. Only quarks carry a color charge ($r$, $g$, $b$) such as a bound state of quarks called a \textit{hadron} is colorless.
+In the Standard Model, there are six \textit{flavors} of quarks and leptons that are divided into three generations according to their masses and their quantum numbers: the \textit{charge} ($Q$), the \textit{spin} ($S$), the \textit{color charge} and the \textit{flavor}. The quarks are divided into two categories: up-type ($u$, $c$, $t$) and down-type quarks ($d$, $s$, $b$) which denote their flavor. Only quarks and gluons (see section \ref{subsec:Mediators}) carry a color charge ($r$, $g$, $b$) such as a bound state of quarks called a \textit{hadron} is colorless (see section \ref{sec:Hadrons}).
 
-The leptons are divided into charged leptons ($e^-$, $\mu^-$, $\tau^-$) and neutrinos ($\nu_e$, $\nu_{\mu}$, $\nu_{\tau}$). Each lepton has an antiparticle of the same mass but of opposite sign charge and quantum numbers. All elementary particles in the three generations have a spin 1/2.
+The leptons are divided into charged leptons ($e^-$, $\mu^-$, $\tau^-$) and neutrinos ($\nu_e$, $\nu_{\mu}$, $\nu_{\tau}$). Each lepton has an antiparticle of the same mass and quantum numbers except that they have a opposite sign of charge.
 
-The table \ref{table:Fermions} sums up the fundamental fermions and their properties in the Standard Model.
+Table \ref{table:Fermions} sums up the fundamental fermions and their properties described in the Standard Model.
 
 \begin{table}[htb!]
   \centering
-  \caption{Fermions in the Standard Model. The masses are from \cite{Patrignani:2016xqp}. The quark masses depend on the calculation scheme.}
+  \caption{Elementary fermions and their properties in the Standard Model. The masses are from \cite{Patrignani:2016xqp}. The quark masses depend on the calculation scheme.}
   \label{table:Fermions}
   \begin{tabular}{@{}lllll@{}} \toprule
     & \multicolumn{2}{c}{Leptons} & \multicolumn{2}{c}{Quarks} \\ \cmidrule(r){2-5}
@@ -56,17 +56,21 @@ The table \ref{table:Fermions} sums up the fundamental fermions and their proper
 
 In the Standard Model, the fundamental forces and interactions are known as:
 \begin{itemize}
-  \item The \textit{strong force} which is responsible for the interactions with quarks and the binding of quark into matter.
+  \item The \textit{strong force} which is responsible for the interactions of color charged particles.
   \item The \textit{electromagnetic} force which is responsible for the interactions between charged particles.
-  \item The \textit{weak force} which is responsible for flavor changing interactions e.g. radioactive decay.
-  \item The \textit{gravity} which describes interactions between masses.
+  \item The \textit{weak force} which is responsible for flavor changing interactions e.g. $\beta$-decay.
+  \item The \textit{gravity} which describes interactions between macroscopic and massive objects.
 \end{itemize}
 
-Forces are mediated by \textit{gauge bosons} which are elementary particle of spin 1. The gauge bosons interact with the particles by transferring a discrete amount of energy. Firstly, the strong force, represented in $SU(3)_{C}$. The mediators of the strong force are 8 massless gluons ($g$) which carry a mixture of color and anti-color charges \cite{Griffiths:343277}.
+Forces are mediated by \textit{gauge bosons} which are a kind of elementary particle of spin 1. The gauge bosons interact with the particles by transferring a discrete amount of energy.
 
-Secondly, the electromagnetic force is mediated by another massless boson, the photon ($\gamma$). Finally, the weak interaction is mediated by three gauge bosons: the electrically charged $W^+$ and $W^-$ bosons and the neutral $Z^0$ boson. In the Standard Model, the electromagnetic and weak force are unified in the electroweak theory under $SU(2)_{L} \times U(1)_{Y}$. It is composed of the triplet $W_{\mu}^1, W_{\mu}^2, W_{\mu}^3$ in $SU(2)_{L}$ and a neutral field $B_{\mu}$ in $U(1)$. The mixture of these fields gives rise to the four bosons ($W^{+/-}, Z^0, \gamma$).
+Firstly, the strong force, represented in $SU(3)_{C}$. The mediators of the strong force are 8 massless gluons ($g$) which carry a mixture of color and anti-color charges \cite{Griffiths:343277}.
 
-Finally, gravity is not integrated into the Standard Model. It appears as the weakest force among all forces and it becomes only relevant for macroscopic objects and at very large distances. It is well described by the \textit{general relativity} theory \cite{Einstein:1905ve} and it is important for astrophysics and cosmology. The gravitational force can be neglected for microscopic objects as it is small compared to the other forces. The table \ref{table:Bosons} sums up the bosons described in the Standard Model.
+Secondly, the electromagnetic force is mediated by another massless boson, the photon ($\gamma$).
+
+Thirdly, the weak interaction is mediated by three gauge bosons: the electrically charged $W^+$ and $W^-$ bosons and the neutral $Z^0$ boson. In the Standard Model, the electromagnetic and weak force are unified in the electroweak theory described by the $SU(2)_{L} \times U(1)_{Y}$ symmetry. It is composed of the triplet $W_{\mu}^1, W_{\mu}^2, W_{\mu}^3$ in $SU(2)_{L}$ and a neutral field $B_{\mu}$ in $U(1)$. The mixture of these fields gives rise to the four bosons ($W^{+/-}, Z^0, \gamma$).
+
+Finally, the gravity is not integrated yet into the Standard Model. It appears as the weakest force among all forces and it becomes only relevant for macroscopic objects or at very large distances. It is well described by the \textit{general relativity} theory \cite{Einstein:1905ve} and it is important for astrophysics and cosmology. The gravitational force can be neglected for microscopic objects comparing to the other forces. Table \ref{table:Bosons} sums up the bosons with their properties described in the Standard Model.
 
 \begin{table}[htb!]
   \centering
@@ -86,14 +90,14 @@ Finally, gravity is not integrated into the Standard Model. It appears as the we
 
 The last particle to describe is the Higgs Boson ($H$) which is an elementary particle of spin 0. This boson is one of the cornerstone of the Standard Model. Its properties are shown in table \ref{table:Bosons}.
 
-The principle of gauge invariance (see section \ref{sec:HiggsTheo}) requires that bosons are massless which is fulfilled for the photon and gluon but not for the $W^{+/-}$ and $Z^0$ bosons (see table \ref{table:Bosons}). It means that the electroweak gauge symmetry must be broken to generate masses for the heavy bosons. This is called the \textit{Electroweak Symmetry Breaking} (EWSB) mechanism. It gives rise to the \textit{Higgs mechanism} through which all other elementary particles that interact with the Higgs field acquire mass. This mechanism is explained in section \ref{subsec:HiggsMecha}.
+The principle of gauge invariance (see section \ref{sec:HiggsTheo}) requires that gauge bosons are massless which is fulfilled by the photon and gluon but not by the $W^{+/-}$ and $Z^0$ bosons (see table \ref{table:Bosons}). It means that the electroweak gauge symmetry must be broken to generate masses for the heavy bosons. This is called the \textit{Electroweak Symmetry Breaking} (EWSB) mechanism. It gives rise to the \textit{Higgs mechanism}, which allows all other massive elementary particles to interact with the Higgs field to acquire mass. This mechanism is explained in section \ref{subsec:HiggsMecha}.
 
-The theory \cite{Higgs:1964pj, Englert:1964et} has been formalized by P. Higgs, F. Englert and R. Brout$^\dagger$\footnote{Diseased in 2011} in 1964. The particle has been discovered in 2012 at the Large Hadron Collider \cite{Aad:2012tfa, Chatrchyan:2012xdj} with a mass of about 125 GeV and is compatible with the Standard Model.
+The Higgs theory \cite{Higgs:1964pj, Englert:1964et} has been formalized by P. Higgs, F. Englert and R. Brout$^\dagger$\footnote{Diseased in 2011} in 1964. The predicted Higgs particle has been discovered in 2012 at the Large Hadron Collider \cite{Aad:2012tfa, Chatrchyan:2012xdj} with a mass of about 125 GeV and is compatible with the Standard Model.
 
 \section{The Higgs Boson}
 \label{sec:HiggsTheo}
 
-\subsection{Gauge invariance in the weak sector}
+\subsection{Gauge invariance in the electroweak sector}
 
 In the Standard Model, the Lagrangian $\mathcal{L}_{D}$, also known as the \textit{Dirac Lagrangian}, describes a free particle with a spin of 1/2 such as the electron \cite{Griffiths:343277}
 \begin{equation}
@@ -101,21 +105,21 @@ In the Standard Model, the Lagrangian $\mathcal{L}_{D}$, also known as the \text
 \end{equation}
 where $\Psi$ a spinor field, $\gamma^{\mu}$ the Dirac $\gamma$-matrices (four matrices) \cite{Peskin:1995ev} and $m$ the mass of the particle. This Lagrangian is invariant under the \textit{global} gauge transformation $\Psi \rightarrow e^{i\theta}\Psi$ with $\theta$ being constant (equivalent to a simple phase rotation). However, it is not invariant under a \textit{local} gauge transformation where the phase factor $\theta$ is a function of space-time $\theta(x)$.
 
-The local gauge invariance can be restored by adding a new vector field $A_{\mu}$ which follows the local gauge transformation $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\lambda$ and by changing the derivative $\partial_{\mu}$ by the \textit{covariant derivative} $\mathcal{D}_{\mu} = \partial_{\mu} + i\frac{q}{\hbar c}A_{\mu}$. The local gauge invariant Lagrangian for a free particle of spin 1/2 becomes as \cite{Griffiths:343277}
+The local gauge invariance can be restored by adding a new vector field $A_{\mu}$ which follows the local gauge transformation $A_{\mu} \rightarrow A_{\mu} + \partial_{\mu}\lambda$ and by changing the partial derivative $\partial_{\mu}$ with the \textit{covariant derivative} $\mathcal{D}_{\mu} = \partial_{\mu} + i\frac{q}{\hbar c}A_{\mu}$. The local gauge invariant Lagrangian for a free particle of spin 1/2 becomes \cite{Griffiths:343277}
 \begin{equation}
   \mathcal{L}_{QED} = i(\hbar c)\overline{\rm \Psi}\gamma^{\mu}\mathcal{D}_{\mu}\Psi - (mc^2)\overline{\rm \Psi}\Psi + (q\overline{\rm \Psi}\gamma^{\mu}\Psi)A_{\mu} - \frac{1}{4}F^{\mu\nu}F_{\mu\nu}
 \end{equation}
-where $F^{\mu\nu} \equiv \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu}$ the field strength tensor. The term $(q\overline{\rm \Phi}\gamma^{\mu}\Psi)A_{\mu}$ describes the interaction of the fermion with the new field which can be identified as the massless photon.
+where $F^{\mu\nu} \equiv \partial^{\mu}A^{\nu} - \partial^{\nu}A^{\mu}$ is the field strength tensor. The term $(q\overline{\rm \Psi}\gamma^{\mu}\Psi)A_{\mu}$ describes the interaction between the fermionic spinor field and the new field, which can be identified as the massless photon.
 
-$\mathcal{L}_{QED}$ is invariant under $U(1)$ assuming that the new field is massless ($m_{A} = 0$). Otherwise, a mass term $m_{A}^2A^{\mu}A_{\mu}$ would be included which breaks the local gauge symmetry. Evidences \cite{Lakes:1998mi, Chibisov:1976mm, Williams:1971ms} have shown that the photon is massless and therefore $\mathcal{L}_{QED}$ describes well the fermions fields interacting with the photon field otherwise known as Quantum Electrodynamics (\acrshort{qed}).
+$\mathcal{L}_{QED}$ is invariant under $U(1)$ assuming that the new field is massless ($m_{A} = 0$). Otherwise, a mass term $m_{A}^2A^{\mu}A_{\mu}$ needs to be included, which breaks the local gauge symmetry. Evidences \cite{Lakes:1998mi, Chibisov:1976mm, Williams:1971ms} have shown that the photon is massless, and therefore $\mathcal{L}_{QED}$ describes well the fermions fields interacting with the photon field, known as Quantum Electrodynamics (\acrshort{qed}).
 
-A similar approach was done by \textit{Yang-Mills} for the weak interaction. It requires the Lagrangian to be invariant under $SU(2)_{L}$ local gauge transformation. This is done by changing the derivative with the according \textit{covariant derivative} to satisfy local gauge invariance under $SU(2)_{L}$. The resulting Lagrangian is in the form \cite{Griffiths:343277}
+A similar approach was done by \textit{Yang-Mills} for the weak interaction. It requires the Lagrangian to be invariant under $SU(2)_{L}$ local gauge transformation. This is done by changing the partial derivative with the according \textit{covariant derivative} to satisfy local gauge invariance under $SU(2)_{L}$. The resulting Lagrangian is in the form \cite{Griffiths:343277}
 \begin{equation}
   \mathcal{L}_{YM} = i(\hbar c)\overline{\rm \Psi}\gamma^{\mu}\mathcal{D}_{\mu}\Psi - (mc^2)\overline{\rm \Psi}\Psi + (q\overline{\rm \Psi}\gamma^{\mu}\mathbf{T}\Psi) \cdot \mathbf{A_{\mu}} - \frac{1}{4}\mathbf{F^{\mu\nu}} \cdot \mathbf{F_{\mu\nu}}, \quad \Psi = \begin{pmatrix} \Psi_1 \\ \Psi_2 \end{pmatrix}
 \end{equation}
-with $\Psi_1$ and $\Psi_2$ four-component field spinors, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + i\frac{q}{\hbar c}\mathbf{T} \cdot \mathbf{A_{\mu}}$ the covariant derivative. $\mathbf{T}$ are the Pauli matrices and $\mathbf{A_{\mu}} = (A_{\mu}^1, A_{\mu}^2, A_{\mu}^3)$ is the new gauge field. This Lagrangian satisfies local gauge symmetry in $SU(2)_{L}$ only if the new gauge bosons are massless.
+with $\Psi_1$ and $\Psi_2$ are four-component field spinors, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + i\frac{q}{\hbar c}\mathbf{T} \cdot \mathbf{A_{\mu}}$ is the covariant derivative. $\mathbf{T}$ refers to the Pauli matrices and $\mathbf{A_{\mu}} = (A_{\mu}^1, A_{\mu}^2, A_{\mu}^3)$ is the new gauge field. This Lagrangian satisfies local gauge symmetry in $SU(2)_{L}$ only if the new gauge bosons are massless.
 
-However, experimental evidences \cite{Rubbia:1983pta} show that the weak bosons $W^{+/-}$ and $Z^0$ have large masses (see table \ref{table:Bosons}). Therefore, the local gauge symmetry is broken by including their mass term in the Lagrangian $\mathcal{L}_{YM}$. A similar problem arises for the fermions. A new concept is needed in order to restore the local gauge symmetry.
+However, experimental evidences \cite{Rubbia:1983pta} show that the weak bosons $W^{+/-}$ and $Z^0$ have large masses (see table \ref{table:Bosons}). Therefore, the local gauge symmetry must be broken to include their mass terms in the Lagrangian $\mathcal{L}_{YM}$. Similarly, the gauge invariance problem arises for the fermions. A new concept is needed in order to restore the local gauge symmetry.
 
 \subsection{The Higgs mechanism}
 \label{subsec:HiggsMecha}
@@ -179,6 +183,7 @@ The measurement of the Higgs mass is one of the important free parameters of the
 Lepton colliders (see chapter \ref{chap:FutureColliders}) can offer a precise measurement of the Higgs Boson properties, in particular the mass, exploiting the $H \rightarrow b\bar{b}$ channel. This implies the measurement of a final hadronic state. The specifics of hadrons are explained in the following section.
 
 \section{Hadron physics}
+\label{sec:Hadrons}
 
 Quarks are fundamental particles of the Standard Model govern by the strong interaction. Bound states of quarks forming particles are commonly called \textit{hadrons}. Hadrons are categorized as \textit{mesons}, which are composed of a pair of quark-antiquark, or \textit{baryons} which are composed of three quarks. The theory of the strong interaction in QFT is known as quantum chromodynamics (QCD). QCD is similarly based on the concept of QED but in the $SU(3)$ gauge group. Massless bosons known as \textit{gluons} are the mediators of the strong interaction and they can self-interact (on the contrary in QED, the photon has no self-interaction). They carry a mixture of color and anti-color charges named red ($r$), green ($g$) and blue ($b$), creating nine different combinations corresponding to the generators of $SU(3)$.
 
