@@ -25,7 +25,7 @@ where $SU(3)_{C}$ is for QCD and $SU(2)_{L} \times U(1)_{Y}$ for the electroweak
 
 The Standard Model of particle physics is a theory that describes all elementary particles and their interactions. The SM is divided in different classes of elementary matter particles: the \textit{quarks} and the \textit{leptons} otherwise known as \textit{fermions}. All elementary matter particles have a spin of 1/2. Fermions are point-like particles without any internal structure. The interactions between particles are mediated by \textit{gauge bosons} (see section \ref{subsec:Mediators}).
 
-In the Standard Model, there are six \textit{flavors} of quarks and leptons that are divided into three generations according to their masses and their quantum numbers: the \textit{charge} ($Q$), the \textit{spin} ($S$), the \textit{color charge} and the \textit{flavor}. The quarks are divided into two categories: up-type ($u$, $c$, $t$) and down-type quarks ($d$, $s$, $b$) which denote their flavor. Only quarks and gluons (see section \ref{subsec:Mediators}) carry a color charge ($r$, $g$, $b$) such as a bound state of quarks called a \textit{hadron} is colorless (see section \ref{sec:Hadrons}).
+In the Standard Model, there are six \textit{flavors} of quarks and leptons that are divided into three generations according to their masses and their quantum numbers: the \textit{charge} ($Q$), the \textit{spin} ($S$), the \textit{color charge} and the \textit{flavor}. The quarks are divided into two categories: up-type ($u$, $c$, $t$) and down-type quarks ($d$, $s$, $b$) which denote their flavor. Only quarks and gluons (see section \ref{subsec:Mediators}) carry a color charge ($r$, $g$, $b$).
 
 The leptons are divided into charged leptons ($e^-$, $\mu^-$, $\tau^-$) and neutrinos ($\nu_e$, $\nu_{\mu}$, $\nu_{\tau}$). Each lepton has an antiparticle of the same mass and quantum numbers except that they have a opposite sign of charge.
 
@@ -119,12 +119,12 @@ A similar approach was done by \textit{Yang-Mills} for the weak interaction. It 
 \end{equation}
 with $\Psi_1$ and $\Psi_2$ are four-component field spinors, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + i\frac{q}{\hbar c}\mathbf{T} \cdot \mathbf{A_{\mu}}$ is the covariant derivative. $\mathbf{T}$ refers to the Pauli matrices and $\mathbf{A_{\mu}} = (A_{\mu}^1, A_{\mu}^2, A_{\mu}^3)$ is the new gauge field. This Lagrangian satisfies local gauge symmetry in $SU(2)_{L}$ only if the new gauge bosons are massless.
 
-However, experimental evidences \cite{Rubbia:1983pta} show that the weak bosons $W^{+/-}$ and $Z^0$ have large masses (see table \ref{table:Bosons}). Therefore, the local gauge symmetry must be broken to include their mass terms in the Lagrangian $\mathcal{L}_{YM}$. Similarly, the gauge invariance problem arises for the fermions. A new concept is needed in order to restore the local gauge symmetry.
+However, experimental evidences \cite{Rubbia:1983pta} show that the weak bosons $W^{+/-}$ and $Z^0$ have large masses (see table \ref{table:Bosons}). Therefore, the local gauge symmetry must be broken to include their mass terms in the Lagrangian $\mathcal{L}_{YM}$. A new concept is needed in order to restore the local gauge symmetry.
 
 \subsection{The Higgs mechanism}
 \label{subsec:HiggsMecha}
 
-The electroweak gauge group $SU(2)_{L} \times U(1)_{Y}$ does not allow for fermions and bosons to be massive in order to conserve the local symmetry. A new framework is needed in order to give mass to the $W^{+/-}$ and $Z^0$ bosons while conserving the local symmetry. The electroweak symmetry breaking (EWSB) provides such framework. It postulates that a self-interacting complex scalar field exists (see section \ref{sec:HiggsSM}) with a scalar particle known as the Higgs boson.
+The electroweak gauge group $SU(2)_{L} \times U(1)_{Y}$ does not allow for fermions and bosons to be massive in order to conserve the local symmetry. A new framework is needed in order to give mass to the $W^{+/-}$ and $Z^0$ bosons while conserving the local gauge symmetry. The electroweak symmetry breaking (EWSB) provides such framework. It postulates that a self-interacting complex scalar field exists (see section \ref{sec:HiggsSM}) predicting a scalar particle known as the Higgs boson.
 
 In the Standard Model, the Lagrangian for a scalar field $\Phi$ of mass $m$ with spin 0 is written as \cite{Griffiths:343277}
 \begin{equation}
@@ -134,8 +134,8 @@ and can be re-written (from classical Lagrangian) as
 \begin{equation} \label{eq:HiggsLag}
   \mathcal{L} = \frac{1}{2}(\partial_{\mu}\Phi)^{\dagger}(\partial^{\mu}\Phi) - V(\Phi)
 \end{equation}
-with $V(\Phi)$ the potential term. Let's take a potential of the form:
-\begin{equation}
+where $V(\Phi)$ is the potential term. The potential can be written as:
+\begin{equation} \label{eq:HiggsPotential}
   \begin{aligned}
     V(\Phi) & = \mu^2(\Phi^*\Phi) + \lambda(\Phi^*\Phi)^2 \\
     & = \mu^2|\Phi|^2 + \lambda|\Phi|^4
@@ -143,18 +143,28 @@ with $V(\Phi)$ the potential term. Let's take a potential of the form:
 \end{equation}
 where $\mu$ and $\lambda > 0$ are real constants. If $\mu^2 > 0$, the vacuum is at zero and the Lagrangian is symmetric. It describes a particle of mass $\mu$ with a self-interaction term. However, if $\mu^2 < 0$, this induces that the potential has a non-zero field value of $v = \sqrt{-\mu^2/\lambda}$. To circumvent this, we can introduce a field centered at the vacuum $\eta = \Phi - v$. Rewriting the Lagrangian in this case yields
 \begin{equation}
-  \mathcal{L} = \frac{1}{2}(\partial_{\mu}\eta)^{\dagger}(\partial^{\mu}\eta) - \lambda v^2\eta^2
+  \mathcal{L} = \frac{1}{2}(\partial_{\mu}\eta)^{\dagger}(\partial^{\mu}\eta) - \lambda v^2\eta^2 + \text{cubic and quadratic terms}
 \end{equation}
-neglecting term higher than the 2$^{nd}$ order. This Lagrangian describes the kinematics for a scalar particle of mass $m_{\eta} = \sqrt{2\lambda}v$, the Higgs mass. This gives the principle for the Higgs mechanism for an Abelian\footnote{More commonly a commutative group i.e $a \cdot b = b \cdot a$} group ($U(1)$).
+This Lagrangian describes the kinematics for a scalar particle of mass $m_{\eta} = \sqrt{2\lambda}v$, the Higgs mass. This describes the principle for the Higgs mechanism for an Abelian\footnote{More commonly a commutative group i.e $a \cdot b = b \cdot a$} group ($U(1)$).
 
 \subsection{Interpretation in the SM}
 \label{sec:HiggsSM}
 
-It can be generalized to a non-Abelian\footnote{The counterpart of Abelian groups where commutation is not applicable i.e $a \cdot b \neq b \cdot a$} group ($SU(2)_{L} \times U(1)_{Y}$) by taking the field $\Phi \equiv \Phi_1+i\Phi_2$ as a complex scalar. The Higgs Lagrangian is then
+It can be generalized to a non-Abelian\footnote{The counterpart of Abelian groups where commutation is not applicable i.e $a \cdot b \neq b \cdot a$} group ($SU(2)_{L} \times U(1)_{Y}$). In $SU(2)$, the Higgs field is a complex doublet defined as
+\begin{equation}
+\Phi = \begin{pmatrix} \Phi^+ \\ \Phi^0 \end{pmatrix}= \frac{1}{\sqrt{2}} \begin{pmatrix} \Phi_1+i\Phi_2 \\ \Phi_3+i\Phi_4 \end{pmatrix}
+\end{equation}
+where $\Phi^+$ is the charged complex component and $\Phi^0$ the neutral component. Following the mechanism explain in section \ref{subsec:HiggsMecha}, if $\mu^2 < 0$ in equation \ref{eq:HiggsPotential}, the symmetry is spontaneously broken such as the neutral component of the Higgs field take a non-zero vacuum expectation value. At the ground state, the Higgs field is of the form
+\begin{equation}
+\Phi_0 = \frac{1}{\sqrt{2}}\begin{pmatrix} 0 \\ v \end{pmatrix}
+\end{equation}
+The breaking of the symmetry "eats" three of the four component of the Higgs field.
+
+The Higgs Lagrangian is then becoming
 \begin{equation}
   \mathcal{L}_{Higgs} = \underbrace{\frac{1}{2}(\mathcal{D}_{\mu}\Phi)^{\dagger}(\mathcal{D}^{\mu}\Phi)}_{\text{Gauge boson mass term}} - \underbrace{V(\Phi)}_{\text{Higgs mass + self-interaction}}
 \end{equation}
-with the covariant derivative operator of $SU(2)_{L} \times U(1)_{Y}$, $\mathcal{D}_{\mu} \equiv \partial_{\mu} + ig\mathbf{T} \cdot \mathbf{W_{\mu}} + ig^{\prime} B_{\mu}Y$ with $g$ and $g^{\prime}$ the gauge couplings and $\mathbf{W_{\mu}}$ and $B_{\mu}$ the gauge fields representing the $W^{+/-}$, $Z^0$ bosons and the photon.
+where the covariant derivative operator of $SU(2)_{L} \times U(1)_{Y}$ is $\mathcal{D}_{\mu} \equiv \partial_{\mu} + ig\mathbf{T} \cdot \mathbf{W_{\mu}} + ig^{\prime} B_{\mu}Y$ where $g$ and $g^{\prime}$ are the gauge couplings, $\mathbf{W_{\mu}}$ and $B_{\mu}$ are the gauge fields.
 
 This leads to the $W^{+/-}$ and $Z^0$ to acquire mass through interaction with the Higgs such as
 \begin{equation}
@@ -169,36 +179,40 @@ The couplings of the gauge bosons with the Higgs are proportional to the square 
   g_{HVV} \propto \frac{m_V^2}{v}
 \end{equation}
 
-The fermions interact with the Higgs field and acquire masses through the \textit{Yukawa interactions}. The Yukawa Lagrangian is given by \cite{ILC_TDR_Vol2}
+In quantum mechanics, fermions can be left-handed or right-handed (chirality). It is important to make the distinction as the Standard Model treats the chirality differently because only left-handed fermions (right-handed anti-fermions) interact with the W boson. In this case, left-handed fermions are doublets and right-handed are singlets. Right-handed neutrinos have never been observed and are not included here. Both type of fermions interact with the Higgs field and acquire masses through the \textit{Yukawa interactions}. The Yukawa Lagrangian is given by \cite{ILC_TDR_Vol2}
 \begin{equation}
   \mathcal{L}_{Yukawa} = - y^u_{ij}\bar{u}_{Ri}\widetilde{\Phi}^{\dagger}Q_{Lj} - y^d_{ij}\bar{d}_{Ri}\Phi^{\dagger}Q_{Lj} - y^l_{ij}\bar{l}_{Ri}\Phi^{\dagger}L_{Lj} + \text{h.c}.
 \end{equation}
-where $Q_{Lj}$ are left-handed quarks, $\bar{u}_{Ri}$ are right-handed up-type quarks, $\bar{d}_{Ri}$ are right-handed down-type quarks, $L_{Lj}$ are the left-handed leptons and $\bar{l}_{Ri}$ are the right-handed leptons. The term $\widetilde{\Phi} = iT_2\Phi^{*}$ is the Higgs conjugate. The terms $y^u$, $y^d$ and $y^l$ are the Yukawa coupling matrices for up-type quarks, down-type quarks and charged leptons respectively. All the couplings of fermions with the Higgs can be predicted and are proportional to the fermion mass and $v$ given by
+where $Q_{Lj}$ are left-handed quarks, $\bar{u}_{Ri}$ are right-handed up-type quarks, $\bar{d}_{Ri}$ are right-handed down-type quarks, $L_{Lj}$ are the left-handed leptons and $\bar{l}_{Ri}$ are the right-handed leptons. The term $\widetilde{\Phi} = iT_2\Phi^{*}$ is the Higgs conjugate. The terms $y^u$, $y^d$ and $y^l$ are the Yukawa coupling matrices for up-type quarks, down-type quarks and charged leptons respectively.
+
+All the couplings of fermions with the Higgs can be predicted and are proportional to the fermion mass and $v$ given by
 \begin{equation}
   g_{Hff} \propto \frac{m_f}{v}
 \end{equation}
 
-The measurement of the Higgs mass is one of the important free parameters of the Standard Model. A precise measurement of the mass is necessary for validating the Standard Model. The Higgs has a large branching ratio, $\sim$58\%, decaying to a pair of bottom quarks. However, in hadron colliders such as Large Hadron Collider (\acrshort{lhc}), this channel has a very poor signal to background ratio and a poor mass resolution due to large QCD background and can not be used for precise mass measurement.
+The measurement of the Higgs mass is one of the important free parameters of the Standard Model. A precise measurement of the mass is necessary to validate the Standard Model. The Higgs has a large branching ratio, $\sim$58\%, decaying to a pair of bottom quarks. However, in hadron colliders such as the Large Hadron Collider (\acrshort{lhc}), this channel has a very poor signal compared to the background and a poor mass resolution due to large QCD background and thus makes it very challenging for a precise mass measurement.
 
-Lepton colliders (see chapter \ref{chap:FutureColliders}) can offer a precise measurement of the Higgs Boson properties, in particular the mass, exploiting the $H \rightarrow b\bar{b}$ channel. This implies the measurement of a final hadronic state. The specifics of hadrons are explained in the following section.
+Lepton colliders (see chapter \ref{chap:FutureColliders}) can offer a precise measurement of the Higgs Boson properties for example by exploiting the $H \rightarrow b\bar{b}$ channel. This implies the measurement of a final hadronic state. The specifics of hadrons are explained in the following section.
 
 \section{Hadron physics}
 \label{sec:Hadrons}
 
-Quarks are fundamental particles of the Standard Model govern by the strong interaction. Bound states of quarks forming particles are commonly called \textit{hadrons}. Hadrons are categorized as \textit{mesons}, which are composed of a pair of quark-antiquark, or \textit{baryons} which are composed of three quarks. The theory of the strong interaction in QFT is known as quantum chromodynamics (QCD). QCD is similarly based on the concept of QED but in the $SU(3)$ gauge group. Massless bosons known as \textit{gluons} are the mediators of the strong interaction and they can self-interact (on the contrary in QED, the photon has no self-interaction). They carry a mixture of color and anti-color charges named red ($r$), green ($g$) and blue ($b$), creating nine different combinations corresponding to the generators of $SU(3)$.
+Quarks are fundamental particles of the Standard Model govern by the strong interaction. Bound states of quarks forming colorless particles are commonly called \textit{hadrons}. Hadrons are categorized as either \textit{mesons}, which are composed of a pair of quark-antiquark, or \textit{baryons} which are composed of three quarks. The theory of the strong interaction in QFT is known as quantum chromodynamics (QCD). QCD describes the strong interaction under the gauge symmetry group $SU(3)$. Massless bosons known as \textit{gluons} are the mediators of the strong interaction and they can self-interact (on the contrary in QED, the photon has no self-interaction). They carry a mixture of color and anti-color charges creating nine different combinations corresponding to the generators of $SU(3)$.
 
-Quarks have been proven experimentally but no \textit{free} quarks have been observed. This is explained by \textit{color confinement} in which color charged particles must be colorless thus quarks cannot be isolated and cannot be observed directly.
+Quarks have been proven experimentally but no \textit{free} quarks have been observed. This is explained by the \textit{color confinement} in which color charged particles cannot be isolated, and thus quarks cannot be observed directly.
 
 An important aspect of QCD is the \textit{asymptotic freedom}. It means that the strong coupling constant $\alpha_s$ decreases and become small at high energy scales, i.e. at short distances. Asymptotic freedom has the effect that quarks inside a hadron are considered free and not tightly bounded.
 
-In particle physics, experiments observe only hadrons and not quarks. Quarks turn into colorless hadrons through a process called the \textit{hadronization}. This process is not calculable in perturbation theory ($\alpha_s >> 1$) and thus can only be described phenomenologically. Many different models are available: independent hadronization, string hadronization \cite{Artru1988} and cluster hadronization \cite{Webber:1983if}.
+In particle physics, experiments observe only hadrons and not quarks. Quarks turn into colorless hadrons through a process called the \textit{hadronization}. This process can only be described phenomenologically. There are three main axioms: the independent hadronization, the string hadronization \cite{Artru1988} and the cluster hadronization \cite{Webber:1983if} but many variant models exist. None of them can be chosen more correct than the other, but they aim to represent the data correctly and to have some predictive power.
 
-When a quark-antiquark pair is created such as in a collision $e^+e^- \rightarrow q\bar{q}$, the quarks start to move away from each other. At short distances ($<$1 fm), the quarks are considered free. As quarks are colored particles they can radiate gluons. Since gluons carry color charges, they can also emit radiation. This process is known as \textit{parton showering}. Once the distance become large enough, quarks are bounded by a \textit{tube} or \textit{string} that confines both objects. At one point, the energy stored in the string will be sufficient to produce a new pair of quark-antiquark. This process continues and creates a cascade of new $q\bar{q}$ pairs until the energy is low enough to hadronize the quarks into colorless hadrons. Unstable hadrons decay further into more stable particles that are observed in the detector. This creates a collimated cascade of particles known as a \textit{jet}.
+In a simple system of a di-jet production in a $e^+e^-$ annihilation, the $q\bar{q}$ partons move away from the common production vertex. The partons are bounded by a \textit{tube} or \textit{string} that confines both objects. At short distances ($<$1 fm), the $q\bar{q}$ pair is considered free. As they are colored particles they can radiate gluons. Since gluons carry color charges, they can also emit radiation. This process is known as \textit{parton showering} \cite{Feynman:1969wa}.
+
+Once the distance become large enough, the energy stored in the string will be sufficient to produce a $q\bar{q}'$ pair. This process continues and creates a cascade of new $q\bar{q}$ pairs until the energy is low enough to hadronize the quarks into colorless hadrons. Unstable hadrons decay further into more stable particles that are observed in the detector. This creates a collimated cascade of particles known as a \textit{jet}.
 
 \section{Beyond the Standard Model}
 \label{sec:BeyondSM}
 
-The Standard Model has been a wonderful theory to describe and predict many physical phenomena. The current Standard Model is composed of 19 free parameters which are:
+The Standard Model succeeds in describing many experimental results. The current Standard Model is composed of 19 free parameters which are:
 
 \begin{itemize}
   \item The three leptons masses ($m_e$, $m_{\mu}$, $m_{\tau}$)
@@ -208,17 +222,17 @@ The Standard Model has been a wonderful theory to describe and predict many phys
   \item The weak mixing angles ($\theta_{12}$, $\theta_{23}$, $\theta_{13}$) and the CP phase $\delta$ for the flavor-changing weak decays \cite{Kobayashi:1973pt}
 \end{itemize}
 
-These parameters have no explanation from the Standard Model theory and their numerical values are determined from experimental data. Nevertheless, they are still open questions that need to be answered by the Standard Model and it would suggest that maybe the SM is only a \textit{low energy} approximation of a higher theory.
+These parameters have their numerical values determined from experimental data. Nevertheless, there are still open questions that need to be answered, suggesting that the SM is maybe a \textit{low energy} approximation of a higher theory.
 
 \subsection{Open questions of the Standard Model}
 
 \subsubsection*{Gravity}
 
-Gravity is a fundamental force in nature and is explained by the theory of general relativity. The Standard Model does not include gravity and latest attempts to include general relativity have not been successful so far.
+Gravity is a fundamental force in nature and is explained by the theory of general relativity. The Standard Model does not include gravity and the inclusion of the general relativity into the SM has not been successful so far.
 
 \subsubsection*{Dark Matter}
 
-Astrophysics and Cosmology have given evidences for the existence of invisible matter, e.g. from galaxies observations \cite{Battistelli:2017zrp}, the Cosmological Microwave Background (CMB) \cite{Giesen:2012rp}. This invisible matter is known as the \textit{dark matter}. As these particles have not been found so far, it suggests that the coupling of dark matter to electromagnetic and strong interactions is extremely low. New physics beyond the Standard Model is needed to explain the nature of these particles.
+Astrophysics and Cosmology have given evidences for the existence of invisible matter, e.g. from galaxies observations \cite{Battistelli:2017zrp}, the Cosmological Microwave Background (CMB) \cite{Giesen:2012rp}. This invisible matter is known as the \textit{dark matter}. As these particles have not been found so far, the interaction of dark matter with EM force and strong force have been ruled out. It is supposed that the couplings of dark matter is only through the weak interaction. New physics beyond the Standard Model is needed to explain the nature of these particles.
 
 \subsubsection*{Neutrino masses}
 
@@ -226,11 +240,11 @@ No neutrino masses are present in the Standard Model. As there is no right-hande
 
 \subsubsection*{Hierarchy problem}
 
-At high energies, the Higgs mass has large loop corrections \cite{Vieira:2012ex}. If the Standard Model is valid up to the Plank scale $\Lambda \sim 10^19$ GeV, these corrections become very large. Therefore, it is difficult to keep the Higgs mass at the electroweak scale $\sim$100 GeV and would require a very fine-tuning. This is considered unnatural.
+The Higgs mass of around 125 GeV is a theoretical challenge known as the hierarchy problem. In the SM, the mass of the Higgs gets loop corrections from fermion, gauge boson and the Higgs itself \cite{Vieira:2012ex}. If the Standard Model would be valid up to the Plank scale $\Lambda \sim 10^{19}$ GeV, these corrections would make the mass of the Higgs large. To keep the Higgs mass at the electroweak scale $\sim$100 GeV, it would require a very fine-tuning i.e cancellations between the loop corrections and the bare mass. This is considered unnatural.
 
 \subsubsection*{Asymmetry matter-antimatter}
 
-The Standard Model predicts that matter and anti-matter should be in equal amounts in the observable universe. But it is well established that our universe is composed mostly of matter. This \textit{baryon asymmetry} is not explained in the Standard Model. \acrshort{cp} violation \cite{Ellis:1978hq} may be the answer for this asymmetry, it is present in the Standard Model but has only been observed for weak interactions in the quark sector. But the only condition of CP violation would not entirely explain the asymmetry and would require more conditions \cite{Sakharov:1967dj}.
+The Standard Model predicts that matter and anti-matter should be in equal amounts in the observable universe. But it is well established that our universe is composed mostly of matter. This \textit{baryon asymmetry} is not explained in the Standard Model. \acrshort{cp} violation \cite{Ellis:1978hq} may be the answer for this asymmetry, it is present in the Standard Model but has only been observed for weak interactions in the quark sector. But the only condition of CP violation would not entirely explain the asymmetry \cite{Sakharov:1967dj}.\\[0.3cm]
 
 Numerous theoreticians are extending the Standard Model to answer few of these questions. One approach is to add symmetries to the Lagrangian. This approach is called \textit{Supersymmetry} (\acrshort{susy}) which adds super-partners to the Standard Model particles differing of a spin of 1/2, i.e. each fermion has a boson super-partner and vice-versa.
 
@@ -238,4 +252,4 @@ Numerous theoreticians are extending the Standard Model to answer few of these q
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-The Standard Model is so far the most reliable theory of the forces that govern our world. The Higgs is one of the cornerstone of the theory, therefore, a very precise measurement of its properties such as mass and couplings are needed. This enables us to probe the Standard Model deeply and look for any effects that would suggest physics beyond the Standard Model. Measurements at hadrons colliders, like the \acrlong{lhc}, suggest that if any other particles exist, it would be at a multi-TeV scale. However, the effect of such particles on coupling measurements scales as the inverse of the mass squared, such effect would be below the percent level. Currently, the LHC does not achieve the level of precision needed to distinguish theories beyond the Standard Model. A lepton collider would be the perfect tool to conduct precision measurements including the Higgs.
+The Standard Model is so far the most reliable theory of the elementary objects and the interactions that govern our world. The Higgs is one of the cornerstone of the theory, therefore, a very precise measurement of its properties such as mass and couplings are needed. This enables us to probe the Standard Model deeply and look for any deviations to the SM predictions that would suggest physics beyond the Standard Model. Measurements at hadrons colliders, like the \acrlong{lhc}, suggest that if any other particle exists, it would be at a multi-TeV scale. However, the effect of such particles on coupling measurements would be below the percent level. Currently, the LHC does not achieve the level of precision needed to distinguish theories beyond the Standard Model \cite{}. A lepton collider would be the perfect tool to conduct precision measurements including the Higgs as shown in chapter \ref{chap:FutureColliders}.
