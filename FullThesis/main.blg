@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: title.aux
@@ -32,16 +32,22 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: oath.aux
 Database file #1: biblio.bib
 Warning--entry type for "ILCSoftPortal" isn't style-file defined
---line 47 of file biblio.bib
+--line 93 of file biblio.bib
 Warning--entry type for "OmegaWeb" isn't style-file defined
---line 394 of file biblio.bib
+--line 787 of file biblio.bib
 Warning--entry type for "GithubTB" isn't style-file defined
---line 399 of file biblio.bib
+--line 797 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
---line 430 of file biblio.bib
+--line 859 of file biblio.bib
+Repeated entry---line 2443 of file biblio.bib
+ : @article{Chatrchyan:2012xdj
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 Warning--empty journal in ILC_TDR_Vol1
 Warning--empty journal in Benaglia2016
 Warning--empty journal in ILC_TDR_Vol2
+Warning--empty author in CMS:2013xfa
 Warning--empty journal in CEPC-SPPCStudyGroup:2015csa
 Warning--empty journal in CEPC-SPPCStudyGroup:2015esa
 Warning--empty journal in ILC_TDR_Vol3.1
@@ -82,45 +88,45 @@ Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 150 entries,
+You've used 153 entries,
             1876 wiz_defined-function locations,
-            1373 strings with 30326 characters,
-and the built_in function-call counts, 34988 in all, are:
-= -- 3326
-> -- 1336
+            1388 strings with 30931 characters,
+and the built_in function-call counts, 35670 in all, are:
+= -- 3391
+> -- 1359
 < -- 0
-+ -- 522
-- -- 372
-* -- 2225
-:= -- 4938
-add.period$ -- 158
-call.type$ -- 150
-change.case$ -- 141
++ -- 531
+- -- 378
+* -- 2267
+:= -- 5025
+add.period$ -- 161
+call.type$ -- 153
+change.case$ -- 144
 chr.to.int$ -- 0
-cite$ -- 193
-duplicate$ -- 2045
-empty$ -- 3426
-format.name$ -- 372
-if$ -- 8678
+cite$ -- 197
+duplicate$ -- 2094
+empty$ -- 3495
+format.name$ -- 378
+if$ -- 8854
 int.to.chr$ -- 0
-int.to.str$ -- 150
-missing$ -- 134
-newline$ -- 475
-num.names$ -- 146
-pop$ -- 587
+int.to.str$ -- 153
+missing$ -- 137
+newline$ -- 484
+num.names$ -- 148
+pop$ -- 602
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1352
+skip$ -- 1383
 stack$ -- 0
-substring$ -- 1619
-swap$ -- 802
+substring$ -- 1637
+swap$ -- 823
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 43
-while$ -- 271
-width$ -- 153
-write$ -- 1373
-(There were 47 warnings)
+warning$ -- 44
+while$ -- 275
+width$ -- 156
+write$ -- 1400
+(There was 1 error message)

@@ -135,6 +135,12 @@ A.~D. Sakharov, ``{Violation of CP Invariance, c Asymmetry, and Baryon
   pp.~32--35, 1967.
 \newblock [Usp. Fiz. Nauk161,61(1991)].
 
+\bibitem{CMS:2013xfa}
+``{Projected Performance of an Upgraded CMS Detector at the LHC and HL-LHC:
+  Contribution to the Snowmass Process},'' in {\em {Proceedings, 2013 Community
+  Summer Study on the Future of U.S. Particle Physics: Snowmass on the
+  Mississippi (CSS2013): Minneapolis, MN, USA, July 29-August 6, 2013}}, 2013.
+
 \bibitem{Benedikt:2015kqj}
 M.~Benedikt and F.~Zimmermann, ``{Future Circular Colliders},'' {\em Proc. Int.
   Sch. Phys. Fermi}, vol.~194, pp.~73--80, 2016.
@@ -163,6 +169,10 @@ C.~Adolphsen, M.~Barone, B.~Barish, K.~Buesser, P.~Burrows, J.~Carwardine,
 H.~Abramowicz {\em et~al.}, ``{The International Linear Collider Technical
   Design Report - Volume 4: Detectors},'' 2013.
 
+\bibitem{Fujii:2015jha}
+K.~Fujii {\em et~al.}, ``{Physics Case for the International Linear
+  Collider},'' 2015.
+
 \bibitem{Moortgat-Picka:2015yla}
 A.~Arbey {\em et~al.}, ``{Physics at the e+ e- Linear Collider},'' {\em Eur.
   Phys. J.}, vol.~C75, no.~8, p.~371, 2015.
@@ -178,9 +188,9 @@ M.~A. Thomson, ``{Model-independent measurement of the e+e- to HZ cross section
   at a future e+ e- linear collider using hadronic Z decays},'' {\em The
   European Physical Journal C}, vol.~76, p.~72, Feb 2016.
 
-\bibitem{Fujii:2015jha}
-K.~Fujii {\em et~al.}, ``{Physics Case for the International Linear
-  Collider},'' 2015.
+\bibitem{Gupta:2012mi}
+R.~S. Gupta, H.~Rzehak, and J.~D. Wells, ``{How well do we need to measure
+  Higgs boson couplings?},'' {\em Phys. Rev.}, vol.~D86, p.~095001, 2012.
 
 \bibitem{Kajantie:1996mn}
 K.~Kajantie, M.~Laine, K.~Rummukainen, and M.~E. Shaposhnikov, ``{Is there a
@@ -224,6 +234,11 @@ G.~Gustavino, {\em {Search for New Physics in Mono-jet Final States in pp
 M.~Habermehl, K.~Fujii, J.~List, S.~Matsumoto, and T.~Tanabe, ``{WIMP Searches
   at the International Linear Collider},'' {\em PoS}, vol.~ICHEP2016, p.~155,
   2016.
+
+\bibitem{Baer:2011ec}
+H.~Baer, V.~Barger, and P.~Huang, ``{Hidden SUSY at the LHC: the light
+  higgsino-world scenario and the role of a lepton collider},'' {\em JHEP},
+  vol.~11, p.~031, 2011.
 
 \bibitem{Reuter:2016olv}
 J.~Reuter, ``{The BSM Physics Case of the ILC},'' in {\em {Proceedings,

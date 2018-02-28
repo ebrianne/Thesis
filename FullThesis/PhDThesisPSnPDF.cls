@@ -147,12 +147,12 @@ options in case you have defined two bibliography styles.}
 % *************************** Pre-defined Options ******************************
 
 % Font Size
-\newcommand\PHD@ptsize{12pt} %Set Default Size as 12
+\newcommand\PHD@ptsize{10pt} %Set Default Size as 12
 
 \DeclareOption{10pt}{
-\ClassWarning{PhDThesisPSnPDF}{The Cambridge University PhD thesis guidelines
-recommend using a minimum font size of 11pt (12pt is preferred) and 10pt for
-footnotes.}
+% \ClassWarning{PhDThesisPSnPDF}{The Cambridge University PhD thesis guidelines
+% recommend using a minimum font size of 11pt (12pt is preferred) and 10pt for
+% footnotes.}
 \renewcommand\PHD@ptsize{10pt}
 }
 \DeclareOption{11pt}{\renewcommand\PHD@ptsize{11pt}}%
