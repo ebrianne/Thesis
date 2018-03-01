@@ -167,26 +167,26 @@ The beam structure of the ILC consists of bunch-trains separated by around 200 m
 
 \subsection{Detectors}
 
-The physics program of the ILC is quite ambitious as described in section \ref{sec:ILC_Physics}. The requirements of the program must be fulfilled by the ILC detectors over the full energy range of the ILC. In order to realize the program, significant advances in detector performance are essential and many technological challenges must be overcome.
+The extensive ILC physics program (see section \ref{sec:ILC_Physics}) drives the requirements on the ILC detectors. In order to realize the physics program, significant advances in detector performance are essential and many technological challenges must be overcome.
 
-At the ILC, many physics processes have a hadronic jet final state. The requirement on the jet energy resolution at the ILC is driven by the separation of W and Z di-jet final states which is around 3-4\%. The current state of the art detectors do not fulfilled this requirement. The \textit{Particle Flow} approach (see section \ref{sec:PFA}) is an alternative method to traditional calorimetry that allows for better jet energy resolution. The Particle flow reconstruction requires a highly efficient tracking system and highly granular calorimeters.
+At the ILC, many physics processes have a hadronic jet final state. The requirement on the relative jet energy resolution at the ILC is driven by the separation of W and Z di-jet final states which is around 3-4\%. The current state of the art detectors can not fulfill this requirement. The \textit{Particle Flow} approach (see section \ref{sec:PFA}) is an alternative method to traditional calorimetry that allows for better jet energy resolution. The Particle flow reconstruction requires a highly efficient tracking system and highly granular calorimeters.
 
-At the ILC, it is planned to have two general purpose detector experiments sharing the interaction region in a push-pull configuration. One detector occupies the IR while the other detector is parked in the detector hall. Both detectors can be moved in and out of the IR periodically every few weeks.
+At the ILC, two general purpose detector experiments are sharing the interaction region in a push-pull configuration. One detector occupies the IR while the other detector is parked in the detector hall. Both detectors can be moved in and out of the IR periodically every few weeks.
 
-The requirements imposed by the physics program for the ILC detectors are \cite{ILC_TDR_Vol4}:
+The requirements imposed by the physics program to the ILC detectors are \cite{ILC_TDR_Vol4}:
 \begin{itemize}
-  \item Jet energy resolution $\sigma_{E}/E$ between 3-4\% for 100 GeV jets.
-  \item Track momentum resolution $\sigma_{p}/p^2$ below $5 \times 10^{-5}$ GeV$^{-1}$.
-  \item Impact parameter resolution below \SI{5}{\micro\meter} $\oplus$ \SI{10}{\micro\meter}/p(GeV/c) $sin^{3/2}(\theta)$ for excellent flavor tagging.
-  \item Low angle coverage.
+  \item A relative jet energy resolution $\sigma_{E}/E$ between 3\% to 4\% for 100 GeV jets.
+  \item A track momentum resolution $\sigma_{p}/p^2$ below $5 \times 10^{-5}$ GeV$^{-1}$.
+  \item An impact parameter resolution below \SI{5}{\micro\meter} $\oplus$ \SI{10}{\micro\meter}/p(GeV/c) $sin^{3/2}(\theta)$ for an excellent flavor tagging (efficiency above 60\% for b jets).
+  \item A low angle coverage for hermiticity.
 \end{itemize}
 
-Two detector concepts are being developed for the ILC, the \textit{Silicon Detector} (\acrshort{sid}) and the \textit{International Large Detector} (\acrshort{ild}). They are designed to fulfilled the requirements of the ILC physics program. In the following section, the ILD and SiD detector concepts will be briefly described.
+Two detector concepts being developed for the ILC are respectively the \textit{Silicon Detector} (\acrshort{sid}) and the \textit{International Large Detector} (\acrshort{ild}). They are designed to fulfill the above requirements. In the following section, the ILD and SiD detector concepts will be briefly described.
 
 \section{The International Large Detector (ILD)}
 \label{sec:ILD}
 
-The ILD detector is a multi-purpose detector. The tracking system and the calorimeter systems are both located within a supra-conducting solenoid magnet of 3.4 m radius providing a field of 3.5 T parallel to the beam axis. Schematics of the ILD detector can be seen in figure \ref{fig:ILD}.
+The ILD detector is a multi-purpose detector. The tracking system and the calorimeter systems are both located within a superconducting solenoid magnet of 3.4 m radius providing a field of 3.5 T parallel to the beam axis. Schematics of the ILD detector is shown in figure \ref{fig:ILD}.
 
 \begin{figure}[htbp!]
   \centering
@@ -194,15 +194,21 @@ The ILD detector is a multi-purpose detector. The tracking system and the calori
   \caption{Schematic view of the International Large Detector. \cite{ILC_TDR_Vol4}} \label{fig:ILD}
 \end{figure}
 
+\subsection{ILD Coordinate System}
+
+The ILD coordinate system \cite{ILDCoordinates} is a right-handed Cartesian system with its origin at the nominal ILC interaction point. The z-axis is along the beam direction such as the z-component of the electron beam momentum is positive $p^-_z > 0$. The y-axis is pointing upwards. The x-axis then completes the Cartesian right-handed system.
+
 \subsection{ILD Tracking System}
 
-The ILD tracking system is composed of multiple sub-detectors. A vertex detector is located near the beam pipe surrounded by the main tracker, a Time Projection Chamber. Additionally, this is supplemented by few layers of silicon tracker. Each subsystem is briefly described in the following.
+The ILD tracking system is composed of multiple sub-detectors. A vertex detector (\acrshort{vtx}) is located near the beam pipe surrounded by the main tracker, a Time Projection Chamber (\acrshort{tpc}). Additionally, this is supplemented by few layers of silicon tracker between the VTX and the TPC and between the TPC and the calorimeters. Each subsystem is briefly described in the following.
 
 \subsubsection{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT)}
 
 The vertex detector needs to fulfill the requirements of the ILC physics program by delivering an excellent flavor tagging performance of heavy quarks.
 
-The ILD Tracking system consists of a multi-layer pixel vertex detector (\acrshort{vtx}) at the innermost part, at around 1.6 cm of the beam pipe. Different geometries are proposed, a three double layer or a five single layer silicon pixel geometry. Additionally, two layers of silicon strip detector (\acrshort{sit}) are placed around the vertex detector to close the gap between the VTX and the \textit{Time Projection Chamber} (\acrshort{tpc}). In the forward region, silicon pixel disks and silicon strip disks (\acrshort{ftd}) are installed to provide coverage at track low angles.
+The ILD Tracking system consists of a multi-layer pixel vertex detector at the innermost part, at around 1.6 cm of the beam pipe. Different geometries are proposed, a three double layer or a five single layer silicon pixel geometry. Additionally, two layers of silicon strip detector (\acrshort{sit}) are placed around the vertex detector to fill the gap between the VTX and the \textit{Time Projection Chamber} as well as two other layers of silicon strip detector (\acrshort{set}) are installed between the TPC and the calorimeters.
+
+In the forward region, silicon pixel disks and silicon strip disks (\acrshort{ftd}) are installed to provide tracking at low angles. Between the TPC endplate and the calorimeter endcaps, two silicon strip layers (\acrshort{etd}) are installed to improve tracking performance and to provide redundancy between the main tracking volume and the calorimeters.
 
 The VTX offers position hit resolutions of less than \SI{6}{\micro\meter} \cite{ILC_TDR_Vol4} with a very low material budget of 0.15\% $X_0$ per layer. The SIT and FTD pixel detectors offer similar position hit resolutions with a material budget of 0.65\% $X_0$.
 
@@ -210,7 +216,7 @@ While the technology has not been decided yet, several technologies are studied:
 
 \subsubsection{Time Projection Chamber (TPC)}
 
-The main feature of the ILD tracking system is a large TPC providing more than 200 points per track, covering from 330 mm to 1808 mm in radius. The TPC uses the fact that a particle traversing the gas inside the TPC, ionize it along its trajectory. The free electrons are then drifting towards the endcaps (endplates) by an electric field parallel to the beam axis. The endplate detects the ionization electrons by a \textit{Gas Electron Multiplier} (\acrshort{gem}) \cite{Sauli:1997qp} or a \textit{Micro-Mesh Gaseous Structure} (\acrshort{micromegas}) \cite{Giomataris:1995fq} readout system.
+The main feature of the ILD tracking system is a large TPC providing more than 200 points per track, covering from 330 mm to 1808 mm in radius. The TPC consists of a gas sensitive volume that serves as detection medium. When a charged particle traverses the TPC, it ionizes the gas along its path. The free electrons produced via ionization are drifting towards the endplates of the TPC by applying an electric field parallel to the beam axis. The endplate detects the drifting electrons by a \textit{Gas Electron Multiplier} (\acrshort{gem}) \cite{Sauli:1997qp} or a \textit{Micro-Mesh Gaseous Structure} (\acrshort{micromegas}) \cite{Giomataris:1995fq} readout system. These technologies provides the amplification of the drifting electrons and gives a two-dimensional position information.
 
 The spatial resolution of the TPC is better than \SI{100}{\micro\meter} \cite{Mueller:301339} and also offer a double hit resolution in the order of less than 2 mm in $r\phi$. This resolution is worse than what silicon tracking can offer but the TPC presents the advantage of a very low material budget, continuous tracking and excellent reconstruction of the non-pointing tracks (Kinks) from multiple scattering. In addition, the TPC offers the possibility of particle identification via the specific energy loss $\frac{dE}{dx}$ (see subsection \ref{sec:PartInter}) with a resolution of around 5\%.
 

@@ -26,10 +26,11 @@
 \contentsline {subsection}{\numberline {2.2.1}General Overview}{16}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Detectors}{18}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}The International Large Detector (ILD)}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}ILD Tracking System}{19}{subsection.2.3.1}
-\contentsline {subsubsection}{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT)}{19}{section*.21}
+\contentsline {subsection}{\numberline {2.3.1}ILD Coordinate System}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}ILD Tracking System}{19}{subsection.2.3.2}
+\contentsline {subsubsection}{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT)}{20}{section*.21}
 \contentsline {subsubsection}{Time Projection Chamber (TPC)}{20}{section*.22}
-\contentsline {subsection}{\numberline {2.3.2}ILD Calorimeter System}{20}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}ILD Calorimeter System}{20}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}The SiD Detector}{21}{section.2.4}
 \contentsline {section}{\numberline {2.5}The Compact Linear Collider (CLIC)}{21}{section.2.5}
 \contentsline {chapter}{\numberline {3}Calorimetry and the Particle Flow Concept}{23}{chapter.3}
