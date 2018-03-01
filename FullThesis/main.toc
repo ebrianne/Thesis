@@ -87,7 +87,6 @@
 \contentsline {subsection}{\numberline {6.2.3}Adjustment of the ADC dynamic range}{62}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Threshold scan}{63}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Noise Measurement in the AHCAL}{65}{section.6.3}
-\contentsline {section}{\numberline {6.4}Conclusion}{66}{section.6.4}
 \contentsline {chapter}{\numberline {7}AHCAL Testbeam setup \& Event Selection}{67}{chapter.7}
 \contentsline {section}{\numberline {7.1}Testbeam Configuration}{67}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Beamline Setup}{67}{subsection.7.1.1}

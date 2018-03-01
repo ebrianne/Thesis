@@ -183,7 +183,7 @@ The SPIROC (SiPM Integrated Read-Out Chip) \cite{5401891} is a dedicated ASIC to
 
 The SPIROC ASIC is developed by the OMEGA group \cite{OmegaWeb} to fulfill the AHCAL requirements. The SPIROC provides the readout for 36 SiPM channels capable to measure the charge and time for each channel. Each channel is equipped with a capacitor-array, called memory-cells, with a depth of 16 events to store the charge and time measurement. A 12-bit Wilkinson ADC is used to digitize the charge and time measurement stored in the capacitor array. The digitized signal is then stored into a RAM buffer.
 
-Each channel can be tuned in bias voltage with a 8-bit Digital to Analog Converter (\acrshort{dac}) corresponding to a voltage range between -4.5V and 0V. Each channel, has a configurable low-noise charge pre-amplifier gain to operate in high gain or low gain to cover a high dynamic range between 1 to several thousand photoelectrons.
+Each channel can be tuned in bias voltage with a 8-bit Digital to Analog Converter (\acrshort{dac}) corresponding to a voltage range between -4.5V and 0V. Each channel, has a configurable low-noise charge pre-amplifier gain (between 100 fF to 1500 fF) operating in high gain or low gain to cover a high dynamic range between 1 to several thousand photoelectrons.
 
 The time measurement is digitized using a 12-bit Time to Digital Converter (TDC). The TDC is a voltage ramp with a designed resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}).
 

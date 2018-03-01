@@ -12,7 +12,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces List of the different SiPMs used in the CALICE AHCAL in July 2015.\relax }}{60}{table.caption.60}
 \contentsline {table}{\numberline {6.2}{\ignorespaces List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$.\relax }}{61}{table.caption.61}
-\contentsline {table}{\numberline {6.3}{\ignorespaces List of targeted gains for each layer.\relax }}{62}{table.caption.63}
+\contentsline {table}{\numberline {6.3}{\ignorespaces List of the targeted gains for each layer type.\relax }}{63}{table.caption.63}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{\ignorespaces List of channels with the injected trigger signal to be used as time reference.\relax }}{70}{table.caption.71}
 \contentsline {table}{\numberline {7.2}{\ignorespaces List of runs taken at SPS in July 2015.\relax }}{71}{table.caption.72}
