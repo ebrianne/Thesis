@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: title.aux
@@ -10,10 +10,11 @@ A level-1 auxiliary file: chap2/chap2_PFA.aux
 A level-1 auxiliary file: chap3/chap3_CALICE_Detectors.aux
 A level-1 auxiliary file: chap4/chap4_AHCAL_Simulations.aux
 A level-1 auxiliary file: chap4/chap4_AHCAL_Commi.aux
-A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part1.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Selection.aux
 A level-1 auxiliary file: chap5/chap5_AHCAL_EnergyCalib.aux
-A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part2.aux
-A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_part3.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Calib.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Valid.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Pions.aux
 A level-1 auxiliary file: chap6/chap6_intro.aux
 A level-1 auxiliary file: chap6/chap6_ILD.aux
 A level-1 auxiliary file: chap6/chap6_conclusion.aux
@@ -32,14 +33,12 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: oath.aux
 Database file #1: biblio.bib
 Warning--entry type for "ILCSoftPortal" isn't style-file defined
---line 93 of file biblio.bib
+--line 47 of file biblio.bib
 Warning--entry type for "OmegaWeb" isn't style-file defined
---line 787 of file biblio.bib
-Warning--entry type for "GithubTB" isn't style-file defined
---line 797 of file biblio.bib
+--line 394 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
---line 859 of file biblio.bib
-Repeated entry---line 2443 of file biblio.bib
+--line 430 of file biblio.bib
+Repeated entry---line 1222 of file biblio.bib
  : @article{Chatrchyan:2012xdj
  :                            ,
 I'm skipping whatever remains of this entry
@@ -83,42 +82,41 @@ Warning--empty journal in CALICESoft
 Warning--empty year in CALICESoft
 Warning--empty booktitle in kB:IEEE
 Warning--empty year in kB:IEEE
-Warning--empty journal in Ete:2291805
 Warning--empty journal in Li2013
 Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 154 entries,
+You've used 152 entries,
             1876 wiz_defined-function locations,
-            1392 strings with 31042 characters,
-and the built_in function-call counts, 35831 in all, are:
-= -- 3402
-> -- 1370
+            1385 strings with 30926 characters,
+and the built_in function-call counts, 35579 in all, are:
+= -- 3384
+> -- 1358
 < -- 0
-+ -- 535
-- -- 381
-* -- 2279
-:= -- 5052
-add.period$ -- 162
-call.type$ -- 154
-change.case$ -- 145
++ -- 530
+- -- 378
+* -- 2263
+:= -- 5018
+add.period$ -- 161
+call.type$ -- 152
+change.case$ -- 143
 chr.to.int$ -- 0
-cite$ -- 199
-duplicate$ -- 2103
-empty$ -- 3512
-format.name$ -- 381
-if$ -- 8890
+cite$ -- 196
+duplicate$ -- 2091
+empty$ -- 3479
+format.name$ -- 378
+if$ -- 8829
 int.to.chr$ -- 0
-int.to.str$ -- 154
-missing$ -- 138
-newline$ -- 487
-num.names$ -- 149
-pop$ -- 608
+int.to.str$ -- 152
+missing$ -- 137
+newline$ -- 481
+num.names$ -- 148
+pop$ -- 597
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1384
+skip$ -- 1374
 stack$ -- 0
 substring$ -- 1637
 swap$ -- 823
@@ -126,8 +124,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 45
-while$ -- 276
-width$ -- 157
-write$ -- 1407
+warning$ -- 44
+while$ -- 275
+width$ -- 155
+write$ -- 1395
 (There was 1 error message)
