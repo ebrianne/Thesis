@@ -121,7 +121,7 @@ As the quality of SiPMs has increased drastically in the last few years, the nee
   \end{tabular}
 \end{table}
 
-\subsection{First characterization of the gain}
+\subsection{First characterization of the SiPM gain}
 \label{subsec:GainCharac}
 
 In this section, the SiPM gain is related to the ADC value between the two first peaks of a single pixel spectrum where individual pixels, in a relatively small number ($\sim$10-15 pixels), are fired by an integrated LED system. This value is proportional to the high voltage applied to the SiPM and can be also modified by adjusting a feedback capacitor of the SPIROC2B high gain pre-amplifier.
@@ -146,7 +146,8 @@ Only channels where the integral of the curve is above 6000 are chosen. This is 
 
 After this, a first characterization of the gain can be done at nominal settings using a pre-amplifier value of 100 fF. For this, all channels are illuminated by the integrated LED system with a certain range of LED voltage in steps of 100 mV in order to characterize all channels due to variations in response due to LED light, tiles, SiPM. For layers 4 to 11, a range of 10-15 voltages are needed. Due to improvements in the integrated LED calibration system design, SiPM quality and tile quality, a much smaller range can be used (3-5 voltages) for the layers 3 and 12 to 14. A typical example of a single pixel spectrum at 100 fF can be seen in figure \ref{fig:Gain100fF}.
 
-\subsection{Adjustment of the ADC dynamic range}
+\subsection{Adjustment of the SiPM gain}
+\label{sec:AdjustGain}
 
 The goal of this procedure is to fit the dynamic range of the SPIROC2B in ADC to the number of pixels on the SiPM to avoid any ADC saturation before SiPM saturation. ADC saturation would mean that information is lost and as well that the full range of pixels on the SiPM would be not used. This calculation is still approximate due to several unknown variables such as the number of effective pixels of a SiPM and the calibration factor between the high gain and the low gain for each channel called the intercalibration factor but this procedure gives a good order of magnitude for the target gain.
 

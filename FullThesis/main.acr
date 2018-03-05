@@ -13,7 +13,7 @@
 \glossentry{bga}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{63}}}%
 \glossentry{bxid}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{99}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{107}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossentry{calice}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{39\delimN 40}}}%
@@ -40,7 +40,7 @@
 \glossentry{fcc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossentry{fhi}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{116}}}%
+		\setentrycounter[]{page}\glsnumberformat{124}}}%
 \glossentry{fpccd}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossentry{fpga}{\glossaryentrynumbers{\relax 
@@ -80,7 +80,7 @@
 \glossentry{pfa}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{35}}}%
 \glossentry{pfo}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{134}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{142}}}\glsgroupskip
 \glsgroupheading{Q}\relax \glsresetentrylist %
 \glossentry{qcd}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3}}}%

@@ -82,6 +82,8 @@ In the following analysis, the time reference signals T$_{12}$, T$_{13}$ and T$_
 
 \section{Dataset and Event Selection}
 
+The selections presented in this section are based on simulated data. To ensure a proper simulation, a careful validation of the simulation has been performed. The validation of the simulation can be seen in appendix \ref{appendix:SimulationVal}.
+
 \subsection{Dataset}
 \label{subsec:dataset}
 
@@ -109,7 +111,7 @@ The table \ref{table:dataruns} sums up the dataset taken. The number of events s
 \subsection{MIP Pre-selection}
 \label{subsec:Muon_presel}
 
-A clean selection of MIP tracks is needed in order to obtain and cross-check the MIP calibration (see chapter \ref{chap:ECalibAHCAL}) at a single cell level. A simple pre-selection was performed on the muon sample designed to select effectively MIP-like particles going through the AHCAL. In a second step, a track selection was performed to retain only MIP-like particle as explained in section \ref{subsec:Muon_sel}.
+A clean selection of MIP tracks is needed in order to obtain and cross-check the MIP calibration (see chapter \ref{chap:ECalibAHCAL}) and as well performing the timing calibration of the detector (see chapter \ref{chap:TimingCalib}) at a single cell level. A simple pre-selection was performed on the muon sample designed to select effectively MIP-like particles going through the AHCAL. In a second step, a track selection was performed to retain only MIP-like particle as explained in section \ref{subsec:Muon_sel}.
 
 The pre-selection is based on the energy weighted center of gravity along the z-axis $cog_Z = \frac{\Sigma{i} E_i z_i}{\Sigma_{i} E_i}$ and the number of hits $n_{Hits}$. A MIP-like particle should, in principle, deposit the same energy in each layer of the calorimeter thus $cog_Z$ should be roughly centered in the calorimeter in the z coordinate. In addition, the number of hits should be around 1 per layer for a MIP-like particle plus the number of noise hits expected in the detector, therefore explaining a cut at $n_{Hits} = 20$.
 
@@ -128,7 +130,7 @@ The muon runs were taken first at 50 GeV then more runs at the end of the campai
 
 The MIP selection was designed to efficiently select muons and reject late pion showers. For this, a MIP track finder has been developed based on pre-existing work \cite{Hartbrich:2016bbz}. The algorithm selects AHCAL towers of hits in the same $x:y$ position and it rejects AHCAL towers that contains less than a certain number of hits. In order to select muons or punch-through pions, a straight track of at least 7 hits is required in the whole AHCAL. This assumes that the calorimeter was perfectly perpendicular to the beam, therefore any tilted tracks would be missed. In addition, to reject late pion showers, no more than 2 hits are allowed per layer to account for some flexibility with noise hits.
 
-The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 150 GeV muons, electrons and pions after pre-selection. The MIP track finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part for layers 11 to 14 in order to calibrate the outer channels of these layers.
+The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 150 GeV muons, electrons and pions after pre-selection. The MIP track finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part for layers 11 to 14 (Outer BL) in order to calibrate the outer channels of these layers.
 
 The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pions. The selection reduces further the pion contamination and the remaining pion fraction is compatible with the fraction of pions traversing the AHCAL without hard interaction by calculation. A detailed overview of the MIP selection is given in table \ref{table:muon_sel}.
 
@@ -136,25 +138,25 @@ The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pi
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsLayer_Muons}
-		\caption{Number of hits in a layer normalized to the number of events.} \label{fig:Muons_Track_nHitsLayer}
+		\caption{} \label{fig:Muons_Track_nHitsLayer}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsTrack_Muons}
-		\caption{Number of hits in a track normalized to the number of events.} \label{fig:Muons_Track_nHits}
+		\caption{} \label{fig:Muons_Track_nHits}
 	\end{subfigure}
-	\caption{\subref{fig:Muons_Track_nHitsLayer}) Distribution of number of hits in a layer for simulated muons, electrons and pions at 50 GeV. The black line represents the cut of the maximum allowed number of hits in a layer applied for the MIP selection. \subref{fig:Muons_Track_nHits}) Distribution of the number of hits in a track for simulated muons, electrons and pions at 50 GeV. A Tower size of 7 for the inner detector and 2 for the outer big layers was chosen.}
+	\caption{\subref{fig:Muons_Track_nHitsLayer}) Distribution of number of hits in a layer normalized to the number of events for simulated muons, electrons and pions at 50 GeV. The black line represents the cut of the maximum allowed number of hits in a layer applied for the MIP selection. \subref{fig:Muons_Track_nHits}) Distribution of the number of hits in a track normalized to the number of events for simulated muons, electrons and pions at 50 GeV. A AHCAL tower size cut of 7 hits for the inner 12 $\times$ 12 tiles and a AHCAL tower size of 2 hits for the layers 11 to 14 on the outer tiles (Outer BL) were chosen.}
 \end{figure}
 
 \subsection{Electron Selection}
 \label{subsec:elec_sel}
 
-The electron selection is done to simply extract single electron showers contained in the AHCAL. These events are needed in order to validate the timing behavior in simulation as well as the detector simulation model. It is important to have a clean sample of electrons to cross-check the timing calibration. For the selection, an \textit{Event Quality} pre-selection is done using the beam instrumentation and layer information. Only events with a Cherenkov tag (only applied to data) are used and the energy in the three first layers of the AHCAL ($E_3+E_4+E_5$) must be over 10 MIP. Distributions of the energy in the three first layer of the AHCAL for simulated 10 and 50 GeV muons, electrons and pions can be seen in figures \ref{fig:e10GeV_E3} and \ref{fig:e50GeV_E3}.
+The electron selection is done to extract single electron showers contained in the AHCAL. These events are needed in order to validate the timing behavior in simulation as well as the detector simulation model as explained in chapter \ref{chap:TimingValidation}. It is important to have a clean sample of electrons to cross-check the timing calibration. For the selection, an \textit{Event Quality} pre-selection is done using the beam instrumentation and layer information. Events with a Cherenkov tag (only applied to data) are used and the energy in the three first layers of the AHCAL ($E_3+E_4+E_5$) must be over 10 MIPs. The distributions of the energy in the three first layer of the AHCAL for simulated 10 and 50 GeV muons, electrons and pions can be seen in figures \ref{fig:e10GeV_E3} and \ref{fig:e50GeV_E3}.
 
-In a next step, the electron selection is performed. Due to the number of unusable layers especially the front ECAL layers (see section \ref{subsec:ScECAL}) and the fact that the detector is not fully equipped, an alternative selection, in contrary to use a shower start finder, needed to be performed to effectively select electrons. As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z < 250 mm$) can be done. This does not induce any bias for a timing analysis, just would only reduce the event statistics.
+In a next step, the electron selection is performed. Due to the number of unusable layers especially with the front ECAL layers (see section \ref{subsec:ScECAL}) and the fact that the detector is not fully equipped, an alternative selection needed to be performed to effectively select electrons. As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z < 250 mm$) can be done. This does not induce any bias for a timing analysis, it would only reduce the event statistics.
 
-To ensure a complete containment of the shower and a rejection of possible pion showers, an additional cut on the energy fraction deposited in the last two layers ($(E_{13}+E_{14})/\Sigma E$) is done and required to be under 1\%. Distributions of each variables used in the selection are shown in figures \ref{fig:electronselection} for simulated 10 GeV and 50 GeV muons, electrons and pions. Due to the restriction on the number of hits per event, the cuts are energy dependent. Additionally, to reduce transverse leakage, the shower center of gravity in X and Y needs to be within -90 mm and 90 mm. This cut is wider than the trigger scintillator but has no significant impact.
+To ensure a complete containment of the shower and a rejection of possible pion showers, an additional cut on the energy deposited in the last two layers relative to the energy deposited in the calorimeter ($(E_{13}+E_{14})/\Sigma E$) is done and is required to be under 1\%. The distributions of each variables used in the selection are shown in figures \ref{fig:electronselection} for simulated 10 GeV and 50 GeV muons, electrons and pions. Due to the restriction on the number of hits per event, the cuts are energy dependent. Additionally, to reduce transverse leakage, the shower center of gravity in X and Y needs to be within -90 mm and 90 mm. This cut is wider than the trigger scintillator but has no significant impact.
 
 The selection cuts are summarized in table \ref{table:electron_sel} for each energy. The selection efficiencies for beam energies between 10 and 50 GeV are shown in table \ref{table:eff_electron} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
 
@@ -163,16 +165,16 @@ The selection cuts are summarized in table \ref{table:electron_sel} for each ene
 	\caption{Efficiency of the electron selection for simulated electrons, muons and pions for energies between 10 and 50 GeV.}
 	\label{table:eff_electron}
 	\begin{tabular}{@{} llll @{}}
-		\hline
+		\toprule
 		\textbf{Beam Energy} & \textbf{$\epsilon_{\mu}$} & \textbf{$\epsilon_{e}$} & \textbf{$\epsilon_{\pi}$}\\
-		\hline
+		\midrule
 		10 GeV & <0.1\% & 96\% & 15.9\%\\
 		15 GeV & <0.1\% & 95.7\% & 10.1\%\\
 		20 GeV & <0.1\% & 95.2\% & 6.3\%\\
 		30 GeV & <0.1\% & 93.9\% & 2.3\%\\
 		40 GeV & <0.1\% & 92.7\% & 1.2\%\\
 		50 GeV & <0.1\% & 91.5\% & 1.1\%\\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
 
@@ -214,13 +216,17 @@ One can notice that a significant fraction of pions is present at low beam energ
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyLastLayers_50GeV}
 		\caption{50 GeV.} \label{fig:e50GeV_Elast}
 	\end{subfigure}
-	\caption{Distribution of the variables used in the electron selection of simulated electron and pion beams between 10 and 50 GeV. The muons are simulated at 50 GeV only. These plots were used to determine the best selection criteria for electrons.} \label{fig:electronselection}
+	\caption{Distribution of the variables used in the electron selection of simulated electron and pion beams between 10 and 50 GeV. The muons are simulated at 50 GeV. These plots were used to determine the best selection criteria for electrons.} \label{fig:electronselection}
 \end{figure}
 
 \subsection{Pion Selection}
 \label{sec:pionsel}
 
-A simple selection is performed on pion events. The goal is to reject punch-through pions, muons and possible electron contamination. An \textit{Event Quality} pre-selection is performed utilizing the Cherenkov information, events with no Cherenkov ON are selected. This is only applied to data. The pion selection is based on the same variables: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$). The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the selection on the start of the pion shower. To ensure that the pion showered, the energy in the last two layers of the AHCAL must be over 1\%. And finally, to mitigate possible particle contamination from electrons, the number of hits in the two first AHCAL layer must be under 5. The distributions of each variable used in the selection are shown in figures \ref{fig:pionselection} for simulated 10 GeV and 90 GeV muons, electrons and pions. The selection efficiencies for beam energies between 10 and 90 GeV are shown in table \ref{table:eff_pion} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
+The goal of the pion selection is to reject punch-through pions, muons and possible electron contamination as these events would be instantaneous (see section \ref{sec:TimeDevShowers}). An \textit{Event Quality} pre-selection is performed using the Cherenkov information. The events without a Cherenkov tag are selected. This is only applied to data. The pion selection is based on the same variables as the electron selection: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$).
+
+The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the selection on the start of the pion shower. To ensure that the pion showered, the energy in the last two layers of the AHCAL must be over 1\%. And finally, to mitigate possible particle contamination from electrons, the number of hits in the two first AHCAL layer must be under 5.
+
+The distributions of each variable used in the selection are shown in figures \ref{fig:pionselection} for simulated 10 GeV and 90 GeV muons, electrons and pions. The selection efficiencies for beam energies between 10 and 90 GeV are shown in table \ref{table:eff_pion} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
 
 \begin{figure}[htbp!]
 	\centering
@@ -228,8 +234,11 @@ A simple selection is performed on pion events. The goal is to reject punch-thro
 	\caption{Multi-particle event in the 50 GeV pion data sample. The color represents the time of the hit.} \label{fig:DoubleParticleEvent}
 \end{figure}
 
-Moreover, after a long investigation, multiple particle events were observed in the data as shown in figure \ref{fig:DoubleParticleEvent}. As no beam instrumentation could be utilized for rejecting these events, a simple rejection method based on time clusters was developed. All hits per event are placed and ordered in time in a vector. For each hit after 50 ns, a window of 30 ns is looked after and the number of hits in that window is counted. If the number of hits is over 5, it is counted as a late cluster. The event is rejected if the number of late clusters is over zero. This method works because if an event has several particles, the time reference of the event is generated by the first particle, in this case, the second particle will have all the hits late relative to the time reference and thus the event will be rejected with this method. The method was based on data in order to remove efficiently multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions.
-These multi-particle events are greatly suppressed in data using this method but due to the calorimeter not being fully equipped, some contamination may remain in the data.
+In addition, after a long investigation, multiple particle events were observed in the data as shown in figure \ref{fig:DoubleParticleEvent}. As no beam instrumentation could be used for rejecting these events, a rejection method based using time information was developed.
+
+This method is the following: all the hits in an event are placed and ordered in time; Then for each hit after 50 ns, a timing window of 30 ns is looked after and the number of hits in that window is counted. If the number of hits is over 5, it is counted as a \textit{late cluster}. The event is rejected if there is at least one late cluster. This method works because if an event has several particles, the time reference of the event is generated by the first particle. Therefore, the second particle will have all the hits late relative to the time reference and thus the event will be rejected with this method.
+
+The method was based on data in order to remove efficiently multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions. These multi-particle events are greatly suppressed in data using this method but due to the calorimeter not being fully equipped, some contamination may remain in the data.
 
 A detailed description of the selection cuts are shown in table \ref{table:pion_sel}.
 
@@ -238,15 +247,15 @@ A detailed description of the selection cuts are shown in table \ref{table:pion_
 	\caption{Efficiency of the pion selection for beam energies between 10 and 90 GeV.}
 	\label{table:eff_pion}
 	\begin{tabular}{@{} llll @{}}
-		\hline
+		\toprule
 		\textbf{Beam Energy} & \textbf{$\epsilon_{\mu}$} & \textbf{$\epsilon_{e}$} & \textbf{$\epsilon_{\pi}$}\\
-		\hline
+		\midrule
 		10 GeV & <0.1\% & <0.1\% & 29.9\%\\
 		30 GeV & 0.9\% & <0.1\% & 50.3\%\\
 		50 GeV & 0.9\% & <0.1\% & 51.1\%\\
 		70 GeV & 0.9\% & <0.1\% & 51\%\\
 		90 GeV & 0.9\% & <0.1\% & 50.2\%\\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
 
@@ -286,20 +295,22 @@ A detailed description of the selection cuts are shown in table \ref{table:pion_
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV}
 		\caption{90 GeV.} \label{fig:pi90GeV_Elast}
 	\end{subfigure}
-	\caption{Plots of simulated muon, electron and pion beams between 10 and 90 GeV. Theses plots were used to determine the best selection criterium for pions.} \label{fig:pionselection}
+	\caption{Distribution of the variables used in the pion selection for simulated muon, electron and pion beams between 10 and 90 GeV. Theses plots were used to determine the best selection criteria for pions.} \label{fig:pionselection}
 \end{figure}
 
-In appendix \ref{appendix:SimulationVal}, more distributions are available to show the agreement between data and simulations for muons, electrons and pions.
-
 \subsection{Chip rejection}
+\label{sec:ChipRejection}
 
-For each type of data analyzed, a careful check of each chip has been performed. For all the data collected, the layer 11 is rejected. For the muon data, only a single chip (157) shows a strange behavior likely because the IDACs on this chip were broken.
+A careful check of each chip has been performed to reject any outlier. For all the data collected, the layer 11 is rejected due to a likely problem with the electronics (see section \ref{subsec:slope_calib}). For the muon data, a single chip (157) shows a strange behavior likely because the input DAC on this chip is broken resulting in an unstable voltage applied to the SiPM.
 
-For the electron data, a relative fraction of hits $r$ following the equation \ref{eq:fraction_rejection} was looked at. If this fraction $r$ is below 98\%, the chip is rejected. This means that most of the hits in the event are in the core of the distribution between -50 and 50 ns. With this method, 20 chips are rejected.
+For the electron data, a relative fraction of hits $r$ following the equation \ref{eq:fraction_rejection} was used to determine bad behaving chips. If this fraction $r$ is below 98\%, the chip is rejected. This means that most of the hits in the event are outside of the core of the distribution between -50 and 50 ns. With this method, 20 chips are rejected.
 \begin{equation} \label{eq:fraction_rejection}
 	r = \frac{1}{N} \left|\int_{50 ns}^{200 ns} \frac{dN(t)}{dt} dt - \int_{-200 ns}^{50 ns} \frac{dN(t)}{dt} dt\right|
 \end{equation}
-For the pion data, applying the same method as for electrons is not possible due to the late tail related to delayed energy deposition from neutrons. The same chips as for electrons were rejected but additionally, each chip time distribution after correction were manually checked and chips presenting an abnormal shape were discarded. This way additionally 16 chips are rejected. This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
+
+For the pion data, applying the same method as for electrons is not possible due to a late tail to higher time related to delayed energy depositions from neutrons. The same chips as for electrons were rejected but in addition, each chip time distribution after correction were manually checked. The chips that presented an abnormal shape such as double peaks were discarded. Hence, 16 chips are additionally rejected.
+
+This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -313,5 +324,11 @@ For the pion data, applying the same method as for electrons is not possible due
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149.pdf}
 		\caption{.} \label{fig:ExBadChip}
 	\end{subfigure}
-	\caption{\subref{fig:FracRejChip}) Distribution of the fraction of hits between -50 and 50 ns for 50 GeV electrons. Each entry corresponds to a chip. The red line represent the cut applied to reject bad chips. \subref{fig:ExBadChip}) Example of a bad chip that is rejected with this method (Chip 149).}
+	\caption{\subref{fig:FracRejChip}) Distribution of the fraction of hits between -50 and 50 ns for 50 GeV electrons. Each entry corresponds to a chip. The red line represent the cut applied to reject bad chips. \subref{fig:ExBadChip}) Example of a typical bad chip that is rejected with this method (Chip 149).}
 \end{figure}
+
+\begin{center}
+  \rule{0.5\textwidth}{.4pt}
+\end{center}
+
+In this chapter, the dataset used for this thesis, the selection criteria for each type of data and the rejection criteria have been presented. Before performing the timing analysis of the recorded data and to do a meaningful comparison of the results to simulations, accurate data calibration factors and a realistic AHCAL simulation model is essential. Therefore, in the next chapter, the energy scale calibration of the AHCAL prototype is presented.
