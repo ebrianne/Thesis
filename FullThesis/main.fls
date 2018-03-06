@@ -682,16 +682,6 @@ INPUT ./chap2/fig/elossfrac_06-eps-converted-to.pdf
 INPUT ./chap2/fig/elossfrac_06-eps-converted-to.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT ./chap2/fig/encrit_cu.eps
-INPUT ./chap2/fig/encrit_cu.eps
-INPUT ./chap2/fig/encrit_cu.eps
-INPUT ./chap2/fig/encrit_cu.eps
-INPUT ./chap2/fig/encrit_cu-eps-converted-to.pdf
-INPUT ./chap2/fig/encrit_cu-eps-converted-to.pdf
-INPUT ./chap2/fig/encrit_cu.eps
-INPUT ./chap2/fig/encrit_cu-eps-converted-to.pdf
-INPUT ./chap2/fig/encrit_cu-eps-converted-to.pdf
-INPUT ./chap2/fig/encrit_cu-eps-converted-to.pdf
 INPUT ./chap2/fig/sigma_both_06.pdf
 INPUT ./chap2/fig/sigma_both_06.pdf
 INPUT ./chap2/fig/sigma_both_06.pdf
@@ -707,10 +697,6 @@ INPUT ./chap2/fig/images_had-shower.png
 INPUT ./chap2/fig/images_had-shower.png
 INPUT ./chap2/fig/images_had-shower.png
 INPUT ./chap2/fig/images_had-shower.png
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fourier/futmii.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
 INPUT ./chap2/fig/PFAConcept.png
 INPUT ./chap2/fig/PFAConcept.png
 INPUT ./chap2/fig/PFAConcept.png

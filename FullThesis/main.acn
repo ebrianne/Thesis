@@ -33,9 +33,8 @@
 \glossaryentry{ECAL?\glossentry{ecal}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{HCAL?\glossentry{hcal}|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{RPC?\glossentry{rpc}|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{PDG?\glossentry{pdg}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MIP?\glossentry{mip}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{PFA?\glossentry{pfa}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{MIP?\glossentry{mip}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{PFA?\glossentry{pfa}|setentrycounter[]{page}\glsnumberformat}{34}
 \glossaryentry{CALICE?\glossentry{calice}|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{CALICE?\glossentry{calice}|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{CLIC?\glossentry{clic}|setentrycounter[]{page}\glsnumberformat}{40}
