@@ -165,7 +165,7 @@ This formula is competing with the dynamic range to measure the energy:
 \begin{equation}
   E_{max} [MIP] = \frac{ADC_{max}}{LY \times G_{target}}
 \end{equation}
-where $E_{max}$ is the maximum energy hit that can be measured in MIP and $LY$ is the light yield corresponding to the number of pixels fired by a MIP. This means that a higher target gain yields a lower maximum hit energy for a fixed light yield. For this thesis, a maximum dynamic range of around 120 MIP was chosen according to simulations. The table \ref{table:GainTarget_SiPM} sums up the assumed light yield and the target gains for each board type.
+where $E_{max}$ is the maximum energy hit that can be measured in MIP and $LY$ is the light yield corresponding to the number of pixels fired by a MIP. This means that a higher target gain yields a lower maximum hit energy for a fixed light yield. For this thesis, a dynamic range of around 120 MIP was chosen according to simulations. The table \ref{table:GainTarget_SiPM} sums up the assumed light yield and the target gains for each board type.
 
 The Ketek SiPM with 12k pixels are operated in different modes for calibration and physics data due to the very high number of pixels. The calibration mode is the operation at nominal settings of 100 fF and the physics mode is operated at the maximum pre-amplifier feedback capacitor value of 1500fF. This is needed in order to fit the SiPM dynamic range into the ADC range. A gain measurement at 1500fF is not possible with the current electronics due to very small gain (around 6-7 ADC/px), therefore an approximate intercalibration factor between both modes of around 7 has to be used later on in the energy scale calibration (see chapter \ref{chap:ECalibAHCAL}).
 

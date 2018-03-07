@@ -21,6 +21,7 @@ A level-1 auxiliary file: chap6/chap6_conclusion.aux
 A level-1 auxiliary file: summary.aux
 A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: Appendixes/EvtSelection.aux
+A level-1 auxiliary file: Appendixes/ValidationSim.aux
 A level-1 auxiliary file: Appendixes/Noise.aux
 A level-1 auxiliary file: Appendixes/ErrorTDCCalib.aux
 A level-1 auxiliary file: Appendixes/MCParamnHits.aux
@@ -88,7 +89,7 @@ Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
 You've used 153 entries,
             1876 wiz_defined-function locations,
-            1392 strings with 31053 characters,
+            1393 strings with 31081 characters,
 and the built_in function-call counts, 35896 in all, are:
 = -- 3418
 > -- 1366

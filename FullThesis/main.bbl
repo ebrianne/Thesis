@@ -332,12 +332,6 @@ P.~Schacht, ``{Software compensation for single particles and jets in the H1
   calorimeter},'' in {\em {ECFA Large Hadron Collider Workshop, Aachen,
   Germany, 4-9 Oct 1990: Proceedings.3.}}, 1990.
 
-\bibitem{SoftCompNew2012}
-{The CALICE Collaboration}, ``{Hadronic energy resolution of a highly granular
-  scintillator-steel hadron calorimeter using software compensation
-  techniques},'' {\em Journal of Instrumentation}, vol.~7, no.~09, p.~P09017,
-  2012.
-
 \bibitem{Feege:2011dsa}
 N.~Feege, {\em {Low-energetic hadron interactions in a highly granular
   calorimeter}}.
@@ -489,6 +483,12 @@ S.~Callier, F.~Dulucq, R.~Fabbri, C.~de~La~Taille, B.~Lutz, G.~Martin-Chassard,
 {The CALICE Collaboration}, ``{Analysis of low-energetic electron and pion data
   collected with the AHCAL prototype at Fermilab},'' {\em CALICE Analysis
   Note}, vol.~34, 2011.
+
+\bibitem{SoftCompNew2012}
+{The CALICE Collaboration}, ``{Hadronic energy resolution of a highly granular
+  scintillator-steel hadron calorimeter using software compensation
+  techniques},'' {\em Journal of Instrumentation}, vol.~7, no.~09, p.~P09017,
+  2012.
 
 \bibitem{Felix:ProtoAHCAL}
 F.~Sefkow, ``{Prototype tests for a highly granular scintillator-based hadron

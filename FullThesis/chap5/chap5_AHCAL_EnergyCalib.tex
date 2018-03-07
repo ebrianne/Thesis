@@ -9,6 +9,7 @@ The conversion requires a calibration of each cell of the calorimeter which is b
 In this chapter, the first section will described the procedure for the AHCAL energy scale calibration. The second section will present the results of the energy scale calibration as well as a comparison with simulation to validate the calibration. In this thesis, only the calibration of the energy scale of the detector was performed. A dedicated analysis of the performance of the detector is being performed in parallel \cite{AmbraEnergy, AmbraTokyo}.
 
 \section{Energy Calibration of the AHCAL}
+\label{sec:EnergyCalibration}
 
 As explained above, in order to have a meaningful comparison between channels of the detector, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as MIP. Therefore muon runs were recorded. As detailed in section \ref{sec:PartInter}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The conversion to the MIP energy scale for a AHCAL cell is expressed as:
 \begin{equation}
@@ -94,29 +95,8 @@ After the calibration, it is necessary to evaluate the uncertainty of the calibr
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/RelativeErrorMIP_Combined.pdf}
-	\caption{Relative error of the MIP value extracted.} \label{fig:MIPError}
+	\caption{Relative error $\frac{\Delta MIP_i}{MIP_i}$ for the 3171 detector channels in the AHCAL.} \label{fig:MIPError}
 \end{figure}
-
-\subsection{Comparison with simulation}
-
-The MIP calibration defines the energy scale for measuring energy depositions in the AHCAL. It is needed to carefully calibrate and validate the MIP calibration in data and simulation in order to get comparable results. Applying the MIP selection, it results in energy depositions of single MIP amplitudes for all channels. The comparison of the MIP spectrum for the whole AHCAL between data and simulation in figure \ref{fig:MIPData_MC} shows that the shape of the hit energy spectrum matches relatively well. The data appears slightly wider than for simulation as channel-wise mis-calibrations are not modeled in the simulation. This comparison validates the digitization of scintillator-SiPM readout calorimeters.
-
-\begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MIPPeak.pdf}
-		\caption{} \label{fig:MIPData_MC}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MPV.pdf}
-		\caption{} \label{fig:MPVData_MC}
-	\end{subfigure}
-	\caption{\subref{fig:MIPData_MC}) Hit Energy Spectra for the complete AHCAL for muon like-track hits in the data of July 2015 for both data and simulation. \subref{fig:MPVData_MC}) Distribution of fitted MPV in single channels of the AHCAL for both data and simulation.}
-\end{figure}
-
-The extraction of the MIP calibration value in data and simulation has been done for each single channels of the AHCAL. The figure \ref{fig:MPVData_MC} shows the distribution of the extracted MIP calibration constant for single channels in both data and simulation. Ideally, the distribution should peak at the unity for all channels. But in practice, due to the fitting procedure uncertainty, mis-calibrations and statistic limitation, it results in a widening of the distribution. Both data and simulation give a mean value around 1 MIP for the AHCAL indicating a good average calibration at the cell level. The higher values to the right that appear in the data have been checked and all channels present a good fit. The AHCAL simulation is slightly shifted to the right to higher values but still reasonably close to unity.
 
 \subsection{Systematic on the MIP scale}
 
@@ -134,261 +114,143 @@ Both samples are very similar with a shift in the mean value of less than 1\%. A
 \label{appendix:SimulationVal}
 
 Once the energy scale calibration of the AHCAL has been performed, a validation of the simulation model can be done in order to be able to compare the recorded data and simulation in a latter stage.
-In this section, an extensive validation of the simulation is shown. The AHCAL simulation model is validated by comparing electromagnetic shower observables in data and simulation. Electromagnetic interactions within the AHCAL are used as these interactions should be well described in simulations and are less subject to modeling uncertainties.
+In this section, the validation of the AHCAL simulation is shown. The AHCAL simulation model is validated by comparing electromagnetic shower observables in data and simulation. Electromagnetic interactions within the AHCAL are used as these interactions should be well described in simulations and are less subject to modeling uncertainties. Finally, comparisons with hadron data of shower variables is shown to further validate the simulation.
 
-\section{Beam profiles}
+\subsection{Beam profiles}
 
-The simulation needs as one input the position and width of the particle gun. It has to be placed in x, y directions such that the beam sizes of the experiment are modeled and in order to guaranty that the same cells of the detector are hit in the simulation as in data. Otherwise, dead and noisy channels could bias the comparison between data and simulation. In the z-direction, the beam gun needs to be put as close as possible to the detector to avoid beam broadening by scattering on air molecules.
+The simulation needs as one input the position and width of the particle gun. It has to be placed in x, y directions such that the beam sizes of the experiment are modeled and in order to guaranty that the same cells of the detector are hit in the simulation as in data. In the z-direction, the beam gun needs to be put as close as possible to the detector to avoid beam broadening by scattering on air molecules.
 
-The best method to estimate the beam profile for data would be to analyze the beam profile provided by the wired chambers. Unfortunately, this data is not available for this analysis. As a workaround, the mean and RMS of the center of gravity distributions in x and y are used to estimate the beam size instead. This does not reflect the true positions since both positions are biased by dead and noisy channels. This has been done for electrons runs as well as for pions runs for each energy. No significant differences in beam profile are visible on a run-by-run basis. The muon beam is simulated by a plane square distribution with a half-width of 20 cm. The center of gravity is calculated as the following:
-
+The best method to estimate the beam profile for data would be to analyze the beam profile provided by the wired chambers. Unfortunately, this data could not be added to the AHCAL data acquisition system. As a workaround, the mean and RMS of the center of gravity distributions in x and y are used to estimate the beam size instead. This does not reflect the true positions since both positions are biased by dead and noisy channels. The center of gravity is calculated as the following:
 \begin{equation}
-  CoG_x [mm] = \frac{\Sigma_i E_i x_i}{\Sigma_i E_i} \quad \text{,} \quad CoG_y [mm] = \frac{\Sigma_i E_i y_i}{\Sigma_i E_i} \quad \text{and} \quad CoG_z [mm] = \frac{\Sigma_i E_i z_i}{\Sigma_i E_i}
+	CoG_x [mm] = \frac{\Sigma_i E_i x_i}{\Sigma_i E_i} \quad \text{,} \quad CoG_y [mm] = \frac{\Sigma_i E_i y_i}{\Sigma_i E_i} \quad \text{and} \quad CoG_z [mm] = \frac{\Sigma_i E_i z_i}{\Sigma_i E_i}
 \end{equation}
+where $E_i$ is the energy of the i-th hit and $x_i$ and $y_i$ are the x and y position of the i-th hit.
 
-\noindent with $E_i$ the energy of the i-th hit and $x_i$ and $y_i$ the x and y position of the i-th hit.
+For muon runs, a flat beam profile with a half-width of 20 cm is configured in the simulation. A perfect representation of the beam profile for muons is not expected to have an impact on the MIP response in the simulation.
 
-The beam profiles in the x and y directions for muons are shown in figures \ref{fig:BPmu} for data and simulation. The beam profile is not perfectly reproduced but is good enough. This will have a slight impact on the data and simulation comparison as we are very sensitive to the
-profile of the beam.
+For electron runs, the distribution of the center of gravity in x and y directions are used as an estimate of the beam profile. The figures \ref{fig:BPe} show the beam profiles in the x and y directions in data and simulation for 10 GeV electrons. The agreement looks good between data and simulation. This has been check for all energies. The agreement gets worse for higher electrons energies that may be due to a contamination from lower energy electrons \cite{AmbraEnergy}. In addition, at higher energy, the beam looks less gaussian-like and the shape in simulation can't be simulated perfectly.
 
 \begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf}
-    \caption{CoG X.} \label{fig:mu150GeVX}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf}
-    \caption{CoG Y.} \label{fig:mu150GeVY}
-  \end{subfigure}
-  \caption{Beam profiles for 150 GeV muons for data and simulation in the x and y directions.}
-  \label{fig:BPmu}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGX_AHCAL_10GeV_Comparison.pdf}
+		\caption{Beam profile X.} \label{fig:e10GeVX}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGY_AHCAL_10GeV_Comparison.pdf}
+		\caption{Beam profile Y.} \label{fig:e10GeVY}
+	\end{subfigure}
+	\caption{Beam profiles for 10 GeV electrons in data and simulation. Simulated with QGSP\_BERT\_HP using \geant v10.1.}
+	\label{fig:BPe}
 \end{figure}
 
-Figures \ref{fig:BPe} show the beam profiles in the x and y directions for data and simulation for 10 GeV and 50 GeV electrons. The agreement looks much better for 10 GeV than for 50 GeV, this may be due to contamination from lower energy electrons. Moreover, at higher energy, the beam looks less gaussian-like and the shape in simulation can't be simulated correctly. Figures \ref{fig:BPpi} show the beam profiles in the x and y-direction for data and simulation for 10 GeV and 90 GeV pions. The agreement looks quite good for both energies in the x-direction, only a slight difference is visible in the y-direction but should have not much impact.
+For pion runs, the same method as for electron runs is used. The figures \ref{fig:BPpi} show the beam profiles in the x and y-direction in data and simulation for 10 GeV pions. The agreement looks quite good for 10 GeV, with only a slight difference that is visible in the y-direction. The beam profiles have been checked also for all energies with the same conclusion.
 
 \begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGX_AHCAL_10GeV_Comparison.pdf}
-    \caption{10 GeV.} \label{fig:e10GeVX}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGY_AHCAL_10GeV_Comparison.pdf}
-    \caption{10 GeV.} \label{fig:e10GeVY}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf}
-    \caption{50 GeV.} \label{fig:e50GeVX}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf}
-    \caption{50 GeV.} \label{fig:e50GeVY}
-  \end{subfigure}
-  \caption{Beam profiles for 10 GeV and 50 GeV electrons for data and simulation in the x and y directions.}
-  \label{fig:BPe}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGX_AHCAL_10GeV_Comparison.pdf}
+		\caption{10 GeV.} \label{fig:pi10GeVX}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGY_AHCAL_10GeV_Comparison.pdf}
+		\caption{10 GeV.} \label{fig:pi10GeVY}
+	\end{subfigure}
+	\caption{Beam profiles for 10 GeV pions in data and simulation. Simulated with QGSP\_BERT\_HP using \geant v10.1}
+	\label{fig:BPpi}
 \end{figure}
 
+Additional beam profiles can be seen in appendix \ref{appendix:SimulationVal}. The particle gun configurations used to reproduce the data runs in this thesis are shown in table \ref{table:ParticleGun}.
+
+\begin{table}[htb!]
+	\centering
+	\caption{Settings of the particle gun in simulation used to reproduce the beam profile of the data runs used in this thesis.}
+	\label{table:ParticleGun}
+	\begin{tabular}{@{} lcccccc @{}}
+		\toprule
+		Type & Energy [GeV] & $\sigma_{E}$ [GeV] & $\mu_{x}$ [mm] & $\mu_{y}$ [mm] & $RMS_{x}$ [mm] & $RMS_{y}$ [mm] \\
+		\midrule
+		$e^-$ & 10 & 0.2 & 7.5 & 3.2 & 29.2 & 27.5\\
+		$e^-$ & 15 & 0.3 & 5.6 & 2.9 & 28.0 & 26.2\\
+		$e^-$ & 20 & 0.4 & 2.1 & -0.3 & 27.0 & 26.1\\
+		$e^-$ & 30 & 0.6 & -4.6 & 18.5 & 23.8 & 21.9\\
+		$e^-$ & 40 & 0.8 & -2.8 & 11.3 & 24.7 & 25.5\\
+		$e^-$ & 50 & 1 & -18.4 & 5.8 & 28.2 & 28.9\\
+		\midrule
+		$\pi^-$ & 10 & 0.2 & -0.3 & 14.8 & 34.6 & 29.8\\
+		$\pi^-$ & 30 & 0.6 & 7.7 & -1.9 & 28.3 & 26.4\\
+		$\pi^-$ & 50 & 1 & 10.1 & 14.0 & 19.6 & 17.1\\
+		$\pi^-$ & 70 & 1.4 & 21.9 & -14.5 & 28.8 & 28.6\\
+		$\pi^-$ & 90 & 1.8 & 3.2 & 2.8 & 23.7 & 23.5\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+\subsection{MIP Calibration}
+
+As explained in section \ref{sec:EnergyCalibration}, the MIP calibration defines the energy scale in which energy depositions is measured in the AHCAL. It is needed to carefully validate the MIP calibration in data and simulation in order to be able to compare results.
+
+Applying the MIP selection on the muon runs results in energy depositions of single MIP amplitudes for all channels. The comparison of the MIP spectrum for the whole AHCAL between data and simulation in figure \ref{fig:MIPData_MC} shows that the shape of the hit energy spectrum matches relatively well. The data appears slightly wider than for simulation as channel-wise mis-calibrations are not modeled in the simulation. In addition, investigations of the mean energy deposit per layer, as shown in figure \ref{fig:muEdep}, shows that simulations reproduce the data within 3-4\%. This comparison validates the simulation at the lowest hit energies.
+
 \begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGX_AHCAL_10GeV_Comparison.pdf}
-    \caption{10 GeV.} \label{fig:pi10GeVX}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGY_AHCAL_10GeV_Comparison.pdf}
-    \caption{10 GeV.} \label{fig:pi10GeVY}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf}
-    \caption{90 GeV.} \label{fig:pi90GeVX}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf}
-    \caption{90 GeV.} \label{fig:pi90GeVY}
-  \end{subfigure}
-  \caption{Beam profiles for 10 GeV and 90 GeV pions for data and simulation in the x and y directions.}
-  \label{fig:BPpi}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MIPPeak.pdf}
+		\caption{} \label{fig:MIPData_MC}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ProfileMuons_Edep.pdf}
+		\caption{} \label{fig:muEdep}
+	\end{subfigure}
+	\caption{\subref{fig:MIPData_MC}) Hit Energy Spectra for the complete AHCAL for muon like-track hits for both data and simulation. \subref{fig:muEdep}) Longitudinal mean energy profile for muon like-track hits in data and simulations.}
+	\label{fig:Val}
 \end{figure}
 
-\section{Validation of the simulation model}
-
-\subsection{Muons}
-
-In order to justify any comparison made with the simulation, it needs to be validated first. This is done in two steps using muons and electrons. The comparison of the energy deposited and the number of hits in data and simulation is used to validate the detector simulation. Figures \ref{fig:muVal} show the visible energy $E_{sum}$ and the number of hits above 0.5 MIP for 150 GeV muons in data and simulation.
+The extraction of the MIP calibration value in data and simulation has been done for each single channels of the AHCAL. The figure \ref{fig:MPVData_MC} shows the distribution of the extracted MIP calibration constant for single channels in both data and simulation. Ideally, the distribution should peak at the unity for all channels. But in practice, due to the fitting procedure uncertainty, mis-calibrations and statistic limitation, it results in a widening of the distribution. Both data and simulation give a mean value around 1 MIP for the AHCAL indicating a good average calibration at the cell level. The higher values to the right that appear in the data have been checked and all channels present a good fit. The AHCAL simulation is slightly shifted to the right to higher values but still reasonably close to unity.
 
 \begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf}
-    \caption{$E_{sum}$.} \label{fig:muEvis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf}
-    \caption{nHits.} \label{fig:munHits}
-  \end{subfigure}
-  \caption{\subref{fig:muEvis}) The energy sum in the AHCAL for 150 GeV muons in data and simulations. \subref{fig:munHits}) The number of hits in the AHCAL for 150 GeV muons in data and simulations.}
-  \label{fig:muVal}
-\end{figure}
-
-One can notice that the distributions are quite similar though the simulation shows a higher mean deposited energy and also fewer entries to around 5 MIP. As well simulation seems to show a slightly higher number of hits. This may be due to the beam profile that is not perfectly well reproduced in the simulation. In this case, the impact of dead channels is high depending on where the beam is located. Further, an investigation of the energy deposited per layer has been done and can be seen in figure \ref{fig:muEdep}. It shows that the simulations agree with the data within 5\%. This indicates that the calibration has been performed well for all layers.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ProfileMuons_Edep.pdf}
-    \caption{} \label{fig:muEdep}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_CoGZ_Xtalk_electrons10GeV.pdf}
-    \caption{} \label{fig:e10GoGZ}
-  \end{subfigure}
-  \caption{\subref{fig:muEdep}) Longitudinal energy profile for 150 GeV muons for data and simulations. \subref{fig:e10GoGZ}) Distribution of the center of gravity in the z direction for 10 GeV electrons for data and simulation.}
-  \label{fig:Val}
+	\centering
+	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MPV.pdf}
+	\caption{Distribution of fitted MPV in single channels of the AHCAL for both data and simulation.} \label{fig:MPVData_MC}
 \end{figure}
 
 \subsection{Electrons}
 
-In a second part, electrons are used to validate further the simulation. As the physics of electron showers are very well understood and can be simulated with great accuracy, it is used as a tool to validate the detector geometry, especially concerning the material budget. Also besides noise and beam profiles, the influence of cross-talk has a significant impact due to the higher energy deposited. Moreover, desaturation of high energy cells is very important as generally electrons deposit in few cells their energy. Unfortunately, no saturation curves are available and only estimations of the necessary parameters are derived from simulation by tuning it to the data. Though, in this analysis, the energy deposited in a single cell is only relevant at low energies (from 0.5 to few MIPs) where the response of the SiPM is linear. Thus desaturation is not used. On the other side, only saturation of the hit energy is performed on the simulation where the same parameters are used, this has an effect on the matching between data and simulations for the energy sum but similar as the desaturation does not matter for this analysis. Simple shower variables have been looked at such as the number of hits, energy sum and center of gravity in z-direction per event in order to validate the simulation.
+Electromagnetic showers are used to validate further the simulation. As the physics of electron showers are very well understood and can be simulated with great accuracy, it is used as a tool to validate the detector geometry, especially concerning the material composition as well as the general calibration. Besides noise and beam profiles, the influence of cross-talk has a significant impact due to the higher energy deposited.
 
-The center of gravity in z was looked at as this variable is most sensible to the amount of material upstream to the calorimeter. The figure \ref{fig:e10GoGZ} shows that the data and simulations agree rather well despite the data seems to shower slightly before. Figures \ref{fig:e10Val} and \ref{fig:e50Val} show the distribution of the energy sum $E_{sum}$ in the AHCAL and the number of hits $nHits$ for 10 GeV and 50 GeV electrons for data and simulations. Two different version of the simulations, with a cross-talk parameter of 10\% or 18\% are shown. For 10 GeV, 10\% cross-talk seems better whereas, for 50 GeV, the value of 18\% seems favored. A value of 15\% was chosen for the simulation as neither simulations fit the data for both observables. One can also notice that for 50 GeV, a large tail to the left of both distributions is visible. This has been investigated in details \cite{AmbraEnergy}, but the origin of this is still not clear and may come from contamination from lower energy electrons. This is not a problem in itself for this analysis as only timing is investigated.
+In addition, the SiPM saturation unfolding of high energy cells is very important as generally electrons deposit in few cells their energy. Unfortunately, no saturation curves are available and only estimations of the necessary parameters are used. However, in this thesis, the energy deposited in a single cell is only relevant at low energies (from 0.5 to few MIPs) where the response of the SiPM is linear. Therefore, the SiPM saturation unfolding is not used. Only saturation of the hit energy is performed on the simulation as hits from the data are obtained saturated.
 
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf}
-    \caption{$E_{sum}$.} \label{fig:e10Evis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf}
-    \caption{nHits.} \label{fig:e10nHits}
-  \end{subfigure}
-  \caption{\subref{fig:e10Evis}) The energy sum in the AHCAL for 10 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:e10nHits}) The number of hits in the AHCAL for 10 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%.}
-  \label{fig:e10Val}
-\end{figure}
+The figures \ref{fig:eVal} show the mean energy sum $<E_{sum}>$ and the mean number of hits $<nHits>$ as a function of the electron beam energy between 10 and 50 GeV in data and simulation with different cross-talk parameters. The mean is obtained from the mean of the distribution, no fit is performed. The visible energy for data agrees within the simulations for 10, 15 and 20 GeV electron energy and seems to agree better with the 10\% cross-talk simulations. For higher energies, the data deviates significantly to lower values due to the presence of the long tail left of the distribution that the simulations cannot describe (see appendix \ref{appendix:SimulationVal}). The curve does not look linear as one would expect, this is probably due to saturation effects that are not corrected.
+
+The number of hits is well described in the simulations but agrees better with 10\% cross-talk at low energies and with the 18\% cross-talk at higher energies. However, the data cannot be described for both distributions at once in either simulation with a global cross-talk parameter.
 
 \begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf}
-    \caption{$E_{sum}$.} \label{fig:e50Evis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf}
-    \caption{nHits.} \label{fig:e50nHits}
-  \end{subfigure}
-  \caption{\subref{fig:e50Evis}) The energy sum in the AHCAL for 50 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:e50nHits}) The number of hits in the AHCAL for 50 GeV electrons for data and simulations with a cross-talk value of 10\% and 18\%.}
-  \label{fig:e50Val}
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/EsumElectrons_BeamEnergy.pdf}
+		\caption{} \label{fig:EsumMeanElectron}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/nHitsElectrons_BeamEnergy.pdf}
+		\caption{} \label{fig:nHitsMeanElectron}
+	\end{subfigure}
+	\caption{\subref{fig:EsumMeanElectron}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. Simulated with QGSP\_BERT\_HP in \geant v10.1. \subref{fig:nHitsMeanElectron}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. Simulated with QGSP\_BERT\_HP in \geant v10.1.}
+	\label{fig:eVal}
 \end{figure}
 
-Figures \ref{fig:eVal} show the mean energy sum $<E_{sum}>$ and the mean number of hits $<nHits>$ as function of the electron beam energy between 10 and 50 GeV for data and simulation with different cross-talk parameters. The visible energy for data agrees within the simulations for 10, 15 and 20 GeV electron energy and seems to agree better with the 10\% cross-talk simulations. For higher energies, the data deviates significantly to lower values due to the presence of the long tail left of the distribution that the simulations cannot describe. The number of hits is well described, certainly due to the selection cut on the number of hits, with the simulations but agrees better with 10\% at low energies and with the 18\% at higher energies. However, the data cannot be described for both distributions at once in either simulation with a global cross-talk parameter.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/EsumElectrons_BeamEnergy.pdf}
-    \caption{} \label{fig:EsumMeanElectron}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/nHitsElectrons_BeamEnergy.pdf}
-    \caption{} \label{fig:nHitsMeanElectron}
-  \end{subfigure}
-  \caption{\subref{fig:EsumMeanElectron}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. \subref{fig:nHitsMeanElectron}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters.}
-  \label{fig:eVal}
-\end{figure}
-
-The investigation of these observables enables us to validate the simulations between 5-20\% with the data. The precision of the detector simulation for electrons is limited by the cross-talk simulation and for energies above 20 GeV, by the possible contamination by low energy electrons in the data. A deeper investigation on the energy aspect of the data is carried out in parallel of this analysis \cite{AmbraEnergy}.
-
-\subsection{Pions}
-
-Finally, the pion data was compared to simulations. In this case, the QGSP\_BERT\_HP physics list was only used for comparison. The center of gravity in the z-direction, the number of hits and the energy sum are the variables looked at and are shown in figures \ref{fig:piGoGZ}, figures \ref{fig:pi10Val} and figures \ref{fig:pi90Val}.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_CoGZ_Xtalk_pions10GeV.pdf}
-    \caption{$CoGZ$ 10 GeV.} \label{fig:pi10CoGZ}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_CoGZ_Xtalk_pions90GeV.pdf}
-    \caption{$CoGZ$ 90 GeV.} \label{fig:pi90CoGZ}
-  \end{subfigure}
-  \caption{Distributions of the center of gravity in the z direction for data and simulations of 10 GeV (left) and 90 GeV (right) pions. The simulations have a cross-talk value of 10\% and 18\%.}
-  \label{fig:piGoGZ}
-\end{figure}
-
-In figure \ref{fig:piGoGZ}, for 10 GeV pions, the CoGZ is well reproduced by the simulations with a cross-talk value between 10\% and 18\% whereas, for 90 GeV pions, small discrepancies are visible between data and simulations. Also, it is noticeable that the \ddhep and \mokka simulations also differ slightly. The reason is not clear. The discrepancy with the data may be related to multi-particle events as shown in the figures below.
-
-The figure \ref{fig:pi10Val} shows the comparison between data and simulation with cross-talk values of 10\% and 18\% of the energy sum and number of hits distributions for 10 GeV pions. The data is well reproduced by the simulations. The figure \ref{fig:pi90Val} shows the same distributions for 90 GeV pions. Some discrepancies are visible between data and simulations, especially for the energy sum where a second peak is visible in data and may be from multi-particle events. A slight shift for the first peak is visible and may come from mis-calibrations (intercalibration of high/low gain). Concerning the number of hits, the \mokka simulation represents well the data as for \ddhep it over-estimates the fraction of events around 40-50 hits and under-estimates it over 80 hits.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_EnergySum_Xtalk_pions10GeV.pdf}
-    \caption{$E_{sum}$.} \label{fig:pi10Evis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_nHits_Xtalk_pions10GeV.pdf}
-    \caption{nHits.} \label{fig:pi10nHits}
-  \end{subfigure}
-  \caption{\subref{fig:pi10Evis}) The energy sum in the AHCAL for 10 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:pi10nHits}) The number of hits in the AHCAL for 10 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%.}
-  \label{fig:pi10Val}
-\end{figure}
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_EnergySum_Xtalk_pions90GeV.pdf}
-    \caption{$E_{sum}$.} \label{fig:pi90Evis}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_nHits_Xtalk_pions90GeV.pdf}
-    \caption{nHits.} \label{fig:pi90nHits}
-  \end{subfigure}
-  \caption{\subref{fig:pi90Evis}) The energy sum in the AHCAL for 90 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%. \subref{fig:pi90nHits}) The number of hits in the AHCAL for 90 GeV pions for data and simulations with a cross-talk value of 10\% and 18\%.}
-  \label{fig:pi90Val}
-\end{figure}
-
-Finally, the mean energy sum $<E_{sum}>$ and the mean number of hits $<nHits>$ as function of the beam energy between 10 and 90 GeV for data and simulation with different cross-talk parameters were looked at as for electrons and are shown in figure \ref{fig:piVal}. The visible energy for data is above the simulations for all energies but agrees better with simulations for 10 and 50 GeV points. For higher energies, the data deviates significantly to higher values that may be due to multiple particle events shifting the mean of the distribution to higher energy values. The number of hits is well described by the \mokka simulation and slightly lower for the \ddhep simulation that is also visible in the mean energy sum. The reason is not clear as the material description is very similar in both simulations as shown with electrons.
-
-\begin{figure}[htbp!]
-  \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/EsumPions_BeamEnergy.pdf}
-    \caption{} \label{fig:EsumMeanPion}
-  \end{subfigure}
-  \hfill
-  \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/nHitsPions_BeamEnergy.pdf}
-    \caption{} \label{fig:nHitsMeanPion}
-  \end{subfigure}
-  \caption{\subref{fig:EsumMeanPion}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters. \subref{fig:nHitsMeanPion}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for pion data and simulations with different cross-talk parameters.}
-  \label{fig:piVal}
-\end{figure}
-
-In conclusion, the investigation of these observables for pions enables us to validate the simulations between 10-20\% with the data. The precision of the detector simulation for pions is limited by the cross-talk simulation and by the possible contamination by multi-particle events in the data.
+The precision of the detector simulation for electrons is limited by the cross-talk simulation and for energies above 20 GeV, by the possible contamination by low energy electrons in the data. A deeper investigation on the energy aspect of the data is carried out in parallel of this analysis \cite{AmbraEnergy}. The description of electromagnetic showers in simulations is satisfactory for the study of the time development of hadron showers.
 
 \begin{center}
-  \rule{0.5\textwidth}{.4pt}
+	\rule{0.5\textwidth}{.4pt}
 \end{center}
 
 This chapter presents the results of the energy scale calibration of the AHCAL technological prototype. The MIP calibration procedure was explained and developed in order to accommodate to such high number of channels as well as the diversity in SiPM types and tile designs. In this way, 85\% of the channels in the detector have their MIP constant determined.
 
 An error around 1-3\% is made on the MIP constant value with the current fitting method which is in the order of magnitude expected due to the limited statistics. In order to validate the calibration and the simulation model, comparisons have been made at the single channel level. Both data and simulation are in a good agreement with less than 1\% deviation. The simulation appears narrower due to channel-wise mis-calibrations not being modeled. A systematic uncertainty of 3.6\% on the MIP energy scale has been determined due to run-by-run, time and environmental variations.
 
-An extensive validation of the simulation has been done and proves to be reliable between 10\% to 20\% with the data. As the simulation is validated, the timing study of hadronic shower which is at the core of this thesis can be studied. Before studying the time development of hadron shower, the time of a hit recorded in data needs to be calibrated. Therefore, in the next chapter, the timing calibration of the AHCAL prototype is presented.
+A validation of the simulation has been done and proves to reproduce the data within 10\% to 20\%. Therefore, the timing study of hadronic shower which is at the core of this thesis can be studied. Before studying the time development of hadron shower, the time of a hit recorded in data needs to be calibrated. Therefore, in the next chapter, the timing calibration of the AHCAL prototype is presented.
