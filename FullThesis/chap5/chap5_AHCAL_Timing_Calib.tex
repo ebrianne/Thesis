@@ -2,41 +2,40 @@
 \chapter{Timing Calibration of the AHCAL}
 \label{chap:TimingCalib}
 
-To perform the timing calibration of the AHCAL, the complete muon dataset is used. Table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$,  T$_{13}$ and T$_{14}$ are present in the event. Raw events are the number of events after the MIP selection. Selected events are counted after the selection on the error of the time reference as explained in section \ref{section:time_ref}.
+\section{Introduction}
+
+As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for calibration and cross-checks as electromagnetic showers are instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
+
+In the following section, the muon dataset shown in section \ref{subsec:dataset} is used for the timing calibration of the AHCAL. The table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event (see section \ref{subsec:trigger}). Raw events are the number of events after the MIP selection (see section \ref{subsec:Muon_sel}). Selected events are counted after the selection on the error of the time reference that is explained in section \ref{section:time_ref}.
 
 \begin{table}[htb!]
 	\centering
 	\caption{Table with the run statistic before and after selection used for timing calibration.}
 	\label{table:mu_elec_runs}
-	\resizebox{0.8\textwidth}{!}{%
 	\begin{tabular}{@{} llllll @{}}
-		\hline
+		\toprule
 		Runs & Energy & Particle Type & Events (Raw) & Events (sel.) & $\frac{\text{N$_{sel.}$}}{\text{N$_{raw}$}}$ \\
-		\hline
+		\midrule
 		24016-24663 & 50-150 GeV & $\mu^-$ & 1851536 & 836796 & 45.2\% \\
+		\midrule
 		24528-24577 & 10 GeV & $e^-$ & 268275 & 216656 & 80.8\% \\
 		24510-24520 & 15 GeV & $e^-$ & 108092 & 90395 & 83.6\% \\
 		24486-24504 & 20 GeV & $e^-$ & 130232 & 110161 & 84.6\% \\
 		24460-24470 & 30 GeV & $e^-$ & 82202 & 69692 & 84.8\% \\
 		24427-24435 & 40 GeV & $e^-$ & 65901 & 55660 & 84.5\% \\
 		24405-24419 & 50 GeV & $e^-$ & 123422 & 104030 & 84.3\% \\
-		\hline
+		\bottomrule
 	\end{tabular}
-	}
 \end{table}
 
-The timing calibration is performed in several steps and will be explained in the following sections.
-\begin{itemize}
-	\item Determination of the timing slope to convert TDC value to nanoseconds.
-	\item Calibration of the time reference
-	\item Non-linearity correction
-	\item Time-walk correction
-\end{itemize}
+As explained in section \ref{sec:SPIROC2B}, the SPIROC2B has two TDC voltage ramps. The starting point or pedestal of the ramps, the end point of the ramp and thus the slope of the ramps can be different for both. Therefore, two slopes have to be extracted per chip. In addition, 16 memory-cells are used as buffer to store the analog signal before digitization. Each memory-cell is different thus 16 calibration values (offsets) are needed per channel.
+
+In the testbeam setup for this thesis (see section \ref{sec:TBsetup}), no external time reference is available. Few channels of the detector that are used as time reference ($T_0$) need to be calibrated in the same way (see section \ref{section:time_ref}). Additionally, possible electronics effects have to be corrected such as non-linearity of the TDC voltage (see section \ref{subsec:lin_corr}) ramp and time-walk (see section \ref{subsec:timewalk}).
 
 \section{Slope calibration}
 \label{subsec:slope_calib}
 
-The data analysis is performed in several steps. The first step is the calibration of the time provided by the \textit{SPIROC2B} chip. To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The value is converted using the following equations:
+This section will describe the method used to extract the slope of the TDC voltage ramp. To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The value is converted using the following equations:
 
 \begin{equation} \label{eq:slope}
 	\text{slope}_{chip, BXID} \: \text{[ns/TDC]} = \frac{3920 \: \text{ns}}{\text{Max}_{chip, BXID} - \text{Pedestal}_{chip, BXID}}

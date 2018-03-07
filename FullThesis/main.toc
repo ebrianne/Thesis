@@ -115,14 +115,15 @@
 \contentsline {subsection}{\numberline {8.3.2}MIP Calibration}{92}{subsection.8.3.2}
 \contentsline {subsection}{\numberline {8.3.3}Electrons}{93}{subsection.8.3.3}
 \contentsline {chapter}{\numberline {9}Timing Calibration of the AHCAL}{95}{chapter.9}
-\contentsline {section}{\numberline {9.1}Slope calibration}{95}{section.9.1}
-\contentsline {section}{\numberline {9.2}Calibration of the time reference}{97}{section.9.2}
-\contentsline {section}{\numberline {9.3}Determination of the time of the first hit}{99}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Time of the first hit distribution}{100}{subsection.9.3.1}
-\contentsline {section}{\numberline {9.4}Corrections applied to data}{100}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Ramp non-linearity correction}{100}{subsection.9.4.1}
-\contentsline {subsection}{\numberline {9.4.2}Time Walk correction}{101}{subsection.9.4.2}
-\contentsline {subsection}{\numberline {9.4.3}Time of first hit for muons after corrections}{103}{subsection.9.4.3}
+\contentsline {section}{\numberline {9.1}Introduction}{95}{section.9.1}
+\contentsline {section}{\numberline {9.2}Slope calibration}{96}{section.9.2}
+\contentsline {section}{\numberline {9.3}Calibration of the time reference}{97}{section.9.3}
+\contentsline {section}{\numberline {9.4}Determination of the time of the first hit}{99}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Time of the first hit distribution}{99}{subsection.9.4.1}
+\contentsline {section}{\numberline {9.5}Corrections applied to data}{101}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Ramp non-linearity correction}{101}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Time Walk correction}{102}{subsection.9.5.2}
+\contentsline {subsection}{\numberline {9.5.3}Time of first hit for muons after corrections}{102}{subsection.9.5.3}
 \contentsline {chapter}{\numberline {10}Validation of the Calibration}{105}{chapter.10}
 \contentsline {section}{\numberline {10.1}Influence of the number of triggered channels}{106}{section.10.1}
 \contentsline {section}{\numberline {10.2}Time of the first hit for electrons}{106}{section.10.2}
