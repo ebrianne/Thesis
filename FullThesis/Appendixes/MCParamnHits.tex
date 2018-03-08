@@ -16,18 +16,21 @@ The $\text{RMS}_{\text{effect}}$ is extracted from data by fitting with a functi
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf}
-		\caption{Time of the first hit distribution for different binning of number of triggered channels in a chip.} \label{fig:ped_shift_dist_para}
+		\caption{} \label{fig:ped_shift_dist_para}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf}
-		\caption{$\sigma_{effect}$ extracted function of the number of triggered channels in a chip for each energies.} \label{fig:para_fit}
+		\caption{} \label{fig:para_fit}
 	\end{subfigure}
-	\caption{\subref{fig:ped_shift_dist_para}) The distribution width is increasing with the number of triggered channels in a chip due to the remaining of the observed effect. \subref{fig:para_fit}) $\sigma_{effect}$ increases up to 12-15 ns with the number of triggered channels in a chip.}
+	\caption{\subref{fig:ped_shift_dist_para}) Time of the first hit distribution for different binning of number of triggered channels in a chip. The distribution width is increasing with the number of triggered channels in a chip due to the remaining of the observed effect. \subref{fig:para_fit}) $\sigma_{effect}$ extracted function of the number of triggered channels in a chip for each energies. $\sigma_{effect}$ increases up to 12-15 ns with the number of triggered channels in a chip.}
 \end{figure}
 
-The parameters $\mu_1$, $\sigma_1$, $\mu_2$ and $\sigma_2$ are fixed from table \ref{table:time_res_sim}. By plotting $\sigma_{effect}$ extracted as a function of the number of triggered channels in a chip, one can extract the parametrization of the effect. This is done for each electron energy point as shown in figure \ref{fig:para_fit}. One can observe that each parametrization curve is slightly different for each energy. This may be due to the fact that each energy affects not exactly the same part of the detector. To accommodate this, a mean parametrization is used in Monte-Carlo with the envelope used as uncertainty as shown in figure \ref{fig:mean_para}. Only points up to 10-11 number of channels are extracted from data. Above this, the value of $\sigma_{effect}$ is extrapolated. This should in principle have relatively a small effect for electrons as mainly 6-10 hits are expected per chip. But the effect may be relevant for pions.
+The parameters $\mu_1$, $\sigma_1$, $\mu_2$ and $\sigma_2$ are fixed from table \ref{table:time_res_sim}. By plotting $\sigma_{effect}$ extracted as a function of the number of triggered channels in a chip, one can extract the parametrization of the effect. This is done for each electron energy point as shown in figure \ref{fig:para_fit}. One can observe that each parametrization curve is slightly different for each energy. This may be due to the fact that each energy affects not exactly the same part of the detector.
+The 50 GeV parametrization looks very different than the others. All time distributions for all chips and layers have been investigated manually in order to understand the different but no clear reason has been found.
+
+To accommodate this, a mean parametrization is used in Monte-Carlo with the envelope used as uncertainty as shown in figure \ref{fig:mean_para}. Only points up to 10-11 number of channels are extracted from data. Above this, the value of $\sigma_{effect}$ is extrapolated. This should in principle have relatively a small effect for electrons as mainly 6-10 hits are expected per chip. But the effect may be relevant for pions.
 
 \begin{figure}[htbp!]
 	\centering

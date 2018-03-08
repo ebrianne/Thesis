@@ -1,13 +1,18 @@
-\chapter{Validation of the Calibration}
+%!TEX root = ../main.tex
+\chapter{Cross-check of the calibration}
 \label{chap:TimingValidation}
 
-In order to validate the calibration, an electron sample is taken. Electromagnetic showers are quasi-instantaneous and perfect to cross-check the time calibration procedure. The selection applied to the data sample is described in subsection \ref{subsec:elec_sel}. The same calibration constants and correction constants are applied to the data except that an additional offset from the trigger signal has to be corrected for.
+The timing calibration procedure was presented in chapter \ref{chap:TimingCalib}. In order to validate the calibration, the recorded electron data is used. Electromagnetic showers are quasi-instantaneous and perfect to cross-check the time calibration procedure. The selection applied to the electron data sample is described in section \ref{subsec:elec_sel}. The same calibration constants and correction constants determined from the muon data are applied to the electron data.
 
-The additional offset is expected to be small as the trigger configuration is very similar to the one for muons. The offset is in the order of 10 ns which is consistent with the changes in trigger configuration from the big scintillator plates to the small trigger scintillator of $10\times10$ cm$^2$. The time of the first hit distribution is shown in figure \ref{fig:Timing_electrons}. The time distribution presents a large tail to the right and is much wider than for muons. This gives a hint that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher as well as the energy deposited in a single cell can be over hundreds MIP.
+\section{Time of the first hit for electrons}
+
+The time of the first hit for 20 GeV electrons is shown in figure \ref{fig:Timing_electrons}. The time distribution presents a large tail to the right and is much wider than for muons. This indicates that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher than for muons as well as the energy deposited in a single cell can be over hundreds MIP.
+
+Additionally, a timing offset of around 10 ns can be seen. This is expected and it is consistent with the changes in trigger configuration from the big scintillator plates to the small trigger scintillator of $10\times10$ cm$^2$.
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
+	\includegraphics[width=0.5\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
 	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data, before further corrections. Max = -10.05 ns, RMS = 8.92 ns.}
 	\label{fig:Timing_electrons}
 \end{figure}
@@ -15,31 +20,37 @@ The additional offset is expected to be small as the trigger configuration is ve
 \section{Influence of the number of triggered channels}
 \label{subsec:ped_shift}
 
-Pedestal shift for energy measurement is not a new feature of the \textit{SPIROC2B} chip \cite{Hartbrich2012}. This electronic effect may be also present for the timing measurement. It can be investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. The correction should not be energy dependent and all electron beam energies are used to determine the correction curve.
+For the energy measurement, pedestal shift is a known feature of the \textit{SPIROC2B} chip \cite{Hartbrich2012}. This electronic effect that induces a shift in the baseline of the ADC signal may be also present for the timing measurement. It has been investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. The correction should not be beam energy dependent and all electron beam energies are used to determine the correction.
 
-It is shown in figure \ref{fig:nhits_profile}. The effect on the measure hit time can be very large, a correction up to 30-40 ns can be necessary to the data for a high number of triggered channels above 0.5 MIP (15-20). The cause of the observed effect is most likely due to an element in the chip called a delay box that gets unstable with the number of triggered channels and that is responsible for the hold of the TDC value in the chip. The hold is delayed thus the sampling of a higher TDC value than the one expected is done.
-
-The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but also increases its width. The width increases with the number of triggers in a chip thus making the time resolution of the AHCAL dependent on the number of hits. This is shown in figure \ref{fig:RMS_nHits}. As expected, if only a single channel triggers in a chip, the time resolution is closed to the one obtained for muons. Additionally, the correction has been checked using the energy sum per chip but the correction is better with the former quantity chosen.
+The time of first hit as a function of the number of triggered channels over 0.5 MIP is shown in figure \ref{fig:nhits_profile}. The effect on the measured hit time can be very large, a correction up to 30-40 ns can be necessary to the data for a high number (15-20) of triggered channels above 0.5 MIP. The cause of the observed effect is most likely due to an element in the chip called a \textit{delay box} that gets unstable with a high number of triggered channels. This chip element is responsible for the hold signal of the TDC ramp in the chip. The hold signal is delayed, and thus a higher TDC ramp value than the one expected is sampled.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/NumberHits_Dependance_AllEnergies.pdf}
-		\caption{Time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip for all electron energies.}\label{fig:nhits_profile}
+		\caption{}\label{fig:nhits_profile}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.pdf}
-		\caption{RMS of the time of first hit function of the number of triggered channels above 0.5 MIP for 20 GeV electrons.}\label{fig:RMS_nHits}
+		\caption{}\label{fig:RMS_nHits}
 	\end{subfigure}
-	\caption{\subref{fig:nhits_profile}) Mean time of the hit as function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. The plot is obtained by combining all electron energies and a polynomial fit is done. \subref{fig:RMS_nHits}) The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels.}
+	\caption{\subref{fig:nhits_profile}) Mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. The plot is obtained by combining all electron energies and a second order polynomial fit is done. \subref{fig:RMS_nHits}) The RMS of the time of first hit as a function of the number of triggered channels above 0.5 MIP for 20 GeV electrons. The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels.}
 \end{figure}
+
+The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but also increases its width. The width increases with the number of triggered channels in a chip, therefore making the time resolution of the AHCAL dependent on the number of hits. This is shown in figure \ref{fig:RMS_nHits}.
+
+As expected, if only a single channel triggers in a chip, the time resolution is close to the timing resolution obtained for muons. Additionally, since it is a priori not clear if the effect depends on the number of triggered channels in a chip or the energy sum in a chip, the correction has been checked using both variables. But the correction is better as a function of the number of triggered channels in a chip.
 
 \section{Time of the first hit for electrons}
 \label{subsec:Electron_Final}
 
-The distribution of the time of the first for 20 GeV is shown in figure \ref{fig:timing_electrons_corr} after correction as function of the triggered channels. The correction improves the RMS of the distribution by around 12.1\%, as well as the distribution appears more Gaussian-like. However, there is still a discrepancy (around 33.7\%) with the time resolution obtained for muons (5.2 ns). This is due to the fact that not only the mean time shifts but that the RMS also increases as a function of the number of hits as seen in figure \ref{fig:RMS_nHits} and can't be corrected (each individual distributions have been checked). In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrized from the data. More details can be read in the appendix \ref{appendix:ped_shift}.
+After applying the correction as function of the number of triggered channels in a chip, the distribution of the time of the first for 20 GeV electrons has been investigated as shown in figure \ref{fig:timing_electrons_corr}. The correction improves the RMS of the distribution by around 12.1\%, as well as the distribution appears more Gaussian-like.
+
+However, there is still a discrepancy of around 33.7\% with the time resolution obtained with muons of around 5.36 ns (see section \ref{subsec:Muon_final}). This is because of the increase of the RMS of the time distribution as a function of the number of triggered channels in a chip as seen in figure \ref{fig:RMS_nHits}. The increase of the RMS can't be corrected unlike the mean of the time distribution.
+
+In order for the simulation to match the data, the increase of the width of the time distribution has to be parametrized from the data. More details about the parametrization implementation in the simulation are in the appendix \ref{appendix:ped_shift}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -53,10 +64,10 @@ The distribution of the time of the first for 20 GeV is shown in figure \ref{fig
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonAll_ElectronsSingleHit.pdf}
 		\caption{}\label{fig:timing_electron_muon_comp}
 	\end{subfigure}
-	\caption{\subref{fig:timing_electrons_corr}) Time of the first hit distribution for 20 GeV electrons after number of triggered channel correction, $\mu$ = -0.018 ns, RMS = 7.84 ns. \subref{fig:timing_electron_muon_comp}) Comparison of the electron data sample, the time distribution is very similar to the muon one if only events with single hits in a chip are taken.}
+	\caption{\subref{fig:timing_electrons_corr}) Time of the first hit distribution for 20 GeV electrons after the number of triggered channel correction, $\mu$ = -0.018 ns, RMS = 7.84 ns. \subref{fig:timing_electron_muon_comp}) Comparison of the 20 GeV electron sample with the muon time distribution for the time of first hit distribution. The time distribution is very similar to the distribution obtained with muons if only events in which only single hits in a chip are taken.}
 \end{figure}
 
-A comparison with the muon data has been done in order to cross-check the calibration as well as the correction as seen in figure \ref{fig:timing_electron_muon_comp}. If only single hits in a chip are taken, the time resolution obtained is very similar to the time resolution observed in muons (around 5.2\% difference). All electron runs have been checked to validate the correction and calibration procedure. The figure \ref{fig:all_electron_energies} shows the comparison from 10 GeV to 50 GeV. The distributions are in agreement for all energies. The RMS varies between 7.86 ns at 10 GeV to 8.5 ns at 50 GeV corresponding to an increase of the resolution of about 8\%.
+A comparison with the muon data has been done in order to further cross-check the calibration as well as the correction. The comparison is shown in figure \ref{fig:timing_electron_muon_comp}. If only event in which single hits in a chip are taken, the time resolution obtained is very similar to the time resolution observed with muons. The difference is around 5.2\%.
 
 \begin{figure}[htbp!]
 	\centering
@@ -65,10 +76,12 @@ A comparison with the muon data has been done in order to cross-check the calibr
 	\label{fig:all_electron_energies}
 \end{figure}
 
+All electron runs (see section \ref{sec:TimingIntro}) have been carefully checked to validate the correction and the timing calibration. The figure \ref{fig:all_electron_energies} shows the comparison from 10 GeV to 50 GeV. The time distributions are in good agreement for all energies. The mean of the time distributions is very similar for all energies. The RMS of the time distributions varies between 7.86 ns at 10 GeV and 8.50 ns at 50 GeV corresponding to an increase of 8.1\%.
+
 \section{Influence of the detector inhomogeneity}
 \label{subsec:det_inhomo}
 
-A study has been performed to estimate the influence of the detector inhomogeneity in space on timing. For this, only events in which the center of gravity in x and y is within the 4 center tiles of the detector are selected. This has been performed for 10 and 50 GeV electron beam energy. The difference between the distribution helps to estimate the systematic uncertainty due to the inhomogeneity of the detector to which electrons are very sensitive to.
+A study has been performed to estimate the influence of the detector inhomogeneity in space on timing. For this, only events in which the center of gravity in x and y is within the four center tiles of the detector are selected. Each of the four tiles is study separately. This has been performed for 10 and 50 GeV electron beam energy. The difference between the distributions helps to estimate the systematic uncertainty due to the inhomogeneity of the detector to which electrons are very sensitive to.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -85,15 +98,15 @@ A study has been performed to estimate the influence of the detector inhomogenei
 	\caption{\subref{fig:timing_inhomo_10GeV}) Time of the first hit distribution for all four middle tiles with 10 GeV electron beam. \subref{fig:timing_inhomo_50GeV}) Time of the first hit distribution for all four middle tiles with 50 GeV electron beam. All distribution are within 10-20\% in the core.}
 \end{figure}
 
-The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each tile at 10 and 50 GeV respectively. The ratio shown is compared to the top left center tile. One can see that for both energies, the distributions are within a 10-20\% agreement with the region [-20, 20] ns. Therefore a conservative systematic uncertainty of 20\% is assigned to electron and pion data in the following.
+The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each of the four tiles at 10 and 50 GeV respectively. The ratio shown is compared to the top left center tile. For both energies, the distributions are within a 10-20\% agreement in the region between -20 ns and 20 ns. \textbf{The mean of the distribution and the RMS of the distributions}. Therefore a conservative systematic uncertainty of 20\% is assigned to electron and pion data in the following.
 
-\section{Calibration applied to another dataset}
+\section{Transportability of the calibration}
 
 A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal was to reuse the calibration constants obtained and apply them to another dataset in order to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminum absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.7\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf}
 	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14.}\label{fig:TBMay2016}
 \end{figure}
 
