@@ -185,17 +185,23 @@ The SPIROC ASIC is developed by the OMEGA group \cite{OmegaWeb} to fulfill the A
 
 Each channel can be tuned in bias voltage with a 8-bit Digital to Analog Converter (\acrshort{dac}) corresponding to a voltage range between -4.5V and 0V. Each channel, has a configurable low-noise charge pre-amplifier gain (between 100 fF to 1500 fF) operating in high gain (HG) or low gain (LG) to cover a high dynamic range between 1 to several thousand photoelectrons.
 
-The time measurement is digitized using a 12-bit Time to Digital Converter (TDC). The SPIROC ASIC has two multiplexed TDC voltage ramp to avoid deadtime between each clock cycle. The TDC voltage ramp has a designed time resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}).
+The time measurement is digitized using a 12-bit Time to Digital Converter (TDC). The SPIROC ASIC has two multiplexed TDC voltage ramp to avoid deadtime between each clock cycle as shown in figure \ref{fig:TDC_ramp_schematic}. The TDC voltage ramp has a designed time resolution of 100 ps if operated in ILC-like conditions (ramp length of 200 \si{\nano\second}). In testbeam, the theoretical time resolution is around 1.9 ns (ramp length of 4 \si{\micro\second}).
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.5\linewidth]{chap3/fig/TDCRamp.jpg}
+  \caption{Schematic of the TDC ramps in the SPIROC2B \cite{SPIROC2_datasheet}.} \label{fig:TDC_ramp_schematic}
+\end{figure}
+
+The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. This mode is used to measure the SiPM gain using the integrated LED system of the AHCAL which is described in section \ref{subsec:GainCharac}. The auto-trigger capabilities of the SPIROC are provided by a fast shaper and a discriminator. The threshold of the discriminator is configurable with a 10-bits DAC and is common to the 36 channels. A 4-bit DAC provides channel-wise threshold adjustment. When a trigger happens, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is stored into one memory-cell. In addition, the ASIC provides the information of which channel triggered called a \textit{HitBit}. An external validation trigger can be provided to the ASIC to reduce SiPM noise. The time measurement is stored in another memory-cell when there is a trigger.
+
+Once the 16 memory-cells are filled, no further hits can be stored. Hence, the memory-cells are read-out, digitized and the data is transferred out of the chip. The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off. A schematic of the analog part of the SPIROC is shown in figure \ref{fig:SPIROC2B_sche}.
 
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{chap3/fig/SPIROC2B_schematic.png}
   \caption{Schematic of the analog signal path of the SPIROC2 for a single channel \cite{SPIROC2_datasheet}.} \label{fig:SPIROC2B_sche}
 \end{figure}
-
-The chip can be operated in either external trigger mode (ET) or auto-trigger mode (AT). In external trigger, the signal of each cell is sampled synchronously to an external signal. This mode is used to measure the SiPM gain using the integrated LED system of the AHCAL which is described in section \ref{subsec:GainCharac}. The auto-trigger capabilities of the SPIROC are provided by a fast shaper and a discriminator. The threshold of the discriminator is configurable with a 10-bits DAC and is common to the 36 channels. A 4-bit DAC provides channel-wise threshold adjustment. When a trigger happens, the signal of each cell is compared to a configurable threshold, if the signal is above the threshold, the signal is stored into one memory-cell. In addition, the ASIC provides the information of which channel triggered called a \textit{HitBit}. An external validation trigger can be provided to the ASIC to reduce SiPM noise. The time measurement is stored in another memory-cell when there is a trigger.
-
-Once the 16 memory-cells are filled, no further hits can be stored. Hence, the memory-cells are read-out, digitized and the data is transferred out of the chip. The chip can be operated in power-pulsing mode where parts of the chips not needed in any given state of operation can be switched off. A schematic of the analog part of the SPIROC is shown in figure \ref{fig:SPIROC2B_sche}.
 
 Several iterations of the chip have been made to fix bugs and improve the provided functionalities. In this thesis, the SPIROC2b has been used for a large AHCAL prototype used in testbeams at DESY and CERN. A new version, the SPIROC2e, is currently used for constructing a cubic meter AHCAL prototype.
 

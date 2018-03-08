@@ -65,14 +65,14 @@
 \contentsline {subsection}{\numberline {4.4.3}Analog HCAL}{44}{subsection.4.4.3}
 \contentsline {subsubsection}{Silicon Photomultipliers}{45}{section*.38}
 \contentsline {subsubsection}{The SPIROC ASIC}{46}{section*.40}
-\contentsline {subsubsection}{The AHCAL Prototype}{48}{section*.42}
-\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{49}{section*.46}
+\contentsline {subsubsection}{The AHCAL Prototype}{48}{section*.43}
+\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{50}{section*.47}
 \contentsline {chapter}{\numberline {5}Simulation and Software tools}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulation of particle showers}{53}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{53}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Hadronic shower models}{54}{subsection.5.1.2}
-\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{54}{section*.48}
-\contentsline {subsubsection}{String-Parton Cascade Models}{55}{section*.50}
+\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{54}{section*.49}
+\contentsline {subsubsection}{String-Parton Cascade Models}{55}{section*.51}
 \contentsline {subsection}{\numberline {5.1.3}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Physics Lists}{56}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}Software tools}{57}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}\textsc {ILCSoft}\xspace software framework}{57}{subsection.5.2.1}
@@ -118,10 +118,10 @@
 \contentsline {section}{\numberline {9.1}Introduction}{95}{section.9.1}
 \contentsline {section}{\numberline {9.2}Slope calibration}{96}{section.9.2}
 \contentsline {section}{\numberline {9.3}Calibration of the time reference}{97}{section.9.3}
-\contentsline {section}{\numberline {9.4}Determination of the time of the first hit}{99}{section.9.4}
+\contentsline {section}{\numberline {9.4}Determination of the time of the first hit}{98}{section.9.4}
 \contentsline {subsection}{\numberline {9.4.1}Time of the first hit distribution}{99}{subsection.9.4.1}
-\contentsline {section}{\numberline {9.5}Corrections applied to data}{101}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Ramp non-linearity correction}{101}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.5}Corrections applied to data}{100}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Ramp non-linearity correction}{100}{subsection.9.5.1}
 \contentsline {subsection}{\numberline {9.5.2}Time Walk correction}{102}{subsection.9.5.2}
 \contentsline {subsection}{\numberline {9.5.3}Time of first hit for muons after corrections}{102}{subsection.9.5.3}
 \contentsline {chapter}{\numberline {10}Validation of the Calibration}{105}{chapter.10}
