@@ -47,16 +47,16 @@ At a first order, the slope of the TDC ramp is assumed to be linear. The paramet
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra.pdf}
 		\caption{} \label{fig:TDC_Spectrum}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer12}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.pdf}
 		\caption{} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
-	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The yellow bands represent the uncertainty on the extraction of the parameter $a$ and $b$. The extracted parameters are $s$ = 1.56 $\pm$ 0.01 ns/TDC, $b$ = 816 $\pm$ 9 TDC and $a$ = 3336 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip XXX on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
+	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The yellow bands represent the uncertainty on the extraction of the parameter $a$ and $b$. The extracted parameters are $s$ = 1.47 $\pm$ 0.01 ns/TDC, $b$ = 888 $\pm$ 5 TDC and $a$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
 \end{figure}
 
 The extraction of the parameters $a$ and $b$ is done by detecting the edges of the TDC spectrum. A threshold $\mu$ is used to extract $a$. This threshold corresponds to the mean of the vertical axis of the TDC spectrum. The parameter $a$ is extracted as the value of the first bin above 30\% of the threshold $\mu$. The endpoint of the ramp is extracted as the value of the last bin above 50\% of the maximum bin content of the TDC spectrum. The start point and the endpoint of the ramp are not extracted as the first and the last bin of the TDC spectrum, because the extraction technique needs to be robust against outliers and strange spectra such as the one shown in figure \ref{fig:TDC_Spectrum_bad}.
@@ -67,7 +67,7 @@ The extracted values for the slopes are shown in figure \ref{fig:slope_time}. Th
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC}
+	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC.pdf}
 	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
 \end{figure}
 

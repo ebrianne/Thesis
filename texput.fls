@@ -1,5 +1,0 @@
-PWD /Users/ebrianne/Documents/GitHub/Thesis
-INPUT /usr/local/texlive/2017/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-OUTPUT texput.log

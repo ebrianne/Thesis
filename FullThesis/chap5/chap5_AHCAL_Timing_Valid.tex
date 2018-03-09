@@ -6,14 +6,14 @@ The timing calibration procedure was presented in chapter \ref{chap:TimingCalib}
 
 \section{Time of the first hit for electrons}
 
-The time of the first hit for 20 GeV electrons is shown in figure \ref{fig:Timing_electrons}. The time distribution presents a large tail to the right and is much wider than for muons. This indicates that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher than for muons as well as the energy deposited in a single cell can be over hundreds MIP.
+The time of the first hit for 20 GeV electrons is shown in figure \ref{fig:Timing_electrons} and it is compared to the time distribution obtained with muons. The time distribution presents a large tail to the right and is much wider than for muons. This indicates that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher than for muons as well as the energy deposited in a single cell can be over hundreds MIP.
 
 Additionally, a timing offset of around 10 ns can be seen. This is expected and it is consistent with the changes in trigger configuration from the big scintillator plates to the small trigger scintillator of $10\times10$ cm$^2$.
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.5\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
-	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data, before further corrections. Max = -10.05 ns, RMS = 8.92 ns.}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
+	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data. Max = -10.05 ns, RMS = 8.92 ns. The blue distribution represents the time of first hit distribution obtained with muons.}
 	\label{fig:Timing_electrons}
 \end{figure}
 
@@ -182,95 +182,43 @@ The simulation is validated by comparing the recorded muon and electron data to 
 	\end{tabular}
 \end{table}
 
-The comparison of the time of first hit distribution for muons is shown in figure \ref{fig:sim_data_muon}. The comparison shows that in the full range, the difference between data and simulation is around 10-20\% maximum. The large uncertainties observed in the simulation are due to the systematics of the different cross-talk values.
+The comparison of the time of first hit distribution for muons is shown in figure \ref{fig:sim_data_muon}. The large uncertainties observed in the simulation are due to the systematics of the different cross-talk values. The comparison shows that in the range of -20 ns to 20 ns, the data and simulation agree well within the uncertainties. However, over 20 ns (respectively below -20 ns), the tails of the simulation don't agree with data. This may be due to the noise implementation in simulation that is not perfectly reproduced and that is suppressed by the track finder selection.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf}
-	\caption{Time of first hit for data and simulation between -20 and 20 ns.}
+	\caption{Time of first hit for data and simulation between -30 and 30 ns. The error bars of the simulation are obtained using a cross-talk value between 10\% and 18\%.}
 	\label{fig:sim_data_muon}
 \end{figure}
 
-In the next step, a comparison with electron data is necessary to validate the simulation. In addition to the muon resolution, a parametrization of the increase of the width of the time distribution as a function of the number of hits above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. Figure \ref{fig:sim_data_elec} shows this comparison.
+To further validate the simulation, comparisons with electron data is necessary. In addition to the muon resolution, a parametrization of the increase of the width of the time distribution as a function of the number of triggered channels in a chip above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. The figure \ref{fig:elec_sim_data_10GeV} shows the comparison of the time of first hit distribution for 10 GeV electrons. The time distributions and the distribution of the number of triggered channels per chip have been checked for all energies and they can be seen in appendix \ref{appendix:TimingAdd}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
+	\centering
+	\begin{subfigure}[t]{0.49\textwidth}
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf}
-		\caption{10 GeV.}\label{fig:elec_sim_data_10GeV}
+		\caption{}\label{fig:elec_sim_data_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf}
-		\caption{15 GeV.}\label{fig:elec_sim_data_15GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf}
-		\caption{20 GeV.}\label{fig:elec_sim_data_20GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf}
-		\caption{30 GeV.}\label{fig:elec_sim_data_30GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf}
-		\caption{40 GeV.}\label{fig:elec_sim_data_40GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf}
-		\caption{50 GeV.}\label{fig:elec_sim_data_50GeV}
-	\end{subfigure}
-	\caption{Comparison between electron data and MC for all energies of the time of first hit. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter and with the error envelope from the number of hits parametrization.}
-	\label{fig:sim_data_elec}
-\end{figure}
-
-The simulation is systematically narrower than data for all energies. This would suggest that simulation has fewer hits than data which is in agreement with figure \ref{fig:sim_data_elec_nHits}, where generally simulation is 10-20\% lower than data in the region of 6 to 10 hits per chip. For the time of first hit, The simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in the simulation can influence highly the number of triggers in a chip. Also, the number of triggered channels parametrization may be imperfect. But due to the limited amount of data, only a global parametrization could be applied. For 10 to 20 GeV comparisons, the description of the tails in the simulation that are quite underestimated. This may be due to the description of the noise in the simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
-
-\begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
+	\begin{subfigure}[t]{0.49\textwidth}
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf}
-		\caption{10 GeV.}\label{fig:elec_sim_data_nHits_10GeV}
+		\caption{}\label{fig:elec_sim_data_nHits_10GeV}
 	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf}
-		\caption{15 GeV.}\label{fig:elec_sim_data_nHits_15GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf}
-		\caption{20 GeV.}\label{fig:elec_sim_data_nHits_20GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf}
-		\caption{30 GeV.}\label{fig:elec_sim_data_nHits_30GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf}
-		\caption{40 GeV.}\label{fig:elec_sim_data_nHits_40GeV}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
-		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf}
-		\caption{50 GeV.}\label{fig:elec_sim_data_nHits_50GeV}
-	\end{subfigure}
-	\caption{Comparison between electron data and MC for all energies of the number of triggered channels per chip. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}
-	\label{fig:sim_data_elec_nHits}
+	\caption{\subref{fig:elec_sim_data_10GeV}) Comparison of the time of first hit between data and simulations for 10 GeV electrons. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 10\% and with the error envelope from the number of hits parametrization. \subref{fig:elec_sim_data_nHits_10GeV}) Comparison of the number of triggered channels per chip between data and MC for 10 GeV electrons. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}
 \end{figure}
+
+The simulation is systematically narrower than data. This is caused by the simulation having fewer hits per chip than data which can be seen in figure \ref{fig:elec_sim_data_nHits_10GeV}. The simulation is generally 10\% to 20\% lower than data in the region of 6 to 10 hits per chip.
+
+For the distributions of the time of first hit, the simulation is in better agreement for higher energies, at 40-50 GeV, than for lower energies at 10-15 GeV. This may come from imperfect beam profiles where a slight shift in the simulation can influence highly the number of triggered channels in a chip. In addition, the number of triggered channels parametrization may be imperfect. But due to the limited amount of data, only a global parametrization could be applied.
+
+For all energies, the description of the tails of the time of first hit distribution in the simulation that are underestimated. This may be due to the description of the noise in the simulation that is not perfectly reproduced. Overall, the simulation and data are in agreement within statistical and systematic uncertainties.
+
+\begin{center}
+  \rule{0.5\textwidth}{.4pt}
+\end{center}
+
+In this chapter, the timing analysis of the recorded electron data has been presented. An increase of the width of the time distribution as a function of the number of triggered channels in a chip is seen in the electron data. This increase of the time resolution is used as an input to tune the simulation.
+
+The AHCAL timing simulation has been validated by comparing the simulated time distributions to data using muons and electrons. Overall, the simulation reproduces the data within 20\% in the range of -30 ns to 30 ns. However, the simulation underestimates highly the tails of the distribution that may be due to an imperfect implementation of noise hits in the simulation.
+
+The simulation is in good enough agreement with data that the time of hadron showers can be studied. In the next chapter, the timing analysis of pion showers and comparisons to simulation will be presented.
