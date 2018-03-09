@@ -11,7 +11,7 @@ In this chapter, the first section will described the procedure for the AHCAL en
 \section{Energy Calibration of the AHCAL}
 \label{sec:EnergyCalibration}
 
-As explained above, in order to have a meaningful comparison between channels of the detector, all channels need to be normalized to a common physics scale. The AHCAL uses muons to provide the calibration to the common scale as MIP. Therefore muon runs were recorded. As detailed in section \ref{sec:PartInter}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The conversion to the MIP energy scale for a AHCAL cell is expressed as:
+As detailed in section \ref{sec:PartInter}, the energy deposited in a single AHCAL cell follows approximatively a Landau distribution but due to the electronic noise, the resulting response is convoluted with a Gaussian distribution. The maximum of the Laudau-Gaussian convolution density function is defined as the MIP constant ($M_{i}$) for the i-th channel. The conversion to the MIP energy scale for a AHCAL cell is expressed as:
 \begin{equation}
 	E_i = \frac{(A_i - P_i) \times IC_i }{\frac{M_{i}}{ICP_i}}
 \end{equation}
@@ -111,7 +111,7 @@ A systematic error on the MIP energy scale can be derived by dividing the data m
 Both samples are very similar with a shift in the mean value of less than 1\%. As previously seen, a slight shoulder is present to higher MIP values though the mean is still very close to unity. By looking at the mean of the RMS of both distributions, a systematic uncertainty of around 3.6\% on the MIP energy scale can be derived.
 
 \section{Validation studies}
-\label{appendix:SimulationVal}
+\label{sec:SimulationVal}
 
 Once the energy scale calibration of the AHCAL has been performed, a validation of the simulation model can be done in order to be able to compare the recorded data and simulation in a latter stage.
 In this section, the validation of the AHCAL simulation is shown. The AHCAL simulation model is validated by comparing electromagnetic shower observables in data and simulation. Electromagnetic interactions within the AHCAL are used as these interactions should be well described in simulations and are less subject to modeling uncertainties. Finally, comparisons with hadron data of shower variables is shown to further validate the simulation.

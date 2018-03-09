@@ -98,21 +98,21 @@ A study has been performed to estimate the influence of the detector inhomogenei
 	\caption{\subref{fig:timing_inhomo_10GeV}) Time of the first hit distribution for all four middle tiles with 10 GeV electron beam. \subref{fig:timing_inhomo_50GeV}) Time of the first hit distribution for all four middle tiles with 50 GeV electron beam. All distribution are within 10-20\% in the core.}
 \end{figure}
 
-The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each of the four tiles at 10 and 50 GeV respectively. The ratio shown is compared to the top left center tile. At 50 GeV, the mean of the distributions vary between -0.02 ns and -0.13 ns. The RMS of the distributions vary between 7.86 ns and 8.33 ns corresponding to an increase of 6\%. For both energies, the distributions are within a 10-20\% agreement in the region between -20 ns and 20 ns. Therefore a conservative systematic uncertainty of 20\% is assigned to electron and pion data in the following.
+The figures \ref{fig:timing_inhomo_10GeV} and \ref{fig:timing_inhomo_50GeV} show the time distribution for each of the four tiles at 10 and 50 GeV respectively. The ratio shown is compared to the top left center tile. At 50 GeV, the mean of the distributions vary between -0.02 ns and -0.13 ns. The RMS of the distributions vary between 7.86 ns and 8.33 ns corresponding to an increase of 6\%. For both energies, the distributions are within a 10-20\% agreement in the region between -30 ns and 30 ns.
 
 \section{Transportability of the calibration}
 
 A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal was to understand how transportable is the time calibration. The setup was composed of the same four big layers used at CERN in July 2015. In order to have enough hits in all layers, an aluminum absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
 
+The same calibration constants determined from the CERN muon and electron data were used. Just a re-calibration of the time reference triggers ($T_{0}$) and the trigger time offset was necessary as the setup was different (different cabling and trigger logic).
+
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf}
-	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14.}\label{fig:TBMay2016}
+	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14. The blue distribution is the time of first hit in the case of events in which only single hits in a chip are taken.}\label{fig:TBMay2016}
 \end{figure}
 
-The same calibration constants determined from the CERN muon and electron data were used. Just a re-calibration of the time reference triggers ($T_{0}$) and the trigger time offset was necessary as the setup was different (different cabling and trigger logic).
-
-The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 13 and 14. The time resolution obtained of 7 ns is slightly better than the time resolution obtained at CERN in July 2015. The time distribution is narrower compared to the time distribution obtained at CERN. This is due to a lower number of hits per chip related to a lower beam energy. Thus the width of the distribution is smaller with the effect observed in section \ref{subsec:ped_shift}.
+The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 13 and 14 for all hits in black and for events with only single hits per chip in blue. The time resolution obtained of 6.8 ns is slightly better than the time resolution obtained at CERN in July 2015. The time distribution is narrower compared to the time distribution obtained at CERN. Similarly, the time distribution for events in which single hit per chip occurs is narrower by around 15\% compared to the muon time distribution. This is due to a lower number of hits per chip related to a lower beam energy. As well, it may be related to a different configuration of the time reference. Thus the width of the distribution is smaller with the effect observed in section \ref{subsec:ped_shift}.
 
 We can learn from this study, that the time calibration constants determined in a specific dataset can also be used for another dataset with the same layers. Therefore, the timing calibration depends mainly on hardware and not so much on the environment.
 
@@ -126,13 +126,13 @@ For a significant assessment of differences observed between data and simulation
 	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the timing in the order of 1 ns. This systematic error is the most dominant over all other uncertainties.
 	\item Time smearing parametrization: A parametrization was obtained from data for the width of the time smearing as a function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
 	\item Determination of the offset to $t=0$: For simulation, the time shift per layer is calculated using a time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this, an uncertainty of 3 mm corresponding to the scintillator thickness is taken in z corresponding to 0.01 ns uncertainty in timing.
-	\item Position of the detector relative to the beam: The detector was positioned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the millimeter level. Thus a conservative uncertainty of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the layers 1 to 10 and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the layer 11 to 14 with 10 GeV pion beam energy.
+	% \item Position of the detector relative to the beam: The detector was positioned in a way that the beam hits mostly the centered tiles. The uncertainty of the position of the layers is at the millimeter level. Thus a conservative uncertainty of a tile (3 cm) is taken. This uncertainty converted to time using QGSP\_BERT\_HP varies between 0.36 ns at $r = 1.5$ cm to 1.27 ns at $r = 19.5$ cm for the layers 1 to 10 and between 0.15 ns at $r = 1.5$ cm to 0.67 ns at $r = 31.5$ cm for the layer 11 to 14 with 10 GeV pion beam energy.
 	\item Cross-talk: No measurement for optical cross-talk between tiles is available and from previous measurements, it varies between 10\% and 18\%. These are used for systematics in simulation only for the layers 4 to 10. The cross-talk value induces a different number of hits in the detector thus has an impact on the width of the time distribution.
-	\item Detector inhomogeneities: As explained in section \ref{subsec:det_inhomo}, variations in the absolute number of entries in each time bins can be observed. The variations are between 10-20\% thus a conservative error of 20\% is used for the time distribution.
-	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection as shown in section \ref{sec:pionsel}. Thus the number of absolute pion events is not known. A conservative error of 10\% is taken into account when comparing data to simulation for the absolute number of hits per time bin.
+	\item Detector inhomogeneities: As explained in section \ref{subsec:det_inhomo}, variations in the absolute number of entries in each time bin can be observed. The variations in the number of entries per time bin are between 10-20\%. Therefore a conservative uncertainty of 20\% on the data normalization is applied for the comparison of absolute number of hits per time bin.
+	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection as shown in section \ref{sec:pionsel}. Thus the number of absolute pion events is not known. A 10\% uncertainty on the data normalization is assigned when comparing data to simulation for the absolute number of hits per time bin.
 \end{itemize}
 
-The systematic uncertainties are added in quadrature for the full systematic uncertainty. For comparison between data and simulation of the absolute time distribution, this results in an uncertainty of 20\% for muons/electrons and 30\% for pions is used. For the mean time of the first hit as a function of the hit energy, the systematic uncertainty is resulting at 1.04 ns. For the mean time of first hit as a function of the hit distance to the shower center of gravity, the systematic uncertainty is varying between 0.36 ns at small radius to 1.54 ns at large radius for the layers 1 to 11 and from 0.15 ns at small radius to 0.95 ns at large radius for the layers 11 to 14. The table \ref{table:time_syst} sums up the systematic uncertainties used in the analysis.
+The systematic uncertainties are added in quadrature for the full systematic uncertainty. For comparison between data and simulation of the absolute time distribution, this results in an uncertainty of 20\% for muons/electrons and 30\% for pions on the data normalization. For the mean time of the first hit as a function of the hit energy and as a function of the distance to the shower center of gravity, the systematic uncertainty is resulting at 1.04 ns. The table \ref{table:time_syst} sums up the systematic uncertainties used in the analysis.
 %% Systematics from number of hits may be underestimated... %
 {
 \renewcommand{\arraystretch}{1.2}
@@ -149,7 +149,6 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		Time-walk residuals & 0.2 ns \\
 		Number of triggered channels residuals & 1 ns \\
 		Offset to $t=0$ & 0.01 ns (MC) \\
-		Position relative to the beam & 0.36-1.54 ns (Layers 1 to 10) / 0.15-0.95 ns (Layer 11 to 14) \\
 		Cross-talk & 10-18\% \\
 		Detector inhomogeneities & 20\% \\
 		Number of absolute events & 10\% (pions) \\
@@ -159,7 +158,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		\midrule
 		data-MC hits per time bin & 20\% (muons/electrons) - 30\% (pions) \\
 		data-MC vs hit energy & 1.04 ns \\
-		data-MC vs hit distance to CoG & 1.10-1.86 ns (Layers 1 to 10) / 1.05-1.41 ns (Layer 11 to 14) \\
+		data-MC vs hit distance to shower CoG & 1.04 ns \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -204,7 +203,7 @@ To further validate the simulation, comparisons with electron data is necessary.
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf}
 		\caption{}\label{fig:elec_sim_data_nHits_10GeV}
 	\end{subfigure}
-	\caption{\subref{fig:elec_sim_data_10GeV}) Comparison of the time of first hit between data and simulations for 10 GeV electrons. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 10\% and with the error envelope from the number of hits parametrization. \subref{fig:elec_sim_data_nHits_10GeV}) Comparison of the number of triggered channels per chip between data and MC for 10 GeV electrons. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}
+	\caption{\subref{fig:elec_sim_data_10GeV}) Comparison of the time of first hit between data and simulations for 10 GeV electrons. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 10\% and with the error uncertainty from the number of hits parametrization. \subref{fig:elec_sim_data_nHits_10GeV}) Comparison of the number of triggered channels per chip between data and MC for 10 GeV electrons. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}
 \end{figure}
 
 The simulation is systematically narrower than data. This is caused by the simulation having fewer hits per chip than data which can be seen in figure \ref{fig:elec_sim_data_nHits_10GeV}. The simulation is generally 10\% to 20\% lower than data in the region of 6 to 10 hits per chip.
