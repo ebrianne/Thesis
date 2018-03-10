@@ -7,15 +7,15 @@
 
 As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for calibration and cross-checks as electromagnetic showers are instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
 
-In the following section, the muon dataset shown in section \ref{subsec:dataset} is used for the timing calibration of the AHCAL. The table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event (see section \ref{subsec:trigger}). Raw events are the number of events after the MIP selection (see section \ref{subsec:Muon_sel}). Selected events are counted after the selection on the error of the time reference that is explained in section \ref{section:time_ref}.
+In the following section, the muon dataset shown in section \ref{subsec:dataset} is used for the timing calibration of the AHCAL. The table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event (see section \ref{subsec:trigger}). Raw events are the number of events after the MIP selection (see section \ref{subsec:Muon_sel}) or electron selection (see section \ref{subsec:elec_sel}). Selected events are counted after the selection on the error of the time reference that is explained in section \ref{section:time_ref}.
 
 \begin{table}[htb!]
 	\centering
-	\caption{Table with the run statistic before and after selection used for timing calibration.}
+	\caption{Table with the number of events selected for the muon and electron data for the timing calibration.}
 	\label{table:mu_elec_runs}
 	\begin{tabular}{@{} llllll @{}}
 		\toprule
-		Runs & Energy & Particle Type & Events (Raw) & Events (sel.) & $\frac{\text{N$_{sel.}$}}{\text{N$_{raw}$}}$ \\
+		Runs & Energy & Particle Type & N$_{raw}$ & N$_{sel.}$ & $\frac{\text{N$_{sel.}$}}{\text{N$_{raw}$}}$ \\
 		\midrule
 		24016-24663 & 50-150 GeV & $\mu^-$ & 1851536 & 836796 & 45.2\% \\
 		\midrule
