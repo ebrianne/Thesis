@@ -142,10 +142,6 @@
 \contentsline {subsection}{\numberline {11.1.4}Longitudinal dependence of timing profiles}{124}{subsection.11.1.4}
 \contentsline {subsection}{\numberline {11.1.5}Time correlations between layers}{124}{subsection.11.1.5}
 \contentsline {section}{\numberline {11.2}Summary and Outlook}{127}{section.11.2}
-\contentsline {subsubsection}{Energy scale calibration}{127}{section*.133}
-\contentsline {subsubsection}{Timing calibration}{127}{section*.134}
-\contentsline {subsubsection}{Validation of the calibration}{127}{section*.135}
-\contentsline {subsubsection}{Timing of hadron showers}{127}{section*.136}
 \contentsline {chapter}{\numberline {12}Application of timing cuts in the ILD detector simulation}{129}{chapter.12}
 \contentsline {section}{\numberline {12.1}Simulation and software framework}{129}{section.12.1}
 \contentsline {subsection}{\numberline {12.1.1}ILD Detector Simulation}{129}{subsection.12.1.1}
@@ -157,15 +153,15 @@
 \contentsline {subsection}{\numberline {12.3.1}Modification of timing window in ILDCaloDigi}{131}{subsection.12.3.1}
 \contentsline {subsection}{\numberline {12.3.2}Check of the energy calibration}{131}{subsection.12.3.2}
 \contentsline {subsection}{\numberline {12.3.3}Timing cut effects on hadronic showers in ILD detector}{134}{subsection.12.3.3}
-\contentsline {subsubsection}{Event Selection}{135}{section*.143}
-\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{135}{section*.144}
+\contentsline {subsubsection}{Event Selection}{135}{section*.139}
+\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{135}{section*.140}
 \contentsline {subsection}{\numberline {12.3.4}In a realistic scenario}{140}{subsection.12.3.4}
 \contentsline {section}{\numberline {12.4}Understanding the degradation of the energy resolution with timing cuts}{146}{section.12.4}
 \contentsline {subsection}{\numberline {12.4.1}Hit Energy spectra in HCAL}{146}{subsection.12.4.1}
 \contentsline {subsection}{\numberline {12.4.2}Influence of timing cuts on hit energy spectra in HCAL}{149}{subsection.12.4.2}
 \contentsline {section}{\numberline {12.5}Conclusion and Outlook}{151}{section.12.5}
 \contentsline {chapter}{\numberline {13}Summary}{153}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{155}{section*.168}
+\contentsline {chapter}{Acknowledgments}{155}{section*.164}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{157}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{159}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{163}{Appendix.1.C}
@@ -175,7 +171,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{179}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{181}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{185}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{187}{appendix*.200}
-\contentsline {chapter}{List of figures}{189}{appendix*.201}
-\contentsline {chapter}{Acronyms}{201}{section*.202}
-\contentsline {chapter}{Bibliography}{205}{appendix*.204}
+\contentsline {chapter}{List of tables}{187}{appendix*.196}
+\contentsline {chapter}{List of figures}{189}{appendix*.197}
+\contentsline {chapter}{Acronyms}{201}{section*.198}
+\contentsline {chapter}{Bibliography}{205}{appendix*.200}

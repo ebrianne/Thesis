@@ -31,26 +31,26 @@
 \contentsline {table}{\numberline {11.2}{\ignorespaces Summary of the fit results in figure \ref {fig:dNdt_Comparison}.\relax }}{117}{table.caption.117}
 \contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of events in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top number is for \textsc {Mokka}\xspace simulations, the bottom one is for \textsc {DD4hep}\xspace .\relax }}{127}{table.caption.132}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {12.1}{\ignorespaces Considered ILD detector options.\relax }}{130}{table.caption.137}
-\contentsline {table}{\numberline {12.2}{\ignorespaces Time resolution used for smearing.\relax }}{140}{table.caption.152}
+\contentsline {table}{\numberline {12.1}{\ignorespaces Considered ILD detector options.\relax }}{130}{table.caption.133}
+\contentsline {table}{\numberline {12.2}{\ignorespaces Time resolution used for smearing.\relax }}{140}{table.caption.148}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Selection cuts for muon runs.\relax }}{157}{table.caption.170}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Selection cuts for each electron energies.\relax }}{157}{table.caption.171}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Selection cuts for pions.\relax }}{158}{table.caption.172}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Selection cuts for time reference channels.\relax }}{158}{table.caption.173}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Selection cuts for noise extraction from muon runs.\relax }}{173}{table.caption.188}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Selection cuts for muon runs.\relax }}{157}{table.caption.166}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Selection cuts for each electron energies.\relax }}{157}{table.caption.167}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Selection cuts for pions.\relax }}{158}{table.caption.168}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Selection cuts for time reference channels.\relax }}{158}{table.caption.169}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{179}{table.caption.194}
-\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{179}{table.caption.195}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Selection cuts for noise extraction from muon runs.\relax }}{173}{table.caption.184}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{182}{table.caption.196}
-\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{183}{table.caption.197}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{185}{table.caption.198}
-\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{186}{table.caption.199}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{179}{table.caption.190}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{179}{table.caption.191}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{182}{table.caption.192}
+\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{183}{table.caption.193}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{185}{table.caption.194}
+\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{186}{table.caption.195}
