@@ -691,15 +691,15 @@ F.~Simon, C.~Soldner, and L.~Weuste, ``{T3B - an experiment to measure the time
   structure of hadronic showers},'' {\em Journal of Instrumentation}, vol.~8,
   no.~12, p.~P12001, 2013.
 
-\bibitem{CaN026}
-{The CALICE Collaboration}, ``{Pion Showers in the CALICE AHCAL Prototype},''
-  {\em CALICE Analysis Note 026}, 2010.
-
 \bibitem{ELLSWORTH1982167}
 R.~Ellsworth, J.~Goodman, A.~Ito, J.~Macfall, F.~Siohan, R.~Streitmatter,
   S.~Tonwar, P.~Viswanath, and G.~Yodh, ``{{A study of albedo from hadronic
   calorimeter for energies $\sim$100–2000 GeV}},'' {\em Nuclear Instruments
   and Methods in Physics Research}, vol.~203, no.~1, pp.~167 -- 177, 1982.
+
+\bibitem{CaN026}
+{The CALICE Collaboration}, ``{Pion Showers in the CALICE AHCAL Prototype},''
+  {\em CALICE Analysis Note 026}, 2010.
 
 \bibitem{Li2013}
 B.~Li, K.~Fujii, and Y.~Gao, ``{Kalman-filter-based track fitting in

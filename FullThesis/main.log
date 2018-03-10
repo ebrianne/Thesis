@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  10 MAR 2018 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  10 MAR 2018 20:56
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1874,97 +1874,97 @@ Overfull \hbox (0.99997pt too wide) detected at line 139
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 140
- [][][]\T1/futs/m/n/10 118[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 141
- [][][]\T1/futs/m/n/10 125[][]
+ [][][]\T1/futs/m/n/10 119[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 142
- [][][]\T1/futs/m/n/10 125[][]
+ [][][]\T1/futs/m/n/10 124[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 143
- [][][]\T1/futs/m/n/10 128[][]
+ [][][]\T1/futs/m/n/10 124[][]
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 145
- [][][]\T1/futs/m/n/10 131[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 146
- [][][]\T1/futs/m/n/10 131[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 147
- [][][]\T1/futs/m/n/10 132[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 148
- [][][]\T1/futs/m/n/10 132[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 149
- [][][]\T1/futs/m/n/10 132[][]
+Overfull \hbox (0.99997pt too wide) detected at line 144
+ [][][]\T1/futs/m/n/10 127[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 150
- [][][]\T1/futs/m/n/10 132[][]
+ [][][]\T1/futs/m/n/10 129[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 151
- [][][]\T1/futs/m/n/10 133[][]
+ [][][]\T1/futs/m/n/10 129[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 152
- [][][]\T1/futs/m/n/10 133[][]
+ [][][]\T1/futs/m/n/10 130[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 153
- [][][]\T1/futs/m/n/10 133[][]
+ [][][]\T1/futs/m/n/10 130[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 154
- [][][]\T1/futs/m/n/10 136[][]
+ [][][]\T1/futs/m/n/10 130[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 155
+ [][][]\T1/futs/m/n/10 130[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 156
+ [][][]\T1/futs/m/n/10 131[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 157
- [][][]\T1/futs/m/n/10 142[][]
+ [][][]\T1/futs/m/n/10 131[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 158
- [][][]\T1/futs/m/n/10 148[][]
+ [][][]\T1/futs/m/n/10 131[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 159
- [][][]\T1/futs/m/n/10 148[][]
+ [][][]\T1/futs/m/n/10 134[][]
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 160
+Overfull \hbox (0.99997pt too wide) detected at line 162
+ [][][]\T1/futs/m/n/10 140[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 163
+ [][][]\T1/futs/m/n/10 146[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 164
+ [][][]\T1/futs/m/n/10 146[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 165
+ [][][]\T1/futs/m/n/10 149[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 166
  [][][]\T1/futs/m/n/10 151[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 161
- [][][]\T1/futs/m/n/10 153[][]
  []
 
 [8])
@@ -2943,17 +2943,17 @@ File: ../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf Graphi
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf  used on input line 111.
 (pdftex.def)             Requested size: 268.88127pt x 193.4852pt.
  [109 <../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf, page is rotated 90 degrees>] [110] [111]
-<../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf, id=5362, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf, id=5361, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf  used on input line 188.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf, id=5366, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf, id=5365, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.pdf  used on input line 198.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf, id=5367, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf, id=5366, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf  used on input line 203.
@@ -2980,300 +2980,200 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateCluste
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters.pdf  used on input line 73.
 (pdftex.def)             Requested size: 268.88127pt x 193.01097pt.
  [117 <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters.pdf, page is rotated 90 degrees>]
-
-LaTeX Warning: Reference `' on page 118 undefined on input line 80.
-
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf, id=5636, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf, id=5637, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf  used on input line 84.
-(pdftex.def)             Requested size: 268.88127pt x 193.01097pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf, id=5639, 569.12625pt x 409.53pt>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf  used on input line 85.
+(pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
+<../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf, id=5638, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf  used on input line 91.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 83--94
+[][]  [] 
+ []
+
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf, id=5641, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf  used on input line 93.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf  used on input line 101.
 (pdftex.def)             Requested size: 268.88127pt x 193.4852pt.
-[118 <../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf, id=5691, 569.12625pt x 408.52625pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118 <../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf, id=5737, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf  used on input line 109.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf  used on input line 118.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf, id=5692, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf, id=5738, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf  used on input line 115.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf  used on input line 124.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 107--118
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 116--127
 [][]  [] 
  []
 
-[119 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf, id=5831, 569.12625pt x 408.52625pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf  used on input line 140.
-(pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-
-Underfull \hbox (badness 1048) in paragraph at lines 141--141
-[]\T1/futs/b/n/9 (a) |\T1/futs/m/n/9 Dif-fer-ence be-tween re-con-structed FHI and MC
- []
-
-<../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf, id=5832, 569.12625pt x 408.52625pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf  used on input line 146.
-(pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 138--149
-[][]  [] 
- []
-
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf, id=5835, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf  used on input line 158.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf, id=5836, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf  used on input line 164.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 156--167
-[][]  [] 
- []
-
-<../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf, id=5838, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf  used on input line 176.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf, id=5839, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf  used on input line 182.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 174--185
-[][]  [] 
- []
-
-[120] [121 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf, id=6030, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf  used on input line 195.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf, id=6031, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf  used on input line 201.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 193--204
-[][]  [] 
- []
-
-[122 <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf, id=6214, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf  used on input line 213.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf, id=6215, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf  used on input line 219.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf, id=6216, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf, id=5739, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf  used on input line 225.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf  used on input line 138.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf, id=6217, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf  used on input line 231.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf, id=6218, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf  used on input line 237.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 211--240
-[][]  []
- []
-
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 211--240
-[]  []
- []
-
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf, id=6219, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf  used on input line 247.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf, id=6220, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf  used on input line 253.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf, id=6221, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf, id=5740, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf  used on input line 259.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf, id=6222, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf  used on input line 265.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf, id=6223, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf  used on input line 271.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf  used on input line 144.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 245--274
-[][]  []
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 136--147
+[][]  [] 
+ []
+
+[119 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV.pdf, page is rotated 90 degrees>] [120 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf, id=5974, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf  used on input line 161.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf, id=5975, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf  used on input line 167.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 159--170
+[][]  [] 
  []
 
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 245--274
-[]  []
+Underfull \vbox (badness 4181) has occurred while \output is active []
+
+ [121 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf, id=6072, 569.12625pt x 408.52625pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf  used on input line 190.
+(pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
+<../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf, id=6073, 569.12625pt x 408.52625pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf  used on input line 196.
+(pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 188--199
+[][]  [] 
  []
 
-[123 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf, page is rotated 90 degrees>] [124 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/
-Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf, id=6664, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf, id=6076, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf  used on input line 208.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf, id=6077, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf  used on input line 214.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 206--217
+[][]  [] 
+ []
+
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf, id=6080, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf  used on input line 226.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf, id=6081, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf  used on input line 232.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 224--235
+[][]  [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf, page is rotated 90 degrees>] [123 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf, id=6353, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf  used on input line 285.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf  used on input line 246.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-<../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf, id=6665, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf, id=6354, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf  used on input line 291.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf  used on input line 252.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 283--294
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 244--255
 [][]  [] 
  []
 
-<../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf, id=6667, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf  used on input line 302.
-(pdftex.def)             Requested size: 268.88127pt x 193.4852pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf, id=6669, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf  used on input line 312.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf, id=6670, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf  used on input line 318.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf, id=6671, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf  used on input line 324.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf, id=6672, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf  used on input line 330.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf, id=6673, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf, id=6357, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf  used on input line 336.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf  used on input line 266.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf, id=6358, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf  used on input line 272.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 310--339
-[][]  []
- []
-
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 310--339
-[]  []
- []
-
-[125 <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf, id=6770, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf  used on input line 350.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf, id=6771, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf  used on input line 356.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 348--359
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 264--275
 [][]  [] 
  []
 
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf, id=6775, 569.12625pt x 409.53pt>
+[124 <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf, id=6453, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf  used on input line 289.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf, id=6454, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf  used on input line 295.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 287--298
+[][]  [] 
+ []
+
+
+Underfull \vbox (badness 2401) has occurred while \output is active []
+
+ [125 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf, id=6632, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf  used on input line 396.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf  used on input line 313.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf, id=6776, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf, id=6633, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf  used on input line 402.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf, id=6777, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf  used on input line 408.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf, id=6778, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf  used on input line 414.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf, id=6779, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf  used on input line 420.
-(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf, id=6780, 569.12625pt x 409.53pt>
-File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf Graphic file (type pdf)
-<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf  used on input line 426.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf  used on input line 319.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
 
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 394--429
-[][]  []
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 311--322
+[][]  [] 
  []
 
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 394--429
-[]  []
- []
-
-
-Overfull \hbox (1.56998pt too wide) in paragraph at lines 394--429
-[]  [] 
- []
-
-
-Underfull \vbox (badness 1460) has occurred while \output is active []
-
- [126 <../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf, page is rotated 90 degrees>] [127 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV.pdf, page is rotated 90 degrees>]
-Overfull \hbox (2.10481pt too wide) in paragraph at lines 435--436
+[126 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf, page is rotated 90 degrees>]
+Overfull \hbox (2.10481pt too wide) in paragraph at lines 351--352
 []\T1/futs/m/n/10 The un-der-stand-ing of the time struc-ture of hadronic show-ers and the level of ac-cu-racy re-flected in \T1/futs/m/sc/10 Geant4
  []
 
-[128 <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf, page is rotated 90 degrees>] [129 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf, page is rotated 90 degrees>]) [130]
+[127]) [128]
 \openout2 = `chap6/chap6_intro.aux'.
 
  (./chap6/chap6_intro.tex
@@ -3291,34 +3191,34 @@ Overfull \hbox (9.08177pt too wide) in paragraph at lines 33--34
 
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
- [131
+ [129
 
 
 
-]) [132]
+]) [130]
 \openout2 = `chap6/chap6_ILD.aux'.
 
  (./chap6/chap6_ILD.tex
-<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf, id=7438, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf, id=6774, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf  used on input line 27.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf, id=7439, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf, id=6775, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf  used on input line 33.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
- [133
+ [131
 
 
-] [134 <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf, id=7546, 569.12625pt x 409.53pt>
+] [132 <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf, id=6881, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf  used on input line 45.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf, id=7547, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf, id=6882, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf  used on input line 51.
@@ -3326,52 +3226,52 @@ Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Compari
 
 Underfull \vbox (badness 1571) has occurred while \output is active []
 
- [135 <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf, id=7640, 569.12625pt x 450.68375pt>
+ [133 <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf, id=6976, 569.12625pt x 450.68375pt>
 File: ../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf  used on input line 68.
 (pdftex.def)             Requested size: 215.1009pt x 170.34009pt.
-<../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf, id=7641, 569.12625pt x 449.68pt>
+<../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf, id=6977, 569.12625pt x 449.68pt>
 File: ../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf  used on input line 73.
 (pdftex.def)             Requested size: 215.1009pt x 169.96072pt.
- [136 <../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf, id=7740, 569.12625pt x 409.53pt>
+ [134 <../Thesis_Plots/ILD/Momentum_spectra_to100GeV_final.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Stackall_dmin_3GeVneu_10GeVcharged_final_3_morestat.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf, id=7077, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf  used on input line 100.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf, id=7741, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf, id=7078, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf  used on input line 105.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
- [137 <../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf, id=7843, 569.12625pt x 409.53pt>
+ [135 <../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf, id=7179, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf  used on input line 119.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf, id=7844, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf, id=7180, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf  used on input line 125.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
- [138 <../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf, id=7946, 569.12625pt x 409.53pt>
+ [136 <../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf, id=7283, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf  used on input line 141.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf, id=7948, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf, id=7285, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf  used on input line 149.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
- [139 <../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf, id=8004, 569.12625pt x 409.53pt>
+ [137 <../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf, id=7339, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf  used on input line 168.
@@ -3381,54 +3281,54 @@ Overfull \hbox (1.36127pt too wide) in paragraph at lines 181--182
 \T1/futs/m/n/10 ($\FMS/futm/m/n/10 ^^X$[][] \T1/futs/m/n/10 for 10 GeV to $\FMS/futm/m/n/10 ^^X$[][] \T1/futs/m/n/10 for 90 GeV) that may be re-lated to the elec-tro-mag-netic frac-tion in a hadronic
  []
 
-[140 <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf, id=8057, 569.12625pt x 409.53pt>
+[138 <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf, id=7392, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf  used on input line 187.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf, id=8058, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf, id=7393, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf  used on input line 192.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf, id=8063, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf, id=7398, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf  used on input line 200.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
- [141 <../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
+ [139 <../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: Reference `subsec:SPIROC2B' on page 142 undefined on input line 232.
+LaTeX Warning: Reference `subsec:SPIROC2B' on page 140 undefined on input line 232.
 
-[142 <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf, id=8251, 569.12625pt x 409.53pt>
+[140 <../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf, id=7587, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf  used on input line 236.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf, id=8252, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf, id=7588, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf  used on input line 242.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf, id=8253, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf, id=7589, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf  used on input line 248.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
- [143 <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf, id=8352, 569.12625pt x 409.53pt>
+ [141 <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf, id=7688, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf  used on input line 256.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf, id=8353, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf, id=7689, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf  used on input line 262.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf, id=8354, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf, id=7690, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf  used on input line 268.
@@ -3438,28 +3338,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf, id=8358, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf, id=7694, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf  used on input line 276.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf, id=8359, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf, id=7695, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf  used on input line 282.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf, id=8360, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf, id=7696, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf  used on input line 288.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-[144 <../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf, page is rotated 90 degrees>] [145 <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf, page is rotated 90 degrees>] [146 <../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf, page is rotated 90 degrees>] [147 <../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf, id=8692, 569.12625pt x 409.53pt>
+[142 <../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3.pdf, page is rotated 90 degrees>] [143 <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing1.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing2.pdf, page is rotated 90 degrees>] [144 <../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerResoAbsolute_TimeCuts_Smearing3.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_0.4ns/Plots/ShowerWidth_Resolution_Smearing1.pdf, page is rotated 90 degrees>] [145 <../Thesis_Plots/ILD/Smearing_1ns/Plots/ShowerWidth_Resolution_Smearing2.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/Smearing_8ns/Plots/ShowerWidth_Resolution_Smearing3.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf, id=8028, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf  used on input line 313.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf, id=8693, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf, id=8029, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf  used on input line 319.
@@ -3467,18 +3367,18 @@ Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpec
 
 Underfull \vbox (badness 3019) has occurred while \output is active []
 
- [148 <../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf, id=8791, 569.12625pt x 409.53pt>
+ [146 <../Thesis_Plots/ILD/AdditionalPlots/Plots/EnergySum_100ns_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_100ns_30GeV.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf, id=8127, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf  used on input line 334.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf, id=8793, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf, id=8129, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf  used on input line 342.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf, id=8795, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf, id=8131, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf  used on input line 350.
@@ -3486,32 +3386,32 @@ Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf, page is rotated 90 degrees>] [150 <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf, page is rotated 90 degrees>]
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, id=8939, 569.12625pt x 409.53pt>
+ [147 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Zoom_100ns_30GeV.pdf, page is rotated 90 degrees>] [148 <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_100ns_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf, page is rotated 90 degrees>]
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, id=8275, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf  used on input line 386.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, id=8940, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, id=8276, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf  used on input line 392.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, id=8947, 569.12625pt x 409.53pt>
+<../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, id=8283, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf  used on input line 410.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-) [151 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, page is rotated 90 degrees>] [152 <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, page is rotated 90 degrees>]
+) [149 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, page is rotated 90 degrees>] [150 <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, page is rotated 90 degrees>]
 \openout2 = `chap6/chap6_conclusion.aux'.
 
- (./chap6/chap6_conclusion.tex) [153
+ (./chap6/chap6_conclusion.tex) [151
 
 
 ]
 \openout2 = `summary.aux'.
 
- (./summary.tex [154
+ (./summary.tex [152
 
 
 
@@ -3527,10 +3427,10 @@ Overfull \hbox (0.28975pt too wide) in paragraph at lines 8--9
 \T1/futs/m/n/10 SiPM tech-nol-ogy. In the test-beam cam-paign at CERN in July 2015, the CAL-ICE AH-CAL tech-no-log-i-cal calorime-
  []
 
-[155]) [156]
+[153]) [154]
 \openout2 = `acknowledgments.aux'.
 
- (./acknowledgments.tex) [157
+ (./acknowledgments.tex) [155
 
 
 
@@ -3538,108 +3438,108 @@ Overfull \hbox (0.28975pt too wide) in paragraph at lines 8--9
 ]
 \openout2 = `Appendixes/EvtSelection.aux'.
 
- (./Appendixes/EvtSelection.tex [158
+ (./Appendixes/EvtSelection.tex [156
 
 
 
 ]
 Appendix A.
-) [159] [160]
+) [157] [158]
 \openout2 = `Appendixes/ValidationSim.aux'.
 
  (./Appendixes/ValidationSim.tex
 Appendix B.
-<../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf, id=9124, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf, id=8460, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf  used on input line 8.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf, id=9125, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf, id=8461, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf  used on input line 13.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf, id=9126, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf, id=8462, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf  used on input line 23.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf, id=9127, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf, id=8463, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf  used on input line 28.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf, id=9128, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf, id=8464, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf  used on input line 37.
 (pdftex.def)             Requested size: 219.5866pt x 157.62282pt.
-<../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf, id=9129, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf, id=8465, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf  used on input line 42.
 (pdftex.def)             Requested size: 219.5866pt x 157.62282pt.
-<../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf, id=9130, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf, id=8466, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf  used on input line 51.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf, id=9131, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf, id=8467, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf  used on input line 56.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf, id=9136, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf, id=8472, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf  used on input line 66.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf, id=9137, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf, id=8473, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf  used on input line 71.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf, id=9142, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf, id=8478, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf  used on input line 81.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf, id=9143, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf, id=8479, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf  used on input line 86.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-) [161
+) [159
 
 
 
- <../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf, page is rotated 90 degrees>] [162 <../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf, page is rotated 90 degrees>] [163 <../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf, page is ro
-tated 90 degrees>] [164 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf, page is rotated 90 degrees>]
+ <../Thesis_Plots/Timing/Muons/Plots/BeamProfileX.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/BeamProfileY.pdf, page is rotated 90 degrees>] [160 <../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGX_AHCAL_50GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Run24405_CoGY_AHCAL_50GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGX_AHCAL_90GeV_Comparison.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Run24332_CoGY_AHCAL_90GeV_Comparison.pdf, page is rotated 90 degrees>] [161 <../Thesis_Plots/Timing/Muons/Plots/Validation_Evis_Muons.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/Validation_nHits_Muons.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons10GeV.pdf, page is ro
+tated 90 degrees>] [162 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_EnergySum_Xtalk_electrons50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_nHits_Xtalk_electrons50GeV.pdf, page is rotated 90 degrees>]
 \openout2 = `Appendixes/TimingAdd.aux'.
 
  (./Appendixes/TimingAdd.tex
 Appendix C.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf, id=9689, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf, id=9025, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf  used on input line 8.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf, id=9690, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf, id=9026, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf  used on input line 14.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf, id=9691, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf, id=9027, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf  used on input line 20.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf, id=9692, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf, id=9028, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf  used on input line 26.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf, id=9693, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf, id=9029, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf  used on input line 32.
@@ -3654,27 +3554,27 @@ Overfull \hbox (1.56998pt too wide) in paragraph at lines 6--35
 []  []
  []
 
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf, id=9694, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf, id=9030, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf  used on input line 41.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf, id=9695, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf, id=9031, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf  used on input line 47.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf, id=9696, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf, id=9032, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf  used on input line 53.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf, id=9697, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf, id=9033, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf  used on input line 59.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf, id=9698, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf, id=9034, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf  used on input line 65.
@@ -3689,22 +3589,22 @@ Overfull \hbox (1.56998pt too wide) in paragraph at lines 39--68
 []  []
  []
 
-<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf, id=9699, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf, id=9035, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf  used on input line 75.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf, id=9700, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf, id=9036, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf  used on input line 80.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf, id=9701, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf, id=9037, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf  used on input line 86.
 (pdftex.def)             Requested size: 224.06544pt x 160.83936pt.
-<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf, id=9702, 569.12625pt x 408.52625pt>
+<../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf, id=9038, 569.12625pt x 408.52625pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf  used on input line 92.
@@ -3719,22 +3619,22 @@ Overfull \hbox (1.56998pt too wide) in paragraph at lines 73--95
 []  [] 
  []
 
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf, id=9703, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf, id=9039, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf  used on input line 101.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf, id=9704, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf, id=9040, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf  used on input line 106.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf, id=9705, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf, id=9041, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf  used on input line 112.
 (pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
-<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf, id=9706, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf, id=9042, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf  used on input line 118.
@@ -3749,71 +3649,192 @@ Overfull \hbox (1.56998pt too wide) in paragraph at lines 99--121
 []  [] 
  []
 
-) [165
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf, id=9043, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf  used on input line 127.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf, id=9044, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf  used on input line 133.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf, id=9045, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf  used on input line 139.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf, id=9046, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf  used on input line 145.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 125--148
+[][]  []
+ []
+
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 125--148
+[]  [] 
+ []
+
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf, id=9047, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf  used on input line 154.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf, id=9048, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf  used on input line 160.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf, id=9049, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf  used on input line 166.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf, id=9050, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf  used on input line 172.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 152--175
+[][]  []
+ []
+
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 152--175
+[]  [] 
+ []
+
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf, id=9051, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf  used on input line 182.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf, id=9052, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf  used on input line 188.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf, id=9053, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf  used on input line 194.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf, id=9054, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf  used on input line 200.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 180--203
+[][]  []
+ []
+
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 180--203
+[]  [] 
+ []
+
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf, id=9055, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf  used on input line 209.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf, id=9056, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf  used on input line 215.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf, id=9057, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf  used on input line 221.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+<../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf, id=9058, 569.12625pt x 409.53pt>
+File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf Graphic file (type pdf)
+<use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf>
+Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf  used on input line 227.
+(pdftex.def)             Requested size: 224.06544pt x 161.23454pt.
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 207--230
+[][]  []
+ []
+
+
+Overfull \hbox (1.56998pt too wide) in paragraph at lines 207--230
+[]  [] 
+ []
+
+) [163
 
 
 
-] [166 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf, page is rotated 90 degrees>] [167 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf, page is rotated 90 degre
-es> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf, page is rotated 90 degrees>] [168 <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf, page is rotated 90 degrees>] [169 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf, page is rotated 90 degrees>]
+] [164 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons15GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons20GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons40GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons50GeV.pdf, page is rotated 90 degrees>] [165 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_15GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_20GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_40GeV.pdf, page is rotated 90 degre
+es> <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_50GeV.pdf, page is rotated 90 degrees>] [166 <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf, page is rotated 90 degrees>] [167 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf, page is rotated 90 degrees>]
+[168 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf, page is rotated 90 degrees>] [169 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf, page is rotated 90 degrees>] [170 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions
+/Plots/ComparisonToSim/Time_Depth_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf, page is rotated 90 degrees>] [171 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.pdf, page is rotated 90 degrees>]
 \openout2 = `Appendixes/Noise.aux'.
 
-
-(./Appendixes/Noise.tex [170
+ (./Appendixes/Noise.tex [172
 
 
 
 ]
 Appendix D.
-<../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf, id=10517, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf, id=10580, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf  used on input line 29.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf, id=10518, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf, id=10581, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf  used on input line 35.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-) [171] [172 <../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf, page is rotated 90 degrees>]
+) [173] [174 <../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf, page is rotated 90 degrees>]
 \openout2 = `Appendixes/ErrorTDCCalib.aux'.
 
  (./Appendixes/ErrorTDCCalib.tex
 Appendix E.
-<../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf, id=10622, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf, id=10686, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf  used on input line 28.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf, id=10623, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf, id=10687, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf  used on input line 34.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf, id=10630, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf, id=10694, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf  used on input line 45.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf, id=10631, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf, id=10695, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf  used on input line 51.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-) [173
+) [175
 
 
 
-] [174 <../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf, page is rotated 90 degrees>]
+] [176 <../Thesis_Plots/Timing/Muons/Plots/PedestalErrorDistribution_AHCAL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/MaxErrorDistribution_AHCAL.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer3.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Muons/Plots/TimeErrorEstimation_Layer5.pdf, page is rotated 90 degrees>]
 \openout2 = `Appendixes/MCParamnHits.aux'.
 
  (./Appendixes/MCParamnHits.tex
 Appendix F.
-<../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf, id=10820, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf, id=10884, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf  used on input line 18.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-<../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf, id=10821, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf, id=10885, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf  used on input line 24.
@@ -3821,29 +3842,29 @@ Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisat
 
 Underfull \vbox (badness 1226) has occurred while \output is active []
 
- [175
+ [177
 
 
 
 ]
-<../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf, id=10836, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf, id=10900, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf  used on input line 37.
 (pdftex.def)             Requested size: 313.69026pt x 225.73586pt.
-) [176 <../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf, page is rotated 90 degrees>]
+) [178 <../Thesis_Plots/Timing/Electrons/Plots/TimingHitsBins.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisation.pdf, page is rotated 90 degrees> <../Thesis_Plots/Timing/Electrons/Plots/MeanParametrisationWithSystErrors.pdf, page is rotated 90 degrees>]
 \openout2 = `Appendixes/RejectChips.aux'.
 
  (./Appendixes/RejectChips.tex
 Appendix G.
-) [177
+) [179
 
 
 
 ]
 \openout2 = `Appendixes/DeadChn.aux'.
 
- (./Appendixes/DeadChn.tex [178
+ (./Appendixes/DeadChn.tex [180
 
 
 
@@ -3852,16 +3873,16 @@ Appendix H.
 
 LaTeX Warning: Float too large for page by 55.41245pt on input line 124.
 
-) [179] [180] [181]
+) [181] [182] [183]
 \openout2 = `Appendixes/Database.aux'.
 
- (./Appendixes/Database.tex [182
+ (./Appendixes/Database.tex [184
 
 
 
 ]
 Appendix I.
-) [183] [184] (./main.lot [185
+) [185] [186] (./main.lot [187
 
 
 ]
@@ -3886,89 +3907,89 @@ Overfull \hbox (0.99997pt too wide) detected at line 31
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 32
- [][][]\T1/futs/m/n/10 128[][]
+ [][][]\T1/futs/m/n/10 127[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 34
- [][][]\T1/futs/m/n/10 132[][]
+ [][][]\T1/futs/m/n/10 130[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 35
- [][][]\T1/futs/m/n/10 142[][]
+ [][][]\T1/futs/m/n/10 140[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 38
- [][][]\T1/futs/m/n/10 159[][]
+ [][][]\T1/futs/m/n/10 157[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 39
- [][][]\T1/futs/m/n/10 159[][]
+ [][][]\T1/futs/m/n/10 157[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 40
- [][][]\T1/futs/m/n/10 160[][]
+ [][][]\T1/futs/m/n/10 158[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 41
- [][][]\T1/futs/m/n/10 160[][]
+ [][][]\T1/futs/m/n/10 158[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 45
- [][][]\T1/futs/m/n/10 171[][]
+ [][][]\T1/futs/m/n/10 173[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 49
- [][][]\T1/futs/m/n/10 177[][]
+ [][][]\T1/futs/m/n/10 179[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 50
- [][][]\T1/futs/m/n/10 177[][]
+ [][][]\T1/futs/m/n/10 179[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 52
- [][][]\T1/futs/m/n/10 180[][]
+ [][][]\T1/futs/m/n/10 182[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 53
- [][][]\T1/futs/m/n/10 181[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 55
  [][][]\T1/futs/m/n/10 183[][]
  []
 
 
+Overfull \hbox (0.99997pt too wide) detected at line 55
+ [][][]\T1/futs/m/n/10 185[][]
+ []
+
+
 Overfull \hbox (0.99997pt too wide) detected at line 56
- [][][]\T1/futs/m/n/10 184[][]
+ [][][]\T1/futs/m/n/10 186[][]
  []
 
 )
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [186] (./main.lof
+ [188] (./main.lof
 Underfull \vbox (badness 6220) has occurred while \output is active []
 
- [187
+ [189
 
-] [188] [189]
+] [190] [191]
 Overfull \hbox (3.90176pt too wide) in paragraph at lines 63--63
  \T1/futs/m/n/10 tron data and sim-u-la-tions with dif-fer-ent cross-talk pa-ram-e-ters. Sim-u-lated with QGSP_BERT_HP 
  []
 
-[190]
+[192]
 Overfull \hbox (0.99997pt too wide) detected at line 69
  [][][]\T1/futs/m/n/10 100[][]
  []
@@ -4018,7 +4039,7 @@ Overfull \hbox (0.99997pt too wide) detected at line 79
  [][][]\T1/futs/m/n/10 109[][]
  []
 
-[191]
+[193]
 Overfull \hbox (0.99997pt too wide) detected at line 80
  [][][]\T1/futs/m/n/10 109[][]
  []
@@ -4055,12 +4076,12 @@ Overfull \hbox (0.99997pt too wide) detected at line 87
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 88
- [][][]\T1/futs/m/n/10 119[][]
+ [][][]\T1/futs/m/n/10 120[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 89
- [][][]\T1/futs/m/n/10 121[][]
+ [][][]\T1/futs/m/n/10 120[][]
  []
 
 
@@ -4075,13 +4096,10 @@ Overfull \hbox (0.99997pt too wide) detected at line 91
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 92
- [][][]\T1/futs/m/n/10 122[][]
+ [][][]\T1/futs/m/n/10 123[][]
  []
 
-
-Underfull \vbox (badness 1033) has occurred while \output is active []
-
- [192]
+[194]
 Overfull \hbox (0.99997pt too wide) detected at line 93
  [][][]\T1/futs/m/n/10 123[][]
  []
@@ -4097,43 +4115,43 @@ Overfull \hbox (0.99997pt too wide) detected at line 95
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 96
- [][][]\T1/futs/m/n/10 126[][]
+Overfull \hbox (2.60788pt too wide) in paragraph at lines 95--95
+ \T1/futs/m/n/10 first hit as func-tion of the layer po-si-tion for 50 GeV pi-ons in sim-u-la-tion with the QGSP_BERT_HP 
  []
 
 
-Overfull \hbox (35.28781pt too wide) in paragraph at lines 96--96
- [][] []\T1/futs/m/n/10 Time of first hit as func-tion of the layer po-si-tion for 50 GeV pi-ons in sim-u-la-tion with the QGSP_BERT_HP 
+Overfull \hbox (0.99997pt too wide) detected at line 96
+ [][][]\T1/futs/m/n/10 125[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 97
- [][][]\T1/futs/m/n/10 127[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 98
- [][][]\T1/futs/m/n/10 128[][]
+ [][][]\T1/futs/m/n/10 126[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 99
- [][][]\T1/futs/m/n/10 129[][]
+ [][][]\T1/futs/m/n/10 132[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 100
+ [][][]\T1/futs/m/n/10 132[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 101
- [][][]\T1/futs/m/n/10 134[][]
+ [][][]\T1/futs/m/n/10 133[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 102
- [][][]\T1/futs/m/n/10 134[][]
+ [][][]\T1/futs/m/n/10 133[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 103
- [][][]\T1/futs/m/n/10 135[][]
+ [][][]\T1/futs/m/n/10 134[][]
  []
 
 
@@ -4147,6 +4165,9 @@ Overfull \hbox (0.99997pt too wide) detected at line 105
  []
 
 
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
+ [195]
 Overfull \hbox (0.99997pt too wide) detected at line 106
  [][][]\T1/futs/m/n/10 137[][]
  []
@@ -4156,19 +4177,19 @@ Overfull \hbox (0.99997pt too wide) detected at line 107
  [][][]\T1/futs/m/n/10 138[][]
  []
 
-[193]
+
 Overfull \hbox (0.99997pt too wide) detected at line 108
  [][][]\T1/futs/m/n/10 139[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 109
- [][][]\T1/futs/m/n/10 140[][]
+ [][][]\T1/futs/m/n/10 139[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 110
- [][][]\T1/futs/m/n/10 141[][]
+ [][][]\T1/futs/m/n/10 140[][]
  []
 
 
@@ -4178,12 +4199,12 @@ Overfull \hbox (0.99997pt too wide) detected at line 111
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 112
- [][][]\T1/futs/m/n/10 142[][]
+ [][][]\T1/futs/m/n/10 141[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 113
- [][][]\T1/futs/m/n/10 143[][]
+ [][][]\T1/futs/m/n/10 142[][]
  []
 
 
@@ -4193,35 +4214,35 @@ Overfull \hbox (0.99997pt too wide) detected at line 114
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 115
- [][][]\T1/futs/m/n/10 144[][]
+ [][][]\T1/futs/m/n/10 143[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 116
- [][][]\T1/futs/m/n/10 145[][]
+ [][][]\T1/futs/m/n/10 144[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 117
- [][][]\T1/futs/m/n/10 145[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 118
- [][][]\T1/futs/m/n/10 146[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 119
- [][][]\T1/futs/m/n/10 146[][]
+ [][][]\T1/futs/m/n/10 144[][]
  []
 
 
 Underfull \vbox (badness 2393) has occurred while \output is active []
 
- [194]
+ [196]
+Overfull \hbox (0.99997pt too wide) detected at line 118
+ [][][]\T1/futs/m/n/10 145[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 119
+ [][][]\T1/futs/m/n/10 145[][]
+ []
+
+
 Overfull \hbox (0.99997pt too wide) detected at line 120
- [][][]\T1/futs/m/n/10 147[][]
+ [][][]\T1/futs/m/n/10 146[][]
  []
 
 
@@ -4236,12 +4257,12 @@ Overfull \hbox (0.99997pt too wide) detected at line 122
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 123
- [][][]\T1/futs/m/n/10 149[][]
+ [][][]\T1/futs/m/n/10 148[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 124
- [][][]\T1/futs/m/n/10 150[][]
+ [][][]\T1/futs/m/n/10 149[][]
  []
 
 
@@ -4250,49 +4271,49 @@ Overfull \hbox (0.99997pt too wide) detected at line 125
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 126
- [][][]\T1/futs/m/n/10 151[][]
+Overfull \hbox (0.99997pt too wide) detected at line 129
+ [][][]\T1/futs/m/n/10 159[][]
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 127
- [][][]\T1/futs/m/n/10 152[][]
+Overfull \hbox (0.99997pt too wide) detected at line 130
+ [][][]\T1/futs/m/n/10 160[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 131
- [][][]\T1/futs/m/n/10 161[][]
+ [][][]\T1/futs/m/n/10 160[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 132
- [][][]\T1/futs/m/n/10 162[][]
+ [][][]\T1/futs/m/n/10 161[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 133
- [][][]\T1/futs/m/n/10 162[][]
+ [][][]\T1/futs/m/n/10 161[][]
  []
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 134
- [][][]\T1/futs/m/n/10 163[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 135
- [][][]\T1/futs/m/n/10 163[][]
- []
-
-
-Overfull \hbox (0.99997pt too wide) detected at line 136
- [][][]\T1/futs/m/n/10 164[][]
+ [][][]\T1/futs/m/n/10 162[][]
  []
 
 
 Underfull \vbox (badness 2205) has occurred while \output is active []
 
- [195]
+ [197]
+Overfull \hbox (0.99997pt too wide) detected at line 136
+ [][][]\T1/futs/m/n/10 164[][]
+ []
+
+
+Overfull \hbox (0.99997pt too wide) detected at line 137
+ [][][]\T1/futs/m/n/10 165[][]
+ []
+
+
 Overfull \hbox (0.99997pt too wide) detected at line 138
  [][][]\T1/futs/m/n/10 166[][]
  []
@@ -4313,8 +4334,13 @@ Overfull \hbox (0.99997pt too wide) detected at line 141
  []
 
 
+Overfull \hbox (0.99997pt too wide) detected at line 142
+ [][][]\T1/futs/m/n/10 170[][]
+ []
+
+
 Overfull \hbox (0.99997pt too wide) detected at line 143
- [][][]\T1/futs/m/n/10 172[][]
+ [][][]\T1/futs/m/n/10 171[][]
  []
 
 
@@ -4323,8 +4349,8 @@ Overfull \hbox (0.99997pt too wide) detected at line 145
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 146
- [][][]\T1/futs/m/n/10 174[][]
+Overfull \hbox (0.99997pt too wide) detected at line 147
+ [][][]\T1/futs/m/n/10 176[][]
  []
 
 
@@ -4333,48 +4359,53 @@ Overfull \hbox (0.99997pt too wide) detected at line 148
  []
 
 
-Overfull \hbox (0.99997pt too wide) detected at line 149
- [][][]\T1/futs/m/n/10 176[][]
+Overfull \hbox (0.99997pt too wide) detected at line 150
+ [][][]\T1/futs/m/n/10 178[][]
+ []
+
+[198]
+Overfull \hbox (0.99997pt too wide) detected at line 151
+ [][][]\T1/futs/m/n/10 178[][]
  []
 
 )
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [196] (./main.acr [197
+ [199] [200
+
+] (./main.acr [201
 
 
-
-] [198]) [199]
+] [202]) [203]
 \openout2 = `biblio.aux'.
 
- (./biblio.tex [200
+ (./biblio.tex [204
 
 
-] (./main.bbl [201
+] (./main.bbl [205
 
-] [202] [203] [204] [205] [206] [207] [208] [209])) [210]
+] [206] [207] [208] [209] [210] [211] [212] [213])) [214]
 \openout2 = `oath.aux'.
 
  (./oath.tex
-<Signature.pdf, id=11398, 199.84038pt x 73.11305pt>
+<Signature.pdf, id=11474, 199.84038pt x 73.11305pt>
 File: Signature.pdf Graphic file (type pdf)
 <use Signature.pdf>
 Package pdftex.def Info: Signature.pdf  used on input line 23.
 (pdftex.def)             Requested size: 224.06544pt x 81.97977pt.
-) [211
+) [215
 
 
 
  <./Signature.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
- (./main.aux (./title.aux) (./abstract.aux) (./intro.aux) (./chap1/chap1_Theo.aux) (./chap2/chap2_ILC.aux) (./chap2/chap2_PFA.aux) (./chap3/chap3_CALICE_Detectors.aux) (./chap4/chap4_AHCAL_Simulations.aux) (./chap4/chap4_AHCAL_Commi.aux) (./chap5/chap5_AHCAL_Timing_Selection.aux) (./chap5/chap5_AHCAL_EnergyCalib.aux) (./chap5/chap5_AHCAL_Timing_Calib.aux) (./chap5/chap5_AHCAL_Timing_Valid.aux) (./chap5/chap5_AHCAL_Timing_Pions.aux) (./chap6/chap6_intro.aux) (./chap6/chap6_ILD.aux) (./chap6/chap6_conclusion.aux) (./summary.aux) (./acknowledgments.aux) (./Appendixes/EvtSelection.aux) (./Appendixes/ValidationSim.aux) (./Appendixes/TimingAdd.aux) (./Appendixes/Noise.aux) (./Appendixes/ErrorTDCCalib.aux) (./Appendixes/MCParamnHits.aux) (./Appendixes/RejectChips.aux) (./Appendixes/DeadChn.aux) (./Appendixes/Database.aux)
-(./biblio.aux) (./oath.aux))
+ (./main.aux (./title.aux) (./abstract.aux) (./intro.aux) (./chap1/chap1_Theo.aux) (./chap2/chap2_ILC.aux) (./chap2/chap2_PFA.aux) (./chap3/chap3_CALICE_Detectors.aux) (./chap4/chap4_AHCAL_Simulations.aux) (./chap4/chap4_AHCAL_Commi.aux) (./chap5/chap5_AHCAL_Timing_Selection.aux) (./chap5/chap5_AHCAL_EnergyCalib.aux) (./chap5/chap5_AHCAL_Timing_Calib.aux) (./chap5/chap5_AHCAL_Timing_Valid.aux) (./chap5/chap5_AHCAL_Timing_Pions.aux) (./chap6/chap6_intro.aux) (./chap6/chap6_ILD.aux) (./chap6/chap6_conclusion.aux) (./summary.aux) (./acknowledgments.aux) (./Appendixes/EvtSelection.aux) (./Appendixes/ValidationSim.aux) (./Appendixes/TimingAdd.aux) (./Appendixes/Noise.aux) (./Appendixes/ErrorTDCCalib.aux) (./Appendixes/MCParamnHits.aux) (./Appendixes/RejectChips.aux) (./Appendixes/DeadChn.aux) (./Appendixes/Database.aux) (./biblio.aux) (./oath.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 384205B6FF6D9451415FA96E085C44EB;35007.
+(rerunfilecheck)             Checksum: 46650492C4FFA4DFE2108CF52D338A13;35007.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4385,19 +4416,19 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 36551 strings out of 492985
- 696014 string characters out of 6132585
- 854032 words of memory out of 5000000
- 38582 multiletter control sequences out of 15000+600000
- 760100 words of font info for 246 fonts, out of 8000000 for 9000
+ 36573 strings out of 492985
+ 696571 string characters out of 6132585
+ 854836 words of memory out of 5000000
+ 38590 multiletter control sequences out of 15000+600000
+ 760565 words of font info for 249 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,18n,95p,10371b,1434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,18n,95p,10371b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/put
 r8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
-Output written on main.pdf (223 pages, 27248005 bytes).
+Output written on main.pdf (227 pages, 27270794 bytes).
 PDF statistics:
- 11642 PDF objects out of 12825 (max. 8388607)
- 6387 compressed objects within 64 object streams
- 774 named destinations out of 1000 (max. 500000)
- 2371 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11719 PDF objects out of 12825 (max. 8388607)
+ 6432 compressed objects within 65 object streams
+ 785 named destinations out of 1000 (max. 500000)
+ 2376 words of extra memory for PDF output out of 10000 (max. 10000000)
 
