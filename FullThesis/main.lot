@@ -29,7 +29,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {11.1}{\ignorespaces Table with the number of events selected in the pion dataset for the timing study.\relax }}{115}{table.caption.115}
 \contentsline {table}{\numberline {11.2}{\ignorespaces Summary of the fit results in figure \ref {fig:dNdt_Comparison}.\relax }}{117}{table.caption.117}
-\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of events in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top number is for \textsc {Mokka}\xspace simulations, the bottom one is for \textsc {DD4hep}\xspace .\relax }}{127}{table.caption.132}
+\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of events in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top is for \textsc {Mokka}\xspace simulations, the bottom is for \textsc {DD4hep}\xspace simulations.\relax }}{127}{table.caption.132}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {12.1}{\ignorespaces Considered ILD detector options.\relax }}{130}{table.caption.133}
 \contentsline {table}{\numberline {12.2}{\ignorespaces Time resolution used for smearing.\relax }}{140}{table.caption.148}
