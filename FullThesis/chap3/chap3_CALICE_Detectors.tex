@@ -153,7 +153,7 @@ Once an avalanche has stopped, the effective voltage of the pixel can return to 
 The measured total charge is the sum of all the fired pixels. With a good uniformity in pixel capacitance and low-noise electronic amplification, the SiPM gain can be measured in-situ by illuminating the SiPM with short and low amplitude light pulses giving a \textit{single-photon spectra} (SPS) as shown in subsection \ref{subsec:GainCharac}.
 
 Due to the finite number of pixels and the recovery time of the pixels in the order of several nanoseconds, the response of a SiPM is non-linear and can be at a first order parametrized as
-\begin{equation}
+\begin{equation}\label{eq:SiPMfunction}
   N_{fired} \approx N_{total} \times (1 - e^{\frac{- N_{\gamma} \cdot PDE}{N_{total}}})
 \end{equation}
 where $N_{total}$ is the total number of pixels, $N_{\gamma}$ is the number of incoming photons and $PDE$ is the photon detection efficiency. This parametrization can describe the data very well at low light levels but can significantly differ with a high number of photons \cite{Kotera:2015rha}.

@@ -17,7 +17,7 @@ This chapter discusses the setup of the testbeam first before presenting the sel
 \subsection{Beamline Setup}
 \label{sec:beamline}
 
-During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 at the North Area beamline at CERN \cite{H2Beamline}. This beamline provided is equipped with wire chambers and scintillators that provide information of the beam position and number of particles. But unfortunately, this information could not be recorded with the AHCAL data acquisition system in order to reproduce the beam profile correctly in simulation. The information collected about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
+During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 in the North Area facility at CERN \cite{H2Beamline}. This beamline is equipped with wire chambers and scintillators that provide information of the beam position and number of particles. The wire chamber information would be useful in order to simulate correctly the beam profile. Unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information collected about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
 
 A Cherenkov detector (at around 100 m upstream) was available to tag incoming particles. These detectors take advantage of the fact that, a particle that traverses a medium faster than the speed of light in that medium will generate a cone of Cherenkov light. The opening angle of the cone is proportional to the particle mass \cite{GOVORKOV20059}. The Cherenkov detector at this beamline offered the possibility to set a threshold for particle tagging. This is particularly needed to tag possible contaminating electrons in a pion beam. The tagging signal from the Cherenkov detector was provided directly to several AHCAL channels.
 
@@ -25,7 +25,7 @@ For the production of particles, a primary high-intensity proton beam (around $1
 
 A muon beam can be obtained from the decay of a collimated pion beam which are stopped by a collimator before the last bending magnet.
 
-For electrons, a neutral beam of photons is directed to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. Another possibility is to impinge a charged beam onto a secondary target and filter the beam with an absorber. But this has the disadvantage of low rates at low energy and possible contamination of the electron beam with pions.
+For electrons, a neutral beam of photons is directed to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. Another possibility is to impinge a charged beam onto a secondary target and filter the beam with an absorber. But this has the disadvantage of low rates at low energy and possible contamination of the electron beam with pions \cite{H2Beamline}.
 
 For pions, the momentum is selected via a set of collimators and magnets. Due to the decay of $\pi_0$ (conversion of the photons into the absorber filter) and the acceptance of the beamline, a contamination of the pion beam with electrons is possible at low momentum (< 20 GeV).
 
@@ -46,9 +46,9 @@ In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDE
 	\caption{Photo of the AHCAL detector during the installation in the testbeam area.} \label{fig:AHCAL_photo}
 \end{figure}
 
-The beam instrumentation consists of two $10\times10$ cm$^2$ scintillator plates in front of the calorimeter, and as well as two $50\times50$ cm$^2$ scintillator plates in front and back of the calorimeter as shown in figure \ref{fig:AHCAL_photo}. They are read-out by photomultiplier tubes. The coincidence of the $50\times50$ cm$^2$ scintillator plates is used for the muon runs and the coincidence of the $10\times10$ cm$^2$ scintillator plates is used for the electron and pion runs as a trigger signal.
+The beam instrumentation consists of two $10\times10$ cm$^2$ scintillator plates in front of the calorimeter, and two $50\times50$ cm$^2$ scintillator plates, one placed in front of the calorimeter and one placed at the back of the calorimeter as shown in figure \ref{fig:AHCAL_photo}. They are read-out by photomultiplier tubes. The coincidence of the $50\times50$ cm$^2$ scintillator plates is used for the muon runs and the coincidence of the $10\times10$ cm$^2$ scintillator plates is used for the electron and pion runs as a trigger signal.
 
-Additionally, the coincidence signal from the scintillator is provided directly to several channels of the AHCAL in order to provide a reference time information of the trigger which is important for the analysis presented in this thesis. A simplified view of the layer structure of the AHCAL is shown in figure \ref{fig:Det_layout}.
+Additionally, the coincidence signal from the scintillator is provided directly to several channels of the AHCAL in order to provide a reference time information of the trigger which is important for the timing study presented in this thesis. A simplified view of the layer structure of the AHCAL is shown in figure \ref{fig:Det_layout}.
 
 \begin{figure}[htbp!]
 	\centering
@@ -59,7 +59,7 @@ Additionally, the coincidence signal from the scintillator is provided directly 
 \subsection{Time reference}
 \label{subsec:trigger}
 
-As explained in section \ref{sec:TBsetup}, the scintillator plates are used as a trigger signal. The scintillators plates are connected to a discriminator and a gate for coincidence in order to provide a validation signal to the SPIROC ASIC (see section \ref{sec:SPIROC2B}).
+The scintillator plates are used as a time reference signal. Both type of scintillator are connected to a discriminator and a gate for coincidence in order to provide a validation signal to the readout chip (see section \ref{sec:SPIROC2B}).
 
 When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge of around 1 ns, is generated with an amplitude around 100 mV that is used as a time reference. This signal is provided \textit{directly to six AHCAL channels} for redundancy. The list of the AHCAL channels used as a reference time are shown in table \ref{table:trigger_signal_list}. No other external time reference than these channels is available.
 
@@ -90,7 +90,7 @@ The selections presented in this section are based on simulated data. Beforehand
 \subsection{Dataset}
 \label{subsec:dataset}
 
-During the campaign at the CERN \acrshort{sps} facility in July 2015, muon runs were taken at 50 GeV and at 150 GeV beam energy for the calibration of the detector. Several electron runs were taken at beam energies between 10 GeV and 50 GeV to study the electromagnetic response of the calorimeter. For the electron runs, the beam was generated by using a neutral beam directed on a lead converter target therefore no hadron contamination is expected in the electron beam \cite{H2Beamline}. Finally, the pion runs were taken at beam energies between 10 GeV and 90 GeV.
+During the campaign at the CERN \acrshort{sps} facility in July 2015, firstly, muon runs were taken at beam energies of 50 GeV and 150 GeV for calibrating the detector. Secondly, several electron runs were taken at beam energies between 10 GeV and 50 GeV to study the electromagnetic response of the calorimeter. Finally, the pion runs were taken at beam energies between 10 GeV and 90 GeV.
 
 The table \ref{table:dataruns} sums up the datasets taken in different beams. The number of events shown in the table is the total number of recorded events.
 
@@ -131,7 +131,7 @@ The distribution in the plane $cog_Z$:$n_{Hits}$ shown in figure \ref{fig:Muons_
 \subsubsection{Selection}
 \label{subsec:Muon_sel}
 
-After investigation, muon runs were contaminated by pions. By looking at the spectrum of the number of hits per event, it is estimated that around 30\% of the events are contaminated by pions.
+By looking at the spectrum of the number of hits per event, it is estimated that around 30\% of the events in the muon runs are contaminated by pions.
 
 The MIP selection was designed to efficiently select muons and reject late pion showers. For this, a MIP track finder has been developed based on previous work \cite{Hartbrich:2016bbz}. This algorithm is designed to select MIP-like particle tracks in the AHCAL detector and remove pion showers.
 
@@ -159,13 +159,15 @@ The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pi
 \subsection{Electron Selection}
 \label{subsec:elec_sel}
 
-The electron selection is done to extract single electron showers contained in the AHCAL. These events are needed to validate the timing behavior in simulation as well as the detector simulation model as explained in chapter \ref{chap:TimingValidation}. It is important to have a clean sample of electrons to cross-check the timing calibration. For the selection, an \textit{Event Quality} pre-selection is done using the beam instrumentation and layer information. Events with a Cherenkov tag (only applied to data) are used and the energy in the three first layers of the AHCAL ($E_3+E_4+E_5$) must be over 10 MIPs. The distributions of the energy in the three first layer of the AHCAL for simulated 10 and 50 GeV muons, electrons and pions can be seen in figures \ref{fig:e10GeV_E3} and \ref{fig:e50GeV_E3}.
+The electron selection is done to extract single electron showers contained in the AHCAL. These events are needed to validate the timing behavior in simulation as well as the detector simulation model as explained in chapter \ref{chap:TimingValidation}. It is important to have a clean sample of electrons to cross-check the timing calibration. For the selection, an \textit{Event Quality} pre-selection is done using the beam instrumentation and layer information. Events with a Cherenkov tag (only applied to data) are used. The distributions of the energy deposit in the first three AHCAL layers ($E_3+E_4+E_5$) are shown in figures \ref{fig:e10GeV_E3} and \ref{fig:e50GeV_E3} for simulated muon, electron and pion beams. In order to suppress muons and pions, $E_3+E_4+E_5$ must be over 10 MIPs.
 
-In a next step, the electron selection is performed. Due to the number of unusable layers especially with the front ECAL layers (see section \ref{subsec:ScECAL}) and the fact that the detector is not fully equipped, an alternative selection needed to be performed to effectively select electrons. As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z < 250 mm$) can be done. This does not induce any bias for a timing analysis, it would only reduce the event statistics.
+In a next step, the electron selection is performed. Usually, one could use a shower start algorithm to select electrons that interact in the first layers of the calorimeter and reject pions efficiently \cite{Hartbrich:2016bbz}. However, the first ECAL layers (see section \ref{subsec:ScECAL}) can't be used because of high noise and the detector is partially equipped with active layers. This would greatly influence the performance of such algorithm, therefore, an alternative selection is needed.
 
-To ensure a complete containment of the shower and a rejection of possible pion showers, an additional cut on the energy deposited in the last two layers relative to the energy deposited in the calorimeter ($(E_{13}+E_{14})/\Sigma E$) is done and is required to be under 1\%. This cut The distributions of each variables used in the selection are shown in figures \ref{fig:electronselection} for simulated 10 GeV and 50 GeV muons, electrons and pions.
+As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z$) is done. It is shown in figures \ref{fig:e10GeV_nHitsCoGZ} and \ref{fig:e50GeV_nHitsCoGZ}. The box cut in the figures does not induce any bias for the timing study in this thesis, it would only reduce the event statistics. In addition, the number of hits in a electron shower is proportional to the shower energy, thus this cut is energy dependent.
 
-Due to the restriction on the number of hits per event, the cuts are energy dependent. Additionally, to reduce transverse leakage, the shower center of gravity in X and Y needs to be within -90 mm and 90 mm. This cut is wider than the trigger scintillator but has no significant impact. The selection cuts are summarized in table \ref{table:electron_sel} for each energy. The selection efficiencies for beam energies between 10 and 50 GeV are shown in table \ref{table:eff_electron} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
+Finally, a cut on the energy deposited in the last two layers relative to the energy deposited in the calorimeter ($(E_{13}+E_{14})/\Sigma E$) is done. The distributions are shown in figures \ref{fig:e10GeV_Elast} and \ref{fig:e50GeV_Elast}. This cut is required to be under 1\% to reject pion showers and to contain the electron shower.
+
+Additionally, to reduce transverse leakage, the shower center of gravity in X and Y needs to be within -90 mm and 90 mm. This cut is wider than the trigger scintillator but has no significant impact. The selection efficiencies for muon, electron and pion beams are shown in table \ref{table:eff_electron} for different beam energies from 10 GeV to 50 GeV. The detailed selection cuts are summarized in appendix table \ref{table:electron_sel}.
 
 \begin{table}[htb!]
 	\centering
@@ -185,7 +187,7 @@ Due to the restriction on the number of hits per event, the cuts are energy depe
 	\end{tabular}
 \end{table}
 
-One can notice that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is believed that there is no pion contamination in the data. Thus no additional cut is needed.
+One can notice from table \ref{table:eff_electron} that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is believed that there is no pion contamination in the data. Thus no additional cut is needed.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -231,23 +233,11 @@ One can notice that a significant fraction of pions is present at low beam energ
 
 The goal of the pion selection is to reject punch-through pions, muons and possible electron contamination as these events would be instantaneous (see section \ref{sec:TimeDevShowers}). An \textit{Event Quality} pre-selection is performed using the Cherenkov information. The events without a Cherenkov tag are selected. This is only applied to data. The pion selection is based on the same variables as the electron selection: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$).
 
-The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the selection on the start of the pion shower. To ensure that the pion showered, the energy in the last two layers of the AHCAL must be over 1\%. And finally, to mitigate possible particle contamination from electrons, the number of hits in the two first AHCAL layer must be under 5.
+Firstly, the distribution of events in the $cog_Z:n_{Hits}$ plane is shown in figures \ref{fig:pi10GeV_nHitsCoGZ} and \ref{fig:pi90GeV_nHitsCoGZ} for muon, electron and pion beam energies from 10 GeV to 90 GeV. The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the start of the pion shower.
 
-The distributions of each variable used in the selection are shown in figures \ref{fig:pionselection} for simulated 10 GeV and 90 GeV muons, electrons and pions. The selection efficiencies for beam energies between 10 and 90 GeV are shown in table \ref{table:eff_pion} obtained from simulated samples of muons, electrons and pions with the QGSP\_BERT\_HP physics list.
+Secondly, the distributions of the energy fraction deposited in the two last AHCAL layers are shown in figures \ref{fig:pi10GeV_Elast} and \ref{fig:pi90GeV_Elast}. This variable must be over 1\% in order to ensure that pion showered and reject electrons. Finally, the distributions of the number of hits in the two first AHCAL layers is shown in figure \ref{fig:pi10GeV_N3N4} and \ref{fig:pi90GeV_N3N4}. The number of hits in the two first AHCAL layers must be under 5 to mitigate possible particle contamination from electrons.
 
-\begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png}
-	\caption{Multi-particle event in the 50 GeV pion data sample. The colors represent the time of the hit: green < 5 ns, blue 5 ns to 15 ns, yellow 15 ns to 35, orange 35 ns to 50 ns and red > 50 ns. One can observe an additional late muon going through the detector.} \label{fig:DoubleParticleEvent}
-\end{figure}
-
-In addition, after a long investigation, multiple particle events were observed in the data as shown in figure \ref{fig:DoubleParticleEvent}. As no beam instrumentation could be used for rejecting these events, a rejection method based using time information was developed.
-
-This method is the following: all the hits in an event are placed and ordered in time; Then for each hit after 50 ns, a timing window of 30 ns is looked after and the number of hits in that window is counted. If the number of hits is over 5, it is counted as a \textit{late cluster}. The event is rejected if there is at least one late cluster. This method works because if an event has several particles, the time reference of the event is generated by the first particle. Therefore, the second particle will have all the hits late relative to the time reference and thus the event will be rejected with this method.
-
-The method was based on data in order to remove efficiently multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions. These multi-particle events are greatly suppressed in data using this method but due to the calorimeter not being fully equipped, some contamination may remain in the data.
-
-A detailed description of the selection cuts are shown in table \ref{table:pion_sel}. At 10 GeV, one can observe a low pion selection efficiency that is due to the fact less energy is deposited in the last two layers of the AHCAL thus reducing the number of selected pion events.
+The selection efficiencies for muon, electron and pions beams for different beam energies between 10 and 90 GeV are shown in table \ref{table:eff_pion}. At 10 GeV, one can observe a low pion selection efficiency that is due to the fact less energy is deposited in the last two layers of the AHCAL thus reducing the number of selected pion events.
 
 \begin{table}[htb!]
 	\centering
@@ -265,6 +255,20 @@ A detailed description of the selection cuts are shown in table \ref{table:pion_
 		\bottomrule
 	\end{tabular}
 \end{table}
+
+In addition, multiple particle events were observed in the data as shown in figure \ref{fig:DoubleParticleEvent}. As no beam instrumentation could be used for rejecting these events, a rejection method based on the hit time information was developed.
+
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png}
+	\caption{Multi-particle event in the 50 GeV pion data sample. The colors represent the time of the hit: green < 5 ns, blue 5 ns to 15 ns, yellow 15 ns to 35, orange 35 ns to 50 ns and red > 50 ns. One can observe an additional late muon going through the detector.} \label{fig:DoubleParticleEvent}
+\end{figure}
+
+The method is the following: all the hits in an event are placed and ordered in time; Then for each hit after 50 ns, a timing window of 30 ns is looked after. The number of hits in that window is counted. If the number of hits is over 5, it is classified as a \textit{late cluster}. The event is rejected if there is at least one late cluster. This method works because if an event has several particles, the time reference of the event is generated by the first particle. Therefore, the second particle will have all the hits late relative to the time reference and thus the event will be rejected.
+
+The method is based on data in order to remove multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions. These multi-particle events are greatly suppressed in data. The number of events removed varies between 0.1\% and 1\% depending on the beam energy. Due to the calorimeter not being fully equipped thus providing limited information, some contamination may remain in the data.
+
+A detailed description of the selection cuts are shown in appendix table \ref{table:pion_sel}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -338,6 +342,4 @@ For the pion data, applying the same method as for electrons is not possible due
   \rule{0.5\textwidth}{.4pt}
 \end{center}
 
-In this chapter, the dataset used for this thesis, the selection criteria for each type of data and the rejection criteria have been presented. MIP-like particles can be selected efficiently at more than 70\%. The electron selection has an efficiency of more than 90\% at all electron beam energies. The pion selection selects pions with an efficiency over 50\% for all pion energies except for 10 GeV where the selection efficiency is around 30\%.
-
-Before performing the timing analysis of the recorded data and to do a meaningful comparison of the results to simulations, accurate data calibration factors and a realistic AHCAL simulation model is essential. Therefore, in the next chapter, the energy scale calibration of the AHCAL prototype is presented.
+The datasets used for this thesis, the selection criteria for each beam type have been presented. MIP-like particles can be selected efficiently at more than 70\%. The electron selection has an efficiency of more than 90\% at all electron beam energies. The pion selection selects pions with an efficiency over 50\% for all pion energies except for 10 GeV where the selection efficiency is around 30\%. Multi-particle events in the pion data is observed. A method using the hit time information is used to mitigate these events. Up to 1\% of events can be removed. To be able to do a meaningful comparison of the data to simulations, accurate data calibration factors and a realistic AHCAL simulation model are essential. In the next chapter, the energy scale calibration of the AHCAL prototype and the validation of the AHCAL simulation model is presented.
