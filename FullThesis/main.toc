@@ -41,17 +41,17 @@
 \contentsline {subsubsection}{Energy loss by electrons/positrons}{27}{section*.23}
 \contentsline {subsubsection}{Energy loss by photons}{28}{section*.24}
 \contentsline {subsubsection}{Electromagnetic cascades}{28}{section*.26}
-\contentsline {subsection}{\numberline {3.1.2}Interaction of charged heavy particles}{29}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Hadronic showers}{30}{subsection.3.1.3}
-\contentsline {subsubsection}{Electromagnetic component}{31}{section*.29}
-\contentsline {subsubsection}{Hadronic component}{32}{section*.30}
-\contentsline {subsubsection}{Time development}{32}{section*.31}
-\contentsline {section}{\numberline {3.2}Calorimeters}{32}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}General considerations}{32}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Energy resolution}{33}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.1.2}Interaction of charged heavy particles}{30}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Hadronic showers}{31}{subsection.3.1.3}
+\contentsline {subsubsection}{Electromagnetic component}{31}{section*.30}
+\contentsline {subsubsection}{Hadronic component}{32}{section*.31}
+\contentsline {subsubsection}{Time development}{32}{section*.32}
+\contentsline {section}{\numberline {3.2}Calorimeters}{33}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}General considerations}{33}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Energy resolution}{34}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Compensation}{34}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}The Particle Flow approach}{34}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}The Particle Flow concept}{34}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}The Particle Flow concept}{35}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Implementation in PandoraPFA}{36}{subsection.3.3.2}
 \contentsline {chapter}{\numberline {4}CALICE Calorimeter concepts}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Requirements for the calorimeters in ILD}{39}{section.4.1}
@@ -63,16 +63,16 @@
 \contentsline {subsection}{\numberline {4.4.1}Digital HCAL}{43}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Semi-Digital HCAL}{44}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Analog HCAL}{44}{subsection.4.4.3}
-\contentsline {subsubsection}{Silicon Photomultipliers}{45}{section*.38}
-\contentsline {subsubsection}{The SPIROC ASIC}{46}{section*.40}
-\contentsline {subsubsection}{The AHCAL Prototype}{48}{section*.43}
-\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{50}{section*.47}
+\contentsline {subsubsection}{Silicon Photomultipliers}{45}{section*.39}
+\contentsline {subsubsection}{The SPIROC ASIC}{46}{section*.41}
+\contentsline {subsubsection}{The AHCAL Prototype}{48}{section*.44}
+\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{50}{section*.48}
 \contentsline {chapter}{\numberline {5}Simulation and Software tools}{53}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulation of particle showers}{53}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{53}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Hadronic shower models}{54}{subsection.5.1.2}
-\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{54}{section*.49}
-\contentsline {subsubsection}{String-Parton Cascade Models}{55}{section*.51}
+\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{54}{section*.50}
+\contentsline {subsubsection}{String-Parton Cascade Models}{55}{section*.52}
 \contentsline {subsection}{\numberline {5.1.3}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Physics Lists}{56}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}Software tools}{57}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}\textsc {ILCSoft}\xspace software framework}{57}{subsection.5.2.1}
@@ -98,8 +98,8 @@
 \contentsline {section}{\numberline {7.2}Dataset and Event Selection}{76}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Dataset}{76}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Muon selection}{76}{subsection.7.2.2}
-\contentsline {subsubsection}{Pre-selection}{76}{section*.73}
-\contentsline {subsubsection}{Selection}{77}{section*.75}
+\contentsline {subsubsection}{Pre-selection}{76}{section*.74}
+\contentsline {subsubsection}{Selection}{77}{section*.76}
 \contentsline {subsection}{\numberline {7.2.3}Electron Selection}{78}{subsection.7.2.3}
 \contentsline {subsection}{\numberline {7.2.4}Pion Selection}{81}{subsection.7.2.4}
 \contentsline {subsection}{\numberline {7.2.5}Rejection of outlier chips}{82}{subsection.7.2.5}
@@ -127,12 +127,12 @@
 \contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{102}{subsection.9.6.1}
 \contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{104}{subsection.9.6.2}
 \contentsline {subsection}{\numberline {9.6.3}Time of first hit for muons after corrections}{105}{subsection.9.6.3}
-\contentsline {chapter}{\numberline {10}Cross-check of the calibration}{107}{chapter.10}
+\contentsline {chapter}{\numberline {10}Validation of the time calibration}{107}{chapter.10}
 \contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{107}{section.10.1}
-\contentsline {section}{\numberline {10.2}Influence of the number of triggered channels}{107}{section.10.2}
-\contentsline {section}{\numberline {10.3}Time of the first hit for electrons}{109}{section.10.3}
-\contentsline {section}{\numberline {10.4}Influence of the detector inhomogeneity}{110}{section.10.4}
-\contentsline {section}{\numberline {10.5}Transportability of the calibration}{110}{section.10.5}
+\contentsline {section}{\numberline {10.2}Effect of the number of triggered channels on the time distribution}{107}{section.10.2}
+\contentsline {section}{\numberline {10.3}Time of the first hit after correction}{109}{section.10.3}
+\contentsline {section}{\numberline {10.4}Influence of the detector inhomogeneity}{109}{section.10.4}
+\contentsline {section}{\numberline {10.5}Transportability of the calibration}{111}{section.10.5}
 \contentsline {section}{\numberline {10.6}Systematic uncertainties}{112}{section.10.6}
 \contentsline {section}{\numberline {10.7}Validation of the simulation}{113}{section.10.7}
 \contentsline {chapter}{\numberline {11}Timing study of hadron showers}{117}{chapter.11}
@@ -140,7 +140,7 @@
 \contentsline {subsection}{\numberline {11.1.1}Time of first hit distribution}{117}{subsection.11.1.1}
 \contentsline {subsection}{\numberline {11.1.2}Energy dependence of the time of first hit}{120}{subsection.11.1.2}
 \contentsline {subsection}{\numberline {11.1.3}Radial dependence of the time}{121}{subsection.11.1.3}
-\contentsline {subsubsection}{Time dependence with the shower depth}{123}{section*.125}
+\contentsline {subsubsection}{Time dependence with the shower depth}{123}{section*.126}
 \contentsline {subsection}{\numberline {11.1.4}Longitudinal dependence of timing profiles}{126}{subsection.11.1.4}
 \contentsline {subsection}{\numberline {11.1.5}Time correlations between layers}{126}{subsection.11.1.5}
 \contentsline {section}{\numberline {11.2}Summary and Outlook}{129}{section.11.2}
@@ -155,15 +155,15 @@
 \contentsline {subsection}{\numberline {12.3.1}Modification of timing window in ILDCaloDigi}{133}{subsection.12.3.1}
 \contentsline {subsection}{\numberline {12.3.2}Check of the energy calibration}{133}{subsection.12.3.2}
 \contentsline {subsection}{\numberline {12.3.3}Timing cut effects on hadronic showers in ILD detector}{136}{subsection.12.3.3}
-\contentsline {subsubsection}{Event Selection}{137}{section*.141}
-\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{137}{section*.142}
+\contentsline {subsubsection}{Event Selection}{137}{section*.142}
+\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{137}{section*.143}
 \contentsline {subsection}{\numberline {12.3.4}In a realistic scenario}{142}{subsection.12.3.4}
 \contentsline {section}{\numberline {12.4}Understanding the degradation of the energy resolution with timing cuts}{148}{section.12.4}
 \contentsline {subsection}{\numberline {12.4.1}Hit Energy spectra in HCAL}{148}{subsection.12.4.1}
 \contentsline {subsection}{\numberline {12.4.2}Influence of timing cuts on hit energy spectra in HCAL}{151}{subsection.12.4.2}
 \contentsline {section}{\numberline {12.5}Conclusion and Outlook}{153}{section.12.5}
 \contentsline {chapter}{\numberline {13}Summary}{155}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{157}{section*.166}
+\contentsline {chapter}{Acknowledgments}{157}{section*.167}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{159}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{161}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{165}{Appendix.1.C}
@@ -173,7 +173,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{181}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{183}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{187}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{189}{appendix*.198}
-\contentsline {chapter}{List of figures}{191}{appendix*.199}
-\contentsline {chapter}{Acronyms}{203}{section*.200}
-\contentsline {chapter}{Bibliography}{207}{appendix*.202}
+\contentsline {chapter}{List of tables}{189}{appendix*.199}
+\contentsline {chapter}{List of figures}{191}{appendix*.200}
+\contentsline {chapter}{Acronyms}{203}{section*.201}
+\contentsline {chapter}{Bibliography}{207}{appendix*.203}

@@ -2,19 +2,19 @@
 \chapter{Calorimetry and the Particle Flow Concept}
 \label{chap:CaloPFA}
 
-In high energy physics, calorimeters are fundamental tools used to measure the energy of particles. This is done by measuring signals from interactions of high energy particles with atoms in matter. This chapter will give a general overview of the physics that describes interactions of particles with matter. The modeling of showers is discussed in chapter \ref{chap:G4Simulation}. Additionally, a brief description of the properties of calorimeters and an introduction to the \textit{Particle Flow Concept} which drives the designs of the calorimeters for ILC will be given.
+In high energy physics, calorimeters are fundamental tools used to measure the energy of particles. This is done by measuring signals from interactions of high energy particles with atoms in matter. This chapter will give a brief overview of the physics that describes interactions of particles with matter. The modeling of showers is discussed in chapter \ref{chap:G4Simulation}. Additionally, a brief description of the properties of calorimeters and an introduction to the \textit{Particle Flow Concept} which drives the designs of the calorimeters for ILC will be given.
 
 \section{Particle interaction with matter}
 \label{sec:PartInter}
 
-In this section, a brief description of the interaction of particles with matter will be given. This includes electromagnetic showers induced by electrons and photons, the energy loss by heavy charged particles and the development of hadronic showers. Moreover, the consequences of these interactions on calorimetric measurements will be discussed.
+In this section, a short description of the interaction of particles with matter will be given. This includes electromagnetic showers induced by electrons and photons, the energy loss by heavy charged particles and the development of hadronic showers. Moreover, the consequences of these interactions on calorimetric measurements will be discussed.
 
 \subsection{Electromagnetic showers}
 \label{subsec:EMShowers}
 
 \subsubsection{Energy loss by electrons/positrons}
 
-High energy electrons lose their energy via different processes depending on their kinetic energy. At low energies, below few tens of MeV, electrons (positrons) lose their energy via ionization primarily with other processes contributing such as Bhabha scattering, M\o{}ller scattering. At energies above 100 MeV, the principal source of energy loss is from \textit{Brems\-strah\-lung} photons due to the Coulomb interaction of the electron in the electric field of the nuclei. The emitted photons follow an energy spectrum that falls off as $1/E$ \cite{Wigmans:392793}. The different contributions to the electron energy loss are shown in figure \ref{fig:ElossEM}. The transition point where the energy losses due to ionization and Bremsstrahlung are roughly equivalent is generally referred to as the critical energy $\epsilon_{c}$. The critical energy is material dependent and for solids, it can be parametrized as
+High energy electrons lose their energy via different processes depending on their kinetic energy. At low energies, below few tens of MeV, electrons (positrons) lose their energy via ionization primarily. However, more processes are contributing such as Bhabha scattering, M\o{}ller scattering. At energies above 100 MeV, the principal source of energy loss is from \textit{Brems\-strah\-lung} photons due to the Coulomb interaction of the electron in the electric field of the nuclei. The emitted photons follow an energy spectrum that falls off as $1/E$ \cite{Wigmans:392793}. The different contributions to the electron energy loss as a function of the energy are shown in figure \ref{fig:ElossEM}. The transition point where the energy losses due to ionization and Bremsstrahlung are roughly equivalent is generally referred to as the critical energy $\epsilon_{c}$. The critical energy is material dependent and for solids, it can be parametrized as
 \begin{equation}
   \epsilon_{c} = \frac{\SI{610}{\mega\eV}}{(Z + 1.24)}
 \end{equation}
@@ -35,19 +35,25 @@ High energy photons lose their energy via \textit{pair production} where the pho
     \includegraphics[width=1\linewidth]{chap2/fig/sigma_both_06.pdf}
     \caption{} \label{fig:GammaEMloss}
   \end{subfigure}
-  \caption{\subref{fig:ElossEM}) Electron energy loss for electrons in lead as a function of the energy. All the different processes contributing to the electron energy loss are represented. \subref{fig:GammaEMloss}) Photon total cross-section as function of the photon energy in lead. $\sigma_{p.e.}$ is the photo-electric cross-section, $\sigma_{g.d.r.}$ is the photonuclear cross-section (Giant Dipole Resonance \cite{Berman:1975tt}) where the target nucleus is broken up, $\kappa_{e}$ is the pair production cross-section in an electron field and $\kappa_{nuc}$ is the pair production cross-section in a nuclear field \cite{Patrignani:2016xqp}.}
+  \caption{\subref{fig:ElossEM}) Energy loss for electrons in lead as a function of the energy. All the different processes contributing to the electron energy loss are represented. \subref{fig:GammaEMloss}) Photon total cross-section as function of the photon energy in lead. $\sigma_{p.e.}$ is the photo-electric cross-section, $\sigma_{g.d.r.}$ is the photonuclear cross-section (Giant Dipole Resonance \cite{Berman:1975tt}) where the target nucleus is broken up, $\kappa_{e}$ is the pair production cross-section in an electron field and $\kappa_{nuc}$ is the pair production cross-section in a nuclear field \cite{Patrignani:2016xqp}.}
 \end{figure}
 
 \subsubsection{Electromagnetic cascades}
 \label{subsubsec:EMcascade}
 
-A cascade initiated by a multi-GeV electron involves all the processes described above. But Bremsstrahlung plays an important role in EM cascades. A large number of photons are radiated once the electron enters matter. Most of these photons are very soft and thus will get absorbed by Compton scattering and the photo-electric effect. Still, a large number of photons have the necessary energy to undergo pair production. These new electrons radiate, in turn, Bremsstrahlung photons creating new branches in the cascade. This results in the multiplication of the number of particles. The number of generated particles in an electron shower is around $N \approx \frac{E_0}{\epsilon_{c}}$.
+A cascade initiated by a multi-GeV electron involves all the processes described above. A simple model of the development of electromagnetic shower is shown in figure \ref{fig:EMDevel}. The Bremsstrahlung process plays an important role in EM cascades. A large number of photons are radiated once the electron enters matter. Most of these photons are very soft and thus will get absorbed by Compton scattering and the photo-electric effect. However, a number of photons have the necessary energy to undergo pair production. These new electrons radiate, in turn, Bremsstrahlung photons creating new branches in the cascade. This results in the multiplication of the number of particles. The number of generated particles in an electron shower of energy $E_0$ is around $N \approx \frac{E_0}{\epsilon_{c}}$.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.6\linewidth]{chap2/fig/EM_shower_dev.png}
+  \caption{Simple model illustrating the development of an electromagnetic shower. The x-axis represents the depth of the shower in radiation length $X_0$. The y-axis represents the lateral development of the shower in Moli\`ere radius $\rho_{M}$.} \label{fig:EMDevel}
+\end{figure}
 
 The development of the cascade stops when the average electron energy is around $\epsilon_{c}$. The depth where this occurs is called the \textit{shower maximum}. The mean shower maximum $x$ is parametrized as
 \begin{equation}
   \frac{x}{X_0} = \ln\left(\frac{E_0}{\epsilon_{c}}\right) + C
 \end{equation}
-with C = -0.5 for electron induced showers and C = 0.5 for photon induced showers. Therefore it follows a logarithmic dependence on the initial electron energy \cite{Wigmans:392793}.
+where the constant C = -0.5 for electron induced showers and C = 0.5 for photon induced showers. Therefore it follows a logarithmic dependence on the initial electron energy \cite{Wigmans:392793}.
 
 The longitudinal containment of the shower scales similarly with $\ln\left(E_0\right)$. On average, 95\% of the deposited energy of a 10 GeV electron is contained within 14 $X_0$ of copper, for a 1 TeV electron, around 22 $X_0$ of copper is needed \cite{Wigmans:392793}.
 

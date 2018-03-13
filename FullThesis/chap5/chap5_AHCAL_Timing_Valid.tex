@@ -1,28 +1,30 @@
 %!TEX root = ../main.tex
-\chapter{Cross-check of the calibration}
+\chapter{Validation of the time calibration}
 \label{chap:TimingValidation}
 
-The timing calibration procedure was presented in chapter \ref{chap:TimingCalib}. In order to validate the calibration, the recorded electron data is used. Electromagnetic showers are quasi-instantaneous and are perfect to cross-check the time calibration procedure. The selection applied to the electron datasets is described in section \ref{subsec:elec_sel}. The same calibration constants and correction constants determined from the muon data are applied to the electron data.
+It is necessary to perform a validation of the timing calibration (see chapter \ref{chap:TimingCalib}). The recorded electron data is used because electromagnetic showers are quasi-instantaneous and are perfect to validate the time calibration. The selection applied to the electron datasets is described in section \ref{subsec:elec_sel}. The same calibration constants and correction constants determined from the muon data are applied to the electron data.
 
 \section{Time of the first hit for electrons}
 
-The time of the first hit for 20 GeV electrons is shown in figure \ref{fig:Timing_electrons} and it is compared to the time distribution obtained with muons. The time distribution presents a large tail to the right and is much wider than for muons. This indicates that an effect is present in electron data but not in muon data. The difference seen could be related to the fact that in electromagnetic showers, the number of hits is much higher than for muons as well as the energy deposited in a single cell can be over hundreds MIP.
+The time of the first hit for 20 GeV electrons applying the calibration constants obtained from the muon data is shown in figure \ref{fig:Timing_electrons}. In addition, the distribution is compared to the time distribution from the muon data.
 
-Additionally, a timing offset of around 10 ns can be seen. This is expected and it is consistent with the changes in trigger configuration from the big scintillator plates to the small trigger scintillator of $10\times10$ cm$^2$.
+The peak of the electron time distribution in figure \ref{fig:Timing_electrons} is shifted to the left by around 10 ns. This time offset is expected due to a change in the trigger configuration (see section \ref{sec:TBsetup}). This offset is consistent with the difference between the trigger configurations in cable length to route the trigger signal.
+
+Moreover, the time distribution of electrons presents a large tail to the right and is much wider than the one for muons. This could be related to the number of hits which is much higher in an electromagnetic shower than from a muon and also that the deposited energy in a single cell can be over 100 MIPs (see figure \ref{fig:eHitVal}).
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
-	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data. Max = -10.05 ns, RMS = 8.92 ns. The blue distribution represents the time of first hit distribution obtained with muons.}
+	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data. The blue distribution represents the time of first hit distribution obtained with muons.}
 	\label{fig:Timing_electrons}
 \end{figure}
 
-\section{Influence of the number of triggered channels}
+\section{Effect of the number of triggered channels on the time distribution}
 \label{subsec:ped_shift}
 
-For the energy measurement, pedestal shift is a known feature of the \textit{SPIROC2B} chip \cite{Hartbrich2012}. This electronic effect that induces a shift in the baseline of the ADC signal may be also present for the timing measurement. It has been investigated by looking at the time of the first hit as a function of the number of triggered channels over 0.5 MIP. The correction should not be beam energy dependent and all electron beam energies are used to determine the correction.
+For the energy measurement, there is a known and well understood feature of the SPIROC chip \cite{Hartbrich2012}, that induces a shift in the baseline of the ADC signal. This feature may be also present for the timing measurement. Since it is a priori not clear if the effect depends on the number of triggered channels \textit{in a chip} or the energy sum \textit{in a chip}, the time correction has been checked using both variables. It turned out that the time correction as a function of the number of triggered channels over 0.5 MIP in a chip give better results than the time correction as a function of the energy sum in a chip. This is not totally understood why. Both variables are correlated and it may be due to the fact that the number of triggered channels is a direct variable from the hardware compared to the energy sum which is interpreted from the charge stored by a chip.
 
-The time of first hit as a function of the number of triggered channels over 0.5 MIP is shown in figure \ref{fig:nhits_profile}. The effect on the measured hit time can be very large, a correction up to 30-40 ns can be necessary to the data for a high number (15-20) of triggered channels above 0.5 MIP. The cause of the observed effect is most likely due to an element in the chip called a \textit{delay box} that gets unstable with a high number of triggered channels. This chip element is responsible for the hold signal of the TDC ramp in the chip. The hold signal is delayed, and thus a higher TDC ramp value than the one expected is sampled.
+The mean time of first hit as a function of the number of triggered channels over 0.5 MIP in a chip is shown in figure \ref{fig:nhits_profile}. The effect on the measured hit time can be very large, a correction up to 30-40 ns can be necessary to the data for a high number (15-20) of triggered channels above 0.5 MIP in a chip. The cause of the observed effect is most likely due to an element in the chip called a \textit{delay box} that gets unstable with a high charge going through the chip. This chip element is responsible for the hold signal of the TDC ramp in the chip. The hold signal is delayed, and thus a higher TDC ramp value than the one expected is sampled.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -36,14 +38,16 @@ The time of first hit as a function of the number of triggered channels over 0.5
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.pdf}
 		\caption{}\label{fig:RMS_nHits}
 	\end{subfigure}
-	\caption{\subref{fig:nhits_profile}) Mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. The plot is obtained by combining all electron energies and a second order polynomial fit is done. \subref{fig:RMS_nHits}) The RMS of the time of first hit as a function of the number of triggered channels above 0.5 MIP for 20 GeV electrons. The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels.}
+	\caption{\subref{fig:nhits_profile}) Mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. The plot is obtained by combining all electron energies and a second order polynomial fit is done. \subref{fig:RMS_nHits}) The RMS of the time of first hit distribution as a function of the number of triggered channels above 0.5 MIP in a chip for 20 GeV electrons. The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels in a chip.}
 \end{figure}
 
-The correction parameters are determined by a polynomial fit to the data. In addition, this effect does not only shift the mean of the time distribution but also increases its width. The width increases with the number of triggered channels in a chip, therefore making the time resolution of the AHCAL dependent on the number of hits. This is shown in figure \ref{fig:RMS_nHits}.
+The time correction parameters are determined by a $2^{nd}$ order polynomial fit to the data. In order to determine a reliable time correction, the time correction parameters are determined combining all the electron data. This effect is chip-dependent and the parameters for the correction may differ from chip to chip. However, the limited amount of data does not allow to determine a correction function for each chip. Therefore, a global function is used to correct the time in the data.
 
-As expected, if only a single channel triggers in a chip, the time resolution is close to the timing resolution obtained for muons. Additionally, since it is a priori not clear if the effect depends on the number of triggered channels in a chip or the energy sum in a chip, the correction has been checked using both variables. But the correction is better as a function of the number of triggered channels in a chip.
+The figure \ref{fig:RMS_nHits} shows the RMS of the time distribution as a function of the number of triggered channels over 0.5 MIP in a chip. The width of the time distribution increases with a higher number of triggered channels in a chip. Therefore, the time resolution of the AHCAL is dependent on the number of triggered channels in a chip, thus the number of hits in the calorimeter. It is expected that the time resolution increases as a function of the electron beam energy as the number of hits in a EM shower is proportional to its energy. Moreover, the timing resolution is expected to be slightly dependent on the electron beam profile that affects directly the number of triggered channels in a chip.
 
-\section{Time of the first hit for electrons}
+As expected, if a single channel in a chip triggers, the RMS of the time distribution is close to the time resolution for muons as shown in figure \ref{fig:RMS_nHits}.
+
+\section{Time of the first hit after correction}
 \label{subsec:Electron_Final}
 
 After applying the correction as function of the number of triggered channels in a chip, the distribution of the time of the first for 20 GeV electrons has been investigated as shown in figure \ref{fig:timing_electrons_corr}. The correction improves the RMS of the distribution by around 12.1\%, as well as the distribution appears more Gaussian-like.

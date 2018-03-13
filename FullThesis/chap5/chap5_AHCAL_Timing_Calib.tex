@@ -113,9 +113,9 @@ Events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are presen
 
 A $2^{nd}$ order polynomial correction of the time of (T$_{12}$ - T$_{14}$) and (T$_{13}$ - T$_{14}$) as a function of T$_{12}$ and T$_{13}$ respectively is done. Ideally, the difference between T$_{12}$ and T$_{13}$ to T$_{14}$ should be a Gaussian distribution centered at 0 ns. The figure \ref{fig:T0_Correction} shows the difference (T$_{12}$ - T$_{14}$) before correction in blue and after correction in red.
 
-The correction is needed due to the fact that a different value of the pedestal is needed for each BXID parity which was not expected. The resulting RMS of the reference triggers is around 4-5 ns. This resolution from the electronics contributes to the final timing resolution obtained.
+The correction is needed due to the fact that a different value of the pedestal is needed for each BXID parity which was not expected. The resulting RMS of the reference triggers is around 4-5 ns.
 
-In a next step, to reduce the uncertainty of the time reference, the time reference $T_{ref}$ and its associated uncertainty $\sigma_{ref}$ are calculated following the equations \ref{eq:tref} and \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. The mean uncertainty of the time reference is around 1.30 ns which is compatible with previous results \cite{Laurien2016}. Finally, only events with a calibrated time value between 500 and 3500 ns were considered to avoid TDC ramp edge effects.
+In a next step, to reduce the uncertainty of the time reference, the time reference $T_{ref}$ and its associated uncertainty $\sigma_{ref}$ are calculated following the equations \ref{eq:tref} and \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. The mean uncertainty of the time reference is around 1.30 ns which is compatible with previous results \cite{Laurien2016}. This resolution from the time reference contributes to the final timing resolution obtained. Finally, only events with a calibrated time value between 500 and 3500 ns were considered to avoid TDC ramp edge effects.
 
 \begin{equation} \label{eq:tref}
 	\text{T}_{ref} = \frac{\text{T}_{12} + \text{T}_{13} + \text{T}_{14}}{3}
@@ -131,8 +131,6 @@ In a next step, to reduce the uncertainty of the time reference, the time refere
 
 The time reference of the trigger is delayed compared to the muon passing through the detector because of cabling and the trigger electronics logic. Therefore, the time offset of the time reference is determined from data. Muons are instantaneous particles thus the time of the first hit distribution for each channel, memory cell and BXID should peak at 0 ns.
 
-A shifting procedure of the time of the hit relative to the time reference for each channel, memory-cell and BXID parity is performed. This is done to take into account the delay time of the trigger due to cabling and the trigger electronics as well as possible differences in channel pedestals. Only memory-cells containing more than 100 events are considered. The histogram range of the time of the hit relative to the time reference is reduced iteratively until the RMS of the distribution is under 10 ns. This value was chosen because it corresponds to more than 3 sigma of the time reference uncertainty. The mean of the histogram is then used as the time offset value. An example of a single channel is shown in figure \ref{fig:TimeChnwithOffset}.
-
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
@@ -147,6 +145,8 @@ A shifting procedure of the time of the hit relative to the time reference for e
 	\end{subfigure}
 	\caption{\subref{fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.2 ns is determined for this channel. \subref{fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.}
 \end{figure}
+
+A shifting procedure of the time of the hit relative to the time reference for each channel, memory-cell and BXID parity is performed. This is done to take into account the delay time of the trigger due to cabling and the trigger electronics as well as possible differences in channel pedestals. Only memory-cells containing more than 100 events are considered. The histogram range of the time of the hit relative to the time reference is reduced iteratively until the RMS of the distribution is under 10 ns. This value was chosen because it corresponds to more than 3 sigma of the time reference uncertainty. The mean of the histogram is then used as the time offset value. An example of a single channel is shown in figure \ref{fig:TimeChnwithOffset}.
 
 Then a second step is done to correct for a possible mis-calibration of the time offset in the first step. Non-prompt events are rejected if there is less than 4 hits in the range -20 ns to 20 ns. This was necessary in order to reduce the impact of noise on the time offset and ensure a good calibration of the time offset for all channels. Then the time offset is extracted again using the same method as described above with the non-prompt events removed.
 
