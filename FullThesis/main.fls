@@ -1015,6 +1015,10 @@ INPUT ../Thesis_Plots/Timing/Electrons/Plots/nHitsElectrons_BeamEnergy.pdf
 OUTPUT chap5/chap5_AHCAL_Timing_Calib.aux
 INPUT chap5/chap5_AHCAL_Timing_Calib.tex
 INPUT chap5/chap5_AHCAL_Timing_Calib.tex
+INPUT ./chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf
+INPUT ./chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf
+INPUT ./chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf
+INPUT ./chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
@@ -1097,10 +1101,10 @@ INPUT ../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf
-INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf
-INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf
-INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf
-INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf
+INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf
+INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf
+INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf
+INPUT ../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf
 INPUT ../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf

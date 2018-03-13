@@ -5,9 +5,25 @@
 \section{Introduction}
 \label{sec:TimingIntro}
 
-As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for calibration and cross-checks as electromagnetic showers are instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
+As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for the timing calibration and cross-checks as electromagnetic showers are instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
 
-In the following section, the muon dataset shown in section \ref{subsec:dataset} is used for the timing calibration of the AHCAL. The table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event (see section \ref{subsec:trigger}). N$_{3 T_0}$ is the number of events after the selection on the time reference (see section \ref{section:time_ref}) or electron selection (see section \ref{subsec:elec_sel}). N$_{sel.}$ is the number of events after the selection on the error of the time reference that is explained in section \ref{section:time_ref}.
+The time information provided by the SPIROC in the data is in TDC units (see section \ref{sec:SPIROC2B}). Similar to the ADC scale, it would be difficult to compare directly channels using the TDC unit. The TDC information needs to be interpreted into a common unit of time, the nanosecond. The TDC information of each channel can be converted into nanoseconds following the simple schematic shown in figure \ref{fig:ConvertTime}.
+
+\begin{figure}[htbp!]
+  \centering
+  \includegraphics[width=0.6\linewidth]{chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf}
+  \caption{Schematic of the TDC ramp in the SPIROC. The slope of the ramp is $\Delta_t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times$ (TDC$_{Hit}$ - Ped).} \label{fig:ConvertTime}
+\end{figure}
+
+In order to determine the ramp slope, the starting point or pedestal of the ramp and the endpoint of the ramp are measured. Since the SPIROC2B has two TDC ramps, each defined by a BXID parity (even or odd), two slopes need to be extracted per chip. In addition, each channel can store up to 16 events called memory-cell. Each memory-cell is different thus 16 calibration values or pedestal are needed per channel. The extraction of the slope and the determination of the pedestal is explained in section \ref{subsec:slope_calib}.
+
+Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compared them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
+
+Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) ramp and the time-walk effect (see section \ref{subsec:timewalk}).
+
+\section{Dataset}
+
+In this chapter, the muon dataset shown in section \ref{subsec:dataset} is used for the timing calibration of the AHCAL. The table \ref{table:mu_elec_runs} summarizes the runs and datasets used. Raw events are considered if the reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event (see section \ref{subsec:trigger}). N$_{3 T_0}$ is the number of events after the selection on the time reference (see section \ref{section:time_ref}) or electron selection (see section \ref{subsec:elec_sel}). N$_{sel.}$ is the number of events after the selection on the error of the time reference that is explained in section \ref{section:time_ref}.
 
 \begin{table}[htb!]
 	\centering
@@ -29,18 +45,14 @@ In the following section, the muon dataset shown in section \ref{subsec:dataset}
 	\end{tabular}
 \end{table}
 
-As explained in section \ref{sec:SPIROC2B}, the SPIROC2B has two TDC voltage ramps. Both ramps can be distinguished by their BXID parity. The starting point or pedestal of the ramps, the endpoint of the ramp and thus the slope of the ramps can be different for both. Therefore, two slopes have to be extracted per chip. In addition, 16 memory-cells are used as buffer to store the analog signal before digitization. Each memory-cell is different thus 16 calibration values (offsets) are needed per channel.
-
-In the testbeam setup for this thesis (see section \ref{sec:TBsetup}), no external time reference is available. Few channels of the detector that are used as time reference ($T_0$) need to be calibrated in the same way (see section \ref{section:time_ref}). Additionally, possible electronics effects have to be corrected such as non-linearity of the TDC voltage (see section \ref{subsec:lin_corr}) ramp and time-walk (see section \ref{subsec:timewalk}).
-
 \section{Slope calibration}
 \label{subsec:slope_calib}
 
-This section will describe the method used to extract the slope of the TDC voltage ramp. To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
+To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
 \begin{equation} \label{eq:slope}
 	s \: \text{[ns/TDC]} = \frac{3920}{a - b}
 \end{equation}
-where $s$ is the TDC ramp slope, $a$ is the endpoint of the TDC ramp and $b$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps.
+where $s$ is the TDC ramp slope, $a$ is the endpoint of the TDC ramp and $b$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC voltage ramp.
 
 At a first order, the slope of the TDC ramp is assumed to be linear. The parameters $a$ and $b$ are extracted from the TDC spectrum of a channel per chip and BXID parity using only the first memory-cell as shown in figure \ref{fig:TDC_Spectrum}. The TDC ramp slope does not depend on the memory-cell as the memory-cell only introduce an offset on the parameters $a$ and $b$. A total of 208 slopes have to be extracted for the testbeam setup.
 
@@ -80,7 +92,7 @@ where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ 
 \section{Calibration of the time reference}
 \label{section:time_ref}
 
-To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as explained above. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guaranty the most accurate result.
+To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guaranty the most accurate result.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -97,11 +109,13 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 	\caption{\subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependent of the bunch-crossing parity. \subref{fig:T0ReferenceError}}
 \end{figure}
 
-Events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range as shown in table \ref{table:T0_sel} to reject noise hits from these channels. These channels receive the trigger coincidence signal at the same time therefore a correction is applied to ensure that they match in time. This is done to remove any effect induced by the front-end electronics.
+Events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range as shown in table \ref{table:T0_sel} to reject noise hits from these channels. These channels receive the trigger coincidence signal at the same time, and therefore a timing correction is applied to ensure that they match in time. This is done to remove any effect induced by the front-end electronics.
 
-A quadratic correction of the time of T$_{12}$ - T$_{14}$ and T$_{13}$ - T$_{14}$ as a function of T$_{12}$ and T$_{13}$ respectively is done. Ideally, the difference between T$_{12}$ and T$_{13}$ to T$_{14}$ should be a Gaussian distribution centered at 0 ns. The figure \ref{fig:T0_Correction} shows the difference T$_{12}$ - T$_{14}$ before correction in blue and after correction in red.
+A $2^{nd}$ order polynomial correction of the time of (T$_{12}$ - T$_{14}$) and (T$_{13}$ - T$_{14}$) as a function of T$_{12}$ and T$_{13}$ respectively is done. Ideally, the difference between T$_{12}$ and T$_{13}$ to T$_{14}$ should be a Gaussian distribution centered at 0 ns. The figure \ref{fig:T0_Correction} shows the difference (T$_{12}$ - T$_{14}$) before correction in blue and after correction in red.
 
 The correction is needed due to the fact that a different value of the pedestal is needed for each BXID parity which was not expected. The resulting RMS of the reference triggers is around 4-5 ns. This resolution from the electronics contributes to the final timing resolution obtained.
+
+In a next step, to reduce the uncertainty of the time reference, the time reference $T_{ref}$ and its associated uncertainty $\sigma_{ref}$ are calculated following the equations \ref{eq:tref} and \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. The mean uncertainty of the time reference is around 1.30 ns which is compatible with previous results \cite{Laurien2016}. Finally, only events with a calibrated time value between 500 and 3500 ns were considered to avoid TDC ramp edge effects.
 
 \begin{equation} \label{eq:tref}
 	\text{T}_{ref} = \frac{\text{T}_{12} + \text{T}_{13} + \text{T}_{14}}{3}
@@ -110,14 +124,14 @@ The correction is needed due to the fact that a different value of the pedestal 
 	\sigma_{ref}^2 = \frac{ (\text{T}_{12} - \text{T}_{ref})^2 + (\text{T}_{13} - \text{T}_{ref})^2  + (\text{T}_{14} - \text{T}_{ref})^2 }{6}
 \end{equation}
 
-In a next step, to reduce the uncertainty of the time reference, the time reference $T_{ref}$ and its associated uncertainty $\sigma_{ref}$ are calculated following the equations \ref{eq:tref} and \ref{eq:tref_err}. A cut of 4 ns is performed on $\sigma_{ref}$ to reject events with a too large uncertainty on the time of the trigger reference as shown in figure \ref{fig:T0ReferenceError}. The mean uncertainty of the time reference is around 1.30 ns which is compatible with previous results \cite{Laurien2016}. Finally, only events with a calibrated time value between 500 and 3500 ns were considered to avoid TDC ramp edge effects.
+\section{Time of the first hit distribution}
+\label{sec:TimeFH}
 
-\section{Determination of the time of the first hit}
-\label{sec:TimeHit}
+\subsection{Determination of the time reference offset}
 
-Due to cabling and the trigger electronics logic, the time reference is delayed compared to the muon passing through the detector. Therefore, the time offset of the time reference is determined from data. Muons are instantaneous particles thus the time of the first hit distribution for each channel, memory cell and BXID should peak at 0 ns.
+The time reference of the trigger is delayed compared to the muon passing through the detector because of cabling and the trigger electronics logic. Therefore, the time offset of the time reference is determined from data. Muons are instantaneous particles thus the time of the first hit distribution for each channel, memory cell and BXID should peak at 0 ns.
 
-A shifting procedure of the time of the hit relative to the time reference for each channel, memory-cell and BXID parity is performed. This is done to take into account the delay time of the trigger due to cabling and the NIM-logic as well as possible differences in pedestals. Only memory-cells containing more than 100 events are considered. The histogram range of the time of the hit relative to the time reference is reduced iteratively until the RMS of the distribution is under 10 ns. This value was arbitrary chosen. The mean of the histogram is then used as the time offset value. An example of a single channel is shown in figure \ref{fig:TimeChnwithOffset}.
+A shifting procedure of the time of the hit relative to the time reference for each channel, memory-cell and BXID parity is performed. This is done to take into account the delay time of the trigger due to cabling and the trigger electronics as well as possible differences in channel pedestals. Only memory-cells containing more than 100 events are considered. The histogram range of the time of the hit relative to the time reference is reduced iteratively until the RMS of the distribution is under 10 ns. This value was chosen because it corresponds to more than 3 sigma of the time reference uncertainty. The mean of the histogram is then used as the time offset value. An example of a single channel is shown in figure \ref{fig:TimeChnwithOffset}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -134,15 +148,15 @@ A shifting procedure of the time of the hit relative to the time reference for e
 	\caption{\subref{fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.2 ns is determined for this channel. \subref{fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.}
 \end{figure}
 
-Then a second step is done to account for a possible mis-calibration in the first step of determining the offset. Non-prompt events are tagged by requiring at least 4 prompt hits in the range of -20 to 20 ns. This was necessary in order to reduce the impact of noise and ensure a good calibration of the time offset. Then the time offset is extracted using the same method as described above with the non-prompt events removed.
+Then a second step is done to correct for a possible mis-calibration of the time offset in the first step. Non-prompt events are rejected if there is less than 4 hits in the range -20 ns to 20 ns. This was necessary in order to reduce the impact of noise on the time offset and ensure a good calibration of the time offset for all channels. Then the time offset is extracted again using the same method as described above with the non-prompt events removed.
 
-In total, 21040 individual offsets are extracted from data. The mean value of the time offset is around -150 ns which is in the expected order considering the cabling length and the trigger logic delay. Individual offsets have to be extracted for each BXID parity and memory-cell for the pedestal as shown in figure \ref{fig:BXID_offset}.
+In total, 21040 individual offsets are extracted from data. The mean value of the time offset is around -150 ns which is around the expected value considering the cabling length and the trigger logic delay. Individual offsets have to be extracted for each BXID parity and memory-cell for the pedestal as shown in figure \ref{fig:BXID_offset}.
 
-\subsection{Time of the first hit distribution}
+\subsection{Time resolution of the AHCAL after calibration}
 
-After calibration, the time of the first hit can be obtained by looking at the distribution of T$_{chn}$ - T$_{ref}$ as shown in figure \ref{fig:timing_nocorrection}. The time resolution (RMS) shown in figure \ref{fig:timing_nocorrection} obtained by combining all layers excluding layer 11 is around 5.65 ns by just applying the time calibration on the data. This is far from the desired time resolution of 1 ns. In addition, an asymmetry can be seen in the time distribution to the left. Some improvements are still possible as described in the following section.
+After the time calibration, the time of the first hit T$_{chn}$ - T$_{ref}$ is obtained combining all channels as shown in figure \ref{fig:timing_nocorrection}. The time resolution (RMS) is around 5.65 ns. The time distribution is obtained by combining all layers excluding layer 11 and by just applying the time calibration on the data. This is far from the desired time resolution of 1 ns. In addition, an asymmetry can be seen in the time distribution to the left. Some improvements are still possible as described in the following sections.
 
-Each layer was looked at individually as shown in figure \ref{fig:reso_nocorrection}. A comparison between a Gaussian fit to extract the $\sigma$ and the RMS of the time distribution is done. All layers are very similar in terms of time resolution and Gaussian-like. The layer 6 and 10 present a higher time resolution that may be due to the bad quality of these boards. The discrepancy observed for the layer 11 is most likely due to an electronic problem in the TDC voltage ramp of all the chips on that layer. All calibration values, channel-wise and chip-wise time distributions on this layer have been investigated manually and all channels present a large tail to high time value. The reason is not clear and identified.
+It is expected that the time distribution should follow a Gaussian distribution. However, no fit is performed because of the asymmetry of the time distribution. But a comparison between a Gaussian fit to extract the $\sigma$ and the RMS of the time distribution is done for each layer as shown in figure \ref{fig:reso_nocorrection}. All layers are very similar in terms of time resolution and Gaussian-like. The layer 6 and 10 present a worse time resolution that may be due to the bad quality of these boards. The discrepancy observed for the layer 11 is most likely due to an electronic problem in the TDC voltage ramp of all the chips on that layer. All calibration values, channel-wise and chip-wise time distributions on this layer have been investigated manually and all channels present a large tail to high time value. The reason is not clear and identified.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -156,7 +170,7 @@ Each layer was looked at individually as shown in figure \ref{fig:reso_nocorrect
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections.pdf}
 		\caption{}\label{fig:reso_nocorrection}
 	\end{subfigure}
-	\caption{\subref{fig:timing_nocorrection}) Time of the first hit distribution of the AHCAL after the first part of the calibration. $\mu$ = -0.06 ns , RMS = 5.65 ns. The distribution is asymmetric to the left. \subref{fig:reso_nocorrection}) Time resolution for all layers in the AHCAL. The mean RMS time resolution is represented by the blue line. Mean $\sigma$ = 5.65 ns, Mean RMS = 5.82 ns.}
+	\caption{\subref{fig:timing_nocorrection}) Time of the first hit distribution of the AHCAL after the time calibration. $\mu$ = -0.06 ns , RMS = 5.65 ns. The distribution is asymmetric to the left. \subref{fig:reso_nocorrection}) Time resolution for all layers in the AHCAL. The mean RMS time resolution is represented by the blue line. The sigma resolution of each layer is obtained from a Gaussian fit. Mean $\sigma$ = 5.65 ns, Mean RMS = 5.82 ns.}
 \end{figure}
 
 \section{Corrections applied to data}
@@ -164,7 +178,7 @@ Each layer was looked at individually as shown in figure \ref{fig:reso_nocorrect
 \subsection{Ramp non-linearity correction}
 \label{subsec:lin_corr}
 
-The calibration relies on the linearity of the TDC voltage ramp in the \textit{SPIROC2B} by measuring the minimum and maximum of the TDC ramp and determining the slope assuming a linear ramp. This assumption is not entirely reliable as described in \cite{Hartbrich2011, Brianne2012}. The voltage slope shows a slight kink around the middle thus leading to a non-linear ramp. For this, a correction of the non-linearity is applied. Since the time reference is determined from a non-linear TDC ramp and it can't be corrected due to the lack of external time reference, the position of $T_{hit}$ - $T_{ref}$ on the ramp is actually corrected here.
+The time calibration relies on the linearity of the TDC voltage ramp in the \textit{SPIROC2B}. This assumption is not entirely reliable as described in \cite{Hartbrich2011, Brianne2012}. The voltage slope shows a slight kink around the middle thus leading to a non-linear ramp. For this, a correction of the non-linearity is applied. Since the time reference is determined from a non-linear TDC ramp and it can't be corrected due to the lack of external time reference, the position of $T_{hit}$ - $T_{ref}$ on the ramp is actually corrected here.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -181,9 +195,9 @@ The calibration relies on the linearity of the TDC voltage ramp in the \textit{S
 	\caption{\subref{fig:LinCorr}) Quadratic fit of chip 146 (BXID even) on layer 9. The graph is slightly curved showing that this chip presents a non-linear TDC ramp. $\chi^2/ndf$ = 1.29. \subref{fig:LinCorr_2}) Profile for chip 146 on layer 9 after the non-linearity correction of the ramp. The correction parameters are applied on the data to cross-check the quality of the correction. The curve flattens with the non-linearity correction applied.}
 \end{figure}
 
-By investigating the time of the first hit (T$_{fH}$) for each chip and BXID parity as a function of the TDC value of the hit, the shape of the graph indicates how reliable is the assumption of a linear ramp. If the ramp would be perfectly linear, one would obtain a flat graph. To correct for the non-linearity of the ramp, a quadratic fit is performed for each chip and \acrshort{bxid} as shown in figure \ref{fig:LinCorr}. The correction needed can be in the order of few nanoseconds. The figure \ref{fig:LinCorr_2} shows the time of first hit as a function of the TDC value of the hit after the non-linearity correction. The curve looks much flatter.
+By investigating the time of the first hit (T$_{fH}$) for each chip and BXID parity as a function of the TDC value of the hit, the shape of the graph indicates how reliable is the assumption of a linear ramp. If the ramp would be perfectly linear, one would obtain a flat graph. To correct for the non-linearity of the ramp, a $2^{nd}$ order polynomial is used for each chip and \acrshort{bxid} as shown in figure \ref{fig:LinCorr}. The time correction needed can be in the order of few nanoseconds. The figure \ref{fig:LinCorr_2} shows the time of first hit as a function of the TDC value of the hit after the non-linearity correction. As expected, the curve looks much flatter after the non-linearity correction.
 
-The non-linearity correction results in an improvement in the timing resolution (RMS) of the AHCAL by about 5.1\% (from 5.65 to 5.36 ns) as shown in figure \ref{fig:timing_lincorrection}. Looking at each layer, as shown in figure \ref{fig:reso_lincorrection}, the time resolution went down by the same amount.
+The non-linearity correction results in an improvement in the timing resolution (RMS) of the AHCAL by about 5.1\% (from 5.65 to 5.36 ns) as shown in figure \ref{fig:timing_lincorrection}. Looking at each layer, as shown in figure \ref{fig:reso_lincorrection}, the time resolution decrease by the same amount.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -197,15 +211,15 @@ The non-linearity correction results in an improvement in the timing resolution 
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_LinCorrection.pdf}
 		\caption{}\label{fig:reso_lincorrection}
 	\end{subfigure}
-	\caption{\subref{fig:timing_lincorrection}) Time of the first hit distribution of the AHCAL after the non-linearity correction. $\mu$ = -0.04 ns , RMS = 5.36 ns. \subref{fig:reso_lincorrection}) Time resolution for all layers in the AHCAL. The mean RMS is 5.54 ns.}
+	\caption{\subref{fig:timing_lincorrection}) Time of the first hit distribution of the AHCAL before the non-linearity correction in black and after in blue. The non-linearity correction improves the time resolution by around 5.1\%. \subref{fig:reso_lincorrection}) Time resolution for all layers in the AHCAL. A comparison of the RMS after the simple calibration is shown with the black dashed line.}
 \end{figure}
 
-However, the asymmetry of the time distribution remains. This effect has been investigated and appears for all layers and chips. It may be due to the time reference channels because the non-linearity of the TDC ramp for these channels can not be corrected without an external time reference. This has been investigated by looking at the time of first hit distribution in bins of the mean TDC value of the time reference. It has been observed, for all layers, that the time asymmetry increases as a function of the TDC value of the time reference.
+However, the asymmetry of the time distribution remains. This effect has been investigated and appears for all layers and chips. It may be due to the time reference channels because the non-linearity of the TDC ramp for these channels can not be corrected without an external time reference. This has been investigated by looking at the time of first hit distribution in bins of the mean TDC value of the time reference. It has been observed, for all layers, that the time distribution asymmetry increases as a function of the TDC value of the time reference.
 
 \subsection{Time Walk correction}
 \label{subsec:timewalk}
 
-The time-walk effect is due to the presence of a threshold that induces a time shift between a small amplitude signal and a high amplitude signal. Small amplitude signals will systematically trigger at a later time than high amplitude signals for a shaper that makes the signals peak at the same time. A correction can be determined by looking at the time of the first hit as a function of the amplitude of the hit. This may be particularly important for late neutrons energy depositions in hadron showers that generally deposit very little energy in the calorimeter.
+The time-walk effect is due to the presence of an energy threshold that induces a time shift between a small amplitude signal and a high amplitude signal. Small amplitude signals will systematically trigger at a later time than high amplitude signals for a shaper that makes the signals peak at the same time. A time correction can be determined by looking at the time of the first hit as a function of the amplitude of the hit. This may be particularly relevant for late energy depositions in hadron showers that comes generally from neutrons depositing little energy in the calorimeter.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -222,17 +236,17 @@ The time-walk effect is due to the presence of a threshold that induces a time s
 	\caption{\subref{fig:time_walk}) Time of first hit as a function of the hit energy. A difference up to 6 ns is seen between small and large amplitudes. Time-walk correction extracted from data. The fit function is of the form $\text{A} \times e^{-\lambda{}x} + \text{B}$. \subref{fig:time_walk_corr}) Time of first hit as a function of the hit energy after correction showing a spread of less than 1 ns.}
 \end{figure}
 
-The correction is assumed to be the same for all the chips, independent of the position of the threshold of each chip, as hits are cut at 0.5 MIP. Thresholds of most of the chips were set to similar values and the threshold was set-up well below 0.5 MIP. It has been verified and no significant differences in the shape of the curve are seen between different chips. An exponential fit of the form $\text{A} \times e^{-\lambda{}x} + \text{B}$ is applied on the data to extract the parameters needed to correct the time walk effect as shown in figure \ref{fig:time_walk}. The residuals after correction, shown in figure \ref{fig:time_walk_corr}, are under one nanosecond.
+The correction is assumed to be the same for all the chips, independent threshold value of each chip, because hits are cut at 0.5 MIP. Thresholds of most of the chips were set to similar values, which was far below 0.5 MIP. It has been verified and no significant differences in the shape of the curve are seen between different chips. An exponential fit in the form $\text{A} \times e^{-\lambda{}x} + \text{B}$ is applied to the data to extract the parameters which are needed to correct the time walk effect as shown in figure \ref{fig:time_walk}. The residuals after correction, shown in figure \ref{fig:time_walk_corr}, are under one nanosecond.
 
 \subsection{Time of first hit for muons after corrections}
 \label{subsec:Muon_final}
 
-After the time-walk correction, an improvement of around 3\% can be achieved on the time resolution of the AHCAL as shown in figure \ref{fig:timing_muons}. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The asymmetry of the distribution is taken into account in the simulation by parametrizing the time distribution with a double Gaussian function as shown in table \ref{table:time_res_sim}.
+The figure \ref{fig:timing_muons} shows the time of first hit distribution for muons after the time-walk correction. An improvement of around 3\% is achieved on the time resolution of the AHCAL. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The asymmetry of the distribution will be taken into account in the simulation by parametrizing the time distribution with a double Gaussian function.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AllLayers.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf}
 		\caption{}\label{fig:timing_muons}
 	\end{subfigure}
 	\hfill
@@ -241,13 +255,13 @@ After the time-walk correction, an improvement of around 3\% can be achieved on 
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf}
 		\caption{}\label{fig:timing_reso_all_muons}
 	\end{subfigure}
-	\caption{\subref{fig:timing_muons}) Time of the first hit for muons after all corrections excluding layer 11. The extracted parameters are then used to tune the simulation. \subref{fig:timing_reso_all_muons}) Time resolution obtained for each layer in the AHCAL. The mean RMS is 5.36 ns.}
+	\caption{\subref{fig:timing_muons}) Time of the first hit for muons after the simple calibration in blue, after the non-linearity correction in red and after all corrections in black. Each correction improves the time resolution. \subref{fig:timing_reso_all_muons}) Time resolution obtained for each layer in the AHCAL. A comparison of the RMS after the simple calibration and the non-linearity correction is shown with the black and green dashed lines.}
 \end{figure}
 
 \begin{center}
 	\rule{0.5\textwidth}{.4pt}
 \end{center}
 
-This chapter presented the timing calibration of the AHCAL with the recorded muon data. The TDC ramp slope determination, the calibration of the time reference and the different corrections applied to data have been explained. A timing resolution for the AHCAL of around 5 ns is achieved with muons.
+The timing calibration of the AHCAL was performed using the recorded muon data. The TDC ramp slope determination, the calibration of the time reference and the different corrections applied to data have been explained. After a simple timing calibration, a time resolution of around 5.6 ns is achieved. After correcting the non-linearity of the TDC ramp, an improvement of around 5.1\% is visible on the time resolution (5.4 ns). Finally, after correcting for the time-walk effect, an improvement of 3\% is achieved on the time resolution. After all corrections, the time resolution of the AHCAL is around 5.2 ns.
 
-Before investigating hadronic showers, the calibration must be cross-checked and the simulation must be validated. Electromagnetic showers are quasi-instantaneous and, in addition, they have a higher number of hits min the detector compared to muons as well as higher hit energies, and therefore are the perfect tool to perform the cross-check of the calibration. The cross-check of the calibration is discussed in the next chapter.
+Before investigating hadronic showers, the calibration must be cross-checked and the simulation of the hit times must be validated. Electromagnetic showers are quasi-instantaneous and, in addition, they have a higher number of hits in the detector compared to muons as well as higher hit energies, and therefore are the perfect tool to perform the cross-check of the calibration. The cross-check of the calibration is discussed in the next chapter.

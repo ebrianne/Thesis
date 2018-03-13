@@ -117,14 +117,16 @@
 \contentsline {subsection}{\numberline {8.3.3}Electrons}{92}{subsection.8.3.3}
 \contentsline {chapter}{\numberline {9}Timing Calibration of the AHCAL}{97}{chapter.9}
 \contentsline {section}{\numberline {9.1}Introduction}{97}{section.9.1}
-\contentsline {section}{\numberline {9.2}Slope calibration}{98}{section.9.2}
-\contentsline {section}{\numberline {9.3}Calibration of the time reference}{99}{section.9.3}
-\contentsline {section}{\numberline {9.4}Determination of the time of the first hit}{100}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Time of the first hit distribution}{101}{subsection.9.4.1}
-\contentsline {section}{\numberline {9.5}Corrections applied to data}{102}{section.9.5}
-\contentsline {subsection}{\numberline {9.5.1}Ramp non-linearity correction}{102}{subsection.9.5.1}
-\contentsline {subsection}{\numberline {9.5.2}Time Walk correction}{104}{subsection.9.5.2}
-\contentsline {subsection}{\numberline {9.5.3}Time of first hit for muons after corrections}{104}{subsection.9.5.3}
+\contentsline {section}{\numberline {9.2}Dataset}{98}{section.9.2}
+\contentsline {section}{\numberline {9.3}Slope calibration}{98}{section.9.3}
+\contentsline {section}{\numberline {9.4}Calibration of the time reference}{100}{section.9.4}
+\contentsline {section}{\numberline {9.5}Time of the first hit distribution}{101}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}Determination of the time reference offset}{101}{subsection.9.5.1}
+\contentsline {subsection}{\numberline {9.5.2}Time resolution of the AHCAL after calibration}{102}{subsection.9.5.2}
+\contentsline {section}{\numberline {9.6}Corrections applied to data}{102}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{102}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{104}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}Time of first hit for muons after corrections}{105}{subsection.9.6.3}
 \contentsline {chapter}{\numberline {10}Cross-check of the calibration}{107}{chapter.10}
 \contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{107}{section.10.1}
 \contentsline {section}{\numberline {10.2}Influence of the number of triggered channels}{107}{section.10.2}
@@ -138,7 +140,7 @@
 \contentsline {subsection}{\numberline {11.1.1}Time of first hit distribution}{117}{subsection.11.1.1}
 \contentsline {subsection}{\numberline {11.1.2}Energy dependence of the time of first hit}{120}{subsection.11.1.2}
 \contentsline {subsection}{\numberline {11.1.3}Radial dependence of the time}{121}{subsection.11.1.3}
-\contentsline {subsubsection}{Time dependence with the shower depth}{123}{section*.124}
+\contentsline {subsubsection}{Time dependence with the shower depth}{123}{section*.125}
 \contentsline {subsection}{\numberline {11.1.4}Longitudinal dependence of timing profiles}{126}{subsection.11.1.4}
 \contentsline {subsection}{\numberline {11.1.5}Time correlations between layers}{126}{subsection.11.1.5}
 \contentsline {section}{\numberline {11.2}Summary and Outlook}{129}{section.11.2}
@@ -153,15 +155,15 @@
 \contentsline {subsection}{\numberline {12.3.1}Modification of timing window in ILDCaloDigi}{133}{subsection.12.3.1}
 \contentsline {subsection}{\numberline {12.3.2}Check of the energy calibration}{133}{subsection.12.3.2}
 \contentsline {subsection}{\numberline {12.3.3}Timing cut effects on hadronic showers in ILD detector}{136}{subsection.12.3.3}
-\contentsline {subsubsection}{Event Selection}{137}{section*.140}
-\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{137}{section*.141}
+\contentsline {subsubsection}{Event Selection}{137}{section*.141}
+\contentsline {subsubsection}{Impact on Particle Flow Objects (PFOs) reconstruction}{137}{section*.142}
 \contentsline {subsection}{\numberline {12.3.4}In a realistic scenario}{142}{subsection.12.3.4}
 \contentsline {section}{\numberline {12.4}Understanding the degradation of the energy resolution with timing cuts}{148}{section.12.4}
 \contentsline {subsection}{\numberline {12.4.1}Hit Energy spectra in HCAL}{148}{subsection.12.4.1}
 \contentsline {subsection}{\numberline {12.4.2}Influence of timing cuts on hit energy spectra in HCAL}{151}{subsection.12.4.2}
 \contentsline {section}{\numberline {12.5}Conclusion and Outlook}{153}{section.12.5}
 \contentsline {chapter}{\numberline {13}Summary}{155}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{157}{section*.165}
+\contentsline {chapter}{Acknowledgments}{157}{section*.166}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{159}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{161}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{165}{Appendix.1.C}
@@ -171,7 +173,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{181}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{183}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{187}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{189}{appendix*.197}
-\contentsline {chapter}{List of figures}{191}{appendix*.198}
-\contentsline {chapter}{Acronyms}{203}{section*.199}
-\contentsline {chapter}{Bibliography}{207}{appendix*.201}
+\contentsline {chapter}{List of tables}{189}{appendix*.198}
+\contentsline {chapter}{List of figures}{191}{appendix*.199}
+\contentsline {chapter}{Acronyms}{203}{section*.200}
+\contentsline {chapter}{Bibliography}{207}{appendix*.202}
