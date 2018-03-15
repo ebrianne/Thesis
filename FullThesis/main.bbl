@@ -23,6 +23,10 @@ J.~Thomson, ``{Cathode Rays},'' {\em Philos. Mag. 44(1897), 293}, 1897.
 E.~Rutherford, ``{The scattering of $\alpha$ and $\beta$ particles by matter
   and the structure of the atom},'' {\em Phil. Mag. 21(1911) 669}, 1911.
 
+\bibitem{ENoether1971}
+E.~{Noether}, ``{Invariant variation problems},'' {\em Transport Theory and
+  Statistical Physics}, vol.~1, pp.~186--207, Jan. 1971.
+
 \bibitem{Yang:1954ek}
 C.-N. Yang and R.~L. Mills, ``{Conservation of Isotopic Spin and Isotopic Gauge
   Invariance},'' {\em Phys. Rev.}, vol.~96, pp.~191--195, 1954.
@@ -86,6 +90,10 @@ C.~Rubbia, ``{Physics Results of the UA1 Collaboration at the CERN
 H.~Baer, T.~Barklow, K.~Fujii, Y.~Gao, A.~Hoang, S.~Kanemura, J.~List, H.~E.
   Logan, A.~Nomerotski, M.~Perelstein, {\em et~al.}, ``{The International
   Linear Collider Technical Design Report - Volume 2: Physics},'' 2013.
+
+\bibitem{Aaboud:2017xsd}
+M.~Aaboud {\em et~al.}, ``{Evidence for the $ H\to b\overline{b} $ decay with
+  the ATLAS detector},'' {\em JHEP}, vol.~12, p.~024, 2017.
 
 \bibitem{Artru1988}
 X.~Artru and M.~G. Bowler, ``{Quantisation of the string fragmentation

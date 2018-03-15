@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017)
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: title.aux
@@ -34,12 +34,12 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: oath.aux
 Database file #1: biblio.bib
 Warning--entry type for "ILCSoftPortal" isn't style-file defined
---line 47 of file biblio.bib
+--line 93 of file biblio.bib
 Warning--entry type for "OmegaWeb" isn't style-file defined
---line 394 of file biblio.bib
+--line 787 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
---line 430 of file biblio.bib
-Repeated entry---line 1222 of file biblio.bib
+--line 859 of file biblio.bib
+Repeated entry---line 2443 of file biblio.bib
  : @article{Chatrchyan:2012xdj
  :                            ,
 I'm skipping whatever remains of this entry
@@ -88,45 +88,45 @@ Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 152 entries,
+You've used 154 entries,
             1876 wiz_defined-function locations,
-            1391 strings with 31057 characters,
-and the built_in function-call counts, 35775 in all, are:
-= -- 3408
-> -- 1362
+            1402 strings with 31294 characters,
+and the built_in function-call counts, 36298 in all, are:
+= -- 3464
+> -- 1374
 < -- 0
-+ -- 531
-- -- 379
-* -- 2279
-:= -- 5042
-add.period$ -- 161
-call.type$ -- 152
-change.case$ -- 143
++ -- 536
+- -- 382
+* -- 2311
+:= -- 5112
+add.period$ -- 163
+call.type$ -- 154
+change.case$ -- 145
 chr.to.int$ -- 0
-cite$ -- 196
-duplicate$ -- 2104
-empty$ -- 3491
-format.name$ -- 379
-if$ -- 8880
+cite$ -- 198
+duplicate$ -- 2135
+empty$ -- 3540
+format.name$ -- 382
+if$ -- 9015
 int.to.chr$ -- 0
-int.to.str$ -- 152
-missing$ -- 138
-newline$ -- 481
-num.names$ -- 148
-pop$ -- 592
+int.to.str$ -- 154
+missing$ -- 140
+newline$ -- 487
+num.names$ -- 150
+pop$ -- 596
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1385
+skip$ -- 1411
 stack$ -- 0
-substring$ -- 1665
-swap$ -- 832
+substring$ -- 1699
+swap$ -- 848
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 44
-while$ -- 277
-width$ -- 155
-write$ -- 1398
+while$ -- 282
+width$ -- 157
+write$ -- 1418
 (There was 1 error message)
