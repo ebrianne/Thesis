@@ -86,7 +86,7 @@ All electron runs (see section \ref{sec:TimingIntro}) have been carefully checke
 
 A check on the validity of the calibration for other data-taking periods has been performed on another dataset from a testbeam at DESY II in May 2016. The goal is to understand the transportability of the time calibration. The setup was composed of the same layers 11 to 14 used at CERN in July 2015. In order to have enough hits in all layers, an aluminum absorber of 3 $X_{0}$ was placed in front of the detector in a 3 GeV electron beam.
 
-The same time calibration constants determined from the CERN muon and electron data were used, except that a re-calibration of the time reference triggers ($T_{0}$) and the trigger time offset was necessary. This is due to different setups in the cabling and trigger electronics.
+The same time calibration constants determined from the CERN muon and electron data were used, except that a re-calibration of the time reference triggers ($T_{0}$) and the trigger time offset was necessary. This is due to different setups in the cabling and trigger electronics. For this setup, only two $T_{0}$ channels on the layer 14 were working properly.
 
 The figure \ref{fig:TBMay2016} shows the distribution of the time of first hits for layer 12 to 14 for all hits in black and for events with only single hits per chip in blue. The time distribution is compared to the time distribution for the layers 12 to 14 of 10 GeV electrons recorded at CERN in July 2015.
 
@@ -105,6 +105,8 @@ We can learn from this study, that the time calibration constants determined in 
 
 A global correction is used for the time correction as a function of the number of triggered channels. A priori, it is not clear if the time correction is chip-dependent and it could not be verified. One needs to estimate the systematic uncertainty of the time correction on the time of first hit distribution. A study has been done to estimate this uncertainty by looking at the time distribution of the four center tiles of the detector. Events in which the center of gravity in x and y is within one of four center tiles of the detector are selected. This has been performed for electron beam energies of 10 GeV and 50 GeV. The difference between the time distributions of the four center tiles helps to estimate the systematic uncertainty of the time correction as a function of the number of triggered channels in a chip.
 
+The figure \ref{fig:SystTimeElectrons} shows the time distribution for each one of the four tiles for 10 GeV and 50 GeV electron beam energies respectively. For both beam energies, the mean of the time distributions are very similar and are close to 0 ns. The RMS of the time distributions vary between 7.12 ns and 7.45 ns at 10 GeV and between 8.06 ns and 8.81 ns at 50 GeV. A relative deviation up to 30\% is seen between the time distribution within a range of more than 3 sigma (from -30 ns to 30 ns). Therefore, a systematic uncertainty of 30\% is taken for the uncertainty on the bin content in the time of first hit distribution.
+
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
@@ -120,70 +122,76 @@ A global correction is used for the time correction as a function of the number 
 	\caption{Time of the first hit distribution for the four center tiles for 10 GeV electrons on the left and 50 GeV electrons on the right. Under each figure, the deviation of each time distribution to the top left tile is shown. The mean deviation of the time distributions is shown in a black line. The dashed black line represents a 30\% deviation relative to the top left tile time distribution.} \label{fig:SystTimeElectrons}
 \end{figure}
 
-The figure \ref{fig:SystTimeElectrons} shows the time distribution for each one of the four tiles for 10 GeV and 50 GeV electron beam energies respectively. For both beam energies, the mean of the time distributions are very similar and are close to 0 ns. The RMS of the time distributions vary between 7.12 ns and 7.45 ns at 10 GeV and between 8.06 ns and 8.81 ns at 50 GeV.
-
 \section{Systematic uncertainties}
 
 For a significant assessment of differences observed between data and simulations, systematic uncertainties must be evaluated. Several possible sources were identified:
 
 \begin{itemize}
-	\item Non-Linearity correction: A non-linearity correction, as explained in section \ref{subsec:lin_corr}, determined from data with a limited accuracy lead to a systematic uncertainty. The residuals of the correction give a systematic error at the level of 0.2 ns.
+	\item Non-Linearity correction: A non-linearity correction (see section \ref{subsec:lin_corr}) is determined from data with a limited accuracy lead to a systematic uncertainty. The residuals of the correction give a systematic error at the level of 0.2 ns.
 	\item Time walk correction: Similarly to the non-linearity correction, the systematic error obtained from the residuals of the time walk correction (see section \ref{subsec:timewalk}) is in the order of 0.2 ns.
-	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the timing in the order of 1 ns. This systematic error is the most dominant over all other uncertainties.
+	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit in the order of 1 ns. This systematic error is the most dominant over all other uncertainties. Moreover, a systematic uncertainty of 30\% is taken on the bin content for the time of first hit distribution (see section \ref{subsec:Systematic_Correction}). This systematic uncertainty is applied only to electrons and pions.
 	\item AHCAL energy scale: The energy scale of the AHCAL was determined using the muon dataset (see chapter \ref{chap:ECalibAHCAL}). A systematic uncertainty on the MIP scale of around 3.6\% was derived by dividing the muon sample in odd and even run numbers and by looking at the average spread of the fitted MIP value for both subsamples. This is converted to an uncertainty in time using the mean time of first hit as a function of the hit energy using the QGSP\_BERT\_HP physics list. At 0.5 MIP, this results in an uncertainty of 0.1 ns. For hits above 1 MIP, the uncertainty is below 0.05 ns.
-	\item Time smearing parametrization: A parametrization was obtained from data for the width of the time smearing as a function of the number of triggered channels. An error band was obtained by comparing all electron energies as explained in appendix \ref{appendix:ped_shift}. This is applied to simulation for systematics.
+	\item Time smearing parametrization: A smearing parametrization of the width of the time distribution as a function of the number of triggered channels in a chip is obtained from data. An error band on the width was obtained by comparing all electron energies as explained (see appendix \ref{appendix:ped_shift}). This is applied to simulation for systematics.
 	\item Determination of the offset to $t=0$: For simulation, the time shift per layer is calculated using a time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this, an uncertainty of 3 mm corresponding to the scintillator thickness is taken in z corresponding to 0.01 ns uncertainty in timing.
-	\item Cross-talk: No measurement for optical cross-talk between tiles is available and from previous measurements, it varies between 10\% and 18\%. These are used for systematics in simulation only for the layers 4 to 10. The cross-talk value induces a different number of hits in the detector thus has an impact on the width of the time distribution.
-	\item Detector inhomogeneities: As explained in section \ref{subsec:det_inhomo}, variations in the absolute number of entries in each time bin can be observed. The variations in the number of entries per time bin are between 10-20\%. Therefore a conservative uncertainty of 20\% on the data normalization is applied for the comparison of absolute number of hits per time bin.
-	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection as shown in section \ref{sec:pionsel}. Thus the number of absolute pion events is not known. Based on the time cluster time on simulation at the level of maximum 2\%, a 10\% uncertainty on the data normalization is assigned when comparing data to simulation for the absolute number of hits per time bin.
+	\item Cross-talk: No measurement for optical cross-talk between tiles is available and from previous measurements, it varies between 10\% and 18\%. The cross-talk value induces a different number of hits in the detector thus has an impact on the width of the time of first hit distribution. The variation of this parameter in the simulation for the layers 4 to 10 is used for systematics.
+	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection. Thus, the number of true pion events is not known. The cluster time rejection method (see section \ref{sec:pionsel}) rejects up to 1\% of events in the data. A conservative uncertainty of 10\% on the data normalization is assigned when comparing data to simulation for the time of first hit distribution.
 \end{itemize}
 
-The systematic uncertainties are added in quadrature for the full systematic uncertainty. For comparison between data and simulation of the absolute time distribution, this results in an uncertainty of 20\% for muons/electrons and 30\% for pions on the data normalization. For the mean time of the first hit as a function of the hit energy and as a function of the distance to the shower center of gravity, the systematic uncertainty is resulting at 1.04 ns. The table \ref{table:time_syst} sums up the systematic uncertainties used in the analysis.
+The systematic uncertainties are added in quadrature for the full systematic uncertainty. For comparison between data and simulation of the absolute time of first hit distribution, this results in an uncertainty of 30\% for electrons and 40\% for pions on the data normalization. For the mean time of the first hit as a function of the hit energy and as a function of the hit distance to the shower center of gravity, the systematic uncertainty is resulting at 0.3 ns for muons and 1.09 ns for electrons and pions. The table \ref{table:time_syst} sums up the systematic uncertainties used in the analysis.
 %% Systematics from number of hits may be underestimated... %
-{
-\renewcommand{\arraystretch}{1.2}
+
 \begin{table}[htb!]
 	\centering
 	\caption{Summary of systematic uncertainties.}
 	\label{table:time_syst}
 	\begin{tabular}{@{} lc @{}}
 		\toprule
-		\multicolumn{1}{c}{Uncertainty source} & Full uncertainty steel \\
+		\multicolumn{1}{c}{Uncertainty source} & Full uncertainty \\
 		\midrule
-		Non-linearity residuals & 0.2 ns \\
-		Time-walk residuals & 0.2 ns \\
-		Number of triggered channels residuals & 1 ns \\
+		Non-linearity correction & 0.2 ns \\
+		Time-walk correction & 0.2 ns \\
+		Number of triggered channels correction & 1 ns / 30 \% (e/$\pi$)\\
 		Energy Scale & 0.05-0.1 ns \\
-		Offset to $t=0$ & 0.01 ns (MC) \\
-		Cross-talk & 10-18\% \\
-		Detector inhomogeneities & 20\% \\
-		Number of absolute events & 10\% (pions) \\
+		Time of flight offset & 0.01 ns (MC) \\
+		Cross-talk parameter & 10-18\% (MC)\\
+		Multi-particle events & 10\% ($\pi$) \\
 		\midrule
 		\midrule
 		\multicolumn{2}{c}{Systematics combined} \\
 		\midrule
-		data-MC hits per time bin & 20\% (muons/electrons) - 30\% (pions) \\
-		data-MC vs hit energy & 1.09 ns \\
-		data-MC vs hit distance to shower CoG & 1.09 ns \\
+		data-MC ToFH distribution & 30\% (e) - 40\% ($\pi$) \\
+		data-MC vs hit energy & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
+		data-MC vs hit distance to shower CoG & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
 		\bottomrule
 	\end{tabular}
 \end{table}
-}
 
 \section{Validation of the simulation}
 
-The simulation is validated by comparing the recorded muon and electron data to simulations. The timing resolution is extracted from muon data runs by fitting a double Gaussian to the data in the range [-50 ns, 50 ns] and is used to smear the timing of simulated calorimeter hits. The table \ref{table:time_res_sim} sums up the parameters used.
+The simulation is validated by comparing the recorded muon and electron data to simulations. The timing resolution is extracted from muon data runs by fitting a double Gaussian to the data in the range [-50 ns, 50 ns] and is used to smear the timing of simulated calorimeter hits. For the sake of simplifying the time smearing in the simulation, a global smearing parametrization is done. The table \ref{table:time_res_sim} sums up the parameters used.
 
 \begin{table}[htb!]
 	\centering
 	\caption{Timing resolution extracted with a double Gaussian fit from muon data used for simulation.}
 	\label{table:time_res_sim}
-	\begin{tabular}{@{} cccccc @{}}
-		\hline
-		$\alpha_{1}$ & $\mu_{1}$ [ns] & $\sigma_{1}$ [ns] & $\alpha_{2}$ & $\mu_{2}$ [ns] & $\sigma_{2}$ [ns] \\
-		\hline
-		0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
-		\hline
+	\begin{tabular}{@{} lcccccc @{}}
+		\toprule
+		Type / Layer & $\alpha_{1}$ & $\mu_{1}$ [ns] & $\sigma_{1}$ [ns] & $\alpha_{2}$ & $\mu_{2}$ [ns] & $\sigma_{2}$ [ns] \\
+		\midrule
+		Global & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		\midrule
+		Layer 3 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 4 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 5 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 6 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 7 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 8 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 9 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 10 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 12 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 13 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		Layer 14 & 0.607352 & -0.699093 & 5.85891 & 0.391041 & 0.945272 & 3.4012 \\
+		\bottomrule
 	\end{tabular}
 \end{table}
 
