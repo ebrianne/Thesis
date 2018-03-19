@@ -133,7 +133,7 @@
 \contentsline {section}{\numberline {10.4}Transportability of the calibration}{110}{section.10.4}
 \contentsline {section}{\numberline {10.5}Estimation of the systematic uncertainty of the time correction on the time of first hit distribution}{111}{section.10.5}
 \contentsline {section}{\numberline {10.6}Systematic uncertainties}{112}{section.10.6}
-\contentsline {section}{\numberline {10.7}Validation of the simulation}{114}{section.10.7}
+\contentsline {section}{\numberline {10.7}Validation of the simulation}{113}{section.10.7}
 \contentsline {chapter}{\numberline {11}Timing study of hadron showers}{117}{chapter.11}
 \contentsline {section}{\numberline {11.1}Timing of pion showers}{117}{section.11.1}
 \contentsline {subsection}{\numberline {11.1.1}Time of first hit distribution}{117}{subsection.11.1.1}
@@ -172,7 +172,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{181}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{183}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{187}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{189}{appendix*.201}
-\contentsline {chapter}{List of figures}{191}{appendix*.202}
-\contentsline {chapter}{Acronyms}{203}{section*.203}
-\contentsline {chapter}{Bibliography}{207}{appendix*.205}
+\contentsline {chapter}{List of tables}{189}{appendix*.200}
+\contentsline {chapter}{List of figures}{191}{appendix*.201}
+\contentsline {chapter}{Acronyms}{203}{section*.202}
+\contentsline {chapter}{Bibliography}{207}{appendix*.204}

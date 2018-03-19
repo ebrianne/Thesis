@@ -24,7 +24,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {9.1}{\ignorespaces Table with the number of events selected for the muon and electron data for the timing calibration.\relax }}{98}{table.caption.100}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {10.1}{\ignorespaces Summary of systematic uncertainties.\relax }}{113}{table.caption.116}
+\contentsline {table}{\numberline {10.1}{\ignorespaces Summary of systematic uncertainties.\relax }}{114}{table.caption.116}
 \contentsline {table}{\numberline {10.2}{\ignorespaces Timing resolution extracted with a double Gaussian fit from muon data used for simulation.\relax }}{114}{table.caption.117}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {11.1}{\ignorespaces Table with the number of events selected in the pion dataset for the timing study.\relax }}{117}{table.caption.120}
@@ -42,15 +42,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Selection cuts for noise extraction from muon runs.\relax }}{175}{table.caption.189}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Selection cuts for noise extraction from muon runs.\relax }}{175}{table.caption.188}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{181}{table.caption.195}
-\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{181}{table.caption.196}
+\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{181}{table.caption.194}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{181}{table.caption.195}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{184}{table.caption.197}
-\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{185}{table.caption.198}
+\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{184}{table.caption.196}
+\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{185}{table.caption.197}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{187}{table.caption.199}
-\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{188}{table.caption.200}
+\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{187}{table.caption.198}
+\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{188}{table.caption.199}
