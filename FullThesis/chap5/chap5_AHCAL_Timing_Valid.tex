@@ -105,7 +105,7 @@ We can learn from this study, that the time calibration constants determined in 
 
 A global correction is used for the time correction as a function of the number of triggered channels. A priori, it is not clear if the time correction is chip-dependent and it could not be verified. One needs to estimate the systematic uncertainty of the time correction on the time of first hit distribution. A study has been done to estimate this uncertainty by looking at the time distribution of the four center tiles of the detector. Events in which the center of gravity in x and y is within one of four center tiles of the detector are selected. This has been performed for electron beam energies of 10 GeV and 50 GeV. The difference between the time distributions of the four center tiles helps to estimate the systematic uncertainty of the time correction as a function of the number of triggered channels in a chip.
 
-The figure \ref{fig:timing_syst_10GeV} and \ref{fig:timing_syst_50GeV} show the time distribution for each one of the four tiles for 10 GeV and 50 GeV electron beam energies respectively. For both beam energies, the mean of the time distributions are very similar and are close to 0 ns. The RMS of the time distributions vary between 7.12 ns and 7.45 ns at 10 GeV and between 8.06 ns and 8.81 ns at 50 GeV. The mean deviation from the top left tile is shown in black line in the bottom plots. A deviation over 30\% can be seen in the region of 30-50 ns. The mean deviation curve in figure \ref{fig:timing_syst_50GeV} is taken as a systematic uncertainty on the data truncated in the region from -50 ns to 50 ns. Outside of this region, a systematic uncertainty of 100\% is taken.
+The figure \ref{fig:timing_syst_10GeV} and \ref{fig:timing_syst_50GeV} show the time distribution for each one of the four tiles for 10 GeV and 50 GeV electron beam energies respectively. For both beam energies, the mean of the time distributions are very similar and are close to 0 ns. The RMS of the time distributions vary between 7.12 ns and 7.45 ns at 10 GeV and between 8.06 ns and 8.81 ns at 50 GeV. The mean deviation from the top left tile is shown in black line in the bottom plots. A relative deviation over 30\% to the top left tile can be seen in the region of 30-50 ns. The mean deviation curve in figure \ref{fig:timing_syst_50GeV} is taken as a systematic uncertainty on the bin content in the data truncated in the region from -50 ns to 50 ns. Outside of this region, a systematic uncertainty of 50\% on the bin content is taken.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -129,10 +129,10 @@ For a significant assessment of differences observed between data and simulation
 \begin{itemize}
 	\item Non-Linearity correction: A non-linearity correction (see section \ref{subsec:lin_corr}) is determined from data with a limited accuracy lead to a systematic uncertainty. The residuals of the correction give a systematic error at the level of 0.2 ns.
 	\item Time walk correction: Similarly to the non-linearity correction, the systematic error obtained from the residuals of the time walk correction (see section \ref{subsec:timewalk}) is in the order of 0.2 ns.
-	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit in the order of 1 ns. This systematic error is the most dominant over all other uncertainties. Moreover, a systematic uncertainty is applied bin-by-bin on the time of first hit distribution for electrons and pions in the region of -50 ns to 50 ns. Outside of this region, a systematic error of 100\% is taken (see section \ref{subsec:Systematic_Correction}).
+	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit in the order of 1 ns. This systematic error is the most dominant over all other uncertainties. For the time of first hit distribution, a systematic uncertainty is applied bin-by-bin for electrons and pions in the region of -50 ns to 50 ns. Outside of this region, a systematic error of 50\% is taken (see section \ref{subsec:Systematic_Correction}).
 	\item AHCAL energy scale: The energy scale of the AHCAL was determined using the muon dataset (see chapter \ref{chap:ECalibAHCAL}). A systematic uncertainty on the MIP scale of around 3.6\% was derived by dividing the muon sample in odd and even run numbers and by looking at the average spread of the fitted MIP value for both subsamples. This is converted to an uncertainty in time using the mean time of first hit as a function of the hit energy using the QGSP\_BERT\_HP physics list. At 0.5 MIP, this results in an uncertainty of 0.1 ns. For hits above 1 MIP, the uncertainty is below 0.05 ns.
-	\item Time smearing parameters: A global time smearing parametrization is used from data to smear the time in simulation. A bin-by-bin systematic error is applied to the time of first hit distribution to take into account the difference with a layer-wise time smearing parametrization.
-	\item Number of triggered channels in a chip parametrization: A smearing parametrization of the width of the time distribution as a function of the number of triggered channels in a chip is obtained from data. An error band on the width was obtained by comparing all electron energies as explained (see appendix \ref{appendix:ped_shift}). This is applied to simulation for systematics.
+	\item Global time smearing parameters: A global time smearing parametrization is used from muon data to smear the time in simulation. A bin-by-bin systematic error is applied to the time of first hit distribution to take into account the difference with a layer-wise time smearing parametrization.
+	\item Number of triggered channels in a chip parametrization: A smearing parametrization of the width of the time distribution as a function of the number of triggered channels in a chip is obtained from electron data. An error band on the width was obtained by comparing all electron energies as explained (see appendix \ref{appendix:ped_shift}). This is applied to simulation for systematics.
 	\item Determination of the offset to $t=0$: For simulation, the time shift per layer is calculated using a time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this, an uncertainty of 3 mm corresponding to the scintillator thickness is taken in z corresponding to 0.01 ns uncertainty in timing.
 	\item Cross-talk: No measurement for optical cross-talk between tiles is available and from previous measurements, it varies between 10\% and 18\%. The cross-talk value induces a different number of hits in the detector thus has an impact on the width of the time of first hit distribution. The variation of this parameter in the simulation for the layers 4 to 10 is used for systematics.
 	\item Absolute number of events: In the pion data, some possible contamination from multi-particle events may be present still after the selection. Thus, the number of true pion events is not known. The cluster time rejection method (see section \ref{sec:pionsel}) rejects up to 1\% of events in the data. A conservative uncertainty of 10\% on the data normalization is assigned when comparing data to simulation for the time of first hit distribution.
@@ -154,14 +154,14 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		Energy Scale & 0.05-0.1 ns \\
 		Time of flight offset & 0.01 ns (MC) \\
 		Cross-talk parameter & 10-18\% (MC)\\
-		Time smearing parameters & bin-wise (MC)\\
+		Global time smearing parameters & bin-wise (MC)\\
 		Number of triggered channels in a chip parametrization & bin-wise (MC)\\
 		Multi-particle events & 10\% ($\pi$) \\
 		\midrule
 		\midrule
 		\multicolumn{2}{c}{Systematics combined} \\
 		\midrule
-		data-MC ToFH distribution & 30\% (e) - 40\% ($\pi$) \\
+		data-MC ToFH distribution & bin-wise (e) - bin-wise + 10\% ($\pi$) \\
 		data-MC vs hit energy & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
 		data-MC vs hit distance to shower CoG & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
 		\bottomrule
@@ -181,32 +181,20 @@ The simulation is validated by comparing the recorded muon and electron data to 
 		$\alpha_{1}$ & $\mu_{1}$ [ns] & $\sigma_{1}$ [ns] & $\alpha_{2}$ & $\mu_{2}$ [ns] & $\sigma_{2}$ [ns] \\
 		\midrule
 		0.607352 & -0.699095 & 5.85891 & 0.391041 & 0.945274 & 3.4012 \\
-		% \midrule
-		% Layer 3 & 0.509253 & -1.53503 & 5.86164 & 0.489367 & 1.26769 & 3.63949 \\
-		% Layer 4 & 0.51518 & -0.882593 & 5.59974 & 0.483083 & 0.752787 & 3.17061 \\
-		% Layer 5 & 0.50245 & -0.405102 & 5.30886 & 0.494212 & 0.1986 & 3.0478 \\
-		% Layer 6 & 0.78465 & -0.647946 & 6.07933 & 0.210628 & 2.6244 & 3.15702 \\
-		% Layer 7 & 0.822888 & -0.457142 & 5.97284 & 0.175562 & 2.23453 & 3.19564 \\
-		% Layer 8 & 0.702801 & -0.319542 & 6.07823 & 0.295156 & 1.18138 & 3.51686 \\
-		% Layer 9 & 0.504245 & -0.189744 & 5.95144 & 0.493538 & 0.192798 & 3.59437 \\
-		% Layer 10 & 0.900193 & 0.656991 & 6.28783 & 0.095984 & -5.24417 & 3.92247 \\
-		% Layer 12 & 0.725009 & -0.610588 & 5.61311 & 0.273414 & 1.34702 & 3.15326 \\
-		% Layer 13 & 0.547393 & -1.04393 & 5.99229 & 0.451523 & 1.11375 & 3.57992 \\
-		% Layer 14 & 0.567789 & -0.921666 & 5.87377 & 0.431161 & 1.05526 & 3.3847 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-The comparison of the time of first hit distribution for muons is shown in figure \ref{fig:sim_data_muon}. The large uncertainties observed in the simulation are due to the systematics of the different cross-talk values. The comparison shows that in the range of -20 ns to 20 ns, the data and simulation agree well within the uncertainties. However, over 20 ns (respectively below -20 ns), the tails of the simulation don't agree with data. This is due to the noise implementation in simulation that is not perfectly reproduced and that is suppressed by the track finder selection. In addition, the time of distribution has been checked layer-by-layer and compared to simulations. Similar, the agreement between data and simulations is best in the range of -20 ns to 20 ns and the tails are not perfectly reproduced in simulation.
+The comparison of the time of first hit distribution for muons between data and simulations is shown in figure \ref{fig:sim_data_muon}. The comparison shows that in the range of -20 ns to 20 ns, data and simulation agree well within the uncertainties. However, over 20 ns (and below -20 ns), the tails of the simulation don't agree with data. This is due to the noise implementation in simulation that is not perfectly reproduced. In addition, the time of distribution has been checked layer-by-layer and compared to simulations. Similar, the agreement between data and simulations is best in the range of -20 ns to 20 ns and the tails are not perfectly reproduced in simulation.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.pdf}
-	\caption{Time of first hit distribution for muons in data and simulation between -50 and 50 ns. The grey area represents the statistic and systematic uncertainty of the data. The error bars of the simulation are obtained by varying the cross-talk parameter between 10\% and 18\% and taking into account the error of a global time smearing parametrization.}
+	\caption{Time of first hit distribution for muons in data and simulation between -50 and 50 ns. The grey area represents the statistical uncertainty of the data. The error bars of the simulation are obtained by varying the cross-talk parameter between 10\% and 18\% and taking into account the error of a global time smearing parametrization.}
 	\label{fig:sim_data_muon}
 \end{figure}
 
-To further validate the simulation, comparisons with electron data is necessary. In addition to the muon resolution, a parametrization of the increase of the width of the time distribution as a function of the number of triggered channels in a chip above 0.5 MIPs is added in simulation as described in appendix \ref{appendix:ped_shift}. The figure \ref{fig:elec_sim_data_10GeV} shows the comparison of the time of first hit distribution for 10 GeV electrons in data ansd simulation. The errors bars in the simulation are obtained by varying the cross-talk parameter between 10\% and 18\%, the time smearing parameters uncertainty and from the uncertainty of the parametrization of the increase of the width of the time distribution as a function of the number of triggered channels in a chip, which is the dominant one. The time distributions and the distribution of the number of triggered channels per chip have been checked for all energies and they can be seen in appendix \ref{appendix:TimingAdd}.
+To further validate the simulation, comparisons with electron data is necessary. In addition to the muon resolution, a parametrization of the increase of the width of the time distribution as a function of the number of triggered channels in a chip above 0.5 MIPs is added in simulation (see appendix \ref{appendix:ped_shift}). The figure \ref{fig:elec_sim_data_10GeV} shows the comparison of the time of first hit distribution for 10 GeV electrons in data and simulation. The errors bars in the simulation are obtained by varying the cross-talk parameter between 10\% and 18\%, taking into account the global time smearing parametrization uncertainty and from the uncertainty of the parametrization of the increase of the width of the time distribution as a function of the number of triggered channels in a chip. The last uncertainty is dominant over the other uncertainties.
 
 \begin{figure}[htbp!]
 	\centering
@@ -222,9 +210,7 @@ To further validate the simulation, comparisons with electron data is necessary.
 	\caption{\subref{fig:elec_sim_data_10GeV}) Comparison of the time of first hit between data and simulations for 10 GeV electrons. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\% and with the uncertainty on parametrization of the width of the time distribution as a function of the number of triggered channels in a chip. \subref{fig:elec_sim_data_nHits_10GeV}) Comparison of the number of triggered channels per chip between data and MC for 10 GeV electrons. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}
 \end{figure}
 
-The simulation is systematically narrower than data. This is caused by the simulation having fewer hits per chip than data which can be seen in figure \ref{fig:elec_sim_data_nHits_10GeV}. The simulation is generally 10\% to 20\% lower than data in the region of 6 to 10 hits per chip.
-
-For the distributions of the time of first hit, the simulation agrees best in the central region of -20 ns to 20 ns for all energies. The description of the tails of the time of first hit distribution in the simulation are well underestimated. This is due to the description of the noise in the simulation that is not perfectly reproduced. Overall, the simulation describes well the data within statistical and systematic uncertainties in the central region of -20 ns to 20 ns.
+The simulation is systematically narrower than data. This is caused by the simulation having fewer hits in a chip than data which can be seen in figure \ref{fig:elec_sim_data_nHits_10GeV}. The simulation is generally 10\% to 20\% lower than data in the region of 6 to 10 hits per chip. Overall, the simulation describes well the data within statistical and systematic uncertainties in the central region of -30 ns to 30 ns for all energies. The large fluctuations in the simulation is due to the parametrization of the increase of the width. However, the description of the tails of the time of first hit distribution in the simulation are well underestimated. As for muons, this is due to the description of the noise in the simulation that is not perfectly reproduced. The time of first hit distributions and the distribution of the number of triggered channels per chip have been checked for all energies and they can be seen in appendix \ref{appendix:TimingAdd}.
 
 \begin{center}
 	\rule{0.5\textwidth}{.4pt}
