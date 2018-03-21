@@ -130,10 +130,10 @@
 \contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{107}{section.10.1}
 \contentsline {section}{\numberline {10.2}Effect of the number of triggered channels on the time distribution}{107}{section.10.2}
 \contentsline {section}{\numberline {10.3}Time of the first hit after correction}{109}{section.10.3}
-\contentsline {section}{\numberline {10.4}Transportability of the calibration}{110}{section.10.4}
-\contentsline {section}{\numberline {10.5}Estimation of the systematic uncertainty of the time correction on the time of first hit distribution}{111}{section.10.5}
+\contentsline {section}{\numberline {10.4}Transportability of the calibration}{111}{section.10.4}
+\contentsline {section}{\numberline {10.5}Estimation of the systematic uncertainty of the time correction on the time of first hit distribution}{112}{section.10.5}
 \contentsline {section}{\numberline {10.6}Systematic uncertainties}{112}{section.10.6}
-\contentsline {section}{\numberline {10.7}Validation of the simulation}{113}{section.10.7}
+\contentsline {section}{\numberline {10.7}Validation of the simulation}{114}{section.10.7}
 \contentsline {chapter}{\numberline {11}Timing study of hadron showers}{117}{chapter.11}
 \contentsline {section}{\numberline {11.1}Timing of pion showers}{117}{section.11.1}
 \contentsline {subsection}{\numberline {11.1.1}Time of first hit distribution}{117}{subsection.11.1.1}
