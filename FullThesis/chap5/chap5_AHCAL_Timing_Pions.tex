@@ -161,7 +161,7 @@ The radial dependence of the time of first hit of 50 GeV pion showers is compare
 \subsection{Time dependence with the shower depth}
 \label{sec:TimeRadiusDepth}
 
-To complement this, a dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. A dependency of the slope of the curve can be observed as function of the layer. The layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the later component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons. It has been studied in simulation also with the QGSP\_BERT\_HP physics list and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}.
+The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the layer. The layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. The study has been compared to simulation with the QGSP\_BERT\_HP physics list as well and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the layer 3 shows a slope of around X ns per tile and the layer 14 show a slope of X ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the late component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -175,22 +175,13 @@ To complement this, a dependence of the mean time of first hit as function of th
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf}
 		\caption{}\label{fig:Radius_Indivi_Sim}
 	\end{subfigure}
-	\caption{Mean time of first hit as function of the hit distance to the center of gravity for 50 GeV pions for different layers. On the left, it is shown for data. On the right, it is shown for simulation using QGSP\_BERT\_HP physics list. Both figures shows the same behavior with a decrease of the curve slope for deeper layers in the calorimeter.}
+	\caption{Mean time of first hit as function of the hit distance to the center of gravity for 50 GeV pions for different layers. On the left, it is shown for data. On the right, it is shown for simulation using the QGSP\_BERT\_HP physics list. Both figures shows the same behavior with a decrease of the curve slope for deeper layers in the calorimeter.}
 	\label{fig:Radius_IndiviAll}
 \end{figure}
 
-In the following, the mean time of first hit as a function of the hit distance to the shower axis at a constant distance between the layer investigated and the first hard interaction (\acrshort{fhi}) layer of the hadronic shower. The shower start finder algorithm is based on previous work \cite{CaN026} in order find the layer of the first hard interaction. Slight modifications had to be done due to the fact that some of the layers in the front of the detector show a bad performance with many non-working channels.
+To understand this effect, the mean time of first hit as a function of the hit distance to the shower axis is investigated at a constant distance between a layer and the first hard interaction (\acrshort{fhi}) layer. To do this, the shower start finder algorithm is based on previous work \cite{CaN026} in order find the layer of the first hard interaction. However, slight modifications had to be done due to the fact that some of the layers in the front of the detector show a bad performance with many non-working channels.
 
-The basics of the algorithm was to find the primary pion track and to determine the shower start layer. To determine the shower start layer $s_{layer}$, the number of hits $n_{Hits}^{i, i+1}$ in the layer $i$ and $i+1$ is counted. If $n_{Hits}^{i, i+1} > 6$, the shower is considered started between layer $i$ and $i+1$. To determine the correct layer, the energy sum between layer $i$, $i+1$, $i+2$ and $i+3$ is checked such as:
-\begin{equation*}
-	s_{layer} =
-	\begin{cases}
-		i, & \text{if} \: E_{sum}^{i+2} < E_{sum}^{i} \:\&\: (E_{sum}^{i+3} < E_{sum}^{i}) \:\&\: (E_{sum}^{i+3} + E_{sum}^{i+2}) < (E_{sum}^{i+1} + E_{sum}^{i}) \\
-		i-1, & \text{otherwise}
-	\end{cases}
-\end{equation*}
-
-Then, if an event was found, a cross-check on the length of the primary track was made. The length of the primary track is required to be over three hits. The performance of the algorithm was evaluated by looking at the difference between the reconstructed layer of the FHI and the Monte-Carlo truth information on the start of the shower. This is shown in figure \ref{fig:FHIAlgo}. The performance of the algorithm is good enough in order to get a good estimate of the FHI layer and has a small tendency to reconstruct the FHI at a deeper layer.
+The basics of the algorithm is to find the primary pion track and to determine the shower start layer. To determine the shower start layer $s_{layer}$, the number of hits $n_{Hits}^{i, i+1}$ in the layer $i$ and $i+1$ is counted. If $n_{Hits}^{i, i+1} > 6$, the shower is considered started between layer $i$ and $i+1$. To determine the correct layer, the energy sum between layer $i$, $i+1$, $i+2$ and $i+3$ are checked in order to determine the correct layer for the start of the shower. In the case of a layer is identified as the FHI, a cross-check on the length of the primary track is made. The length of the primary track is required to be over three hits. The performance of the algorithm is evaluated by looking at the difference between the reconstructed layer of the FHI and the Monte-Carlo truth information on the start of the shower. This is shown in figure \ref{fig:FHIAlgo}. The performance of the algorithm is good enough in order to get a good estimate of the FHI layer but it has a small tendency to reconstruct the FHI at a deeper layer.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -208,7 +199,7 @@ Then, if an event was found, a cross-check on the length of the primary track wa
 	\label{fig:FHIAlgo}
 \end{figure}
 
-It is expected that at a constant distance between the reconstructed FHI layer and the layer investigated that there will be the same dependence of the mean time of the hit as function of the hit distance to the shower axis as the same part of the shower is sampled. Or that inversely, looking at a fixed layer, the expected behavior would be a change in the slope of the mean time of first hit as function of the hit distance to the shower axis for different FHI layer. The figures \ref{fig:Radius_FHI} and \ref{fig:Radius_FHI_Fixed} is an attempt at this.
+It is expected, at a constant distance between the reconstructed FHI layer and a layer, that there will be the same dependence of the mean time of the hit as a function of the hit distance to the shower axis because in this way, the same part of the shower is sampled. Or that inversely, looking at a fixed layer, the expected behavior would be a change in the slope of the mean time of first hit as a function of the hit distance to the shower axis for different reconstructed FHI layer. The figures \ref{fig:Radius_FHI} and \ref{fig:Radius_FHI_Fixed} are an attempt for this study.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -222,11 +213,11 @@ It is expected that at a constant distance between the reconstructed FHI layer a
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf}
 		\caption{}\label{fig:Radius_FHISim1}
 	\end{subfigure}
-	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for a fixed distance of 4 between the reconstructed FHI layer and the layer investigated. The left plot shows the radial timing profile of layer 7 and 10 in data. The right plots shows the radial timing profile for different layers in simulation with QGSP\_BERT\_HP.}
+	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for a fixed distance of 4 between the reconstructed FHI layer and a layer. The left plot shows the radial timing profile of layer 7 and 10 in data. The right plots shows the radial timing profile for different layers in simulation with the QGSP\_BERT\_HP physics list.}
 	\label{fig:Radius_FHIAll}
 \end{figure}
 
-The data shows that by fixing the distance between the reconstructed FHI layer and the layer investigated, the mean time of first hit displays the same slope within the systematic uncertainties. On the other hand, by looking at a fixed layer which is in this case the layer 10, it seems that there is a trend of an increase of the curve slope as a function of the reconstructed FHI layer within the systematics. But because of many layers not working well, it is difficult to find a comparable configuration to confirm the observation. As well, a reduction of the systematic uncertainty is needed. This has been checked in simulation with QGSP\_BERT\_HP as shown in figures \ref{fig:Radius_FHISim1} and \ref{fig:Radius_FHI_FixedSim}. The simulation agrees well with the observation made in the data.
+The data shows that by fixing the distance between the reconstructed FHI layer and a layer, the mean time of first hit displays the same slope within the systematic uncertainties. On the other hand, by looking at a fixed layer, which is in this case the layer 10, it seems that there is a trend of an increase of the curve slope as a function of the reconstructed FHI layer within the systematics. However, because of many layers not working well, it is difficult to find a different comparable configurations to confirm the observation made. In addition, a reduction of the systematic uncertainty is needed. This has been checked in simulation with the QGSP\_BERT\_HP physics list as shown in figures \ref{fig:Radius_FHISim1} and \ref{fig:Radius_FHI_FixedSim}. The simulation agrees well with the observation made in the data.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -240,13 +231,13 @@ The data shows that by fixing the distance between the reconstructed FHI layer a
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf}
 		\caption{}\label{fig:Radius_FHI_FixedSim}
 	\end{subfigure}
-	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for different reconstructed FHI layer. In data on the left and in simulation with QGSP\_BERT\_HP on the right.}
+	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for different reconstructed FHI layer. In data on the left and in simulation with the QGSP\_BERT\_HP physics list on the right.}
 	\label{fig:Radius_FHISim}
 \end{figure}
 
 \section{Longitudinal dependence of timing profiles}
 
-Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of mean time of the first hit as a function of the layer position was investigated. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
+Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of mean time of the first hit as a function of the layer position was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -264,9 +255,9 @@ Hadronic showers develop as well longitudinally, therefore the longitudinal depe
 	\label{fig:DepthProfile}
 \end{figure}
 
-In data, no increase of the mean time is observed as a function of the layer depth as well no energy dependence is visible. This may be because the sensitivity to the late component is suppressed by the time resolution of the calorimeter and the size of the systematic errors. An attempt was made to get a better sensitivity by looking at the mean time of first hit as function of the distance to the reconstructed FHI layer as shown in figure \ref{fig:Depth_Comparison_FHI}. However, the figure still shows a flat distribution centered around 0 ns.
+In data, no increase of the mean time is observed as a function of the layer depth and as well no beam energy dependence is visible. This may be due to the late component that is suppressed by the high time resolution of the AHCAL and the systematic uncertainty. An attempt was made to get a better sensitivity by looking at the mean time of first hit as a function of the distance to the reconstructed FHI layer as shown in figure \ref{fig:Depth_Comparison_FHI}. However, the figure still shows a flat distribution centered around 0 ns.
 
-The longitudinal timing profile was also compared to simulations. The mean time of first hit is compatible with a flat distribution around 0 ns for all models. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth. The simulation with QGSP\_BERT\_HP without time smearing is shown in figure \ref{fig:Depth_Sim_noSmearing}. It shows that there is an increase of the mean time of first hit as function of the layer in the order of 1 ns and confirms that due to the electronics time resolution this is not visible in data.
+The longitudinal timing profile was also compared to simulations. The mean time of first hit is compatible with a flat distribution around 0 ns for all models. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth. To check this. the simulation with the QGSP\_BERT\_HP physics list without time smearing is shown in figure \ref{fig:Depth_Sim_noSmearing}. It shows that there is an increase of the mean time of first hit as function of the layer in the order of 1 ns and confirms that due to the electronics time resolution this is not visible in data.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
