@@ -2,51 +2,43 @@
 \chapter{Application of timing cuts in the ILD detector simulation}
 \label{chap:ILDTiming}
 
-The chapter \ref{chap:TimingPions} showed that hadronic showers have several components in their time development. Early hit times come most likely from the electromagnetic core of the shower and ionizing particles and the late hit times from neutrons and late processes in the de-excitation of nuclear states. Hit times could then be used in order to separate the electromagnetic part of the shower from the hadronic part and therefore could be a tool to improve the pattern recognition in particle flow. This chapter will look at the application of timing cuts for the ILD detector and its impact on hadronic showers.\\
+The chapter \ref{chap:TimingPions} showed that hadronic showers have several components in their time development. Early hit times come most likely from the electromagnetic core of the shower and relativistic hadrons and the late hit times coming from neutrons and late processes in the de-excitation of nuclear states. Hit times could then be used in order to separate the electromagnetic part of the shower from the hadronic part and therefore could be a tool to improve the pattern recognition in particle flow and as well improve the calorimeter energy resolution. This chapter will look at the application of timing cuts for the ILD detector and its impact on hadronic showers.\\
 
-In this chapter, a study of timing cuts on hadronic shower is performed. The goal of this study is to assess the influence of timing cuts on the properties of hadronic showers as for example the width of the shower as well as the needed time resolution. The study will be divided into 2 parts, the first part assuming a perfect time resolution and the second part assuming time resolution for different cases.
+In this chapter, a study of timing cuts on hadronic shower is performed. The goal of this study is to assess the influence of timing cuts on the properties of hadronic showers as for example the width of the shower as well as the needed time resolution. In the section \ref{sec:Framework}, the detector and software framework used in this study will be briefly presented. In section \ref{sec:ILDTiming}, the influence of timing cuts will be discussed. The study will be divided into 2 parts, the first part assuming a perfect time resolution (see section \ref{sec:MCLevelILDTiming}) and the second part assuming time resolution for different scenarios (see section \ref{sec:RealisticScenario}).
 
 \section{Simulation and software framework}
+\label{sec:Framework}
 
-\subsection{ILD Detector Simulation}
+\subsection{Event Simulation}
 
-The following analysis is using one of the generic ILD detector models (ILD\_o1\_v05) as described in chapter \ref{sec:ILD} within the \mokka framework. Many other models are also considered for ILD as shown in table \ref{table:ILDOptions}. \mokka is a front-end to \geant and provides a realistic geometry of the ILD detector. The \mokka version used is v08-05 and the \geant version is 10.01.
-The simulation is performed by using the particle gun provided in \geant to shoot particles (\piminus or \kzeroL) with a fixed energy in different regions of the detector by randomly varying the angles $\theta$ and $\phi$ of the gun. To model hadronic showers, the QGSP\_BERT\_HP physics list was used. The output of the simulation provides a \lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is then reconstructed within the \marlin framework.
+In this step, the simulation of the interactions of the particles in the detector and the signals that they produce in the sensitive material is done. The \geant software is a powerful toolkit that provides the simulation of particle-matter interactions. \geant propagates particles through the detector and track the particles until they are absorbed or have left the detector. \geant provides models for particle-matter interactions as explained in section \ref{sec:SimModels}.
 
-\begin{table}[htb!]
-  \centering
-  \caption{Considered ILD detector options.} \label{table:ILDOptions}
-  \begin{tabular}{|c|c|c|}
-    \hline
-    Option & ECAL Technology & HCAL Technology \\
-    \hline
-    ILD\_o1\_v05 & SiW-ECAL & AHCAL \\
-    ILD\_o2\_v05 & SiW-ECAL & SDHCAL \\
-    ILD\_o3\_v05 & Sc-ECAL & AHCAL \\
-    \hline
-  \end{tabular}
-\end{table}
+A full \geant simulation of the ILD detector is implemented in the \mokka framework and is included in \ilcsoft. The \mokka framework provides a realistic description of the ILD sub-detectors including mechanical support structures, gaps and other non-instrumented material such as electronics and cabling. For this study, the \ilcsoft version v01-17-11 is used (with \mokka v08-05 and \geant v10.01).
 
-\section{Reconstruction chain}
+As presented in section \ref{sec:ILD}, various technologies are considered for the ILD detector. In this study, the ILD detector version ILD\_o1\_v05 is used. This version uses the Silicon Tungsten electromagnetic calorimeter and the Analog HCAL hadronic calorimeter.
+
+The simulation of events is performed by using a particle gun to shoot particles, $\kzeroL$ for this study, with a fixed energy in different regions of the detector by randomly varying the angles $\theta$ and $\phi$ of the gun (see ILD coordinates in section \ref{sec:ILD}). To model hadronic showers, the QGSP\_BERT\_HP physics list is used as this physics list reflects the best the late neutron component of hadron shower. The output of the simulation provides a \lcio file containing collections of the tracking hits and simulated calorimeter hits. This file is reconstructed with the \marlin framework.
+
+\section{Event Reconstruction}
 \label{sec:recochain}
 
-The reconstruction is done on simulated data in order to implement detector effects. For example, calorimeter hits need to be digitized by implementing threshold and readout effects.
+The reconstruction is done on simulated data in order to implement detector electronic effects to obtain similar signals from a real experiment. The reconstruction of an event is mainly done by track finding and pattern recognition. The reconstruction is generally done in several stages in a way that the output of one stage can be used latter on for another stage. The output of the reconstruction is a collection of particle flow objects (PFOs) that contains information on the measured particle in the detector. The \ilcsoft framework with \marlin are used for the reconstruction of events.
 
 \subsection{Tracking}
 
-The tracking reconstruction is performed on each individual tracking detector. Track segments are identified by pattern recognition algorithms.
-
-Track fitting is performed using the track segments with an Kalman filter \cite{Li2013, Fruhwirth:1987fm} to identify trajectories of charged particles. Each track contains origin, direction, charge and momentum of the particle.
+Generally, in the first step, track fitting is performed on each individual tracking detector. Track segments are identified by pattern recognition algorithms. A track fitting is performed using the track segments with an Kalman filter \cite{Li2013, Fruhwirth:1987fm} to identify trajectories of charged particles. Each track contains origin, direction, charge and momentum of the particle.
 
 \subsection{Calorimeter digitization}
 \label{subsec:ILDDigiCalo}
 
-The calorimeter digitization is performed on simulated calorimeter hits as part of the ILDCaloDigi processor \cite{Jeans2015}. It accounts for threshold effects from the electronics, the sampling fraction of the calorimeter and the readout technology used. In the considered model of ILD, the SiW-ECAL and AHCAL are used.
+In a next step, simulated calorimeter hits are digitized. This is done as part of the \textit{ILDCaloDigi} processor \cite{Jeans2015}. This \marlin processor digitizes ECAL and HCAL simulated hits to obtain a realistic hit measurement by implementing technology specific effects for scintillator-SiPM readout and silicon readout. This processor can apply thresholds in hit energy and hit timing, simulation dead cells, mis-calibrations per cell and a gaussian electronic noise contribution \cite{Hartbrich:2016bbz}.
 
-For the AHCAL, it uses a SiPM based technology. The digitization then takes into account the finite number of pixels that can be fired as well as the statistical fluctuations related to pixel readout \cite{Hartbrich:2016bbz}.
-
-Concerning time, it uses a simple digitization. For a simulated hit, all sub-hit contributions are looped over. Only sub-hits such as $t_{subhit} - t_{ToF} < t_{cut}$ ($t_{cut}$ default value is \SI{100}{\ns}) are added to create a digitized calorimeter hit. The time of the digitized calorimeter hit is the time of the first sub-hit contributing to it. This is done to simulate the time acceptance of the readout electronics. This modelization of timing is very simplified as in reality the electronics are shaping the signal with a certain shaping time and register the time of the first contribution over the threshold (default is 0.5 MIP).
+Relevant for this thesis, the timing of hit is obtained following these steps:
+\begin{itemize}
+  \item For each simulated hits, sub-hit contributions are looped over. 
+\end{itemize}
+For a simulated hit, all sub-hit contributions are looped over. Only sub-hits such as $t_{subhit} - t_{ToF} < t_{cut}$ ($t_{cut}$ default value is \SI{100}{\ns}) are added to create a digitized calorimeter hit. The time of flight $t_{ToF} = r_{hit} / c$ is a simple assumption that the hit originates from the detector origin. The time of the digitized calorimeter hit is then the time of the first sub-hit contributing to simulated hit. This procedure is done in order to simulate the time acceptance of the readout electronics. This modelization of timing is very simplified as in reality the electronics are shaping the signal with a certain shaping time and register the time of the first contribution over the threshold (default is 0.5 MIP). The smearing of the time hit (only on HCAL hits) is done by $t_{hit} = t_{MC} + t_{smear}$ where $t_{smear}$ is obtained by randomly picking a value using normalized Gaussian centered at \SI{0}{\nano\second} with a steerable timing resolution $\sigma_{t}$.
 
 \subsection{Pandora PFA}
 
-PandoraPFA \cite{Thomson:2009rp} is the Particle Flow algorithm used for Linear Colliders as explained in chapter \ref{sec:PFA}. It uses as input tracks and calorimeter hits to form Particle Flow Objects (\acrshort{pfo}). It uses a complex multi-stage process but basically, calorimeter hits are clustered and associated to tracks (if any). Then a re-clustering step is merging or splitting clusters in order to match the track energy if any. If the right criteria are matched, it forms a PFO which contains information about the reconstructed objects.
+Finally, fitted tracks and digitized calorimeter hits are used to form Particle Flow Objects (\acrshort{pfo}) using the particle flow approach. PandoraPFA \cite{Thomson:2009rp} is the Particle Flow algorithm used for Linear Colliders as explained in chapter \ref{sec:PFA}. It uses a complex multi-stage process but basically, calorimeter hits are clustered and associated to tracks (if any). Then a re-clustering step is merging or splitting clusters in order to match the track energy if any. If the right criteria are matched, it forms a PFO which contains information about the reconstructed objects.
