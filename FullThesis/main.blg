@@ -16,8 +16,6 @@ A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Calib.aux
 A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Valid.aux
 A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Pions.aux
 A level-1 auxiliary file: chap6/chap6_intro.aux
-A level-1 auxiliary file: chap6/chap6_ILD.aux
-A level-1 auxiliary file: chap6/chap6_conclusion.aux
 A level-1 auxiliary file: summary.aux
 A level-1 auxiliary file: acknowledgments.aux
 A level-1 auxiliary file: Appendixes/EvtSelection.aux
@@ -90,7 +88,7 @@ Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
 You've used 154 entries,
             1876 wiz_defined-function locations,
-            1402 strings with 31294 characters,
+            1400 strings with 31249 characters,
 and the built_in function-call counts, 36298 in all, are:
 = -- 3464
 > -- 1374

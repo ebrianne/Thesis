@@ -721,14 +721,14 @@ R.~Fruhwirth, ``{Application of Kalman filtering to track and vertex
 D.~Jeans and O.~Hartbrich, ``{Realistic calorimeter hit digitisation in the
   ILDCaloDigi processor},'' 2015.
 
-\bibitem{PandoraCalib}
-S.~Green, ``{Pandora Analysis Calibration Executables},''
-
 \bibitem{Tran:2017tgr}
 {Tran, Huong Lan and Kr\"{u}ger, Katja and Sefkow, Felix and Green, Steven and
   Marshall, John and Thomson, Mark and Simon, Frank}, ``{Software compensation
   in Particle Flow reconstruction},'' {\em Eur. Phys. J.}, vol.~C77, no.~10,
   p.~698, 2017.
+
+\bibitem{PandoraCalib}
+S.~Green, ``{Pandora Analysis Calibration Executables},''
 
 \bibitem{CaN028}
 {The CALICE Collaboration}, ``{A new approach to software compensation for the
