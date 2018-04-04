@@ -155,13 +155,15 @@
 \contentsline {subsection}{\numberline {12.4.1}Motivation}{139}{subsection.12.4.1}
 \contentsline {subsection}{\numberline {12.4.2}Event Selection}{140}{subsection.12.4.2}
 \contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{140}{subsection.12.4.3}
-\contentsline {subsection}{\numberline {12.4.4}In a realistic scenario}{146}{subsection.12.4.4}
+\contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{141}{subsection.12.4.4}
+\contentsline {subsubsection}{Assuming perfect time resolution}{141}{section*.144}
+\contentsline {subsubsection}{In a realistic scenario}{145}{section*.150}
 \contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{151}{section.12.5}
 \contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{151}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{153}{subsection.12.5.2}
-\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{155}{section.12.6}
+\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{152}{subsection.12.5.2}
+\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{154}{section.12.6}
 \contentsline {chapter}{\numberline {13}Summary}{157}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{159}{section*.165}
+\contentsline {chapter}{Acknowledgments}{159}{section*.167}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{161}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{163}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{167}{Appendix.1.C}
@@ -171,7 +173,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{183}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{185}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{189}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{191}{appendix*.196}
-\contentsline {chapter}{List of figures}{193}{appendix*.197}
-\contentsline {chapter}{Acronyms}{205}{section*.198}
-\contentsline {chapter}{Bibliography}{209}{appendix*.200}
+\contentsline {chapter}{List of tables}{191}{appendix*.198}
+\contentsline {chapter}{List of figures}{193}{appendix*.199}
+\contentsline {chapter}{Acronyms}{205}{section*.200}
+\contentsline {chapter}{Bibliography}{209}{appendix*.202}

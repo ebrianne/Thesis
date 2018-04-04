@@ -26,13 +26,13 @@ The figures \ref{fig:linhits} and \ref{fig:resohits} show the linearity and reso
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_Hits}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/CheckCalib/Comparison_linearity_Curves_Hits}
   \caption{Mean reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} as a function of the simulated energy $E_{initial}$ for different energy reconstruction schemes. The bottom plot shows the relative deviation from linearity. Error bars represent the statistical uncertainty.} \label{fig:linhits}
 \end{figure}
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_Hits}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/CheckCalib/Comparison_resolution_Curves_Hits}
   \caption{Relative energy resolution RMS$_{90}$/Mean$_{90}$ as a function of the energy for different energy reconstruction schemes. Error bars represent the statistical uncertainty.} \label{fig:resohits}
 \end{figure}
 
@@ -40,13 +40,13 @@ The figures \ref{fig:linpfo} and \ref{fig:resopfo} shows the linearity and resol
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_linearity_Curves_PFO}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/CheckCalib/Comparison_linearity_Curves_PFO}
   \caption{Mean PFO reconstructed energy $E_{reco}$ for 5 to 90 GeV \kzeroL{} as a function of the simulated energy $E_{initial}$ for different energy reconstruction schemes. The bottom plot shows the relative deviation from linearity. Error bars represent the statistical uncertainty.} \label{fig:linpfo}
 \end{figure}
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots_Comparison/Comparison_resolution_Curves_PFO}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/CheckCalib/Comparison_resolution_Curves_PFO}
   \caption{Relative PFO energy resolution RMS$_{90}$/Mean$_{90}$ as a function of the energy for different energy reconstruction schemes. Error bars represent the statistical uncertainty.} \label{fig:resopfo}
 \end{figure}
 
@@ -92,166 +92,144 @@ In this analysis, events are selected similar as in \cite{SoftCompNew2012} and b
 
 \subsection{Impact of timing cuts on Particle Flow Object reconstruction}
 
-At first, the impact of timing cuts on the number of reconstructed particles was investigated. The figure \ref{fig:DistriPFO} shows the number of reconstructed PFO per event for different timing cuts.
+Firstly, the impact of timing cuts on the number of reconstructed particles was investigated. The figure \ref{fig:DistriPFO} shows the number of reconstructed PFO per event for different timing cuts. The figure shows that up to four, five PFOs can be reconstructed in a single event. These events are primarily due to small shower fragments that are not correctly associated to the main cluster. In addition, the figure demonstrates that timing cuts reduces the number of events reconstructed with more than one PFO. It is expected because timing cuts would likely remove shower fragments that are not associated to the main cluster and therefore reconstruct less events with more than one PFO. Furthermore, the impact has been studied for all energies between 5 GeV and 90 GeV. The figure \ref{fig:EventRecoPFO} shows the number of events reconstructed with a single PFO relative to the default configuration with 100 ns timing cut. Timing cuts increase the fraction of reconstructed events containing a single PFO over all energies between 10-25\%.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/NumberReconstructedPFO_TimeCuts_50GeV}
-    \caption{Number of reconstructed PFO per event.} \label{fig:DistriPFO}
+    \caption{} \label{fig:DistriPFO}
   \end{subfigure}
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/NumberEvents_PFO_TimeCuts_noSmearing}
-    \caption{Relative number of events reconstructed with a single PFO.} \label{fig:EventRecoPFO}
+    \caption{} \label{fig:EventRecoPFO}
   \end{subfigure}
-  \caption{\subref{fig:DistriPFO}) Distribution of the number of PFO reconstructed per event for 50 GeV \kzeroL{} in the ILD barrel for different timing cuts. It shows that timing cuts indeed improves the number of events reconstructed with a single PFO but as well a large tail is present. The use of timing cuts reduces slightly the tail of the distribution. \subref{fig:EventRecoPFO}) The plot shows the number of events reconstructed with only a single PFO normalized to the number of events in the case of 100 ns. It shows a relative increase with a lower timing cut, up to 20-25\% more events reconstructed using 1 ns timing cut.}
+  \caption{\subref{fig:DistriPFO}) Distribution of the number of PFO reconstructed per event for 50 GeV \kzeroL{} in the ILD barrel for different timing cuts. It shows that timing cuts indeed improves the number of events reconstructed with a single PFO but as well a large tail is present. The use of timing cuts reduces slightly the tail of the distribution. \subref{fig:EventRecoPFO}) Number of events reconstructed with only a single PFO normalized to the number of events in the case of 100 ns. It shows a relative increase with a lower timing cut, up to 10-25\% more events are reconstructed with a single PFO using 1 ns timing cut.}
 \end{figure}
 
-One can notice that more events are indeed reconstructed with a single PFO but a tail is present to higher number of reconstructed PFOs in all distributions. Up to 4-5 PFOs can be reconstructed in a single event though it is at a per-mil level. It demonstrates that timing cuts reduces the number of events reconstructed with more than one PFO. Therefore, this has been look at for all energies between 5 and 90 GeV. The figure \ref{fig:EventRecoPFO} shows the number of events reconstructed with a single PFO relative to the default configuration with 100 ns timing cut. Timing cuts increase the fraction of reconstructed events containing a single PFO over all energies up to 20-25\% for the highest particle energies.
-
-To understand more into details what happens, a look at the energy distribution and distance of the second most energetic cluster to the main cluster has been performed in the case of more than one PFO is reconstructed. It can be seen on figures \ref{fig:Energy2ndCluster} and \ref{fig:Distance2ndCluster} for 50 GeV \kzeroL{} for different timing cuts of 100 ns and 1 ns.
+To understand more into details what happens, the figures \ref{fig:Energy2ndCluster} and \ref{fig:Distance2ndCluster} show the energy distribution and the distance of the second most energetic cluster to the main cluster for events where more than one PFO is reconstructed for 50 GeV \kzeroL{} for different timing cuts of 100 ns and 1 ns.
 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/Energy2ndCluster_100ns_50GeV}
-    \caption{Energy distribution of 2$^{nd}$ most energetic cluster normalized to the number of events at 100 ns.} \label{fig:Energy2ndCluster}
+    \caption{} \label{fig:Energy2ndCluster}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/Distance2ndCluster_100ns_50GeV}
-    \caption{Distance to main PFO of 2$^{nd}$ most energetic cluster normalized to the number of events at 100 ns.} \label{fig:Distance2ndCluster}
+    \caption{} \label{fig:Distance2ndCluster}
   \end{subfigure}
-  \caption{\subref{fig:Energy2ndCluster}) The plot shows the relative energy of the second most energetic cluster to the main cluster. One can see that most of the entries are below few percents. \subref{fig:Distance2ndCluster}) The plot shows the distribution of the distance of the second most energetic cluster to the main cluster. The distribution peaks in the region 25-30 cm.}
+  \caption{\subref{fig:Energy2ndCluster}) Energy distribution of 2$^{nd}$ most energetic cluster normalized to the number of events at 100 ns. One can see that most of the entries are below few percents. \subref{fig:Distance2ndCluster}) Distance to main PFO of 2$^{nd}$ most energetic cluster normalized to the number of events at 100 ns. The distribution peaks in the region 25-30 cm.}
 \end{figure}
 
-The figures show that the second most energetic cluster has mostly an energy below few percents, over 97\% of the entries are below 20\% of the most energetic cluster. The mean distance of this second cluster is around 25-30 cm from the main cluster with around 22\% of entries below 40 cm and is comprised of a long tail to higher distances. This is visible for both timing cuts of 100 ns and 1 ns. This tells us that mainly the split cluster has little energy compared to the main cluster and is situated at around 7 to 10 AHCAL tiles away from the main cluster which is far enough to not be recombined by Pandora with the main cluster. These clusters may be coming from low energy neutrons traveling through the calorimeter. This explains why by introducing a timing cut more events are reconstructed with a single PFO, as shown in chapter \ref{chap:TimingAHCAL}, low energy neutrons are correlated with low energy deposition and late depositions far away from the shower axis and are removed with a timing cut below few tens of nanoseconds.
+The figures show that the second most energetic cluster has mostly an energy below few percents of the main cluster energy, over 97\% of the entries are below 20\% of the main cluster energy. The mean distance of this second cluster is around 25-30 cm from the main cluster with around 22\% of entries below 40 cm and is comprised of a long tail to higher distances. This is visible for both timing cuts of 100 ns and 1 ns. This tells us that mainly the split cluster has little energy compared to the main cluster and is situated at around 7 to 10 AHCAL tiles away from the main cluster which is far enough to not be recombined by PandoraPFA with the main cluster. These clusters may be coming from low energy neutrons traveling through the calorimeter. This explains that by introducing a timing cut more events are reconstructed with a single PFO. As shown in chapter \ref{chap:TimingAHCAL}, low energy neutrons are correlated with low energy deposition and late depositions far away from the shower axis and are removed with a timing cut below few tens of nanoseconds.
 
 One interesting point though would be the investigation of timing cuts in the case of overlapping showers in the calorimeter where timing could have the potential to improve separation between showers.
 
-The following section presents results of timing cuts assuming a perfect time resolution. To avoid any effects of clustering and Pandora, the study was performed at the calorimeter hit level. Several shower observables were looked at as a function of the time cut for energies from 5 \GeV to 90 \GeV \kzeroL. The different time cuts used are: 1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70 and \SI{100}{\nano\second}.
+\subsection{Impact of timing cuts on calorimeter performance and hadronic showers}
 
-The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the effect of the timing cut on linearity and energy resolution. The tighter the timing cut gets, the linearity slope decreases and resolution gets degraded. The linearity degrades as much as 10\% at high energies for a 1 ns timing cut. This effectively means that with a harder timing cut, more hits of the shower are removed but mostly only outer hits carrying only a small fraction of the total shower energy, the core of the shower mostly does not get affected by timing cut up to few nanoseconds as shown in figure \ref{fig:RadialProfNoSmearing}.
+\subsubsection{Assuming perfect time resolution}
+
+The following section presents results of timing cuts on the calorimeter performance and hadronic showers assuming a perfect time resolution. To avoid any clustering effects, the study was performed at the calorimeter hit level. The reconstructed energy is obtained by summing up the energy of all hits in the calorimeters. In addition, several shower observables were studied as a function of the timing cut for energies from 5 \GeV to 90 \GeV \kzeroL. The different time cuts used are: 1, 2, 3, 5, 8, 10, 15, 20, 25, 30, 50, 70 and \SI{100}{\nano\second}.
+
+The figures \ref{fig:linearityNoSmearing} and \ref{fig:resoNoSmearing} show the effect of the timing cuts on calorimeter linearity and energy resolution. The linearity slope decreases and resolution gets degraded for lower timing cuts. The linearity degrades as much as 10\% at high energies for a 1 ns timing cut. This would effectively mean that with a harder timing cut, more hits of the shower are removed but without affecting much the total shower energy.
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing}
-  \caption{The top plot represent the linearity curve in the ILD detector over a range of energy from 5 \GeV to 90 \GeV for different timing cuts assuming a perfect resolution. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts.} \label{fig:linearityNoSmearing}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing}
+  \caption{The top plot shows the reconstructed energy $E_{reco}$ as a function of the initial particle energy $E_{initial}$ for different timing cuts assuming a perfect time resolution. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts.} \label{fig:linearityNoSmearing}
 \end{figure}
 
-The figure \ref{fig:resoNoSmearing} shows the relative impact on the energy resolution compared to the \SI{100}{\nano\second} cut as function of timing cuts for all energies. The energy resolution is very little affected for a cut of obove \SI{20}{\nano\second} meaning that the removed hits are not carrying a lot of energy and are part of the shower halo. Then below \SI{20}{\nano\second}, the resolution starts to degrade slowly relatively in the same way for all energies. A hard cut of 1 ns will degrade greatly the energy resolution up to around 20-30\%.
+The figure \ref{fig:resoNoSmearing} shows the relative impact on the calorimeter energy resolution as a function of the energy for different timing cuts. The energy resolution is very little affected for a cut of above \SI{20}{\nano\second}. Then for a cut under \SI{20}{\nano\second}, the resolution starts to degrade slowly relatively in the same way for all energies. A hard cut of 1 ns will degrade greatly the energy resolution up to around 20-30\%. The degradation of the energy resolution comes mostly from an increase of the constant term.
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing}
   \caption{The top plot illustrates the relative energy resolution ($\frac{\sigma_{E}}{E}$) at single particle level for different timing cuts. The green line is a fit performed at \SI{100}{\nano\second} of the form $\frac{\sigma_{E}}{E} = \frac{a}{\sqrt{E}} \bigoplus b$ where $a$ is the stochastic term ($39.14\% \pm 3.49$) and $b$ the constant term ($9.39\% \pm 0.70$). The bottom plot shows the relative change of the energy resolution compared to \SI{100}{\nano\second} as function of the timing cut for each particle energy. The error bars represent the statistical uncertainty.} \label{fig:resoNoSmearing}
 \end{figure}
 
-One can observe that the energy resolution degrades rapidly and faster than the energy of the shower. Naively, you would expect that if for example randomly 10\% of the shower energy is removed in average that then the resolution would behave as $\sqrt{E}$ and would degrade by around 6\% from a statistical point of view. But a timing cut does not remove hits randomly. It has a bias to remove late hits which are mostly coming from the hadronic component of the shower. As in hadronic showers, the electromagnetic and hadronic fraction of the shower is fluctuating a lot on an event-by-event basis this may affect the energy resolution much more. To understand this effect, a similar study as in \cite{SoftCompNew2012} has been performed in section \ref{sec:eresdegrad}.
+Naively, ones would expect that if for example randomly 10\% of the shower energy is removed in average that then the resolution would behave as $\sqrt{E}$ and would degrade by around 6\% from a statistical point of view. However, timing cuts do not remove hits randomly. There is a bias to remove late hits which are mostly coming from the hadronic component of the shower. As in hadronic showers, the electromagnetic and hadronic fraction of the shower is fluctuating a lot on an event-by-event basis this may affect the energy resolution much more. To understand this effect, a similar study as in \cite{SoftCompNew2012} has been performed in section \ref{sec:eresdegrad}.
 
-The figure \ref{fig:RadialProfNoSmearing} shows the radial profile of a 50 \GeV hadronic shower. The radial profile of the shower is filled for each hit with the distance to the main shower axis ($R_{i}$, eq.\ref{eq:radialprof})  weighted by the hit energy ($E_{i}$).
-
-\begin{equation} \label{eq:radialprof}
-  \begin{split}
-    & R_{i} = \sqrt{\Sigma_{i} (r_{i} - r_{cog})^{2} - \lVert (\mathbf{r_{i}} - \mathbf{r_{cog}}) \cdot \mathbf{Eigen} \rVert^{2}}) \\
-    & \text{with} \quad \mathbf{r_{i}} = (x_i, y_i, z_i) \quad \text{and} \quad \mathbf{r_{CoG}} = (cog_x, cog_y, cog_z)
-  \end{split}
-\end{equation}
-
-with $x_i, y_i, z_i$ the hit position, $cog_x, cog_y, cog_z$ the coordinates of the center of gravity of the shower and $\mathbf{Eigen}$ the eigenvector (main axis) of the shower. The main part of the energy density is situated in the core within few centimeters. The influence of timing cuts is highly visible in the tail of the distribution (or halo of the shower) and has little influence on the energy density deposited in the core of the shower. To quantify, a cut at 1 ns reduces up to 30\% the radial profile above 30-40 cm. An effect of an increase of energy density in the two first bins of the distribution is visible. This effect is related to a displacement of the center of gravity (CoG) as function of the timing cut as outer hits of the shower are removed. This has been checked by looking at the hit radius distribution relative to a fixed reference instead of the CoG (the Monte-Carlo particle endpoint). One can observe that in this case, the timing cut removes only part of the tail and does not affect the core of the distribution.
+The figure \ref{fig:RadialProfNoSmearing} shows a \kzeroL{} radial shower profile at 50 GeV. For the calculation of the radial profile, the energy within each radial bin of 3 cm width is summed up and normalized to the bin area. The average energy deposit per area is displayed as a function of the distance to the shower main axis. Almost all the shower energy is contained in a circle of few centimeter radius. The influence of timing cuts is highly visible in the tail of the distribution corresponding to the halo of the shower while they have little influence on the energy deposited in the core of the shower. A cut at 1 ns reduces up to 30\% the radial shower profile above 30-40 cm. In addition, an increase of energy in the two first bins of the distribution is visible. This effect is related to a displacement of the center of gravity as function of the timing cut because outer hits of the shower are removed. This was verified by calculating the distance relative to a fixed reference, i.e the endpoint of the MC particle, instead of the center of gravity. In this case, it has been observed that timing cuts remove only part of the distribution tail without affecting the two first bin of the distribution.
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing}
   \caption{The top plot shows the radial profile of a 50 \GeV hadronic shower overlaid for different timing cuts. The bottom plot shows the ratio of the histograms to \SI{100}{\nano\second} radial profile.} \label{fig:RadialProfNoSmearing}
 \end{figure}
 
-Another aspect looked at was the influence of timing cut on the shower width <R> (eq.\ref{eq:showerwidth}) defined as:
-
-\begin{equation} \label{eq:showerwidth}
-  <R> = \frac{\Sigma_i E_i r_i}{\Sigma_i E_i}
-\end{equation}
-\vspace{1ex}
-
-The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmearing} show the shower width <R> for different particle energies as function of the timing cut. It shows that a tight timing cut at\SI{1}{\nano\second} can reduce the shower width up to around 70\%. One can observe also that the shower width at 5 and 10 \GeV are behaving differently than for higher energies. This may come from the transition from the Bertini model (BERT) to the quark string gluon model (QGSP) in the physics list in this energy range.
-
-Looking at the shower width in absolute value, hadronic showers are slightly wider at lower energies ($\sim$\SI{125}{\milli\meter} for 10 GeV to $\sim$\SI{115}{\milli\meter} for 90 GeV) that may be related to the electromagnetic fraction in a hadronic shower that increases with energy thus reducing the shower width due to the energy weighting. Applying a timing cut removes more and more hits from the halo of the shower, thus reducing its size up to a point where it reaches the core of the shower at $\sim$\SI{20}{\nano\second} where the shower is around a couple of tiles in size. In general, all energies behave in a rather similar manner.
+The shower width is calculated as the mean distance of all the hits to the shower main axis. The figures \ref{fig:ShowerWidthNoSmearing} and \ref{fig:ShowerWidthAbsoNoSmearing} show the shower width for different particle energies as function of the timing cut. It shows that a timing cut of \SI{1}{\nano\second} can reduce the shower width by around 40-50\%. One can observe also that the shower width at 5 and 10 \GeV are behaving differently than for higher energies. This may come from the transition from the Bertini model (BERT) to the quark string gluon model (QGSP) in the physics list in this energy range. Looking at the shower width in absolute value, hadronic showers are slightly wider at lower energies. A mean width of $\sim$\SI{125}{\milli\meter} for 10 GeV and $\sim$\SI{115}{\milli\meter} for 90 GeV. This may be related to the fact that the electromagnetic fraction in a hadronic shower increases with energy. Therefore, the mean shower width is reduced because the hits close to the shower axis carry most of the energy. In general, all energies behave in a rather similar manner.
 
 \begin{figure}[htbp!]
   \centering
-  \begin{subfigure}[t]{0.49\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing}
-    \caption{} \label{fig:ShowerWidthAbsoNoSmearing}
-  \end{subfigure}
   \begin{subfigure}[t]{0.49\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_TimeCuts_noSmearing}
     \caption{} \label{fig:ShowerWidthNoSmearing}
   \end{subfigure}
-  \caption{\subref{fig:ShowerWidthAbsoNoSmearing}) The plots represents the absolute value of the mean shower width $<R>$ in \SI{}{\milli\meter} as function of the timing cut. This shows that the low energy showers are generally wider certainly due to the magnetic field. And under \SI{20}{\nano\second}, the width is very similar indicating the core of the shower is fairly similar for all energies. \subref{fig:ShowerWidthNoSmearing}) The plot represents the mean of the shower width $<R>$ as function of timing cut for different particle energies. The y-axis has been normalized to the shower width at \SI{100}{\nano\second}. The shower width decreases steadily as function of the timing cut, indicating that the shower gets narrower.}
+  \begin{subfigure}[t]{0.49\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidthAbso_TimeCuts_noSmearing}
+    \caption{} \label{fig:ShowerWidthAbsoNoSmearing}
+  \end{subfigure}
+  \caption{\subref{fig:ShowerWidthNoSmearing}) Mean shower width as a function of the timing cut for different \kzeroL{} energies between 5 GeV and 90 GeV. The y-axis has been normalized to the shower width at \SI{100}{\nano\second}. The shower width decreases steadily as a function of the timing cut, indicating that the shower gets narrower. \subref{fig:ShowerWidthAbsoNoSmearing}) Mean shower width in \SI{}{\milli\meter} as a function of the timing cut for different \kzeroL{} energies between 5 GeV and 90 GeV. It shows that low energy showers are generally wider certainly due to the magnetic field. And under \SI{20}{\nano\second}, the shower width is very similar indicating the core of the shower is fairly identical for all energies.}
 \end{figure}
+
+Finally, it is interesting to look at the gain in the reduction of the shower width compared to the loss in energy resolution. Reducing the shower width by applying timing cuts could help to improve the pattern recognition in PandoraPFA. The figure \ref{fig:ShowerWidthResoNoSmearing} shows the resolution loss as a function of the shower width for different \kzeroL{} energies and different timing cuts. The bottom plot shows that the gain in shower width is behaving in the same way for all energies. The shower width is reduced and the resolution gets slowly degraded for tighter timing cuts. The main point here is that the gain in shower width is great, up to 40\% decrease in shower width, compared to the loss in energy resolution which is around 4-6\% that could be recovered in a next step after pattern recognition.
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing}
-  \caption{The top plot is the energy resolution as function of shower width for different particle energies. Each point represents a timing cut from \SI{1}{\nano\second} ns to \SI{100}{\nano\second} from left to right. The bottom plot is the loss of resolution compared to the reduction in shower width size.} \label{fig:ShowerWidthResoNoSmearing}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/NoSmearing/Plots/ShowerWidth_Resolution_noSmearing}
+  \caption{The top plot shows the energy resolution as a function of the relative shower width for different particle energies. Each point represents a timing cut from \SI{1}{\nano\second} ns to \SI{100}{\nano\second} from left to right. The bottom plot shows the absolute loss of resolution as a function of the relative shower width.} \label{fig:ShowerWidthResoNoSmearing}
 \end{figure}
 
-It is interesting to look at the gain in the reduction of the shower width compared to the loss in energy resolution. In fact, reducing the shower width could help to improve the pattern recognition in Pandora. The figure \ref{fig:ShowerWidthResoNoSmearing} shows the resolution loss as function of the shower width. The bottom plots show the gain in shower width is behaving in the same way for all energies. The tighter the timing cut gets, the small the shower gets as well as a loss in resolution. The main point here is that the gain in shower width is great (up to 40\% decrease in width) compared to the loss in energy resolution (around 4-6\%) that could be recovered in a next step after pattern recognition.
+This study shows that the use of timing cuts give a great advantage in order to improve pattern recognition without degrading too much the energy resolution of a hadronic shower. However, this study assumes a perfect timing resolution which does not reflect the reality. In the next section, different time resolutions were assumed based on the current knowledge on the timing resolution of the foreseen front-end electronics.
 
-This study shows that the use of timing cuts give a great advantage in order to improve pattern recognition without degrading too much the energy resolution of a hadronic shower. However, this study assumes a perfect timing resolution which does not reflect the reality. In the next section, different time resolutions were assumed based on the current knowledge on the timing resolution of the foreseen electronics.
-
-\subsection{In a realistic scenario}
+\subsubsection{In a realistic scenario}
 \label{sec:RealisticScenario}
 
 In this section, a similar study is performed as in previous section \ref{sec:MCLevelILDTiming}. Instead, it assumes realistic time resolutions based on the current electronic technology. The table \ref{table:TimeReso} sums up the investigated time resolutions. The same selection is applied as in the previous section.
 
-% \begin{figure}[htbp!]
-%   \centering
-%   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/TimeDistribution/Plots/ComparisonSmearingTimingAHCAL}
-%   \caption{Distribution of the time of all hits in the AHCAL with different values used for time smearing.} \label{fig:SmearingAHCAL}
-% \end{figure}
-
 \begin{table}[htb!]
   \centering
-  \caption{Time resolution used for smearing.} \label{table:TimeReso}
-  \begin{tabular}{|c|c|}
-    \hline
+  \caption{Assumption on the time resolution of the front-end electronics for different scenarios.} \label{table:TimeReso}
+  \begin{tabular}{@{} lc @{}}
+    \toprule
     Scenario & Time resolution (ns) \\
-    \hline
+    \midrule
     Testbeam & 8 \\
-    Ideal & 1 \\
-    ILC extrapolated & 0.4 \\
-    \hline
+    Scenario 1 & 1 \\
+    Scenario 2 & 0.4 \\
+    \bottomrule
   \end{tabular}
 \end{table}
 
-The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as shown in section \ref{subsec:Electron_Final}. The ideal time resolution is in the order of the timescale of the development of hadronic showers. And finally, the ILC extrapolated time resolution is obtained by assuming a linear extrapolation from the testbeam time resolution with a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (x20 faster) as explained in section \ref{subsec:SPIROC2B}, though this is probably optimistic.
+The testbeam resolution is the time resolution obtained with the current AHCAL technological prototype as shown in section \ref{subsec:Electron_Final}. The Scenario 1 is an assumption on the ideal time resolution which is in the order of the timescale of the development of hadronic showers therefore around 1 ns. And finally, the Scenario 2 is the time resolution which is obtained by assuming a linear extrapolation from the testbeam time resolution by using a faster slow clock of \SI{5}{\mega\hertz} instead of \SI{250}{\kilo\hertz} (20 times faster) although this is probably an optimistic scenario.
+
+Looking at the impact on linearity and energy resolution, the figures \ref{fig:Lin0.4ns} and \ref{fig:Reso0.4ns} show that a time resolution in the order of sub-nanosecond does not affect much the linearity and energy resolution. The figures \ref{fig:Lin1ns} and \ref{fig:Reso1ns} show that for a time resolution in the nanosecond order, the linearity and energy resolution does not get affected much also. However, for a cut below 1-2 ns, it will start to degrade the linearity rapidly, up to 35-40\%. The resolution gets affected as well up to 35-50\%. The figures \ref{fig:Lin8ns} and \ref{fig:Reso8ns} show that for the 8 ns timing resolution, the linearity and resolution get heavily degraded for timing cuts below 10-20 \SI{}{\nano\second}, up to 55-60\% for the linearity and around 50-60\% for the energy resolution.
 
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_0.4ns/Plots/Linearity_TimeCuts_Smearing1}
-  \caption{Linearity curves for \SI{0.4}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.} \label{fig:Lin0.4ns}
+  \caption{The top plot shows the reconstructed energy $E_{reco}$ as a function of the initial particle energy $E_{initial}$ for different timing cuts assuming a time resolution of \SI{0.4}{\nano\second}. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts.} \label{fig:Lin0.4ns}
 \end{figure}
 
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_1ns/Plots/Linearity_TimeCuts_Smearing2}
-  \caption{Linearity curves \SI{1}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.} \label{fig:Lin1ns}
+  \caption{The top plot shows the reconstructed energy $E_{reco}$ as a function of the initial particle energy $E_{initial}$ for different timing cuts assuming a time resolution of \SI{1}{\nano\second}. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts.} \label{fig:Lin1ns}
 \end{figure}
 
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/Smearing_8ns/Plots/Linearity_TimeCuts_Smearing3}
-  \caption{Linearity curves \SI{8}{\nano\second} time resolution. The top plot represents the mean reconstructed energy $E_{reco}$ for kaons from 5 to 90 \GeV. The bottom plot shows the relative deviation to the line $x=y$.}  \label{fig:Lin8ns}
+  \caption{The top plot shows the reconstructed energy $E_{reco}$ as a function of the initial particle energy $E_{initial}$ for different timing cuts assuming a time resolution of \SI{8}{\nano\second}. The bottom plot represent the relative deviation to the line $x=y$ for the different time cuts.}  \label{fig:Lin8ns}
 \end{figure}
-
-Looking at the impact on linearity and energy resolution, time resolution in the order of sub-nanosecond does not affect much the linearity and resolution as shown in figures \ref{fig:Lin0.4ns} and \ref{fig:Reso0.4ns}. For a time resolution in the nanosecond order, the linearity and resolution does not get affected much as shown in figures \ref{fig:Lin1ns} and \ref{fig:Reso1ns}. Of course, for a cut below 1-2 ns, it will start to degrade the linearity rapidly, between 35-40\% for 1 ns time resolution. The resolution gets affected as well, by around 35-50\%. For the 8 ns timing resolution, the linearity and resolution, as shown in figures \ref{fig:Lin8ns} and \ref{fig:Reso8ns}, start to get heavily degraded for timing cuts below 10-20 \SI{}{\nano\second}, around 55-60\% for the linearity and around 50-60\% for the resolution.
 
 \begin{figure}[htbp!]
   \centering
