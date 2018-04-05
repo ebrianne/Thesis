@@ -28,11 +28,11 @@
 \contentsline {subsection}{\numberline {2.2.1}General Overview}{20}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Detectors}{22}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}The International Large Detector (ILD)}{23}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}ILD Coordinate System}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}ILD Tracking System}{23}{subsection.2.3.2}
-\contentsline {subsubsection}{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT)}{24}{section*.21}
+\contentsline {subsection}{\numberline {2.3.1}The ILD Coordinate System}{23}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}The ILD Tracking System}{23}{subsection.2.3.2}
+\contentsline {subsubsection}{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT/ETD)}{24}{section*.21}
 \contentsline {subsubsection}{Time Projection Chamber (TPC)}{24}{section*.22}
-\contentsline {subsection}{\numberline {2.3.3}ILD Calorimeter System}{24}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}The ILD Calorimeter System}{24}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}The SiD Detector}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}The Compact Linear Collider (CLIC)}{25}{section.2.5}
 \contentsline {chapter}{\numberline {3}Calorimetry and the Particle Flow Concept}{27}{chapter.3}
@@ -158,22 +158,22 @@
 \contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{141}{subsection.12.4.4}
 \contentsline {subsubsection}{Assuming perfect time resolution}{141}{section*.144}
 \contentsline {subsubsection}{In a realistic scenario}{145}{section*.150}
-\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{151}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{151}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{152}{subsection.12.5.2}
-\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{154}{section.12.6}
-\contentsline {chapter}{\numberline {13}Summary}{157}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{159}{section*.167}
-\contentsline {chapter}{Appendix \numberline {A}Event selection}{161}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{163}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{167}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Implementation of noise for timing in simulations.}{177}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{179}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in Monte-Carlo.}{181}{Appendix.1.F}
-\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{183}{Appendix.1.G}
-\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{185}{Appendix.1.H}
-\contentsline {chapter}{Appendix \numberline {I}Calibration database}{189}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{191}{appendix*.198}
-\contentsline {chapter}{List of figures}{193}{appendix*.199}
-\contentsline {chapter}{Acronyms}{205}{section*.200}
-\contentsline {chapter}{Bibliography}{209}{appendix*.202}
+\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{149}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{149}{subsection.12.5.1}
+\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{150}{subsection.12.5.2}
+\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{152}{section.12.6}
+\contentsline {chapter}{\numberline {13}Summary}{155}{chapter.13}
+\contentsline {chapter}{Acknowledgments}{157}{section*.161}
+\contentsline {chapter}{Appendix \numberline {A}Event selection}{159}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{161}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{165}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}Implementation of noise for timing in simulations.}{175}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{177}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in Monte-Carlo.}{179}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{181}{Appendix.1.G}
+\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{183}{Appendix.1.H}
+\contentsline {chapter}{Appendix \numberline {I}Calibration database}{187}{Appendix.1.I}
+\contentsline {chapter}{List of tables}{189}{appendix*.192}
+\contentsline {chapter}{List of figures}{191}{appendix*.193}
+\contentsline {chapter}{Acronyms}{203}{section*.194}
+\contentsline {chapter}{Bibliography}{207}{appendix*.196}
