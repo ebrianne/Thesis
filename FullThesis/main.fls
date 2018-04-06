@@ -876,10 +876,10 @@ INPUT ../Thesis_Plots/Commissioning/Plots/NoiseMeasurement_SM1.pdf
 OUTPUT chap5/chap5_AHCAL_Timing_Selection.aux
 INPUT chap5/chap5_AHCAL_Timing_Selection.tex
 INPUT chap5/chap5_AHCAL_Timing_Selection.tex
-INPUT ./chap5/fig_EnergyCalib/TestbeamSetupSketch.pdf
-INPUT ./chap5/fig_EnergyCalib/TestbeamSetupSketch.pdf
-INPUT ./chap5/fig_EnergyCalib/TestbeamSetupSketch.pdf
-INPUT ./chap5/fig_EnergyCalib/TestbeamSetupSketch.pdf
+INPUT ./chap5/fig_EnergyCalib/TestbeamSetup.pdf
+INPUT ./chap5/fig_EnergyCalib/TestbeamSetup.pdf
+INPUT ./chap5/fig_EnergyCalib/TestbeamSetup.pdf
+INPUT ./chap5/fig_EnergyCalib/TestbeamSetup.pdf
 INPUT ./chap5/fig_EnergyCalib/IMG_1170_copy.jpg
 INPUT ./chap5/fig_EnergyCalib/IMG_1170_copy.jpg
 INPUT ./chap5/fig_EnergyCalib/IMG_1170_copy.jpg

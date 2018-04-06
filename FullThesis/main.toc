@@ -99,7 +99,7 @@
 \contentsline {subsection}{\numberline {7.2.2}Muon selection}{76}{subsection.7.2.2}
 \contentsline {subsubsection}{Pre-selection}{76}{section*.76}
 \contentsline {subsubsection}{Selection}{77}{section*.78}
-\contentsline {subsection}{\numberline {7.2.3}Electron Selection}{78}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.3}Electron Selection}{79}{subsection.7.2.3}
 \contentsline {subsection}{\numberline {7.2.4}Pion Selection}{81}{subsection.7.2.4}
 \contentsline {subsection}{\numberline {7.2.5}Rejection of outlier chips}{82}{subsection.7.2.5}
 \contentsline {chapter}{\numberline {8}Energy Scale Calibration of the AHCAL}{85}{chapter.8}

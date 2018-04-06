@@ -12,7 +12,7 @@ The time information provided by the SPIROC in the data is in TDC units (see sec
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.6\linewidth]{chap5/fig_AHCAL_Timing/Others/TDCRamp.pdf}
-  \caption{Schematic of the TDC ramp in the SPIROC. The slope of the ramp is $\Delta_t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times$ (TDC$_{Hit}$ - Ped).} \label{fig:ConvertTime}
+  \caption{Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $\Delta_t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times$ (TDC$_{Hit}$ - Ped).} \label{fig:ConvertTime}
 \end{figure}
 
 In order to determine the ramp slope, the starting point or pedestal of the ramp and the endpoint of the ramp are measured. Since the SPIROC2B has two TDC ramps, each defined by a BXID parity (even or odd), two slopes need to be extracted per chip. In addition, each channel can store up to 16 events called memory-cell. Each memory-cell is different thus 16 calibration values or pedestal are needed per channel. The extraction of the slope and the determination of the pedestal is explained in section \ref{subsec:slope_calib}.
