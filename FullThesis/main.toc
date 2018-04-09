@@ -167,13 +167,13 @@
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{159}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{161}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{165}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Implementation of noise for timing in simulations.}{175}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{175}{Appendix.1.D}
 \contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{177}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in Monte-Carlo.}{179}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{179}{Appendix.1.F}
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{181}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{183}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{187}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{189}{appendix*.192}
-\contentsline {chapter}{List of figures}{191}{appendix*.193}
-\contentsline {chapter}{Acronyms}{203}{section*.194}
-\contentsline {chapter}{Bibliography}{207}{appendix*.196}
+\contentsline {chapter}{List of tables}{189}{appendix*.193}
+\contentsline {chapter}{List of figures}{191}{appendix*.194}
+\contentsline {chapter}{Acronyms}{203}{section*.195}
+\contentsline {chapter}{Bibliography}{207}{appendix*.197}

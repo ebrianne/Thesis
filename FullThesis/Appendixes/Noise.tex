@@ -1,41 +1,23 @@
 %!TEX root = ../main.tex
-\chapter{Implementation of noise for timing in simulations.}
+\chapter{Extraction of noise hits for simulation.}
 \label{appendix:noise}
 
-Due to the nature of the detector triggering, noise can't be extracted like the previous CALICE physics prototypes with external triggers between spills. Moreover, if no validation signal is provided by the trigger scintillators, the chip removes noise events stored in memory.
+The AHCAL operates in auto-trigger during data taking. Due to this feature, noise hits can't be extracted like the previous CALICE physics prototypes which were extracted by sending external triggers to the detector between beam spills. Moreover, if no validation signal is provided by the trigger scintillators to the chip, hits that are stored in the chip are removed.
 
-One way to avoid this, one can use real events to extract noise. This is can be efficiently done with muon runs as a track is present in the calorimeter due to the muon. By removing the track and keeping remaining hits, noise can be extracted. Muon runs from 24647 to 24656 are used for noise extraction. The events are selected by the cuts shown in table \ref{table:noise_sel}.
+One solution to this problem is to use real data events to extract noise hits. It is can be efficiently done using muon runs because a track is present in the calorimeter due to the muon. By removing the identified muon track and keeping remaining hits, noise hits can be extracted. Muon runs from 24647 to 24656 are used for the extraction of noise hits. The table \ref{table:noise_sel} shows the cuts applied for event selection.
 
-\begin{table}[htb!]
-	\centering
-	\caption{Selection cuts for noise extraction from muon runs.}
-	\label{table:noise_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
-		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
-		\multirow{3}{*}{Noise selection}& All & $n_{hits}$ in a tower > 7\\& All & 0 < $n_{hits}$ < 30\\& All & $n_{hits}$ in layer < 3\\
-		\hline
-	\end{tabular}
-	}
-\end{table}
-
-Remaining hits after track removal are considered as noise hits. Initially, the time of these is in TDC unit. To get an approximation of the noise distribution, the time of a noise hit is randomly shifted by a flat distribution between 500 and 3500 ns. This acts as a time reference for these hits and thus give a quite good description of the noise time distribution. The figures \ref{fig:noise_energy} and \ref{fig:noise_time} show the energy and time distribution of noise hits.
+The track found in the selected event is removed and the remaining hits are considered as noise hits. Initially, the time of the noise hits is in TDC unit. To get an approximation time distribution of noise hits, the time of a noise hit is randomly shifted by a flat distribution between 500 and 3500 ns. This acts as a time reference for these hits to give a good description of the noise time distribution. The figures \ref{fig:noise_energy} and \ref{fig:noise_time} show the energy and time distribution of noise hits.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.49\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf}
-		\caption{Energy distribution of noise hits.} \label{fig:noise_energy}
-	\end{subfigure}
-	\hfill
-	\begin{subfigure}[t]{0.49\textwidth}
-		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf}
-		\caption{Time distribution of noise hits.} \label{fig:noise_time}
-	\end{subfigure}
-	\caption{\subref{fig:noise_energy}) Most of the fraction of noise hits have an energy under 2 MIPs. Higher hit energies may be due to delta electrons from muon tracks but is not expected to have a great impact on timing. \subref{fig:noise_time}) The shape of the time distribution of noise hits is very important to reproduce well the data in simulation.}
+	\centering
+	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Noise_Energy_Flat.pdf}
+	\caption{Hit energy distribution of the extracted noise hits. Most of the hits have an energy below 2 MIPs although a tail is visible to high energies.} \label{fig:noise_energy}
 \end{figure}
 
-The introduction of noise for timing is very important to compare data and simulation especially for pions where a late tail is present.
+\begin{figure}[htbp!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/Noise_Time_Flat.pdf}
+	\caption{Time distribution of the extracted noise hits. The description of the shape of the time distribution is important for the simulation.} \label{fig:noise_time}
+\end{figure}
+
+Most of the fraction of noise hits have an energy under 2 MIPs. Higher hit energies can be seen and they may be due to delta electrons from muon tracks. However, it is not expected to have a great impact on timing. The introduction of noise for timing is very important to compare data and simulation especially for pions where a late tail is present.

@@ -4,76 +4,73 @@
 
 \begin{table}[htb!]
 	\centering
-	\caption{Selection cuts for muon runs.}
+	\caption{Selection cuts for the muon runs.}
 	\label{table:muon_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
+	\begin{tabular}{@{}lll@{}}
+		\toprule
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
+		\midrule
 		\multirow{2}{*}{Preselection}& All & 0 mm < $cog_{z}$ < 800 mm\\& All & 0 < $n_{hits}$ < 20 \\
-		\hline
 		\multirow{2}{*}{Track Selection SSF}& All & $n_{hits}$ in tower > 7 \\& All & $n_{hits}$ in layer < 3 \\
-		\hline
 		\multirow{2}{*}{Track Selection BL}& All & $n_{hits}$ in tower > 2 \\& All & $n_{hits}$ in layer < 3 \\
-		\hline
+		\bottomrule
 	\end{tabular}
-	}
 \end{table}
 
 \begin{table}[htb!]
 	\centering
-	\caption{Selection cuts for each electron energies.}
+	\caption{Selection cuts for each electron runs.}
 	\label{table:electron_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
+	\begin{tabular}{@{}lll@{}}
+		\toprule
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
+		\midrule
 		\multirow{2}{*}{Event Quality}& All & Cherenkov ON\\& All & Energy in the first 3 layers of AHCAL > 10 MIP \\
-		\hline
 		\multirow{9}{*}{Electron Selection}& 10 GeV & 25 < $n_{hits}$ < 75 \\& 15 GeV & 30 < $n_{hits}$ < 90 \\& 20 GeV & 40 < $n_{hits}$ < 100 \\& 30 GeV & 50 < $n_{hits}$ < 110 \\& 40 GeV & 60 < $n_{hits}$ < 120 \\& 50 GeV & 70 < $n_{hits}$ < 140 \\& All & $cog_{z}$ < 250 mm\\& All & -90 mm < $cog_{x, y}$ < 90 mm \\& All & Energy in last two layers < 1\% $E_{sum}$ \\
-		\hline
+		\bottomrule
 	\end{tabular}
-	}
 \end{table}
 
 \begin{table}[htb!]
 	\centering
-	\caption{Selection cuts for pions.}
+	\caption{Selection cuts for the pions runs.}
 	\label{table:pion_sel}
-	\resizebox{0.9\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{3cm} p{6cm}@{}}
-		\hline
+	\begin{tabular}{@{}lll@{}}
+		\toprule
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
-		\hline
+		\midrule
 		\multirow{1}{*}{Event Quality}& All & Cherenkov OFF\\
-		\hline
 		\multirow{3}{*}{Pion Selection}& All & $n_{hits}$ > 20 \\& All & $n_{hits}$ in the first 2 AHCAL layers < 5 \\& All & Energy in last two layers > 1\% $E_{sum}$ \\
-		\hline
 		\multirow{2}{*}{Multi Particle Rejection}& All & $n_{hits}$ in time window > 5 \\& All & $n_{Cluster}$ > 0 \\
-		\hline
+		\bottomrule
 	\end{tabular}
-	}
 \end{table}
 
 \begin{table}[htb!]
 	\centering
-	\caption{Selection cuts for time reference channels.}
+	\caption{Selection cuts for the time reference channels.}
 	\label{table:T0_sel}
-	\resizebox{0.8\textwidth}{!}{%
-	\begin{tabular}{@{}p{4cm} p{6cm}@{}}
-		\hline
+	\begin{tabular}{@{}ll@{}}
+		\toprule
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Selection cut}\\
-		\hline
+		\midrule
 		\multirow{2}{*}{$T_{11}$}& $3 < E [MIP] < 4.5$\\ & TDC > 0 \\
-		\hline
 		\multirow{2}{*}{$T_{12}$}& $114 < E [MIP] < 145$\\ & TDC > 0 \\
-		\hline
 		\multirow{2}{*}{$T_{13}$}& $2.6 < E [MIP] < 3.8$\\ & TDC > 0 \\
-		\hline
 		\multirow{2}{*}{$T_{14}$}& $6.8 < E [MIP] < 8.3$\\ & TDC > 0 \\
-		\hline
+		\bottomrule
 	\end{tabular}
-	}
+\end{table}
+
+\begin{table}[htb!]
+	\centering
+	\caption{Selection cuts for the extraction of noise hits from muon runs.}
+	\label{table:noise_sel}
+	\begin{tabular}{@{} lll @{}}
+		\toprule
+		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
+		\midrule
+		\multirow{3}{*}{Noise selection}& All & $n_{hits}$ in a tower > 7\\& All & 0 < $n_{hits}$ < 30\\& All & $n_{hits}$ in layer < 3\\
+		\bottomrule
+	\end{tabular}
 \end{table}
