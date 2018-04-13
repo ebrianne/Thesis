@@ -18,11 +18,11 @@ High energy electrons lose their energy via different processes depending on the
 \begin{equation}
   \epsilon_{c} = \frac{\SI{610}{\mega\eV}}{(Z + 1.24)}
 \end{equation}
-The critical energy for iron is around \SI{21}{\mega\eV}.
+The critical energy for popular material such as iron is around \SI{21}{\mega\eV} and tungsten around \SI{8}{\mega\eV}.
 
 \subsubsection{Energy loss by photons}
 
-High energy photons lose their energy via \textit{pair production} where the photon creates an electron-positron pair caused by the nuclear electric field. However for this process, the photon energy needs to be at least the rest mass of the $e^+e^-$ pair ($E_{\gamma} \geq 2 \times \SI{511}{\kilo\eV}$). The photon specific cross-sections as a function of the photon energy are shown in figure \ref{fig:GammaEMloss}. For energies below the pair production threshold, it is most likely to interact via the \textit{photo-electric effect}. In this process, the photon is absorbed by the atom and an electron is emitted. The excited atom goes back to ground state by the radiation of Auger electrons or X-rays. Additional processes are contributing to the photon energy loss such as the \textit{Rayleigh} or \textit{Compton} scattering where the photon is scattered coherently or incoherently by an electron of the atom nuclei.
+High energy photons (> MeV) lose their energy via \textit{pair production} where the photon creates an electron-positron pair caused by the nuclear electric field. However for this process, the photon energy needs to be at least the rest mass of the $e^+e^-$ pair ($E_{\gamma} \geq 2 \times \SI{511}{\kilo\eV}$). The photon specific cross-sections as a function of the photon energy are shown in figure \ref{fig:GammaEMloss}. For energies below the pair production threshold, it is most likely to interact via the \textit{photo-electric effect}. In this process, the photon is absorbed by the atom and an electron is emitted. The excited atom goes back to ground state by the radiation of Auger electrons or X-rays. Additional processes are contributing to the photon energy loss such as the \textit{Rayleigh} or \textit{Compton} scattering where the photon is scattered coherently or incoherently by an electron of the atom nuclei.
 
 \begin{figure}[htbp!]
   \centering
@@ -144,15 +144,15 @@ Since the \textit{invisible} energy only occurs in hadron showers, this leads to
 \subsubsection{Time development}
 \label{sec:TimeDevShowers}
 
-electromagnetic cascades develop at the speed of light due to the prompt generation of particles with relativistic energies. However, hadronic cascades have different components which have an impact on the time development of the shower. The electromagnetic component is prompt as an electromagnetic cascade but the hadronic component can be delayed significantly due to nuclear excited states ($\sim$\si{\micro\second}) and the release of thermal neutrons ($\sim$\si{\micro\second}-\si{\second}). Thermal neutrons can travel significantly through the detector before being captured by a nucleus and generating a signal in the calorimeter. These effects have an impact  on the reconstructed energy and spatial development of the shower due to the time acceptance of the readout electronics.
+Electromagnetic cascades develop at the speed of light due to the prompt generation of particles with relativistic energies. However, hadronic cascades have different components which have an impact on the time development of the shower. The electromagnetic component is prompt as an electromagnetic cascade but the hadronic component can be delayed significantly due to nuclear excited states ($\sim$\si{\micro\second}) and the release of thermal neutrons ($\sim$\si{\micro\second}-\si{\second}). Thermal neutrons can travel significantly through the detector before being captured by a nucleus and generating a signal in the calorimeter. These effects have an impact  on the reconstructed energy and spatial development of the shower due to the time acceptance of the readout electronics.
 
 \section{Calorimeters}
 
-Calorimeters are used to absorb an incident particle and measure the deposited energy. As explained in \ref{subsec:EMShowers} and \ref{subsec:HadShowers}, the longitudinal depth of the shower scales logarithmically with the energy of the incoming particle. Thus the energy of a shower can be mostly contained completely with a moderate amount of material, even for very high energy particles. Calorimeters can be separated in two types: \textit{homogenous} and \textit{sampling} calorimeters.
+Calorimeters are used to absorb an incident particle and measure the deposited energy. As explained in sections \ref{subsec:EMShowers} and \ref{subsec:HadShowers}, the longitudinal depth of the shower scales logarithmically with the energy of the incoming particle. Thus the energy of a shower can be mostly contained completely with a moderate amount of material, even for very high energy particles. Calorimeters can be separated in two types: \textit{homogenous} and \textit{sampling} calorimeters.
 
 \subsubsection*{Homogenous calorimeters}
 
-In homogenous calorimeters, the complete detector volume is sensitive to particle energy depositions. An example of homogenous calorimeter is the ECAL used by the CMS detector. It uses $PbWO_4$ scintillating crystals of around $2.2 \times 2.2 \times 23$ cm$^3$, these have very short radiation length ($X_0$ = 0.85 cm) and Moli\'ere Radius ($\rho_M$ = 2.19 cm) allowing for a compact design. As this calorimeter is homogenous, the entire kinetic energy of an incoming electron or photon can be measured, reducing sampling fluctuations and achieving a very good single particle energy resolution\footnote{Explained in \ref{subsec:EnergyReso}.} of $\sigma_E/E \approx 2.8\%/\sqrt(E) \oplus 0.3\%$ \cite{1742-6596-587-1-012001}.
+In homogenous calorimeters, the complete detector volume is sensitive to particle energy depositions. An example of homogenous calorimeter is the ECAL used by the CMS detector. It uses $PbWO_4$ scintillating crystals of around $2.2 \times 2.2 \times 23$ cm$^3$, these have very short radiation length ($X_0$ = 0.85 cm) and Moli\'ere Radius ($\rho_M$ = 2.19 cm) allowing for a compact design. As this calorimeter is homogenous, the entire kinetic energy of an incoming electron or photon can be measured, reducing sampling fluctuations and achieving a very good single particle energy resolution\footnote{Explained in \ref{subsec:EnergyReso}.} of $\sigma_E/E \approx 2.8\%/\sqrt(E) \oplus 0.3\%$ \cite{1742-6596-587-1-012001}. In comparison, the BELLE II EM calorimeter achieves an energy resolution of $\sigma_E/E \approx 0.066\%/\sqrt(E) \oplus 1.34\%$ \cite{Abe:2010gxa} using CsI(Tl) crystals.
 
 \subsubsection*{Sampling calorimeters}
 
@@ -163,9 +163,9 @@ A sampling calorimeter can be characterized by its sampling fraction $f_{samp}$ 
   f_{samp} = \frac{E_{MIP}^{active}}{E_{MIP}^{active} + E_{MIP}^{passive}}
 \end{equation}
 
-Usually calorimeters are segmented longitudinally and laterally into small cells in order to provide information about the particle position. An electromagnetic calorimeter (ECAL) is measuring the energy of particles that interact primarily via the electromagnetic interaction, while hadronic calorimeters (HCAL) are designed to measure the energy of particles that interact strongly.
+Usually sampling calorimeters are segmented longitudinally and laterally into small cells in order to provide information about the particle position. An electromagnetic calorimeter (ECAL) is measuring the energy of particles that interact primarily via the electromagnetic interaction, while hadronic calorimeters (HCAL) are designed to measure the energy of particles that interact strongly.
 
-An example of a sampling calorimeter is the HCAL barrel (TileCal) in the ATLAS detector. It consists of iron plates 14 mm thick as absorber and scintillator tiles 3 mm thick as active material. The total depth of the barrel corresponds to 9.7 nuclear interaction length. It is segmented in $\phi$ and $\eta$ to provide accurate position measurement. The tiles are coupled to a wavelength shifting fiber that guides the light to two different photomultiplier tubes providing redundancy. It is the central detector for the measurements of single hadrons, jets and missing transverse energy. An energy resolution of $\sigma_E/E \approx 52\%/\sqrt(E) \oplus 3\%$ was achieved for single pions \cite{Henriques:2015fso}. This is significantly worse compared to the CMS ECAL due to the sampling fluctuations and as well due to the intrinsic fluctuations of hadron showers.
+An example of a sampling calorimeter is the HCAL barrel (TileCal) in the ATLAS detector. It consists of iron plates 14 mm thick as absorber and scintillator tiles 3 mm thick as active material. The total depth of the barrel corresponds to 9.7 nuclear interaction length. It is segmented in $\phi$ and $\eta$ to provide accurate position measurement. The tiles are coupled to a wavelength shifting fiber that guides the light to two different photomultiplier tubes providing redundancy. It is the central detector for the measurements of single hadrons, jets and missing transverse energy. An energy resolution of $\sigma_E/E \approx 52\%/\sqrt(E) \oplus 3\%$ was achieved for single pions \cite{Henriques:2015fso}. This is significantly worse compared to the CMS ECAL due to the sampling fluctuations and as well due to the intrinsic fluctuations of hadron showers. It can be compared to the CDF HCAL using scintillator tiles coupled to wavelength shifting fibers and readout by PMTs in which an energy resolution of $\sigma_E/E \approx 80\%/\sqrt(E) \oplus 5\%$ was achieved \cite{Blair:1996kx}.
 
 \subsection{Energy resolution}
 \label{subsec:EnergyReso}
@@ -227,7 +227,7 @@ $\sigma_{conf}$ represents the confusion term due to the possibility of wrong as
   \item The failure to resolve photons close to a charged hadron track leading to the loss of the photon energy.
 \end{itemize}
 
-The confusion is a limiting factor in Particle Flow calorimetry and starts to dominate for high jet energies. Other contributions are present such as $\sigma_{leak}$ that degrade the jet energy resolution due to leakage in the calorimeter and uninstrumented areas.
+The confusion is a limiting factor in Particle Flow calorimetry and starts to dominate for high jet energies due to a high probability of showers overlapping. Other contributions are present such as $\sigma_{leak}$ that degrade the jet energy resolution due to leakage in the calorimeter and uninstrumented areas.
 
 \subsection{Implementation in PandoraPFA}
 

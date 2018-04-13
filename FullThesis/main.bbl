@@ -253,6 +253,10 @@ J.~Reuter, ``{The BSM Physics Case of the ILC},'' in {\em {Proceedings,
   International Workshop on Future Linear Colliders (LCWS15): Whistler, B.C.,
   Canada, November 02-06, 2015}}, 2016.
 
+\bibitem{Fujii:2017vwa}
+K.~Fujii {\em et~al.}, ``{Physics Case for the 250 GeV Stage of the
+  International Linear Collider},'' 2017.
+
 \bibitem{Altarelli:2006zza}
 M.~Altarelli, R.~Brinkmann, M.~Chergui, W.~Decking, B.~Dobson, S.~Düsterer,
   G.~Grübel, W.~Graeff, H.~Graafsma, J.~Hajdu, {\em et~al.}, eds., {\em {XFEL:
@@ -294,6 +298,15 @@ F.~J. Mueller, {\em {D}evelopment of a {T}riple {GEM} {R}eadout {M}odule for a
 \newblock Dr., Universitat Hamburg, Hamburg, 2016.
 \newblock Universit\"at Hamburg, Diss., 2016.
 
+\bibitem{Aicheler:2012bya}
+M.~Aicheler, P.~Burrows, M.~Draper, T.~Garvey, P.~Lebrun, K.~Peach, N.~Phinney,
+  H.~Schmickler, D.~Schulte, and N.~Toge, ``{A Multi-TeV Linear Collider Based
+  on CLIC Technology},'' 2012.
+
+\bibitem{CLIC:2016zwp}
+M.~J. Boland {\em et~al.}, ``{Updated baseline for a staged Compact Linear
+  Collider},'' 2016.
+
 \bibitem{Wigmans:392793}
 R.~Wigmans, {\em {C}alorimetry: energy measurement in particle physics; 2nd
   ed.}, vol.~168 of {\em International series of monographs on physics}.
@@ -315,11 +328,18 @@ C.~Biino, ``The cms electromagnetic calorimeter: overview, lessons learned
   during run 1 and future projections,'' {\em Journal of Physics: Conference
   Series}, vol.~587, no.~1, p.~012001, 2015.
 
+\bibitem{Abe:2010gxa}
+T.~Abe {\em et~al.}, ``{Belle II Technical Design Report},'' 2010.
+
 \bibitem{Henriques:2015fso}
 A.~Henriques, ``{The ATLAS tile calorimeter},'' in {\em {Proceedings, 4th
   International Conference on Advancements in Nuclear Instrumentation
   Measurement Methods and their Applications (ANIMMA 2015): Lisbon, Portugal,
   April 20-24, 2015}}, pp.~1--7, 2015.
+
+\bibitem{Blair:1996kx}
+R.~Blair {\em et~al.}, ``{The CDF-II detector: Technical design report},''
+  1996.
 
 \bibitem{BERNSTEIN199323}
 A.~Bernstein, T.~Bienz, A.~Caldwell, L.~Chen, M.~Derrick, I.~Gialas, A.~Hamri,
@@ -666,9 +686,10 @@ B.~Govorkov, ``{Cherenkov detectors in Cherenkov's laboratory},'' {\em Nuclear
   Report}, 2010.
 
 \bibitem{AmbraEnergy}
-A.~Provenza, ``{Calibration and analysis of data taken with the technological
-  prototype of the Analog Hadron Calorimeter (AHCAL) for a detector at the
-  Internationnal Linear Collider},'' 2017.
+A.~Provenza, {\em {Calibration and analysis of data taken with the
+  technological prototype of the Analog Hadron Calorimeter (AHCAL) for a
+  detector at the Internationnal Linear Collider}}.
+\newblock PhD thesis, 2018, ongoing.
 
 \bibitem{AmbraTokyo}
 A.~Provenza, ``{Analysis of July 2015 CERN test beam electron data},'' {\em

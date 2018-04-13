@@ -37,7 +37,7 @@ The pedestal distribution of a typical AHCAL channel is shown in figure \ref{fig
 
 The SiPM noise contributes to the pedestal value as shown by the additional peaks next to the main peak in the figure \ref{fig:PedExtraction}. Considering a Poisson statistic, one to three pixels could be fired due to the dark noise and cross-talk. The range to determine the pedestal value then needs to be in the same order of magnitude. For this, the histogram x-axis range is reduced in the range of 3 RMS around the mean. It is done iteratively two times. Then the mean of the histogram is taken as the pedestal value. This is done for each channel and memory-cell.
 
-However, the CALICE database structure, containing the main calibration constants, is designed to store the pedestal constant for each channel only (not memory-cell). Therefore, a mean over all memory cells is computed per channel and used in the data reconstruction. The difference between the mean pedestal and the memory cell wise pedestal is shown in figure \ref{fig:CompMeanMem}. The RMS of the distribution is around 21 ADC which would correspond to an uncertainty of about 4\% on the MIP constant, assuming a typical MIP calibration value of 500 ADC. This error is dominating in the MIP constant uncertainty.
+However, the CALICE database structure, containing the main calibration constants, is currently designed to store the pedestal constant for each channel only (not memory-cell). Therefore, a mean over all memory cells is computed per channel and used in the data reconstruction. The difference between the mean pedestal and the memory cell wise pedestal is shown in figure \ref{fig:CompMeanMem}. The RMS of the distribution is around 21 ADC which would correspond to an uncertainty of about 4\% on the MIP constant, assuming a typical MIP calibration value of 500 ADC. This error is dominating in the MIP constant uncertainty.
 
 \begin{figure}[htbp!]
 	\centering
@@ -50,7 +50,7 @@ However, the CALICE database structure, containing the main calibration constant
 
 After the pedestal calibration, the extraction of the MIP calibration constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needs to be automatic and robust. In order to reduce the amount of noise hits in the hit energy spectra of each cell that would lead to unstable fits and wrong MIP calibration constants, a MIP track selection has been performed (see section \ref{subsec:Muon_sel}).
 
-The fitting procedure is very sensitive to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. A more precise and detailed description of the fitting procedure is explained in \cite{FabianThesis, SarahMaster}.
+The fitting procedure is very sensitive to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. A more precise and detailed description of the fitting procedure can be found in \cite{FabianThesis, SarahMaster}.
 
 \begin{figure}[htbp!]
 	\centering
@@ -64,7 +64,7 @@ Only channels with more than 1000 entries are considered to obtain a reliable fi
 
 \subsection{MIP extraction results}
 
-In the muon data recorded in July 2015, the MIP calibration constant of 72\% of the 3744 channels is determined. The rest 28\% of the channels does not provide enough or usable information to perform a fit, this includes the outer channels (outside of the inner $12 \times 12$ tiles) of the layers 11 to 14 that don't have enough statistics. In order to have a MIP calibration value for these outer channels, the results are combined with MIP calibration values obtained from previous testbeams performed in April and May 2015 at DESY with the layers 11 to 14.
+In the muon data recorded in July 2015, the MIP calibration constant of 72\% of the 3744 channels is determined. The remaining 28\% of the channels do not provide enough or usable information to perform a fit, this includes the outer channels (outside of the inner $12 \times 12$ tiles) of the layers 11 to 14 that don't have enough statistics. In order to have a MIP calibration value for these outer channels, the results are combined with MIP calibration values obtained from previous testbeams performed in April and May 2015 at DESY with the layers 11 to 14.
 
 Additionally, if a channel does not have a MIP calibration value, the mean of the MIP constant distribution of a chip or a layer is used. 85\% of the detector channels (3171 channels) have been calibrated, excluding dead and noisy channels (see appendix \ref{appendix:deadChn}).
 
@@ -191,7 +191,7 @@ Additional beam profiles can be seen in appendix \ref{appendix:SimulationVal}. T
 
 The MIP calibration defines the energy scale of the energy depositions measured in the AHCAL. It is needed to carefully validate the MIP calibration in data and in simulation in order to be able to compare results.
 
-Applying the MIP selection on the muon runs results in energy depositions of single MIP amplitudes for all channels. The comparison of the MIP spectrum for the whole AHCAL between data and simulation is shown in figure \ref{fig:MIPData_MC}. The shape of the hit energy spectrum matches relatively well. The data appears slightly wider than for simulation because of channel-by-channel mis-calibrations that are not modeled in the simulation. The figure \ref{fig:muEdep} shows the mean energy deposition per layer. The simulation reproduces the data within 3-4\%. This comparison validates the simulation at the lowest hit energies.
+Applying the MIP selection on the muon runs results in energy depositions of single MIP amplitudes for all channels. The comparison of the MIP spectrum for the whole AHCAL between data and simulation is shown in figure \ref{fig:MIPData_MC}. The shape of the hit energy spectrum matches relatively well. The data appears slightly wider than for simulation because of the channel-by-channel mis-calibrations that are not modeled in the simulation. Figure \ref{fig:muEdep} shows the mean energy deposition per layer. The simulation reproduces the data within 3-4\%. This comparison validates the simulation at the lowest hit energies.
 
 \begin{figure}[htbp!]
 	\centering
@@ -209,7 +209,7 @@ Applying the MIP selection on the muon runs results in energy depositions of sin
 	\label{fig:Val}
 \end{figure}
 
-The figure \ref{fig:MPVData_MC} shows the distribution of the extracted MIP calibration constant for single channels in data and simulation. Ideally, the distribution should peak at the unity for all channels. But in practice, due to the fitting procedure uncertainty, mis-calibrations and statistic limitation, it results in a widening of the distribution. Both data and simulation give a mean value around 1 MIP for the AHCAL indicating a good average calibration at the cell level. The higher values to the right that appear in the data have been checked and all channels present a good fit. The AHCAL simulation is slightly shifted to the right to higher values but is still reasonably close to unity.
+The figure \ref{fig:MPVData_MC} shows the distribution of the extracted MIP calibration constant for single channels in data and simulation. Ideally, the distribution should peak at the unity for all channels. But in practice, due to the fitting procedure uncertainty, mis-calibrations and statistic limitation, it results in a widening of the distribution. Both data and simulation give a mean value reasonably close to unity indicating a good average calibration at the cell level of the AHCAL. The higher values to the right that appear in the data have been checked and all channels present a good fit.
 
 \begin{figure}[htbp!]
 	\centering
@@ -240,7 +240,7 @@ The figure \ref{fig:eHitVal} shows the hit energy spectra for 10 GeV and 50 GeV 
 	\label{fig:eHitVal}
 \end{figure}
 
-The figure \ref{fig:EsumMeanElectron} show the mean energy sum $<E_{sum}>$ and figure \ref{fig:nHitsMeanElectron} shows the mean number of hits $<nHits>$ as a function of the electron beam energy between 10 and 50 GeV in data and simulation with different cross-talk parameters. The mean is obtained from the mean of the distribution, no fit is performed. The visible energy for data agrees within the simulations for 10, 15 and 20 GeV electron energy and seems to agree better with the 10\% cross-talk simulations. For higher energies, the data deviates significantly to lower values due to the presence of the long tail left of the distribution that the simulations cannot describe (see appendix \ref{appendix:SimulationVal}). The curve does not look linear as one would expect, this is probably due to saturation effects that are not corrected.
+Figure \ref{fig:EsumMeanElectron} shows the mean energy sum $<E_{sum}>$ and figure \ref{fig:nHitsMeanElectron} shows the mean number of hits $<nHits>$ as a function of the electron beam energy between 10 and 50 GeV in data and simulation with different cross-talk parameters. The mean is obtained from the mean of the distribution, no fit is performed. The visible energy for data agrees within the simulations for 10, 15 and 20 GeV electron energy and seems to agree better with the 10\% cross-talk simulations. For higher energies, the data deviates significantly to lower values due to the presence of the long tail left of the distribution that the simulations cannot describe (see appendix \ref{appendix:SimulationVal}). The curve does not look linear as one would expect, this is probably due to saturation effects that are not corrected.
 
 The number of hits is well described in the simulations but agrees better with 10\% cross-talk at low energies and with the 18\% cross-talk at higher energies. However, the data cannot be described for both distributions at once in either simulation with a global cross-talk parameter.
 

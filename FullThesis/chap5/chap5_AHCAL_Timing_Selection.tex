@@ -8,7 +8,7 @@
 %%% Need to rethink about this...
 The experimental data used in this thesis has been collected in a testbeam campaign at the SPS facility at CERN in July 2015 with the AHCAL technological prototype described in section \ref{sec:AHCAL}.
 
-The main topic of this thesis is the study of the \textit{time development of hadronic showers} and the study of the \textit{effects of timing cuts} in a hadronic calorimeter. The analysis is divided in several part. Firstly, the energy scale calibration of the AHCAL prototype in chapter \ref{chap:ECalibAHCAL} in order to be able to compare meaningfully data and simulation. Secondly, the determination of the time calibration constants in chapter \ref{chap:TimingCalib} to convert the time information provided by the ASIC in nanoseconds and correct any effect introduced by the electronics. Thirdly, the cross-check of the time calibration and the validation of the simulation in chapter \ref{chap:TimingValidation} in order to have a robust time calibration and a reliable simulation. Finally, the analysis of the recorded pion data in chapter \ref{chap:TimingPions} to study the time development of hadron showers.
+The main topic of this thesis is the study of the \textit{time development of hadronic showers} and the study of the \textit{effects of timing cuts} in a hadronic calorimeter. The analysis is divided in several part. In the first part, the energy scale calibration of the AHCAL prototype is presented in chapter \ref{chap:ECalibAHCAL}. In the second part, the timing calibration of the AHCAL is presented in chapter \ref{chap:TimingCalib}. In a third part, the cross-check of the time calibration and the validation of the simulation is shown in chapter \ref{chap:TimingValidation}. Finally, the analysis of the recorded pion data is described in chapter \ref{chap:TimingPions}.
 
 This chapter discusses the setup of the testbeam first before presenting the selected dataset for this analysis, the selection of the triggers needed for this analysis as time reference and the selection criteria for each dataset of muons, electrons and pions.
 
@@ -17,7 +17,7 @@ This chapter discusses the setup of the testbeam first before presenting the sel
 \subsection{Beamline Setup}
 \label{sec:beamline}
 
-During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 in the North Area facility at CERN \cite{H2Beamline}. This beamline is equipped with wire chambers and scintillators that provide information of the beam position and number of particles. The wire chamber information would be useful in order to simulate correctly the beam profile. Unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information collected about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
+During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 in the SPS North Area at CERN \cite{H2Beamline}. This beamline is equipped with wire chambers and scintillators that provide information of the beam position and number of particles. The wire chamber information would have been useful in order to simulate correctly the beam profile. Unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information available about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
 
 A Cherenkov detector (at around 100 m upstream) was available to tag incoming particles. These detectors take advantage of the fact that, a particle that traverses a medium faster than the speed of light in that medium will generate a cone of Cherenkov light. The opening angle of the cone is proportional to the particle mass \cite{GOVORKOV20059}. The Cherenkov detector at this beamline offered the possibility to set a threshold for particle tagging. This is particularly needed to tag possible contaminating electrons in a pion beam. The tagging signal from the Cherenkov detector was provided directly to several AHCAL channels.
 
@@ -37,7 +37,7 @@ In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDE
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{chap5/fig_EnergyCalib/TestbeamSetup.pdf}
-	\caption{Sketch view of the beamline setup at the CERN SPS H1 beamline in July 2015.} \label{fig:TestbeamScketch}
+	\caption{Sketch view of the beamline setup at the CERN SPS H2 beamline in July 2015.} \label{fig:TestbeamScketch}
 \end{figure}
 
 \begin{figure}[htbp!]
@@ -61,7 +61,7 @@ Additionally, the coincidence signal from the scintillator is provided directly 
 
 The scintillator plates are used as a time reference signal. Both type of scintillator are connected to a discriminator and a gate for coincidence in order to provide a validation signal to the readout chip (see section \ref{sec:SPIROC2B}).
 
-When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge of around 1 ns, is generated with an amplitude around 100 mV that is used as a time reference. This signal is provided \textit{directly to six AHCAL channels} for redundancy. The list of the AHCAL channels used as a reference time are shown in table \ref{table:trigger_signal_list}. No other external time reference than these channels is available.
+When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge of around 1 ns, is generated with an amplitude around 100 mV that is used as a time reference. This signal is provided \textit{directly to six AHCAL channels} for redundancy. The list of the AHCAL channels used as a reference time are shown in table \ref{table:trigger_signal_list}. No other external time reference is available.
 
 \begin{table}[htb!]
 	\centering
@@ -85,7 +85,7 @@ In the following analysis, the time reference signals T$_{12}$, T$_{13}$ and T$_
 
 \section{Dataset and Event Selection}
 
-The selections presented in this section are based on simulated data. Beforehand, the simulation has been carefully validated and represents the data within 10-20\% in muon and electron beam. More details can be seen in section \ref{sec:SimulationVal}.
+The selections presented in this section are based on simulated data. Beforehand, the simulation has been carefully validated and represents within 10-20\% the data in muon and electron beam. More details can be seen in section \ref{sec:SimulationVal}.
 
 \subsection{Dataset}
 \label{subsec:dataset}
@@ -163,7 +163,7 @@ The electron selection is done to extract single electron showers contained in t
 
 In a next step, the electron selection is performed. Usually, one could use a shower start algorithm to select electrons that interact in the first layers of the calorimeter and reject pions efficiently \cite{Hartbrich:2016bbz}. However, the first ECAL layers (see section \ref{subsec:ScECAL}) can't be used because of high noise and the detector is partially equipped with active layers. This would greatly influence the performance of such algorithm, therefore, an alternative selection is needed.
 
-As no look into calorimeter linearity and energy resolution is done in this thesis, a cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z$) is done. It is shown in figures \ref{fig:e10GeV_nHitsCoGZ} and \ref{fig:e50GeV_nHitsCoGZ}. The box cut in the figures does not induce any bias for the timing study in this thesis, it would only reduce the event statistics. In addition, the number of hits in a electron shower is proportional to the shower energy, thus this cut is energy dependent.
+A cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z$) is done. It is shown in figures \ref{fig:e10GeV_nHitsCoGZ} and \ref{fig:e50GeV_nHitsCoGZ}. The box cut in the figures does not induce any bias for the timing study in this thesis, it would only reduce the event statistics. In addition, the number of hits in a electron shower is proportional to the shower energy, thus this cut is energy dependent.
 
 Finally, a cut on the energy deposited in the last two layers relative to the energy deposited in the calorimeter ($(E_{13}+E_{14})/\Sigma E$) is done. The distributions are shown in figures \ref{fig:e10GeV_Elast} and \ref{fig:e50GeV_Elast}. This cut is required to be under 1\% to reject pion showers and to contain the electron shower.
 
@@ -187,7 +187,7 @@ Additionally, to reduce transverse leakage, the shower center of gravity in X an
 	\end{tabular}
 \end{table}
 
-One can notice from table \ref{table:eff_electron} that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is believed that there is no pion contamination in the data. Thus no additional cut is needed.
+One can notice from table \ref{table:eff_electron} that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is with confidence that there is no pion contamination in the data \cite{AmbraEnergy}. Thus no additional cut is needed.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -264,7 +264,7 @@ In addition, multiple particle events were observed in the data as shown in figu
 	\caption{Multi-particle event in the 50 GeV pion data sample. The colors represent the time of the hit: green < 5 ns, blue 5 ns to 15 ns, yellow 15 ns to 35, orange 35 ns to 50 ns and red > 50 ns. One can observe an additional late muon going through the detector.} \label{fig:DoubleParticleEvent}
 \end{figure}
 
-The method is the following: all the hits in an event are placed and ordered in time; Then for each hit after 50 ns, a timing window of 30 ns is looked after. The number of hits in that window is counted. If the number of hits is over 5, it is classified as a \textit{late cluster}. The event is rejected if there is at least one late cluster. This method works because if an event has several particles, the time reference of the event is generated by the first particle. Therefore, the second particle will have all the hits late relative to the time reference and thus the event will be rejected.
+The method is the following: all the hits in an event are placed and ordered in time; Then for each hit after 50 ns, a timing window of 30 ns used. The number of hits in that window are counted. If the number of hits is larger than 5, it is classified as a \textit{late cluster}. The event is rejected if there is at least one late cluster. This method works because if an event has several particles, the time reference of the event is generated by the first particle. Therefore, the second particle will have all the hits late relative to the time reference and thus the event will be rejected.
 
 The method is based on data in order to remove multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions. These multi-particle events are greatly suppressed in data. The number of events removed varies between 0.1\% and 1\% depending on the beam energy. Due to the calorimeter not being fully equipped thus providing limited information, some contamination may remain in the data.
 
