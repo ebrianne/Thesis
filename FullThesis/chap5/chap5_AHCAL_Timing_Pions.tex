@@ -6,7 +6,7 @@ In this chapter, the recorded pion data is compared to \geant v10.1 simulations 
 
 \section{Dataset}
 
-The pion dataset used in this study is selected based on criteria described in section \ref{subsec:pionsel}. The same time calibration constants and corrections determined from muons and electrons is applied to the pion data. The table \ref{table:pion_runs} summarizes the runs and datasets used for the pion analysis. N$_{3 T_0}$ is the number of events after the selection on the time reference (see section \ref{section:time_ref}). N$_{sel.}$ is the number of events after the cut on the error of the time reference.
+The pion dataset used in this study is selected based on criteria described in section \ref{sec:pionsel}. The same time calibration constants and corrections determined from muons and electrons is applied to the pion data. The table \ref{table:pion_runs} summarizes the runs and datasets used for the pion analysis. N$_{3 T_0}$ is the number of events after the selection on the time reference (see section \ref{section:time_ref}). N$_{sel.}$ is the number of events after the cut on the error of the time reference.
 
 \begin{table}[htb!]
 	\centering
@@ -17,8 +17,10 @@ The pion dataset used in this study is selected based on criteria described in s
 		Runs & Energy & Particle Type & N$_{3 T_0}$ & N$_{sel.}$ & $\frac{\text{N$_{sel.}$}}{\text{N$_{3 T_0}$}}$ \\
 		\midrule
 		\makecell{24306-24317 \\ 24381-24397} & 10 GeV & $\pi^-$ & 425517 & 349012 & 82\% \\
+		\midrule
 		24578-24612 & 50 GeV & $\pi^-$ & 1183790 & 1007889 & 85.1\% \\
 		24339-24342 & 70 GeV & $\pi^-$ & 142813 & 122376 & 85.7\% \\
+		\midrule
 		\makecell{24223-24238 \\ 24273-24287\\ 24331-24336\\ 24358-24364} & 90 GeV & $\pi^-$ & 466927 & 395884 & 84.8\% \\
 		\bottomrule
 	\end{tabular}
@@ -66,26 +68,34 @@ However, the time constant of the slow component is very different than in the T
 	\end{tabular}
 \end{table}
 
-The figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits compared with three different physics lists for 10 GeV pions. Additional distribution for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
+Figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits compared with three different physics lists for 10 GeV pions. Additional distribution for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
 
 From 10 to 50 GeV, the QGSP\_BERT\_HP physics list reproduces well the distribution. Above 50 GeV, the tail after 100 ns is also well described in the simulation, however, between 50 and 100 ns, the simulation slightly under-estimates the data although within the systematic uncertainty.
 
-The QBBC physics list tends to over-estimate the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC physics list agrees well with the time distribution for 60 GeV pions. It may be related to the use of different \geant versions because the T3B experiment used \geant v9.4p03.
+The QBBC physics list tends to over-estimate the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC physics list agrees well with the time distribution for 60 GeV pions. It may be related to the use of different \geant versions because the T3B experiment has used \geant v9.4p03.
 
 For all time of first hit distributions, the QGSP\_BERT physics list over-estimates the tail of the distribution by around a factor 10.
 
 \begin{figure}[htbp!]
-	\centering
-	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters.pdf}
-	\caption{Comparison of the time of first hit distribution for 10 GeV pions in data and three different physics list for \mokka and \ddhep simulations. The grey and color bands shows the statistical and systematic uncertainties.}
-	\label{fig:dNdt_SimData_10GeV}
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters.pdf}
+		\caption{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters_DD4hep.pdf}
+		\caption{}
+	\end{subfigure}
+	\caption{Comparison of the time of first hit distribution for 10 GeV pions in data and three different physics list for \mokka (left) and \ddhep (right) simulations. The grey and color bands shows the statistical and systematic uncertainties.} 	\label{fig:dNdt_SimData_10GeV}
 \end{figure}
 
 \section{Energy dependence of the time of first hit}
 
 The dependence in energy of the time of first hit has been studied in the following. It is expected that there is no energy dependence for muon and electron beams as these are quasi-instantaneous. On the other hand, for pions, it is expected that low energy hits mostly coming from neutron signals in the calorimeter are delayed.
 
-The mean time of the first hit taken in a time window of -50 ns to 200 ns as a function of the hit energy is shown in figure \ref{fig:Energy_Comparison}. for muon. electron and pion beams. For muons and electrons, no dependence on energy is observed as expected, all hits are instantaneous independent of their energy. For 10 GeV pions, a delay of 2-3 ns at 0.5 MIP is observed and decreases down to 0-1 ns above 1 MIP. For higher pion energies than 10 GeV, a decrease in the mean time of the first hit can be observed between 0.5 and 1.5 MIP followed by an increase of the mean time of the first hit for energies above 1.5 MIPs. This is not expected, thus individual distributions have been checked, an example is shown in figure \ref{fig:TimeBinsEnergy} for 90 GeV pions. After 1.5 MIP, the time distribution gets wider and the maximum of the distribution is de-centered slightly from 0 ns, therefore explaining the increase of the mean time of the first hit for hit energies over 1.5 MIP. This may be coming from an imperfect time correction as a function of the number of triggered channels in a chip (see section \ref{subsec:ped_shift}) as mostly high energy hits are coming from the electromagnetic core of the hadronic shower.
+The mean time of the first hit taken in a time window of -50 ns to 200 ns as a function of the hit energy is shown in figure \ref{fig:Energy_Comparison} for muon, electron and pion beams. For muons and electrons, no dependence on energy is observed as expected, all hits are instantaneous independent of their energy. For 10 GeV pions, a delay of 2-3 ns at 0.5 MIP is observed and decreases down to 0-1 ns above 1 MIP. For higher pion energies, the mean time of the first hit decreases between 0.5 and 1.5 MIP then increases for hit energies above 1.5 MIPs. This is not expected, thus individual distributions have been checked. An example is shown in figure \ref{fig:TimeBinsEnergy} for 90 GeV pions. After 1.5 MIP, the time distribution gets wider and the maximum of the distribution is de-centered slightly from 0 ns, therefore explaining the increase of the mean time of the first hit for hit energies over 1.5 MIP. This may be coming from an imperfect time correction as a function of the number of triggered channels in a chip (see section \ref{subsec:ped_shift}) as mostly high energy hits are coming from the electromagnetic core of the hadronic shower.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -102,7 +112,7 @@ The mean time of the first hit taken in a time window of -50 ns to 200 ns as a f
 	\caption{On the left, time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The bands represent the systematic uncertainty. On the right, time distribution for 90 GeV pions for different hit energy ranges.}
 \end{figure}
 
-The figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show the comparison of the mean time of first hit as a function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. For other pion beam energies, the figures are available in appendix \ref{appendix:TimingAdd}. For 10 GeV pions, the simulation reproduces well the data within the systematics. For higher energies, a difference is visible in the region 0.5 to 1.5 MIP where the simulation is above the data. Above around 3 MIPs, the data and simulations agree well. Firstly, a difference is visible between the QGSP\_BERT and QGSP\_BERT\_HP physics lists mainly between hit energies of 1-3 MIPs but, in general, the difference is smaller than the systematic uncertainty on the data. Secondly, the QGSP\_BERT and QBBC physics lists are very similar over the full hit energy range. Finally, all models show an increase of the mean time of first hit at small hit energies with higher beam energy. The data does not reflect this.
+Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show the comparison of the mean time of first hit as a function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. For other pion beam energies, the figures are available in appendix \ref{appendix:TimingAdd}. For 10 GeV pions, the simulation reproduces well the data within the systematics. For higher energies, a difference is visible in the region 0.5 to 1.5 MIP where the simulation is above the data. Above around 3 MIPs, the data and simulations agree well. Firstly, a difference is visible between the QGSP\_BERT and QGSP\_BERT\_HP physics lists mainly between hit energies of 1-3 MIPs but, in general, the difference is smaller than the systematic uncertainty on the data. Secondly, the QGSP\_BERT and QBBC physics lists are very similar over the full hit energy range. Finally, all models show an increase of the mean time of first hit at small hit energies with higher beam energy. The data does not reflect this.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -116,7 +126,7 @@ The figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} sh
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf}
 		\caption{} \label{fig:Energy_SimData_90GeV}
 	\end{subfigure}
-	\caption{Comparison of the mean time of first hit as function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. The grey and color bands shows the statistical and systematic uncertainties.}
+	\caption{Comparison of the mean time of the first hit as function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. The grey and color bands shows the statistical and systematic uncertainties.}
 \end{figure}
 
 This comparison study seems to confirm that low energy hits are responsible for delayed energy depositions in the calorimeter, most likely due to low energy neutrons from capture and spallation processes. Higher energy deposits occur mostly in the prompt part of the hadron shower.
@@ -169,7 +179,7 @@ The radial dependence of the time of first hit of 50 GeV pion showers is compare
 \subsection{Time dependence with the shower depth}
 \label{sec:TimeRadiusDepth}
 
-The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the layer. The layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. The study has been compared to simulation with the QGSP\_BERT\_HP physics list as well and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the layer 3 shows a slope of around 1.7 ns per tile and the layer 14 show a slope of 0.5 ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the late component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons.
+The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the layer. Layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. The study has been compared to simulation with the QGSP\_BERT\_HP physics list as well and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the layer 3 shows a slope of around 1.7 ns per tile and the layer 14 show a slope of 0.5 ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the late component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}

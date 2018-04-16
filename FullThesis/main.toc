@@ -122,10 +122,10 @@
 \contentsline {section}{\numberline {9.5}Time of the first hit distribution}{103}{section.9.5}
 \contentsline {subsection}{\numberline {9.5.1}Determination of the time reference offset}{103}{subsection.9.5.1}
 \contentsline {subsection}{\numberline {9.5.2}Time resolution of the AHCAL after calibration}{104}{subsection.9.5.2}
-\contentsline {section}{\numberline {9.6}Corrections applied to data}{104}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{104}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{106}{subsection.9.6.2}
-\contentsline {subsection}{\numberline {9.6.3}Time of first hit for muons after corrections}{107}{subsection.9.6.3}
+\contentsline {section}{\numberline {9.6}Corrections applied to data}{106}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{106}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{107}{subsection.9.6.2}
+\contentsline {subsection}{\numberline {9.6.3}Time of first hit for muons after corrections}{108}{subsection.9.6.3}
 \contentsline {chapter}{\numberline {10}Validation of the time calibration}{109}{chapter.10}
 \contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{109}{section.10.1}
 \contentsline {section}{\numberline {10.2}Effect of the number of triggered channels on the time distribution}{109}{section.10.2}
@@ -156,14 +156,14 @@
 \contentsline {subsection}{\numberline {12.4.2}Event Selection}{142}{subsection.12.4.2}
 \contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{142}{subsection.12.4.3}
 \contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{143}{subsection.12.4.4}
-\contentsline {subsubsection}{Assuming perfect time resolution}{143}{section*.146}
-\contentsline {subsubsection}{In a realistic scenario}{147}{section*.152}
+\contentsline {subsubsection}{Assuming perfect time resolution}{143}{section*.147}
+\contentsline {subsubsection}{In a realistic scenario}{147}{section*.153}
 \contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{151}{section.12.5}
 \contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{151}{subsection.12.5.1}
 \contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{152}{subsection.12.5.2}
 \contentsline {section}{\numberline {12.6}Conclusion and Outlook}{154}{section.12.6}
 \contentsline {chapter}{\numberline {13}Summary}{157}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{159}{section*.163}
+\contentsline {chapter}{Acknowledgments}{159}{section*.164}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{161}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{163}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{167}{Appendix.1.C}
@@ -173,7 +173,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{183}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{185}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{189}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{191}{appendix*.195}
-\contentsline {chapter}{List of figures}{193}{appendix*.196}
-\contentsline {chapter}{Acronyms}{205}{section*.197}
-\contentsline {chapter}{Bibliography}{209}{appendix*.199}
+\contentsline {chapter}{List of tables}{191}{appendix*.196}
+\contentsline {chapter}{List of figures}{193}{appendix*.197}
+\contentsline {chapter}{Acronyms}{205}{section*.198}
+\contentsline {chapter}{Bibliography}{209}{appendix*.200}

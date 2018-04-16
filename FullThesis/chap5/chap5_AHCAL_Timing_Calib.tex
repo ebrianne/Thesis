@@ -5,7 +5,7 @@
 \section{Introduction}
 \label{sec:TimingIntro}
 
-As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for the timing calibration and cross-checks as electromagnetic showers are instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
+As explained in section \ref{sec:InteracHeavyPart}, muons interact primarily via ionization. This process is instantaneous and therefore muons are a good candidate to perform the timing calibration of the AHCAL. Similarly, electrons can be used for the timing calibration and cross-checks as electromagnetic showers are quasi-instantaneous. On the contrary, the pion data cannot be used for this purpose due to delayed energy depositions in hadron showers.
 
 The time information provided by the SPIROC in the data is in TDC units (see section \ref{sec:SPIROC2B}). Similar to the ADC scale, it would be difficult to compare directly channels using the TDC unit. The TDC information needs to be interpreted into a common unit of time, the nanosecond. The TDC information of each channel can be converted into nanoseconds following the simple schematic shown in figure \ref{fig:ConvertTime}.
 
@@ -50,9 +50,9 @@ In this chapter, the muon dataset shown in section \ref{subsec:dataset} is used 
 
 To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
 \begin{equation} \label{eq:slope}
-	s \: \text{[ns/TDC]} = \frac{3920}{a - b}
+	s \: \text{[ns/TDC]} = \frac{3920}{b - a}
 \end{equation}
-where $s$ is the TDC ramp slope, $a$ is the endpoint of the TDC ramp and $b$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC voltage ramp.
+where $s$ is the TDC ramp slope, $b$ is the endpoint of the TDC ramp and $a$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC voltage ramp.
 
 At a first order, the slope of the TDC ramp is assumed to be linear. The parameters $a$ and $b$ are extracted from the TDC spectrum of a channel per chip and BXID parity using only the first memory-cell as shown in figure \ref{fig:TDC_Spectrum}. The TDC ramp slope does not depend on the memory-cell as the memory-cell only introduce an offset on the parameters $a$ and $b$. A total of 208 slopes have to be extracted for the testbeam setup.
 
@@ -68,7 +68,7 @@ At a first order, the slope of the TDC ramp is assumed to be linear. The paramet
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.pdf}
 		\caption{} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
-	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The yellow bands represent the uncertainty on the extraction of the parameter $a$ and $b$. The extracted parameters are $s$ = 1.47 $\pm$ 0.01 ns/TDC, $b$ = 888 $\pm$ 5 TDC and $a$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
+	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $s$ = 1.47 $\pm$ 0.01 ns/TDC, $b$ = 888 $\pm$ 5 TDC and $a$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
 \end{figure}
 
 The extraction of the parameters $a$ and $b$ is done by detecting the edges of the TDC spectrum. A threshold $\mu$ is used to extract $a$. This threshold corresponds to the mean of the vertical axis of the TDC spectrum. The parameter $a$ is extracted as the value of the first bin above 30\% of the threshold $\mu$. The endpoint of the ramp is extracted as the value of the last bin above 50\% of the maximum bin content of the TDC spectrum. The start point and the endpoint of the ramp are not extracted as the first and the last bin of the TDC spectrum, because the extraction technique needs to be robust against outliers and strange spectra such as the one shown in figure \ref{fig:TDC_Spectrum_bad}.
@@ -87,7 +87,7 @@ Once the ramp slope has been extracted for each chip and BXID parity, the time o
 \begin{equation} \label{eq:time_chn}
 	t_{i} \: \text{[ns]} = s \times (\text{TDC}_{i} - b)
 \end{equation}
-where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $b$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeHit}).
+where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $b$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeFH}).
 
 \section{Calibration of the time reference}
 \label{section:time_ref}
@@ -98,15 +98,15 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5.pdf}
-		\caption{Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$.}	\label{fig:T0_Correction}
+		\caption{}	\label{fig:T0_Correction}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError}
-		\caption{Distribution of the uncertainty $\sigma_{ref}$. The red line represents the cut of 4 ns.} \label{fig:T0ReferenceError}
+		\caption{} \label{fig:T0ReferenceError}
 	\end{subfigure}
-	\caption{\subref{fig:T0_Correction}) The histogram in blue shows the difference between the channels before correction, the histogram in red shows the difference after correction. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependent of the bunch-crossing parity. \subref{fig:T0ReferenceError}}
+	\caption{\subref{fig:T0_Correction}) Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependent of the bunch-crossing parity. \subref{fig:T0ReferenceError}) Distribution of the uncertainty $\sigma_{ref}$. The red line represents the cut of 4 ns.}
 \end{figure}
 
 Events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range as shown in table \ref{table:T0_sel} to reject noise hits from these channels. These channels receive the trigger coincidence signal at the same time, and therefore a timing correction is applied to ensure that they match in time. This is done to remove any effect induced by the front-end electronics.
@@ -171,6 +171,25 @@ It is expected that the time distribution should follow a Gaussian distribution.
 		\caption{}\label{fig:reso_nocorrection}
 	\end{subfigure}
 	\caption{\subref{fig:timing_nocorrection}) Time of the first hit distribution of the AHCAL after the time calibration. $\mu$ = -0.06 ns , RMS = 5.65 ns. The distribution is asymmetric to the left. \subref{fig:reso_nocorrection}) Time resolution for all layers in the AHCAL. The mean RMS time resolution is represented by the blue line. The sigma resolution of each layer is obtained from a Gaussian fit. Mean $\sigma$ = 5.65 ns, Mean RMS = 5.82 ns.}
+\end{figure}
+
+In order to know what time resolution could be expected without the influence of the electronics, a small MC toy study has been done. Firstly, a \geant simulation of the propagation of photons generated by a muon within an AHCAL tile is done \cite{Liu:2015cpe}. The simulation gives the distribution of the arrival time of the photons on the SiPM. Secondly, the MC toy generates a random number of fired pixels for each event from a Landau distribution with a MPV corresponding to a light yield of 15 pixels. Each generated photon is assigned an arrival time randomly from the distribution of the time of arrival obtained from the simulation. The photons are then sorted by time of arrival from the earliest to the latest and the time of the 5th photon is taken as it corresponds to the threshold of 0.3 MIP of the AHCAL. The MC toy is repeated 100 000 times.
+
+The distribution of the time of arrival of the 5th photon is shown in figure \ref{fig:time_arrival5th}. The time resolution from the propagation is then around 0.9 ns which is much smaller than the obtained time resolution. This gives confidence that the time resolution obtained is dominated by the electronics. In addition, it is expected that with a higher number of fired pixels, like for electromagnetic showers, that the time resolution from the propagation decreases. This is confirmed by the figure \ref{fig:time_arrival5th_LY}.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy.pdf}
+		\caption{}\label{fig:time_arrival5th}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe.pdf}
+		\caption{}\label{fig:time_arrival5th_LY}
+	\end{subfigure}
+	\caption{\subref{fig:time_arrival5th}) Distribution of the time of arrival of the 5th photon for a light yield of 15 pixels per MIP. \subref{fig:time_arrival5th_LY}) RMS/Mean of the time of arrival of the 5th photon as a function of the number of fired pixels. As expected, the RMS/Mean decreases with a higher number of fired pixels.}
 \end{figure}
 
 \section{Corrections applied to data}
@@ -241,7 +260,7 @@ The correction is assumed to be the same for all the chips, independent threshol
 \subsection{Time of first hit for muons after corrections}
 \label{subsec:Muon_final}
 
-The figure \ref{fig:timing_muons} shows the time of first hit distribution for muons after the time-walk correction. An improvement of around 3\% is achieved on the time resolution of the AHCAL. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The asymmetry of the distribution will be taken into account in the simulation by parametrizing the time distribution with a double Gaussian function.
+Figure \ref{fig:timing_muons} shows the time of first hit distribution for muons after the time-walk correction. An improvement of around 3\% is achieved on the time resolution of the AHCAL. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The asymmetry of the distribution will be taken into account in the simulation by parametrizing the time distribution with a double Gaussian function.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.5\textwidth}

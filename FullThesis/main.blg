@@ -32,12 +32,16 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: oath.aux
 Database file #1: biblio.bib
 Warning--entry type for "ILCSoftPortal" isn't style-file defined
---line 61 of file biblio.bib
+--line 81 of file biblio.bib
 Warning--entry type for "OmegaWeb" isn't style-file defined
---line 408 of file biblio.bib
+--line 428 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
---line 444 of file biblio.bib
-Repeated entry---line 1284 of file biblio.bib
+--line 464 of file biblio.bib
+Repeated entry---line 1232 of file biblio.bib
+ : @inproceedings{Liu:2015cpe
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1304 of file biblio.bib
  : @article{Chatrchyan:2012xdj
  :                            ,
 I'm skipping whatever remains of this entry
@@ -133,4 +137,4 @@ warning$ -- 50
 while$ -- 287
 width$ -- 162
 write$ -- 1455
-(There was 1 error message)
+(There were 2 error messages)
