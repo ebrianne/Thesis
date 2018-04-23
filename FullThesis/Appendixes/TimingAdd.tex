@@ -69,6 +69,8 @@
   \label{fig:sim_data_elec_nHits}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Time distribution %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
@@ -92,116 +94,278 @@
     \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters.pdf}
     \caption{90 GeV.} \label{fig:dNdt_SimData_90GeV}
   \end{subfigure}
-  \caption{Time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The grey box represents the statistic and systematic uncertainty of the data. The error bars are the uncertainty on the simulation obtained by varying the cross-talk parameter and the uncertainty on the time smearing.}
+  \caption{Time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The grey box represents the statistic and systematic uncertainty of the data. The error bars are the uncertainty on the \mokka simulation obtained by varying the cross-talk parameter and the uncertainty on the time smearing.}
 \end{figure}
 
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV.pdf}
-    \caption{30 GeV.}\label{fig:Energy_SimData_30GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion30GeV_LateClusters_DD4hep.pdf}
+    \caption{30 GeV.}\label{fig:dNdt_SimData_30GeV_DD4hep}
   \end{subfigure}
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion50GeV_LateClusters_DD4hep.pdf}
+    \caption{50 GeV.} \label{fig:dNdt_SimData_50GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion70GeV_LateClusters_DD4hep.pdf}
+    \caption{70 GeV.} \label{fig:dNdt_SimData_70GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion90GeV_LateClusters_DD4hep.pdf}
+    \caption{90 GeV.} \label{fig:dNdt_SimData_90GeV_DD4hep}
+  \end{subfigure}
+  \caption{Time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The grey box represents the statistic and systematic uncertainty of the data. The error bars are the uncertainty on the \ddhep simulation obtained by varying the cross-talk parameter and the uncertainty on the time smearing.}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Energy %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka.pdf}
+    \caption{30 GeV.}\label{fig:Energy_SimData_30GeV}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka.pdf}
     \caption{50 GeV.} \label{fig:Energy_SimData_50GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka.pdf}
     \caption{70 GeV.} \label{fig:Energy_SimData_70GeV}
   \end{subfigure}
-  \hfill
-  % \begin{subfigure}[t]{0.5\textwidth}
-  %   \centering
-  %   \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV.pdf}
-  %   \caption{90 GeV.} \label{fig:Energy_SimData_90GeV}
-  % \end{subfigure}
-  \caption{Comparison between simulations and data of the time of first hit as function of the hit energy for pion beams between 30 GeV and 70 GeV. The grey and color bands shows the systematics.}
+  \caption{Comparison between the \mokka simulation and data of the time of first hit as function of the hit energy for pion beams between 30 GeV and 70 GeV. The grey and color bands shows the systematics.}
 \end{figure}
 
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep.pdf}
+    \caption{10 GeV.}\label{fig:Energy_SimData_10GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep.pdf}
+    \caption{30 GeV.}\label{fig:Energy_SimData_30GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep.pdf}
+    \caption{50 GeV.} \label{fig:Energy_SimData_50GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep.pdf}
+    \caption{70 GeV.} \label{fig:Energy_SimData_70GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep.pdf}
+    \caption{90 GeV.} \label{fig:Energy_SimData_90GeV_DD4hep}
+  \end{subfigure}
+  \caption{Comparison between the \ddhep simulation and data of the time of first hit as function of the hit energy for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Radius %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka.pdf}
     \caption{10 GeV.} \label{fig:Radius_SSF_SimData_10GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF.pdf}
-    \caption{30 GeV.} \label{fig:Radius_SSF_SimData_30GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka.pdf}
+    \caption{50 GeV.} \label{fig:Radius_SSF_SimData_50GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka.pdf}
     \caption{70 GeV.} \label{fig:Radius_SSF_SimData_70GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka.pdf}
     \caption{90 GeV.} \label{fig:Radius_SSF_SimData_90GeV}
   \end{subfigure}
-  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and simulations for pion beam energies between 10 GeV and 90 GeV for layers 3 to 10. The grey and color bands shows the systematics.}
+  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and the \mokka simulation for pion beam energies between 10 GeV and 90 GeV for layers 3 to 10. The grey and color bands shows the systematics.}
 \end{figure}
 
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL.pdf}
-    \caption{10 GeV.}\label{fig:Radius_BL_SimData_10GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep.pdf}
+    \caption{10 GeV.} \label{fig:Radius_SSF_SimData_10GeV_DD4hep}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL.pdf}
-    \caption{30 GeV.} \label{fig:Radius_BL_SimData_30GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep.pdf}
+    \caption{30 GeV.} \label{fig:Radius_SSF_SimData_30GeV_DD4hep}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL.pdf}
-    \caption{70 GeV.} \label{fig:Radius_BL_SimData_70GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep.pdf}
+    \caption{50 GeV.} \label{fig:Radius_SSF_SimData_30GeV_DD4hep}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL.pdf}
-    \caption{90 GeV.} \label{fig:Radius_BL_SimData_90GeV}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep.pdf}
+    \caption{70 GeV.} \label{fig:Radius_SSF_SimData_70GeV_DD4hep}
   \end{subfigure}
-  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and simulations for pion beam energies between 10 GeV and 90 GeV for layers 11 to 14. The grey and color bands shows the systematics.}
-  \label{fig:Radius_BL_SimData_Comparison}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep.pdf}
+    \caption{90 GeV.} \label{fig:Radius_SSF_SimData_90GeV_DD4hep}
+  \end{subfigure}
+  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and the \ddhep simulation for pion beam energies between 10 GeV and 90 GeV for layers 3 to 10. The grey and color bands shows the systematics.}
 \end{figure}
 
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka.pdf}
+    \caption{10 GeV.} \label{fig:Radius_SSF_SimData_10GeV}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka.pdf}
+    \caption{30 GeV.} \label{fig:Radius_SSF_SimData_30GeV}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka.pdf}
+    \caption{70 GeV.} \label{fig:Radius_SSF_SimData_70GeV}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka.pdf}
+    \caption{90 GeV.} \label{fig:Radius_SSF_SimData_90GeV}
+  \end{subfigure}
+  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and the \mokka simulation for pion beam energies between 10 GeV and 90 GeV for layers 11 to 14. The grey and color bands shows the systematics.}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep.pdf}
+    \caption{10 GeV.}\label{fig:Radius_BL_SimData_10GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep.pdf}
+    \caption{30 GeV.} \label{fig:Radius_BL_SimData_30GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep.pdf}
+    \caption{50 GeV.} \label{fig:Radius_BL_SimData_50GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep.pdf}
+    \caption{70 GeV.} \label{fig:Radius_BL_SimData_70GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep.pdf}
+    \caption{90 GeV.} \label{fig:Radius_BL_SimData_90GeV_DD4hep}
+  \end{subfigure}
+  \caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and the \ddhep simulation for pion beam energies between 10 GeV and 90 GeV for layers 11 to 14. The grey and color bands shows the systematics.}
+  \label{fig:Radius_BL_SimData_Comparison_DD4hep}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Depth %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka.pdf}
     \caption{10 GeV.}\label{fig:Depth_SimData_10GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka.pdf}
     \caption{30 GeV.} \label{fig:Depth_SimData_30GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka.pdf}
     \caption{50 GeV.} \label{fig:Depth_SimData_50GeV}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.5\textwidth}
     \centering
-    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV.pdf}
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka.pdf}
     \caption{70 GeV.} \label{fig:Depth_SimData_70GeV}
   \end{subfigure}
-  \caption{Comparison of the time of first hit as function of the layer position in data and simulations for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
+  \caption{Comparison of the time of first hit as function of the layer position in data and the \mokka simulation for pion beams between 10 GeV and 70 GeV. The grey and color bands shows the systematics.}
 \end{figure}
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep.pdf}
+    \caption{10 GeV.}\label{fig:Depth_SimData_10GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep.pdf}
+    \caption{30 GeV.} \label{fig:Depth_SimData_30GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep.pdf}
+    \caption{50 GeV.} \label{fig:Depth_SimData_50GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep.pdf}
+    \caption{70 GeV.} \label{fig:Depth_SimData_70GeV_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep.pdf}
+    \caption{90 GeV.} \label{fig:Depth_SimData_90GeV_DD4hep}
+  \end{subfigure}
+  \caption{Comparison of the time of first hit as function of the layer position in data and the \ddhep simulation for pion beams between 10 GeV and 90 GeV. The grey and color bands shows the systematics.}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Time correlations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}[htbp!]
   \begin{subfigure}[t]{0.5\textwidth}
@@ -228,4 +392,31 @@
     \caption{Long correlation (QBBC).} \label{fig:Corr_long_QBBC}
   \end{subfigure}
   \caption{Timing correlations between layers 6 and 7 and layers 13 and 14 in \mokka simulations for different physics lists in 50 GeV pion beam. Each bins are normalized to the number of entries in the 2D histogram.}
+\end{figure}
+
+\begin{figure}[htbp!]
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep.pdf}
+    \caption{Short correlation (QGSP\_BERT).}\label{fig:Corr_short_QGSPBERT_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep.pdf}
+    \caption{Long correlation (QGSP\_BERT).} \label{fig:Corr_long_QGSPBERT_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep.pdf}
+    \caption{Short correlation (QBBC).} \label{fig:Corr_short_QBBC_DD4hep}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[t]{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep.pdf}
+    \caption{Long correlation (QBBC).} \label{fig:Corr_long_QBBC_DD4hep}
+  \end{subfigure}
+  \caption{Timing correlations between layers 6 and 7 and layers 13 and 14 in \ddhep simulations for different physics lists in 50 GeV pion beam. Each bins are normalized to the number of entries in the 2D histogram.}
 \end{figure}

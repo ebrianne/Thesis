@@ -151,29 +151,29 @@
 \contentsline {subsection}{\numberline {12.2.2}Calorimeter digitization}{136}{subsection.12.2.2}
 \contentsline {subsection}{\numberline {12.2.3}Pandora PFA}{137}{subsection.12.2.3}
 \contentsline {section}{\numberline {12.3}Check of the energy reconstruction}{137}{section.12.3}
-\contentsline {section}{\numberline {12.4}Influence of timing cuts on hadronic showers in the ILD detector}{141}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}Motivation}{141}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}Event Selection}{142}{subsection.12.4.2}
+\contentsline {section}{\numberline {12.4}Influence of timing cuts on hadronic showers in the ILD detector}{139}{section.12.4}
+\contentsline {subsection}{\numberline {12.4.1}Motivation}{139}{subsection.12.4.1}
+\contentsline {subsection}{\numberline {12.4.2}Event Selection}{141}{subsection.12.4.2}
 \contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{142}{subsection.12.4.3}
 \contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{143}{subsection.12.4.4}
 \contentsline {subsubsection}{Assuming perfect time resolution}{143}{section*.147}
 \contentsline {subsubsection}{In a realistic scenario}{147}{section*.153}
-\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{151}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{151}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{152}{subsection.12.5.2}
+\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{149}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{149}{subsection.12.5.1}
+\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{153}{subsection.12.5.2}
 \contentsline {section}{\numberline {12.6}Conclusion and Outlook}{154}{section.12.6}
-\contentsline {chapter}{\numberline {13}Summary}{157}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{159}{section*.164}
-\contentsline {chapter}{Appendix \numberline {A}Event selection}{161}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{163}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{167}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{177}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{179}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{181}{Appendix.1.F}
-\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{183}{Appendix.1.G}
-\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{185}{Appendix.1.H}
-\contentsline {chapter}{Appendix \numberline {I}Calibration database}{189}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{191}{appendix*.196}
-\contentsline {chapter}{List of figures}{193}{appendix*.197}
-\contentsline {chapter}{Acronyms}{205}{section*.198}
-\contentsline {chapter}{Bibliography}{209}{appendix*.200}
+\contentsline {chapter}{\numberline {13}Summary}{155}{chapter.13}
+\contentsline {chapter}{Acknowledgments}{157}{section*.164}
+\contentsline {chapter}{Appendix \numberline {A}Event selection}{159}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{161}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{165}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{181}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{183}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{185}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{187}{Appendix.1.G}
+\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{189}{Appendix.1.H}
+\contentsline {chapter}{Appendix \numberline {I}Calibration database}{193}{Appendix.1.I}
+\contentsline {chapter}{List of tables}{195}{appendix*.202}
+\contentsline {chapter}{List of figures}{197}{appendix*.203}
+\contentsline {chapter}{Acronyms}{209}{section*.204}
+\contentsline {chapter}{Bibliography}{213}{appendix*.206}

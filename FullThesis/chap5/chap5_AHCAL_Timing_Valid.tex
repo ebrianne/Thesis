@@ -131,7 +131,7 @@ For a significant assessment of differences observed between data and simulation
 \begin{itemize}
 	\item Non-Linearity correction: A non-linearity correction (see section \ref{subsec:lin_corr}) is determined from data with a limited accuracy lead to a systematic uncertainty. The residuals of the correction give a systematic error at the level of 0.2 ns.
 	\item Time walk correction: Similarly to the non-linearity correction, the systematic error obtained from the residuals of the time walk correction (see section \ref{subsec:timewalk}) is in the order of 0.2 ns.
-	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit in the order of 1 ns. This systematic error is the most dominant over all other uncertainties. For the time of first hit distribution, a systematic uncertainty is applied bin-by-bin for electrons and pions in the region of -30 ns to 30 ns. Outside of this region, a systematic error of 50\% is taken (see section \ref{subsec:Systematic_Correction}).
+	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit. The error for the mean time of the hit is computed per bins of energy, radius and depth by weighting according to the fraction of hits in the regions of 0-5, 5-12 and over 12 number of hits per chip with the errors of 2, 5 and 7 ns respectively. The error varies between 1.8 to 3 ns. For the time of first hit distribution, a systematic uncertainty is applied bin-by-bin for electrons and pions in the region of -30 ns to 30 ns. Outside of this region, a systematic error of 50\% is taken (see section \ref{subsec:Systematic_Correction}). This systematic error is the most dominant over all other uncertainties.
 	\item AHCAL energy scale: The energy scale of the AHCAL was determined using the muon dataset (see chapter \ref{chap:ECalibAHCAL}). A systematic uncertainty on the MIP scale of around 3.6\% was derived by dividing the muon sample in odd and even run numbers and by looking at the average spread of the fitted MIP value for both subsamples. This is converted to an uncertainty in time using the mean time of first hit as a function of the hit energy using the QGSP\_BERT\_HP physics list. At 0.5 MIP, this results in an uncertainty of 0.1 ns. For hits above 1 MIP, the uncertainty is below 0.05 ns.
 	\item Global time smearing parameters: A global time smearing parametrization is used from muon data to smear the time in simulation. A bin-by-bin systematic error is applied to the time of first hit distribution to take into account the difference with a layer-wise time smearing parametrization.
 	\item Number of triggered channels in a chip parametrization: A smearing parametrization of the width of the time distribution as a function of the number of triggered channels in a chip is obtained from electron data. An error band on the width was obtained by comparing all electron energies as explained (see appendix \ref{appendix:ped_shift}). This is applied to simulation for systematics.
@@ -152,7 +152,7 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		\midrule
 		Non-linearity correction & 0.2 ns \\
 		Time-walk correction & 0.2 ns \\
-		Number of triggered channels correction & 1 ns / bin-wise (e/$\pi$)\\
+		Number of triggered channels correction & 1.8 - 3 ns / bin-wise (e/$\pi$)\\
 		Energy Scale & 0.05-0.1 ns \\
 		Time of flight offset & 0.01 ns (MC) \\
 		Cross-talk parameter & 10-18\% (MC)\\
@@ -164,8 +164,9 @@ The systematic uncertainties are added in quadrature for the full systematic unc
 		\multicolumn{2}{c}{Systematics combined} \\
 		\midrule
 		data-MC ToFH distribution & bin-wise (e) - bin-wise + 10\% ($\pi$) \\
-		data-MC vs hit energy & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
-		data-MC vs hit distance to shower CoG & 0.3 ns ($\mu$) - 1.09 ns (e/$\pi$)\\
+		data-MC vs hit energy & 0.3 ns ($\mu$) - 1.8 to 3 ns (e/$\pi$)\\
+		data-MC vs hit distance to shower CoG & 0.3 ns ($\mu$) - 1.8 to 3 ns (e/$\pi$)\\
+		data-MC vs hit depth & 0.3 ns ($\mu$) - 1.8 to 3 ns (e/$\pi$)\\
 		\bottomrule
 	\end{tabular}
 \end{table}
