@@ -1319,6 +1319,9 @@ INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/Linearity_TimeCuts_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerResoAbsolute_TimeCuts_noSmearing.pdf
+INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerEnergy_TimeCuts_noSmearing.pdf
+INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerEnergy_TimeCuts_noSmearing.pdf
+INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/ShowerEnergy_TimeCuts_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf
 INPUT ../Thesis_Plots/ILD/NoSmearing/Plots/RadialProfileOverlay_noSmearing.pdf
