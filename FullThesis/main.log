@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  24 APR 2018 19:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  25 APR 2018 16:20
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1823,7 +1823,17 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 
 
 
-]) [4]
+]
+Overfull \hbox (22.73837pt too wide) in paragraph at lines 29--30
+\T1/futs/m/n/10 ftiger lin-earer Lepton-Collider, der für Un-ter-suchun-gen der Präzi-sion-sphysik in einem Schw-er-punkt der Massenen-
+ []
+
+)
+Overfull \hbox (13.97829pt too wide) in paragraph at lines 35--19
+[]\T1/futs/m/n/10 Im let-zten Teil dieser Ar-beit wird eine Studie über die Auswirkun-gen von Timing-Kürzungen auf die Kalorime-
+ []
+
+[4]
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 24.
  (./main.toc
@@ -3535,17 +3545,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, id=8707, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf  used on input line 382.
+Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf  used on input line 360.
 (pdftex.def)             Requested size: 268.88127pt x 193.4852pt.
 <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, id=8709, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf  used on input line 398.
+Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf  used on input line 370.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, id=8710, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf>
-Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf  used on input line 404.
+Package pdftex.def Info: ../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf  used on input line 376.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 ) (./chap6/chap6_conclusion.tex [154 <../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf, page is rotated 90 degrees>])) [155 <../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf, page is rotated 90 degrees> <../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_1ns_30GeV.pdf, page is rotated 90 degrees>]
 \openout2 = `summary.aux'.
@@ -4780,14 +4790,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  36826 strings out of 492985
  712308 string characters out of 6132585
- 869117 words of memory out of 5000000
+ 869076 words of memory out of 5000000
  38832 multiletter control sequences out of 15000+600000
  760135 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,95p,10371b,1446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/put
 r8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
-Output written on main.pdf (237 pages, 29789767 bytes).
+Output written on main.pdf (237 pages, 29796409 bytes).
 PDF statistics:
  13291 PDF objects out of 15390 (max. 8388607)
  7153 compressed objects within 72 object streams

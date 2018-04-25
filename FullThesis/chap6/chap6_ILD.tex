@@ -290,7 +290,7 @@ The energy resolution as a function of the shower width is shown in figures \ref
   \caption{Energy resolution as a function of the shower width assuming different time resolutions. The top plot shows the relative energy resolution $\frac{\sigma_{E}}{E}$ for kaons from 5 to 90 \GeV where each point is representing a timing cut as function of the shower width. The bottom plot shows the deviation to the nominal resolution at 100 ns as a function of the shower width. The error bars are statistical uncertainties.}
 \end{figure}
 
-From these figures, we can conclude that a timing resolution of around 1 ns or better would be ideal. In this case, the calorimeter linearity and energy resolution does not get affected much for timing cuts around 5-10 ns. This can be explain because more than 90\% of the energy is deposited within 10 ns. This deposited energy can be identified mostly to the core of the shower in a radius of around 10 cm around the main shower axis. Moreover, the shower width get reduced by around 40-50\%. However, for higher timing resolution, the linearity and energy resolution would get much more affected for timing cuts of 5-10 ns. The shower width can still be reduced by around 30\% for a loss in resolution of around 6-8\% and a degradation of the linearity by 20-30\% maximum. One could use timing information in order to improve the pattern recognition efficiently. For example, timing could be used to help in the clustering step in Pandora, especially for nearby close showers. Then a re-clustering step taking into account timing information could be done to recover the loss in energy resolution and linearity. In addition, as the electromagnetic core of the shower is related to quasi-instantaneous energy depositions and the hadronic part of the shower is related to late energy depositions, timing information could be used to improve the energy resolution by software compensation \cite{Benaglia2016}.
+From these figures, we can conclude that for a timing resolution of around 1 ns or better, the calorimeter linearity and energy resolution does not get affected much for timing cuts around 5-10 ns. This can be explain because more than 90\% of the energy is deposited within 10 ns. This deposited energy can be identified mostly to the core of the shower in a radius of around 10 cm around the main shower axis. Moreover, the shower width get reduced by around 40-50\%. However, for higher timing resolution, the linearity and energy resolution would get much more affected for timing cuts of 5-10 ns. The shower width can still be reduced by around 30\% for a loss in resolution of around 6-8\% and a degradation of the linearity by 20-30\% maximum. One could use timing information in order to improve the pattern recognition efficiently. For example, timing could be used to help in the clustering step in Pandora, especially for nearby close showers. Then a re-clustering step taking into account timing information could be done to recover the loss in energy resolution and linearity. In addition, as the electromagnetic core of the shower is related to quasi-instantaneous energy depositions and the hadronic part of the shower is related to late energy depositions, timing information could be used to improve the energy resolution by software compensation \cite{Benaglia2016}.
 
 \section{Understanding the degradation of the energy resolution with timing cuts}
 \label{sec:eresdegrad}
@@ -347,33 +347,11 @@ The distribution of $C^{lim}$ for different values of $e^{lim}$ are shown in fig
   \caption{\subref{fig:CLim30_100ns}) Distributions of $C^{lim}$ for different values of $e^{lim}$ for 30 GeV kaons. The red and blue filled histograms corresponds to events that are in the region $E_{mean} \pm \sigma$ respectively. \subref{fig:EhcalCLim30_100ns}) Energy deposited in the HCAL as a function of $C^{lim}$ for $e^{lim}$ = 3.5 MIPs for 30 GeV kaons.}
 \end{figure}
 
-% \begin{figure}[htbp!]
-%   \centering
-%   \begin{subfigure}[t]{0.49\textwidth}
-%     \centering
-%     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_30GeV.pdf}
-%     \caption{30 GeV.} \label{fig:EhcalCLim30_100ns}
-%   \end{subfigure}
-%   \hfill
-%   \begin{subfigure}[t]{0.49\textwidth}
-%     \centering
-%     \includegraphics[width=1\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/EhcalCLim_100ns_80GeV.pdf}
-%     \caption{80 GeV.} \label{fig:EhcalCLim80_100ns}
-%   \end{subfigure}
-%   \caption{\subref{fig:EhcalCLim30_100ns}) Correlation between the energy deposited in the HCAL for 30 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs. \subref{fig:EhcalCLim80_100ns}) Correlation between the energy deposited in the HCAL for 80 GeV kaons and $C^{lim}$ for $e^{lim}$ = 3.5 MIPs.}
-% \end{figure}
-
 In a next step, a timing cut is applied and a comparison with these results is done. It is expected that timing cuts will have an effect of narrowing the $C^{lim}$ distributions, thus bringing the blue $C^{lim}$ distribution (hadronic component) closer to the red $C^{lim}$ distribution (EM component). Therefore reducing the inverse correlation of $C^{lim}$ with the energy deposited as fluctuation are cut down by timing cuts thus, would favor hadronic showers with a higher electromagnetic fraction.
 
 \subsection{Influence of timing cuts on hit energy spectra in HCAL}
 
 A check was performed on the shape of the hit spectra in the HCAL with different timing cuts. The figure \ref{fig:HitSpectra30_timingcuts} shows the hit spectra for 30 GeV kaons with a timing cut of 100 and 1 ns. The green line in the bottom plot represents the value of $e^{lim}$ = 3.5 MIPs.
-
-% \begin{figure}[htbp!]
-%   \centering
-%   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf}
-%   \caption{The upper plot shows the hit energy spectra in the HCAL for 30 GeV kaons with different timing cuts applied. The bottom plot shows the ratio of the spectra compared to 100 ns.} \label{fig:HitSpectra30_timingcuts}
-% \end{figure}
 
 One can notice that the shape of the spectra differs slightly with timing cuts. A large reduction of low energy hits ($\sim$1 MIP) is visible. With a cut of 1 ns, there are around 10\% less hits over 4 MIPs but up to 60\% less hits below 1 MIP. With a value of 3.5 MIP for $e^{lim}$, it seems that there are globally fewer hits below, thus reducing the value of $C^{lim}$. A lower value of $C^{lim}$ would correspond to a higher energy deposited thus giving a hint that timing cuts enhance the electromagnetic response of the calorimeter making even more non-compensating. This is shown in figure \ref{fig:CLim30_1ns}.
 
@@ -382,12 +360,6 @@ One can notice that the shape of the spectra differs slightly with timing cuts. 
   \includegraphics[width=0.6\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/HitEnergySpectra_Comparison_30GeV.pdf}
   \caption{Normalized hit energy spectra in the HCAL for 30 GeV kaons applying a timing cuts of 100 ns in blue and 1 ns in red. The bottom plot shows the ratio of the red spectra to the blue spectra.} \label{fig:HitSpectra30_timingcuts}
 \end{figure}
-
-% \begin{figure}[htbp!]
-%   \centering
-%   \includegraphics[width=0.7\linewidth]{../Thesis_Plots/ILD/AdditionalPlots/Plots/CLim_1ns_30GeV.pdf}
-%   \caption{Distributions of $C^{lim}$ for different values of $e^{lim}$ for 30 GeV kaons for 1 ns timing cut. The blue and red filled histograms corresponds to events that are in the region $E_{mean} \pm \sigma$ respectively.} \label{fig:CLim30_1ns}
-% \end{figure}
 
 The blue $C^{lim}$ distribution has a mean of 0.66 and the red $C^{lim}$ distribution has a mean of 0.58. This corresponds to a separation of 12.1\%. The timing cut of 1 ns has the effect of reducing the distance between both distributions by around 2\% compared to the nominal 100 ns timing cut. To further confirm this observation, the same correlation plots between the energy deposited in the HCAL and $C^{lim}$ is shown in figure \ref{fig:EhcalCLim30_1ns} for 1 ns timing cut. The anti-correlation is reduced slightly with the correlation coefficient going from -0.58 to -0.48 and the distribution looks more circular. This further confirms that the timing cuts reduce the fluctuations between the electromagnetic and hadronic fractions in hadronic showers by cutting the hadronic response and enhancing the electromagnetic response. This has an effect of non-compensation in the response to hadronic showers, thus degrading the energy resolution furthermore.
 
