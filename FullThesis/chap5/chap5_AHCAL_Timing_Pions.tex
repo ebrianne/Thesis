@@ -77,13 +77,13 @@ The QBBC physics list tends to over-estimate the late tail by around a factor 2.
 For all time of first hit distributions, the QGSP\_BERT physics list over-estimates the tail of the distribution by around a factor 10.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters.pdf}
 		\caption{}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Comparison_SimData_Pion10GeV_LateClusters_DD4hep.pdf}
 		\caption{}
@@ -98,13 +98,13 @@ The dependence in energy of the time of first hit has been studied in the follow
 The mean time of the first hit taken in a time window of -50 ns to 200 ns as a function of the hit energy is shown in figure \ref{fig:Energy_Comparison} for muon, electron and pion beams. For muons and electrons, no dependence on energy is observed as expected, all hits are instantaneous independent of their energy. For 10 GeV pions, a delay of 2-3 ns at 0.5 MIP is observed and decreases down to 0-1 ns above 1 MIP. For higher pion energies, the mean time of the first hit decreases between 0.5 and 1.5 MIP then increases for hit energies above 1.5 MIPs. This is not expected, thus individual distributions have been checked. An example is shown in figure \ref{fig:TimeBinsEnergy} for 90 GeV pions. After 1.5 MIP, the time distribution gets wider and the maximum of the distribution is de-centered slightly from 0 ns, therefore explaining the increase of the mean time of the first hit for hit energies over 1.5 MIP. This may be coming from an imperfect time correction as a function of the number of triggered channels in a chip (see section \ref{subsec:ped_shift}) as mostly high energy hits are coming from the electromagnetic core of the hadronic shower.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.pdf}
 		\caption{} \label{fig:Energy_Comparison}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.pdf}
 		\caption{} \label{fig:TimeBinsEnergy}
@@ -115,13 +115,13 @@ The mean time of the first hit taken in a time window of -50 ns to 200 ns as a f
 Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show the comparison of the mean time of first hit as a function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. For other pion beam energies and the \ddhep simulation, the figures are available in appendix \ref{appendix:TimingAdd}. For 10 GeV pions, the simulation reproduces well the data within the systematics. For higher energies, a difference is visible in the region 0.5 to 1.5 MIP where the simulation is above the data. Above 1.5 MIPs, the data and simulations agree well. Firstly, a difference is visible between the QGSP\_BERT and QGSP\_BERT\_HP physics lists mainly between hit energies of 1-3 MIPs but, in general, the difference is smaller than the systematic uncertainty on the data. Secondly, the QGSP\_BERT and QBBC physics lists are very similar over the full hit energy range. Finally, all models show an increase of the mean time of first hit at small hit energies with higher beam energy. The data does not reflect this.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka.pdf}
 		\caption{} \label{fig:Energy_SimData_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka.pdf}
 		\caption{} \label{fig:Energy_SimData_90GeV}
@@ -139,13 +139,13 @@ The prompt component of a hadron shower is dominated by EM sub-showers and relat
 This is investigated by looking at the mean time of first hit as a function of the hit distance to the shower center of gravity defined in the x-y plane of the calorimeter. For the muon data, the hit position in the detector relative to (0,0) is used. The mean time of the first hit as a function of the hit distance to the shower center of gravity is shown in figure \ref{fig:Radius_Comparison_SSF} for the layers 3 to 10 and in figure \ref{fig:Radius_Comparison_BL} the layers 11 to 14 separately. The layers needed to be separated because of a decrease of the mean time of first hit at the distance where there is a transition between a HBU (layers 3 to 10) and a 2 by 2 HBU (layers 11 to 14). This is thought that this effect may be related to the starting point of the pion shower. This is investigated in more details in section \ref{sec:TimeRadiusDepth}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.pdf}
 		\caption{Layers 3 to 10.}\label{fig:Radius_Comparison_SSF}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.pdf}
 		\caption{Layers 11 to 14.}\label{fig:Radius_Comparison_BL}
@@ -159,13 +159,13 @@ For muons and electrons, the mean time of the first hit does not vary with the i
 Nevertheless, the observation is consistent with the expectation of the core of the shower depositing promptly most of the energy via EM sub-showers and relativistic particles near the shower axis. This is followed by a hadronic halo which contributes to delayed signals that may be from mainly neutron-induced processes. For the layers 3 to 10, the mean time of first hit varies between 0 ns at small radius and 10 ns at 25 cm. For the layers 11 to 14, it varies between 0 ns near the shower axis, 4 ns at 25 cm and 6 ns at 35 cm.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka.pdf}
 		\caption{Layers 3 to 10} \label{fig:Radius_SSF_SimData_50GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka.pdf}
 		\caption{Layers 11 to 14} \label{fig:Radius_BL_SimData_50GeV}
@@ -182,13 +182,13 @@ The radial dependence of the time of first hit of 50 GeV pion showers is compare
 The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the layer. Layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. The study has been compared to simulation with the QGSP\_BERT\_HP physics list as well and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the layer 3 shows a slope of around 1.7 ns per tile and the layer 14 show a slope of 0.5 ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the late component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers.pdf}
 		\caption{}\label{fig:Radius_Indivi}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.pdf}
 		\caption{}\label{fig:Radius_Indivi_Sim}
@@ -202,13 +202,13 @@ To understand this effect, the mean time of first hit as a function of the hit d
 The basics of the algorithm is to find the primary pion track and to determine the shower start layer. To determine the shower start layer $s_{layer}$, the number of hits $n_{Hits}^{i, i+1}$ in the layer $i$ and $i+1$ is counted. If $n_{Hits}^{i, i+1} > 6$, the shower is considered started between layer $i$ and $i+1$. To determine the correct layer, the energy sum between layer $i$, $i+1$, $i+2$ and $i+3$ are checked in order to determine the correct layer for the start of the shower. In the case of a layer is identified as the FHI, a cross-check on the length of the primary track is made. The length of the primary track is required to be over three hits. The performance of the algorithm is evaluated by looking at the difference between the reconstructed layer of the FHI and the Monte-Carlo truth information on the start of the shower. This is shown in figure \ref{fig:FHIAlgo}. The performance of the algorithm is good enough in order to get a good estimate of the FHI layer but it has a small tendency to reconstruct the FHI at a deeper layer.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.pdf}
 		\caption{}\label{fig:Diff_FHI_RecoMC}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.pdf}
 		\caption{}\label{fig:Corr_FHI_RecoMC}
@@ -220,13 +220,13 @@ The basics of the algorithm is to find the primary pion track and to determine t
 It is expected, at a constant distance between the reconstructed FHI layer and a layer, that there will be the same dependence of the mean time of the hit as a function of the hit distance to the shower axis because in this way, the same part of the shower is sampled. Or that inversely, looking at a fixed layer, the expected behavior would be a change in the slope of the mean time of first hit as a function of the hit distance to the shower axis for different reconstructed FHI layer. The figures \ref{fig:Radius_FHI} and \ref{fig:Radius_FHI_Fixed} are an attempt for this study.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart.pdf}
 		\caption{}\label{fig:Radius_FHI}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.pdf}
 		\caption{}\label{fig:Radius_FHISim1}
@@ -238,13 +238,13 @@ It is expected, at a constant distance between the reconstructed FHI layer and a
 The data shows that by fixing the distance between the reconstructed FHI layer and a layer, the mean time of first hit displays the same slope within the systematic uncertainties. On the other hand, by looking at a fixed layer, which is in this case the layer 10, it seems that there is a trend of an increase of the curve slope as a function of the reconstructed FHI layer within the systematics. However, because of many layers not working well, it is difficult to find a different comparable configurations to confirm the observation made. In addition, a reduction of the systematic uncertainty is needed. This has been checked in simulation with the QGSP\_BERT\_HP physics list as shown in figures \ref{fig:Radius_FHISim1} and \ref{fig:Radius_FHI_FixedSim}. The simulation agrees well with the observation made in the data.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule.pdf}
 		\caption{}\label{fig:Radius_FHI_Fixed}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule.pdf}
 		\caption{}\label{fig:Radius_FHI_FixedSim}
@@ -258,13 +258,13 @@ The data shows that by fixing the distance between the reconstructed FHI layer a
 Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of mean time of the first hit as a function of the layer position was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange.pdf}
 		\caption{} \label{fig:Depth_Comparison}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.pdf}
 		\caption{}\label{fig:Depth_Comparison_FHI}
@@ -278,13 +278,13 @@ In data, no increase of the mean time is observed as a function of the layer dep
 The longitudinal timing profile was also compared to simulations. The mean time of first hit is compatible with a flat distribution around 0 ns for all models. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth. To check this. the simulation with the QGSP\_BERT\_HP physics list without time smearing is shown in figure \ref{fig:Depth_Sim_noSmearing}. It shows that there is an increase of the mean time of first hit as function of the layer in the order of 1 ns and confirms that due to the electronics time resolution this is not visible in data.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka.pdf}
 		\caption{} \label{fig:Depth_SimData_Comparison}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.pdf}
 		\caption{}\label{fig:Depth_Sim_noSmearing}
@@ -309,13 +309,13 @@ where N$_{tot}$ is the total number of entries in the histogram and the nominato
 The results show that 18.19\% of the entries are in the red box region for the short correlation. This may come from EM sub-showers in the hadron shower. For the long correlation, 3.24\% of the entries are in the red box region. This represents a substantial amount of hits that are correlated.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.pdf}
 		\caption{} \label{fig:Time_Corr_short}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.pdf}
 		\caption{}\label{fig:Time_Corr_long}
@@ -324,13 +324,13 @@ The results show that 18.19\% of the entries are in the red box region for the s
 	\label{fig:TimeCorrelation}
 \end{figure}
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.pdf}
 		\caption{Short correlation (QGSP\_BERT\_HP).} \label{fig:Corr_short_QGSPBERTHP}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.pdf}
 		\caption{Long correlation (QGSP\_BERT\_HP).} \label{fig:Corr_long_QGSPBERTHP}

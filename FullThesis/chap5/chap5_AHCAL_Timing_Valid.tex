@@ -27,13 +27,13 @@ For the energy measurement, there is a known and well understood feature of the 
 The mean time of first hit as a function of the number of triggered channels over 0.5 MIP in a chip is shown in figure \ref{fig:nhits_profile}. A time shift up to 20-40 ns can be seen depending on the number of triggered channels in a chip. The cause of the observed effect is most likely due to an element in the chip called a \textit{delay box} that gets unstable with a high charge going through the chip. This chip element is responsible for the hold signal of the TDC ramp in the chip. The hold signal is delayed, and thus a higher TDC ramp value than the one expected is sampled.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/NumberHits_Dependance_AllEnergies.pdf}
 		\caption{}\label{fig:nhits_profile}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.pdf}
 		\caption{}\label{fig:RMS_nHits}
@@ -57,13 +57,13 @@ However, there is still a discrepancy of around 54.6\% from the time resolution 
 The increase of the width of the time distribution is parametrized from data for the simulation. More details about the parametrization implementation in the simulation are given in the appendix \ref{appendix:ped_shift}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_20GeV.pdf}
 		\caption{}\label{fig:timing_electrons_corr}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonAll_ElectronsSingleHit.pdf}
 		\caption{}\label{fig:timing_electron_muon_comp}
@@ -110,13 +110,13 @@ A study has been done to estimate this uncertainty by looking at the time distri
 The figure \ref{fig:timing_syst_10GeV} and \ref{fig:timing_syst_50GeV} show the time distribution for events with the center of gravity in each one of the four tiles for 10 GeV and 50 GeV electron beam energies respectively. For both beam energies, the mean of the time distributions are very similar and are close to 0 ns. The RMS of the time distributions vary between 7.12 ns and 7.45 ns at 10 GeV and between 8.1 ns and 8.8 ns at 50 GeV. The mean deviation from the top left tile is shown in black line in the bottom plots. A relative deviation over 30\% to the top left tile can be seen in the region over 30 ns and under -30 ns. The mean deviation curve in figure \ref{fig:timing_syst_50GeV} is taken as a systematic uncertainty on the bin content in the data truncated in the region from -30 ns to 30 ns. Outside of this region, a systematic uncertainty of 50\% on the bin content is taken.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV.pdf}
 		\caption{}\label{fig:timing_syst_10GeV}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV.pdf}
 		\caption{}\label{fig:timing_syst_50GeV}

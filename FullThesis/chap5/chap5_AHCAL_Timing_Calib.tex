@@ -57,13 +57,13 @@ where $s$ is the TDC ramp slope, $b$ is the endpoint of the TDC ramp and $a$ is 
 At a first order, the slope of the TDC ramp is assumed to be linear. The parameters $a$ and $b$ are extracted from the TDC spectrum of a channel per chip and BXID parity using only the first memory-cell as shown in figure \ref{fig:TDC_Spectrum}. The TDC ramp slope does not depend on the memory-cell as the memory-cell only introduce an offset on the parameters $a$ and $b$. A total of 208 slopes have to be extracted for the testbeam setup.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra.pdf}
 		\caption{} \label{fig:TDC_Spectrum}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.pdf}
 		\caption{} \label{fig:TDC_Spectrum_bad}
@@ -95,13 +95,13 @@ where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ 
 To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guaranty the most accurate result.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5.pdf}
 		\caption{}	\label{fig:T0_Correction}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError}
 		\caption{} \label{fig:T0ReferenceError}
@@ -132,13 +132,13 @@ In a next step, to reduce the uncertainty of the time reference, the time refere
 The time reference of the trigger is delayed compared to the muon passing through the detector because of cabling and the trigger electronics logic. Therefore, the time offset of the time reference is determined from data. Muons are instantaneous particles thus the time of the first hit distribution for each channel, memory cell and BXID should peak at 0 ns.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset.pdf}
 		\caption{}\label{fig:TimeChnwithOffset}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets.pdf}
 		\caption{}\label{fig:BXID_offset}
@@ -159,13 +159,13 @@ After the time calibration, the time of the first hit T$_{chn}$ - T$_{ref}$ is o
 It is expected that the time distribution should follow a Gaussian distribution. However, no fit is performed because of the asymmetry of the time distribution. But a comparison between a Gaussian fit to extract the $\sigma$ and the RMS of the time distribution is done for each layer as shown in figure \ref{fig:reso_nocorrection}. All layers are very similar in terms of time resolution and Gaussian-like. The layer 6 and 10 present a worse time resolution that may be due to the bad quality of these boards. The discrepancy observed for the layer 11 is most likely due to an electronic problem in the TDC voltage ramp of all the chips on that layer. All calibration values, channel-wise and chip-wise time distributions on this layer have been investigated manually and all channels present a large tail to high time value. The reason is not clear and identified.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections.pdf}
 		\caption{}\label{fig:timing_nocorrection}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections.pdf}
 		\caption{}\label{fig:reso_nocorrection}
@@ -178,13 +178,13 @@ In order to know what time resolution could be expected without the influence of
 The distribution of the time of arrival of the 5th photon is shown in figure \ref{fig:time_arrival5th}. The time resolution from the propagation is then around 0.9 ns which is much smaller than the obtained time resolution. This gives confidence that the time resolution obtained is dominated by the electronics. In addition, it is expected that with a higher number of fired pixels, like for electromagnetic showers, that the time resolution from the propagation decreases. This is confirmed by the figure \ref{fig:time_arrival5th_LY}.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy.pdf}
 		\caption{}\label{fig:time_arrival5th}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe.pdf}
 		\caption{}\label{fig:time_arrival5th_LY}
@@ -200,13 +200,13 @@ The distribution of the time of arrival of the 5th photon is shown in figure \re
 The time calibration relies on the linearity of the TDC voltage ramp in the \textit{SPIROC2B}. This assumption is not entirely reliable as described in \cite{Hartbrich2011, Brianne2012}. The voltage slope shows a slight kink around the middle thus leading to a non-linear ramp. For this, a correction of the non-linearity is applied. Since the time reference is determined from a non-linear TDC ramp and it can't be corrected due to the lack of external time reference, the position of $T_{hit}$ - $T_{ref}$ on the ramp is actually corrected here.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0.pdf}
 		\caption{}\label{fig:LinCorr}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0_Corrected.pdf}
 		\caption{}\label{fig:LinCorr_2}
@@ -219,13 +219,13 @@ By investigating the time of the first hit (T$_{fH}$) for each chip and BXID par
 The non-linearity correction results in an improvement in the timing resolution (RMS) of the AHCAL by about 5.1\% (from 5.65 to 5.36 ns) as shown in figure \ref{fig:timing_lincorrection}. Looking at each layer, as shown in figure \ref{fig:reso_lincorrection}, the time resolution decrease by the same amount.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_LinCorrection.pdf}
 		\caption{}\label{fig:timing_lincorrection}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_LinCorrection.pdf}
 		\caption{}\label{fig:reso_lincorrection}
@@ -241,13 +241,13 @@ However, the asymmetry of the time distribution remains. This effect has been in
 The time-walk effect is due to the presence of an energy threshold that induces a time shift between a small amplitude signal and a high amplitude signal. Small amplitude signals will systematically trigger at a later time than high amplitude signals for a shaper that makes the signals peak at the same time. A time correction can be determined by looking at the time of the first hit as a function of the amplitude of the hit. This may be particularly relevant for late energy depositions in hadron showers that comes generally from neutrons depositing little energy in the calorimeter.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile.pdf}
 		\caption{}\label{fig:time_walk}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf}
 		\caption{}\label{fig:time_walk_corr}
@@ -263,13 +263,13 @@ The correction is assumed to be the same for all the chips, independent threshol
 Figure \ref{fig:timing_muons} shows the time of first hit distribution for muons after the time-walk correction. An improvement of around 3\% is achieved on the time resolution of the AHCAL. The figure \ref{fig:timing_reso_all_muons} shows the time resolution obtained for all the layers in the AHCAL. The obtained time resolution is around 5.2 ns RMS. The asymmetry of the distribution will be taken into account in the simulation by parametrizing the time distribution with a double Gaussian function.
 
 \begin{figure}[htbp!]
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf}
 		\caption{}\label{fig:timing_muons}
 	\end{subfigure}
 	\hfill
-	\begin{subfigure}[t]{0.5\textwidth}
+	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf}
 		\caption{}\label{fig:timing_reso_all_muons}
