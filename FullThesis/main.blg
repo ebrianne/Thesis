@@ -1,0 +1,140 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: title.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: chap1/chap1_Theo.aux
+A level-1 auxiliary file: chap2/chap2_ILC.aux
+A level-1 auxiliary file: chap2/chap2_PFA.aux
+A level-1 auxiliary file: chap3/chap3_CALICE_Detectors.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Simulations.aux
+A level-1 auxiliary file: chap4/chap4_AHCAL_Commi.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Selection.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_EnergyCalib.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Calib.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Valid.aux
+A level-1 auxiliary file: chap5/chap5_AHCAL_Timing_Pions.aux
+A level-1 auxiliary file: chap6/chap6_intro.aux
+A level-1 auxiliary file: summary.aux
+A level-1 auxiliary file: acknowledgments.aux
+A level-1 auxiliary file: Appendixes/EvtSelection.aux
+A level-1 auxiliary file: Appendixes/ValidationSim.aux
+A level-1 auxiliary file: Appendixes/TimingAdd.aux
+A level-1 auxiliary file: Appendixes/Noise.aux
+A level-1 auxiliary file: Appendixes/ErrorTDCCalib.aux
+A level-1 auxiliary file: Appendixes/MCParamnHits.aux
+A level-1 auxiliary file: Appendixes/RejectChips.aux
+A level-1 auxiliary file: Appendixes/DeadChn.aux
+A level-1 auxiliary file: Appendixes/Database.aux
+A level-1 auxiliary file: biblio.aux
+The style file: ieeetr.bst
+A level-1 auxiliary file: oath.aux
+Database file #1: biblio.bib
+Warning--entry type for "ILCSoftPortal" isn't style-file defined
+--line 81 of file biblio.bib
+Warning--entry type for "OmegaWeb" isn't style-file defined
+--line 428 of file biblio.bib
+Warning--entry type for "H2Beamline" isn't style-file defined
+--line 464 of file biblio.bib
+Repeated entry---line 1232 of file biblio.bib
+ : @inproceedings{Liu:2015cpe
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1304 of file biblio.bib
+ : @article{Chatrchyan:2012xdj
+ :                            ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
+Warning--empty journal in ILC_TDR_Vol1
+Warning--empty journal in Benaglia2016
+Warning--empty journal in ILC_TDR_Vol2
+Warning--empty author in CMS:2013xfa
+Warning--empty journal in CEPC-SPPCStudyGroup:2015csa
+Warning--empty journal in CEPC-SPPCStudyGroup:2015esa
+Warning--empty journal in ILC_TDR_Vol3.1
+Warning--empty journal in ILC_TDR_Vol3.2
+Warning--empty journal in ILC_TDR_Vol4
+Warning--empty journal in Fujii:2015jha
+Warning--empty author in ATLAS:2014wva
+Warning--empty journal in ATLAS:2014wva
+Warning--empty journal in Fujii:2017vwa
+Warning--empty publisher in Altarelli:2006zza
+Warning--empty journal in ILDCoordinates
+Warning--empty journal in Aicheler:2012bya
+Warning--empty journal in CLIC:2016zwp
+Warning--empty journal in Abe:2010gxa
+Warning--empty journal in Blair:1996kx
+Warning--empty journal in Akchurin:2013yaa
+Warning--empty journal in Marshall2013
+Warning--empty year in Marshall2013
+Warning--empty booktitle in HARDROC:IEEE
+Warning--empty year in HARDROC:IEEE
+Warning--empty journal in Garutti:2017ipx
+Warning--empty journal in Kotera:2015rha
+Warning--empty journal in SPIROC2_datasheet
+Warning--empty journal in Wing:2296332
+Warning--empty booktitle in Felix:AHCALMain2017_HGHCAL
+Warning--empty booktitle in Phi:AHCALMain2017
+Warning--empty booktitle in Felix:AHCALMain2017
+Warning--empty journal in Adloff2013
+Warning--empty year in Adloff2013
+Warning--empty journal in Heikkinen2003
+Warning--empty year in Heikkinen2003
+Warning--empty journal in Folger2003
+Warning--empty year in Folger2003
+Warning--empty booktitle in Geant4PhysicsLists:IEEE
+Warning--empty year in Geant4PhysicsLists:IEEE
+Warning--empty title in CALICESoft
+Warning--empty journal in CALICESoft
+Warning--empty year in CALICESoft
+Warning--empty booktitle in kB:IEEE
+Warning--empty year in kB:IEEE
+Warning--empty school in AmbraEnergy
+Warning--empty journal in Li2013
+Warning--empty year in Li2013
+Warning--empty journal in Jeans2015
+Warning--empty journal in PandoraCalib
+Warning--empty year in PandoraCalib
+You've used 159 entries,
+            1876 wiz_defined-function locations,
+            1421 strings with 31956 characters,
+and the built_in function-call counts, 37142 in all, are:
+= -- 3523
+> -- 1438
+< -- 0
++ -- 559
+- -- 400
+* -- 2372
+:= -- 5261
+add.period$ -- 169
+call.type$ -- 159
+change.case$ -- 149
+chr.to.int$ -- 0
+cite$ -- 209
+duplicate$ -- 2183
+empty$ -- 3618
+format.name$ -- 400
+if$ -- 9197
+int.to.chr$ -- 0
+int.to.str$ -- 159
+missing$ -- 145
+newline$ -- 503
+num.names$ -- 155
+pop$ -- 622
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1418
+stack$ -- 0
+substring$ -- 1699
+swap$ -- 849
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 50
+while$ -- 287
+width$ -- 162
+write$ -- 1455
+(There were 2 error messages)
