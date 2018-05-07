@@ -40,7 +40,7 @@
 \glossentry{fcc}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossentry{fhi}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{125}}}%
+		\setentrycounter[]{page}\glsnumberformat{127}}}%
 \glossentry{fpccd}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossentry{fpga}{\glossaryentrynumbers{\relax 
@@ -78,7 +78,7 @@
 \glossentry{pfa}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{37}}}%
 \glossentry{pfo}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{137}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{139}}}\glsgroupskip
 \glsgroupheading{Q}\relax \glsresetentrylist %
 \glossentry{qcd}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3}}}%
