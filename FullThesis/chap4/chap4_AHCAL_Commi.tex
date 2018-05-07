@@ -41,12 +41,12 @@ The output of the measurement is a list containing the DAC value (from 0 to 128)
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/IDACs_Chip16.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/IDACs_Chip16.eps}
     \caption{} \label{fig:IDAC}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/OutDACs_Chip16.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/OutDACs_Chip16.eps}
     \caption{} \label{fig:OutDAC}
   \end{subfigure}
   \caption{\subref{fig:IDAC}) Reconstructed input DAC curves of the 36 channels for the Chip 16 of the tested batch. \subref{fig:OutDAC}) Reconstructed output DAC curve for same tested chip.}
@@ -133,12 +133,12 @@ Only channels where the integral of the curve is above 6000 are chosen. This is 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Holdscan_HBU2_15.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Holdscan_HBU2_15.eps}
     \caption{Holdscan} \label{fig:Holdscan}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Gain100fF_MainzHBU4.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Gain100fF_MainzHBU4.eps}
     \caption{Gain measured at 100 fF} \label{fig:Gain100fF}
   \end{subfigure}
   \caption{\subref{fig:Holdscan}) Reconstructed signal shape for several channels of Chip 174 on HBU\_{}2\_{}15 (layer 11). Only channels where the integral of the holdscan curve is over 6000 are shown. The dotted red line represent the Hold time chosen for this board. \subref{fig:Gain100fF}) Single pixel spectrum of a single channel. The fit is done by a Multi-Gaussian where the distance between the 1$^{st}$ and 2$^{nd}$ peaks is the fitted SiPM gain.}
@@ -198,7 +198,7 @@ The gain measurement procedure described in section \ref{subsec:GainCharac} is t
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Gain675fF_MainzHBU4.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Gain675fF_MainzHBU4.eps}
     \caption{} \label{fig:Gain675fF}
   \end{subfigure}
   \caption{\subref{fig:PA_curve}) Generic dependence of the gain as function of the pre-amplifier capacitance used to determine the value of the pre-amplifier feedback capacitor to use. \subref{fig:Gain675fF}) Results of the gain fit for the same channel as shown above after adjustment of the pre-amplifier feedback capacitor from 100 fF to 675 fF.}
@@ -210,7 +210,7 @@ The SPIROC2B offers the possibility of setting a global trigger threshold (10-bi
 
 \begin{figure}[htbp!]
   \centering
-  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/Commissioning/Plots/SpectraADC_HBU2_12.pdf}
+  \includegraphics[width=0.6\linewidth]{../Thesis_Plots/Commissioning/Plots/SpectraADC_HBU2_12.eps}
   \caption{ET reference spectrum and AT spectra of a single channel for different trigger threshold values of 300, 350 and 400. One can notice a clear dependence of the trigger position as a function of the threshold value.} \label{fig:ADCTriggerThreshold}
 \end{figure}
 
@@ -219,12 +219,12 @@ The procedure utilizes the integrated LED calibration system to record a number 
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/EfficiencyCurveFit_HBU2_12.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/EfficiencyCurveFit_HBU2_12.eps}
     \caption{} \label{fig:EffiCurve}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/TriggerThresholdFit_HBU2_12.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/TriggerThresholdFit_HBU2_12.eps}
     \caption{} \label{fig:TriggerFit}
   \end{subfigure}
   \caption{\subref{fig:EffiCurve}) Trigger efficiency S-Curve fit for a typical channel at a trigger threshold of 400. $\mu$ = 403.542 $\pm$ 4.04538. \subref{fig:TriggerFit}) Extracted trigger threshold positions as a function of the trigger threshold value. One can observe a linear behavior.}
@@ -245,12 +245,12 @@ This can then be converted into a noise rate as $\textit{Noise Rate} = \frac{\la
 \begin{figure}[htbp!]
   \centering
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/NumberMemFilled_Poisson.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/NumberMemFilled_Poisson.eps}
     \caption{} \label{fig:MemPoison}
   \end{subfigure}
   \hfill
   \begin{subfigure}[t]{0.49\textwidth}
-    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/NoiseMeasurement_SM1.pdf}
+    \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/NoiseMeasurement_SM1.eps}
     \caption{} \label{fig:DCRThr}
   \end{subfigure}
   \caption{\subref{fig:MemPoison}) Observed histogram of the number of memory cells filled per cycle for a typical chip with a trigger threshold of 210 and a time window $T$ of 3 ms. $\lambda_{mem}$ = 1.5 $\pm$ 0.1.\subref{fig:DCRThr}) Extracted noise rate as a function of the trigger threshold setting for a full board.}
