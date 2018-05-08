@@ -14,7 +14,7 @@ However, the time distribution of electrons presents a large tail to the right a
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_AfterMuons.eps}
 	\caption{Time of the first hit distribution for 20 GeV electrons after applying the calibration constants extracted from the muon data. The blue distribution represents the time of first hit distribution obtained with muons.}
 	\label{fig:Timing_electrons}
 \end{figure}
@@ -29,13 +29,13 @@ The mean time of first hit as a function of the number of triggered channels ove
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/NumberHits_Dependance_AllEnergies.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/NumberHits_Dependance_AllEnergies.eps}
 		\caption{}\label{fig:nhits_profile}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ParametrisationPedestalShift_20GeV.eps}
 		\caption{}\label{fig:RMS_nHits}
 	\end{subfigure}
 	\caption{\subref{fig:nhits_profile}) Mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip. The mean time shift upwards with the increase of triggers leading to large tails in the time distribution. A second order polynomial fit is done for the time correction shown by the red dashed line. \subref{fig:RMS_nHits}) The RMS of the time of first hit distribution as a function of the number of triggered channels above 0.5 MIP in a chip for 20 GeV electrons. The RMS of the time distribution can increase up to 10-15 ns for a high number of triggered channels in a chip.}
@@ -43,7 +43,13 @@ The mean time of first hit as a function of the number of triggered channels ove
 
 The time correction parameters are determined by a $2^{nd}$ order polynomial fit to the data as shown by the red line in the figure \ref{fig:nhits_profile}. In order to determine a reliable time correction, the time correction parameters are determined combining all the electron data. This effect may be chip-dependent and the parameters for the correction may differ from chip to chip. However, the limited amount of data does not allow to determine a correction function for each chip. Therefore, a global function is used to correct the time in the data.
 
-Figure \ref{fig:Nhit_residuals} shows the residuals of the mean time of first hit as a function of the number of triggered channels above 0.5 MIP in a chip after the correction. The correction has been applied to all electron samples separately in order to evaluate the systematic uncertainty of the correction. As the figure does not look flat and the residuals vary between few nanoseconds to tens of nanoseconds, three sections have been defined delimited by the red lines to calculate the uncertainty. To not overestimate the uncertainty, half of the residual envelope is taken as uncertainty. From 0-5 hits in a chip, a systematic uncertainty of 2 ns is taken, between 5-12 hits in a chip, a systematic uncertainty of 5 ns is taken and finally above 12 hits in a chip, a systematic of 7 ns is taken. Finally, the uncertainty for the mean time of the hit is computed by weighting according to the fraction of hits in each of the three regions per bins of energy, radius.
+Figure \ref{fig:Nhit_residuals} shows the residuals of the mean time of first hit as a function of the number of triggered channels above 0.5 MIP in a chip ($N_{trig/chip}$) after the correction. The correction has been applied to all electron samples separately in order to evaluate the systematic uncertainty of the correction. Three ranges in $N_{trig/chip}$ have been defined delimited by the red lines to estimate the uncertainty. To not overestimate the uncertainty, half of the residual envelope is taken as uncertainty. For 0 < $N_{trig/chip}$ < 5, a systematic uncertainty of 2 ns is taken, For 5 $\leq$ $N_{trig/chip}$ < 12, a systematic uncertainty of 5 ns is taken and finally for $N_{trig/chip}$ $\geq$ 12, a systematic of 7 ns is taken. Finally, the uncertainty for the mean time of the hit is computed \textit{for each bin of energy and radius} by weighting according to the fraction of hits in each of the three regions following equation \ref{eq:syst_nHits}.
+
+\begin{equation}
+  \sigma = \sqrt{(n_1 \times \sigma_1)^2 + (n_2 \times \sigma_2)^2 + (n_3 \times \sigma_3)^2} \label{eq:syst_nHits}
+\end{equation}
+
+with $\sigma_1$ = 2 ns, $\sigma_2$ = 5 ns, $\sigma_3$ = 7 ns, $n_1$ the fraction of hits for the i-th bin in the region 0 < $N_{trig/chip}$ < 5, $n_2$ the fraction of hits for the i-th bin in the region 5 $\leq$ $N_{trig/chip}$ < 12 and $n_2$ the fraction of hits for the i-th bin in the region $N_{trig/chip}$ $\geq$ 12 and such as $n_1 + n_2 + n_3$ is the total number of hits in the i-th bin.
 
 \begin{figure}[htbp!]
   \centering
@@ -68,13 +74,13 @@ The increase of the width of the time distribution is parametrized from data for
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_20GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_AllLayers_20GeV.eps}
 		\caption{}\label{fig:timing_electrons_corr}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonAll_ElectronsSingleHit.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonAll_ElectronsSingleHit.eps}
 		\caption{}\label{fig:timing_electron_muon_comp}
 	\end{subfigure}
 	\caption{\subref{fig:timing_electrons_corr}) Time of the first hit distribution for 20 GeV electrons after the number of triggered channel in a chip correction. \subref{fig:timing_electron_muon_comp}) Comparison of time distribution of 20 GeV electrons and muons. The electron time distribution is very similar to the muon time distribution when only a single channel triggers in a chip.}
@@ -86,7 +92,7 @@ All electron runs have been carefully checked to validate the timing calibration
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonDataEnergies.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/ComparisonDataEnergies.eps}
 	\caption{Comparison of the time of first hit distribution for electron beam energies between 10 GeV and 50 GeV. The bottom plots shows the relative difference to the 20 GeV electron time distribution.}
 	\label{fig:all_electron_energies}
 \end{figure}
@@ -103,7 +109,7 @@ The time resolution is around 6.9 ns which is very slightly worse than ($\sim$ 6
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.pdf}
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Timing_May2016_BigLayers.eps}
 	\caption{Time of the first hit distribution for 3 GeV electron showers at the DESY II testbeam in May 2016 combining layer 13 and 14. The blue distribution is the time of first hit in the case of events in which only single hits in a chip are taken.}\label{fig:TBMay2016}
 \end{figure}
 
@@ -121,13 +127,13 @@ The figure \ref{fig:timing_syst_10GeV} and \ref{fig:timing_syst_50GeV} show the 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV.eps}
 		\caption{}\label{fig:timing_syst_10GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV.eps}
 		\caption{}\label{fig:timing_syst_50GeV}
 	\end{subfigure}
 	\caption{Time of the first hit distribution for events where the center of gravity of the shower is in the four center tiles for 10 GeV electrons on the left and 50 GeV electrons on the right. Under each figure, the deviation of each time distribution to the top left tile is shown. The mean deviation of the time distributions is shown in a black line. The dashed black line represents a 30\% deviation relative to the top left tile time distribution.} \label{fig:SystTimeElectrons}
@@ -214,7 +220,7 @@ The comparison of the time of first hit distribution for muons between data and 
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.eps}
 		\caption{}\label{fig:elec_sim_data_nHits_10GeV}
 	\end{subfigure}
 	\caption{\subref{fig:elec_sim_data_10GeV}) Comparison of the time of first hit between data and simulations for 10 GeV electrons. The grey area represents the statistical and systematical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\% and with the uncertainty on parametrization of the width of the time distribution as a function of the number of triggered channels in a chip. \subref{fig:elec_sim_data_nHits_10GeV}) Comparison of the number of triggered channels per chip between data and MC for 10 GeV electrons. The grey area represents the statistical error of the data. Error bars in simulation are obtained by varying the cross-talk parameter between 10\% and 18\%.}

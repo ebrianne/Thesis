@@ -11,8 +11,10 @@
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
 		\midrule
 		\multirow{2}{*}{Preselection}& All & 0 mm < $cog_{z}$ < 800 mm\\& All & 0 < $n_{hits}$ < 20 \\
-		\multirow{2}{*}{Track Selection SSF}& All & $n_{hits}$ in tower > 7 \\& All & $n_{hits}$ in layer < 3 \\
-		\multirow{2}{*}{Track Selection BL}& All & $n_{hits}$ in tower > 2 \\& All & $n_{hits}$ in layer < 3 \\
+		\midrule
+		\multirow{2}{*}{Track Selection (layers 1 to 10)}& All & $n_{hits}$ in tower > 7 \\& All & $n_{hits}$ in layer < 3 \\
+		\midrule
+		\multirow{2}{*}{Track Selection (layers 11 to 14)}& All & $n_{hits}$ in tower > 2 \\& All & $n_{hits}$ in layer < 3 \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -26,6 +28,7 @@
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
 		\midrule
 		\multirow{2}{*}{Event Quality}& All & Cherenkov ON\\& All & Energy in the first 3 layers of AHCAL > 10 MIP \\
+		\midrule
 		\multirow{9}{*}{Electron Selection}& 10 GeV & 25 < $n_{hits}$ < 75 \\& 15 GeV & 30 < $n_{hits}$ < 90 \\& 20 GeV & 40 < $n_{hits}$ < 100 \\& 30 GeV & 50 < $n_{hits}$ < 110 \\& 40 GeV & 60 < $n_{hits}$ < 120 \\& 50 GeV & 70 < $n_{hits}$ < 140 \\& All & $cog_{z}$ < 250 mm\\& All & -90 mm < $cog_{x, y}$ < 90 mm \\& All & Energy in last two layers < 1\% $E_{sum}$ \\
 		\bottomrule
 	\end{tabular}
@@ -40,7 +43,9 @@
 		\multicolumn{1}{l}{\textbf{Name}} & \textbf{Beam Energy} & \textbf{Cut}\\
 		\midrule
 		\multirow{1}{*}{Event Quality}& All & Cherenkov OFF\\
+		\midrule
 		\multirow{3}{*}{Pion Selection}& All & $n_{hits}$ > 20 \\& All & $n_{hits}$ in the first 2 AHCAL layers < 5 \\& All & Energy in last two layers > 1\% $E_{sum}$ \\
+		\midrule
 		\multirow{2}{*}{Multi Particle Rejection}& All & $n_{hits}$ in time window > 5 \\& All & $n_{Cluster}$ > 0 \\
 		\bottomrule
 	\end{tabular}

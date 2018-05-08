@@ -31,7 +31,7 @@ The pedestal distribution of a typical AHCAL channel is shown in figure \ref{fig
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/PedestalExtractionExample.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/PedestalExtractionExample.eps}
 	\caption{Typical pedestal distribution of a channel in auto-trigger mode. The different colored boxed represent the iterative procedure to extract the pedestal value marked with the red line. The upper x-axis shows the corresponding ADC value in terms of MIP and pixels.} \label{fig:PedExtraction}
 \end{figure}
 
@@ -41,7 +41,7 @@ However, the CALICE database structure, containing the main calibration constant
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMeanPedtoMemorycell.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMeanPedtoMemorycell.eps}
 	\caption{Distribution of the difference between the mean pedestal to the memory-cell wise pedestal per channel.} \label{fig:CompMeanMem}
 \end{figure}
 
@@ -54,7 +54,7 @@ The fitting procedure is very sensitive to the initial parameters of the fit and
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ExampleMIP_Module3.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ExampleMIP_Module3.eps}
 	\caption{Typical energy distribution in a single channel of the AHCAL with the data collected in July 2015 at CERN. The convoluted function is represented in red with the extracted MIP constant for this channel showed by the vertical red line.} \label{fig:MIPFit}
 \end{figure}
 
@@ -94,7 +94,7 @@ It is necessary to evaluate the uncertainty of the calibration procedure. The fi
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/RelativeErrorMIP_Combined.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/RelativeErrorMIP_Combined.eps}
 	\caption{Relative error $\frac{\Delta MIP_i}{MIP_i}$ for the 3171 detector channels in the AHCAL. The right tail comes from the layers 1 and 2 were difficulties are met for the determination of the MIP constant.} \label{fig:MIPError}
 \end{figure}
 
@@ -104,7 +104,7 @@ The MIP constant value is sensitive to temperature and temporal variations. A sy
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/SystematicMIP.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/SystematicMIP.eps}
 	\caption{MPV fitted value in MIP for the two muon sub-samples. Even runs are in blue, odd runs are in red.} \label{fig:MIPSyst}
 \end{figure}
 
@@ -132,12 +132,12 @@ For electron runs, the distribution of the center of gravity in x and y directio
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGX_AHCAL_10GeV_Comparison.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/Run24542_CoGX_AHCAL_10GeV_Comparison.eps}
 		\caption{Beam profile X.} \label{fig:e10GeVX}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/Run24542_CoGY_AHCAL_10GeV_Comparison.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/Run24542_CoGY_AHCAL_10GeV_Comparison.eps}
 		\caption{Beam profile Y.} \label{fig:e10GeVY}
 	\end{subfigure}
 	\caption{Beam profiles for 10 GeV electrons in data and simulation. Simulated with QGSP\_BERT\_HP using \geant v10.1.}
@@ -149,12 +149,12 @@ For pion runs, the same method as for electron runs is used. The figures \ref{fi
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGX_AHCAL_10GeV_Comparison.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/Run24306_CoGX_AHCAL_10GeV_Comparison.eps}
 		\caption{10 GeV.} \label{fig:pi10GeVX}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Pions/Plots/Run24306_CoGY_AHCAL_10GeV_Comparison.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/Run24306_CoGY_AHCAL_10GeV_Comparison.eps}
 		\caption{10 GeV.} \label{fig:pi10GeVY}
 	\end{subfigure}
 	\caption{Beam profiles for 10 GeV pions in data and simulation. Simulated with QGSP\_BERT\_HP using \geant v10.1}
@@ -196,13 +196,13 @@ Applying the MIP selection on the muon runs results in energy depositions of sin
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MIPPeak.pdf}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MIPPeak.eps}
 		\caption{} \label{fig:MIPData_MC}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ProfileMuons_Edep.pdf}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ProfileMuons_Edep.eps}
 		\caption{} \label{fig:muEdep}
 	\end{subfigure}
 	\caption{\subref{fig:MIPData_MC}) Hit Energy Spectra for the complete AHCAL for muon like-track hits for both data and simulation. \subref{fig:muEdep}) Longitudinal mean energy profile for muon like-track hits in data and simulations.}
@@ -213,7 +213,7 @@ The figure \ref{fig:MPVData_MC} shows the distribution of the extracted MIP cali
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MPV.pdf}
+	\includegraphics[width=0.6\linewidth]{../Thesis_Plots/EnergyCalib/Plots/ComparisonMCData_MPV.eps}
 	\caption{Distribution of the fitted MIP value in single channels of the AHCAL for data and simulation.} \label{fig:MPVData_MC}
 \end{figure}
 
@@ -228,12 +228,12 @@ The figure \ref{fig:eHitVal} shows the hit energy spectra for 10 GeV and 50 GeV 
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/HitEnergy_Electrons10GeV.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/HitEnergy_Electrons10GeV.eps}
 		\caption{10 GeV} \label{fig:HitEnergy10GeVe}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/HitEnergy_Electrons50GeV.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/HitEnergy_Electrons50GeV.eps}
 		\caption{50 GeV} \label{fig:HitEnergy50GeVe}
 	\end{subfigure}
 	\caption{Electron hit energy spectra for data and simulation for 10 and 50 GeV beam energies. The different colors corresponds to the variation of the cross-talk parameter in the simulations between 10\% and 18\%.}
@@ -247,12 +247,12 @@ The number of hits is well described in the simulations but agrees better with 1
 \begin{figure}[htbp!]
 	\centering
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/EsumElectrons_BeamEnergy.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/EsumElectrons_BeamEnergy.eps}
 		\caption{} \label{fig:EsumMeanElectron}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
-		\includegraphics[width=1.\linewidth]{../Thesis_Plots/Timing/Electrons/Plots/nHitsElectrons_BeamEnergy.pdf}
+		\includegraphics[width=1.\linewidth]{../Thesis_Plots/EnergyCalib/Plots/nHitsElectrons_BeamEnergy.eps}
 		\caption{} \label{fig:nHitsMeanElectron}
 	\end{subfigure}
 	\caption{\subref{fig:EsumMeanElectron}) Comparison of the mean energy sum in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. Simulated with QGSP\_BERT\_HP in \geant v10.1. \subref{fig:nHitsMeanElectron}) Comparison of the mean number of hits in the AHCAL as function of the beam energy for electron data and simulations with different cross-talk parameters. Simulated with QGSP\_BERT\_HP in \geant v10.1.}

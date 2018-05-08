@@ -59,13 +59,13 @@ At a first order, the slope of the TDC ramp is assumed to be linear. The paramet
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra.pdf}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/ExampleTDCSpectra.eps}
 		\caption{} \label{fig:TDC_Spectrum}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.pdf}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.eps}
 		\caption{} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
 	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $s$ = 1.47 $\pm$ 0.01 ns/TDC, $a$ = 888 $\pm$ 5 TDC and $b$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
@@ -79,7 +79,7 @@ The extracted values for the slopes are shown in figure \ref{fig:slope_time}. Th
 
 \begin{figure}[htbp!]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC.pdf}
+	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC.eps}
 	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
 \end{figure}
 
@@ -97,13 +97,13 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5.eps}
 		\caption{}	\label{fig:T0_Correction}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError}
+		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError.eps}
 		\caption{} \label{fig:T0ReferenceError}
 	\end{subfigure}
 	\caption{\subref{fig:T0_Correction}) Time difference between the trigger channels before and after correction for T$_{12}$ and T$_{14}$. $\mu$ = 10.6 ns, RMS = 11.6 ns, $\mu_{corrected}$ = 0.9 ns, RMS$_{corrected}$ = 4.8 ns. The two visible peaks in blue are due to pedestal values being different dependent of the bunch-crossing parity. \subref{fig:T0ReferenceError}) Distribution of the uncertainty $\sigma_{ref}$. The red line represents the cut of 4 ns.}
@@ -134,13 +134,13 @@ The time reference of the trigger is delayed compared to the muon passing throug
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset.eps}
 		\caption{}\label{fig:TimeChnwithOffset}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets.eps}
 		\caption{}\label{fig:BXID_offset}
 	\end{subfigure}
 	\caption{\subref{fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.2 ns is determined for this channel. \subref{fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.}
@@ -161,13 +161,13 @@ It is expected that the time distribution should follow a Gaussian distribution.
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections.eps}
 		\caption{}\label{fig:timing_nocorrection}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections.eps}
 		\caption{}\label{fig:reso_nocorrection}
 	\end{subfigure}
 	\caption{\subref{fig:timing_nocorrection}) Time of the first hit distribution of the AHCAL after the time calibration. $\mu$ = -0.06 ns , RMS = 5.65 ns. The distribution is asymmetric to the left. \subref{fig:reso_nocorrection}) Time resolution for all layers in the AHCAL. The mean RMS time resolution is represented by the blue line. The sigma resolution of each layer is obtained from a Gaussian fit. Mean $\sigma$ = 5.65 ns, Mean RMS = 5.82 ns.}
@@ -180,13 +180,13 @@ The distribution of the time of arrival of the 5th photon is shown in figure \re
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy.eps}
 		\caption{}\label{fig:time_arrival5th}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe.eps}
 		\caption{}\label{fig:time_arrival5th_LY}
 	\end{subfigure}
 	\caption{\subref{fig:time_arrival5th}) Distribution of the time of arrival of the 5th photon for a light yield of 15 pixels per MIP. \subref{fig:time_arrival5th_LY}) RMS/Mean of the time of arrival of the 5th photon as a function of the number of fired pixels. As expected, the RMS/Mean decreases with a higher number of fired pixels.}
@@ -202,13 +202,13 @@ The time calibration relies on the linearity of the TDC voltage ramp in the \tex
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0.eps}
 		\caption{}\label{fig:LinCorr}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0_Corrected.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0_Corrected.eps}
 		\caption{}\label{fig:LinCorr_2}
 	\end{subfigure}
 	\caption{\subref{fig:LinCorr}) Quadratic fit of chip 146 (BXID even) on layer 9. The graph is slightly curved showing that this chip presents a non-linear TDC ramp. $\chi^2/ndf$ = 1.29. \subref{fig:LinCorr_2}) Profile for chip 146 on layer 9 after the non-linearity correction of the ramp. The correction parameters are applied on the data to cross-check the quality of the correction. The curve flattens with the non-linearity correction applied.}
@@ -221,13 +221,13 @@ The non-linearity correction results in an improvement in the timing resolution 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_LinCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_LinCorrection.eps}
 		\caption{}\label{fig:timing_lincorrection}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_LinCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_LinCorrection.eps}
 		\caption{}\label{fig:reso_lincorrection}
 	\end{subfigure}
 	\caption{\subref{fig:timing_lincorrection}) Time of the first hit distribution of the AHCAL before the non-linearity correction in black and after in blue. The non-linearity correction improves the time resolution by around 5.1\%. \subref{fig:reso_lincorrection}) Time resolution for all layers in the AHCAL. A comparison of the RMS after the simple calibration is shown with the black dashed line.}
@@ -243,13 +243,13 @@ The time-walk effect is due to the presence of an energy threshold that induces 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile.eps}
 		\caption{}\label{fig:time_walk}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/TimeWalkProfile_Correction.eps}
 		\caption{}\label{fig:time_walk_corr}
 	\end{subfigure}
 	\caption{\subref{fig:time_walk}) Time of first hit as a function of the hit energy. A difference up to 6 ns is seen between small and large amplitudes. Time-walk correction extracted from data. The fit function is of the form $\text{A} \times e^{-\lambda{}x} + \text{B}$. \subref{fig:time_walk_corr}) Time of first hit as a function of the hit energy after correction showing a spread of less than 1 ns.}
@@ -265,13 +265,13 @@ Figure \ref{fig:timing_muons} shows the time of first hit distribution for muons
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_AllCorrection.eps}
 		\caption{}\label{fig:timing_muons}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.pdf}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_AllCorrection.eps}
 		\caption{}\label{fig:timing_reso_all_muons}
 	\end{subfigure}
 	\caption{\subref{fig:timing_muons}) Time of the first hit for muons after the simple calibration in blue, after the non-linearity correction in red and after all corrections in black. Each correction improves the time resolution. \subref{fig:timing_reso_all_muons}) Time resolution obtained for each layer in the AHCAL. A comparison of the RMS after the simple calibration and the non-linearity correction is shown with the black and green dashed lines.}
