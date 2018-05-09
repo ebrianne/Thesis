@@ -37,11 +37,11 @@ Warning--entry type for "OmegaWeb" isn't style-file defined
 --line 428 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
 --line 464 of file biblio.bib
-Repeated entry---line 1232 of file biblio.bib
+Repeated entry---line 1241 of file biblio.bib
  : @inproceedings{Liu:2015cpe
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1304 of file biblio.bib
+Repeated entry---line 1313 of file biblio.bib
  : @article{Chatrchyan:2012xdj
  :                            ,
 I'm skipping whatever remains of this entry
@@ -96,45 +96,45 @@ Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 159 entries,
+You've used 160 entries,
             1876 wiz_defined-function locations,
-            1421 strings with 31956 characters,
-and the built_in function-call counts, 37142 in all, are:
-= -- 3523
-> -- 1438
+            1426 strings with 32073 characters,
+and the built_in function-call counts, 37278 in all, are:
+= -- 3535
+> -- 1442
 < -- 0
-+ -- 559
-- -- 400
-* -- 2372
-:= -- 5261
-add.period$ -- 169
-call.type$ -- 159
-change.case$ -- 149
++ -- 561
+- -- 401
+* -- 2381
+:= -- 5284
+add.period$ -- 170
+call.type$ -- 160
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 209
-duplicate$ -- 2183
-empty$ -- 3618
-format.name$ -- 400
-if$ -- 9197
+cite$ -- 210
+duplicate$ -- 2192
+empty$ -- 3635
+format.name$ -- 401
+if$ -- 9229
 int.to.chr$ -- 0
-int.to.str$ -- 159
-missing$ -- 145
-newline$ -- 503
-num.names$ -- 155
-pop$ -- 622
+int.to.str$ -- 160
+missing$ -- 146
+newline$ -- 506
+num.names$ -- 156
+pop$ -- 625
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1418
+skip$ -- 1419
 stack$ -- 0
 substring$ -- 1699
-swap$ -- 849
+swap$ -- 850
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 50
-while$ -- 287
-width$ -- 162
-write$ -- 1455
+while$ -- 288
+width$ -- 163
+write$ -- 1464
 (There were 2 error messages)
