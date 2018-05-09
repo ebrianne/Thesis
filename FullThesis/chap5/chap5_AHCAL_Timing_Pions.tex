@@ -339,23 +339,23 @@ The results show that 18.19\% of the entries are in the red box region for the s
 	\label{fig:Corr_Mokka_Simulation}
 \end{figure}
 
-This was compared to simulation using the QGSP\_BERT\_HP physics lists as shown in figures \ref{fig:Corr_Mokka_Simulation}. The figures for simulations with other physics lists can be seen in appendix \ref{appendix:TimingAdd}. In the same way, the number of correlated time hits was calculated and it is summarized in table \ref{table:Correlation_DataSim}. In general, the simulation possesses less correlated hits than in data for both type of correlations. In addition, the choice of the physics list is irrelevant for this observable as all physics lists give the same result within 0.1\% maximum. Furthermore, the \ddhep simulation has slightly less correlated hits, around 1\%, at a short range than in the \mokka simulation which is not understood but it is still within statistical uncertainties.
+This was compared to simulation using the QGSP\_BERT\_HP physics lists as shown in figures \ref{fig:Corr_Mokka_Simulation}. The figures for simulations with other physics lists can be seen in appendix \ref{appendix:TimingAdd}. In the same way, the number of correlated time hits was calculated and it is summarized in table \ref{table:Correlation_DataSim}. In general, the simulation possesses less correlated hits than in data for both type of correlations. In addition, the choice of the physics list is irrelevant for this observable as all physics lists give the same result within 0.1\% maximum. Furthermore, the \ddhep simulation has slightly less correlated hits, around 1\%, at a short range than in the \mokka simulation which is not understood.
 
-Comparing data and simulations, there is a large discrepancy for the short range correlation with a difference of around 15\%. For the long correlation, the numbers also differ by around 3\% but it is still within uncertainties. The reason for the discrepancy between data and simulation is not clear though it may come from the selection of the data that may be not good enough to reject multi-particle events as shown figure \ref{fig:DoubleParticleEvent}, therefore providing more correlated hits than observed in simulation. More data, especially with a better detector to be sure to reject multi-particle events, is required in order to understand the origin of such correlations.
+Comparing data and simulations, there is a large discrepancy for the short range correlation with a difference of around 15\%. For the long correlation, the numbers also differ by around 3\%. The reason for the discrepancy between data and simulation is not clear though it may come from the selection of the data that may be not good enough to reject multi-particle events as shown figure \ref{fig:DoubleParticleEvent}, therefore providing more correlated hits than observed in simulation. More data, especially with a better detector to be sure to reject multi-particle events, is required in order to understand the origin of such correlations.
 
 \begin{table}[htb!]
 	\centering
-	\caption{Table with fraction of events in the red box region as calculated with equation \ref{eq:CorrelCalcul}. The top is for \mokka simulations, the bottom is for \ddhep simulations. The quoted errors are only statistical errors.}
+	\caption{Table with fraction of entries in the red box region as calculated with equation \ref{eq:CorrelCalcul}. The top is for \mokka simulations, the bottom is for \ddhep simulations. The quoted errors are only statistical errors.}
 	\label{table:Correlation_DataSim}
 	\begin{tabular}{@{} lcc @{}}
 		\toprule
 		Type & Short correlation [\%] & Long correlation [\%]\\
 		\midrule
-		\multirow{2}{*}{Data} & \multirow{2}{*}{18.19 $\pm$ 5.13} & \multirow{2}{*}{3.24 $\pm$ 3.79}\\ & &\\
+		\multirow{2}{*}{Data} & \multirow{2}{*}{18.19 $\pm$ 0.93} & \multirow{2}{*}{3.25 $\pm$ 0.12}\\ & &\\
 		\midrule
-		\multirow{2}{*}{QGSP\_BERT} & 4.08 $\pm$ 3.44 & 0.65 $\pm$ 2.65\\ & 3.01 $\pm$ 4.72 & 0.68 $\pm$ 3.25\\
-		\multirow{2}{*}{QGSP\_BERT\_HP} & 4.1 $\pm$ 3.44 & 0.67 $\pm$ 2.65\\ & 3.06 $\pm$ 4.72 & 0.71 $\pm$ 3.25\\
-		\multirow{2}{*}{QBBC} & 4.09 $\pm$ 3.44 & 0.66 $\pm$ 2.65\\ & 3.02 $\pm$ 4.72 & 0.69 $\pm$ 3.25\\
+		\multirow{2}{*}{QGSP\_BERT} & 4.08 $\pm$ 0.14 & 0.65 $\pm$ 0.02\\ & 3.01 $\pm$ 0.14 & 0.68 $\pm$ 0.02\\
+		\multirow{2}{*}{QGSP\_BERT\_HP} & 4.10 $\pm$ 0.14 & 0.67 $\pm$ 0.02\\ & 3.06 $\pm$ 0.14 & 0.71 $\pm$ 0.02\\
+		\multirow{2}{*}{QBBC} & 4.09 $\pm$ 0.14 & 0.66 $\pm$ 0.02\\ & 3.02 $\pm$ 0.14 & 0.69 $\pm$ 0.02\\
 		\bottomrule
 	\end{tabular}
 \end{table}

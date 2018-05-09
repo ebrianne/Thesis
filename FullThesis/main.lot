@@ -29,7 +29,7 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {11.1}{\ignorespaces Table with the number of events selected in the pion dataset for the timing study.\relax }}{123}{table.caption.124}
 \contentsline {table}{\numberline {11.2}{\ignorespaces Summary of the fit results in figure \ref {fig:dNdt_Comparison}.\relax }}{125}{table.caption.126}
-\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of events in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top is for \textsc {Mokka}\xspace simulations, the bottom is for \textsc {DD4hep}\xspace simulations. The quoted errors are only statistical errors.\relax }}{135}{table.caption.140}
+\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of entries in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top is for \textsc {Mokka}\xspace simulations, the bottom is for \textsc {DD4hep}\xspace simulations. The quoted errors are only statistical errors.\relax }}{135}{table.caption.140}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {12.1}{\ignorespaces Assumption on the time resolution of the front-end electronics for different scenarios.\relax }}{152}{table.caption.156}
 \addvspace {10\p@ }

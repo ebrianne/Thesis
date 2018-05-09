@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  8 MAY 2018 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.13)  9 MAY 2018 11:06
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -3863,13 +3863,11 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ShowerSt
 (epstopdf)                    date: 2018-05-08 19:47:48
 (epstopdf)                    size: 9689 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-08 19:49:51
+(epstopdf)                    size: 12318 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.eps>
 (epstopdf)             \includegraphics on input line 207.
-runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation.eps)...executed.
-
-Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 19:49:51
-(epstopdf)                    size: 12318 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf, id=3668, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf>
@@ -3879,13 +3877,11 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ShowerSt
 (epstopdf)                    date: 2018-05-08 19:47:48
 (epstopdf)                    size: 14454 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-08 19:49:51
+(epstopdf)                    size: 8937 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.eps>
 (epstopdf)             \includegraphics on input line 213.
-runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D.eps)...executed.
-
-Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 19:49:51
-(epstopdf)                    size: 8937 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf, id=3669, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>
@@ -4006,11 +4002,11 @@ Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGS
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
  [132 <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.eps>
-(epstopdf)                    date: 2018-05-08 17:47:12
-(epstopdf)                    size: 41452 bytes
+(epstopdf)                    date: 2018-05-09 10:50:55
+(epstopdf)                    size: 48987 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:28
-(epstopdf)                    size: 31813 bytes
+(epstopdf)                    date: 2018-05-09 10:52:59
+(epstopdf)                    size: 29176 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.eps>
 (epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
@@ -4020,11 +4016,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf  used on input line 314.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.eps>
-(epstopdf)                    date: 2018-05-08 17:47:13
-(epstopdf)                    size: 326873 bytes
+(epstopdf)                    date: 2018-05-09 10:50:55
+(epstopdf)                    size: 242299 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:28
-(epstopdf)                    size: 187349 bytes
+(epstopdf)                    date: 2018-05-09 10:53:00
+(epstopdf)                    size: 105662 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.eps>
 (epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
@@ -4034,11 +4030,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf  used on input line 320.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.eps>
-(epstopdf)                    date: 2018-05-08 17:50:26
-(epstopdf)                    size: 232739 bytes
+(epstopdf)                    date: 2018-05-09 10:56:28
+(epstopdf)                    size: 50696 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:29
-(epstopdf)                    size: 130447 bytes
+(epstopdf)                    date: 2018-05-09 10:58:16
+(epstopdf)                    size: 24548 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP.eps>
 (epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
@@ -4048,11 +4044,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERTHP-eps-converted-to.pdf  used on input line 329.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.eps>
-(epstopdf)                    date: 2018-05-08 17:50:28
-(epstopdf)                    size: 1304725 bytes
+(epstopdf)                    date: 2018-05-09 10:56:28
+(epstopdf)                    size: 83115 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:30
-(epstopdf)                    size: 567206 bytes
+(epstopdf)                    date: 2018-05-09 10:58:16
+(epstopdf)                    size: 34312 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.eps>
 (epstopdf)             \includegraphics on input line 335.
 Package epstopdf Info: Output file is already uptodate.
@@ -4081,20 +4077,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
-[135]
+
 Underfull \hbox (badness 10000) in paragraph at lines 373--374
 
  []
 
-
+[135]
 Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
-
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
- [136]) [137]
+) [136] [137]
 \openout2 = `chap6/chap6_intro.aux'.
 
  (./chap6/chap6_intro.tex [138
@@ -5537,11 +5530,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf  used on input line 364.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.eps>
-(epstopdf)                    date: 2018-05-08 17:50:27
-(epstopdf)                    size: 234972 bytes
+(epstopdf)                    date: 2018-05-09 10:56:28
+(epstopdf)                    size: 52297 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:33
-(epstopdf)                    size: 131654 bytes
+(epstopdf)                    date: 2018-05-09 10:58:18
+(epstopdf)                    size: 24992 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT.eps>
 (epstopdf)             \includegraphics on input line 375.
 Package epstopdf Info: Output file is already uptodate.
@@ -5551,11 +5544,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT-eps-converted-to.pdf  used on input line 375.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.eps>
-(epstopdf)                    date: 2018-05-08 17:50:30
-(epstopdf)                    size: 1367027 bytes
+(epstopdf)                    date: 2018-05-09 10:56:29
+(epstopdf)                    size: 84965 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:34
-(epstopdf)                    size: 598473 bytes
+(epstopdf)                    date: 2018-05-09 10:58:18
+(epstopdf)                    size: 34857 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT.eps>
 (epstopdf)             \includegraphics on input line 381.
 Package epstopdf Info: Output file is already uptodate.
@@ -5565,11 +5558,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT-eps-converted-to.pdf  used on input line 381.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.eps>
-(epstopdf)                    date: 2018-05-08 17:50:27
-(epstopdf)                    size: 233456 bytes
+(epstopdf)                    date: 2018-05-09 10:56:28
+(epstopdf)                    size: 51370 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:35
-(epstopdf)                    size: 130498 bytes
+(epstopdf)                    date: 2018-05-09 10:58:19
+(epstopdf)                    size: 24375 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC.eps>
 (epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
@@ -5579,11 +5572,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC-eps-converted-to.pdf  used on input line 387.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.eps>
-(epstopdf)                    date: 2018-05-08 17:50:29
-(epstopdf)                    size: 1322245 bytes
+(epstopdf)                    date: 2018-05-09 10:56:28
+(epstopdf)                    size: 82710 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:36
-(epstopdf)                    size: 575228 bytes
+(epstopdf)                    date: 2018-05-09 10:58:19
+(epstopdf)                    size: 33834 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC.eps>
 (epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
@@ -5593,11 +5586,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC-eps-converted-to.pdf  used on input line 393.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep.eps>
-(epstopdf)                    date: 2018-05-08 17:51:19
-(epstopdf)                    size: 138983 bytes
+(epstopdf)                    date: 2018-05-09 10:56:45
+(epstopdf)                    size: 42409 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:37
-(epstopdf)                    size: 84910 bytes
+(epstopdf)                    date: 2018-05-09 10:58:19
+(epstopdf)                    size: 21959 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 402.
 Package epstopdf Info: Output file is already uptodate.
@@ -5607,11 +5600,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QGSPBERT_DD4hep-eps-converted-to.pdf  used on input line 402.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep.eps>
-(epstopdf)                    date: 2018-05-08 17:51:22
-(epstopdf)                    size: 1061265 bytes
+(epstopdf)                    date: 2018-05-09 10:56:46
+(epstopdf)                    size: 75918 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:38
-(epstopdf)                    size: 473501 bytes
+(epstopdf)                    date: 2018-05-09 10:58:20
+(epstopdf)                    size: 32004 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
@@ -5621,11 +5614,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERT_DD4hep-eps-converted-to.pdf  used on input line 408.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep.eps>
-(epstopdf)                    date: 2018-05-08 17:51:19
-(epstopdf)                    size: 137892 bytes
+(epstopdf)                    date: 2018-05-09 10:56:45
+(epstopdf)                    size: 41436 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:38
-(epstopdf)                    size: 83696 bytes
+(epstopdf)                    date: 2018-05-09 10:58:20
+(epstopdf)                    size: 21257 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 414.
 Package epstopdf Info: Output file is already uptodate.
@@ -5635,11 +5628,11 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_short_QBBC_DD4hep-eps-converted-to.pdf  used on input line 414.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep.eps>
-(epstopdf)                    date: 2018-05-08 17:51:21
-(epstopdf)                    size: 1037511 bytes
+(epstopdf)                    date: 2018-05-09 10:56:46
+(epstopdf)                    size: 74443 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-08 17:52:39
-(epstopdf)                    size: 460665 bytes
+(epstopdf)                    date: 2018-05-09 10:58:20
+(epstopdf)                    size: 31163 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 420.
 Package epstopdf Info: Output file is already uptodate.
@@ -6430,14 +6423,14 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  36848 strings out of 492985
  728105 string characters out of 6132585
- 870032 words of memory out of 5000000
+ 870033 words of memory out of 5000000
  38848 multiletter control sequences out of 15000+600000
  760135 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,95p,10371b,1446s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/put
 r8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
-Output written on main.pdf (241 pages, 30703791 bytes).
+Output written on main.pdf (241 pages, 27666372 bytes).
 PDF statistics:
  6636 PDF objects out of 7423 (max. 8388607)
  5153 compressed objects within 52 object streams
