@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: title.aux
@@ -32,16 +32,16 @@ The style file: ieeetr.bst
 A level-1 auxiliary file: oath.aux
 Database file #1: biblio.bib
 Warning--entry type for "ILCSoftPortal" isn't style-file defined
---line 161 of file biblio.bib
+--line 81 of file biblio.bib
 Warning--entry type for "OmegaWeb" isn't style-file defined
---line 855 of file biblio.bib
+--line 428 of file biblio.bib
 Warning--entry type for "H2Beamline" isn't style-file defined
---line 927 of file biblio.bib
-Repeated entry---line 2481 of file biblio.bib
+--line 464 of file biblio.bib
+Repeated entry---line 1241 of file biblio.bib
  : @inproceedings{Liu:2015cpe
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2625 of file biblio.bib
+Repeated entry---line 1313 of file biblio.bib
  : @article{Chatrchyan:2012xdj
  :                            ,
 I'm skipping whatever remains of this entry
