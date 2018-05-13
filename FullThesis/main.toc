@@ -153,27 +153,27 @@
 \contentsline {section}{\numberline {12.3}Check of the energy reconstruction}{139}{section.12.3}
 \contentsline {section}{\numberline {12.4}Influence of timing cuts on hadronic showers in the ILD detector}{143}{section.12.4}
 \contentsline {subsection}{\numberline {12.4.1}Motivation}{143}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}Event Selection}{144}{subsection.12.4.2}
+\contentsline {subsection}{\numberline {12.4.2}Event Selection}{143}{subsection.12.4.2}
 \contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{144}{subsection.12.4.3}
-\contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{146}{subsection.12.4.4}
-\contentsline {subsubsection}{Assuming perfect time resolution}{146}{section*.148}
+\contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{145}{subsection.12.4.4}
+\contentsline {subsubsection}{Assuming perfect time resolution}{145}{section*.148}
 \contentsline {subsubsection}{In a realistic scenario}{150}{section*.155}
 \contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{152}{section.12.5}
 \contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{154}{subsection.12.5.1}
 \contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{156}{subsection.12.5.2}
 \contentsline {section}{\numberline {12.6}Conclusion and Outlook}{156}{section.12.6}
 \contentsline {chapter}{\numberline {13}Summary}{159}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{161}{section*.166}
-\contentsline {chapter}{Appendix \numberline {A}Event selection}{163}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{165}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{169}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{185}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{187}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{189}{Appendix.1.F}
-\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{191}{Appendix.1.G}
-\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{193}{Appendix.1.H}
-\contentsline {chapter}{Appendix \numberline {I}Calibration database}{197}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{199}{appendix*.204}
-\contentsline {chapter}{List of figures}{201}{appendix*.205}
-\contentsline {chapter}{Acronyms}{213}{section*.206}
-\contentsline {chapter}{Bibliography}{217}{appendix*.208}
+\contentsline {chapter}{Acknowledgments}{163}{section*.166}
+\contentsline {chapter}{Appendix \numberline {A}Event selection}{165}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{167}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{171}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{187}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{189}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{191}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{193}{Appendix.1.G}
+\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{195}{Appendix.1.H}
+\contentsline {chapter}{Appendix \numberline {I}Calibration database}{199}{Appendix.1.I}
+\contentsline {chapter}{List of tables}{201}{appendix*.204}
+\contentsline {chapter}{List of figures}{203}{appendix*.205}
+\contentsline {chapter}{Acronyms}{215}{section*.206}
+\contentsline {chapter}{Bibliography}{219}{appendix*.208}

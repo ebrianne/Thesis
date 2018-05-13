@@ -68,7 +68,7 @@ However, the time constant of the slow component is very different than in the T
 	\end{tabular}
 \end{table}
 
-Figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits compared with three different physics lists for 10 GeV pions. Additional distribution for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
+Figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits compared with three different physics lists for 10 GeV pions. Additional distributions for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
 
 From 10 to 50 GeV, the QGSP\_BERT\_HP physics list reproduces well the distribution. Above 50 GeV, the tail after 100 ns is also well described in the simulation, however, between 50 and 100 ns, the simulation slightly under-estimates the data although within the systematic uncertainty.
 
@@ -154,7 +154,7 @@ This is investigated by looking at the mean time of first hit as a function of t
 	\label{fig:RadialTiming}
 \end{figure}
 
-For muons and electrons, the mean time of the first hit does not vary with the increase of radius showing that the processes involved are prompt and independent of the position. On the contrary for hadronic showers, it shows an increase of the mean time of the first hit as function of the hit distance to the shower axis. As well, there is no dependence on the energy of the shower. However, the layers 3 to 10 present a steeper slope by around 50\% than for the layers 11 to 14 (from $\sim$1 ns per tile to $\sim$0.5 ns per tile).
+For muons and electrons, the mean time of the first hit does not vary with the increase of radius as expected as the time calibration de facto forces the mean to 0 ns. On the contrary for hadronic showers, it shows an increase of the mean time of the first hit as function of the hit distance to the shower axis. As well, there is no dependence on the energy of the shower. However, the layers 3 to 10 present a steeper slope by around 50\% than for the layers 11 to 14 (from $\sim$1 ns per tile to $\sim$0.5 ns per tile).
 
 Nevertheless, the observation is consistent with the expectation of the core of the shower depositing promptly most of the energy via EM sub-showers and relativistic particles near the shower axis. This is followed by a hadronic halo which contributes to delayed signals that may be from mainly neutron-induced processes. For the layers 3 to 10, the mean time of first hit varies between 0 ns at small radius and 10 ns at 25 cm. For the layers 11 to 14, it varies between 0 ns near the shower axis, 4 ns at 25 cm and 6 ns at 35 cm.
 
@@ -255,7 +255,7 @@ The data shows that by fixing the distance between the reconstructed FHI layer a
 
 \section{Longitudinal dependence of timing profiles}
 
-Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of mean time of the first hit as a function of the layer position was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
+Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of the mean time of the first hit as a function of the layer position was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -294,7 +294,7 @@ The longitudinal timing profile was also compared to simulations. The mean time 
 
 \section{Time correlations between layers}
 
-The advantage of this studied prototype over T3B is the possibility to investigate time correlations between layers. For this study, the data below 50 ns is ignored as only the tail of the timing distributions is interesting.
+The advantage of this studied prototype over T3B is the possibility to investigate time correlations between layers. For this study, the data below 50 ns is ignored as only the tail of the timing distributions is investigated.
 
 The procedure is done by looking at each hit in layer $i$ and checking in layer $i+1$ for a hit within a distance of 60 mm in the $x:y$ plane. If a hit is found, both times are plotted against each other. If more than one hit is found in layer $i+1$ within a radial distance of 60 mm, the closest in the $x:y$ plane is taken.
 
@@ -366,7 +366,7 @@ The understanding of the time structure of hadronic showers and the level of acc
 
 A testbeam at the SPS facility at CERN in July 2015 was focused to enhance the knowledge of the time development of hadronic showers. The AHCAL technological prototype, close to the ILD detector design, was equipped with 14 layers inserted in a steel absorber and using scintillator tiles as active material readout by SiPMs to provide radial and longitudinal sampling of showers with a high granularity and a ns-scale time resolution. For the first time, time study of hadronic showers was done which such granular calorimeters using integrated readout electronics.\\[0.1cm]
 
-\noindent\textbf{Energy scale calibration:} In chapter \ref{chap:ECalibAHCAL}, the energy scale calibration of the AHCAL was presented. 85\% of the AHCAL detector channels have been calibrated to a precision of around 1.7\%. The validation studies of the simulation concluded that the a good average energy calibration is achieved at the cell level. In addition, the simulation has been further validated with electromagnetic showers and it showed that the data is well reproduced at a level of 10-20\% precision.\\[0.1cm]
+\noindent\textbf{Energy scale calibration:} In chapter \ref{chap:ECalibAHCAL}, the energy scale calibration of the AHCAL was presented. 85\% of the AHCAL detector channels have been calibrated to a precision of around 1.7\%. The validation studies of the simulation concluded that a good average energy calibration is achieved at the cell level. In addition, the simulation has been further validated with electromagnetic showers and it showed that the data is well reproduced at a level of 10-20\% precision.\\[0.1cm]
 
 \noindent\textbf{Time calibration of the AHCAL:} In chapter \ref{chap:TimingCalib}, the time calibration procedure of the AHCAL was presented. More than 20000 constants have been determined from data. A time resolution of 5.65 ns is achieved after a simple time calibration of the AHCAL. However, several effects from the front-end electronics can be corrected. The non-linearity correction ,related to the non-linearity of the TDC ramp in the ASIC, improves the time resolution by around 5\% and the time-walk correction, related to the slow shaper in the ASIC that delays low amplitude signals, improves the time resolution further by 3\%. At the end, a time resolution of the order of 5 ns is achieved for minimum ionizing particles.\\[0.1cm]
 

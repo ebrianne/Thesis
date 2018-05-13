@@ -17,9 +17,9 @@ The time information provided by the SPIROC in the data is in TDC units (see sec
 
 In order to determine the ramp slope, the starting point or pedestal of the ramp and the endpoint of the ramp are measured. Since the SPIROC2B has two TDC ramps, each defined by a BXID parity (even or odd), two slopes need to be extracted per chip. In addition, each channel can store up to 16 events called memory-cell. Each memory-cell is different thus 16 calibration values or pedestal are needed per channel. The extraction of the slope and the determination of the pedestal is explained in section \ref{subsec:slope_calib}.
 
-Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compared them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
+Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compare them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
 
-Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) ramp and the time-walk effect (see section \ref{subsec:timewalk}).
+Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}).
 
 \section{Dataset}
 
@@ -92,7 +92,7 @@ where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ 
 \section{Calibration of the time reference}
 \label{section:time_ref}
 
-To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guaranty the most accurate result.
+To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guarantee the most accurate result.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
