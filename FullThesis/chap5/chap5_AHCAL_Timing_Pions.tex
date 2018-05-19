@@ -39,7 +39,7 @@ First, the elastic scattering of neutrons in the active material especially with
 	\label{fig:dNdt_Comparison}
 \end{figure}
 
-Figure \ref{fig:dNdt_Comparison} shows the time of first hit for muons, 10 GeV electrons and 50 GeV pions. Energy depositions from muons and electrons are instantaneous within a certain time window centered around 0 ns that is determined by the intrinsic time resolution of the detector. Some isolated hits are present in the tails most likely caused by SiPM thermal noise. This gives an idea of the noise level as well as the rejection of noise in the analysis. One can remark that the noise level in electron data is lower than in the muon data. The reason is not clear. It may come from the difference in beam rate and differences in the detector threshold configurations for different beams (9-120k event/spill for muons and 6-10k event/spill for electrons), however, the difference in beam rates between muon and electron beams does not explain the order of magnitude in difference.
+Figure \ref{fig:dNdt_Comparison} shows the time of first hit for muons, 10 GeV electrons and 50 GeV pions. Energy depositions from muons and electrons are instantaneous within a certain time window centered around 0 ns that is determined by the intrinsic time resolution of the detector. Some isolated hits are present in the tails most likely caused by SiPM thermal noise. This gives an idea of the noise level as well as the rejection of noise in the analysis. One can remark that the noise level in electron data is lower than in the muon data. The reason is not clear. It may come from the difference in beam rate and differences in the detector threshold configurations for different beams (9-120k event/spill for muons and 6-10k event/spill for electrons), however, the difference in beam rates between muon and electron beams does not explain the order of magnitude in difference. It may also come from the fact that for muons, multi-track events are present (around 1\% of events)
 
 The fraction of hits $n_{Late}/n_{Core}$, with $n_{Late}$ the number of hits later than 50 ns and $n_{Core}$ the number of hits between -50 and 50 ns, is around 2\% for muons, 0.37\% for electrons and about 1.5\% for pions. However, the noise level is similar on both sides of the time distribution for muons and electrons giving confidence that the tails are coming from noise hits and not physics.
 
@@ -76,7 +76,7 @@ From 10 to 50 GeV, the QGSP\_BERT\_HP physics list reproduces well the distribut
 
 The QBBC physics list tends to over-estimate the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC physics list agrees well with the time distribution for 60 GeV pions. It may be related to the use of different \geant versions because the T3B experiment has used \geant v9.4p03 \cite{Katja:Geant4Talk}. However, this could not be confirmed because geant4 v9.4p03 is not available within the ILCSoft ressources.
 
-For all time of first hit distributions, the QGSP\_BERT physics list over-estimates the tail of the distribution by around a factor 10.
+For all time of first hit distributions, the QGSP\_BERT physics list without the high-precision neutron treatment, too much late shower activity is predicted by around a factor 5.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}

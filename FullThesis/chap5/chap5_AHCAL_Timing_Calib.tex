@@ -12,7 +12,7 @@ The time information provided by the SPIROC in the data is in TDC units (see sec
 \begin{figure}[htbp!]
   \centering
   \includegraphics[width=0.7\linewidth]{chap5/fig_AHCAL_Timing/Others/TDCRamp.eps}
-  \caption{Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $\Delta_t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times$ (TDC$_{Hit}$ - Ped).} \label{fig:ConvertTime}
+  \caption{Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $s = (Max-Ped)/\Delta_t$. The time of the hit is then calculated as the following: t$_{Hit}$ = 1/s $\times$ (TDC$_{Hit}$ - Ped).} \label{fig:ConvertTime}
 \end{figure}
 
 In order to determine the ramp slope, the starting point or pedestal of the ramp and the endpoint of the ramp are measured. Since the SPIROC2B has two TDC ramps, each defined by a BXID parity (even or odd), two slopes need to be extracted per chip. In addition, each channel can store up to 16 events called memory-cell. Each memory-cell is different thus 16 calibration values or pedestal are needed per channel. The extraction of the slope and the determination of the pedestal is explained in section \ref{subsec:slope_calib}.
@@ -50,7 +50,7 @@ In this chapter, the muon dataset shown in section \ref{subsec:dataset} is used 
 
 To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
 \begin{equation} \label{eq:slope}
-	s \: \text{[ns/TDC]} = \frac{3920}{b - a}
+	s \: \text{[TDC/ns]} = \frac{b - a}{3920}
 \end{equation}
 where $s$ is the TDC ramp slope, $b$ is the endpoint of the TDC ramp and $a$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC voltage ramp.
 
@@ -68,24 +68,24 @@ At a first order, the slope of the TDC ramp is assumed to be linear. The paramet
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.eps}
 		\caption{} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
-	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $s$ = 1.47 $\pm$ 0.01 ns/TDC, $a$ = 888 $\pm$ 5 TDC and $b$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
+	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $1/s$ = 1.44 $\pm$ 0.01 ns/TDC, $a$ = 888 $\pm$ 5 TDC and $b$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
 \end{figure}
 
 The extraction of the parameters $a$ and $b$ is done by detecting the edges of the TDC spectrum. A threshold $\mu$ is used to extract $a$. This threshold corresponds to the mean of the vertical axis of the TDC spectrum. The parameter $a$ is extracted as the value of the first bin above 30\% of the threshold $\mu$. The endpoint of the ramp is extracted as the value of the last bin above 50\% of the maximum bin content of the TDC spectrum. The start point and the endpoint of the ramp are not extracted as the first and the last bin of the TDC spectrum, because the extraction technique needs to be robust against outliers and strange spectra such as the one shown in figure \ref{fig:TDC_Spectrum_bad}.
 
 An estimation of the uncertainties of the method has been performed. This is done to evaluate the precision of the extraction method. The uncertainty on the parameter $a$ is done by varying the 30\% threshold value by the uncertainty of $\mu$. Similarly for the parameter $b$, the uncertainty is done by varying by 1/3 of the maximum bin content. More details about the estimation of the calibration uncertainties is described in the appendix \ref{appendix:calib_error}.
 
-The extracted values for the slopes are shown in figure \ref{fig:slope_time}. They are in the expected range of 1.6 ns per TDC bin due to the limited dynamic range provided by the chip, around 2500 TDC bins for 4 $\mu$s.
+The extracted values for the inverse of the slope are shown in figure \ref{fig:slope_time}. They are in the expected range of 1.6 ns per TDC bin due to the limited dynamic range provided by the chip, around 2500 TDC bins for 4 $\mu$s.
 
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.5\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SlopesTDC.eps}
-	\caption{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
+	\caption{Distribution of the inverse of the slope for even and odd bunch-crossing IDs. $\mu_{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu_{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.} \label{fig:slope_time}
 \end{figure}
 
 Once the ramp slope has been extracted for each chip and BXID parity, the time of a hit in the i-th channel can then be calculated as
 \begin{equation} \label{eq:time_chn}
-	t_{i} \: \text{[ns]} = s \times (\text{TDC}_{i} - a)
+	t_{i} \: \text{[ns]} = 1/s \times (\text{TDC}_{i} - a)
 \end{equation}
 where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $a$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeFH}).
 
@@ -143,7 +143,7 @@ The time reference of the trigger is delayed compared to the muon passing throug
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets.eps}
 		\caption{}\label{fig:BXID_offset}
 	\end{subfigure}
-	\caption{\subref{fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.2 ns is determined for this channel. \subref{fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.}
+	\caption{\subref{fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.3 ns is determined for this channel. \subref{fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.}
 \end{figure}
 
 A shifting procedure of the time of the hit relative to the time reference for each channel, memory-cell and BXID parity is performed. This is done to take into account the delay time of the trigger due to cabling and the trigger electronics as well as possible differences in channel pedestals. Only memory-cells containing more than 100 events are considered. The histogram range of the time of the hit relative to the time reference is reduced iteratively until the RMS of the distribution is under 10 ns. This value was chosen because it corresponds to more than 3 sigma of the time reference uncertainty. The mean of the histogram is then used as the time offset value. An example of a single channel is shown in figure \ref{fig:TimeChnwithOffset}.

@@ -6,8 +6,8 @@
 \newlabel{chap:TimingCalib}{{9}{99}{Timing Calibration of the AHCAL}{chapter.9}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {9.1}Introduction}{99}{section.9.1}}
 \newlabel{sec:TimingIntro}{{9.1}{99}{Introduction}{section.9.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $\Delta _t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times $ (TDC$_{Hit}$ - Ped).\relax }}{99}{figure.caption.101}}
-\newlabel{fig:ConvertTime}{{9.1}{99}{Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $\Delta _t$/(Max-Ped). The time of the hit is then calculated as the following: t$_{Hit}$ = slope $\times $ (TDC$_{Hit}$ - Ped).\relax }{figure.caption.101}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.1}{\ignorespaces Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $s = (Max-Ped)/\Delta _t$. The time of the hit is then calculated as the following: t$_{Hit}$ = 1/s $\times $ (TDC$_{Hit}$ - Ped).\relax }}{99}{figure.caption.101}}
+\newlabel{fig:ConvertTime}{{9.1}{99}{Schematic of the TDC ramp in the SPIROC used in testbeam with a slow clock of 250 kHz. The slope of the ramp is $s = (Max-Ped)/\Delta _t$. The time of the hit is then calculated as the following: t$_{Hit}$ = 1/s $\times $ (TDC$_{Hit}$ - Ped).\relax }{figure.caption.101}{}}
 \citation{Brianne2012}
 \@writefile{toc}{\contentsline {section}{\numberline {9.2}Dataset}{100}{section.9.2}}
 \@writefile{lot}{\contentsline {table}{\numberline {9.1}{\ignorespaces Table with the number of events selected for the muon and electron data for the timing calibration.\relax }}{100}{table.caption.102}}
@@ -19,10 +19,10 @@
 \newlabel{sub@fig:TDC_Spectrum}{{a}{101}{\relax }{figure.caption.103}{}}
 \newlabel{fig:TDC_Spectrum_bad}{{9.2b}{101}{\relax }{figure.caption.103}{}}
 \newlabel{sub@fig:TDC_Spectrum_bad}{{b}{101}{\relax }{figure.caption.103}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.2}{\ignorespaces \subref  {fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $s$ = 1.47 $\pm $ 0.01 ns/TDC, $a$ = 888 $\pm $ 5 TDC and $b$ = 3613 $\pm $ 8 TDC. \subref  {fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.\relax }}{101}{figure.caption.103}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.2}{\ignorespaces \subref  {fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $1/s$ = 1.44 $\pm $ 0.01 ns/TDC, $a$ = 888 $\pm $ 5 TDC and $b$ = 3613 $\pm $ 8 TDC. \subref  {fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.\relax }}{101}{figure.caption.103}}
 \newlabel{eq:time_chn}{{9.2}{101}{Slope calibration}{equation.9.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.3}{\ignorespaces Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu _{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu _{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.\relax }}{102}{figure.caption.104}}
-\newlabel{fig:slope_time}{{9.3}{102}{Distribution of the fitted slopes for even and odd bunch-crossing IDs. $\mu _{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu _{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.\relax }{figure.caption.104}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.3}{\ignorespaces Distribution of the inverse of the slope for even and odd bunch-crossing IDs. $\mu _{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu _{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.\relax }}{102}{figure.caption.104}}
+\newlabel{fig:slope_time}{{9.3}{102}{Distribution of the inverse of the slope for even and odd bunch-crossing IDs. $\mu _{odd}$ = 1.564 ns/TDC, RMS$_{odd}$ = 0.121, $\mu _{even}$ = 1.556 ns/TDC, RMS$_{even}$ = 0.113. In total, 208 TDC slopes were extracted.\relax }{figure.caption.104}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {9.4}Calibration of the time reference}{102}{section.9.4}}
 \newlabel{section:time_ref}{{9.4}{102}{Calibration of the time reference}{section.9.4}{}}
 \newlabel{fig:T0_Correction}{{9.4a}{102}{\relax }{figure.caption.105}{}}
@@ -40,7 +40,7 @@
 \newlabel{sub@fig:TimeChnwithOffset}{{a}{103}{\relax }{figure.caption.106}{}}
 \newlabel{fig:BXID_offset}{{9.5b}{103}{\relax }{figure.caption.106}{}}
 \newlabel{sub@fig:BXID_offset}{{b}{103}{\relax }{figure.caption.106}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9.5}{\ignorespaces \subref  {fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.2 ns is determined for this channel. \subref  {fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.\relax }}{103}{figure.caption.106}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9.5}{\ignorespaces \subref  {fig:TimeChnwithOffset}) Time of first hit distribution for a single channel (Chip 236, Chn 21, Mem 01, BXID 1). An offset of -165.3 ns is determined for this channel. \subref  {fig:BXID_offset}) Distribution of the difference of offsets extracted for even and odd BXID for each channel and memory-cell. A mean time offset difference of 12 ns is visible between even and odd BXID.\relax }}{103}{figure.caption.106}}
 \citation{Liu:2015cpe}
 \@writefile{toc}{\contentsline {subsection}{\numberline {9.5.2}Time resolution of the AHCAL after calibration}{104}{subsection.9.5.2}}
 \newlabel{fig:timing_nocorrection}{{9.6a}{105}{\relax }{figure.caption.107}{}}

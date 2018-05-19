@@ -138,10 +138,10 @@
 \contentsline {section}{\numberline {11.1}Dataset}{121}{section.11.1}
 \contentsline {section}{\numberline {11.2}Time of first hit distribution}{121}{section.11.2}
 \contentsline {section}{\numberline {11.3}Energy dependence of the time of first hit}{123}{section.11.3}
-\contentsline {section}{\numberline {11.4}Radial dependence of the time}{125}{section.11.4}
+\contentsline {section}{\numberline {11.4}Radial dependence of the time}{126}{section.11.4}
 \contentsline {subsection}{\numberline {11.4.1}Time dependence with the shower depth}{127}{subsection.11.4.1}
-\contentsline {section}{\numberline {11.5}Longitudinal dependence of timing profiles}{130}{section.11.5}
-\contentsline {section}{\numberline {11.6}Time correlations between layers}{130}{section.11.6}
+\contentsline {section}{\numberline {11.5}Longitudinal dependence of timing profiles}{129}{section.11.5}
+\contentsline {section}{\numberline {11.6}Time correlations between layers}{131}{section.11.6}
 \contentsline {section}{\numberline {11.7}Summary and Outlook}{133}{section.11.7}
 \contentsline {chapter}{\numberline {12}Application of timing cuts in the ILD detector simulation}{137}{chapter.12}
 \contentsline {section}{\numberline {12.1}Simulation and software framework}{137}{section.12.1}
