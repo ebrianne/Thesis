@@ -457,9 +457,10 @@ M.~Bedjidian, J.-P. Ianigro, R.~Kieffer, I.~Laktineh, N.~Lumb, and S.~Vanzetto,
 \newblock 1st International Conference on Technology and Instrumentation in
   Particle Physics.
 
-\bibitem{Freund:2016wvz}
-B.~Freund {\em et~al.}, ``{DHCAL with Minimal Absorber: Measurements with
-  Positrons},'' {\em JINST}, vol.~11, no.~05, p.~P05008, 2016.
+\bibitem{1742-6596-587-1-012038}
+B.~Bilki and the CALICE~Collaboration, ``The calice digital hadron calorimeter:
+  calibration and response to pions and positrons,'' {\em Journal of Physics:
+  Conference Series}, vol.~587, no.~1, p.~012038, 2015.
 
 \bibitem{HARDROC:IEEE}
 F.~D. et~al., ``{HARDROC: Readout chip for CALICE/EUDET Digital Hadronic
@@ -719,6 +720,11 @@ S.~Laurien, ``Private communication,'' 2016.
 \bibitem{Hartbrich2011}
 O.~Hartbrich, ``{Investigation of the time measurement capabilities of the
   SPIROC2b ASIC}.'' DESY summer student report, 2011.
+
+\bibitem{Gunter:2015ika}
+C.~Günter, {\em {Comparison of Iron and Tungsten Absorber Structures for an
+  Analog Hadron Calorimeter}}.
+\newblock PhD thesis, U. Hamburg, Dept. Phys., Hamburg, 2015.
 
 \bibitem{Simon2013}
 F.~Simon, C.~Soldner, and L.~Weuste, ``{T3B - an experiment to measure the time

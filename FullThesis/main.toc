@@ -19,8 +19,8 @@
 \contentsline {chapter}{\numberline {2}Future $e^+e^-$ linear collider experiments}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}The case for a lepton collider}{16}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Higgs Physics}{16}{subsection.2.1.1}
-\contentsline {subsubsection}{Higgs mass, Branching Ratio and coupling measurements}{16}{section*.11}
-\contentsline {subsubsection}{Higgs self-coupling}{18}{section*.16}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Higgs mass, Branching Ratio and coupling measurements}{16}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Higgs self-coupling}{18}{subsubsection.2.1.1.2}
 \contentsline {subsection}{\numberline {2.1.2}Electroweak sector}{19}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Top mass measurement}{19}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Beyond the Standard Model}{20}{subsection.2.1.4}
@@ -30,22 +30,22 @@
 \contentsline {section}{\numberline {2.3}The International Large Detector (ILD)}{23}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}The ILD Coordinate System}{23}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}The ILD Tracking System}{23}{subsection.2.3.2}
-\contentsline {subsubsection}{Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT/ETD)}{24}{section*.21}
-\contentsline {subsubsection}{Time Projection Chamber (TPC)}{24}{section*.22}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Vertex detector (VTX) and Silicon tracking system (FTD/SET/SIT/ETD)}{24}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Time Projection Chamber (TPC)}{24}{subsubsection.2.3.2.2}
 \contentsline {subsection}{\numberline {2.3.3}The ILD Calorimeter System}{24}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}The SiD Detector}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}The Compact Linear Collider (CLIC)}{25}{section.2.5}
 \contentsline {chapter}{\numberline {3}Calorimetry and the Particle Flow Concept}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Particle interaction with matter}{29}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Electromagnetic showers}{29}{subsection.3.1.1}
-\contentsline {subsubsection}{Energy loss by electrons/positrons}{29}{section*.25}
-\contentsline {subsubsection}{Energy loss by photons}{30}{section*.26}
-\contentsline {subsubsection}{Electromagnetic cascades}{30}{section*.28}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Energy loss by electrons/positrons}{29}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Energy loss by photons}{30}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Electromagnetic cascades}{30}{subsubsection.3.1.1.3}
 \contentsline {subsection}{\numberline {3.1.2}Interaction of charged heavy particles}{32}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Hadronic showers}{33}{subsection.3.1.3}
-\contentsline {subsubsection}{Electromagnetic component}{34}{section*.32}
-\contentsline {subsubsection}{Hadronic component}{34}{section*.33}
-\contentsline {subsubsection}{Time development}{35}{section*.34}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Electromagnetic component}{34}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Hadronic component}{34}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Time development}{35}{subsubsection.3.1.3.3}
 \contentsline {section}{\numberline {3.2}Calorimeters}{35}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Energy resolution}{36}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Compensation}{36}{subsection.3.2.2}
@@ -60,18 +60,18 @@
 \contentsline {subsection}{\numberline {4.3.2}Scintillator Strip-Tungsten ECAL}{44}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Hadronic Calorimeters}{45}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Digital HCAL}{45}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Semi-Digital HCAL}{46}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Semi-Digital HCAL}{45}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Analog HCAL}{46}{subsection.4.4.3}
-\contentsline {subsubsection}{Silicon Photomultipliers}{47}{section*.43}
-\contentsline {subsubsection}{The SPIROC ASIC}{48}{section*.45}
-\contentsline {subsubsection}{The AHCAL Prototype}{50}{section*.48}
-\contentsline {subsubsection}{Current status of the AHCAL engineering prototype}{52}{section*.52}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Silicon Photomultipliers}{46}{subsubsection.4.4.3.1}
+\contentsline {subsubsection}{\numberline {4.4.3.2}The SPIROC ASIC}{48}{subsubsection.4.4.3.2}
+\contentsline {subsubsection}{\numberline {4.4.3.3}The AHCAL Prototype}{49}{subsubsection.4.4.3.3}
+\contentsline {subsubsection}{\numberline {4.4.3.4}Current status of the AHCAL engineering prototype}{52}{subsubsection.4.4.3.4}
 \contentsline {chapter}{\numberline {5}Simulation and Software tools}{55}{chapter.5}
 \contentsline {section}{\numberline {5.1}Simulation of particle showers}{55}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Electromagnetic shower models}{55}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Hadronic shower models}{56}{subsection.5.1.2}
-\contentsline {subsubsection}{Intra-Nuclear Cascade Models}{56}{section*.54}
-\contentsline {subsubsection}{String-Parton Cascade Models}{57}{section*.56}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Intra-Nuclear Cascade Models}{56}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}String-Parton Cascade Models}{57}{subsubsection.5.1.2.2}
 \contentsline {subsection}{\numberline {5.1.3}\textsc {Geant\tmspace +\thinmuskip {.1667em}4}\xspace Physics Lists}{58}{subsection.5.1.3}
 \contentsline {section}{\numberline {5.2}Software tools}{59}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}\textsc {ILCSoft}\xspace software framework}{59}{subsection.5.2.1}
@@ -97,8 +97,8 @@
 \contentsline {section}{\numberline {7.2}Dataset and Event Selection}{78}{section.7.2}
 \contentsline {subsection}{\numberline {7.2.1}Dataset}{78}{subsection.7.2.1}
 \contentsline {subsection}{\numberline {7.2.2}Muon selection}{78}{subsection.7.2.2}
-\contentsline {subsubsection}{Pre-selection}{78}{section*.78}
-\contentsline {subsubsection}{Selection}{79}{section*.80}
+\contentsline {subsubsection}{\numberline {7.2.2.1}Pre-selection}{78}{subsubsection.7.2.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2.2}Selection}{79}{subsubsection.7.2.2.2}
 \contentsline {subsection}{\numberline {7.2.3}Electron Selection}{81}{subsection.7.2.3}
 \contentsline {subsection}{\numberline {7.2.4}Pion Selection}{83}{subsection.7.2.4}
 \contentsline {subsection}{\numberline {7.2.5}Rejection of outlier chips}{84}{subsection.7.2.5}
@@ -138,10 +138,10 @@
 \contentsline {section}{\numberline {11.1}Dataset}{121}{section.11.1}
 \contentsline {section}{\numberline {11.2}Time of first hit distribution}{121}{section.11.2}
 \contentsline {section}{\numberline {11.3}Energy dependence of the time of first hit}{123}{section.11.3}
-\contentsline {section}{\numberline {11.4}Radial dependence of the time}{126}{section.11.4}
+\contentsline {section}{\numberline {11.4}Radial dependence of the time}{125}{section.11.4}
 \contentsline {subsection}{\numberline {11.4.1}Time dependence with the shower depth}{127}{subsection.11.4.1}
-\contentsline {section}{\numberline {11.5}Longitudinal dependence of timing profiles}{129}{section.11.5}
-\contentsline {section}{\numberline {11.6}Time correlations between layers}{131}{section.11.6}
+\contentsline {section}{\numberline {11.5}Longitudinal dependence of timing profiles}{130}{section.11.5}
+\contentsline {section}{\numberline {11.6}Time correlations between layers}{130}{section.11.6}
 \contentsline {section}{\numberline {11.7}Summary and Outlook}{133}{section.11.7}
 \contentsline {chapter}{\numberline {12}Application of timing cuts in the ILD detector simulation}{137}{chapter.12}
 \contentsline {section}{\numberline {12.1}Simulation and software framework}{137}{section.12.1}
@@ -156,14 +156,14 @@
 \contentsline {subsection}{\numberline {12.4.2}Event Selection}{143}{subsection.12.4.2}
 \contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{144}{subsection.12.4.3}
 \contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{145}{subsection.12.4.4}
-\contentsline {subsubsection}{Assuming perfect time resolution}{145}{section*.148}
-\contentsline {subsubsection}{In a realistic scenario}{150}{section*.155}
+\contentsline {subsubsection}{\numberline {12.4.4.1}Assuming perfect time resolution}{145}{subsubsection.12.4.4.1}
+\contentsline {subsubsection}{\numberline {12.4.4.2}In a realistic scenario}{150}{subsubsection.12.4.4.2}
 \contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{152}{section.12.5}
 \contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{154}{subsection.12.5.1}
 \contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{156}{subsection.12.5.2}
 \contentsline {section}{\numberline {12.6}Conclusion and Outlook}{156}{section.12.6}
 \contentsline {chapter}{\numberline {13}Summary}{159}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{163}{section*.166}
+\contentsline {chapter}{Acknowledgments}{163}{section*.146}
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{165}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{167}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{171}{Appendix.1.C}
@@ -173,7 +173,7 @@
 \contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{193}{Appendix.1.G}
 \contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{195}{Appendix.1.H}
 \contentsline {chapter}{Appendix \numberline {I}Calibration database}{199}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{201}{appendix*.204}
-\contentsline {chapter}{List of figures}{203}{appendix*.205}
-\contentsline {chapter}{Acronyms}{215}{section*.206}
-\contentsline {chapter}{Bibliography}{219}{appendix*.208}
+\contentsline {chapter}{List of tables}{201}{appendix*.184}
+\contentsline {chapter}{List of figures}{203}{appendix*.185}
+\contentsline {chapter}{Acronyms}{215}{section*.186}
+\contentsline {chapter}{Bibliography}{219}{appendix*.188}

@@ -65,7 +65,7 @@ Around 60 chips were tested with a yield of 84\%. There is no obvious common cau
 The commissioning procedure of the detector was done in July/August 2014 for a testbeam that was planned in October/November 2014 at the CERN PS facility. The same boards were used during the testbeams in 2015. A picture of the setup used in this thesis is shown in figure \ref{fig:Det_layout}. Before the assembly of the detector into the absorber stack, each individual HBU needs to be tested. This test is done in order to characterize the full board. The procedure involved these steps:
 
 \begin{itemize}
-  \item The setup the Power Board voltage to deliver the high voltage to the SIPM and the setup the input DAC value.
+  \item The setup of the Power Board voltage to deliver the high voltage to the SIPM and the setup the input DAC value.
   \item A first characterization of the board by measuring the SiPM gain at nominal settings.
   \item An iterative adjustment of the pre-amplifier gain to reach the targeted SiPM gain.
   \item A threshold scan measurement.
@@ -153,7 +153,7 @@ The goal of this procedure is to fit the dynamic range of the SPIROC2B in ADC to
 
 The targeted gain is calculated by:
 \begin{equation}
-  G_{target} [ADC] = \frac{ADC_{max}}{N_{px} [px]}
+  G_{target} [ADC] = \frac{ADC_{max}}{N_{px} [px]} \label{eq:GainTarget}
 \end{equation}
 where $G_{target}$ is the value targeted for gain, $ADC_{max}$ is the maximum ADC range and $N_{px}$ the number of pixels on the SiPM. The maximum ADC range is calculated as follows
 \begin{equation}
@@ -161,7 +161,7 @@ where $G_{target}$ is the value targeted for gain, $ADC_{max}$ is the maximum AD
 \end{equation}
 where $ADC_{12 bits} = 4096$ and $IC_{HG/LG}$ is the high/low gain intercalibration factor. By design, it should have a value of 10. A conservative number of $ADC_{12 bits} = 3600$ is taken due to the variation of $IC_{HG/LG}$ between 8-12 and the pedestal value, i.e the ADC level corresponding to no signal, at around 250 ADC. This gives an approximated range of $ADC_{max} = 3600 \times 10 = 36 000$ ADC.
 
-This formula is competing with the dynamic range to measure the energy:
+The formula \ref{eq:GainTarget} is competing with the dynamic range to measure the energy:
 \begin{equation}
   E_{max} [MIP] = \frac{ADC_{max}}{LY \times G_{target}}
 \end{equation}
@@ -188,7 +188,7 @@ The Ketek SiPM with 12k pixels are operated in different modes for calibration a
 
 The pre-amplifier feedback capacitor value can be calculated using the figure \ref{fig:PA_curve} to achieve the targeted gain. In principle, this curve needs to be measured for each channel but due to many improvements in the measurement procedure, LED light uniformity, SIPM gain and uniformity, this curve gives a very good approximation. For the example that is shown in figure \ref{fig:Gain100fF}, the calculation gives a value of 675 fF that needs to be used to reach a gain of 12 ADC/px.
 
-The gain measurement procedure described in section \ref{subsec:GainCharac} is then performed with the calculated pre-amplifier capacitor feedback. The result of the gain fit are shown in figure \ref{fig:Gain675fF} for the example from above. It shows a gain very close to the target gain. This procedure is iterated until the targeted gain is reached. Most of the time, only one more iteration was needed due to the granularity of the pre-amplifier capacitance.
+The gain measurement procedure described in section \ref{subsec:GainCharac} is then performed with the calculated pre-amplifier capacitor feedback. The result of the gain fit is shown in figure \ref{fig:Gain675fF} for the example from above. It shows a gain very close to the target gain. This procedure is iterated until the targeted gain is reached. Most of the time, only one more iteration was needed due to the granularity of the pre-amplifier capacitance.
 
 \begin{figure}[htbp!]
   \centering
@@ -236,7 +236,7 @@ This method was performed on 14 fully equipped HBUs \cite{LloydTrigger}. The dep
 
 \section{Noise Measurement in the AHCAL}
 
-A noise measurement is needed and is a measurement that gives additional information on the trigger threshold. As explained above, the setting of the trigger threshold is very crucial. If the threshold is set too low, a noisy channel could overflow the whole detector thus reducing the readout efficiency. Noise measurements has already been done in the past for 4 HBU boards in 2012 \cite{Hermberg:2015gaa}. This method is a proof-of-concept that seems to fulfill the requirement of characterizing the noise as a function of the threshold position for all the channels or a chip at once. The needed accuracy is also here not so crucial in order to keep the threshold in the acceptable range of 0.5 MIP. This method enables us to have an idea of the noise level at a certain trigger threshold and especially to understand the evolution of noise as a function of the trigger threshold. This measurement method utilizes the fact that SiPM noise should follow a Poisson distribution. Moreover, to eliminate the dependence of the SiPM noise as a function of the temperature, the measurement is performed in a climate chamber at a temperature of 25 degrees Celsius.
+A noise measurement is needed and is a measurement that gives additional information on the trigger threshold. As explained above, the setting of the trigger threshold is very crucial. If the threshold is set too low, a noisy channel could overflow the whole detector thus reducing the readout efficiency. Noise measurements have already been done in the past for 4 HBU boards in 2012 \cite{Hermberg:2015gaa}. This method is a proof-of-concept that seems to fulfill the requirement of characterizing the noise as a function of the threshold position for all the channels or a chip at once. The needed accuracy is also here not so crucial in order to keep the threshold in the acceptable range of 0.5 MIP. This method enables us to have an idea of the noise level at a certain trigger threshold and especially to understand the evolution of noise as a function of the trigger threshold. This measurement method utilizes the fact that SiPM noise should follow a Poisson distribution. Moreover, to eliminate the dependence of the SiPM noise as a function of the temperature, the measurement is performed in a climate chamber at a temperature of 25 degrees Celsius.
 
 Each measurement is taken in auto-trigger mode for different time windows ($T$), from 1 ms to 30 ms, for different values of the trigger threshold from 200 to 250. Each measurement is done 200 times (readout cycles). For each cycle, the number of filled memory cells is put into a histogram per chip. It is checked that the bin 15 of the histogram, i.e corresponding to the memory cell 16, is not filled otherwise the chip would be automatically read out. This is done to ensure that the measurement is stopped at exactly the end of the time window and not before. In a next step, each histogram is fitted with a Poisson distribution. A typical example of a chip can be seen in figure \ref{fig:MemPoison}. The most probable value (MPV) $\lambda_{mem}$ of the Poisson distribution gives the most probable number of memory cells filled per chip for a specific trigger threshold value and time window $T$.
 
@@ -256,9 +256,9 @@ This can then be converted into a noise rate as $\textit{Noise Rate} = \frac{\la
   \caption{\subref{fig:MemPoison}) Observed histogram of the number of memory cells filled per cycle for a typical chip with a trigger threshold of 210 and a time window $T$ of 3 ms. $\lambda_{mem}$ = 1.5 $\pm$ 0.1.\subref{fig:DCRThr}) Extracted noise rate as a function of the trigger threshold setting for a full board.}
 \end{figure}
 
-The figure \ref{fig:DCRThr} shows that noise decreases fast with increasing threshold until a plateau is reached. This plateau is the ideal area to set the threshold as the noise is quite constant. In this figure, a threshold between 230 and 240 was chosen. As this method is complementary to the threshold scan, the region can be compared to where is the threshold put in terms of MIP value. For this board, a threshold of 230-240 corresponds to about a threshold 0.2-0.25 MIP which is well below 0.5 MIP and thus safe.
+The figure \ref{fig:DCRThr} shows that noise decreases fast with increasing threshold until a plateau is reached. This plateau is the ideal area to set the threshold as the curve is quite constant. The fact that the curve is constant as a function of the threshold may indicate that a large signal, e.g cosmics, limits the noise measurement in this region. However, the rate seems compatible with noise only. In this figure, a threshold between 230 and 240 was chosen. As this method is complementary to the threshold scan, the region can be compared to where is the threshold put in terms of MIP value. For this board, a threshold of 230-240 corresponds to about a threshold 0.2-0.25 MIP which is well below 0.5 MIP and thus safe.
 
-This method is very complementary to the threshold scan and can be used to set a relatively safe trigger threshold for all chips. It does not rely on a very precise measurement and has been shown to work well for all chips. Moreover, this method requires only minimal additional time to the commissioning procedure. A full understanding of the position of the trigger threshold relative to 0.5 MIP would greatly improve the data taking efficiency of future AHCAL engineering prototypes.
+This method is very complementary to the threshold scan and can be used to set a trigger threshold for all chips that allows for a stable operation of the detector. It does not rely on a very precise measurement and has been shown to work well for all chips. Moreover, this method requires only minimal additional time to the commissioning procedure. A full understanding of the position of the trigger threshold relative to 0.5 MIP would greatly improve the data taking efficiency of future AHCAL engineering prototypes.
 
 \begin{center}
   \rule{0.5\textwidth}{.4pt}

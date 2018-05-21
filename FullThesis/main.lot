@@ -3,53 +3,53 @@
 \contentsline {table}{\numberline {1.1}{\ignorespaces Elementary fermions and their properties in the Standard Model. The masses are from \cite {Patrignani:2016xqp}. The quark masses depend on the calculation scheme.\relax }}{4}{table.caption.4}
 \contentsline {table}{\numberline {1.2}{\ignorespaces Bosons in the Standard Model. The masses are from \cite {Patrignani:2016xqp}. The photon and gluon are assumed to be massless. Gravitation is not considered.\relax }}{5}{table.caption.5}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Decay modes of the Higgs boson and the branching ratio for a SM Higgs boson at $m_H$ = 125 GeV \cite {}. Others represents $\mu \mu $, $\gamma \gamma $, $Z\gamma $ and invisible.\relax }}{17}{table.caption.13}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Decay modes of the Higgs boson and the branching ratio for a SM Higgs boson at $m_H$ = 125 GeV \cite {}. Others represents $\mu \mu $, $\gamma \gamma $, $Z\gamma $ and invisible.\relax }}{17}{table.caption.12}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Material description in \textsc {Mokka}\xspace and \textsc {DD4hep}\xspace simulations of the testbeam setup at CERN in July 2015. The X$_0$ and $\lambda _n$ numbers are obtained by the command-line \textit {materialScan} in the \textsc {DD4hep}\xspace framework.\relax }}{61}{table.caption.60}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Number of single particle events simulated in \textsc {Mokka}\xspace and \textsc {DD4hep}\xspace for each particle type and energy.\relax }}{61}{table.caption.61}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Material description in \textsc {Mokka}\xspace and \textsc {DD4hep}\xspace simulations of the testbeam setup at CERN in July 2015. The X$_0$ and $\lambda _n$ numbers are obtained by the command-line \textit {materialScan} in the \textsc {DD4hep}\xspace framework.\relax }}{61}{table.caption.44}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Number of single particle events simulated in \textsc {Mokka}\xspace and \textsc {DD4hep}\xspace for each particle type and energy.\relax }}{61}{table.caption.45}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces List of the different SiPMs used in the CALICE AHCAL in July 2015.\relax }}{66}{table.caption.65}
-\contentsline {table}{\numberline {6.2}{\ignorespaces List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$.\relax }}{67}{table.caption.66}
-\contentsline {table}{\numberline {6.3}{\ignorespaces List of the targeted gains for each layer type.\relax }}{69}{table.caption.68}
+\contentsline {table}{\numberline {6.1}{\ignorespaces List of the different SiPMs used in the CALICE AHCAL in July 2015.\relax }}{66}{table.caption.49}
+\contentsline {table}{\numberline {6.2}{\ignorespaces List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$.\relax }}{67}{table.caption.50}
+\contentsline {table}{\numberline {6.3}{\ignorespaces List of the targeted gains for each layer type.\relax }}{69}{table.caption.52}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces List of AHCAL channels used as time reference for this analysis.\relax }}{78}{table.caption.76}
-\contentsline {table}{\numberline {7.2}{\ignorespaces List of runs taken at SPS in July 2015.\relax }}{79}{table.caption.77}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Efficiency of the electron selection for simulated electrons, muons and pions for energies between 10 and 50 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.\relax }}{81}{table.caption.82}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Efficiency of the pion selection for beam energies between 10 and 90 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.\relax }}{83}{table.caption.84}
+\contentsline {table}{\numberline {7.1}{\ignorespaces List of AHCAL channels used as time reference for this analysis.\relax }}{78}{table.caption.60}
+\contentsline {table}{\numberline {7.2}{\ignorespaces List of runs taken at SPS in July 2015.\relax }}{79}{table.caption.61}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Efficiency of the electron selection for simulated electrons, muons and pions for energies between 10 and 50 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.\relax }}{81}{table.caption.64}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Efficiency of the pion selection for beam energies between 10 and 90 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.\relax }}{83}{table.caption.66}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{\ignorespaces Table containing the results of the extraction of the MIP calibration constants. The results are regrouped by SiPM type. <MIP> is the mean of the MIP calibration constant distribution per SiPM type. RMS is the standard deviation of MIP calibration constant distribution per SiPM type. Dead and noisy channels are rejected.\relax }}{91}{table.caption.91}
-\contentsline {table}{\numberline {8.2}{\ignorespaces Settings of the particle gun in simulation used to reproduce the beam profile of the data runs used in this thesis.\relax }}{94}{table.caption.96}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Table containing the results of the extraction of the MIP calibration constants. The results are regrouped by SiPM type. <MIP> is the mean of the MIP calibration constant distribution per SiPM type. RMS is the standard deviation of MIP calibration constant distribution per SiPM type. Dead and noisy channels are rejected.\relax }}{91}{table.caption.73}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Settings of the particle gun in simulation used to reproduce the beam profile of the data runs used in this thesis.\relax }}{94}{table.caption.78}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {9.1}{\ignorespaces Table with the number of events selected for the muon and electron data for the timing calibration.\relax }}{100}{table.caption.102}
+\contentsline {table}{\numberline {9.1}{\ignorespaces Table with the number of events selected for the muon and electron data for the timing calibration.\relax }}{100}{table.caption.84}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {10.1}{\ignorespaces Summary of systematic uncertainties.\relax }}{118}{table.caption.120}
-\contentsline {table}{\numberline {10.2}{\ignorespaces Timing resolution extracted with a double Gaussian fit from muon data used for simulation.\relax }}{118}{table.caption.121}
+\contentsline {table}{\numberline {10.1}{\ignorespaces Summary of systematic uncertainties.\relax }}{117}{table.caption.102}
+\contentsline {table}{\numberline {10.2}{\ignorespaces Timing resolution extracted with a double Gaussian fit from muon data used for simulation.\relax }}{117}{table.caption.103}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {11.1}{\ignorespaces Table with the number of events selected in the pion dataset for the timing study.\relax }}{121}{table.caption.124}
-\contentsline {table}{\numberline {11.2}{\ignorespaces Summary of the fit results in figure \ref {fig:dNdt_Comparison}.\relax }}{123}{table.caption.126}
-\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of entries in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top is for \textsc {Mokka}\xspace simulations, the bottom is for \textsc {DD4hep}\xspace simulations. The quoted errors are only statistical errors.\relax }}{133}{table.caption.140}
+\contentsline {table}{\numberline {11.1}{\ignorespaces Table with the number of events selected in the pion dataset for the timing study.\relax }}{121}{table.caption.106}
+\contentsline {table}{\numberline {11.2}{\ignorespaces Summary of the fit results in figure \ref {fig:dNdt_Comparison}.\relax }}{123}{table.caption.108}
+\contentsline {table}{\numberline {11.3}{\ignorespaces Table with fraction of entries in the red box region as calculated with equation \ref {eq:CorrelCalcul}. The top is for \textsc {Mokka}\xspace simulations, the bottom is for \textsc {DD4hep}\xspace simulations. The quoted errors are only statistical errors.\relax }}{133}{table.caption.122}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {12.1}{\ignorespaces Assumption on the time resolution of the front-end electronics for different scenarios.\relax }}{150}{table.caption.156}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Selection cuts for the muon runs.\relax }}{165}{table.caption.168}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Selection cuts for each electron runs.\relax }}{165}{table.caption.169}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Selection cuts for the pions runs.\relax }}{166}{table.caption.170}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Selection cuts for the time reference channels.\relax }}{166}{table.caption.171}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Selection cuts for the extraction of noise hits from muon runs.\relax }}{166}{table.caption.172}
+\contentsline {table}{\numberline {12.1}{\ignorespaces Assumption on the time resolution of the front-end electronics for different scenarios.\relax }}{150}{table.caption.136}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Selection cuts for the muon runs.\relax }}{165}{table.caption.148}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Selection cuts for each electron runs.\relax }}{165}{table.caption.149}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Selection cuts for the pions runs.\relax }}{166}{table.caption.150}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Selection cuts for the time reference channels.\relax }}{166}{table.caption.151}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Selection cuts for the extraction of noise hits from muon runs.\relax }}{166}{table.caption.152}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{193}{table.caption.198}
-\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{193}{table.caption.199}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{196}{table.caption.200}
-\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{197}{table.caption.201}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{199}{table.caption.202}
-\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{200}{table.caption.203}
+\contentsline {table}{\numberline {G.1}{\ignorespaces Table of chips rejected for muon runs.\relax }}{193}{table.caption.178}
+\contentsline {table}{\numberline {G.2}{\ignorespaces Table of chips rejected for electron and pion runs.\relax }}{193}{table.caption.179}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {H.1}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{196}{table.caption.180}
+\contentsline {table}{\numberline {H.2}{\ignorespaces Table containing the list of dead and noisy channels.\relax }}{197}{table.caption.181}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {I.1}{\ignorespaces The CALICE geometry database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{199}{table.caption.182}
+\contentsline {table}{\numberline {I.2}{\ignorespaces The CALICE calibration database folder names of the 2015 CERN testbeam campaign. Tags are given in brackets.\relax }}{200}{table.caption.183}

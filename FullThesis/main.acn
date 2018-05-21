@@ -43,11 +43,11 @@
 \glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{TDC?\glossentry{tdc}|setentrycounter[]{page}\glsnumberformat}{43}
 \glossaryentry{SPIROC2B?\glossentry{spiroc2b}|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{SiPM?\glossentry{sipm}|setentrycounter[]{page}\glsnumberformat}{47}
-\glossaryentry{APD?\glossentry{apd}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{SiPM?\glossentry{sipm}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{APD?\glossentry{apd}|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{PDE?\glossentry{pde}|setentrycounter[]{page}\glsnumberformat}{47}
-\glossaryentry{DAC?\glossentry{dac}|setentrycounter[]{page}\glsnumberformat}{49}
-\glossaryentry{LED?\glossentry{led}|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{DAC?\glossentry{dac}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{LED?\glossentry{led}|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{FPGA?\glossentry{fpga}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{BGA?\glossentry{bga}|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{SPS?\glossentry{sps}|setentrycounter[]{page}\glsnumberformat}{78}

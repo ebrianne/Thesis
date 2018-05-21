@@ -97,45 +97,45 @@ Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 161 entries,
+You've used 162 entries,
             1876 wiz_defined-function locations,
-            1431 strings with 32251 characters,
-and the built_in function-call counts, 37426 in all, are:
-= -- 3545
-> -- 1446
+            1434 strings with 32418 characters,
+and the built_in function-call counts, 37555 in all, are:
+= -- 3561
+> -- 1450
 < -- 0
-+ -- 563
-- -- 402
-* -- 2390
-:= -- 5305
-add.period$ -- 171
-call.type$ -- 161
++ -- 565
+- -- 403
+* -- 2397
+:= -- 5329
+add.period$ -- 173
+call.type$ -- 162
 change.case$ -- 151
 chr.to.int$ -- 0
-cite$ -- 212
-duplicate$ -- 2204
-empty$ -- 3657
-format.name$ -- 402
-if$ -- 9264
+cite$ -- 213
+duplicate$ -- 2211
+empty$ -- 3668
+format.name$ -- 403
+if$ -- 9293
 int.to.chr$ -- 0
-int.to.str$ -- 161
+int.to.str$ -- 162
 missing$ -- 147
-newline$ -- 509
-num.names$ -- 157
-pop$ -- 634
+newline$ -- 513
+num.names$ -- 158
+pop$ -- 635
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1420
+skip$ -- 1422
 stack$ -- 0
 substring$ -- 1699
-swap$ -- 850
+swap$ -- 851
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 51
-while$ -- 289
-width$ -- 164
-write$ -- 1471
+while$ -- 290
+width$ -- 165
+write$ -- 1482
 (There were 2 error messages)
