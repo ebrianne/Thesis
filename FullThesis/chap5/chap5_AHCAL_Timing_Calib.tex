@@ -19,7 +19,7 @@ In order to determine the ramp slope, the starting point or pedestal of the ramp
 
 Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compare them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
 
-Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}). In the following, the hit time of a channel is referred as the time of the first hit because only the first hit per channel is registered during a bunch-crossing (multiple hits could occur in a channel but only the first one is kept by the SPIROC2b).
+Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}). In the following, the hit time of a channel is referred to as the time of the first hit because only the first hit per channel is registered during a bunch-crossing (multiple hits could occur in a channel but only the first one is kept by the SPIROC2b).
 
 \section{Dataset}
 
@@ -45,16 +45,16 @@ In this chapter, the muon dataset shown in section \ref{subsec:dataset} is used 
 	\end{tabular}
 \end{table}
 
-\section{Slope calibration}
+\section{Slope and pedestal calibration}
 \label{subsec:slope_calib}
 
 To reconstruct the time of the first hit in a channel, the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
 \begin{equation} \label{eq:slope}
 	s \: \text{[TDC/ns]} = \frac{b - a}{3920}
 \end{equation}
-where $s$ is the TDC ramp slope, $b$ is the endpoint of the TDC ramp and $a$ is the start point of the TDC ramp that is referred in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC voltage ramp.
+where $s$ is the TDC ramp slope, $b$ is the endpoint of the TDC ramp and $a$ is the start point of the TDC ramp that is referred to in the following as pedestal. The total length of the ramp is 3920 ns instead of the expected value of 4000 ns due to a deadtime of around 2\% \cite{Brianne2012} induced by the multiplexer that switches between the two ramps. This section will describe the method used to extract the slope of the TDC ramp.
 
-At a first order, the slope of the TDC ramp is assumed to be linear. The parameters $a$ and $b$ are extracted from the TDC spectrum of a channel per chip and BXID parity using only the first memory-cell as shown in figure \ref{fig:TDC_Spectrum}. The TDC ramp slope does not depend on the memory-cell as the memory-cell only introduce an offset on the parameters $a$ and $b$. A total of 208 slopes have to be extracted for the testbeam setup.
+At a first order, the slope of the TDC ramp is assumed to be linear. The parameters $a$ and $b$ are extracted from the TDC spectrum per chip (combining all channels) and BXID parity using only the first memory-cell as shown in figure \ref{fig:TDC_Spectrum}. The TDC ramp slope does not depend on the memory-cell as the memory-cell only introduce an offset on the parameters $a$ and $b$. A total of 208 slopes have to be extracted for the testbeam setup.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -68,7 +68,7 @@ At a first order, the slope of the TDC ramp is assumed to be linear. The paramet
 		\includegraphics[width=1\linewidth]{../Thesis_Plots/Timing/Muons/Plots/BadTDCSpectra_Layer11.eps}
 		\caption{} \label{fig:TDC_Spectrum_bad}
 	\end{subfigure}
-	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip. The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $1/s$ = 1.44 $\pm$ 0.01 ns/TDC, $a$ = 888 $\pm$ 5 TDC and $b$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on layer 11. The chip 175 on this layer is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that layer.}
+	\caption{\subref{fig:TDC_Spectrum}) TDC spectrum of a typical chip (all channels). The black lines indicate the fitted Max and Pedestal parameters for this chip. The extracted parameters are $1/s$ = 1.44 $\pm$ 0.01 ns/TDC, $a$ = 888 $\pm$ 5 TDC and $b$ = 3613 $\pm$ 8 TDC. \subref{fig:TDC_Spectrum_bad}) TDC spectrum of a bad chip on module 11. The chip 175 on this module is presenting a long tail to high TDC values. The reason is not understood but present on all chips on that module.}
 \end{figure}
 
 The extraction of the parameters $a$ and $b$ is done by detecting the edges of the TDC spectrum. A threshold $\mu$ is used to extract $a$. This threshold corresponds to the mean of the vertical axis of the TDC spectrum. The parameter $a$ is extracted as the value of the first bin above 30\% of the threshold $\mu$. The endpoint of the ramp is extracted as the value of the last bin above 50\% of the maximum bin content of the TDC spectrum. The start point and the endpoint of the ramp are not extracted as the first and the last bin of the TDC spectrum, because the extraction technique needs to be robust against outliers and strange spectra such as the one shown in figure \ref{fig:TDC_Spectrum_bad}.
@@ -85,9 +85,9 @@ The extracted values for the inverse of the slope are shown in figure \ref{fig:s
 
 Once the ramp slope has been extracted for each chip and BXID parity, the time of a hit in the i-th channel can then be calculated as
 \begin{equation} \label{eq:time_chn}
-	t_{i} \: \text{[ns]} = 1/s \times (\text{TDC}_{i} - a)
+	t_{i} \: \text{[ns]} = 1/s \times (\text{TDC}_{i} - Ped)
 \end{equation}
-where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $a$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeFH}).
+where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $Ped$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity that is extracted using the same method as above. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeFH}).
 
 \section{Calibration of the time reference}
 \label{section:time_ref}
@@ -111,7 +111,7 @@ To reconstruct the time of the first hit in a channel, the measured time of a hi
 
 Events are selected by requiring that T$_{12}$, T$_{13}$ and T$_{14}$ are present in the event in a certain amplitude range as shown in table \ref{table:T0_sel} to reject noise hits from these channels. These channels receive the trigger coincidence signal at the same time, and therefore a timing correction is applied to ensure that they match in time. This is done to remove any effect induced by the front-end electronics.
 
-A $2^{nd}$ order polynomial correction of the time of (T$_{12}$ - T$_{14}$) and (T$_{13}$ - T$_{14}$) as a function of T$_{12}$ and T$_{13}$ respectively is done. Ideally, the difference between T$_{12}$ and T$_{13}$ to T$_{14}$ should be a Gaussian distribution centered at 0 ns. The figure \ref{fig:T0_Correction} shows the difference (T$_{12}$ - T$_{14}$) before correction in blue and after correction in red.
+A $2^{nd}$ order polynomial correction of the time of (T$_{12}$ - T$_{14}$) and (T$_{13}$ - T$_{14}$) as a function of T$_{12}$ and T$_{13}$ respectively is done. This correction is equivalent to a non-linearity correction of T$_{12}$ and T$_{13}$ relative to T$_{14}$ similar to the procedure shown in section \ref{subsec:lin_corr}. In this case, T$_{14}$ is not corrected for non-linearity. Ideally, the difference between T$_{12}$ and T$_{13}$ to T$_{14}$ should be a Gaussian distribution centered at 0 ns. The figure \ref{fig:T0_Correction} shows the difference (T$_{12}$ - T$_{14}$) before correction in blue and after correction in red.
 
 The correction is needed due to the fact that a different value of the pedestal is needed for each BXID parity which was not expected. The resulting RMS of the reference triggers is around 4-5 ns.
 

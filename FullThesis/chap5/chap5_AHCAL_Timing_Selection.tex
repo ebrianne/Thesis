@@ -12,7 +12,7 @@ The main topic of this thesis is the study of the \textit{time development of ha
 
 This chapter discusses the setup of the testbeam first before presenting the selected dataset for this analysis, the selection of the triggers needed for this analysis as time reference and the selection criteria for each dataset of muons, electrons and pions.
 
-The key results presented in this chapter have been approved by the CALICE Collaboration and have been published as \textit{CALICE Analysis Note 061: Timing of hadron showers in the CALICE Analog Hadronic Calorimeter prototype using steel absorber} (CAN-061) \cite{CAN061}.
+The key results presented in this thesis are being approved by the CALICE Collaboration and are soon to be published as \textit{CALICE Analysis Note 061: Timing of hadron showers in the CALICE Analog Hadronic Calorimeter prototype using steel absorber} (CAN-061) \cite{CAN061}. The analysis in this thesis is the first of its kind to such a system level and enters new territories for high granular calorimeters.
 
 \section{Testbeam Configuration}
 
@@ -34,7 +34,7 @@ For pions, the momentum is selected via a set of collimators and magnets. Due to
 \subsection{Testbeam Setup}
 \label{sec:TBsetup}
 
-In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDET-Report-2010-02} with 48 iron absorber plates. In the stack, 14 active modules were installed. The detector was placed on a movable stage in order to be able to move the detector position relative to the beam for muon calibration runs. A simplified view of the beamline configuration is shown in figure \ref{fig:TestbeamScketch}.
+In July 2015, the AHCAL detector was using the full EUDET steel stack \cite{EUDET-Report-2010-02} with 48 iron absorber plates. In the stack, 14 active modules were installed. The two first layers consist of single ECAL Base Units (EBUs) with $4 * 36$ cells of $4.5 * 0.5$ cm$^2$ size (ECAL). The ECAL cells of both layers are oriented parallel to the x-axis. The next eight layers consist of single HCAL Base Units (HBUs) with $12 * 12$ cells of $3 * 3$ cm$^2$ size (HCAL). The first 10 layers correspond to a depth of around 10 X$_0$ ($\sim$ 1 $\lambda_{\pi}$). These layers mainly used as a shower start finder. The last four layers consist of 2 by 2 HBUs providing information about the development of pion showers at different depths. The detector was placed on a movable stage in order to be able to move the detector position relative to the beam for muon calibration runs. A simplified view of the beamline configuration is shown in figure \ref{fig:TestbeamScketch}.
 
 \begin{figure}[htbp!]
 	\centering
@@ -108,7 +108,7 @@ The table \ref{table:dataruns} sums up the datasets taken in different beams. Th
 		\midrule
 		\multirow{2}{*}{e$^-$}& 10 GeV & 24531-24576 & 38,028,438\\& 15 GeV & 24507-24527 & 7,701,325\\& 20 GeV & 24479-24504 & 10,498,554\\& 30 GeV & 24454-24475 & 3,382,943\\& 40 GeV & 24420-24448 & 2,665,843\\& 50 GeV & 24404-24419 & 5,933,995\\
 		\midrule
-		\multirow{2}{*}{$\pi^-$}& 10 GeV & 24266-24272, 24300-24317, 24381-24397 & 24,311,420\\& 20 GeV & 24398-24400 & N/A\\& 30 GeV & 24259-24299, 24319-24380 & 10,120,753\\& 50 GeV & 24212-24254, 24325-24357, 24580-24612 & 10,704,661\\& 70 GeV & 24219-24242, 24365-24374 & 8,885,407\\& 90 GeV & 24233-24287, 24331-24364 & 7,955,604\\
+		\multirow{2}{*}{$\pi^-$}& 10 GeV & 24266-24272, 24300-24317, 24381-24397 & 24,311,420\\& 20 GeV & 24398-24400 & N/A\footnotemark\\& 30 GeV & 24259-24299, 24319-24380 & 10,120,753\\& 50 GeV & 24212-24254, 24325-24357, 24580-24612 & 10,704,661\\& 70 GeV & 24219-24242, 24365-24374 & 8,885,407\\& 90 GeV & 24233-24287, 24331-24364 & 7,955,604\\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -129,6 +129,7 @@ The distribution in the plane $cog_Z$:$n_{Hits}$ shown in figure \ref{fig:Muons_
 	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SelectionCut_nHitsCoGZ_Muons.eps}
 	\caption{Event distribution in $cog_Z:n_{Hits}$ plane. The size of each box represents the number of events in each bin. The black box represents the space-phase covered by the pre-selection.} \label{fig:Muons_CoGZ_nHits}
 \end{figure}
+\footnotetext{Not analyzed due to limited dataset.}
 
 \subsubsection{Selection}
 \label{subsec:Muon_sel}
@@ -311,7 +312,7 @@ A detailed description of the selection cuts are shown in appendix table \ref{ta
 	\caption{Distribution of the variables used in the pion selection for simulated muon, electron and pion beams between 10 and 90 GeV. Theses plots were used to determine the best selection criteria for pions.} \label{fig:pionselection}
 \end{figure}
 
-\subsection{Rejection of outlier chips}
+\subsection{Rejection of outlier chips and noisy/dead channels}
 \label{sec:ChipRejection}
 
 A careful check of the time of first hit distribution (see chapter \ref{chap:TimingCalib}) for each chip has been performed to reject any outlier. For all the data collected, the layer 11 is rejected due to a likely problem with the electronics (see section \ref{subsec:slope_calib}). For the muon data, a single chip (157) shows a strange behavior likely because the input DAC on this chip is broken resulting in an unstable voltage applied to the SiPM.
@@ -338,6 +339,8 @@ For the electron data, the variable $R_{chip}$ was used to determine bad behavin
 where $N_{total}$ is the total number of entries, $N_{50 ns}^{200 ns}$ is the number of entries between 50 ns and 200 ns and $N_{-200 ns}^{50 ns}$ is the number of entries between -200 ns and 50 ns. The variable is minimum when most of the hits in the chip are outside of the core of the time distribution between -50 and 50 ns. If $R$ is below 98\%, the chip is rejected. With this method, 20 chips are rejected.
 
 For the pion data, applying the same method as for electrons is not possible due to a late tail to higher time related to delayed energy depositions from neutrons. The same chips as for electrons were rejected but in addition, each chip time distribution after correction were manually checked. The chips that presented an abnormal shape such as double peaks were discarded. Hence, 16 chips are additionally rejected. This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
+
+For this analysis, noisy and dead channels as well as channel where any calibration value could not be determined was rejected (see appendix \ref{appendix:deadChn}).
 
 \newpage
 \begin{center}
