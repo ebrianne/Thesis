@@ -35,13 +35,13 @@ First, the elastic scattering of neutrons in the active material especially with
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_dNdt_Comparison.eps}
-	\caption{Time of first hit for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The histograms are normalized to the number of events. The errors bars are statistical and systematic uncertainties. The lines represent the fit to the data as explained in the text.}
+	\caption{Time of first hit for muons, electrons and pions in steel absorber in a range of -100 to 250 ns. The histograms are normalized to the number of events where at least one hit was identified. The errors bars are statistical and systematic uncertainties. The lines represent the fit to the data as explained in the text.}
 	\label{fig:dNdt_Comparison}
 \end{figure}
 
-Figure \ref{fig:dNdt_Comparison} shows the time of first hit for muons, 10 GeV electrons and 50 GeV pions. Energy depositions from muons and electrons are instantaneous within a certain time window centered around 0 ns that is determined by the intrinsic time resolution of the detector. Some isolated hits are present in the tails most likely caused by SiPM thermal noise. This gives an idea of the noise level as well as the rejection of noise in the analysis. One can remark that the noise level in electron data is lower than in the muon data. The reason is not clear. It may come from the difference in beam rate and differences in the detector threshold configurations for different beams (9-120k event/spill for muons and 6-10k event/spill for electrons), however, the difference in beam rates between muon and electron beams does not explain the order of magnitude in difference. It may also come from the fact that for muons, multi-track events are present (around 1\% of events)
+Figure \ref{fig:dNdt_Comparison} shows the time of first hit for muons, 10 GeV electrons and 50 GeV pions. Energy depositions from muons and electrons are instantaneous within a certain time window centered around 0 ns that is determined by the intrinsic time resolution of the detector. Some isolated hits are present in the tails most likely caused by SiPM thermal noise. This gives an idea of the noise level as well as the rejection of noise in the analysis.
 
-The fraction of hits $n_{Late}/n_{Core}$, with $n_{Late}$ the number of hits later than 50 ns and $n_{Core}$ the number of hits between -50 and 50 ns, is around 2\% for muons, 0.37\% for electrons and about 1.5\% for pions. However, the noise level is similar on both sides of the time distribution for muons and electrons giving confidence that the tails are coming from noise hits and not physics.
+The fraction of hits $n_{Late}/n_{Core}$, with $n_{Late}$ the number of hits between 50 ns and \SI{2}{\micro\second} and $n_{Core}$ the number of hits between -50 and 50 ns, is around 1.76\% for muons, 0.32\% for electrons and about 1.41\% for pions. The noise level is similar on the left side of the time distribution for muons, electrons and pions giving confidence that the right tail observed in the pion data is coming from physics and not noise.
 
 The pion time distribution presents a higher tail between 30 to 50 ns than the electron time distribution. In order to characterize the distribution, a model of the sum of two exponentials and a constant, similar as the T3B experiment \cite{Simon2013} is applied following the equation \ref{eq:dNdt_eq}:
 
@@ -49,11 +49,11 @@ The pion time distribution presents a higher tail between 30 to 50 ns than the e
 	\frac{1}{N}\frac{dN}{dt} = A_{fast} \times e^{-\frac{t}{\tau_{fast}}} + A_{slow} \times e^{-\frac{t}{\tau_{slow}}} + c
 \end{equation}
 
-where $A_{fast}, \tau_{fast}$ and $A_{slow}, \tau_{slow}$ are the amplitudes and decays times of the modeled fast and slow component of the hadronic shower. Since the fit is performed on several orders of magnitudes, the same fitting method that the T3B experiment uses is applied. It is done in two steps. First, the slow component and the constant are fitted between 90 ns and \SI{2}{\micro\second}. Then, the parameters of the slow component and the constant are fixed and then the fast component is fitted between 10 ns to \SI{2}{\micro\second}.
+where $A_{fast}, \tau_{fast}$ and $A_{slow}, \tau_{slow}$ are the amplitudes and decays times of the modeled fast and slow component of the hadronic shower. Since the fit is performed on several orders of magnitudes, the fit is performed in several steps. Firstly, the constant is fitted between 500 ns and \SI{2}{\micro\second}. Then, a new histogram of the time of hits hit is made substracting the noise floor. Secondly, the slow component is fitted between 90 ns and \SI{2}{\micro\second}. Then, the parameter of the slow component is fixed and then the fast component is fitted between 10 ns to \SI{2}{\micro\second}.
 
-With this procedure, a fast component of $6.03 \pm 0.41$ ns and a slow component of $848 \pm 365$ ns are fitted. The time constant of the fast component is in the same order of magnitude as given by T3B of 8 ns and is interpreted by the evaporation neutrons energy depositions in the active medium. But due to the time resolution of the AHCAL being in the same order of magnitude, it is difficult to confirm this origin.
+With this procedure, a fast component of $6.21 \pm 0.30$ ns and a slow component of $343 \pm 39$ ns are fitted. The time constant of the fast component is in the same order of magnitude as given by T3B of 8 ns and is interpreted by the evaporation neutrons energy depositions in the active medium. But due to the time resolution of the AHCAL being in the same order of magnitude, it is difficult to confirm this origin.
 
-However, the time constant of the slow component is very different than in the T3B experiment (around 80 ns in steel). This may be due to the contribution of SiPM noise. It reduces the sensitivity to this slow component in the shower. One can remark that this model may be incomplete as the fitting function does match well the data in the transition region of 50 to 100 ns. This is similarly observed in the T3B data. The table \ref{table:dNdt_fit} sums up the fitted results.
+However, the time constant of the slow component is very different than in the T3B experiment (around 80 ns in steel). This may be due to the contribution of SiPM noise that reduces the sensitivity to this slow component in the shower, and the contribution of multi-particle events. One can remark that this model may be incomplete as the fitting function does match well the data in the transition region of 50 to 100 ns. The table \ref{table:dNdt_fit} sums up the fitted results.
 
 \begin{table}[htb!]
 	\centering
@@ -63,9 +63,9 @@ However, the time constant of the slow component is very different than in the T
 		\toprule
 		Parameter & Muon & Electron & Pion \\
 		\midrule
-		$\tau_{fast}$ [ns] & - & - & $6.03 \pm 0.41$ \\
-		$\tau_{slow}$ [ns] & - & - & $848 \pm 365$ \\
-		$c$ & $(8.27 \pm 0.05) \times 10^{-6}$ & $(1.06 \pm 0.03) \times 10^{-6}$ & $(3.25 \pm 1.08) \times 10^{-6}$ \\
+		$\tau_{fast}$ [ns] & - & - & $6.21 \pm 0.30$ \\
+		$\tau_{slow}$ [ns] & - & - & $343 \pm 39$ \\
+		$c$ & $(1.79 \pm 0.01) \times 10^{-5}$ & $(1.43 \pm 0.04) \times 10^{-5}$ & $(6.33 \pm 0.15) \times 10^{-5}$ \\
 		\bottomrule
 	\end{tabular}
 \end{table}
@@ -74,7 +74,7 @@ Figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits co
 
 From 10 to 50 GeV, the QGSP\_BERT\_HP physics list reproduces well the distribution. Above 50 GeV, the tail after 100 ns is also well described in the simulation, however, between 50 and 100 ns, the simulation slightly under-estimates the data although within the systematic uncertainty.
 
-The QBBC physics list tends to over-estimate the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC physics list agrees well with the time distribution for 60 GeV pions. It may be related to the use of different \geant versions because the T3B experiment has used \geant v9.4p03 \cite{Katja:Geant4Talk}. However, this could not be confirmed at the moment.
+The QBBC physics list tends to be over the QGSP\_BERT\_HP physics list in the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC and QGSP\_BERT\_HP physics lists are very similar. It may be related to the use of different \geant versions because the T3B experiment has used \geant v9.4p03 \cite{Katja:Geant4Talk}. However, this could not be confirmed as this version of geant4 is not available.
 
 For all time of first hit distributions, the QGSP\_BERT physics list without the high-precision neutron treatment, too much late shower activity is predicted by around a factor 5.
 
@@ -111,10 +111,10 @@ The mean time of the first hit taken in a time window of -50 ns to 200 ns as a f
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions.eps}
 		\caption{} \label{fig:TimeBinsEnergy}
 	\end{subfigure}
-	\caption{On the left, time of first hit as function of the hit energy for muons, electrons and pions in steel absorber in a range of -50 to 200 ns. The bands represent the systematic uncertainty. On the right, time distribution for 90 GeV pions for different hit energy ranges.}
+	\caption{On the left, the mean time of first hit as function of the hit energy for muons, electrons and pions in steel absorber taken in a range of -50 to 200 ns. The bands represent the systematic uncertainty. On the right, the time distribution for 90 GeV pions for different hit energy ranges.}
 \end{figure}
 
-Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show the comparison of the mean time of first hit as a function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. For other pion beam energies and the \ddhep simulation, the figures are available in appendix \ref{appendix:TimingAdd}. For 10 GeV pions, the simulation reproduces well the data within the systematics. For higher energies, a difference is visible in the region below 1 MIP where the simulation slightly is above the data. Above 1.5 MIPs, the data and simulations agree well. Firstly, a difference is visible between the QGSP\_BERT and QGSP\_BERT\_HP physics lists mainly between hit energies of 1-3 MIPs but, in general, the difference is smaller than the systematic uncertainty on the data. Secondly, the QGSP\_BERT and QBBC physics lists are very similar over the full hit energy range. Finally, all models show an increase of the mean time of first hit at small hit energies with higher beam energy. The data does not reflect this.
+Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show the comparison of the mean time of first hit as a function of the hit energy in data and simulations for 10 GeV and 90 GeV pions. For other pion beam energies and the \ddhep simulation, the figures are available in appendix \ref{appendix:TimingAdd}. For all energies, the simulation reproduces the data within the systematics. However, firstly, a difference is visible between the QGSP\_BERT and QGSP\_BERT\_HP physics lists mainly between hit energies of 1-3 MIPs but, in general, the difference is smaller than the systematic uncertainty on the data. Secondly, the QGSP\_BERT and QBBC physics lists are very similar over the full hit energy range. Finally, all models show an increase of the mean time of first hit at small hit energies with higher beam energy. The data does not reflect this.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -128,8 +128,27 @@ Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show t
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka.eps}
 		\caption{} \label{fig:Energy_SimData_90GeV}
 	\end{subfigure}
-	\caption{Comparison of the mean time of the first hit as function of the hit energy in data and \mokka simulation for 10 GeV and 90 GeV pions. The grey and color bands shows the statistical and systematic uncertainties.}
+	\caption{Comparison of the mean time of the first hit as function of the hit energy in data and \mokka simulation for 10 GeV and 90 GeV pions. The grey and color bands show the statistical and systematic uncertainties.}
 \end{figure}
+
+Then the dependence of the RMS of the time distribution as a function of the hit energy has been studied. It is expected that the RMS of the time distribution is bigger at low hit energies coming mostly from slow neutrons and then decreases for higher hit energies. The figure \ref{fig:RMS_Energy_Comparison} shows the RMS of the time distribution as a function of the hit energy for muons, electrons and pions. As expected, the RMS is bigger at low hit energy and reaches a plateau at high hit energies.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange_RMS.eps}
+		\caption{} \label{fig:RMS_Energy_Comparison}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka.eps}
+		\caption{} \label{fig:RMS_SimData_50GeV}
+	\end{subfigure}
+	\caption{\subref{fig:RMS_Energy_Comparison}) The RMS of the time distribution as function of the hit energy for muons, electrons and pions in steel absorber taken in a range of -50 to 200 ns. \subref{fig:RMS_SimData_50GeV}) Comparison between data and simulation of the RMS of the time distribution as a function of the hit energy. The color bands show the statistical and systematic uncertainty.}
+\end{figure}
+
+Of course, it has been compared to simulations as shown in figure \ref{fig:RMS_SimData_50GeV} for 50 GeV pions. The QGSP\-\_BERT\-\_HP physics list agrees relatively well with the data, while QBBC tends to over-estimate the RMS for hit energies below 2 MIPs. The QGSP\_BERT physics list completely over-estimated the RMS over the full range by around 2 to 4 ns.
 
 This comparison study seems to confirm that low energy hits are responsible for delayed energy depositions in the calorimeter, most likely due to low energy neutrons from capture and spallation processes. Higher energy deposits occur mostly in the prompt part of the hadron shower.
 
@@ -138,50 +157,88 @@ This comparison study seems to confirm that low energy hits are responsible for 
 
 The prompt component of a hadron shower is dominated by EM sub-showers and relativistic particles, whereas the delayed component is coming from mostly evaporation and spallation low energy neutrons. It is expected that the former is concentrated near the shower axis, while the latter, is spread out laterally as these neutrons can travel far away in the calorimeter before interacting.
 
-This is investigated by looking at the mean time of first hit as a function of the hit distance to the shower center of gravity defined in the x-y plane of the calorimeter. For the muon data, the hit position in the detector relative to (0,0) is used. The mean time of the first hit as a function of the hit distance to the shower center of gravity is shown in figure \ref{fig:Radius_Comparison_SSF} for the layers 3 to 10 and in figure \ref{fig:Radius_Comparison_BL} the layers 11 to 14 separately. The layers needed to be separated because of a decrease of the mean time of first hit at the distance where there is a transition between a single HBU (layers 3 to 10, up to 1 $\lambda$) and a 2 by 2 HBU (layers 11 to 14, after 1 $\lambda$). This is thought that this effect may be related to the starting point of the pion shower. This is investigated in more details in section \ref{sec:TimeRadiusDepth}.
+This is investigated by looking at the mean time of first hit as a function of the hit distance to the shower center of gravity defined in the x-y plane of the calorimeter. For the muon data, the hit position in the detector relative to (0,0) is used. The mean time of the first hit as a function of the hit distance to the shower center of gravity is shown in figure \ref{fig:Radius_Comparison_SSF} for the modules 3 to 10 and in figure \ref{fig:Radius_Comparison_BL} the modules 11 to 14 separately. The layers needed to be separated because of a decrease of the mean time of first hit at the distance where there is a transition between a single HBU (modules 3 to 10, up to 1 $\lambda$) and a 2 by 2 HBU (modules 11 to 14, after 1 $\lambda$). This is thought that this effect may be related to the starting point of the pion shower. This is investigated in more details in section \ref{sec:TimeRadiusDepth}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF.eps}
-		\caption{Layers 3 to 10.}\label{fig:Radius_Comparison_SSF}
+		\caption{Modules 3 to 10.}\label{fig:Radius_Comparison_SSF}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL.eps}
-		\caption{Layers 11 to 14.}\label{fig:Radius_Comparison_BL}
+		\caption{Modules 11 to 14.}\label{fig:Radius_Comparison_BL}
 	\end{subfigure}
-	\caption{Radial shower timing profile of the time of first hit for muon, electron and pion beams. The left plot shows the timing profile for the layers 3 to 10 and the right profile shows the timing profile for the layers 11 to 14. The reason for the separation is described in the text. The systematics are shown by the color bands.}
+	\caption{The mean time of first hit for muon, electron and pion beams. The left plot shows the mean time dependency for the modules 3 to 10 and the right for the modules 11 to 14. The reason for the separation is described in the text. The systematics are shown by the color bands.}
 	\label{fig:RadialTiming}
 \end{figure}
 
-For muons and electrons, the mean time of the first hit does not vary with the increase of radius as expected as the time calibration forces the mean to 0 ns. On the contrary for hadronic showers, it shows an increase of the mean time of the first hit as function of the hit distance to the shower axis. As well, there is no dependence on the energy of the shower. However, the layers 3 to 10 present a steeper slope by around 50\% than for the layers 11 to 14 (from $\sim$1 ns per tile to $\sim$0.5 ns per tile).
+For muons and electrons, the mean time of the first hit does not vary with the increase of radius as expected as the time calibration forces the mean to 0 ns. On the contrary for hadronic showers, it shows an increase of the mean time of the first hit as function of the hit distance to the shower axis. As well, there is no dependence on the energy of the shower. However, the modules 3 to 10 present a steeper slope by around 50\% than for the modules 11 to 14 (from $\sim$1 ns per tile to $\sim$0.5 ns per tile).
 
-Nevertheless, the observation is consistent with the expectation of the core of the shower depositing promptly most of the energy via EM sub-showers and relativistic particles near the shower axis. This is followed by a hadronic halo which contributes to delayed signals that may be from mainly neutron-induced processes. For the layers 3 to 10, the mean time of first hit varies between 0 ns at small radius and 9 ns at 22-23 cm. For the layers 11 to 14, it varies between 0 ns near the shower axis, 4 ns at 25 cm and 6 ns at 35 cm.
+Nevertheless, the observation is consistent with the expectation of the core of the shower depositing promptly most of the energy via EM sub-showers and relativistic particles near the shower axis. This is followed by a hadronic halo which contributes to delayed signals that may be from mainly neutron-induced processes. For the modules 3 to 10, the mean time of first hit varies between 0 ns at small radius and 9 ns at 22-23 cm. For the modules 11 to 14, it varies between 0 ns near the shower axis, 4 ns at 25 cm and 6 ns at 35 cm.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka.eps}
-		\caption{Layers 3 to 10} \label{fig:Radius_SSF_SimData_50GeV}
+		\caption{Modules 3 to 10} \label{fig:Radius_SSF_SimData_50GeV}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka.eps}
-		\caption{Layers 11 to 14} \label{fig:Radius_BL_SimData_50GeV}
+		\caption{Modules 11 to 14} \label{fig:Radius_BL_SimData_50GeV}
 	\end{subfigure}
-	\caption{Comparison of the time of first hit as function of the hit distance to the shower axis in data and \mokka simulation for 50 GeV pion for the layers 3 to 10 on the left and for layers 11 to 14 on the right. The grey and color bands shows the systematics.}
+	\caption{Comparison of the mean time of first hit as function of the hit distance to the shower axis in data and \mokka simulation for 50 GeV pion for the modules 3 to 10 on the left and for modules 11 to 14 on the right. The grey and color bands shows the systematics.}
 	\label{fig:Radius_SSF_SimData_50GeVComparison}
 \end{figure}
 
-The radial dependence of the time of first hit of 50 GeV pion showers is compared to simulations as shown in figure \ref{fig:Radius_SSF_SimData_50GeVComparison}. For other energies and simulations, the figures can be seen in appendix \ref{appendix:TimingAdd}. For the layers 3 to 10, the QBBC and QGSP\_BERT\_HP physics lists reproduce well the data within systematics. The QGSP\_BERT physics list agrees well under a 10 cm distance and then starts to deviate from data up to 4-6 ns at 23 cm. Concerning the layers 11 to 14, over the full energy range, the QGSP\_BERT\_HP physics list agrees the best with the data. The QBBC and QGSP\_BERT physics lists agree with data up to around a 10 cm distance and then both lie above the data for higher distances, varying between few ns to 3-4 ns between 17 cm to 35 cm distance. This study shows that without the precision neutron tracking in simulation, too many late energy depositions are created that are spread far away from the shower axis.
+The radial dependence of the time of first hit of 50 GeV pion showers is compared to simulations as shown in figure \ref{fig:Radius_SSF_SimData_50GeVComparison}. For other energies and simulations, the figures can be seen in appendix \ref{appendix:TimingAdd}. For the modules 3 to 10, the QBBC and QGSP\_BERT\_HP physics lists reproduce well the data within systematics. The QGSP\_BERT physics list agrees well under a 10 cm distance and then starts to deviate from data up to 4-6 ns at 23 cm. Concerning the modules 11 to 14, over the full energy range, the QGSP\_BERT\_HP physics list agrees the best with the data. The QBBC and QGSP\_BERT physics lists agree with data up to around a 10 cm distance and then both lie above the data for higher distances, varying between few ns to 3-4 ns between 17 cm to 35 cm distance. This study shows that without the precision neutron tracking in simulation, too many late energy depositions are created that are spread far away from the shower axis.
+
+Then, the dependency of the RMS of the time distribution as a function of the distance of the hit to the center of gravity of the shower has been studied. The figure \ref{fig:Radius_RMS_Data_50GeV} shows the dependency of the RMS as a function of hit radius for data for both types of modules. The data shows an increase of the RMS for higher hit radius for both types of modules as expected. The muons and electrons shows a flat dependency of the RMS as for pions, an increase of the RMS from 5 ns at 0 mm to 20-25 ns at 250 mm is seen for modules 3 to 10 and an increase from 10 ns at 0 mm to 15-20 ns at 350 mm for modules 11 to 14.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF_RMS.eps}
+		\caption{} \label{fig:Radius_RMS_SSF_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL_RMS.eps}
+		\caption{} \label{fig:Radius_RMS_BL_50GeV}
+	\end{subfigure}
+	\caption{Dependency of the RMS as a function of the hit distance to the shower axis in data for muons, electrons and pions. On the left for the modules 3 to 10. On the right, for modules 11 to 14.}
+	\label{fig:Radius_RMS_Data_50GeV}
+\end{figure}
+
+The figure \ref{fig:Radius_RMS_SimData_50GeVComparison} shows the comparison between data and simulation for 50 GeV pions. For modules 3 to 10, the QBBC physics list agrees well with the data while QGSP\_BERT\_HP tends to under-estimate the RMS at larger hit radius by around 2-3 ns. QGSP\_BERT completely over-estimates the RMS at large hit radius by around 8-10 ns. For modules 11 to 14, all physics lists agree well with data up to a radius of around 100 mm. However, at larger hit radius, QGSP\_BERT\_HP under-estimates the RMS by around 3 ns while QBBC over-estimates it by around 2 ns. Similarly to modules 3 to 10, QGSP\_BERT over-estimates greatly the RMS by around 8 ns.
+
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka.eps}
+		\caption{} \label{fig:Radius_RMS_SSF_SimData_50GeV}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka.eps}
+		\caption{} \label{fig:Radius_RMS_BL_SimData_50GeV}
+	\end{subfigure}
+	\caption{Comparison of the RMS as a function of the hit distance to the shower axis in \mokka simulation for 50 GeV pion for the modules 3 to 10 on the left and for modules 11 to 14 on the right. The color bands show the statistical and systematic uncertainty.}
+	\label{fig:Radius_RMS_SimData_50GeVComparison}
+\end{figure}
+
+This confirms that without the proper treatment of the neutrons, the amount of late deposition is over-estimated for hit far away from the center of the shower.
 
 \subsection{Time dependence with the shower depth}
 \label{sec:TimeRadiusDepth}
 
-The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different layers, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the layer. Layer 3 shows a much steeper slope of around 1.8 ns per tile than for the layer 14 at 0.6 ns per tile. The study has been compared to simulation with the QGSP\_BERT\_HP physics list as well and the same behavior is described by the simulation as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the layer 3 shows a slope of around 1.7 ns per tile and the layer 14 show a slope of 0.5 ns per tile. This dependency is not fully understood and seems counter intuitive as one would expect more later hits in the last layers. One possibility is that the late component for the first layers could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons.
+The dependence of the mean time of first hit as function of the hit distance to the center of gravity of the shower for different modules, i.e. corresponding to different shower depths, is shown in figure \ref{fig:Radius_Indivi}. One can notice that there is a dependency of the slope of the curve as function of the module. Module 3 shows a much steeper slope of around 1.8 ns per tile than for the module 14 at 0.6 ns per tile. The observed dependency can be explained by that for the first modules is that the late component could come from the Albedo effect \cite{ELLSWORTH1982167} and backscattered neutrons. However, for the last modules, one expects more hits but in average it does not mean that the hits are later. In a hadron shower, MIP-like particles can be generated following a hard interaction in the first modules, these particles then are travelling and scattered to the back at around the speed of light thus explaining why the mean time of first hit can decrease at higher radius. This is confirmed by the simulation with the QGSP\_BERT\_HP physics list as shown in figure \ref{fig:Radius_Indivi_Sim}. In simulation, the module 3 shows a slope of around 1.7 ns per tile and the module 14 show a slope of 0.5 ns per tile which is well compatible with the observation in data.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -195,7 +252,7 @@ The dependence of the mean time of first hit as function of the hit distance to 
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_IndividualLayers_Sim.eps}
 		\caption{}\label{fig:Radius_Indivi_Sim}
 	\end{subfigure}
-	\caption{Mean time of first hit as function of the hit distance to the center of gravity for 50 GeV pions for different layers. On the left, it is shown for data. On the right, it is shown for simulation using the QGSP\_BERT\_HP physics list. Both figures shows the same behavior with a decrease of the curve slope for deeper layers in the calorimeter.}
+	\caption{Mean time of first hit as function of the hit distance to the center of gravity for 50 GeV pions for different modules. On the left, it is shown for data. On the right, it is shown for simulation using the QGSP\_BERT\_HP physics list. Both figures shows the same behavior with a decrease of the curve slope for deeper layers in the calorimeter.}
 	\label{fig:Radius_IndiviAll}
 \end{figure}
 
@@ -233,7 +290,7 @@ It is expected, at a constant distance between the reconstructed FHI layer and a
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth.eps}
 		\caption{}\label{fig:Radius_FHISim1}
 	\end{subfigure}
-	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for a fixed distance of 4 between the reconstructed FHI layer and a layer. The left plot shows the radial timing profile of layer 7 and 10 in data. The right plots shows the radial timing profile for the same layers in simulation with the QGSP\_BERT\_HP physics list.}
+	\caption{Mean time of first hit as a function of the hit distance to the shower axis for 50 GeV pions for a fixed distance of 4 between the reconstructed FHI layer and a layer. The left plot shows the radial timing profile of modules 7 and 10 in data. The right plots shows the radial timing profile for the same layers in simulation with the QGSP\_BERT\_HP physics list.}
 	\label{fig:Radius_FHIAll}
 \end{figure}
 
@@ -255,9 +312,9 @@ The data shows that by fixing the distance between the reconstructed FHI layer a
 	\label{fig:Radius_FHISim}
 \end{figure}
 
-\section{Longitudinal dependence of timing profiles}
+\section{Time dependence as a function of the layer}
 
-Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of the mean time of the first hit as a function of the layer position was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer position for muon, electron and pion beams.
+Hadronic showers develop as well longitudinally, therefore the longitudinal dependence of the mean time of the first hit as a function of the layer was studied. It is expected that the further you are in the calorimeter that more low energy neutrons contribute to the energy deposition thus enhancing the late tail. The figure \ref{fig:Depth_Comparison} shown the mean time of first hit as function of the layer for muon, electron and pion beams.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -271,11 +328,11 @@ Hadronic showers develop as well longitudinally, therefore the longitudinal depe
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart.eps}
 		\caption{}\label{fig:Depth_Comparison_FHI}
 	\end{subfigure}
-	\caption{The left plot shows the longitudinal timing profile as a function of the layer position for muon, electron and pion beams. The right plot shows the longitudinal timing profile as a function of the distance to the reconstructed FHI layer for 50 GeV pions.}
+	\caption{The left plot shows the mean time of the first hit as a function of the layer for muon, electron and pion beams. The right plot shows the mean time of the first hit as a function of the distance to the reconstructed FHI layer for 50 GeV pions.}
 	\label{fig:DepthProfile}
 \end{figure}
 
-In data, no increase of the mean time is observed as a function of the layer depth and as well no beam energy dependence is visible. This may be due to the late component that is suppressed by the high time resolution of the AHCAL and the systematic uncertainty. An attempt was made to get a better sensitivity by looking at the mean time of first hit as a function of the distance to the reconstructed FHI layer as shown in figure \ref{fig:Depth_Comparison_FHI}. However, the figure still shows a flat distribution centered around 0 ns.
+In data, no increase of the mean time is observed as a function of the layer and as well no beam energy dependence is visible. This may be due to the late component that is suppressed by the high time resolution of the AHCAL and the systematic uncertainty. An attempt was made to get a better sensitivity by looking at the mean time of first hit as a function of the distance to the reconstructed FHI layer as shown in figure \ref{fig:Depth_Comparison_FHI}. However, the figure still shows a flat distribution centered around 0 ns.
 
 The longitudinal timing profile was also compared to simulations. The mean time of first hit is compatible with a flat distribution around 0 ns for all models. The timing resolution of the AHCAL may be too high in order to be sensitive to any small changes of the mean time over the calorimeter depth. To check this. the simulation with the QGSP\_BERT\_HP physics list without time smearing is shown in figure \ref{fig:Depth_Sim_noSmearing}. It shows that there is an increase of the mean time of first hit as function of the layer in the order of 1 ns and confirms that due to the electronics time resolution this is not visible in data.
 
@@ -291,16 +348,36 @@ The longitudinal timing profile was also compared to simulations. The mean time 
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Time_Depth_50GeV_QGSP_BERT_HP_noSmearing.eps}
 		\caption{}\label{fig:Depth_Sim_noSmearing}
 	\end{subfigure}
-	\caption{On the left, comparison of the time of first hit as a function of the layer position in data and \mokka simulation for 90 GeV pions. The grey and color bands shows the systematics. On the right, time of first hit as function of the layer position for 50 GeV pions in simulation with the QGSP\_BERT\_HP physics list with no time smearing.}
+	\caption{On the left, comparison of the mean time of first hit as a function of the layer in data and \mokka simulation for 90 GeV pions. The grey and color bands shows the systematics. On the right, mean time of first hit as function of the layer for 50 GeV pions in simulation with the QGSP\_BERT\_HP physics list with no time smearing.}
 \end{figure}
 
-\section{Time correlations between layers}
+Secondly, the dependence of the RMS of the time distribution as a function of the layer has been studied. It is expected the RMS of the time distribution increases for deeper layers in the calorimeter due to the contribution to neutrons. The figure \ref{fig:Depth_RMS_Comparison} shows the RMS as a function of the layer for muons and pions. As expected, the RMS increases from around 8 ns for the first layers to 12-14 ns for the deeper layers for pions and the RMS stays constants for muons.
 
-The advantage of this studied prototype over T3B is the possibility to investigate time correlations between layers. For this study, the data below 50 ns is ignored as only the tail of the timing distributions is investigated.
+\begin{figure}[htbp!]
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_RMS.eps}
+		\caption{} \label{fig:Depth_RMS_Comparison}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[t]{0.49\textwidth}
+		\centering
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka.eps}
+		\caption{}\label{fig:Depth_RMS_SimData_50GeV}
+	\end{subfigure}
+	\caption{\subref{fig:Depth_RMS_Comparison}) The RMS of the time distribution as a function of the layer for muons and pions in steel absorber taken in a range of -50 to 200 ns. \subref{fig:Depth_RMS_SimData_50GeV}) Comparison between data and simulation of the RMS of the time distribution as a function of the layer. The color bands show the statistical and systematic uncertainty.}
+	\label{fig:DepthRMSProfile}
+\end{figure}
 
-The procedure is done by looking at each hit in layer $i$ and checking in layer $i+1$ for a hit within a distance of 60 mm in the $x:y$ plane. If a hit is found, both times are plotted against each other. If more than one hit is found in layer $i+1$ within a radial distance of 60 mm, the closest in the $x:y$ plane is taken.
+It has been compared to simulation as shown in figure \ref{fig:Depth_RMS_SimData_50GeV} for 50 GeV pions. The QGSP\_BERT\_HP and QBBC physics lists reproduce well the data while QGSP\_BERT over-estimates the RMS by around 2-3 ns except for the last layer where all physics lists agree with the data. The increase of the RMS of the time distribution could come from an increase of the late contribution from slow neutrons.
 
-Two types of correlations were investigated, short and long. For the short correlation, the layers 6 and 7 were chosen, separated by 1 $X_0$ or 0.1 $\lambda_{\pi}$. As for the long, the layers 13 and 14 were selected, separated by 10 $X_0$ or 1 $\lambda_{\pi}$. These were chosen due to the fact that few layers were working properly. It is expected that EM sub-showers can lead to a correlation of hit times for the layers 6 and 7, while the layers 13 and 14 are far apart, and therefore would show less correlation of hit times. The hit times correlation is shown in figure \ref{fig:TimeCorrelation} for the 50 GeV dataset.
+\section{Time correlations between modules}
+
+The advantage of this studied prototype over T3B is the possibility to investigate time correlations between modules. For this study, the data below 50 ns is ignored as only the tail of the timing distributions is investigated.
+
+The procedure is done by looking at each hit in module $i$ and checking in module $i+1$ for a hit within a distance of 60 mm in the $x:y$ plane. If a hit is found, both times are plotted against each other. If more than one hit is found in module $i+1$ within a radial distance of 60 mm, the closest in the $x:y$ plane is taken.
+
+Two types of correlations were investigated, short and long. For the short correlation, the modules 6 and 7 were chosen, separated by 1 $X_0$ or 0.1 $\lambda_{\pi}$. As for the long, the modules 13 and 14 were selected, separated by 10 $X_0$ or 1 $\lambda_{\pi}$. These were chosen due to the fact that few layers were working properly. It is expected that EM sub-showers can lead to a correlation of hit times for the modules 6 and 7, while the modules 13 and 14 are far apart, and therefore would show less correlation of hit times. The hit times correlation is shown in figure \ref{fig:TimeCorrelation} for the 50 GeV dataset.
 
 The figures show that a correlation is visible in the data for both cases. To quantify this, the following ratio is calculated
 \begin{equation}\label{eq:CorrelCalcul}
@@ -308,7 +385,7 @@ The figures show that a correlation is visible in the data for both cases. To qu
 \end{equation}
 where N$_{tot}$ is the total number of entries in the histogram and the nominator is the number of entries between 50 ns and \SI{2}{\micro\second} in the red box of the above figures.
 
-The results show that 18.19\% of the entries are in the red box region for the short correlation. This may come from EM sub-showers in the hadron shower. For the long correlation, 3.24\% of the entries are in the red box region. This may come from MIP-like particles traversing the AHCAL without a hard interaction.
+The results show that 18.19\% of the entries are in the red box region for the short correlation. This may come from EM sub-showers in the hadron shower. For the long correlation, 3.24\% of the entries are in the red box region.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -322,7 +399,7 @@ The results show that 18.19\% of the entries are in the red box region for the s
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.eps}
 		\caption{}\label{fig:Time_Corr_long}
 	\end{subfigure}
-	\caption{The left plot shows the time correlation between layer 6 and 7 separated by 1 $X_0$. The right plot shows the time correlation for layers 13 and 14 separated by 1 $\lambda_{\pi}$. Each bin is normalized to the number of entries in the 2D histogram. The red box represent the region of interest. Both plots show a visible time correlation.}
+	\caption{The left plot shows the time correlation between modules 6 and 7 separated by 1 $X_0$. The right plot shows the time correlation for modules 13 and 14 separated by 1 $\lambda_{\pi}$. Each bin is normalized to the number of entries in the 2D histogram. The red box represent the region of interest. Both plots show a visible time correlation.}
 	\label{fig:TimeCorrelation}
 \end{figure}
 \begin{figure}[htbp!]
@@ -337,7 +414,7 @@ The results show that 18.19\% of the entries are in the red box region for the s
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QGSPBERTHP.eps}
 		\caption{Long correlation (QGSP\_BERT\_HP).} \label{fig:Corr_long_QGSPBERTHP}
 	\end{subfigure}
-	\caption{Hit timing correlations between layers 6 and 7 and layers 13 and 14 in the \mokka simulation with QGSP\_BERT\_HP for 50 GeV pions. Each bin is normalized to the total number of entries in the 2D histogram.}
+	\caption{Hit timing correlations between modules 6 and 7 and modules 13 and 14 in the \mokka simulation with QGSP\_BERT\_HP for 50 GeV pions. Each bin is normalized to the total number of entries in the 2D histogram.}
 	\label{fig:Corr_Mokka_Simulation}
 \end{figure}
 
@@ -374,6 +451,14 @@ A testbeam at the SPS facility at CERN in July 2015 was focused to enhance the k
 
 \noindent\textbf{Validation of the time calibration:} In chapter \ref{chap:TimingValidation}, the timing calibration was cross-checked with the electron dataset recorded at CERN and the timing simulation has been validated. It was expected that a time resolution in the same order of magnitude or better than the time resolution obtained for MIPs would be achieved. However, due to the readout electronics that affects the time resolution as a function of the number of triggered channels in a chip, the time resolution for electron is worse with a value between 7.5 to 8.2 ns for beam energies between 10 and 50 GeV. This effect has been parametrized from data and implemented in the time smearing for the simulation. The simulation reproduces the data within 10-20\% for all electron beam energies. However, the tails of the time distribution are not well reproduced due an imperfect implementation of noise hits. Nevertheless, this is considered good enough for looking at the time development of pion showers.\\[0.1cm]
 
-\noindent\textbf{Timing of hadron showers:} In chapter \ref{chap:TimingPions}, the timing of hadronic showers was studied. Firstly, the absolute time of first hit distribution has been investigated. The data shows a clear tail to late hits compared to MIP and electron time distributions. A comparison with simulation has been done for pion beam energies between 10 GeV and 90 GeV. The comparison showed that the QGSP\_BERT\_HP and QBBC physics lists agree well with the data. However, the QGSP\_BERT physics list overestimate the amount of hits in the late tail by around a factor 10. Secondly, the energy dependence of the hit time has been studied. The data shows that late hits are concentrated at low hit energies below 1 MIP in iron. The comparison with simulation showed that for 10 GeV pions, the simulation agrees well with the data within the systematics uncertainty. However, for higher pion beam energies, a difference is visible at low hit energies between 0.5 MIP and 1.5 MIP where the simulation lies above the data. The difference seen may be due to the time correction of the data as a function of the number of triggered channels that is not perfect. For hit energies above 3 MIP, the data and simulation are in agreement. Thirdly, the radial dependence of the hit time has been investigated. This dependence has been looked at separately for layers 3 to 10 (single HBU) and layers 11 to 14 (2 by 2 HBU) due to a decrease of the mean hit time at the transition radius between the two type of layers. This has been studied in more details and concluded that this feature may be due to a dependence as a function of the start of the shower that showed that the radial dependence of the mean time of first hit decreases with deeper layers. The simulation reflects this feature as well. Anyhow, the data shows that late hits are mostly at a great distance from the shower axis, while prompt hits from electromagnetic sub-showers and relativistic hadrons are predominant near the shower axis. A comparison between data and simulation has been carried out and showed that the QGSP\_BERT\_HP physics list agrees well with the data but the QBBC and QGSP\_BERT physics lists agree with the data up to a hit distance to the shower axis of 100-150 mm and for higher hit distances to the shower axis, these physics lists tend to overestimate the late depositions by 1-3 ns. Fourthly, the longitudinal dependence of the hit time has been studied. This study concluded that there are no visible dependence for all beam energies. This is due to the timing resolution of the AHCAL that is too high. The simulation without time smearing shows that an increase of the mean time of around 1-1.5 ns is visible as a function of the layer depth. Finally, timing correlations between layers have been investigated. Short range (1 $X_0$ separation) and long range (10 $X_0$ or 1 $\lambda$ separation) have been looked at. Time correlations are visible at short range as well as long range in different proportions in the data. In addition, a comparison of detailed simulations with data has been performed. It shows that in general, time correlations are reproduced in simulation but the amount of hits in data and simulation differ quite significantly. This may be due to the selection of the data that does not reject efficiently multi-particle events. More data and investigations to understand the origin such time correlations are needed.\\[0.1cm]
+\noindent\textbf{Timing of hadron showers:} In chapter \ref{chap:TimingPions}, the timing of hadronic showers was studied. Firstly, the absolute time of first hit distribution has been investigated. The data shows a clear tail to late hits compared to muon and electron time distributions. A comparison with simulation has been done for pion beam energies between 10 GeV and 90 GeV. The comparison showed that the QGSP\_BERT\_HP and QBBC physics lists agree well with the data. However, the QGSP\_BERT physics list overestimate the amount of hits in the late tail by around a factor 5.
+
+Secondly, the energy dependence of the hit time has been studied. The data shows that late hits are concentrated at low hit energies below 1 MIP in iron. The comparison with simulation agrees with the data within the systematics uncertainty.
+
+Thirdly, the radial dependence of the hit time has been investigated. This dependence has been looked at separately for modules 3 to 10 (single HBU) and modules 11 to 14 (2 by 2 HBU) due to a decrease of the mean hit time at the transition radius between the two type of modules. This has been studied in more details and concluded that this feature may be due to a dependence as a function of the start of the shower that showed that the radial dependence of the mean time of first hit decreases with deeper layers. The simulation reflects this feature as well. Anyhow, the data shows that late hits are mostly at a great distance from the shower axis, while prompt hits from electromagnetic sub-showers and relativistic hadrons are predominant near the shower axis. A comparison between data and simulation has been carried out and showed that the QGSP\_BERT\_HP physics list agrees well with the data but the QBBC and QGSP\_BERT physics lists agree with the data up to a hit distance to the shower axis of 100-150 mm and for higher hit distances to the shower axis, these physics lists tend to overestimate the late depositions by 1-3 ns.
+
+Fourthly, the longitudinal dependence of the hit time has been studied. This study concluded that there are no visible dependence for all beam energies. This is due to the timing resolution of the AHCAL that is too high. The simulation without time smearing shows that an increase of the mean time of around 1-1.5 ns is visible as a function of the layer.
+
+Finally, timing correlations between modules have been investigated. Short range (1 $X_0$ separation) and long range (10 $X_0$ or 1 $\lambda$ separation) have been looked at. Time correlations are visible at short range as well as long range in different proportions in the data. In addition, a comparison of detailed simulations with data has been performed. It shows that in general, time correlations are reproduced in simulation but the amount of hits in data and simulation differ quite significantly. This may be due to the selection of the data that does not reject efficiently multi-particle events. More data and investigations to understand the origin such time correlations are needed.\\[0.1cm]
 
 Furthermore, the time resolution achieved in testbeam does not reflect the time resolution that could be accessible in an ILC running mode due to a different frequency of the slow clock (250 kHz in testbeam compared to 5 MHz at the ILC). By extrapolation, assuming that the time resolution scales linearly with the frequency of the slow clock, a time resolution of the order of 1 ns could be obtained in an ILC running scenario. The use of timing information could be a powerful tool to have to help in separating nearby showers in case of very busy events, for example in a $ttH$ event. Timing information could also be used in a software compensation way by using timing bins differentiating electromagnetic sub-showers or relativistic hadrons and the hadronic late component, and weight each individual hit energy to improve the calorimeter energy resolution.

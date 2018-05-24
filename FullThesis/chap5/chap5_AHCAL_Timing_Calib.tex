@@ -19,7 +19,7 @@ In order to determine the ramp slope, the starting point or pedestal of the ramp
 
 Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compare them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
 
-Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}).
+Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}). In the following, the hit time of a channel is referred as the time of the first hit because only the first hit per channel is registered during a bunch-crossing (multiple hits could occur in a channel but only the first one is kept by the SPIROC2b).
 
 \section{Dataset}
 
@@ -48,7 +48,7 @@ In this chapter, the muon dataset shown in section \ref{subsec:dataset} is used 
 \section{Slope calibration}
 \label{subsec:slope_calib}
 
-To reconstruct the time of the first hit in a channel (only a single hit per channel is registered during a bunch-crossing), the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
+To reconstruct the time of the first hit in a channel, the TDC value measured needs to be converted into nanoseconds. The slope is calculated as
 \begin{equation} \label{eq:slope}
 	s \: \text{[TDC/ns]} = \frac{b - a}{3920}
 \end{equation}
@@ -211,7 +211,7 @@ The time calibration relies on the linearity of the TDC voltage ramp in the \tex
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0_Corrected.eps}
 		\caption{}\label{fig:LinCorr_2}
 	\end{subfigure}
-	\caption{\subref{fig:LinCorr}) Quadratic fit of chip 146 (BXID even) on layer 9. The graph is slightly curved showing that this chip presents a non-linear TDC ramp. $\chi^2/ndf$ = 1.29. \subref{fig:LinCorr_2}) Profile for chip 146 on layer 9 after the non-linearity correction of the ramp. The correction parameters are applied on the data to cross-check the quality of the correction. The curve flattens with the non-linearity correction applied.}
+	\caption{\subref{fig:LinCorr}) Quadratic fit of chip 146 (BXID even) on layer 9. The graph is slightly curved showing that this chip presents a non-linear TDC ramp. \subref{fig:LinCorr_2}) Profile for chip 146 on layer 9 after the non-linearity correction of the ramp. The correction parameters are applied on the data to cross-check the quality of the correction. The curve flattens with the non-linearity correction applied.}
 \end{figure}
 
 By investigating the time of the first hit (T$_{fH}$) for each chip and BXID parity as a function of the TDC value of the hit, the shape of the graph indicates how reliable is the assumption of a linear ramp. If the ramp would be perfectly linear, one would obtain a flat graph. To correct for the non-linearity of the ramp, a $2^{nd}$ order polynomial is used for each chip and \acrshort{bxid} as shown in figure \ref{fig:LinCorr}. The time correction needed can be in the order of few nanoseconds. The figure \ref{fig:LinCorr_2} shows the time of first hit as a function of the TDC value of the hit after the non-linearity correction. As expected, the curve looks much flatter after the non-linearity correction.
