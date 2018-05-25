@@ -2,7 +2,7 @@
 \chapter{Timing study of hadron showers}
 \label{chap:TimingPions}
 
-In this chapter, the recorded pion data is compared to \geant v10.1 simulations using different hadronic models as explained in chapter \ref{chap:G4Simulation}.
+In this chapter, the recorded pion data is compared to \geant v10.1 simulations using different hadronic models as explained in chapter \ref{chap:G4Simulation}. Just as a reminder, the hit time of a channel is referred to as \textit{the time of the first hit}.
 
 \section{Dataset}
 
@@ -131,7 +131,7 @@ Figures \ref{fig:Energy_SimData_10GeV} and \ref{fig:Energy_SimData_90GeV} show t
 	\caption{Comparison of the mean time of the first hit as function of the hit energy in data and \mokka simulation for 10 GeV and 90 GeV pions. The grey and color bands show the statistical and systematic uncertainties.}
 \end{figure}
 
-Then the dependence of the RMS of the time distribution as a function of the hit energy has been studied. It is expected that the RMS of the time distribution is bigger at low hit energies coming mostly from slow neutrons and then decreases for higher hit energies. The figure \ref{fig:RMS_Energy_Comparison} shows the RMS of the time distribution as a function of the hit energy for muons, electrons and pions. As expected, the RMS is bigger at low hit energy and reaches a plateau at high hit energies.
+Then the dependence of the RMS of the time distribution as a function of the hit energy has been studied. It is expected that the RMS of the time distribution is bigger at low hit energies coming mostly from slow neutrons and then decreases for higher hit energies. The figure \ref{fig:RMS_Energy_Comparison} shows the RMS of the time distribution as a function of the hit energy for muons, electrons and pions. As expected, the RMS is bigger at low hit energy and reaches a plateau at high hit energies. The RMS varies from 12-16 ns at 0.5 MIP, to 10-13 ns at 1 MIP and above.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -145,10 +145,10 @@ Then the dependence of the RMS of the time distribution as a function of the hit
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka.eps}
 		\caption{} \label{fig:RMS_SimData_50GeV}
 	\end{subfigure}
-	\caption{\subref{fig:RMS_Energy_Comparison}) The RMS of the time distribution as function of the hit energy for muons, electrons and pions in steel absorber taken in a range of -50 to 200 ns. \subref{fig:RMS_SimData_50GeV}) Comparison between data and simulation of the RMS of the time distribution as a function of the hit energy. The color bands show the statistical and systematic uncertainty.}
+	\caption{\subref{fig:RMS_Energy_Comparison}) The RMS of the time distribution as function of the hit energy for muons, electrons and pions in steel absorber taken in a range of -50 to 200 ns. The systematics are shown by the color bands. \subref{fig:RMS_SimData_50GeV}) Comparison between data and simulation of the RMS of the time distribution as a function of the hit energy. The color bands show the statistical and systematic uncertainty.}
 \end{figure}
 
-Of course, it has been compared to simulations as shown in figure \ref{fig:RMS_SimData_50GeV} for 50 GeV pions. The QGSP\-\_BERT\-\_HP physics list agrees relatively well with the data, while QBBC tends to over-estimate the RMS for hit energies below 2 MIPs. The QGSP\_BERT physics list completely over-estimated the RMS over the full range by around 2 to 4 ns.
+It has been compared to simulations as shown in figure \ref{fig:RMS_SimData_50GeV} for 50 GeV pions. The QGSP\-\_BERT\-\_HP and QBBC physics list agrees relatively well with the data within the systematic uncertainty, while QGSP\_BERT tends to over-estimate the RMS for hit energies below 3 MIPs by around 2 ns. Additional comparison plots for other pion energies can be seen in appendix \ref{appendix:TimingAdd}.
 
 This comparison study seems to confirm that low energy hits are responsible for delayed energy depositions in the calorimeter, most likely due to low energy neutrons from capture and spallation processes. Higher energy deposits occur mostly in the prompt part of the hadron shower.
 
@@ -211,11 +211,11 @@ Then, the dependency of the RMS of the time distribution as a function of the di
 		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL_RMS.eps}
 		\caption{} \label{fig:Radius_RMS_BL_50GeV}
 	\end{subfigure}
-	\caption{Dependency of the RMS as a function of the hit distance to the shower axis in data for muons, electrons and pions. On the left for the modules 3 to 10. On the right, for modules 11 to 14.}
+	\caption{Dependency of the RMS as a function of the hit distance to the shower axis in data for muons, electrons and pions. On the left for the modules 3 to 10. On the right, for modules 11 to 14. The systematics are shown by the color bands.}
 	\label{fig:Radius_RMS_Data_50GeV}
 \end{figure}
 
-The figure \ref{fig:Radius_RMS_SimData_50GeVComparison} shows the comparison between data and simulation for 50 GeV pions. For modules 3 to 10, the QBBC physics list agrees well with the data while QGSP\_BERT\_HP tends to under-estimate the RMS at larger hit radius by around 2-3 ns. QGSP\_BERT completely over-estimates the RMS at large hit radius by around 8-10 ns. For modules 11 to 14, all physics lists agree well with data up to a radius of around 100 mm. However, at larger hit radius, QGSP\_BERT\_HP under-estimates the RMS by around 3 ns while QBBC over-estimates it by around 2 ns. Similarly to modules 3 to 10, QGSP\_BERT over-estimates greatly the RMS by around 8 ns.
+The figure \ref{fig:Radius_RMS_SimData_50GeVComparison} shows the comparison between data and simulation for 50 GeV pions. For modules 3 to 10, the QGSP\_BERT\_HP and QBBC physics lists agree relatively well with the data. QGSP\_BERT over-estimates the RMS at large hit radius by around 8-10 ns. For modules 11 to 14, all physics lists agree well with data up to a radius of around 100 mm. However, at larger hit radius, QGSP\_BERT\_HP under-estimates the RMS by around 2 ns while QBBC over-estimates it by around 1-2 ns. Similarly to modules 3 to 10, QGSP\_BERT over-estimates greatly the RMS by around 8 ns. Other pion energies have been comparated to simulation and they can be seen in appendix \ref{appendix:TimingAdd}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -369,7 +369,7 @@ Secondly, the dependence of the RMS of the time distribution as a function of th
 	\label{fig:DepthRMSProfile}
 \end{figure}
 
-It has been compared to simulation as shown in figure \ref{fig:Depth_RMS_SimData_50GeV} for 50 GeV pions. The QGSP\_BERT\_HP and QBBC physics lists reproduce well the data while QGSP\_BERT over-estimates the RMS by around 2-3 ns except for the last layer where all physics lists agree with the data. The increase of the RMS of the time distribution could come from an increase of the late contribution from slow neutrons.
+It has been compared to simulation as shown in figure \ref{fig:Depth_RMS_SimData_50GeV} for 50 GeV pions. The QGSP\_BERT\_HP and QBBC physics lists reproduce well the data while QGSP\_BERT over-estimates the RMS by around 2-3 ns except for the last layer where all physics lists agree with the data. The increase of the RMS of the time distribution could come from an increase of the late contribution from slow neutrons. More comparisons between data and simulation for other pion energies can be seen in appendix \ref{appendix:TimingAdd}.
 
 \section{Time correlations between modules}
 

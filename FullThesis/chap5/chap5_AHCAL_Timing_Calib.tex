@@ -19,7 +19,7 @@ In order to determine the ramp slope, the starting point or pedestal of the ramp
 
 Then the data and the time reference of the trigger can be converted into nanosecond using the determined parameters (see section \ref{section:time_ref}). This is done in order to be able to compare them. Ideally, the time difference between the time reference and the data should be a $\delta$ peak at 0 ns. In reality, this $\delta$ peak is smeared by the time resolution introduced by the front-end electronics (see section \ref{sec:TimeFH}).
 
-Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}). In the following, the hit time of a channel is referred to as the time of the first hit because only the first hit per channel is registered during a bunch-crossing (multiple hits could occur in a channel but only the first one is kept by the SPIROC2b).
+Additionally, possible electronics effects can be corrected in order to improve the time resolution. For this study, two effects are corrected, the non-linearity of the TDC ramp (see section \ref{subsec:lin_corr}) and the time-walk effect (see section \ref{subsec:timewalk}). In the following, the hit time of a channel is referred to as \textit{the time of the first hit} because only the first hit per channel is registered during a bunch-crossing (multiple hits could occur in a channel but only the first one is kept by the SPIROC2b).
 
 \section{Dataset}
 

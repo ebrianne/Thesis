@@ -167,13 +167,13 @@
 \contentsline {chapter}{Appendix \numberline {A}Event selection}{169}{Appendix.1.A}
 \contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{171}{Appendix.1.B}
 \contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{175}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{191}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{193}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{195}{Appendix.1.F}
-\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{197}{Appendix.1.G}
-\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{199}{Appendix.1.H}
-\contentsline {chapter}{Appendix \numberline {I}Calibration database}{203}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{205}{appendix*.188}
-\contentsline {chapter}{List of figures}{207}{appendix*.189}
-\contentsline {chapter}{Acronyms}{219}{section*.190}
-\contentsline {chapter}{Bibliography}{223}{appendix*.192}
+\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{199}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{201}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{203}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{205}{Appendix.1.G}
+\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{207}{Appendix.1.H}
+\contentsline {chapter}{Appendix \numberline {I}Calibration database}{211}{Appendix.1.I}
+\contentsline {chapter}{List of tables}{213}{appendix*.196}
+\contentsline {chapter}{List of figures}{215}{appendix*.197}
+\contentsline {chapter}{Acronyms}{229}{section*.198}
+\contentsline {chapter}{Bibliography}{233}{appendix*.200}
