@@ -91,42 +91,41 @@ Warning--empty year in CALICESoft
 Warning--empty booktitle in kB:IEEE
 Warning--empty year in kB:IEEE
 Warning--empty school in AmbraEnergy
-Warning--empty booktitle in Katja:Geant4Talk
 Warning--empty journal in Li2013
 Warning--empty year in Li2013
 Warning--empty journal in Jeans2015
 Warning--empty journal in PandoraCalib
 Warning--empty year in PandoraCalib
-You've used 162 entries,
+You've used 161 entries,
             1876 wiz_defined-function locations,
-            1434 strings with 32418 characters,
-and the built_in function-call counts, 37555 in all, are:
-= -- 3561
-> -- 1450
+            1429 strings with 32240 characters,
+and the built_in function-call counts, 37407 in all, are:
+= -- 3551
+> -- 1446
 < -- 0
-+ -- 565
-- -- 403
-* -- 2397
-:= -- 5329
-add.period$ -- 173
-call.type$ -- 162
-change.case$ -- 151
++ -- 563
+- -- 402
+* -- 2388
+:= -- 5308
+add.period$ -- 172
+call.type$ -- 161
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 213
-duplicate$ -- 2211
-empty$ -- 3668
-format.name$ -- 403
-if$ -- 9293
+cite$ -- 211
+duplicate$ -- 2199
+empty$ -- 3646
+format.name$ -- 402
+if$ -- 9258
 int.to.chr$ -- 0
-int.to.str$ -- 162
-missing$ -- 147
-newline$ -- 513
-num.names$ -- 158
-pop$ -- 635
+int.to.str$ -- 161
+missing$ -- 146
+newline$ -- 510
+num.names$ -- 157
+pop$ -- 626
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1422
+skip$ -- 1421
 stack$ -- 0
 substring$ -- 1699
 swap$ -- 851
@@ -134,8 +133,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 51
-while$ -- 290
-width$ -- 165
-write$ -- 1482
+warning$ -- 50
+while$ -- 289
+width$ -- 164
+write$ -- 1475
 (There were 2 error messages)

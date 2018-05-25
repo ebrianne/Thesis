@@ -122,58 +122,58 @@
 \contentsline {section}{\numberline {9.5}Time of the first hit distribution}{105}{section.9.5}
 \contentsline {subsection}{\numberline {9.5.1}Determination of the time reference offset}{105}{subsection.9.5.1}
 \contentsline {subsection}{\numberline {9.5.2}Time resolution of the AHCAL after calibration}{106}{subsection.9.5.2}
-\contentsline {section}{\numberline {9.6}Corrections applied to data}{107}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{107}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{108}{subsection.9.6.2}
+\contentsline {section}{\numberline {9.6}Corrections applied to data}{108}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}Ramp non-linearity correction}{108}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}Time Walk correction}{109}{subsection.9.6.2}
 \contentsline {subsection}{\numberline {9.6.3}Time of first hit for muons after corrections}{110}{subsection.9.6.3}
-\contentsline {chapter}{\numberline {10}Validation of the time calibration}{111}{chapter.10}
-\contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{111}{section.10.1}
-\contentsline {section}{\numberline {10.2}Effect of the number of triggered channels on the time distribution}{111}{section.10.2}
-\contentsline {section}{\numberline {10.3}Time of the first hit after correction}{114}{section.10.3}
-\contentsline {section}{\numberline {10.4}Transportability of the calibration}{115}{section.10.4}
-\contentsline {section}{\numberline {10.5}Estimation of the systematic uncertainty of the time correction on the time of first hit distribution}{116}{section.10.5}
-\contentsline {section}{\numberline {10.6}Systematic uncertainties}{117}{section.10.6}
-\contentsline {section}{\numberline {10.7}Validation of the simulation}{118}{section.10.7}
-\contentsline {chapter}{\numberline {11}Timing study of hadron showers}{123}{chapter.11}
-\contentsline {section}{\numberline {11.1}Dataset}{123}{section.11.1}
-\contentsline {section}{\numberline {11.2}Time of first hit distribution}{123}{section.11.2}
-\contentsline {section}{\numberline {11.3}Energy dependence of the time of first hit}{125}{section.11.3}
-\contentsline {section}{\numberline {11.4}Radial dependence of the time}{127}{section.11.4}
-\contentsline {subsection}{\numberline {11.4.1}Time dependence with the shower depth}{131}{subsection.11.4.1}
-\contentsline {section}{\numberline {11.5}Time dependence as a function of the layer}{133}{section.11.5}
-\contentsline {section}{\numberline {11.6}Time correlations between modules}{135}{section.11.6}
-\contentsline {section}{\numberline {11.7}Summary and Outlook}{137}{section.11.7}
-\contentsline {chapter}{\numberline {12}Application of timing cuts in the ILD detector simulation}{141}{chapter.12}
-\contentsline {section}{\numberline {12.1}Simulation and software framework}{141}{section.12.1}
-\contentsline {subsection}{\numberline {12.1.1}Event Simulation}{141}{subsection.12.1.1}
-\contentsline {section}{\numberline {12.2}Event Reconstruction}{142}{section.12.2}
-\contentsline {subsection}{\numberline {12.2.1}Tracking}{142}{subsection.12.2.1}
-\contentsline {subsection}{\numberline {12.2.2}Calorimeter digitization}{142}{subsection.12.2.2}
-\contentsline {subsection}{\numberline {12.2.3}Pandora PFA}{143}{subsection.12.2.3}
-\contentsline {section}{\numberline {12.3}Check of the energy reconstruction}{143}{section.12.3}
-\contentsline {section}{\numberline {12.4}Influence of timing cuts on hadronic showers in the ILD detector}{147}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}Motivation}{147}{subsection.12.4.1}
-\contentsline {subsection}{\numberline {12.4.2}Event Selection}{147}{subsection.12.4.2}
-\contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{148}{subsection.12.4.3}
-\contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{149}{subsection.12.4.4}
-\contentsline {subsubsection}{\numberline {12.4.4.1}Assuming perfect time resolution}{149}{subsubsection.12.4.4.1}
-\contentsline {subsubsection}{\numberline {12.4.4.2}In a realistic scenario}{154}{subsubsection.12.4.4.2}
-\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{156}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{158}{subsection.12.5.1}
-\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{160}{subsection.12.5.2}
-\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{160}{section.12.6}
-\contentsline {chapter}{\numberline {13}Summary}{163}{chapter.13}
-\contentsline {chapter}{Acknowledgments}{167}{section*.150}
-\contentsline {chapter}{Appendix \numberline {A}Event selection}{169}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{171}{Appendix.1.B}
-\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{175}{Appendix.1.C}
-\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{199}{Appendix.1.D}
-\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{201}{Appendix.1.E}
-\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{203}{Appendix.1.F}
-\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{205}{Appendix.1.G}
-\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{207}{Appendix.1.H}
-\contentsline {chapter}{Appendix \numberline {I}Calibration database}{211}{Appendix.1.I}
-\contentsline {chapter}{List of tables}{213}{appendix*.196}
-\contentsline {chapter}{List of figures}{215}{appendix*.197}
-\contentsline {chapter}{Acronyms}{229}{section*.198}
-\contentsline {chapter}{Bibliography}{233}{appendix*.200}
+\contentsline {chapter}{\numberline {10}Validation of the time calibration}{113}{chapter.10}
+\contentsline {section}{\numberline {10.1}Time of the first hit for electrons}{113}{section.10.1}
+\contentsline {section}{\numberline {10.2}Effect of the number of triggered channels on the time distribution}{113}{section.10.2}
+\contentsline {section}{\numberline {10.3}Time of the first hit after correction}{116}{section.10.3}
+\contentsline {section}{\numberline {10.4}Transportability of the calibration}{117}{section.10.4}
+\contentsline {section}{\numberline {10.5}Estimation of the systematic uncertainty of the time correction on the time of first hit distribution}{118}{section.10.5}
+\contentsline {section}{\numberline {10.6}Systematic uncertainties}{119}{section.10.6}
+\contentsline {section}{\numberline {10.7}Validation of the simulation}{120}{section.10.7}
+\contentsline {chapter}{\numberline {11}Timing study of hadron showers}{125}{chapter.11}
+\contentsline {section}{\numberline {11.1}Dataset}{125}{section.11.1}
+\contentsline {section}{\numberline {11.2}Time of first hit distribution}{125}{section.11.2}
+\contentsline {section}{\numberline {11.3}Energy dependence of the time of first hit}{128}{section.11.3}
+\contentsline {section}{\numberline {11.4}Radial dependence of the time}{130}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Time dependence with the shower depth}{133}{subsection.11.4.1}
+\contentsline {section}{\numberline {11.5}Time dependence as a function of the layer}{134}{section.11.5}
+\contentsline {section}{\numberline {11.6}Time correlations between modules}{136}{section.11.6}
+\contentsline {section}{\numberline {11.7}Summary and Outlook}{140}{section.11.7}
+\contentsline {chapter}{\numberline {12}Application of timing cuts in the ILD detector simulation}{143}{chapter.12}
+\contentsline {section}{\numberline {12.1}Simulation and software framework}{143}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Event Simulation}{143}{subsection.12.1.1}
+\contentsline {section}{\numberline {12.2}Event Reconstruction}{144}{section.12.2}
+\contentsline {subsection}{\numberline {12.2.1}Tracking}{144}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.2}Calorimeter digitization}{144}{subsection.12.2.2}
+\contentsline {subsection}{\numberline {12.2.3}Pandora PFA}{145}{subsection.12.2.3}
+\contentsline {section}{\numberline {12.3}Check of the energy reconstruction}{145}{section.12.3}
+\contentsline {section}{\numberline {12.4}Influence of timing cuts on hadronic showers in the ILD detector}{149}{section.12.4}
+\contentsline {subsection}{\numberline {12.4.1}Motivation}{149}{subsection.12.4.1}
+\contentsline {subsection}{\numberline {12.4.2}Event Selection}{149}{subsection.12.4.2}
+\contentsline {subsection}{\numberline {12.4.3}Impact of timing cuts on Particle Flow Object reconstruction}{150}{subsection.12.4.3}
+\contentsline {subsection}{\numberline {12.4.4}Impact of timing cuts on calorimeter performance and hadronic showers}{151}{subsection.12.4.4}
+\contentsline {subsubsection}{\numberline {12.4.4.1}Assuming perfect time resolution}{151}{subsubsection.12.4.4.1}
+\contentsline {subsubsection}{\numberline {12.4.4.2}In a realistic scenario}{156}{subsubsection.12.4.4.2}
+\contentsline {section}{\numberline {12.5}Understanding the degradation of the energy resolution with timing cuts}{158}{section.12.5}
+\contentsline {subsection}{\numberline {12.5.1}Hit Energy spectra in HCAL}{160}{subsection.12.5.1}
+\contentsline {subsection}{\numberline {12.5.2}Influence of timing cuts on hit energy spectra in HCAL}{162}{subsection.12.5.2}
+\contentsline {section}{\numberline {12.6}Conclusion and Outlook}{162}{section.12.6}
+\contentsline {chapter}{\numberline {13}Summary}{165}{chapter.13}
+\contentsline {chapter}{Acknowledgments}{169}{section*.150}
+\contentsline {chapter}{Appendix \numberline {A}Event selection}{171}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}Validation: Additional Plots}{173}{Appendix.1.B}
+\contentsline {chapter}{Appendix \numberline {C}Timing: Additional Plots}{177}{Appendix.1.C}
+\contentsline {chapter}{Appendix \numberline {D}Extraction of noise hits for simulation.}{201}{Appendix.1.D}
+\contentsline {chapter}{Appendix \numberline {E}Estimation of the uncertainty of the time calibration.}{203}{Appendix.1.E}
+\contentsline {chapter}{Appendix \numberline {F}Influence of the number of triggered channels and parametrization in simulation.}{205}{Appendix.1.F}
+\contentsline {chapter}{Appendix \numberline {G}Tables of rejected chips.}{207}{Appendix.1.G}
+\contentsline {chapter}{Appendix \numberline {H}List of dead channels.}{209}{Appendix.1.H}
+\contentsline {chapter}{Appendix \numberline {I}Calibration database}{213}{Appendix.1.I}
+\contentsline {chapter}{List of tables}{215}{appendix*.196}
+\contentsline {chapter}{List of figures}{217}{appendix*.197}
+\contentsline {chapter}{Acronyms}{231}{section*.198}
+\contentsline {chapter}{Bibliography}{235}{appendix*.200}

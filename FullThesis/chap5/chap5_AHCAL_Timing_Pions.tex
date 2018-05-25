@@ -70,27 +70,23 @@ However, the time constant of the slow component is very different than in the T
 	\end{tabular}
 \end{table}
 
-Figure \ref{fig:dNdt_SimData_10GeV} shows the time distribution of first hits compared with three different physics lists for 10 GeV pions. Additional distributions for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
+Figure \ref{fig:dNdt_SimData_50GeV} shows the time distribution of first hits compared with three different physics lists for 50 GeV pions. Additional distributions for higher pion beam energies are shown in appendix \ref{appendix:TimingAdd}. For the core of the distribution under 50 ns, overall, all physics lists describe relatively well the data within the systematics.
 
-From 10 to 50 GeV, the QGSP\_BERT\_HP physics list reproduces well the distribution. Above 50 GeV, the tail after 100 ns is also well described in the simulation, however, between 50 and 100 ns, the simulation slightly under-estimates the data although within the systematic uncertainty.
-
-The QBBC physics list tends to be over the QGSP\_BERT\_HP physics list in the late tail by around a factor 2. This does not agree with the observations made in the T3B experiment where the QBBC and QGSP\_BERT\_HP physics lists are very similar. It may be related to the use of different \geant versions because the T3B experiment has used \geant v9.4p03 \cite{Katja:Geant4Talk}. However, this could not be confirmed as this version of geant4 is not available.
-
-For all time of first hit distributions, the QGSP\_BERT physics list without the high-precision neutron treatment, too much late shower activity is predicted by around a factor 5.
+The QGSP\_BERT\_HP and QBBC physics list reproduces relatively well the distribution within the systematic uncertainty. For all time of first hit distributions, the QGSP\_BERT physics list without the high-precision neutron treatment, too much late shower activity is predicted by around a factor 5.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion10GeV_LateClusters.eps}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters.eps}
 		\caption{}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[t]{0.49\textwidth}
 		\centering
-		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion10GeV_LateClusters_DD4hep.eps}
+		\includegraphics[width=1\textwidth]{../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters_DD4hep.eps}
 		\caption{}
 	\end{subfigure}
-	\caption{Comparison of the time of first hit distribution for 10 GeV pions in data and three different physics list for \mokka (left) and \ddhep (right) simulations. The grey and color bands shows the statistical and systematic uncertainties.} 	\label{fig:dNdt_SimData_10GeV}
+	\caption{Comparison of the time of first hit distribution for 50 GeV pions in data and three different physics list for \mokka (left) and \ddhep (right) simulations. The grey and color bands shows the statistical and systematic uncertainties.} 	\label{fig:dNdt_SimData_50GeV}
 \end{figure}
 
 \section{Energy dependence of the time of first hit}
@@ -377,7 +373,7 @@ The advantage of this studied prototype over T3B is the possibility to investiga
 
 The procedure is done by looking at each hit in module $i$ and checking in module $i+1$ for a hit within a distance of 60 mm in the $x:y$ plane. If a hit is found, both times are plotted against each other. If more than one hit is found in module $i+1$ within a radial distance of 60 mm, the closest in the $x:y$ plane is taken.
 
-Two types of correlations were investigated, short and long. For the short correlation, the modules 6 and 7 were chosen, separated by 1 $X_0$ or 0.1 $\lambda_{\pi}$. As for the long, the modules 13 and 14 were selected, separated by 10 $X_0$ or 1 $\lambda_{\pi}$. These were chosen due to the fact that few layers were working properly. It is expected that EM sub-showers can lead to a correlation of hit times for the modules 6 and 7, while the modules 13 and 14 are far apart, and therefore would show less correlation of hit times. The hit times correlation is shown in figure \ref{fig:TimeCorrelation} for the 50 GeV dataset.
+Two types of correlations were investigated, short and long. For the short correlation, the modules 6 and 7 were chosen, separated by 1 $X_0$ or 0.1 $\lambda_{\pi}$. As for the long, the modules 13 and 14 were selected, separated by 10 $X_0$ or 1 $\lambda_{\pi}$. These were chosen due to the fact that few layers were working properly. It is expected that EM sub-showers can lead to a correlation of hit times for the modules 6 and 7, while the modules 13 and 14 are far apart, and therefore would show less or no correlation of hit times. One could expect that a long correlation of hit times is possible due to the production of relativistic MIP-like particles in a hadron shower. However, these particles are produced immediatly after the first hard interaction and travel at the speed of light to the back of the calorimeter. A distance of 1 $\lambda_{\pi}$ corresponds to around 0.8 ns assuming that they travel at around 90\% of the speed of light and don't interact. Thus a correlation could be only visible within the first nanoseconds thus no correlation should be visible for hit times later than 50 ns. The hit times correlation is shown in figure \ref{fig:TimeCorrelation} for the 50 GeV dataset.
 
 The figures show that a correlation is visible in the data for both cases. To quantify this, the following ratio is calculated
 \begin{equation}\label{eq:CorrelCalcul}
