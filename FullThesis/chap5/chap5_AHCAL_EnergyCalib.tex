@@ -6,7 +6,7 @@ The AHCAL was installed at the SPS CERN facilities in July 2015 in order to prov
 
 The conversion requires a calibration of each cell of the calorimeter which is by itself a challenge due to the high number of readout channels. For this thesis, 3744 channels have to be calibrated. Due to the AHCAL boards (see section \ref{sec:TBsetup}) equipped with various types of SiPMs, the procedure needs to be automatic and robust to extract the calibration constant for each channel.
 
-In this chapter, the first section will described the procedure for the AHCAL energy scale calibration. The second section will present the results of the energy scale calibration as well as a comparison with simulation to validate the calibration. In this thesis, only the calibration of the energy scale of the detector was performed. A dedicated analysis of the performance of the detector is being performed in parallel \cite{AmbraEnergy, AmbraTokyo}.
+In this chapter, the first section will describe the procedure for the AHCAL energy scale calibration. The second section will present the results of the energy scale calibration as well as a comparison with simulation to validate the calibration. In this thesis, only the calibration of the energy scale of the detector was performed. A dedicated analysis of the performance of the detector is being performed in parallel \cite{AmbraEnergy, AmbraTokyo}.
 
 \section{Energy Calibration of the AHCAL}
 \label{sec:EnergyCalibration}
@@ -48,7 +48,7 @@ However, the CALICE database structure, containing the main calibration constant
 \subsection{MIP extraction}
 \label{sec:MIPExtraction}
 
-After the pedestal calibration, the extraction of the MIP calibration constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needs to be automatic and robust. In order to reduce the amount of noise hits in the hit energy spectra of each cell that would lead to unstable fits and wrong MIP calibration constants, a MIP track selection has been performed (see section \ref{subsec:Muon_sel}).
+After the pedestal calibration, the extraction of the MIP calibration constant for each channel can be performed. As the detector was equipped with various types of SiPM and boards designs, the extraction procedure needs to be automatic and robust. In order to reduce the number of noise hits in the hit energy spectra of each cell that would lead to unstable fits and wrong MIP calibration constants, a MIP track selection has been performed (see section \ref{subsec:Muon_sel}).
 
 The fitting procedure is very sensitive to the initial parameters of the fit and can be quite difficult with the variety of SiPM and tiles in the AHCAL. To ensure a good fit, an iterative fitting procedure is performed. A more precise and detailed description of the fitting procedure can be found in \cite{FabianThesis, SarahMaster}.
 
@@ -68,7 +68,7 @@ In the muon data recorded in July 2015, the MIP calibration constant of 72\% of 
 
 Additionally, if a channel does not have a MIP calibration value, the mean of the MIP constant distribution of a chip or a layer is used. 85\% of the detector channels (3171 channels) have been calibrated, excluding dead and noisy channels (see appendix \ref{appendix:deadChn}).
 
-The results of the extracted MIP values are shown in table \ref{table:MIPAHCAL} and are regrouped by SiPM types. The results are well compatible with previous work \cite{SarahMaster} although there is slight difference in the number of fitted channels that may come from the differences in the event selection and the extraction procedure.
+The results of the extracted MIP values are shown in table \ref{table:MIPAHCAL} and are regrouped by SiPM types. The results are well compatible with previous work \cite{SarahMaster} although there is a slight difference in the number of fitted channels that may come from the differences in the event selection and the extraction procedure.
 
 \begin{table}[htb!]
 	\centering
@@ -267,4 +267,4 @@ The precision of the detector simulation for electrons is limited by the cross-t
 
 The MIP calibration procedure was explained and developed in order to accommodate to such high number of channels as well as the diversity in SiPM types and tile designs. In this way, 85\% of the 3744 channels in the detector have their MIP constant determined. An error around 1-3\% is made on the MIP constant value with the current fitting method which is in the order of magnitude expected due to the limited statistics. In order to validate the calibration and the simulation model, comparisons have been made at the single channel level. Both data and simulation are in a good agreement with less than 1\% deviation. The simulation appears narrower due to channel-wise mis-calibrations not being modeled. A systematic uncertainty of 3.6\% on the MIP energy scale has been determined due to run-by-run, time and environmental variations.
 
-The simulation has been validated to the lowest hit energies as well as with electromagnetic showers. The simulation reproduces the data between 10-20\% which in good enough for the study presented in this thesis. Before studying the time development of hadronic showers, the time of a hit recorded in data needs to be calibrated. The timing calibration of the AHCAL prototype is presented in the next chapter.
+The simulation has been validated to the lowest hit energies as well as with electromagnetic showers. The simulation reproduces the data between 10-20\% which is good enough for the study presented in this thesis. Before studying the time development of hadronic showers, the time of a hit recorded in data needs to be calibrated. The timing calibration of the AHCAL prototype is presented in the next chapter.

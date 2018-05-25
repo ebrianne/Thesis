@@ -8,7 +8,7 @@
 %%% Need to rethink about this...
 The experimental data used in this thesis has been collected in a testbeam campaign at the SPS facility at CERN in July 2015 with the AHCAL technological prototype described in section \ref{sec:AHCAL}.
 
-The main topic of this thesis is the study of the \textit{time development of hadronic showers} and the study of the \textit{effects of timing cuts} in a hadronic calorimeter. The analysis is divided in several part. In the first part, the energy scale calibration of the AHCAL prototype is presented in chapter \ref{chap:ECalibAHCAL}. In the second part, the timing calibration of the AHCAL is presented in chapter \ref{chap:TimingCalib}. In a third part, the cross-check of the time calibration and the validation of the simulation is shown in chapter \ref{chap:TimingValidation}. Finally, the analysis of the recorded pion data is described in chapter \ref{chap:TimingPions}.
+The main topic of this thesis is the study of the \textit{time development of hadronic showers} and the study of the \textit{effects of timing cuts} in a hadronic calorimeter. The analysis is divided into several parts. In the first part, the energy scale calibration of the AHCAL prototype is presented in chapter \ref{chap:ECalibAHCAL}. In the second part, the timing calibration of the AHCAL is presented in chapter \ref{chap:TimingCalib}. In a third part, the cross-check of the time calibration and the validation of the simulation is shown in chapter \ref{chap:TimingValidation}. Finally, the analysis of the recorded pion data is described in chapter \ref{chap:TimingPions}.
 
 This chapter discusses the setup of the testbeam first before presenting the selected dataset for this analysis, the selection of the triggers needed for this analysis as time reference and the selection criteria for each dataset of muons, electrons and pions.
 
@@ -19,13 +19,13 @@ The key results presented in this thesis are being approved by the CALICE Collab
 \subsection{Beamline Setup}
 \label{sec:beamline}
 
-During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 in the SPS North Area at CERN \cite{H2Beamline}. This beamline is equipped with wire chambers and scintillators that provide information of the beam position and number of particles. The wire chamber information would have been useful in order to simulate correctly the beam profile. Unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information available about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
+During the summer of 2015, the CALICE collaboration performed several testbeam campaigns with the AHCAL technological prototype. The detector was installed in the beamline H2 in the SPS North Area at CERN \cite{H2Beamline}. This beamline is equipped with wire chambers and scintillators that provide information on the beam position and number of particles. The wire chamber information would have been useful in order to simulate correctly the beam profile. Unfortunately, this information could not be recorded with the AHCAL data acquisition system. The information available about the amount of material upstream of the detector until the last momentum selection magnet is limited thus the simulation of the beamline is simplified.
 
 A Cherenkov detector (at around 100 m upstream) was available to tag incoming particles. These detectors take advantage of the fact that, a particle that traverses a medium faster than the speed of light in that medium will generate a cone of Cherenkov light. The opening angle of the cone is proportional to the particle mass \cite{GOVORKOV20059}. The Cherenkov detector at this beamline offered the possibility to set a threshold for particle tagging. This is particularly needed to tag possible contaminating electrons in a pion beam. The tagging signal from the Cherenkov detector was provided directly to several AHCAL channels.
 
 For the production of particles, a primary high-intensity proton beam (around $10^{12}$ protons per burst) of 400 GeV impinges on a target. From this, a secondary beam is produced containing various particle types and energies.
 
-A muon beam can be obtained from the decay of a collimated pion beam which are stopped by a collimator before the last bending magnet.
+A muon beam can be obtained from the decay of a collimated pion beam which is stopped by a collimator before the last bending magnet.
 
 For electrons, a neutral beam of photons is directed to a lead target to generate electrons from gamma conversion, producing a very pure electron beam. Another possibility is to impinge a charged beam onto a secondary target and filter the beam with an absorber. But this has the disadvantage of low rates at low energy and possible contamination of the electron beam with pions \cite{H2Beamline}.
 
@@ -61,9 +61,9 @@ Additionally, the coincidence signal from the scintillator was provided directly
 \subsection{Time reference}
 \label{subsec:trigger}
 
-The scintillator plates were used as a time reference signal. Both type of scintillator are connected to a discriminator and a gate for coincidence in order to provide a validation signal to the readout chip (see section \ref{sec:SPIROC2B}).
+The scintillator plates were used as a time reference signal. Both types of scintillator are connected to a discriminator and a gate for coincidence in order to provide a validation signal to the readout chip (see section \ref{sec:SPIROC2B}).
 
-When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge of around 1 ns, is generated with an amplitude around 100 mV that is used as a time reference. This signal is provided \textit{directly to six AHCAL channels} for redundancy. The list of the AHCAL channels used as a reference time are shown in table \ref{table:trigger_signal_list}. No other external time reference was available.
+When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge of around 1 ns, is generated with an amplitude of around 100 mV that is used as a time reference. This signal is provided \textit{directly to six AHCAL channels} for redundancy. The list of the AHCAL channels used as a reference time is shown in table \ref{table:trigger_signal_list}. No other external time reference was available.
 
 \begin{table}[htb!]
 	\centering
@@ -83,7 +83,7 @@ When a coincidence happens, a signal of 4 $\mu$s length with a fast rising edge 
 	\end{tabular}
 \end{table}
 
-In the following analysis, the time reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are used. The channels are determined to be noisy or broken by looking at the energy spectra of these channels. Broken channels results in an empty energy spectrum and noisy channels are showing two energy peaks, one near the pedestal and another at the expected energy value. The channel T$_{11}$ is not used as it presented a very low efficiency due to noise.
+In the following analysis, the time reference signals T$_{12}$, T$_{13}$ and T$_{14}$ are used. The channels are determined to be noisy or broken by looking at the energy spectra of these channels. Broken channels result in an empty energy spectrum and noisy channels are showing two energy peaks, one near the pedestal and another at the expected energy value. The channel T$_{11}$ is not used as it presented a very low efficiency due to noise.
 
 \section{Dataset and Event Selection}
 
@@ -138,7 +138,7 @@ By looking at the spectrum of the number of hits per event, it is estimated that
 
 The MIP selection was designed to efficiently select muons and reject late pion showers. For this, a MIP track finder has been developed based on previous work \cite{Hartbrich:2016bbz}. This algorithm is designed to select MIP-like particle tracks in the AHCAL detector and remove pion showers.
 
-The algorithm selects AHCAL towers of hits in the same $x:y$ position and it rejects AHCAL towers that contains less than a certain number of hits. In order to select muons or punch-through pions, a straight track of at least 7 hits is required in the whole AHCAL. This assumes that the calorimeter was perfectly perpendicular to the beam, therefore any tilted tracks would be missed. In addition, to reject late pion showers, no more than 2 hits are allowed per layer to account for some flexibility with noise hits.
+The algorithm selects AHCAL towers of hits in the same $x:y$ position and it rejects AHCAL towers that contain less than a certain number of hits. In order to select muons or punch-through pions, a straight track of at least 7 hits is required in the whole AHCAL. This assumes that the calorimeter was perfectly perpendicular to the beam, therefore any tilted tracks would be missed. In addition, to reject late pion showers, no more than 2 hits are allowed per layer to account for some flexibility with noise hits.
 
 The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 150 GeV muons, electrons and pions after pre-selection. The MIP track finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part for the big modules (modules 11 to 14, Outer BL) in order to calibrate the outer channels of these modules. The figure \ref{fig:Muons_Track_nHitsLayer} shows that a cut of two hits per layer is optimal in order to reject pions without affecting muons too much.
 
@@ -166,7 +166,7 @@ The electron selection is done to extract single electron showers contained in t
 
 In a next step, the electron selection is performed. Usually, one could use a shower start algorithm to select electrons that interact in the first layers of the calorimeter and reject pions efficiently \cite{Hartbrich:2016bbz}. However, the first ECAL modules (see section \ref{subsec:ScECAL}) can't be used because of high noise and the detector is partially equipped with active layers. This would greatly influence the performance of such algorithm, therefore, an alternative selection is needed.
 
-A cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z$) is done. It is shown in figures \ref{fig:e10GeV_nHitsCoGZ} and \ref{fig:e50GeV_nHitsCoGZ}. The box cut in the figures does not induce any bias for the timing study in this thesis, it would only reduce the event statistics. In addition, the number of hits in a electron shower is proportional to the shower energy, thus this cut is energy dependent.
+A cut on the number of hits per event ($n_{Hits}$) versus the center of gravity in z ($CoG_Z$) is done. It is shown in figures \ref{fig:e10GeV_nHitsCoGZ} and \ref{fig:e50GeV_nHitsCoGZ}. The box cut in the figures does not induce any bias for the timing study in this thesis, it would only reduce the event statistics. In addition, the number of hits in an electron shower is proportional to the shower energy, thus this cut is energy dependent.
 
 Finally, a cut on the energy deposited in the last two layers relative to the energy deposited in the calorimeter ($(E_{13}+E_{14})/\Sigma E$) is done. The distributions are shown in figures \ref{fig:e10GeV_Elast} and \ref{fig:e50GeV_Elast}. This cut is required to be under 1\% to reject pion showers and to contain the electron shower.
 
@@ -271,7 +271,7 @@ The method is the following: all the hits in an event are placed and ordered in 
 
 The method is based on data in order to remove multi-particle events. The multi-particle event rejection has been checked on simulated data and affects the selection between <0.1\% up to 2\% from 10 to 90 GeV pions. These multi-particle events are greatly suppressed in data. The number of events removed varies between 0.1\% and 1\% depending on the beam energy. Due to the calorimeter not being fully equipped thus providing limited information, some contamination may remain in the data.
 
-A detailed description of the selection cuts are shown in appendix table \ref{table:pion_sel}.
+A detailed description of the selection cuts is shown in appendix table \ref{table:pion_sel}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -338,9 +338,9 @@ For the electron data, the variable $R_{chip}$ was used to determine bad behavin
 \end{equation}
 where $N_{total}$ is the total number of entries, $N_{50 ns}^{200 ns}$ is the number of entries between 50 ns and 200 ns and $N_{-200 ns}^{50 ns}$ is the number of entries between -200 ns and 50 ns. The variable is minimum when most of the hits in the chip are outside of the core of the time distribution between -50 and 50 ns. If $R$ is below 98\%, the chip is rejected. With this method, 20 chips are rejected.
 
-For the pion data, applying the same method as for electrons is not possible due to a late tail to higher time related to delayed energy depositions from neutrons. The same chips as for electrons were rejected but in addition, each chip time distribution after correction were manually checked. The chips that presented an abnormal shape such as double peaks were discarded. Hence, 16 chips are additionally rejected. This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
+For the pion data, applying the same method as for electrons is not possible due to a late tail to higher time related to delayed energy depositions from neutrons. The same chips as for electrons were rejected but in addition, each chip time distribution after correction was manually checked. The chips that presented an abnormal shape such as double peaks were discarded. Hence, 16 chips are additionally rejected. This leaves 44 chips in the pion analysis. A detailed table of the rejected chips can be seen in appendix \ref{appendix:rejection}.
 
-For this analysis, noisy and dead channels as well as channel where any calibration value could not be determined was rejected (see appendix \ref{appendix:deadChn}).
+For this analysis, noisy and dead channels, as well as channels where any calibration value could not be determined was rejected (see appendix \ref{appendix:deadChn}).
 
 \newpage
 \begin{center}
