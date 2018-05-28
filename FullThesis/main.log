@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.9)  25 MAY 2018 13:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.9)  28 MAY 2018 14:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -3450,28 +3450,36 @@ File: ../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions-eps-converted-to.pd
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/TimeEnergyBinsPions-eps-converted-to.pdf  used on input line 107.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15416 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 15358 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:32:59
 (epstopdf)                    size: 18987 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 118.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:10
+(epstopdf)                    size: 18994 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf, id=3517, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_Mokka-eps-converted-to.pdf  used on input line 118.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:44
-(epstopdf)                    size: 15434 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15376 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:00
 (epstopdf)                    size: 19213 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 124.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:10
+(epstopdf)                    size: 19219 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf, id=3518, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_Mokka-eps-converted-to.pdf>
@@ -3493,14 +3501,18 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange_RMS-eps-converted-to.pdf  used on input line 135.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15278 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15220 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:30:42
 (epstopdf)                    size: 18837 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 141.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:10
+(epstopdf)                    size: 18841 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf, id=3553, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_Mokka-eps-converted-to.pdf>
@@ -3537,28 +3549,36 @@ Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Compar
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
  [132 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_SSF-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12889 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12830 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:09
 (epstopdf)                    size: 15087 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 181.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:11
+(epstopdf)                    size: 15089 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf, id=3656, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 181.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12791 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12732 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:09
 (epstopdf)                    size: 15694 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 187.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:11
+(epstopdf)                    size: 15697 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf, id=3657, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
@@ -3593,28 +3613,36 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_BL_RMS-eps-converted-to.pdf  used on input line 207.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12934 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12875 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:30:43
 (epstopdf)                    size: 15265 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 219.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:12
+(epstopdf)                    size: 15268 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf, id=3665, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 219.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12830 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12771 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:30:43
 (epstopdf)                    size: 15874 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 225.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:12
+(epstopdf)                    size: 15875 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf, id=3666, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_Mokka-eps-converted-to.pdf>
@@ -3764,14 +3792,18 @@ Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Compari
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
  [136 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>] [137 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:44
-(epstopdf)                    size: 13071 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13013 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:03
 (epstopdf)                    size: 14788 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 338.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:13
+(epstopdf)                    size: 14794 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf, id=3899, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka-eps-converted-to.pdf>
@@ -3806,14 +3838,18 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_RMS-eps-converted-to.pdf  used on input line 355.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12876 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12818 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:30:44
 (epstopdf)                    size: 14549 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 361.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:13
+(epstopdf)                    size: 14549 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf, id=3903, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_Mokka-eps-converted-to.pdf>
@@ -4872,490 +4908,630 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion90GeV_LateClusters_DD4hep-eps-converted-to.pdf  used on input line 122.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15407 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15349 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:06
 (epstopdf)                    size: 19069 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 134.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:15
+(epstopdf)                    size: 19078 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf, id=5003, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_Mokka-eps-converted-to.pdf  used on input line 134.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15403 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15345 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:06
 (epstopdf)                    size: 19093 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 140.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:15
+(epstopdf)                    size: 19101 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf, id=5004, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_Mokka-eps-converted-to.pdf  used on input line 140.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:41
-(epstopdf)                    size: 15403 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15345 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:06
 (epstopdf)                    size: 19117 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 146.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:15
+(epstopdf)                    size: 19126 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf, id=5005, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_Mokka-eps-converted-to.pdf  used on input line 146.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15409 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 15351 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:07
 (epstopdf)                    size: 16300 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 155.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:16
+(epstopdf)                    size: 16305 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf, id=5006, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_10GeV_DD4hep-eps-converted-to.pdf  used on input line 155.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15405 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15347 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:07
 (epstopdf)                    size: 16355 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 161.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:16
+(epstopdf)                    size: 16363 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf, id=5007, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_30GeV_DD4hep-eps-converted-to.pdf  used on input line 161.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 15413 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15355 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:08
 (epstopdf)                    size: 16313 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 167.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:17
+(epstopdf)                    size: 16317 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf, id=5008, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_50GeV_DD4hep-eps-converted-to.pdf  used on input line 167.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:41
-(epstopdf)                    size: 15430 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15372 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:08
 (epstopdf)                    size: 16318 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 173.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:17
+(epstopdf)                    size: 16322 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf, id=5009, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_70GeV_DD4hep-eps-converted-to.pdf  used on input line 173.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:44
-(epstopdf)                    size: 15428 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15370 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:09
 (epstopdf)                    size: 16406 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 179.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:18
+(epstopdf)                    size: 16414 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf, id=5010, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Energy_90GeV_DD4hep-eps-converted-to.pdf  used on input line 179.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12879 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12820 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:12
 (epstopdf)                    size: 15034 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 190.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:18
+(epstopdf)                    size: 15036 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf, id=5011, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 190.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12885 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12826 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:13
 (epstopdf)                    size: 15100 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 196.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:18
+(epstopdf)                    size: 15103 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf, id=5012, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 196.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12894 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12835 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:13
 (epstopdf)                    size: 15011 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 202.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:19
+(epstopdf)                    size: 15013 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf, id=5013, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 202.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12891 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12832 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:13
 (epstopdf)                    size: 15104 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 208.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:19
+(epstopdf)                    size: 15106 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf, id=5014, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 208.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12884 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12825 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:14
 (epstopdf)                    size: 14129 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 217.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:20
+(epstopdf)                    size: 14130 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf, id=5015, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 217.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12889 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12830 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:14
 (epstopdf)                    size: 14223 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 223.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:20
+(epstopdf)                    size: 14223 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf, id=5016, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 223.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12891 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12832 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:14
 (epstopdf)                    size: 14205 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 229.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:20
+(epstopdf)                    size: 14207 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf, id=5017, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 229.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12892 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12833 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:15
 (epstopdf)                    size: 14165 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 235.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:21
+(epstopdf)                    size: 14167 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf, id=5018, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 235.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12895 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12836 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:15
 (epstopdf)                    size: 14207 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 241.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:21
+(epstopdf)                    size: 14210 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf, id=5019, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 241.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12792 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12733 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:15
 (epstopdf)                    size: 15699 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 250.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:22
+(epstopdf)                    size: 15704 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf, id=5020, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_Mokka-eps-converted-to.pdf  used on input line 250.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12793 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12734 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:16
 (epstopdf)                    size: 15785 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 256.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:22
+(epstopdf)                    size: 15788 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf, id=5021, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_Mokka-eps-converted-to.pdf  used on input line 256.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12786 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12727 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:16
 (epstopdf)                    size: 15737 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 262.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:22
+(epstopdf)                    size: 15739 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf, id=5022, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_Mokka-eps-converted-to.pdf  used on input line 262.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12790 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12731 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:16
 (epstopdf)                    size: 15767 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 268.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:23
+(epstopdf)                    size: 15769 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf, id=5023, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_Mokka-eps-converted-to.pdf  used on input line 268.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12794 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12735 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:17
 (epstopdf)                    size: 14344 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 277.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:23
+(epstopdf)                    size: 14345 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf, id=5024, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 277.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12795 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12736 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:17
 (epstopdf)                    size: 14451 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 283.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:24
+(epstopdf)                    size: 14454 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf, id=5025, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 283.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12795 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12736 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:17
 (epstopdf)                    size: 14373 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 289.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:24
+(epstopdf)                    size: 14376 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf, id=5026, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 289.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12788 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12729 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:18
 (epstopdf)                    size: 14380 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 295.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:24
+(epstopdf)                    size: 14379 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf, id=5027, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 295.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 17:54:08
-(epstopdf)                    size: 12792 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12733 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 17:55:18
 (epstopdf)                    size: 14431 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 301.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:25
+(epstopdf)                    size: 14431 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf, id=5028, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 301.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13054 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12996 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:16
 (epstopdf)                    size: 14694 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 313.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:25
+(epstopdf)                    size: 14699 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf, id=5029, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_Mokka-eps-converted-to.pdf  used on input line 313.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13067 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13009 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:16
 (epstopdf)                    size: 14777 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 319.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:25
+(epstopdf)                    size: 14783 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf, id=5030, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_Mokka-eps-converted-to.pdf  used on input line 319.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13065 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13007 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:16
 (epstopdf)                    size: 14698 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 325.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:26
+(epstopdf)                    size: 14703 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf, id=5031, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_Mokka-eps-converted-to.pdf  used on input line 325.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-24 13:20:40
-(epstopdf)                    size: 13063 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13005 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:17
 (epstopdf)                    size: 14701 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 331.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:26
+(epstopdf)                    size: 14702 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf, id=5032, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_Mokka-eps-converted-to.pdf  used on input line 331.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13059 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 13001 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:17
 (epstopdf)                    size: 13994 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 340.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:27
+(epstopdf)                    size: 14000 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf, id=5033, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_10GeV_DD4hep-eps-converted-to.pdf  used on input line 340.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13067 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13009 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:17
 (epstopdf)                    size: 14086 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 346.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:27
+(epstopdf)                    size: 14093 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf, id=5034, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_30GeV_DD4hep-eps-converted-to.pdf  used on input line 346.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:39
-(epstopdf)                    size: 13066 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13008 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:18
 (epstopdf)                    size: 14061 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 352.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:28
+(epstopdf)                    size: 14066 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf, id=5035, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_50GeV_DD4hep-eps-converted-to.pdf  used on input line 352.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:40
-(epstopdf)                    size: 13067 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13009 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:18
 (epstopdf)                    size: 14035 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 358.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:28
+(epstopdf)                    size: 14041 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf, id=5036, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_70GeV_DD4hep-eps-converted-to.pdf  used on input line 358.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-24 13:20:43
-(epstopdf)                    size: 13070 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 13012 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-24 15:33:18
 (epstopdf)                    size: 14075 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 364.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:28
+(epstopdf)                    size: 14080 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf, id=5037, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_DD4hep-eps-converted-to.pdf>
@@ -5474,504 +5650,648 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Correlation_50GeV_long_QBBC_DD4hep-eps-converted-to.pdf  used on input line 420.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15314 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 15255 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:10
 (epstopdf)                    size: 18782 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 431.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:29
+(epstopdf)                    size: 18787 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf, id=5046, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_Mokka-eps-converted-to.pdf  used on input line 431.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15268 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15210 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:11
 (epstopdf)                    size: 18821 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 437.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:29
+(epstopdf)                    size: 18828 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf, id=5047, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_Mokka-eps-converted-to.pdf  used on input line 437.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15291 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15232 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:11
 (epstopdf)                    size: 18780 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 443.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:30
+(epstopdf)                    size: 18786 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf, id=5048, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_Mokka-eps-converted-to.pdf  used on input line 443.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15256 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15198 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:11
 (epstopdf)                    size: 18846 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 449.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:30
+(epstopdf)                    size: 18852 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf, id=5049, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_Mokka-eps-converted-to.pdf  used on input line 449.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15300 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 15242 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:12
 (epstopdf)                    size: 16007 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 459.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:30
+(epstopdf)                    size: 16012 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf, id=5050, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_10GeV_DD4hep-eps-converted-to.pdf  used on input line 459.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15275 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 15217 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:12
 (epstopdf)                    size: 16064 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 465.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:31
+(epstopdf)                    size: 16070 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf, id=5051, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_30GeV_DD4hep-eps-converted-to.pdf  used on input line 465.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15286 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15228 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:13
 (epstopdf)                    size: 16066 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 471.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:31
+(epstopdf)                    size: 16072 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf, id=5052, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_50GeV_DD4hep-eps-converted-to.pdf  used on input line 471.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15278 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15220 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:13
 (epstopdf)                    size: 16040 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 477.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:32
+(epstopdf)                    size: 16046 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf, id=5053, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_70GeV_DD4hep-eps-converted-to.pdf  used on input line 477.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 15278 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 15220 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:47:13
 (epstopdf)                    size: 16088 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 483.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:32
+(epstopdf)                    size: 16093 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf, id=5054, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Energy_90GeV_DD4hep-eps-converted-to.pdf  used on input line 483.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12919 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12860 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:44
 (epstopdf)                    size: 15210 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 495.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:32
+(epstopdf)                    size: 15211 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf, id=5055, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 495.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12931 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12872 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:44
 (epstopdf)                    size: 15316 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 501.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:33
+(epstopdf)                    size: 15318 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf, id=5056, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 501.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12915 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12856 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:45
 (epstopdf)                    size: 15082 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 507.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:33
+(epstopdf)                    size: 15085 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf, id=5057, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 507.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12944 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12885 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:45
 (epstopdf)                    size: 15276 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka.eps>
 (epstopdf)             \includegraphics on input line 513.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:34
+(epstopdf)                    size: 15275 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf, id=5058, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_Mokka-eps-converted-to.pdf  used on input line 513.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12924 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12865 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:45
 (epstopdf)                    size: 14268 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 523.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:34
+(epstopdf)                    size: 14269 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf, id=5059, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 523.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12929 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12870 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:46
 (epstopdf)                    size: 14379 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 529.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:34
+(epstopdf)                    size: 14381 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf, id=5060, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 529.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12937 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12878 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:46
 (epstopdf)                    size: 14342 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 535.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:35
+(epstopdf)                    size: 14345 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf, id=5061, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 535.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12934 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12875 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:47
 (epstopdf)                    size: 14314 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 541.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:35
+(epstopdf)                    size: 14316 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf, id=5062, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 541.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12940 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12881 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:47
 (epstopdf)                    size: 14381 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 547.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:36
+(epstopdf)                    size: 14382 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf, id=5063, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_SSF_DD4hep-eps-converted-to.pdf  used on input line 547.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12829 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12770 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:47
 (epstopdf)                    size: 15827 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 559.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:36
+(epstopdf)                    size: 15830 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf, id=5064, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_Mokka-eps-converted-to.pdf  used on input line 559.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12827 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12768 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:48
 (epstopdf)                    size: 15905 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 565.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:36
+(epstopdf)                    size: 15908 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf, id=5065, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_Mokka-eps-converted-to.pdf  used on input line 565.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12817 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12758 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:48
 (epstopdf)                    size: 15804 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 571.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:37
+(epstopdf)                    size: 15806 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf, id=5066, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_Mokka-eps-converted-to.pdf  used on input line 571.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12824 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12765 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:48
 (epstopdf)                    size: 15884 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka.eps>
 (epstopdf)             \includegraphics on input line 577.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:37
+(epstopdf)                    size: 15887 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf, id=5067, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_Mokka-eps-converted-to.pdf  used on input line 577.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12836 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12777 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:49
 (epstopdf)                    size: 14407 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 587.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:38
+(epstopdf)                    size: 14407 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf, id=5068, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_10GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 587.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12831 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12772 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:49
 (epstopdf)                    size: 14494 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 593.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:38
+(epstopdf)                    size: 14496 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf, id=5069, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_30GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 593.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12833 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12774 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:49
 (epstopdf)                    size: 14470 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 599.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:38
+(epstopdf)                    size: 14472 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf, id=5070, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_50GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 599.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12821 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12762 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:50
 (epstopdf)                    size: 14425 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 605.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:39
+(epstopdf)                    size: 14428 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf, id=5071, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_70GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 605.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12829 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12770 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:51:50
 (epstopdf)                    size: 14483 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 611.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:39
+(epstopdf)                    size: 14483 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf, id=5072, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Radius_90GeV_BL_DD4hep-eps-converted-to.pdf  used on input line 611.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12868 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12810 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:55:57
 (epstopdf)                    size: 14486 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 623.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:40
+(epstopdf)                    size: 14491 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf, id=5073, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_Mokka-eps-converted-to.pdf  used on input line 623.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12878 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12820 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:55:57
 (epstopdf)                    size: 14565 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 629.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:40
+(epstopdf)                    size: 14567 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf, id=5074, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_Mokka-eps-converted-to.pdf  used on input line 629.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12883 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12825 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:55:58
 (epstopdf)                    size: 14530 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 635.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:40
+(epstopdf)                    size: 14535 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf, id=5075, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_Mokka-eps-converted-to.pdf  used on input line 635.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12888 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12830 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:55:58
 (epstopdf)                    size: 14566 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka.eps>
 (epstopdf)             \includegraphics on input line 641.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:41
+(epstopdf)                    size: 14569 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf, id=5076, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_Mokka-eps-converted-to.pdf  used on input line 641.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12873 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12815 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:57:08
 (epstopdf)                    size: 13784 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 651.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:41
+(epstopdf)                    size: 13788 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf, id=5077, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_10GeV_DD4hep-eps-converted-to.pdf  used on input line 651.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12881 bytes
+(epstopdf)                    date: 2018-05-28 14:40:48
+(epstopdf)                    size: 12823 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:57:08
 (epstopdf)                    size: 13889 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 657.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:42
+(epstopdf)                    size: 13895 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf, id=5078, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_30GeV_DD4hep-eps-converted-to.pdf  used on input line 657.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12878 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12820 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:57:09
 (epstopdf)                    size: 13869 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 663.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:42
+(epstopdf)                    size: 13875 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf, id=5079, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_50GeV_DD4hep-eps-converted-to.pdf  used on input line 663.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12884 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12826 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:57:09
 (epstopdf)                    size: 13806 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 669.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:42
+(epstopdf)                    size: 13813 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf, id=5080, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_70GeV_DD4hep-eps-converted-to.pdf  used on input line 669.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep.eps>
-(epstopdf)                    date: 2018-05-25 10:15:28
-(epstopdf)                    size: 12890 bytes
+(epstopdf)                    date: 2018-05-28 14:40:49
+(epstopdf)                    size: 12832 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf>
 (epstopdf)                    date: 2018-05-25 10:57:09
 (epstopdf)                    size: 13882 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep.eps>
 (epstopdf)             \includegraphics on input line 675.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep.eps)...executed.
+
+Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-05-28 14:49:43
+(epstopdf)                    size: 13886 bytes.
 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf, id=5081, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/RMS_Depth_90GeV_DD4hep-eps-converted-to.pdf>
@@ -6824,14 +7144,14 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  36992 strings out of 492649
  752437 string characters out of 6129623
- 921466 words of memory out of 5000000
+ 920466 words of memory out of 5000000
  39292 multiletter control sequences out of 15000+600000
  760135 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,95p,10372b,1450s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/put
 r8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
-Output written on main.pdf (259 pages, 28203723 bytes).
+Output written on main.pdf (259 pages, 28204063 bytes).
 PDF statistics:
  7414 PDF objects out of 7423 (max. 8388607)
  5691 compressed objects within 57 object streams
