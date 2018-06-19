@@ -94,11 +94,11 @@ The selections presented in this section are based on simulated data. Beforehand
 
 During the campaign at the CERN \acrshort{sps} facility in July 2015, firstly, muon runs were taken at beam energies of 50 GeV and 150 GeV for calibrating the detector. Secondly, several electron runs were taken at beam energies between 10 GeV and 50 GeV to study the electromagnetic response of the calorimeter. Finally, the pion runs were taken at beam energies between 10 GeV and 90 GeV.
 
-The table \ref{table:dataruns} sums up the datasets taken in different beams. The number of events shown in the table is the total number of recorded events.
+The table \ref{table:dataruns} sums up the datasets taken in different beams. The number of events shown in the table is the total number of recorded events including single noise hit events.
 
 \begin{table}[htb!]
 	\centering
-	\caption{List of runs taken at SPS in July 2015.}
+	\caption{List of runs taken at SPS in July 2015. The number of event specified in the table are including single noise hit events.}
 	\label{table:dataruns}
 	\begin{tabular}{@{}lp{2cm}p{7.5cm}p{2cm}@{}}
 		\toprule
@@ -129,7 +129,7 @@ The distribution in the plane $cog_Z$:$n_{Hits}$ shown in figure \ref{fig:Muons_
 	\includegraphics[width=0.7\linewidth]{../Thesis_Plots/Timing/Muons/Plots/SelectionCut_nHitsCoGZ_Muons.eps}
 	\caption{Event distribution in $cog_Z:n_{Hits}$ plane. The size of each box represents the number of events in each bin. The black box represents the space-phase covered by the pre-selection.} \label{fig:Muons_CoGZ_nHits}
 \end{figure}
-\footnotetext{Not analyzed due to limited dataset.}
+\footnotetext{Not analysed due to limited dataset.}
 
 \subsubsection{Selection}
 \label{subsec:Muon_sel}
@@ -174,7 +174,7 @@ Additionally, to reduce transverse leakage, the shower center of gravity in X an
 
 \begin{table}[htb!]
 	\centering
-	\caption{Efficiency of the electron selection for simulated electrons, muons and pions for energies between 10 and 50 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.}
+	\caption{Efficiency of the electron selection for simulated electrons, muons and pions for energies between 10 and 50 GeV. The efficiency is defined as the number of events after selection divided by the number of events before selection. It is estimated from Monte-Carlo and does not included the Cherenkov efficiency.}
 	\label{table:eff_electron}
 	\begin{tabular}{@{} llll @{}}
 		\toprule
@@ -244,7 +244,7 @@ The selection efficiencies for muon, electron and pions beams for different beam
 
 \begin{table}[htb!]
 	\centering
-	\caption{Efficiency of the pion selection for beam energies between 10 and 90 GeV. The efficiency is defined as the number of events after selection over the number of event before selection.}
+	\caption{Efficiency of the pion selection for beam energies between 10 and 90 GeV. The efficiency is defined as the number of events after selection divided by the number of events before selection. It is estimated from Monte-Carlo and does not included the Cherenkov efficiency.}
 	\label{table:eff_pion}
 	\begin{tabular}{@{} llll @{}}
 		\toprule

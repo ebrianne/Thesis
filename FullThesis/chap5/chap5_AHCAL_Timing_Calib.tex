@@ -87,12 +87,12 @@ Once the ramp slope has been extracted for each chip and BXID parity, the time o
 \begin{equation} \label{eq:time_chn}
 	t_{i} \: \text{[ns]} = 1/s \times (\text{TDC}_{i} - Ped)
 \end{equation}
-where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $Ped$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity that is extracted using the same method as above. Any time offsets that can be induced by the other memory-cells and the BXID parity can be corrected in a later stage (see section \ref{sec:TimeFH}).
+where $t_{i}$ is the time of the i-th channel, $s$ is the ramp slope, TDC$_{i}$ is the TDC value of the i-th channel and $Ped$ is the TDC pedestal value of the i-th channel for the first memory-cell without taking into account the BXID parity that is extracted using the same method as above. In principle, one would need to perform this conversion using memory-cell-wise pedestals, however due to a limitation on the available statistics, only the first memory cell is taken into account. Any time offsets that are induced by the other memory-cells and the BXID parity are corrected in a later stage (see section \ref{sec:TimeFH}).
 
 \section{Calibration of the time reference}
 \label{section:time_ref}
 
-To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The trigger signals described in section \ref{subsec:trigger} are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guarantee the most accurate result.
+To reconstruct the time of the first hit in a channel, the measured time of a hit needs to be compared to the time of a reference trigger. The channels recording the signal from the trigger scintillators (see section \ref{subsec:trigger}) are calibrated using the same method as described in section \ref{subsec:slope_calib}. With the addition that the pedestal value is extracted for all memory cells, possible due to the high statistics, to guarantee the most accurate result.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}

@@ -46,16 +46,16 @@ The time correction parameters are determined by a $2^{nd}$ order polynomial fit
 Figure \ref{fig:Nhit_residuals} shows the residuals of the mean time of first hit as a function of the number of triggered channels above 0.5 MIP in a chip ($N_{trig/chip}$) after the correction. The correction has been applied to all electron samples separately in order to evaluate the systematic uncertainty of the correction. Three ranges in $N_{trig/chip}$ have been defined delimited by the red lines to estimate the uncertainty. To not overestimate the uncertainty, half of the residual envelope is taken as uncertainty. For 0 < $N_{trig/chip}$ < 5, a systematic uncertainty of 2 ns is taken, For 5 $\leq$ $N_{trig/chip}$ < 12, a systematic uncertainty of 5 ns is taken and finally for $N_{trig/chip}$ $\geq$ 12, a systematic of 7 ns is taken. Finally, the uncertainty for the mean time of the first hit is computed \textit{for each bin of energy and radius} by weighting according to the fraction of hits in each of the three regions following equation \ref{eq:syst_nHits}. As the uncertainties in the three ranges are correlated, a conservative way is to add linearly the uncertainties.
 
 \begin{equation}
-  \sigma = n_1 \times \sigma_1 + n_2 \times \sigma_2 + n_3 \times \sigma_3 \label{eq:syst_nHits}
+	\sigma = n_1 \times \sigma_1 + n_2 \times \sigma_2 + n_3 \times \sigma_3 \label{eq:syst_nHits}
 \end{equation}
 
 with $\sigma_1$ = 2 ns, $\sigma_2$ = 5 ns, $\sigma_3$ = 7 ns, $n_1$ the fraction of hits for the i-th bin in the region 0 < $N_{trig/chip}$ < 5, $n_2$ the fraction of hits for the i-th bin in the region 5 $\leq$ $N_{trig/chip}$ < 12 and $n_2$ the fraction of hits for the i-th bin in the region $N_{trig/chip}$ $\geq$ 12 and such as $n_1 + n_2 + n_3$ is equal to one in the i-th bin.
 
 \begin{figure}[htbp!]
-  \centering
-  \includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/CheckCorrection.eps}
-  \caption{Residuals of the mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip after correction. The correction has been applied to all electron samples separately to evaluate the systematic uncertainty. The vertical red lines delimit the three sections used for the systematic uncertainty.}
-  \label{fig:Nhit_residuals}
+	\centering
+	\includegraphics[width=0.6\textwidth]{../Thesis_Plots/Timing/Electrons/Plots/CheckCorrection.eps}
+	\caption{Residuals of the mean time of the first hit as a function of the number of triggered channels above 0.5 MIP in a chip after correction. The correction has been applied to all electron samples separately to evaluate the systematic uncertainty. The vertical red lines delimit the three sections used for the systematic uncertainty.}
+	\label{fig:Nhit_residuals}
 \end{figure}
 
 The figure \ref{fig:RMS_nHits} shows the RMS of the time distribution increasing with the number of triggered channels over 0.5 MIP in a chip. As expected, if a single channel in a chip triggers, the RMS of the time distribution ($\sim$ 5.5 ns) is close to the time resolution for muons as shown in figure \ref{fig:RMS_nHits}.
@@ -141,13 +141,18 @@ The figure \ref{fig:timing_syst_10GeV} and \ref{fig:timing_syst_50GeV} show the 
 
 \section{Systematic uncertainties}
 
-For a significant assessment of differences observed between data and simulations, systematic uncertainties must be evaluated. Several possible sources were identified:
+For a significant assessment of differences observed between data and simulations, systematic uncertainties must be evaluated. Several possible sources were identified. The following sources of systematic uncertainty are taken into account for data:
 
 \begin{itemize}
 	\item Non-Linearity correction: A non-linearity correction (see section \ref{subsec:lin_corr}) is determined from data with a limited accuracy lead to a systematic uncertainty. The residuals of the correction give a systematic uncertainty at the level of 0.2 ns.
 	\item Time walk correction: Similarly to the non-linearity correction of the data, the systematic uncertainty obtained from the residuals of the time walk correction (see section \ref{subsec:timewalk}) is in the order of 0.2 ns.
 	\item Number of triggered channels correction: The correction for the number of triggered channels over 0.5 MIP in a chip results in a residual on the mean time of the first hit (see section \ref{subsec:ped_shift}). The systematic uncertainty varies between 2 to 3.9 ns. For the time of first hit distribution, a systematic uncertainty is applied bin-by-bin for electrons and pions in the region of -30 ns to 30 ns. Outside of this region, a systematic uncertainty of 50\% is taken (see section \ref{subsec:Systematic_Correction}). This systematic error is the most dominant over all other uncertainties. A similar method is used to evaluate the systematic uncertainty on the RMS of the time distribution which varies between 1.2 ns and 2 ns.
 	\item AHCAL energy scale: The energy scale of the AHCAL was determined using the muon dataset (see chapter \ref{chap:ECalibAHCAL}). A systematic uncertainty on the MIP scale of around 3.6\% was derived by dividing the muon sample in odd and even run numbers and by looking at the average spread of the fitted MIP value for both subsamples. This is converted to an uncertainty in time using the mean time of first hit as a function of the hit energy using the QGSP\_BERT\_HP physics list. At 0.5 MIP, this results in an uncertainty of 0.1 ns. For hits above 1 MIP, the uncertainty is below 0.05 ns.
+\end{itemize}
+
+The following systematic uncertainties are taken into account for the simulation:
+
+\begin{itemize}
 	\item Global time smearing parameters: A global time smearing parametrization is used from muon data to smear the time in simulation. A bin-by-bin systematic uncertainty is applied to the time of first hit distribution to take into account the difference with a layer-wise time smearing parametrization.
 	\item Number of triggered channels in a chip parametrization: A smearing parametrization of the width of the time distribution as a function of the number of triggered channels in a chip is obtained from the electron dataset. An error band on the width was obtained by comparing all electron energies (see appendix \ref{appendix:ped_shift}). This is applied to simulation for the systematic uncertainty on the RMS of the time distribution.
 	\item Determination of the offset to $t=0$: For simulation, the time shift per layer is calculated using a time of flight correction $T_{of} = \frac{z_{layer}}{c}$ with $c$ the speed of light and $z_{layer}$ the z position of a layer. For this, an uncertainty of 3 mm corresponding to the scintillator thickness is taken in z corresponding to 0.01 ns uncertainty in timing.

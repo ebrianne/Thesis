@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.9)  4 JUN 2018 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.5.9)  19 JUN 2018 11:07
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2482,10 +2482,10 @@ Overfull \hbox (1.56998pt too wide) in paragraph at lines 196--231
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1371) has occurred while \output is active []
 
  [83 <../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsLayer_Muons-eps-converted-to.pdf> <../Thesis_Plots/Timing/Muons/Plots/TrackFinderCut_nHitsTrack_Muons-eps-converted-to.pdf>] [84 <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyE3_10GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyE3_50GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_nHitsCoGZ_50GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/SelectionCut_EnergyLastLayers_50GeV-eps-converted-to.pdf>] [85]
-<chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png, id=2344, 815.045pt x 608.2725pt>
+<chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png, id=2343, 815.045pt x 608.2725pt>
 File: chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png Graphic file (type png)
 <use chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png>
 Package pdftex.def Info: chap5/fig_AHCAL_timing/Pions/DoubleParticleEventPions.png  used on input line 266.
@@ -2499,7 +2499,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV.eps>
 (epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf, id=2346, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf, id=2345, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_10GeV-eps-converted-to.pdf  used on input line 279.
@@ -2513,7 +2513,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf, id=2347, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf, id=2346, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_N3N4_90GeV-eps-converted-to.pdf  used on input line 285.
@@ -2527,7 +2527,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV.eps>
 (epstopdf)             \includegraphics on input line 291.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf, id=2348, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf, id=2347, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_10GeV-eps-converted-to.pdf  used on input line 291.
@@ -2541,7 +2541,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV.eps>
 (epstopdf)             \includegraphics on input line 297.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf, id=2349, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf, id=2348, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_nHitsCoGZ_90GeV-eps-converted-to.pdf  used on input line 297.
@@ -2555,7 +2555,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV.eps>
 (epstopdf)             \includegraphics on input line 303.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf, id=2350, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf, id=2349, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_10GeV-eps-converted-to.pdf  used on input line 303.
@@ -2569,7 +2569,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Selectio
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV.eps>
 (epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf, id=2351, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf, id=2350, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/SelectionCut_EnergyLastLayers_90GeV-eps-converted-to.pdf  used on input line 309.
@@ -2583,7 +2583,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Frac
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf ../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips.eps>
 (epstopdf)             \includegraphics on input line 323.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf, id=2354, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf, id=2353, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/FractionRejectedChips-eps-converted-to.pdf  used on input line 323.
@@ -2597,7 +2597,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Exam
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf ../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149.eps>
 (epstopdf)             \includegraphics on input line 329.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf, id=2355, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf, id=2354, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/ExampleBadChip149-eps-converted-to.pdf  used on input line 329.
@@ -2947,7 +2947,7 @@ File: ../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError-eps-converted-to.pdf Gra
 <use ../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError-eps-converted-to.pdf  used on input line 106.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
- [106 <../Thesis_Plots/Timing/Muons/Plots/SlopesTDC-eps-converted-to.pdf> <../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5-eps-converted-to.pdf> <../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError-eps-converted-to.pdf>]
+ [106 <../Thesis_Plots/Timing/Muons/Plots/SlopesTDC-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset.eps>
 (epstopdf)                    date: 2018-05-09 16:16:14
 (epstopdf)                    size: 11711 bytes
@@ -2957,7 +2957,7 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/Timing_C
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf ../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset.eps>
 (epstopdf)             \includegraphics on input line 137.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf, id=2905, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf, id=2884, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Timing_Chip236_Chn21_Mem01_BXID1_withOffset-eps-converted-to.pdf  used on input line 137.
@@ -2971,12 +2971,12 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/BXIDDiff
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf ../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
-<../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf, id=2906, 569.12625pt x 409.53pt>
+<../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf, id=2885, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/BXIDDifferenceOffsets-eps-converted-to.pdf  used on input line 143.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
- [107]
+ [107 <../Thesis_Plots/Timing/T0s/Plots/T0_Resolution_5-eps-converted-to.pdf> <../Thesis_Plots/Timing/T0s/Plots/T0ReferenceError-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections.eps>
 (epstopdf)                    date: 2018-05-09 16:16:14
 (epstopdf)                    size: 11908 bytes
@@ -3035,7 +3035,7 @@ File: ../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe-eps-conv
 Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe-eps-converted-to.pdf  used on input line 189.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2922) has occurred while \output is active []
 
  [109 <../Thesis_Plots/Timing/Muons/Plots/Timing_AHCAL_noCorrections-eps-converted-to.pdf> <../Thesis_Plots/Timing/Muons/Plots/ResolutionPerModule_noCorrections-eps-converted-to.pdf> <../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy-eps-converted-to.pdf> <../Thesis_Plots/Timing/Muons/Plots/TimeArrival5thPhoton_MCToy_Npe-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/LinearityCorrection_Module09_Chip146_BXID0.eps>
@@ -3314,7 +3314,7 @@ File: ../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV-eps-
 Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV-eps-converted-to.pdf  used on input line 136.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
  [121 <../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_10GeV-eps-converted-to.pdf> <../Thesis_Plots/Timing/Electrons/Plots/Systematic_Inhomogeneity_50GeV-eps-converted-to.pdf>]
-Overfull \hbox (20.21835pt too wide) in paragraph at lines 164--187
+Overfull \hbox (20.21835pt too wide) in paragraph at lines 169--192
  [][] 
  []
 
@@ -3326,12 +3326,12 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Muons/Plots/Comparis
 (epstopdf)                    date: 2018-05-19 13:39:49
 (epstopdf)                    size: 49597 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons.eps>
-(epstopdf)             \includegraphics on input line 210.
+(epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf, id=3373, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf  used on input line 210.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Muons/Plots/Comparison_MokkaDD4hepData_Muons-eps-converted-to.pdf  used on input line 215.
 (pdftex.def)             Requested size: 268.88127pt x 193.4852pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.eps>
 (epstopdf)                    date: 2018-05-09 16:16:14
@@ -3340,12 +3340,12 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Comp
 (epstopdf)                    date: 2018-05-09 16:16:14
 (epstopdf)                    size: 73108 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf, id=3374, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf  used on input line 218.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons10GeV-eps-converted-to.pdf  used on input line 223.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.eps>
 (epstopdf)                    date: 2018-05-09 16:16:14
@@ -3354,12 +3354,12 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Electrons/Plots/Comp
 (epstopdf)                    date: 2018-05-09 16:16:14
 (epstopdf)                    size: 19587 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV.eps>
-(epstopdf)             \includegraphics on input line 223.
+(epstopdf)             \includegraphics on input line 228.
 Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf, id=3375, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf>
-Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf  used on input line 223.
+Package pdftex.def Info: ../Thesis_Plots/Timing/Electrons/Plots/Comparison_SimData_Electrons_nHits_10GeV-eps-converted-to.pdf  used on input line 228.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
 
 Underfull \vbox (badness 1052) has occurred while \output is active []
@@ -3417,9 +3417,6 @@ File: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion
 <use ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters_DD4hep-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters_DD4hep-eps-converted-to.pdf  used on input line 86.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
-
-Underfull \vbox (badness 1028) has occurred while \output is active []
-
  [129 <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Comparison_SimData_Pion50GeV_LateClusters_DD4hep-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Timing_Energy_Comparison_ShortAsymRange.eps>
 (epstopdf)                    date: 2018-05-24 16:27:38
@@ -3762,7 +3759,8 @@ File: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_
 <use ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf>
 Package pdftex.def Info: ../Thesis_Plots/Timing/Pions/Plots/Timing_Depth_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf  used on input line 324.
 (pdftex.def)             Requested size: 219.5866pt x 158.0101pt.
- [136 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>] [137 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule-eps-converted-to.pdf>]
+
+[136 <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/ShowerStart_Difference_noOptimisation_2D-eps-converted-to.pdf>] [137 <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Timing_Radius_Comparison_ShortAsymRange_ShowerStart_FixedModule-eps-converted-to.pdf> <../Thesis_Plots/Timing/Pions/Plots/Radius_ShowerStartTruth_FixedModule-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/ComparisonToSim/Time_Depth_90GeV_Mokka.eps>
 (epstopdf)                    date: 2018-05-28 14:40:49
 (epstopdf)                    size: 13013 bytes
@@ -3824,15 +3822,11 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Time_Cor
 (epstopdf)                    date: 2018-06-04 16:38:24
 (epstopdf)                    size: 36644 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-24 15:33:04
-(epstopdf)                    size: 29068 bytes
+(epstopdf)                    date: 2018-06-04 16:43:36
+(epstopdf)                    size: 19255 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.eps>
 (epstopdf)             \includegraphics on input line 389.
-runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short.eps)...executed.
-
-Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-04 16:43:36
-(epstopdf)                    size: 19255 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf, id=4005, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_short-eps-converted-to.pdf>
@@ -3842,15 +3836,11 @@ Package epstopdf Info: Source file: <../Thesis_Plots/Timing/Pions/Plots/Time_Cor
 (epstopdf)                    date: 2018-06-04 16:38:15
 (epstopdf)                    size: 74011 bytes
 (epstopdf)             Output file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-05-24 15:33:04
-(epstopdf)                    size: 105556 bytes
+(epstopdf)                    date: 2018-06-04 16:43:36
+(epstopdf)                    size: 30230 bytes
 (epstopdf)             Command: <epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.eps>
 (epstopdf)             \includegraphics on input line 395.
-runsystem(epstopdf --outfile=../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long.eps)...executed.
-
-Package epstopdf Info: Result file: <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-06-04 16:43:36
-(epstopdf)                    size: 30230 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf, id=4006, 569.12625pt x 409.53pt>
 File: ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf Graphic file (type pdf)
 <use ../Thesis_Plots/Timing/Pions/Plots/Time_Correlation_long-eps-converted-to.pdf>
@@ -6189,15 +6179,15 @@ Overfull \hbox (2.3884pt too wide) in paragraph at lines 28--45
  [][] 
  []
 
-) [215] [216] (./main.lot
+) [215] [216] (./main.lot [217
+
+
+]
 Overfull \hbox (0.99997pt too wide) detected at line 25
  [][][]\T1/futs/m/n/10 104[][]
  []
 
-[217
 
-
-]
 Overfull \hbox (0.99997pt too wide) detected at line 27
  [][][]\T1/futs/m/n/10 123[][]
  []
@@ -6326,7 +6316,7 @@ Overfull \hbox (0.99997pt too wide) detected at line 71
 
 
 Overfull \hbox (0.99997pt too wide) detected at line 72
- [][][]\T1/futs/m/n/10 106[][]
+ [][][]\T1/futs/m/n/10 107[][]
  []
 
 
@@ -6832,14 +6822,14 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  36992 strings out of 492649
  752437 string characters out of 6129623
- 921466 words of memory out of 5000000
+ 921724 words of memory out of 5000000
  39292 multiletter control sequences out of 15000+600000
  760135 words of font info for 247 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,18n,95p,10372b,1450s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/put
 r8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb>
-Output written on main.pdf (259 pages, 28118928 bytes).
+Output written on main.pdf (259 pages, 28120011 bytes).
 PDF statistics:
  7414 PDF objects out of 7423 (max. 8388607)
  5691 compressed objects within 57 object streams
