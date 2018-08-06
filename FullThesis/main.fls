@@ -488,10 +488,6 @@ OUTPUT main.toc
 OUTPUT intro.aux
 INPUT intro.tex
 INPUT intro.tex
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/t1cmss.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/jknappen/ec/ecss0500.tfm
 OUTPUT chap1/chap1_Theo.aux
 INPUT chap1/chap1_Theo.tex
 INPUT chap1/chap1_Theo.tex
@@ -3613,7 +3609,6 @@ INPUT oath.aux
 INPUT oath.aux
 INPUT ./main.out
 INPUT ./main.out
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-alt.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb
@@ -3627,4 +3622,3 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb

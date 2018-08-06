@@ -11,8 +11,8 @@
 \contentsline {table}{\numberline {5.2}{\ignorespaces Number of single particle events simulated in \textsc {Mokka}\xspace and \textsc {DD4hep}\xspace for each particle type and energy.\relax }}{61}{table.caption.45}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces List of the different SiPMs used in the CALICE AHCAL in July 2015.\relax }}{66}{table.caption.49}
-\contentsline {table}{\numberline {6.2}{\ignorespaces List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$.\relax }}{67}{table.caption.50}
-\contentsline {table}{\numberline {6.3}{\ignorespaces List of the targeted gains for each layer type.\relax }}{69}{table.caption.52}
+\contentsline {table}{\numberline {6.2}{\ignorespaces List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$. $V_{PB}$ is the voltage applied to the power board.\relax }}{67}{table.caption.50}
+\contentsline {table}{\numberline {6.3}{\ignorespaces List of the targeted gains for each module type.\relax }}{69}{table.caption.52}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{\ignorespaces List of AHCAL channels used as time reference for this analysis.\relax }}{80}{table.caption.60}
 \contentsline {table}{\numberline {7.2}{\ignorespaces List of runs taken at SPS in July 2015. The number of event specified in the table are including single noise hit events.\relax }}{81}{table.caption.61}

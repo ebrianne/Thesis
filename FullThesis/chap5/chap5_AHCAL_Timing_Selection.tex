@@ -142,7 +142,7 @@ The algorithm selects AHCAL towers of hits in the same $x:y$ position and it rej
 
 The distributions of the maximum number of hits in a layer and the number of hits of a track are shown in figures \ref{fig:Muons_Track_nHitsLayer} and \ref{fig:Muons_Track_nHits} for simulated samples of 150 GeV muons, electrons and pions after pre-selection. The MIP track finder was performed in two steps for the inner part of the detector of $12 \times 12$ tiles and the outer part for the big modules (modules 11 to 14, Outer BL) in order to calibrate the outer channels of these modules. The figure \ref{fig:Muons_Track_nHitsLayer} shows that a cut of two hits per layer is optimal in order to reject pions without affecting muons too much.
 
-The selection efficiency is 72.5\% for muons, 0\% for electrons and 5.6\% for pions. The selection reduces further the pion contamination and the remaining pion fraction is compatible with the fraction of pions traversing the AHCAL without hard interaction. An overview of the MIP selection cuts is given in table \ref{table:muon_sel}.
+The selection efficiency is 72.5\% for muons. This selection results in a contamination of 0\% for electrons and 5.6\% for pions. The selection reduces further the pion contamination and the remaining pion fraction is compatible with the fraction of pions traversing the AHCAL without hard interaction. An overview of the MIP selection cuts is given in table \ref{table:muon_sel}.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -190,7 +190,7 @@ Additionally, to reduce transverse leakage, the shower center of gravity in X an
 	\end{tabular}
 \end{table}
 
-One can notice from table \ref{table:eff_electron} that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as the production of electrons in the beamline was done using a beam of photons on a beryllium target, it is with confidence that there is no pion contamination in the data \cite{AmbraEnergy}. Thus no additional cut is needed.
+One can notice from table \ref{table:eff_electron} that a significant fraction of pions is present at low beam energies (10 to 20 GeV). But as explained in section \ref{sec:beamline} for the production of electrons, it is with confidence that there is no pion contamination in the data \cite{AmbraEnergy}. Thus no additional cut is needed.
 
 \begin{figure}[htbp!]
 	\begin{subfigure}[t]{0.49\textwidth}
@@ -236,7 +236,7 @@ One can notice from table \ref{table:eff_electron} that a significant fraction o
 
 The goal of the pion selection is to reject punch-through pions, muons and possible electron contamination as these events would be instantaneous (see section \ref{sec:TimeDevShowers}). An \textit{Event Quality} pre-selection is performed using the Cherenkov information. The events without a Cherenkov tag are selected. This is only applied to data. The pion selection is based on the same variables as the electron selection: $cog_Z:n_{Hits}$ plane, $(E_{13}+E_{14})/\Sigma E$ and additionally the number of hits in two first AHCAL layers ($N_3+N_4$).
 
-Firstly, the distribution of events in the $cog_Z:n_{Hits}$ plane is shown in figures \ref{fig:pi10GeV_nHitsCoGZ} and \ref{fig:pi90GeV_nHitsCoGZ} for muon, electron and pion beam energies from 10 GeV to 90 GeV. The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the start of the pion shower.
+Firstly, the distribution of events in the $cog_Z:n_{Hits}$ plane is shown in figures \ref{fig:pi10GeV_nHitsCoGZ} and \ref{fig:pi90GeV_nHitsCoGZ} for muon, electron and pion beam energies for 10 GeV to 90 GeV. The number of hits required per event needs to be over 20 to reject most muons or punch-through pions without cutting on the center of gravity in z in order not to bias the start of the pion shower.
 
 Secondly, the distributions of the energy fraction deposited in the two last AHCAL layers are shown in figures \ref{fig:pi10GeV_Elast} and \ref{fig:pi90GeV_Elast}. This variable must be over 1\% in order to ensure that pion showered and reject electrons. Finally, the distributions of the number of hits in the two first AHCAL layers is shown in figure \ref{fig:pi10GeV_N3N4} and \ref{fig:pi90GeV_N3N4}. The number of hits in the two first AHCAL layers must be under 5 to mitigate possible particle contamination from electrons.
 

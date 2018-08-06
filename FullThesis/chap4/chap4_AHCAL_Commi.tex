@@ -28,9 +28,10 @@ In the blue and yellow square are the output signals. This enables to check via 
 
 In the purple square are the input signals for the FPGA such as the slow clock and external trigger signals. And finally, the green square (above the blue and yellow squares) represents the \textit{trigger threshold} and the channel-wise voltage adjustment \textit{Digital to Analog Converters} (DAC) that can be tested manually or automatically by connecting a Keithley multimeter a serial port on the board.
 
-In this manual procedure, the vital parts of the chips are tested. This includes to check that all channels are working correctly, that the chip works in both external and auto-trigger modes, that all both the trigger threshold and the voltage adjustment DACs are working and that the digital part converts and sends the data out of the chip. For the testbeam in July 2015, around 60 chips have been tested manually for the layers 12, 13 and 14. The mean time for testing a chip is around ten minutes.
+In this manual procedure, the vital parts of the chips are tested. This includes to check that all channels are working correctly, that the chip works in both external and auto-trigger modes, that all both the trigger threshold and the voltage adjustment DACs are working and that the digital part converts and sends the data out of the chip. For the testbeam in July 2015, around 60 chips have been tested manually for the modules 12, 13 and 14. The mean time for testing a chip is around ten minutes.
 
 \subsection{DAC Testing}
+\label{sec:DACTesting}
 
 As the testing procedure is done manually, only the most critical components of the chip are tested. One of this component is called the DAC. Two DACs are present in the SPIROC2b. One is regulating the channel-wise voltage applied to the SiPM (8-bit input DAC) and another is controlling the trigger threshold discriminator (10-bit output DAC) which is common to the 36 channels. In the following, the DAC regulating the voltage channel-wise is referred as the input DAC and the DAC controlling the trigger threshold is referred as the output DAC.
 
@@ -72,7 +73,7 @@ The commissioning procedure of the detector was done in July/August 2014 for a t
   \item A noise measurement.
 \end{itemize}
 
-A full detailed report can be found in \cite{Hartbrich2012}. The following subsections will describe each point in more detail. The layer 3 and layers 12 to 14 (13 HBUs) were fully commissioned. The layers 4 to 11 (11 HBUs) have already been calibrated in the past and they used the same pre-configured settings. Only a cross-check was performed for these layers. The layers 1 and 2, the ECAL boards (EBUs), were commissioned separately due to high noise and very low gain.
+A full detailed report can be found in \cite{Hartbrich2012}. The following subsections will describe each point in more detail. The module 3 and modules 12 to 14 (13 HBUs) were fully commissioned. The modules 4 to 11 (11 HBUs) have already been calibrated in the past and they used the same pre-configured settings. Only a cross-check was performed for these modules. The modules 1 and 2, the ECAL boards (EBUs), were commissioned separately due to high noise and very low gain.
 
 \subsection{Setting the High Voltage}
 
@@ -83,7 +84,7 @@ A full detailed report can be found in \cite{Hartbrich2012}. The following subse
   \resizebox{\textwidth}{!}{%
   \begin{tabular}{@{}cccccccc@{}}
     \toprule
-    Layer & Producer & Model & Area (mm$^2$) & Pitch ($\mu$m) & WLS Fibre & Read-out type & $N_{px}$ [$10^3$]\\
+    Module & Producer & Model & Area (mm$^2$) & Pitch ($\mu$m) & WLS Fibre & Read-out type & $N_{px}$ [$10^3$]\\
     \midrule
     1 & Hamamatsu & S12571\_010P & $1\times1$ & 10 & no & Bottom & 10\\
     2 & Hamamatsu & S10362-11-025O & $1\times1$ & 25 & no & Side & 1.6\\
@@ -101,11 +102,11 @@ An AHCAL board (HBU) has 144 channels, each equipped with a plastic tile-SiPM. T
 
 The SiPMs are operated between 2.5 to 5 V over the breakdown voltage depending on the type. The high voltage that is set on the power board $V_{PB}$ is determined by the distribution of the SiPM bias voltages of each HBU taking into account a safe margin for the voltage adjustment with the input DAC. Then, the input DAC for each channel is calculated to have the targeted SiPM bias voltage. This made the procedure very laborious and time-taking \cite{Hartbrich2012}.
 
-As the quality of SiPMs has increased drastically in the last few years, the need for individual channel-wise voltage is reduced. This simplifies the procedure to $V_{PB} [V] = V_{Br} + V_{overvoltage} - V_{IDAC}$ where $V_{IDAC}$ is fixed and common to all channels. The table \ref{table:Voltage_SiPM} sums up the voltages applied.
+As the quality of SiPMs has increased drastically in the last few years, the need for individual channel-wise voltage is reduced. This simplifies the procedure to $V_{PB} [V] = V_{Br} + V_{overvoltage} - V_{IDAC}$ where $V_{IDAC}$ is fixed and common to all channels. $V_{IDAC}$ is typically in the order of -4.5 V to 4 V with a spread of around 10 mV between channels (see section \ref{sec:DACTesting}). The table \ref{table:Voltage_SiPM} sums up the voltages applied.
 
 \begin{table}[htb!]
   \centering
-  \caption{List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$.}
+  \caption{List of breakdown and operating voltages applied to each SiPM types. $V_{op}$ represents $V_{Br} + V_{overvoltage}$. $V_{PB}$ is the voltage applied to the power board.}
   \label{table:Voltage_SiPM}
   \begin{tabular}{@{}lccc@{}}
     \toprule
@@ -113,10 +114,10 @@ As the quality of SiPMs has increased drastically in the last few years, the nee
     \midrule
     Hamamatsu (S12571\_010P - S10362-11-025O) & $\sim$ 65 V & $\sim$ 70 V & $\sim$ 75.8 V\\
     Hamamatsu (S12571-025P) & $\sim$ 65 V & $\sim$ 67 V & $\sim$ 70.66 V\\
-    CPTA (layers 6-10) & $\sim$ 35-45 V & $\sim$ 37-50 V & $\sim$ 40.1 - 51.7 V\\
-    Ketek (layers 4-5) & $\sim$ 28 V & $\sim$ 32 V & $\sim$ 36.95 - 37.02 V\\
-    UHH Ketek (layers 11-12) & $\sim$ 27 V & $\sim$ 29.55 - 30.05 V & $\sim$ 32.98 - 34.49 V\\
-    SenSL (layers 13-14) & $\sim$ 25 V & $\sim$ 27.391 - 27.392 V & $\sim$ 32.10 - 32.11 V\\
+    CPTA (Modules 6-10) & $\sim$ 35-45 V & $\sim$ 37-50 V & $\sim$ 40.1 - 51.7 V\\
+    Ketek (Modules 4-5) & $\sim$ 28 V & $\sim$ 32 V & $\sim$ 36.95 - 37.02 V\\
+    UHH Ketek (Modules 11-12) & $\sim$ 27 V & $\sim$ 29.55 - 30.05 V & $\sim$ 32.98 - 34.49 V\\
+    SenSL (Modules 13-14) & $\sim$ 25 V & $\sim$ 27.39 - 27.39 V & $\sim$ 32.10 - 32.11 V\\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -141,10 +142,10 @@ Only channels where the integral of the curve is above 6000 are chosen. This is 
     \includegraphics[width=1.\linewidth]{../Thesis_Plots/Commissioning/Plots/Gain100fF_MainzHBU4.eps}
     \caption{Gain measured at 100 fF} \label{fig:Gain100fF}
   \end{subfigure}
-  \caption{\subref{fig:Holdscan}) Reconstructed signal shape for several channels of Chip 174 on HBU\_{}2\_{}15 (layer 11). Only channels where the integral of the holdscan curve is over 6000 are shown. The dotted red line represent the Hold time chosen for this board. \subref{fig:Gain100fF}) Single pixel spectrum of a single channel. The fit is done by a Multi-Gaussian where the distance between the 1$^{st}$ and 2$^{nd}$ peaks is the fitted SiPM gain.}
+  \caption{\subref{fig:Holdscan}) Reconstructed signal shape for several channels of Chip 174 on HBU\_{}2\_{}15 (Module 11). Only channels where the integral of the holdscan curve is over 6000 are shown. The dotted red line represent the hold time chosen for this board. \subref{fig:Gain100fF}) Single pixel spectrum of a single channel. The fit is done by a multi-Gaussian where the distance between the 1$^{st}$ and 2$^{nd}$ peaks is the fitted SiPM gain.}
 \end{figure}
 
-After this, a first characterization of the gain can be done at nominal settings using a pre-amplifier value of 100 fF. For this, all channels are illuminated by the integrated LED system with a certain range of LED voltage in steps of 100 mV in order to characterize all channels due to variations in response due to LED light, tiles, SiPM. For layers 4 to 11, a range of 10-15 voltages is needed. Due to improvements in the integrated LED calibration system design, SiPM quality and tile quality, a much smaller range can be used (3-5 voltages) for the layers 3 and 12 to 14. A typical example of a single pixel spectrum at 100 fF can be seen in figure \ref{fig:Gain100fF}.
+After this, a first characterization of the gain can be done at nominal settings using a pre-amplifier value of 100 fF. For this, all channels are illuminated by the integrated LED system with a certain range of LED voltage in steps of 100 mV in order to characterize all channels due to variations in response due to LED light, tiles, SiPM. For modules 4 to 11, a range of 10-15 voltages is needed. Due to improvements in the integrated LED calibration system design, SiPM quality and tile quality, a much smaller range can be used (3-5 voltages) for the modules 3 and 12 to 14. A typical example of a single pixel spectrum at 100 fF can be seen in figure \ref{fig:Gain100fF}.
 
 \subsection{Adjustment of the SiPM gain}
 \label{sec:AdjustGain}
@@ -171,7 +172,7 @@ The Ketek SiPMs with 12k pixels are operated in different modes for calibration 
 
 \begin{table}[htb!]
   \centering
-  \caption{List of the targeted gains for each layer type.}
+  \caption{List of the targeted gains for each module type.}
   \label{table:GainTarget_SiPM}
   \begin{tabular}{@{} ccc @{}}
     \toprule
